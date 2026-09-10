@@ -1007,6 +1007,9 @@ function renderTable() {
                 <button class="btn btn-sm btn-outline-secondary" onclick="openMainDocModal('${escapeHtml(doc.doc_receive_no)}')">
                     <i class="fa-solid fa-pen"></i> 編輯
                 </button>
+                <button class="btn btn-sm btn-outline-danger" onclick="deleteMainDoc('${escapeHtml(doc.doc_receive_no)}')" title="刪除此公文主檔">
+                    <i class="fa-solid fa-trash"></i> 刪除
+                </button>
             </td>
         `;
 
@@ -1095,6 +1098,9 @@ function renderNestedIssueTable(receiveNo) {
                         <button class="btn btn-sm btn-outline-secondary" onclick="openIssueModalForEdit('${escapeHtml(issue.issue_id)}')" title="開啟所有欄位編輯與增減附件">
                             <i class="fa-solid fa-pen"></i> 編輯
                         </button>
+                        <button class="btn btn-sm btn-outline-danger" onclick="deleteIssue('${escapeHtml(issue.issue_id)}')" title="刪除此醫師函詢項目">
+                            <i class="fa-solid fa-trash"></i> 刪除
+                        </button>
                         <button class="btn btn-sm btn-outline-info" onclick="openSimulateReplyModal('${escapeHtml(issue.issue_id)}')" title="模擬醫師點信回覆">
                             <i class="fa-solid fa-reply"></i> 模擬回信
                         </button>
@@ -1177,7 +1183,9 @@ function openMainDocModal(receiveNo = null) {
     form.reset();
     document.getElementById("mainDocFilesList").innerHTML = "";
 
+    const btnDelete = document.getElementById("btnDeleteMainDoc");
     if (receiveNo) {
+        if (btnDelete) btnDelete.style.display = "inline-block";
         const doc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
         if (doc) {
             document.getElementById("modalMainDocTitle").textContent = "編輯公文主檔";
@@ -1201,6 +1209,7 @@ function openMainDocModal(receiveNo = null) {
             document.getElementById("doc_status").value = doc.doc_status || "處理中";
         }
     } else {
+        if (btnDelete) btnDelete.style.display = "none";
         document.getElementById("modalMainDocTitle").textContent = "新增公文主檔";
         document.getElementById("mainDocId").value = "";
     }
@@ -1275,6 +1284,9 @@ function openIssueModalForDoc(receiveNo) {
     const form = document.getElementById("formIssue");
     form.reset();
 
+    const btnDelete = document.getElementById("btnDeleteIssue");
+    if (btnDelete) btnDelete.style.display = "none";
+
     document.getElementById("modalIssueTitle").textContent = `新增醫師函詢明細 (${receiveNo})`;
     document.getElementById("issue_id").value = "";
     document.getElementById("issue_doc_no").value = receiveNo;
@@ -1294,6 +1306,9 @@ function openIssueModalForEdit(issueId) {
 
     const form = document.getElementById("formIssue");
     form.reset();
+
+    const btnDelete = document.getElementById("btnDeleteIssue");
+    if (btnDelete) btnDelete.style.display = "inline-block";
 
     document.getElementById("modalIssueTitle").textContent = `編輯醫師函詢明細 (單號：${issue.doc_receive_no} - ${issue.doctor_name})`;
     document.getElementById("issue_id").value = issue.issue_id;
@@ -1317,6 +1332,49 @@ function openIssueModalForEdit(issueId) {
 
     renderIssueAttachmentsList(issue);
     openModal("modalIssue");
+}
+
+function deleteMainDoc(receiveNo) {
+    if (!receiveNo) return;
+    const doc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
+    const docTitle = doc ? doc.doc_receive_no : receiveNo;
+    if (confirm(`⚠️ 確定要刪除收發文號【${docTitle}】的這筆公文主檔及其所有醫師函詢明細嗎？此動作無法復原！`)) {
+        gMainDocs = gMainDocs.filter(d => d.doc_receive_no !== receiveNo);
+        gIssues = gIssues.filter(i => i.doc_receive_no !== receiveNo);
+        saveDataToStorage();
+        closeModal("modalMainDoc");
+        showToast(`🗑️ 已成功刪除公文主檔【${docTitle}】！`, "success");
+        renderDashboard();
+        renderTable();
+    }
+}
+
+function deleteMainDocFromModal() {
+    const receiveNo = document.getElementById("doc_receive_no").value.trim();
+    if (receiveNo) {
+        deleteMainDoc(receiveNo);
+    }
+}
+
+function deleteIssue(issueId) {
+    if (!issueId) return;
+    const issue = gIssues.find(i => i.issue_id === issueId);
+    const doctorName = issue ? issue.doctor_name : "";
+    if (confirm(`⚠️ 確定要刪除醫師【${doctorName}】的這筆函詢明細嗎？此動作無法復原！`)) {
+        gIssues = gIssues.filter(i => i.issue_id !== issueId);
+        saveDataToStorage();
+        closeModal("modalIssue");
+        showToast(`🗑️ 已成功刪除函詢明細！`, "success");
+        renderDashboard();
+        renderTable();
+    }
+}
+
+function deleteIssueFromModal() {
+    const issueId = document.getElementById("issue_id").value.trim();
+    if (issueId) {
+        deleteIssue(issueId);
+    }
 }
 
 function renderIssueAttachmentsList(issue) {
