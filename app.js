@@ -1591,15 +1591,12 @@ function getEmailTemplateHtml(type, issue) {
         `;
     } else if (type === 2) { // 醫師回復後通知承辦
         headerBg = "#0056D2";
-        headerTitle = "【已完成】醫師回覆已確認完成";
+        headerTitle = "✅ 醫師回覆已確認完成";
         statusNotice = `
             <div style="background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                <strong>● 醫師回覆內容</strong><br>
-                <div style="background:#ffffff;padding:10px 14px;border-radius:4px;margin-top:6px;border:1px solid #dadce0;color:#202124;">
+                <strong style="color:#0056D2;font-size:14px;">💬 醫師回覆內容</strong><br>
+                <div style="background:#ffffff;padding:10px 14px;border-radius:4px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;">
                     ${escapeHtml(issue.doctor_reply || '無')}
-                </div>
-                <div style="font-size:11px;color:#5f6368;margin-top:4px;">
-                    病歷室公文處理 於 ${issue.replied_at || '最近'} 寫道：
                 </div>
             </div>
         `;
@@ -1729,19 +1726,17 @@ function getEmailTemplateHtml(type, issue) {
             </div>
             <div style="padding:24px;line-height:1.7;color:#202124;font-size:13px;">
                 ${statusNotice}
-                <div style="margin-bottom:10px;">● <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
-                <div style="margin-bottom:10px;">● <strong>發送時間：</strong> ${escapeHtml(sendTimeStr)}</div>
-                ${overdueFieldsHtml}
-                <div style="margin-bottom:10px;">● <strong>病歷號：</strong> ${escapeHtml(issue.doc_chart_no || '-')}</div>
-                <div style="margin-bottom:10px;">● <strong>病患名稱：</strong> ${escapeHtml(issue.doc_patient_name || '-')}</div>
+                <div style="margin-bottom:10px;">📌 <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
+                <div style="margin-bottom:10px;">📝 <strong>病歷號：</strong> ${escapeHtml(issue.doc_chart_no || '-')}</div>
+                <div style="margin-bottom:10px;">👤 <strong>病患名稱：</strong> ${escapeHtml(issue.doc_patient_name || '-')}</div>
                 <div style="margin-bottom:16px;background:#f8fafc;padding:14px;border-radius:6px;border:1px solid #e2e8f0;font-size:13px;line-height:1.6;">
-                    ● <strong>問題內容：</strong> ${escapeHtml(issue.question)}
+                    📝 <strong>問題內容：</strong> ${escapeHtml(issue.question)}
                 </div>
                 ${attachmentHtml}
                 ${defaultNoticeIfOverdue}
                 <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
                 <div style="font-size:12px;color:#5f6368;">
-                    ● 承辦人員：${escapeHtml(issue.creator_name || '錢佩好')} (分機：${escapeHtml(issue.creator_ext || '2043')})
+                    👤 承辦人員：${escapeHtml(issue.creator_name || '錢佩好')} (分機：${escapeHtml(issue.creator_ext || '2043')})
                 </div>
             </div>
         </div>
