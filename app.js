@@ -25936,9 +25936,17 @@ function renderNestedIssueTable(receiveNo) {
         rowsHtml += `
             <tr>
                 <td><strong>${escapeHtml(issue.doctor_name)}</strong><br><small class="text-muted">${escapeHtml(issue.doctor_email)}</small></td>
-                <td><div style="max-width:300px;max-height:80px;overflow-y:auto;">${escapeHtml(issue.question)}</div></td>
                 <td>
-                    ${issue.doctor_reply ? `<div style="max-height:80px;overflow-y:auto;color:#0284c7;font-weight:500;">${escapeHtml(issue.doctor_reply)}</div>` : `<span class="text-muted">尚無回覆</span>`}
+                    <div class="multiline-box question-box">
+                        ${formatMultilineHtml(issue.question)}
+                    </div>
+                </td>
+                <td>
+                    ${issue.doctor_reply ? `
+                        <div class="multiline-box reply-box">
+                            ${formatMultilineHtml(issue.doctor_reply)}
+                        </div>
+                    ` : `<span class="text-muted">尚無回覆</span>`}
                 </td>
                 <td>${statusSelectHtml} ${overdueBadge}</td>
                 <td>${escapeHtml(issue.sent_at || '-')}</td>
@@ -26507,7 +26515,7 @@ function getEmailTemplateHtml(type, issue) {
             <div style="background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
                 <strong style="color:#0056D2;font-size:14px;">💬 醫師回覆內容</strong><br>
                 <div style="background:#ffffff;padding:10px 14px;border-radius:4px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;">
-                    ${escapeHtml(issue.doctor_reply || '無')}
+                    ${formatMultilineHtml(issue.doctor_reply || '無')}
                 </div>
             </div>
         `;
@@ -26641,7 +26649,7 @@ function getEmailTemplateHtml(type, issue) {
                 <div style="margin-bottom:10px;">📝 <strong>病歷號：</strong> ${escapeHtml(issue.doc_chart_no || '-')}</div>
                 <div style="margin-bottom:10px;">👤 <strong>病患名稱：</strong> ${escapeHtml(issue.doc_patient_name || '-')}</div>
                 <div style="margin-bottom:16px;background:#f8fafc;padding:14px;border-radius:6px;border:1px solid #e2e8f0;font-size:13px;line-height:1.6;">
-                    📝 <strong>問題內容：</strong> ${escapeHtml(issue.question)}
+                    📝 <strong>問題內容：</strong><br><div style="white-space:pre-wrap;margin-top:6px;">${formatMultilineHtml(issue.question)}</div>
                 </div>
                 ${attachmentHtml}
                 ${defaultNoticeIfOverdue}
@@ -27254,6 +27262,18 @@ function showToast(message, type = "info") {
         toast.classList.add("hidden");
     }, 3500);
 }
+
+
+function formatMultilineHtml(text) {
+    if (!text) return "";
+    let s = String(text).trim();
+    // 1. Insert newlines before numbered items (1., 2., 3., etc.) if missing
+    s = s.replace(/([^\n])\s*([0-9]+\.[\u4e00-\u9fa5A-Za-z\s])/g, '$1\n$2');
+    // 2. Separate common section headers onto new lines
+    s = s.replace(/([^\n])\s*(因案件有時效性|請惠示醫理見解|備註：|病人：|案由主旨：)/g, '$1\n$2');
+    return escapeHtml(s);
+}
+
 
 function escapeHtml(str) {
     if (!str) return "";
