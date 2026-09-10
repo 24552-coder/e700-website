@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雙和醫院病歷組 - 公文 Google 郵件自動發送與追蹤系統</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- SheetJS for Excel Export -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="app-header">
+        <div class="header-left">
+            <div class="logo-icon"><i class="fa-solid fa-hospital-user"></i></div>
+            <div class="header-title">
+                <h1>雙和醫院病歷組</h1>
+                <span class="sub-title">公文 Google 郵件自動發送與進度追蹤系統</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <button id="btnSyncGmail" class="btn btn-outline-info" title="檢查並同步 Gmail 醫師回信與狀態">
+                <i class="fa-solid fa-rotate"></i> 同步 Gmail 醫師回信
+            </button>
+            <button id="btnExportWeekly" class="btn btn-outline-success">
+                <i class="fa-solid fa-file-excel"></i> 匯出未結案週表
+            </button>
+            <button id="btnNewMainDoc" class="btn btn-primary">
+                <i class="fa-solid fa-plus"></i> 新增公文主檔
+            </button>
+            <button id="btnSettings" class="btn btn-icon" title="系統與 Google 設定">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="app-container">
+        <!-- Dashboard Summary Cards -->
+        <section class="kpi-grid">
+            <div class="kpi-card card-total-cases" onclick="filterByCard('all')">
+                <div class="kpi-icon"><i class="fa-solid fa-folder-open"></i></div>
+                <div class="kpi-info">
+                    <span class="kpi-label">總公文案件數 (Case)</span>
+                    <h2 id="kpiTotalCases" class="kpi-value">0</h2>
+                </div>
+            </div>
+            <div class="kpi-card card-total-issues" onclick="filterByCard('all_issues')">
+                <div class="kpi-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                <div class="kpi-info">
+                    <span class="kpi-label">總醫師函詢項目 (Issues)</span>
+                    <h2 id="kpiTotalIssues" class="kpi-value">0</h2>
+                </div>
+            </div>
+            <div class="kpi-card card-replied" onclick="filterByCard('replied')">
+                <div class="kpi-icon"><i class="fa-solid fa-inbox"></i></div>
+                <div class="kpi-info">
+                    <span class="kpi-label">醫師已回覆 (待審核)</span>
+                    <h2 id="kpiReplied" class="kpi-value">0</h2>
+                </div>
+            </div>
+            <div class="kpi-card card-completed" onclick="filterByCard('completed')">
+                <div class="kpi-icon"><i class="fa-solid fa-square-check"></i></div>
+                <div class="kpi-info">
+                    <span class="kpi-label">已完成結案數</span>
+                    <h2 id="kpiCompleted" class="kpi-value">0</h2>
+                </div>
+            </div>
+            <div class="kpi-card card-processing" onclick="filterByCard('processing')">
+                <div class="kpi-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+                <div class="kpi-info">
+                    <span class="kpi-label">待回覆 / 處理中</span>
+                    <h2 id="kpiProcessing" class="kpi-value">0</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overdue Urgent Track List Alert Banner -->
+        <section id="overdueAlertBanner" class="alert-banner alert-overdue hidden">
+            <div class="alert-content">
+                <div class="alert-title">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <strong>逾期催辦緊急追蹤清單 (醫師未回覆 >= 1天)</strong>
+                </div>
+                <span id="overdueCountText" class="badge badge-danger">0 件逾期</span>
+            </div>
+            <button class="btn btn-sm btn-danger" onclick="filterByCard('overdue')">
+                查看逾期案件
+            </button>
+        </section>
+
+        <!-- Search & Filter Controls Bar -->
+        <section class="filter-section card-box">
+            <div class="filter-row">
+                <div class="search-input-group">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="搜尋收發文號 / 病歷號 / 病患姓名 / 承辦人員 / 來文單位 / 醫師姓名 / 主旨..." class="form-control">
+                </div>
+                <div class="filter-group">
+                    <label><i class="fa-solid fa-user-tie"></i> 承辦人員：</label>
+                    <select id="filterAssignee" class="form-select">
+                        <option value="">承辦人員 (全部)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fa-solid fa-layer-group"></i> 公文狀態：</label>
+                    <select id="filterDocStatus" class="form-select">
+                        <option value="">公文狀態 (全部)</option>
+                        <option value="處理中">處理中</option>
+                        <option value="不需醫師已完成">不需醫師已完成</option>
+                        <option value="已完成">已完成</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fa-solid fa-stethoscope"></i> 醫師函詢狀態：</label>
+                    <select id="filterIssueStatus" class="form-select">
+                        <option value="">醫師函詢狀態 (全部)</option>
+                        <option value="待發送">待發送</option>
+                        <option value="已發送">已發送</option>
+                        <option value="已回覆">已回覆 (待審核)</option>
+                        <option value="退回補件">退回補件</option>
+                        <option value="已完成">已完成</option>
+                    </select>
+                </div>
+                <button id="btnClearFilters" class="btn btn-outline-secondary" title="清除所有篩選條件">
+                    <i class="fa-solid fa-rotate-left"></i> 清除篩選
+                </button>
+                <button id="btnResetDefaultData" class="btn btn-outline-warning" onclick="resetDefaultData()" title="重置還原預設公文範例資料" style="margin-left:8px;">
+                    <i class="fa-solid fa-arrows-rotate"></i> 重置範例資料
+                </button>
+            </div>
+        </section>
+
+        <!-- Main Data Table Container -->
+        <section class="table-section card-box">
+            <div class="table-header">
+                <h3><i class="fa-solid fa-list-check"></i> 公文主檔與醫師函詢清單</h3>
+                <span class="text-muted" id="recordCountText">共 0 筆資料</span>
+            </div>
+            <div class="table-responsive">
+                <table class="custom-table" id="mainDocTable">
+                    <thead>
+                        <tr>
+                            <th width="40"></th>
+                            <th>收發文號 <i class="fa-solid fa-sort"></i></th>
+                            <th>病歷號</th>
+                            <th>病患姓名</th>
+                            <th>函詢醫師數量 / 明細</th>
+                            <th>整合完成率 (進度)</th>
+                            <th>承辦人員</th>
+                            <th>公文狀態</th>
+                            <th>建立時間 <i class="fa-solid fa-sort-down"></i></th>
+                            <th width="140">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mainDocTbody">
+                        <!-- Dynamic Rows -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= MODALS ================= -->
+
+    <!-- Modal 1: Main Document Modal (公文主檔 20 欄位) -->
+    <div class="modal-backdrop" id="modalMainDoc">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <h3 id="modalMainDocTitle"><i class="fa-solid fa-file-invoice"></i> 新增 / 編輯 公文主檔</h3>
+                <button class="btn-close" onclick="closeModal('modalMainDoc')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="formMainDoc" onsubmit="event.preventDefault(); saveMainDoc();">
+                    <input type="hidden" id="mainDocId">
+                    <div class="form-grid">
+                        <div class="form-group required">
+                            <label>收發文號 *</label>
+                            <input type="text" id="doc_receive_no" class="form-control" required placeholder="例如：1150009463">
+                        </div>
+                        <div class="form-group">
+                            <label>創稿文號</label>
+                            <input type="text" id="doc_create_no" class="form-control" placeholder="例如：1151294569">
+                        </div>
+                        <div class="form-group">
+                            <label>來文單位</label>
+                            <input type="text" id="doc_sender_org" class="form-control" placeholder="例如：勞動部勞工保險局">
+                        </div>
+                        <div class="form-group">
+                            <label>收發日期</label>
+                            <input type="date" id="doc_receive_date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>發文日期</label>
+                            <input type="date" id="doc_issue_date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>發文字號</label>
+                            <input type="text" id="doc_issue_no" class="form-control" placeholder="例如：保職失字第11560220220號">
+                        </div>
+                        <div class="form-group span-2">
+                            <label>主旨</label>
+                            <textarea id="doc_subject" class="form-control" rows="3" placeholder="請輸入公文主旨與說明事項..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>病歷號</label>
+                            <input type="text" id="doc_chart_no" class="form-control" placeholder="例如：17525415">
+                        </div>
+                        <div class="form-group">
+                            <label>病患姓名</label>
+                            <input type="text" id="doc_patient_name" class="form-control" placeholder="例如：李銀雪">
+                        </div>
+                        <div class="form-group">
+                            <label>調病歷</label>
+                            <input type="text" id="doc_chart_status" class="form-control" placeholder="例如：已調閱 / 待調閱 / 影本提供">
+                        </div>
+                        <div class="form-group">
+                            <label>承辦人員</label>
+                            <input type="text" id="doc_assignee" class="form-control" list="caseworkerDatalist" placeholder="輸入或選取承辦人員 (陽書湘/錢佩妤/何秀英)">
+                        </div>
+                        <div class="form-group">
+                            <label>病歷查詢費</label>
+                            <input type="number" id="doc_fee" class="form-control" placeholder="1000">
+                        </div>
+                        <div class="form-group">
+                            <label>勞保局受理編號</label>
+                            <input type="text" id="doc_labor_no" class="form-control" placeholder="例如：115031019735號">
+                        </div>
+                        <div class="form-group">
+                            <label>函覆文號</label>
+                            <input type="text" id="doc_reply_no" class="form-control" placeholder="例如：1151202001">
+                        </div>
+                        <div class="form-group">
+                            <label>函覆日期</label>
+                            <input type="date" id="doc_reply_date" class="form-control">
+                        </div>
+                        <div class="form-group span-2">
+                            <label>公文附件檔案 (支援 PDF/Word 實體公文)</label>
+                            <div class="file-upload-box">
+                                <input type="file" id="doc_file_input" multiple onchange="handleFileSelected(this, 'mainDocFilesList')">
+                                <label for="doc_file_input" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-paperclip"></i> 新增附件 (可選取電腦中多個 PDF/Word 實體公文)
+                                </label>
+                                <span class="file-tip text-muted"><i class="fa-solid fa-cloud-arrow-up"></i> >10MB 或 >25MB 將自動轉為 Google Drive 雲端連結</span>
+                                <div id="mainDocFilesList" class="selected-files-list"></div>
+                            </div>
+                        </div>
+                        <div class="form-group span-2">
+                            <label>備註</label>
+                            <input type="text" id="doc_remark" class="form-control" placeholder="備註說明...">
+                        </div>
+                        <div class="form-group span-2">
+                            <label>公文狀態設定</label>
+                            <select id="doc_status" class="form-select">
+                                <option value="處理中">⏳ 處理中 (預設，作業中或待函詢醫師)</option>
+                                <option value="不需醫師已完成">🟢 不需醫師已完成</option>
+                                <option value="已完成">✅ 已完成</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal('modalMainDoc')">取消</button>
+                        <button type="submit" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i> 儲存公文主檔</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 承辦人員快速選取選單 (輸入 陽 / 錢 / 何 自動提示) -->
+    <datalist id="caseworkerDatalist">
+        <option value="陽書湘">陽書湘 (14301@s.tmu.edu.tw / 分機 2037)</option>
+        <option value="錢佩妤">錢佩妤 (19020@s.tmu.edu.tw / 分機 2043)</option>
+        <option value="何秀英">何秀英 (12254@s.tmu.edu.tw / 分機 2043)</option>
+    </datalist>
+
+    <!-- Modal 2: Doctor Inquiry Detail Modal (醫師函詢明細 24 欄位) -->
+    <div class="modal-backdrop" id="modalIssue">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <h3 id="modalIssueTitle"><i class="fa-solid fa-pen-to-square"></i> 編輯醫師函詢明細</h3>
+                <button class="btn-close" onclick="closeModal('modalIssue')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="formIssue" onsubmit="event.preventDefault(); saveIssue();">
+                    <input type="hidden" id="issue_id">
+                    <input type="hidden" id="issue_doc_no">
+                    <div class="form-grid">
+                        <div class="form-group span-2 required">
+                            <label>問題內容 / 詢問摘要 *</label>
+                            <textarea id="issue_question" class="form-control" rows="4" required placeholder="請詳細列出函詢醫師之問題與確認事項..."></textarea>
+                        </div>
+                        <div class="form-group required">
+                            <label>收發文號 *</label>
+                            <input type="text" id="issue_receive_no_display" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>病歷號</label>
+                            <input type="text" id="issue_chart_no" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>病患姓名</label>
+                            <input type="text" id="issue_patient_name" class="form-control">
+                        </div>
+                        <div class="form-group required">
+                            <label>醫師姓名 *</label>
+                            <input type="text" id="issue_doctor_name" class="form-control" required placeholder="例如：鄭景泉">
+                        </div>
+                        <div class="form-group required">
+                            <label>醫師電子郵件 (Email) *</label>
+                            <input type="email" id="issue_doctor_email" class="form-control" required placeholder="16044@s.tmu.edu.tw">
+                        </div>
+                        <div class="form-group">
+                            <label>備用電子郵件 1 (副本 CC)</label>
+                            <input type="email" id="issue_cc_email1" class="form-control" placeholder="10140@s.tmu.edu.tw">
+                        </div>
+                        <div class="form-group">
+                            <label>備用電子郵件 2 (副本 CC)</label>
+                            <input type="email" id="issue_cc_email2" class="form-control" placeholder="備用 Email 2 (同步副本 CC)">
+                        </div>
+                        <div class="form-group">
+                            <label>填單人 (承辦) 姓名</label>
+                            <input type="text" id="issue_creator_name" class="form-control" list="caseworkerDatalist" placeholder="選取或輸入承辦人員 (陽書湘/錢佩妤/何秀英)">
+                        </div>
+                        <div class="form-group">
+                            <label>承辦分機</label>
+                            <input type="text" id="issue_creator_ext" class="form-control" placeholder="例如：2037">
+                        </div>
+                        <div class="form-group">
+                            <label>填單人 (承辦) 電子郵件</label>
+                            <input type="email" id="issue_creator_email" class="form-control" placeholder="14301@s.tmu.edu.tw">
+                        </div>
+                        <div class="form-group">
+                            <label>回覆期限</label>
+                            <input type="date" id="issue_due_date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>函詢狀態設定</label>
+                            <select id="issue_status" class="form-select">
+                                <option value="待發送">⏳ 待發送</option>
+                                <option value="已發送">✉️ 已發送</option>
+                                <option value="已回覆">📥 已回覆 (待審核)</option>
+                                <option value="退回補件">↩️ 退回補件</option>
+                                <option value="已完成">✅ 已完成 (結案)</option>
+                            </select>
+                        </div>
+                        <div class="form-group span-2">
+                            <label>函詢專屬附件 (病歷/檢驗報告/圖片)</label>
+                            <div class="file-upload-box">
+                                <input type="file" id="issue_file_input" multiple onchange="handleFileSelected(this, 'issueFilesList')">
+                                <label for="issue_file_input" class="btn btn-outline-primary btn-sm">
+                                    <i class="fa-solid fa-paperclip"></i> 新增附件檔 (無大小限制)
+                                </label>
+                                <span class="file-tip text-muted"><i class="fa-solid fa-cloud-arrow-up"></i> >5MB 大型檔案發信時將全自動分批上傳至 Google Drive 並提供下載連結</span>
+                                <div id="issueFilesList" class="selected-files-list"></div>
+                                <div class="mt-2">
+                                    <label style="font-size:12px;color:#5f6368;"><i class="fa-solid fa-link"></i> 自訂 Google Drive / 雲端共用連結 (備用手動貼上，非必填)：</label>
+                                    <input type="url" id="issue_drive_link_override" class="form-control form-control-sm" placeholder="例如：https://drive.google.com/file/d/.../view">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group span-2">
+                            <label>醫師意見回覆 (回信寫入內容)</label>
+                            <textarea id="issue_doctor_reply" class="form-control" rows="3" placeholder="醫師透過 Email 回覆後，系統將自動寫入此處..."></textarea>
+                        </div>
+                        <div class="form-group span-2">
+                            <label>備註說明</label>
+                            <input type="text" id="issue_remark" class="form-control" placeholder="備註...">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal('modalIssue')">取消</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> 儲存並自動發送 Google 郵件</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Return Reason Modal (退回補件原因強制對話框) -->
+    <div class="modal-backdrop" id="modalReturnReason">
+        <div class="modal-content modal-md">
+            <div class="modal-header header-danger">
+                <h3><i class="fa-solid fa-rotate-left"></i> 退回醫師補件 - 請輸入退回原因</h3>
+                <button class="btn-close" onclick="closeModal('modalReturnReason')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="text-danger mb-2"><strong><i class="fa-solid fa-circle-exclamation"></i> 注意：退回補件必須填寫原因，系統將自動寄發「退回補件通知信」給醫師。</strong></p>
+                <div class="form-group">
+                    <label>退回原因 *</label>
+                    <textarea id="return_reason_text" class="form-control" rows="4" placeholder="例如：回附太簡略，請補充詳細說明與簽章..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('modalReturnReason')">取消</button>
+                <button type="button" class="btn btn-danger" onclick="confirmReturnIssue()"><i class="fa-solid fa-paper-plane"></i> 確認退回並發送郵件</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Email Preview Modal (5 款標準範本預覽) -->
+    <div class="modal-backdrop" id="modalEmailPreview">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-envelope-open-text"></i> Google 郵件發送內容預覽</h3>
+                <button class="btn-close" onclick="closeModal('modalEmailPreview')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="email-meta-card mb-3">
+                    <div><strong>收件人 (To)：</strong> <span id="previewTo"></span></div>
+                    <div><strong>副本 (Cc)：</strong> <span id="previewCc"></span></div>
+                    <div><strong>郵件主旨：</strong> <span id="previewSubject"></span></div>
+                </div>
+                <div id="emailTemplateContainer" class="email-template-wrapper">
+                    <!-- Dynamic HTML Email Template -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('modalEmailPreview')">關閉</button>
+                <button type="button" class="btn btn-success" id="btnConfirmSendEmail"><i class="fa-solid fa-paper-plane"></i> 透過 Gmail API 自動發送郵件</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Doctor Reply Simulator Modal (模擬醫師回信) -->
+    <div class="modal-backdrop" id="modalSimulateReply">
+        <div class="modal-content modal-md">
+            <div class="modal-header header-info">
+                <h3><i class="fa-solid fa-reply"></i> 測試模擬 - 醫師收到信後直接回覆</h3>
+                <button class="btn-close" onclick="closeModal('modalSimulateReply')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="text-muted mb-2">模擬醫師收到 Google 郵件後，直接點擊「回覆」此封 Email 並輸入回答內文：</p>
+                <input type="hidden" id="simulate_issue_id">
+                <div class="form-group">
+                    <label>醫師回覆意見 *</label>
+                    <textarea id="simulate_reply_content" class="form-control" rows="4" placeholder="例如：查病患於114/09/03住院，病情已穩定符合釋出標準..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('modalSimulateReply')">取消</button>
+                <button type="button" class="btn btn-primary" onclick="submitSimulatedDoctorReply()"><i class="fa-solid fa-check"></i> 模擬寫入與更新狀態</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Settings Modal (Google API & App Config) -->
+    <div class="modal-backdrop" id="modalSettings">
+        <div class="modal-content modal-md">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-gear"></i> 系統與 Google 信箱整合設定</h3>
+                <button class="btn-close" onclick="closeModal('modalSettings')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group mb-3">
+                    <label>預設發件 Google 信箱 (Gmail)</label>
+                    <input type="email" id="cfg_sender_email" class="form-control" value="e700document@s.tmu.edu.tw">
+                </div>
+                <div class="form-group mb-3">
+                    <label>預設預設醫院單位名稱</label>
+                    <input type="text" id="cfg_hospital_dept" class="form-control" value="雙和醫院病歷組">
+                </div>
+                <div class="form-group mb-3">
+                    <label>Google Apps Script Webhook URL</label>
+                    <input type="text" id="cfg_gas_url" class="form-control" value="https://script.google.com/macros/s/AKfycbx87h6mC7Li00_fspjb8HTZ9oD3V47Ky3-nzx2w_8u_Emm6ZGaR59RMXWDx0g1OHUefZQ/exec" placeholder="https://script.google.com/macros/s/AKfycbx87h6mC7Li00_fspjb8HTZ9oD3V47Ky3-nzx2w_8u_Emm6ZGaR59RMXWDx0g1OHUefZQ/exec">
+                    <small class="text-muted">預設已連結至雙和醫院病歷組 Google Apps Script Webhook 服務。</small>
+                </div>
+                <div class="form-group">
+                    <label>自動催辦天數條件 (預設 1 天未回覆)</label>
+                    <input type="number" id="cfg_overdue_days" class="form-control" value="1" min="1" max="30">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('modalSettings')">關閉</button>
+                <button type="button" class="btn btn-success" onclick="saveSettings()"><i class="fa-solid fa-floppy-disk"></i> 儲存設定</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toastNotification" class="toast hidden"></div>
+
+    <!-- Persistent Upload Progress Box (No Flashing / Blinking) -->
+    <div id="uploadProgressBox" class="upload-progress-box hidden">
+        <div class="progress-info">
+            <div class="progress-title">
+                <i class="fa-solid fa-cloud-arrow-up spin-icon"></i> <span id="uploadFileNameText">大型檔案上傳中...</span>
+            </div>
+            <div id="uploadPercentText" class="progress-pct">0%</div>
+        </div>
+        <div class="progress-bar-track">
+            <div id="uploadProgressBarFill" class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+        <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

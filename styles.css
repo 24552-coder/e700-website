@@ -1,0 +1,778 @@
+/* ==========================================
+   雙和醫院病歷組 - 全域樣式設計系統 (高清大字體適老/醫療護理專用版)
+   ========================================== */
+
+:root {
+    --primary: #0f766e;
+    --primary-dark: #0d5c56;
+    --primary-light: #ccfbf1;
+    --secondary: #64748b;
+    --success: #10b981;
+    --success-bg: #d1e7dd;
+    --warning: #f59e0b;
+    --warning-bg: #fff3cd;
+    --danger: #ef4444;
+    --danger-bg: #f8d7da;
+    --info: #3b82f6;
+    --info-bg: #cff4fc;
+    --dark: #0f172a;
+    --light-bg: #f8fafc;
+    --card-bg: #ffffff;
+    --border: #cbd5e1;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --radius: 10px;
+    --font: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font);
+    background-color: #f1f5f9;
+    color: var(--dark);
+    line-height: 1.6;
+    font-size: 16px; /* 高清大字體 */
+}
+
+/* App Header */
+.app-header {
+    background: linear-gradient(135deg, #0f766e 0%, #0f172a 100%);
+    color: white;
+    padding: 18px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #5eead4;
+}
+
+.header-title h1 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.header-title .sub-title {
+    font-size: 14px;
+    opacity: 0.95;
+    font-weight: 400;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* App Container */
+.app-container {
+    max-width: 1750px;
+    margin: 24px auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* KPI Grid & Cards */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    width: 100%;
+}
+
+@media (max-width: 1300px) {
+    .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .kpi-grid { grid-template-columns: repeat(1, 1fr); }
+}
+
+.kpi-card {
+    background: #ffffff;
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 105px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    border-left: 6px solid #cbd5e1;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-total-cases { border-left-color: #0284c7; }
+.card-total-issues { border-left-color: #7c3aed; }
+.card-replied { border-left-color: #0284c7; }
+.card-completed { border-left-color: #16a34a; }
+.card-processing { border-left-color: #d97706; }
+
+.kpi-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.card-total-cases .kpi-icon { background: #e0f2fe; color: #0284c7; }
+.card-total-issues .kpi-icon { background: #f3e8ff; color: #7c3aed; }
+.card-replied .kpi-icon { background: #e0f2fe; color: #0369a1; }
+.card-completed .kpi-icon { background: #dcfce7; color: #15803d; }
+.card-processing .kpi-icon { background: #fef3c7; color: #b45309; }
+
+.kpi-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.kpi-label {
+    font-size: 14px;
+    color: #475569;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.kpi-value {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--dark);
+}
+
+/* Alert Banner */
+.alert-banner {
+    background: #fef2f2;
+    border: 1px solid #fca5a5;
+    border-left: 6px solid #dc2626;
+    border-radius: var(--radius);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.alert-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.alert-title {
+    color: #991b1b;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.alert-title i {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #dc2626;
+}
+
+/* Card Box */
+.card-box {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+
+/* Filter Row */
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+}
+
+.search-input-group {
+    position: relative;
+    flex: 1;
+    min-width: 320px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+.search-input-group input {
+    padding-left: 42px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-group label {
+    font-size: 14px;
+    color: #334155;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Form Controls */
+.form-control, .form-select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px; /* 加大輸入框字體 */
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #fff;
+    color: #0f172a;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.18);
+}
+
+textarea.form-control {
+    resize: vertical;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 18px;
+    font-size: 15px; /* 加大按鈕字體 */
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.btn-primary { background: var(--primary); color: white; }
+.btn-primary:hover { background: var(--primary-dark); }
+.btn-success { background: var(--success); color: white; }
+.btn-success:hover { background: #059669; }
+.btn-danger { background: var(--danger); color: white; }
+.btn-danger:hover { background: #dc2626; }
+.btn-secondary { background: #e2e8f0; color: #334155; }
+.btn-secondary:hover { background: #cbd5e1; }
+.btn-outline-primary { border-color: var(--primary); color: var(--primary); background: transparent; }
+.btn-outline-primary:hover { background: var(--primary-light); }
+.btn-outline-success { border-color: var(--success); color: var(--success); background: transparent; }
+.btn-outline-success:hover { background: #ecfdf5; }
+.btn-outline-info { border-color: var(--info); color: var(--info); background: transparent; }
+.btn-outline-info:hover { background: #e0f2fe; }
+.btn-outline-secondary { border-color: #94a3b8; color: #475569; background: transparent; }
+.btn-outline-secondary:hover { background: #f1f5f9; }
+.btn-icon { padding: 10px 14px; background: rgba(255,255,255,0.18); color: white; font-size: 18px; }
+.btn-icon:hover { background: rgba(255,255,255,0.28); }
+.btn-sm { padding: 7px 12px; font-size: 13.5px; border-radius: 6px; }
+
+/* Table Section */
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--border);
+}
+
+.table-header h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px; /* 加大表格字體 */
+}
+
+.custom-table th {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-weight: 700;
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 2.5px solid #cbd5e1;
+    white-space: nowrap;
+    font-size: 15.5px;
+}
+
+.custom-table td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.custom-table tr:hover td {
+    background-color: #f8fafc;
+}
+
+.row-main-doc.expanded {
+    background-color: #f0fdf4;
+}
+
+.toggle-icon {
+    cursor: pointer;
+    color: var(--primary);
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+.toggle-icon.open {
+    transform: rotate(90deg);
+}
+
+/* Nested Doctor Inquiry Table Container */
+.nested-table-container {
+    padding: 18px 24px 22px 48px;
+    background-color: #f8fafc;
+    border-bottom: 2px solid var(--border);
+    font-size: 14.5px;
+}
+
+.nested-table {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1.5px solid #cbd5e1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+}
+
+.nested-table th {
+    background: #e2e8f0;
+    color: #1e293b;
+    font-size: 14.5px;
+    font-weight: 700;
+    padding: 12px 16px;
+}
+
+.nested-table td {
+    font-size: 14.5px; /* 加大醫師函詢內容字體 */
+    padding: 13px 16px;
+    line-height: 1.6;
+}
+
+.action-btn-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Badges & Progress Pills */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 14px;
+    font-size: 13.5px; /* 加大標籤字體 */
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.badge-warning { background: var(--warning-bg); color: #856404; border: 1.5px solid #ffeeba; }
+.badge-info { background: var(--info-bg); color: #055160; border: 1.5px solid #b6effb; }
+.badge-success { background: var(--success-bg); color: #0f5132; border: 1.5px solid #badbcc; }
+.badge-danger { background: var(--danger-bg); color: #842029; border: 1.5px solid #f5c2c7; }
+.badge-secondary { background: #e2e8f0; color: #334155; }
+
+/* Interactive Issue Status Dropdown Select inside nested table */
+.issue-status-select {
+    padding: 6px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1.5px solid #cbd5e1;
+    outline: none;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.issue-status-select.status-pending { background: #fef3c7; color: #92400e; border-color: #fde68a; }
+.issue-status-select.status-sent { background: #fff3cd; color: #856404; border-color: #ffeeba; }
+.issue-status-select.status-replied { background: #cff4fc; color: #055160; border-color: #b6effb; }
+.issue-status-select.status-returned { background: #f8d7da; color: #842029; border-color: #f5c2c7; }
+.issue-status-select.status-completed { background: #d1e7dd; color: #0f5132; border-color: #badbcc; }
+
+.issue-status-select:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    transform: scale(1.02);
+}
+
+/* Progress Pill */
+.progress-pill {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 14px; /* 加大進度字體 */
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.progress-pill.completed {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+/* Modals */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.modal-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 14px;
+    width: 95%;
+    max-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    transform: translateY(20px);
+    transition: transform 0.25s ease;
+    font-size: 15px;
+}
+
+.modal-backdrop.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-sm { max-width: 520px; }
+.modal-md { max-width: 740px; }
+.modal-lg { max-width: 1020px; }
+
+.modal-header {
+    padding: 18px 28px;
+    border-bottom: 1.5px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+}
+
+.modal-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.btn-close {
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.btn-close:hover { color: var(--dark); }
+
+.modal-body {
+    padding: 28px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.modal-footer {
+    padding: 16px 28px;
+    border-top: 1.5px solid var(--border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    background: #f8fafc;
+}
+
+/* ==========================================
+   Gmail Window Mockup matching User Screenshots
+   ========================================== */
+.gmail-mockup-wrapper {
+    border: 1.5px solid #dadce0;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+}
+
+.gmail-header-row {
+    padding: 18px 28px 14px;
+    border-bottom: 1.5px solid #f1f3f4;
+}
+
+.gmail-subject {
+    font-size: 19px;
+    font-weight: 600;
+    color: #202124;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.gmail-badge {
+    background: #e8eaed;
+    color: #3c4043;
+    font-size: 12.5px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-weight: normal;
+}
+
+.gmail-sender-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gmail-sender-details {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.gmail-avatar-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #1a73e8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.gmail-sender-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #202124;
+}
+
+.gmail-sender-email {
+    font-size: 13.5px;
+    color: #5f6368;
+}
+
+.gmail-date-text {
+    font-size: 13.5px;
+    color: #5f6368;
+}
+
+.gmail-content-body {
+    padding: 28px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+/* Form Layout Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group.span-2 {
+    grid-column: span 2;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14.5px;
+    color: #1e293b;
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    padding: 16px 28px;
+    background: var(--dark);
+    color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow-lg);
+    z-index: 2000;
+    font-size: 15.5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.toast.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.toast-success { background: #065f46; border-left: 6px solid #10b981; }
+.toast-danger { background: #991b1b; border-left: 6px solid #ef4444; }
+.toast-info { background: #1e40af; border-left: 6px solid #3b82f6; }
+
+.text-muted { color: #64748b; }
+.text-danger { color: var(--danger); }
+.hidden { display: none !important; }
+.mb-2 { margin-bottom: 8px; }
+.mb-3 { margin-bottom: 12px; }
+
+/* Persistent Upload Progress Box (No Flashing / Blinking) */
+.upload-progress-box {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 440px;
+    background: #0f172a;
+    color: #ffffff;
+    padding: 18px 22px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    z-index: 9999;
+    font-family: var(--font);
+    border: 1px solid #334155;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.upload-progress-box.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.progress-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #e2e8f0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 310px;
+}
+
+.progress-pct {
+    font-size: 16px;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.progress-bar-track {
+    width: 100%;
+    height: 10px;
+    background: #334155;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #0284c7, #38bdf8);
+    width: 0%;
+    transition: width 0.25s linear;
+    border-radius: 5px;
+}
+
+.progress-subtext {
+    font-size: 12.5px;
+    color: #94a3b8;
+}
+
+.spin-icon {
+    display: inline-block;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
