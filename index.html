@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- SheetJS for Excel Export -->
     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-    <link rel="stylesheet" href="styles.css?v=20260910_v8">
+    <link rel="stylesheet" href="styles.css?v=v19">
 </head>
 <body>
     <!-- Top Header -->
@@ -145,16 +145,16 @@
                 <table class="custom-table" id="mainDocTable">
                     <thead>
                         <tr>
-                            <th style="width: 45px; text-align: center;"></th>
-                            <th style="width: 140px;">收發文號 <i class="fa-solid fa-sort"></i></th>
-                            <th style="width: 110px;">病歷號</th>
-                            <th style="width: 110px;">病患姓名</th>
-                            <th style="width: 160px;">函詢醫師數量 / 明細</th>
-                            <th style="width: 150px;">整合完成率 (進度)</th>
-                            <th style="width: 110px;">承辦人員</th>
-                            <th style="width: 140px;">公文狀態</th>
-                            <th style="width: 160px;">建立時間 <i class="fa-solid fa-sort-down"></i></th>
-                            <th style="width: 215px; text-align: center;">操作</th>
+                            <th style="width:38px; text-align:center;"></th>
+                            <th id="thSortReceiveNo" style="width:130px; cursor:pointer; user-select:none;" onclick="setSortField('doc_receive_no')" title="點擊依收發文號排序">收發文號 <i id="iconSortReceiveNo" class="fa-solid fa-sort" style="opacity:0.4;"></i></th>
+                            <th style="width:95px;">病歷號</th>
+                            <th style="width:90px;">病患姓名</th>
+                            <th style="width:130px;">函詢醫師數 / 明細</th>
+                            <th style="width:120px;">整合進度</th>
+                            <th style="width:90px;">承辦人員</th>
+                            <th style="width:115px;">公文狀態</th>
+                            <th id="thSortCreatedAt" style="width:150px; cursor:pointer; user-select:none;" onclick="setSortField('created_at')" title="點擊依建立時間排序">建立時間 <i id="iconSortCreatedAt" class="fa-solid fa-sort-down"></i></th>
+                            <th style="width:190px; text-align:center;">操作</th>
                         </tr>
                     </thead>
                     <tbody id="mainDocTbody">
@@ -508,6 +508,6 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=20260910_v11"></script>
+    <script src="app.js?v=v19"></script>
 </body>
 </html>
