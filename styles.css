@@ -343,7 +343,7 @@ textarea.form-control {
 
 .custom-table {
     width: 100%;
-    min-width: 1250px;
+    min-width: 1380px;
     table-layout: fixed;
     border-collapse: collapse;
     font-size: 15px; /* 加大表格字體 */
@@ -369,6 +369,13 @@ textarea.form-control {
     font-size: 14.5px;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.custom-table th:last-child,
+.custom-table td:last-child {
+    overflow: visible;
+    text-overflow: clip;
     white-space: nowrap;
 }
 
