@@ -832,3 +832,22 @@ thead th[onclick]:hover { background: #e9f0fb !important; color: #1e40af !import
     font-weight: 600;
     font-size: 12.5px;
 }
+
+
+/* Full-width Subject Box styling */
+.subject-box {
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.65;
+    font-size: 13.5px;
+    color: #0f172a;
+    background: #f0f9ff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 3.5px solid #0284c7;
+    margin-top: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+.detail-item.span-full {
+    grid-column: 1 / -1 !important;
+}

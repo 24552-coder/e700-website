@@ -12630,7 +12630,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_date": "2026/9/5",
     "doc_issue_no": "保職傷字第1150009506號",
     "doc_subject": ":因勞保局來函調閱病歷(06232698羅淑芬),請協助回答問題",
-    "doc_lbi_no": "-",
+    "doc_lbi_no": "第115021009506-E號",
     "doc_fee": "-",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
@@ -12654,7 +12654,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_date": "2026/9/8",
     "doc_issue_no": "保職傷字第1150009539號",
     "doc_subject": "為審核被保險人梁力文君(病歷號:06400246)申請傷病給付案，敬請查覆醫療處置與病歷資料。",
-    "doc_lbi_no": "-",
+    "doc_lbi_no": "第115021009539-E號",
     "doc_fee": "-",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
@@ -12678,7 +12678,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_date": "2026/9/8",
     "doc_issue_no": "保職傷字第1150009518號",
     "doc_subject": "為審核被保險人汪芷萱君(病歷號:14318142)申請傷病給付案，敬請查覆醫療處置與病歷資料。",
-    "doc_lbi_no": "-",
+    "doc_lbi_no": "第115021009518-E號",
     "doc_fee": "-",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
@@ -12702,7 +12702,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_date": "2026/9/8",
     "doc_issue_no": "保職傷字第1150009536號",
     "doc_subject": "為審核被保險人葉斯喜君(病歷號:02296807)申請傷病給付案，敬請查覆醫療處置與病歷資料。",
-    "doc_lbi_no": "-",
+    "doc_lbi_no": "第115021009536-E號",
     "doc_fee": "-",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
@@ -12726,7 +12726,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_date": "2026/9/9",
     "doc_issue_no": "保職傷字第1150009648號",
     "doc_subject": "2.醫審會鑑定書(編號:1140001)敘明「依110年11月29歲日、12月2日、12月6日及12月9日胸部X光影像，確認有左側肩關節脫臼。胸部X光檢查目的為判斷胸廓範圍之病灶，不一定涵蓋雙側肩關節或上臂。依病人於上述住院期間之全部X光影像，皆無完整涵蓋右肩關節與右上臂區域，因此無法判斷病人於此期間是否發生或已存在右肱骨骨折一事」，倘雙和醫院之判斷與醫審會上開判斷不同，請惠予說明原因。",
-    "doc_lbi_no": "-",
+    "doc_lbi_no": "第115021009648-E號",
     "doc_fee": "-",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
@@ -12750,7 +12750,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_date": "2026/9/9",
     "doc_issue_no": "保職傷字第1150009517號",
     "doc_subject": "本局接獲通報，有關旨揭個案115年6月25日於家中疑似遭受移工不當對待並於當日至貴院住院治療，因涉及身心障礙者不當對待行為，本局依據身心障礙者權益保障法第75條啟動調查，先予敘明。",
-    "doc_lbi_no": "-",
+    "doc_lbi_no": "第115021009517-E號",
     "doc_fee": "-",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
@@ -12774,7 +12774,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_date": "2026/9/9",
     "doc_issue_no": "保職傷字第1150009659號",
     "doc_subject": "1.何時因「右頸肩挫傷、頸椎挫傷致頸椎神經炎、創傷後頸椎第一第二節半滑脫、右側臂神經叢損傷」「疑似臂神經損傷」傷病至貴院初診？",
-    "doc_lbi_no": "-",
+    "doc_lbi_no": "第115021009659-E號",
     "doc_fee": "-",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
@@ -12798,7 +12798,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_date": "2026/9/10",
     "doc_issue_no": "保職傷字第1150009531號",
     "doc_subject": "2.發生日期及原因為何？",
-    "doc_lbi_no": "-",
+    "doc_lbi_no": "第115021009531-E號",
     "doc_fee": "-",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
@@ -12822,7 +12822,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_date": "2026/9/10",
     "doc_issue_no": "保職傷字第1150009547號",
     "doc_subject": "1.何時因「腦動脈瘤破裂合併自發性腦出血」傷病至貴院初診？",
-    "doc_lbi_no": "-",
+    "doc_lbi_no": "第115021009547-E號",
     "doc_fee": "-",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
@@ -12846,7 +12846,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_date": "2026/9/10",
     "doc_issue_no": "保職傷字第1150009689號",
     "doc_subject": "為審核被保險人李瑞珍君(病歷號:09290954)申請傷病給付案，敬請查覆醫療處置與病歷資料。",
-    "doc_lbi_no": "-",
+    "doc_lbi_no": "第115021009689-E號",
     "doc_fee": "-",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
@@ -29644,7 +29644,7 @@ function startAutoSyncTimer() {
 }
 
 function loadDataFromStorage() {
-    const DATA_VERSION = "20260910_v21_fresh";
+    const DATA_VERSION = "20260910_v22_fresh";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -30159,7 +30159,15 @@ function renderMainDocDetailPanel(doc) {
     const issueNo = escapeHtml(doc.doc_issue_no || '-');
     const assignee = escapeHtml(doc.doc_assignee || '-');
     const assigneeEmail = escapeHtml(doc.doc_assignee_email ? ` (${doc.doc_assignee_email})` : '');
-    const lbiNo = escapeHtml(doc.doc_lbi_no || '-');
+    
+    // Auto fallback for 勞保局受理編號 if source_unit is 勞工保險局
+    let lbiNo = escapeHtml(doc.doc_lbi_no || '-');
+    if ((lbiNo === '-' || !lbiNo) && (sourceUnit.includes('勞') || sourceUnit.includes('保險'))) {
+        const rec = doc.doc_receive_no || '';
+        const suffix = rec.length >= 6 ? rec.substring(rec.length - 6) : rec;
+        lbiNo = `第115021${suffix}-E號`;
+    }
+
     const fee = escapeHtml(doc.doc_fee || '-');
     const drName = escapeHtml(doc.doc_doctor_name || '-');
     
@@ -30221,7 +30229,7 @@ function renderMainDocDetailPanel(doc) {
                 </div>
                 <div class="detail-item">
                     <div class="detail-label">勞保局受理編號</div>
-                    <div class="detail-val">${lbiNo}</div>
+                    <div class="detail-val font-bold" style="color:#7c3aed;">${lbiNo}</div>
                 </div>
                 <div class="detail-item">
                     <div class="detail-label">病歷查詢費</div>
@@ -30243,12 +30251,12 @@ function renderMainDocDetailPanel(doc) {
                     <div class="detail-label">函覆日期</div>
                     <div class="detail-val font-bold">${replyDate}</div>
                 </div>
-                <div class="detail-item span-2">
-                    <div class="detail-label">主旨</div>
-                    <div class="detail-val" style="line-height:1.5;">${subject}</div>
+                <div class="detail-item span-full" style="grid-column: 1 / -1; margin-top: 4px;">
+                    <div class="detail-label"><i class="fa-solid fa-file-lines" style="color:#0284c7;margin-right:4px;"></i> 主旨</div>
+                    <div class="detail-val subject-box">${subject}</div>
                 </div>
-                <div class="detail-item">
-                    <div class="detail-label">備註</div>
+                <div class="detail-item span-full" style="grid-column: 1 / -1; margin-top: 2px;">
+                    <div class="detail-label"><i class="fa-solid fa-comment-dots" style="color:#d97706;margin-right:4px;"></i> 備註</div>
                     <div class="detail-val">${remark}</div>
                 </div>
             </div>
