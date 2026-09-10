@@ -169,31 +169,33 @@ function scanGmailReplies() {
 
           // 自動發送「【已完成】醫師回覆已確認完成」通知信給病歷組
           try {
-            var notifySubject = "【已完成】醫師回覆已確認完成 單號：" + docNo;
+            var notifySubject = "【雙和醫院病歷組】醫師回覆已確認完成 單號：" + docNo + (issueId ? " (項次：" + issueId + ")" : "");
             var notifyHtml = `
-              <div style="font-family:Roboto, Arial, sans-serif;max-width:580px;margin:0 auto;border:1px solid #dadce0;border-radius:8px;overflow:hidden;background:#ffffff;">
-                  <div style="background:#0056D2;color:white;padding:18px 24px;text-align:center;font-size:17px;font-weight:bold;">
-                      【已完成】醫師回覆已確認完成
+              <div style="font-family:Roboto, Arial, sans-serif;max-width:580px;margin:0 auto;border:1px solid #dadce0;border-radius:8px;overflow:hidden;background:#ffffff;box-shadow:0 1px 3px rgba(0,0,0,0.1);">
+                  <div style="background:#15803D;color:white;padding:18px 24px;text-align:center;font-size:17px;font-weight:bold;letter-spacing:0.5px;">
+                      【結案】案件已結案完成通知
                   </div>
-                  <div style="padding:24px;line-height:1.7;color:#202124;font-size:14px;">
-                      <div style="background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                          <strong>● 醫師最新回覆內容：</strong><br>
-                          <div style="background:#ffffff;padding:10px 14px;border-radius:4px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-weight:bold;">
-                              ${cleanReply}
-                          </div>
-                          <div style="font-size:12px;color:#5f6368;margin-top:6px;">
-                              回覆時間：${dateStr} | 來自：${lastMsg.getFrom()}
+                  <div style="padding:24px;line-height:1.7;color:#202124;font-size:13px;">
+                      <div style="background:#E6F4EA;border:1px solid #CEEAD6;color:#137333;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
+                          <strong>● 醫師完整回覆內容</strong><br>
+                          <div style="background:#ffffff;padding:10px 14px;border-radius:4px;margin-top:6px;border:1px solid #dadce0;color:#202124;">
+                              [醫師原始回覆 ${dateStr}]: ${cleanReply}
                           </div>
                       </div>
                       <div style="margin-bottom:10px;">● <strong>案件單號：</strong> ${docNo}</div>
-                      <div style="margin-bottom:10px;">● <strong>函詢項次：</strong> ${issueId}</div>
+                      ${issueId ? `<div style="margin-bottom:10px;">● <strong>函詢項次：</strong> ${issueId}</div>` : ''}
+                      <div style="margin-bottom:10px;">● <strong>回覆來源：</strong> ${lastMsg.getFrom()}</div>
+                      <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
+                      <div style="font-size:12px;color:#5f6368;">
+                          ● 雙和醫院病歷組 自動對接系統
+                      </div>
                   </div>
               </div>
             `;
             // 發送確認完成通知信給寄件者本人
             GmailApp.sendEmail(Session.getEffectiveUser().getEmail(), notifySubject, "", {
               htmlBody: notifyHtml,
-              name: "雙和醫院病歷組自動系統"
+              name: "雙和醫院病歷組"
             });
           } catch(e) {}
         }
