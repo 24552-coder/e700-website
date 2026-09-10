@@ -30003,7 +30003,20 @@ function renderTable() {
         }
 
         if (gCurrentFilter.assignee && !assignee.includes(gCurrentFilter.assignee)) return false;
-        if (gCurrentFilter.docStatus && doc.doc_status !== gCurrentFilter.docStatus) return false;
+        if (gCurrentFilter.docStatus) {
+            const fst = gCurrentFilter.docStatus;
+            if (fst === "處理中") {
+                if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成") return false;
+            } else if (fst === "已完成") {
+                if (doc.doc_status !== "已完成" && doc.doc_status !== "不需醫師已完成") return false;
+            } else if (fst === "不需醫師已完成") {
+                if (doc.doc_status !== "不需醫師已完成") return false;
+            } else if (fst === "待回覆") {
+                if (doc.doc_status !== "待回覆" && doc.doc_status !== "待處理") return false;
+            } else {
+                if (doc.doc_status !== fst) return false;
+            }
+        }
 
         if (gCurrentFilter.issueStatus) {
             const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);

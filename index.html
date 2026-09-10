@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- SheetJS for Excel Export -->
     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-    <link rel="stylesheet" href="styles.css?v=v19">
+    <link rel="stylesheet" href="styles.css?v=v20">
 </head>
 <body>
     <!-- Top Header -->
@@ -110,7 +110,8 @@
                     <label><i class="fa-solid fa-layer-group"></i> 公文狀態：</label>
                     <select id="filterDocStatus" class="form-select">
                         <option value="">公文狀態 (全部)</option>
-                        <option value="處理中">處理中</option>
+                        <option value="處理中">處理中 / 待回覆</option>
+                        <option value="待回覆">待回覆</option>
                         <option value="不需醫師已完成">不需醫師已完成</option>
                         <option value="已完成">已完成</option>
                     </select>
@@ -508,6 +509,6 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=v19"></script>
+    <script src="app.js?v=v20"></script>
 </body>
 </html>
