@@ -335,11 +335,16 @@ textarea.form-control {
 }
 
 .table-responsive {
+    width: 100%;
     overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid var(--border);
 }
 
 .custom-table {
     width: 100%;
+    min-width: 1250px;
+    table-layout: fixed;
     border-collapse: collapse;
     font-size: 15px; /* 加大表格字體 */
 }
@@ -349,17 +354,22 @@ textarea.form-control {
     color: #1e293b;
     font-weight: 700;
     text-align: left;
-    padding: 14px 16px;
+    padding: 14px 12px;
     border-bottom: 2.5px solid #cbd5e1;
     white-space: nowrap;
-    font-size: 15.5px;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .custom-table td {
-    padding: 15px 16px;
+    padding: 14px 12px;
     border-bottom: 1px solid #e2e8f0;
     vertical-align: middle;
-    font-size: 15px;
+    font-size: 14.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .custom-table tr:hover td {
