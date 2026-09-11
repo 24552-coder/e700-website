@@ -11295,7 +11295,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_reply_no": "1151201741",
     "doc_reply_date": "",
     "doc_att_count": 1,
-    "doc_status": "待回覆",
+    "doc_status": "已完成",
     "doc_remark": "",
     "doc_doctor_name": "謝岳穎(回答問題)\n邱奕璁\n劉宇鈞\n吳俊穎\n陳嘉維",
     "doc_attachments": [],
@@ -11415,7 +11415,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_reply_no": "1151201786",
     "doc_reply_date": "",
     "doc_att_count": 1,
-    "doc_status": "待回覆",
+    "doc_status": "已完成",
     "doc_remark": "",
     "doc_doctor_name": "林乾閔(回答問題)",
     "doc_attachments": [],
@@ -11703,7 +11703,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_reply_no": "1151201801",
     "doc_reply_date": "",
     "doc_att_count": 1,
-    "doc_status": "待回覆",
+    "doc_status": "已完成",
     "doc_remark": "",
     "doc_doctor_name": "紀則宇(回答問題)",
     "doc_attachments": [],
@@ -11751,7 +11751,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_reply_no": "1151201764",
     "doc_reply_date": "",
     "doc_att_count": 1,
-    "doc_status": "待回覆",
+    "doc_status": "已完成",
     "doc_remark": "",
     "doc_doctor_name": "許彤年\n陳沛華",
     "doc_attachments": [],
@@ -11967,7 +11967,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_reply_no": "1151201873",
     "doc_reply_date": "",
     "doc_att_count": 1,
-    "doc_status": "待回覆",
+    "doc_status": "已完成",
     "doc_remark": "",
     "doc_doctor_name": "陳嘉泓(回答問題)\n徐嘉鴻\n鄔定宇",
     "doc_attachments": [],
@@ -11991,7 +11991,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_reply_no": "1151201882",
     "doc_reply_date": "",
     "doc_att_count": 1,
-    "doc_status": "待回覆",
+    "doc_status": "已完成",
     "doc_remark": "",
     "doc_doctor_name": "張統優(回答問題)\n翁佩韋(回答問題)\n陳國智",
     "doc_attachments": [],
@@ -12111,7 +12111,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_reply_no": "1151201884",
     "doc_reply_date": "",
     "doc_att_count": 1,
-    "doc_status": "待回覆",
+    "doc_status": "已完成",
     "doc_remark": "",
     "doc_doctor_name": "翁佩韋(回答問題)",
     "doc_attachments": [],
@@ -12135,7 +12135,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_reply_no": "",
     "doc_reply_date": "",
     "doc_att_count": 1,
-    "doc_status": "待回覆",
+    "doc_status": "已完成",
     "doc_remark": "",
     "doc_doctor_name": "黃裕閔(回答問題)",
     "doc_attachments": [],
@@ -12495,7 +12495,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_reply_no": "1151201914",
     "doc_reply_date": "",
     "doc_att_count": 1,
-    "doc_status": "待回覆",
+    "doc_status": "已完成",
     "doc_remark": "",
     "doc_doctor_name": "",
     "doc_attachments": [],
@@ -29644,7 +29644,7 @@ function startAutoSyncTimer() {
 }
 
 function loadDataFromStorage() {
-    const DATA_VERSION = "20260910_v22_fresh";
+    const DATA_VERSION = "20260911_v24_fresh";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -30029,7 +30029,8 @@ function renderTable() {
         } else if (gCurrentFilter.cardType === "completed") {
             if (doc.doc_status !== "已完成" && doc.doc_status !== "不需醫師已完成") return false;
         } else if (gCurrentFilter.cardType === "processing") {
-            if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成") return false;
+            const prog = calculateDocProgress(doc.doc_receive_no);
+            if (prog.isCompleted) return false;
         } else if (gCurrentFilter.cardType === "overdue") {
             const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
             if (!docIssues.some(i => isIssueOverdue(i))) return false;

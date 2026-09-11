@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- SheetJS for Excel Export -->
     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-    <link rel="stylesheet" href="styles.css?v=v23">
+    <link rel="stylesheet" href="styles.css?v=v24">
 </head>
 <body>
     <!-- Top Header -->
@@ -40,7 +40,8 @@
     </header>
 
     <main class="app-container">
-        <!-- Dashboard Summary Cards -->
+        <div class="sticky-top-panel">
+<!-- Dashboard Summary Cards -->
         <section class="kpi-grid">
             <div class="kpi-card card-total-cases" onclick="filterByCard('all')">
                 <div class="kpi-icon"><i class="fa-solid fa-folder-open"></i></div>
@@ -133,7 +134,9 @@
             </div>
         </section>
 
-        <!-- Main Data Table Container -->
+        </div>
+
+<!-- Main Data Table Container -->
         <section class="table-section card-box">
             <div class="table-header">
                 <h3><i class="fa-solid fa-list-check"></i> 公文主檔與醫師函詢清單</h3>
@@ -506,6 +509,6 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=v23"></script>
+    <script src="app.js?v=v24"></script>
 </body>
 </html>
