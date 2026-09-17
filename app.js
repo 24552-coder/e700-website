@@ -31702,6 +31702,12 @@ let gTempPendingEmailAction = null;
 // ----------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
     loadDataFromStorage();
+    if (!gMainDocs || !Array.isArray(gMainDocs) || gMainDocs.length === 0) {
+        console.warn("gMainDocs empty detected at startup, auto-restoring default 520 records...");
+        gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
+        gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+        saveDataToStorage();
+    }
     initUIEvents();
     renderDashboard();
     renderTable();
@@ -31720,7 +31726,7 @@ function startAutoSyncTimer() {
 }
 
 function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v31_restored";
+    const DATA_VERSION = "20260917_v32_force_restore";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
