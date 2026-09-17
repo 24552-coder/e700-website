@@ -391,7 +391,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤刑廷114易2128字第1149027892號",
     "doc_subject": "請惠予檢送如下列說明二所函調之資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "01741520",
@@ -404,7 +404,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/11 下午 01:47",
-    "updated_at": "2025/12/11 下午 01:47"
+    "updated_at": "2025/12/11 下午 01:47",
+    "doc_create_no": "1141296530",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013464",
@@ -428,7 +432,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/11 下午 02:36",
-    "updated_at": "2025/12/11 下午 02:36"
+    "updated_at": "2025/12/11 下午 02:36",
+    "doc_create_no": "1141296532",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021196120-E號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013574",
@@ -439,7 +447,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 法紫 114 他 5136字第11491608060號",
     "doc_subject": "請惠予說明貴院病患張敬東(身分證統一編號：A125589709)如附件診斷證明書所示之所受傷勢是否已達重傷害之程度，詳如說明，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17066448",
@@ -452,7 +460,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/12 上午 10:53",
-    "updated_at": "2025/12/12 上午 10:53"
+    "updated_at": "2025/12/12 上午 10:53",
+    "doc_create_no": "1141296563",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013645",
@@ -463,7 +475,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民欽114年度簡上附民移簡字第44號",
     "doc_subject": "請惠予說明下列事項，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "15810005",
@@ -476,7 +488,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/16 上午 11:48",
-    "updated_at": "2025/12/16 上午 11:48"
+    "updated_at": "2025/12/16 上午 11:48",
+    "doc_create_no": "1140104017",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013649",
@@ -487,7 +503,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永群114偵62316字第1149160170號",
     "doc_subject": "惠請提供如說明一之資料過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17846882",
@@ -500,7 +516,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/16 上午 11:52",
-    "updated_at": "2025/12/16 上午 11:52"
+    "updated_at": "2025/12/16 上午 11:52",
+    "doc_create_no": "1140104021",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013627",
@@ -524,7 +544,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/16 下午 01:22",
-    "updated_at": "2025/12/16 下午 01:22"
+    "updated_at": "2025/12/16 下午 01:22",
+    "doc_create_no": "1141296602",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021178569-E號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013743",
@@ -548,7 +572,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/17 下午 02:17",
-    "updated_at": "2025/12/17 下午 02:17"
+    "updated_at": "2025/12/17 下午 02:17",
+    "doc_create_no": "1141296654",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021182150-E號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013739",
@@ -572,7 +600,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/17 下午 02:59",
-    "updated_at": "2025/12/17 下午 02:59"
+    "updated_at": "2025/12/17 下午 02:59",
+    "doc_create_no": "1141296656",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021179630-E號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013933",
@@ -583,7 +615,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永暑114偵62666字第1149163605號",
     "doc_subject": "請惠予提供並說明下列事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00002091",
@@ -596,7 +628,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/22 上午 10:27",
-    "updated_at": "2025/12/22 上午 10:27"
+    "updated_at": "2025/12/22 上午 10:27",
+    "doc_create_no": "1140104125",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013926",
@@ -607,7 +643,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北執仁106年證交罰執專字第00021556號",
     "doc_subject": "請就吳啟章(身分證統一編號：R101544506)是否有行政執行法第21條第3款規定:「現罹疾病，恐因管收而不能治療者。」之不得管收事由惠示卓見，並檢送病歷表影本及相關資料過署，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "06044778",
@@ -620,7 +656,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/22 上午 11:02",
-    "updated_at": "2025/12/22 上午 11:02"
+    "updated_at": "2025/12/22 上午 11:02",
+    "doc_create_no": "1140104118",
+    "doc_sender_org": "法務部行政執行署新北分署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013891",
@@ -644,7 +684,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/22 上午 11:46",
-    "updated_at": "2025/12/22 上午 11:46"
+    "updated_at": "2025/12/22 上午 11:46",
+    "doc_create_no": "1140104112",
+    "doc_sender_org": "臺灣臺北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013949",
@@ -655,7 +699,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "士檢云執 丙 114 執 6917字第11490831970號",
     "doc_subject": "士檢云執 丙 114 執 6917字第11490831970號",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "02235170",
@@ -668,7 +712,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/23 上午 10:56",
-    "updated_at": "2025/12/23 上午 10:56"
+    "updated_at": "2025/12/23 上午 10:56",
+    "doc_create_no": "1141296755",
+    "doc_sender_org": "臺灣士林地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013908",
@@ -692,7 +740,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/23 上午 11:03",
-    "updated_at": "2025/12/23 上午 11:03"
+    "updated_at": "2025/12/23 上午 11:03",
+    "doc_create_no": "1141296734",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021189438-E號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013993",
@@ -703,7 +755,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民精114重簡字第1744號",
     "doc_subject": "關於陳彥蓉(身分證字號：C220654698)於民國113年1月29日，因交通事故前往貴院急診治療之傷勢範圍為何，尚有疑義詳如說明，請貴院查明惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "12911363",
@@ -716,7 +768,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/23 下午 01:35",
-    "updated_at": "2025/12/23 下午 01:35"
+    "updated_at": "2025/12/23 下午 01:35",
+    "doc_create_no": "1140104142",
+    "doc_sender_org": "臺灣新北地方法院三重簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140013998",
@@ -727,7 +783,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永御114他9273字第1149163275號",
     "doc_subject": "檢附PHAM PHU LONG診斷證明書1份，請惠予協助說明所示事項，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17544775",
@@ -740,7 +796,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/23 下午 01:42",
-    "updated_at": "2025/12/23 下午 01:42"
+    "updated_at": "2025/12/23 下午 01:42",
+    "doc_create_no": "1140104147",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140014029",
@@ -764,7 +824,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/24 上午 11:36",
-    "updated_at": "2025/12/24 上午 11:36"
+    "updated_at": "2025/12/24 上午 11:36",
+    "doc_create_no": "1140104155",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140014031",
@@ -788,7 +852,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/24 下午 01:26",
-    "updated_at": "2025/12/24 下午 01:26"
+    "updated_at": "2025/12/24 下午 01:26",
+    "doc_create_no": "1140104157",
+    "doc_sender_org": "臺灣臺中地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140014073",
@@ -812,7 +880,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/26 下午 02:22",
-    "updated_at": "2025/12/26 下午 02:22"
+    "updated_at": "2025/12/26 下午 02:22",
+    "doc_create_no": "1141296823",
+    "doc_sender_org": "臺灣士林地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140014108",
@@ -836,7 +908,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/30 上午 10:54",
-    "updated_at": "2025/12/30 上午 10:54"
+    "updated_at": "2025/12/30 上午 10:54",
+    "doc_create_no": "1140104171",
+    "doc_sender_org": "臺北高等行政法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140014114",
@@ -860,7 +936,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2025/12/30 下午 03:40",
-    "updated_at": "2025/12/30 下午 03:40"
+    "updated_at": "2025/12/30 下午 03:40",
+    "doc_create_no": "1140104177",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1140014304",
@@ -884,7 +964,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "楊順泰",
     "doc_attachments": [],
     "created_at": "2026/1/2 上午 11:58",
-    "updated_at": "2026/1/2 上午 11:58"
+    "updated_at": "2026/1/2 上午 11:58",
+    "doc_create_no": "1141296946",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031035080-C號",
+    "doc_chart_status": "楊順泰"
   },
   {
     "doc_receive_no": "1140014309",
@@ -908,7 +992,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃裕閔",
     "doc_attachments": [],
     "created_at": "2026/1/2 下午 12:00",
-    "updated_at": "2026/1/2 下午 12:00"
+    "updated_at": "2026/1/2 下午 12:00",
+    "doc_create_no": "1141296937",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021183223-E號",
+    "doc_chart_status": "黃裕閔"
   },
   {
     "doc_receive_no": "1140014332",
@@ -932,7 +1020,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/2 下午 12:05",
-    "updated_at": "2026/1/2 下午 12:05"
+    "updated_at": "2026/1/2 下午 12:05",
+    "doc_create_no": "1140104228",
+    "doc_sender_org": "新北市政府警察局中和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000040",
@@ -943,7 +1035,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永慈114偵52765字第1149168676號",
     "doc_subject": "前已收受貴院114年12月16日雙院歷字第1140013711號函及所附醫學影像，惠請再提供汪樹博(國民身分證統一編號：F120935260號)於114年9月9日22時49分許至貴院急診之急診病歷，並請說明汪樹博當時經診斷有無肉眼可見之傷勢，以利偵辦，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17569020",
@@ -956,7 +1048,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/5 上午 09:36",
-    "updated_at": "2026/1/5 上午 09:36"
+    "updated_at": "2026/1/5 上午 09:36",
+    "doc_create_no": "1150100018",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000110",
@@ -967,7 +1063,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 恭出 114 他 7810字第11491708220號",
     "doc_subject": "請查明並告知如說明所示之事項，並提供相關資料供參，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "01408744",
@@ -980,7 +1076,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/6 下午 03:30",
-    "updated_at": "2026/1/6 下午 03:30"
+    "updated_at": "2026/1/6 下午 03:30",
+    "doc_create_no": "1151290036",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000123",
@@ -1004,7 +1104,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃錦前",
     "doc_attachments": [],
     "created_at": "2026/1/6 下午 06:57",
-    "updated_at": "2026/1/6 下午 06:57"
+    "updated_at": "2026/1/6 下午 06:57",
+    "doc_create_no": "1151290046",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021182791-E號",
+    "doc_chart_status": "黃錦前"
   },
   {
     "doc_receive_no": "1150000163",
@@ -1028,7 +1132,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/6 下午 07:07",
-    "updated_at": "2026/1/6 下午 07:07"
+    "updated_at": "2026/1/6 下午 07:07",
+    "doc_create_no": "1151290051",
+    "doc_sender_org": "財團法人藥害救濟基金會",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000095",
@@ -1052,7 +1160,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/6 下午 07:09",
-    "updated_at": "2026/1/6 下午 07:09"
+    "updated_at": "2026/1/6 下午 07:09",
+    "doc_create_no": "1151290022",
+    "doc_sender_org": "衛生福利部國民健康署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000106",
@@ -1076,7 +1188,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "楊宗燁",
     "doc_attachments": [],
     "created_at": "2026/1/6 下午 07:13",
-    "updated_at": "2026/1/6 下午 07:13"
+    "updated_at": "2026/1/6 下午 07:13",
+    "doc_create_no": "1151290041",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031035985-C號",
+    "doc_chart_status": "楊宗燁"
   },
   {
     "doc_receive_no": "1150000253",
@@ -1087,7 +1203,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "刑偵六六字第1156002041號",
     "doc_subject": "本局為偵辦刑案，請貴院提供說明二所示相關資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00776820",
@@ -1100,7 +1216,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/8 上午 11:01",
-    "updated_at": "2026/1/8 上午 11:01"
+    "updated_at": "2026/1/8 上午 11:01",
+    "doc_create_no": "1151290077",
+    "doc_sender_org": "內政部警政署刑事警察局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000250",
@@ -1111,7 +1231,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 讓(千) 114 偵 57031字第11590003650號",
     "doc_subject": "惠請提供說明項資料過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "04876982",
@@ -1124,7 +1244,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/8 上午 11:34",
-    "updated_at": "2026/1/8 上午 11:34"
+    "updated_at": "2026/1/8 上午 11:34",
+    "doc_create_no": "1151290075",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000252",
@@ -1148,7 +1272,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/1/8 下午 01:55",
-    "updated_at": "2026/1/8 下午 01:55"
+    "updated_at": "2026/1/8 下午 01:55",
+    "doc_create_no": "1151290078",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021171175-E號",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150000315",
@@ -1172,7 +1300,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/8 下午 04:42",
-    "updated_at": "2026/1/8 下午 04:42"
+    "updated_at": "2026/1/8 下午 04:42",
+    "doc_create_no": "1151290104",
+    "doc_sender_org": "新北市新店區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000281",
@@ -1196,7 +1328,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/9 上午 09:13",
-    "updated_at": "2026/1/9 上午 09:13"
+    "updated_at": "2026/1/9 上午 09:13",
+    "doc_create_no": "1151290085",
+    "doc_sender_org": "財政部臺北國稅局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000340",
@@ -1220,7 +1356,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "韓政達",
     "doc_attachments": [],
     "created_at": "2026/1/9 下午 02:41",
-    "updated_at": "2026/1/9 下午 02:41"
+    "updated_at": "2026/1/9 下午 02:41",
+    "doc_create_no": "1151290144",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021185539-E號",
+    "doc_chart_status": "韓政達"
   },
   {
     "doc_receive_no": "1150000342",
@@ -1244,7 +1384,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠豪",
     "doc_attachments": [],
     "created_at": "2026/1/9 下午 02:45",
-    "updated_at": "2026/1/9 下午 02:45"
+    "updated_at": "2026/1/9 下午 02:45",
+    "doc_create_no": "1151290146",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021204165-E號",
+    "doc_chart_status": "陳冠豪"
   },
   {
     "doc_receive_no": "1150000434",
@@ -1268,7 +1412,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/12 下午 01:42",
-    "updated_at": "2026/1/12 下午 01:42"
+    "updated_at": "2026/1/12 下午 01:42",
+    "doc_create_no": "1151290200",
+    "doc_sender_org": "財團法人藥害救濟基金會",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000388",
@@ -1292,7 +1440,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李美慧",
     "doc_attachments": [],
     "created_at": "2026/1/12 下午 04:08",
-    "updated_at": "2026/1/12 下午 04:08"
+    "updated_at": "2026/1/12 下午 04:08",
+    "doc_create_no": "1151290170",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021001896-E號",
+    "doc_chart_status": "李美慧"
   },
   {
     "doc_receive_no": "1150000386",
@@ -1316,7 +1468,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃裕閔",
     "doc_attachments": [],
     "created_at": "2026/1/12 下午 04:43",
-    "updated_at": "2026/1/12 下午 04:43"
+    "updated_at": "2026/1/12 下午 04:43",
+    "doc_create_no": "1151290174",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021191300-E號",
+    "doc_chart_status": "黃裕閔"
   },
   {
     "doc_receive_no": "1150000389",
@@ -1340,7 +1496,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "許庭碩",
     "doc_attachments": [],
     "created_at": "2026/1/12 下午 04:59",
-    "updated_at": "2026/1/12 下午 04:59"
+    "updated_at": "2026/1/12 下午 04:59",
+    "doc_create_no": "1151290177",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021197538-E號",
+    "doc_chart_status": "許庭碩"
   },
   {
     "doc_receive_no": "1150000477",
@@ -1351,7 +1511,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "院高刑暑112原金上重訴2字第1150400283號",
     "doc_subject": "請查明如說明二之病患資訊事項，惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "15902782",
@@ -1364,7 +1524,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/13 上午 11:28",
-    "updated_at": "2026/1/13 上午 11:28"
+    "updated_at": "2026/1/13 上午 11:28",
+    "doc_create_no": "1150100146",
+    "doc_sender_org": "臺灣高等法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000466",
@@ -1375,7 +1539,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "士檢云盈114偵22913字第11590021460號",
     "doc_subject": "請惠予提供民眾簡佳惠（國民身分證統一編號：M220473253號）於民國114年3月至4月間在貴院就診之病歷紀錄過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17209852",
@@ -1388,7 +1552,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/13 上午 11:30",
-    "updated_at": "2026/1/13 上午 11:30"
+    "updated_at": "2026/1/13 上午 11:30",
+    "doc_create_no": "1151290211",
+    "doc_sender_org": "臺灣士林地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000460",
@@ -1412,7 +1580,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "楊歡",
     "doc_attachments": [],
     "created_at": "2026/1/13 下午 12:20",
-    "updated_at": "2026/1/13 下午 12:20"
+    "updated_at": "2026/1/13 下午 12:20",
+    "doc_create_no": "1151290217",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021194671-E號",
+    "doc_chart_status": "楊歡"
   },
   {
     "doc_receive_no": "1150000537",
@@ -1423,7 +1595,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警中刑字第1155172614號",
     "doc_subject": "為偵辦刑案，亟需貴院提供說明二之相關資料惠復，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17939223、00658784",
@@ -1436,7 +1608,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/15 上午 08:48",
-    "updated_at": "2026/1/15 上午 08:48"
+    "updated_at": "2026/1/15 上午 08:48",
+    "doc_create_no": "1150100159",
+    "doc_sender_org": "新北市政府警察局中和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000610",
@@ -1447,7 +1623,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "宜院偉民己112羅簡299字第000501號",
     "doc_subject": "請貴院惠予檢送如說明二所示資料過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "12650071",
@@ -1460,7 +1636,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/15 上午 10:04",
-    "updated_at": "2026/1/15 上午 10:04"
+    "updated_at": "2026/1/15 上午 10:04",
+    "doc_create_no": "1150100175",
+    "doc_sender_org": "臺灣宜蘭地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000573",
@@ -1484,7 +1664,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/1/15 上午 11:55",
-    "updated_at": "2026/1/15 上午 11:55"
+    "updated_at": "2026/1/15 上午 11:55",
+    "doc_create_no": "1151290269",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021190733-E號",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150000564",
@@ -1508,7 +1692,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠元",
     "doc_attachments": [],
     "created_at": "2026/1/15 下午 02:34",
-    "updated_at": "2026/1/15 下午 02:34"
+    "updated_at": "2026/1/15 下午 02:34",
+    "doc_create_no": "1151290272",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031038022-C號",
+    "doc_chart_status": "陳冠元"
   },
   {
     "doc_receive_no": "1150000572",
@@ -1532,7 +1720,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "高芷華",
     "doc_attachments": [],
     "created_at": "2026/1/15 下午 02:54",
-    "updated_at": "2026/1/15 下午 02:54"
+    "updated_at": "2026/1/15 下午 02:54",
+    "doc_create_no": "1151290268",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031038136-C號",
+    "doc_chart_status": "高芷華"
   },
   {
     "doc_receive_no": "1150000525",
@@ -1556,7 +1748,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "蔡同堯",
     "doc_attachments": [],
     "created_at": "2026/1/15 下午 02:58",
-    "updated_at": "2026/1/15 下午 02:58"
+    "updated_at": "2026/1/15 下午 02:58",
+    "doc_create_no": "1151290251",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031030233-C",
+    "doc_chart_status": "蔡同堯"
   },
   {
     "doc_receive_no": "1150000656",
@@ -1580,7 +1776,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉郁欣",
     "doc_attachments": [],
     "created_at": "2026/1/16 上午 11:34",
-    "updated_at": "2026/1/16 上午 11:34"
+    "updated_at": "2026/1/16 上午 11:34",
+    "doc_create_no": "1151290308",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第11402112003801(審)-E號",
+    "doc_chart_status": "劉郁欣"
   },
   {
     "doc_receive_no": "1150000686",
@@ -1591,7 +1791,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永列柔114補審169字第10184號",
     "doc_subject": "惠請提供病患王自強(國民身分證統一編號：O100088580號)於民國114年迄今至貴院就診時，其受傷情形有無於身體或健康，有重大不治或難治之傷害？如有，則依勞工保險失能給付標準，其失能等級為何？請惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17123611",
@@ -1604,7 +1804,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/19 上午 09:46",
-    "updated_at": "2026/1/19 上午 09:46"
+    "updated_at": "2026/1/19 上午 09:46",
+    "doc_create_no": "1150100203",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000739",
@@ -1615,7 +1819,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永宿115偵4123字第1159003488號",
     "doc_subject": "請提供病患王昱昕(81年1月15日出生，國民身分證統一編號：A128360671)於民國114年12月22日因刀傷到院急診，其所受傷勢是否已達到「身體或健康，有重大不治或難治」之傷害，並檢附該病患之診斷證明書及病歷過署供參，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17923923",
@@ -1628,7 +1832,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/19 上午 09:47",
-    "updated_at": "2026/1/19 上午 09:47"
+    "updated_at": "2026/1/19 上午 09:47",
+    "doc_create_no": "1150100226",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000763",
@@ -1639,7 +1847,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警永刑字第1154073100號",
     "doc_subject": "本分局為偵辦性騷擾案件，亟需貴醫院提供郭宗偉(R122635048、64年10月7日生)之就醫紀錄、住院紀錄、病歷資料。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "02333393",
@@ -1652,7 +1860,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/20 上午 10:25",
-    "updated_at": "2026/1/20 上午 10:25"
+    "updated_at": "2026/1/20 上午 10:25",
+    "doc_create_no": "1150100232",
+    "doc_sender_org": "新北市政府警察局永和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000803",
@@ -1663,7 +1875,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤刑能115訴50字第1159001333號",
     "doc_subject": "惠請提供蔡文政（男、民國41年7月17日生、身分證統一編號：A102596126號）於民國114年12月15日至貴院就醫之相關病歷資料到院，請查照見復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00717971",
@@ -1676,7 +1888,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/20 上午 10:31",
-    "updated_at": "2026/1/20 上午 10:31"
+    "updated_at": "2026/1/20 上午 10:31",
+    "doc_create_no": "1151290370",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000768",
@@ -1700,7 +1916,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "關曉雯",
     "doc_attachments": [],
     "created_at": "2026/1/20 上午 10:38",
-    "updated_at": "2026/1/20 上午 10:38"
+    "updated_at": "2026/1/20 上午 10:38",
+    "doc_create_no": "1151290391",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021163355-E號",
+    "doc_chart_status": "關曉雯"
   },
   {
     "doc_receive_no": "1150000794",
@@ -1724,7 +1944,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "洪家佩",
     "doc_attachments": [],
     "created_at": "2026/1/20 上午 11:28",
-    "updated_at": "2026/1/20 上午 11:28"
+    "updated_at": "2026/1/20 上午 11:28",
+    "doc_create_no": "1151290372",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031000621-C號",
+    "doc_chart_status": "洪家佩"
   },
   {
     "doc_receive_no": "1150000826",
@@ -1735,7 +1959,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北檢力宙115調解醫他2字第1159004676號",
     "doc_subject": "惠請貴院提供姜宏宏(身分證字號：H290066845號)於114年6月1白迄今之病座。請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17425559",
@@ -1748,7 +1972,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/22 上午 10:58",
-    "updated_at": "2026/1/22 上午 10:58"
+    "updated_at": "2026/1/22 上午 10:58",
+    "doc_create_no": "1150100252",
+    "doc_sender_org": "臺灣臺北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000827",
@@ -1759,7 +1987,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北執戊109年返還補助費專字第00339757號",
     "doc_subject": "請查復林麗玲(原名:林麗陵、應林麗陵)(身分證字號：F221183360)就醫時所留存之通訊地址及聯絡電話，並檢送相關資料過署，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00096858",
@@ -1772,7 +2000,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/22 上午 10:59",
-    "updated_at": "2026/1/22 上午 10:59"
+    "updated_at": "2026/1/22 上午 10:59",
+    "doc_create_no": "1150100253",
+    "doc_sender_org": "法務部行政執行署新北分署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000832",
@@ -1783,7 +2015,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警永刑字第1144191473號",
     "doc_subject": "本分局為偵辦刑事案件，亟須貴院提供如說明二之相關資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "13289924",
@@ -1796,7 +2028,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/22 上午 11:22",
-    "updated_at": "2026/1/22 上午 11:22"
+    "updated_at": "2026/1/22 上午 11:22",
+    "doc_create_no": "1150100258",
+    "doc_sender_org": "新北市政府警察局永和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000933",
@@ -1807,7 +2043,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警中刑字第1155176871號",
     "doc_subject": "本分局因偵辦死亡相驗案，亟需調閱死者曾陽銳(T101026765、37年12月17日)之病歷資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "09541144",
@@ -1820,7 +2056,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/23 上午 11:32",
-    "updated_at": "2026/1/23 上午 11:32"
+    "updated_at": "2026/1/23 上午 11:32",
+    "doc_create_no": "1150100268",
+    "doc_sender_org": "新北市政府警察局中和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000911",
@@ -1831,7 +2071,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃檢亮暑115偵 5052字第11590100580號",
     "doc_subject": "請貴院惠予提供資料如說明欄，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17796684",
@@ -1844,7 +2084,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/23 上午 11:35",
-    "updated_at": "2026/1/23 上午 11:35"
+    "updated_at": "2026/1/23 上午 11:35",
+    "doc_create_no": "1151290452",
+    "doc_sender_org": "臺灣桃園地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000923",
@@ -1868,7 +2112,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉郁欣",
     "doc_attachments": [],
     "created_at": "2026/1/23 下午 01:43",
-    "updated_at": "2026/1/23 下午 01:43"
+    "updated_at": "2026/1/23 下午 01:43",
+    "doc_create_no": "1151290473",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114091008259",
+    "doc_chart_status": "劉郁欣"
   },
   {
     "doc_receive_no": "1150000903",
@@ -1892,7 +2140,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "柯子翔",
     "doc_attachments": [],
     "created_at": "2026/1/23 下午 02:46",
-    "updated_at": "2026/1/23 下午 02:46"
+    "updated_at": "2026/1/23 下午 02:46",
+    "doc_create_no": "1151290461",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031000243-C號",
+    "doc_chart_status": "柯子翔"
   },
   {
     "doc_receive_no": "1150000915",
@@ -1916,7 +2168,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/23 下午 04:01",
-    "updated_at": "2026/1/23 下午 04:01"
+    "updated_at": "2026/1/23 下午 04:01",
+    "doc_create_no": "1151290457",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "150000914",
@@ -1940,7 +2196,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/23 下午 04:04",
-    "updated_at": "2026/1/23 下午 04:04"
+    "updated_at": "2026/1/23 下午 04:04",
+    "doc_create_no": "1151290453",
+    "doc_sender_org": "新北市永和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000971",
@@ -1951,7 +2211,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民心114板簡字第2225號",
     "doc_subject": "請貴院／貴診所檢送原告倪珮娸(身分證楓一編號：F224979895號)於民國113年4月3日迄今之全部病歷資料(如有醫學影像資料亦請一併燒錄成光碟提供到院)到院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "03175242",
@@ -1964,7 +2224,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/26 上午 09:25",
-    "updated_at": "2026/1/26 上午 09:25"
+    "updated_at": "2026/1/26 上午 09:25",
+    "doc_create_no": "1150100282",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000987",
@@ -1975,7 +2239,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北檢力雨115偵3410字第11590006499號",
     "doc_subject": "惠請提供說明二、三所示事項過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "14309029",
@@ -1988,7 +2252,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/26 上午 11:52",
-    "updated_at": "2026/1/26 上午 11:52"
+    "updated_at": "2026/1/26 上午 11:52",
+    "doc_create_no": "1150100296",
+    "doc_sender_org": "臺灣臺北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150000990",
@@ -1999,7 +2267,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民謙114簡上更一字第02423號",
     "doc_subject": "請查明說明欄二所示之事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "03045282",
@@ -2012,7 +2280,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/26 上午 11:54",
-    "updated_at": "2026/1/26 上午 11:54"
+    "updated_at": "2026/1/26 上午 11:54",
+    "doc_create_no": "1150100299",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001065",
@@ -2023,7 +2295,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警蘆刑字第1154315384號",
     "doc_subject": "本分局為偵辦刑事案件，亟需貴院提供如說明二之資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17917027",
@@ -2036,7 +2308,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/27 上午 09:59",
-    "updated_at": "2026/1/27 上午 09:59"
+    "updated_at": "2026/1/27 上午 09:59",
+    "doc_create_no": "1150100329",
+    "doc_sender_org": "新北市政府警察局蘆洲分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001055",
@@ -2047,7 +2323,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民佳113年度訴字第1016號",
     "doc_subject": "請惠予提供下列說明所示之函詢事項，請惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00638681",
@@ -2060,7 +2336,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/27 上午 10:05",
-    "updated_at": "2026/1/27 上午 10:05"
+    "updated_at": "2026/1/27 上午 10:05",
+    "doc_create_no": "1150100319",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001051",
@@ -2071,7 +2351,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信刑學114交易407字第1159003771號",
     "doc_subject": "請惠予查復如說明二所載事項，併檢送相關資料過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "09107748",
@@ -2084,7 +2364,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/27 上午 10:10",
-    "updated_at": "2026/1/27 上午 10:10"
+    "updated_at": "2026/1/27 上午 10:10",
+    "doc_create_no": "1151290493",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001034",
@@ -2095,7 +2379,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤刑任113交訴59字第1159001928號",
     "doc_subject": "本院審理113年度交訴字第59號被告王國勝公共危險等案件，有如說明欄之事項亟待明瞭，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "01502187",
@@ -2108,7 +2392,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/27 上午 10:13",
-    "updated_at": "2026/1/27 上午 10:13"
+    "updated_at": "2026/1/27 上午 10:13",
+    "doc_create_no": "1151290510",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001040",
@@ -2119,7 +2407,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤刑能115訴50字第1159001855號",
     "doc_subject": "惠請函覆蔡文政（男、民國41年7月17日生、身分證統一編號：A102596126號）於民國114年12月20日是否有至貴院就醫？若有，請提供該次就醫之相關病歷資料過院，請查照見復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00717971",
@@ -2132,7 +2420,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/27 上午 10:17",
-    "updated_at": "2026/1/27 上午 10:17"
+    "updated_at": "2026/1/27 上午 10:17",
+    "doc_create_no": "1151290502",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001041",
@@ -2156,7 +2448,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林哲立",
     "doc_attachments": [],
     "created_at": "2026/1/27 上午 10:30",
-    "updated_at": "2026/1/27 上午 10:30"
+    "updated_at": "2026/1/27 上午 10:30",
+    "doc_create_no": "1151290506",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021157435-E號",
+    "doc_chart_status": "林哲立"
   },
   {
     "doc_receive_no": "1150001048",
@@ -2180,7 +2476,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王忠信",
     "doc_attachments": [],
     "created_at": "2026/1/27 上午 11:02",
-    "updated_at": "2026/1/27 上午 11:02"
+    "updated_at": "2026/1/27 上午 11:02",
+    "doc_create_no": "1151290491",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021006102-E號",
+    "doc_chart_status": "王忠信"
   },
   {
     "doc_receive_no": "1150001059",
@@ -2204,7 +2504,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/28 上午 10:21",
-    "updated_at": "2026/1/28 上午 10:21"
+    "updated_at": "2026/1/28 上午 10:21",
+    "doc_create_no": "1150100323",
+    "doc_sender_org": "新北市新店區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001218",
@@ -2215,7 +2519,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永來115相101字第1159014237號",
     "doc_subject": "請貴分局持本函文至雙和醫院調閱如說明依所示事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "16590753",
@@ -2228,7 +2532,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 01:41",
-    "updated_at": "2026/1/29 下午 01:41"
+    "updated_at": "2026/1/29 下午 01:41",
+    "doc_create_no": "1150100359",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001181",
@@ -2239,7 +2547,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北執義113年房地稅執特專字第00074746號",
     "doc_subject": "請惠予查復義務人陳武義（身分證統一編號：A125405655）就醫時所留存之通訊地址及聯絡電話，並檢送相關資料供參，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17489548",
@@ -2252,7 +2560,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 01:50",
-    "updated_at": "2026/1/29 下午 01:50"
+    "updated_at": "2026/1/29 下午 01:50",
+    "doc_create_no": "1150100348",
+    "doc_sender_org": "法務部行政執行署新北分署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001182",
@@ -2263,7 +2575,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "南執丁113年廢費執專字第00118787號",
     "doc_subject": "請查復謝榮興(身分證統一編號：D120814086)就醫時所留存之通訊地址及聯絡電話：並檢送相關資料過署，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "16117297",
@@ -2276,7 +2588,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 01:52",
-    "updated_at": "2026/1/29 下午 01:52"
+    "updated_at": "2026/1/29 下午 01:52",
+    "doc_create_no": "1150100349",
+    "doc_sender_org": "法務部行政執行署臺南分署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001183",
@@ -2287,7 +2603,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民夏114年度勞訴字第175號",
     "doc_subject": "請惠予檢送病患顏永興(身分證字號：K120910730號，出生日期：民國45年8月7日生)如說明所示資料文件過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00226280",
@@ -2300,7 +2616,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 01:54",
-    "updated_at": "2026/1/29 下午 01:54"
+    "updated_at": "2026/1/29 下午 01:54",
+    "doc_create_no": "1150100350",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001184",
@@ -2311,7 +2631,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信刑光114侵訴117字第1150000913號",
     "doc_subject": "惠請 貴院於文到後30日內查明如說明欄二所示事項，如有相關資料請一併提供過院酌參，惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "02675785",
@@ -2324,7 +2644,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 01:56",
-    "updated_at": "2026/1/29 下午 01:56"
+    "updated_at": "2026/1/29 下午 01:56",
+    "doc_create_no": "1150100351",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001172",
@@ -2335,7 +2659,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永博車114偵48425字第10625號",
     "doc_subject": "惠請說明如附件所示患者於是日之診斷過程？患者有無外傷或透過儀器檢驗傷勢？並提供相關資料過著參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "08063782",
@@ -2348,7 +2672,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 01:58",
-    "updated_at": "2026/1/29 下午 01:58"
+    "updated_at": "2026/1/29 下午 01:58",
+    "doc_create_no": "1150100339",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001156",
@@ -2359,7 +2687,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃院雲刑恕114易68字第1159002883號",
     "doc_subject": "請於文到後15日內，函覆說明欄所示事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00160502",
@@ -2372,7 +2700,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 02:00",
-    "updated_at": "2026/1/29 下午 02:00"
+    "updated_at": "2026/1/29 下午 02:00",
+    "doc_create_no": "1151290552",
+    "doc_sender_org": "臺灣桃園地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001165",
@@ -2396,7 +2728,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳志華",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 02:26",
-    "updated_at": "2026/1/29 下午 02:26"
+    "updated_at": "2026/1/29 下午 02:26",
+    "doc_create_no": "1151290547",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114-082-034681",
+    "doc_chart_status": "陳志華"
   },
   {
     "doc_receive_no": "1150001208",
@@ -2420,7 +2756,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 02:52",
-    "updated_at": "2026/1/29 下午 02:52"
+    "updated_at": "2026/1/29 下午 02:52",
+    "doc_create_no": "1151290581",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021168116-E號",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150001164",
@@ -2444,7 +2784,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "吳連禎",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 03:35",
-    "updated_at": "2026/1/29 下午 03:35"
+    "updated_at": "2026/1/29 下午 03:35",
+    "doc_create_no": "1151290548",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114092015956",
+    "doc_chart_status": "吳連禎"
   },
   {
     "doc_receive_no": "1150001137",
@@ -2468,7 +2812,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 04:23",
-    "updated_at": "2026/1/29 下午 04:23"
+    "updated_at": "2026/1/29 下午 04:23",
+    "doc_create_no": "1151290519",
+    "doc_sender_org": "新北市永和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150001215",
@@ -2492,7 +2840,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/1/29 下午 04:26",
-    "updated_at": "2026/1/29 下午 04:26"
+    "updated_at": "2026/1/29 下午 04:26",
+    "doc_create_no": "1151290577",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021089806-E（審)號",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150001246",
@@ -2516,7 +2868,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/1/30 上午 10:50",
-    "updated_at": "2026/1/30 上午 10:50"
+    "updated_at": "2026/1/30 上午 10:50",
+    "doc_create_no": "1151290592",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031027669-C號",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150001223",
@@ -2527,7 +2883,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民欽114年度醫字第4號",
     "doc_subject": "請惠予提供病患呂來慧(身分證統一編號：A221574580號)於民國111年起迄今在貴院牙口外科、神經內科、家醫科就醫就診之所有完整病歷資料(含急診、門診、住院、手術等，含檢查檢驗結果、醫療檢查影像、護理紀錄、x光影像、電腦斷層掃描影像等，但不以件為限)，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00812416",
@@ -2540,7 +2896,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/2/2 上午 10:12",
-    "updated_at": "2026/2/2 上午 10:12"
+    "updated_at": "2026/2/2 上午 10:12",
+    "doc_create_no": "1150100363",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001338",
@@ -2551,7 +2911,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永來115相101字第1159015340號",
     "doc_subject": "請貴分局持本函文至雙和醫院調閱如說明依所示事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "16590753",
@@ -2564,7 +2924,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/2/2 下午 03:02",
-    "updated_at": "2026/2/2 下午 03:02"
+    "updated_at": "2026/2/2 下午 03:02",
+    "doc_create_no": "1150100390",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001357",
@@ -2575,7 +2939,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "院高刑敬115交上易42字第1159000714號",
     "doc_subject": "惠請貴院就說明二事項於文到三週內函復，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "03758957",
@@ -2588,7 +2952,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/2/4 上午 08:33",
-    "updated_at": "2026/2/4 上午 08:33"
+    "updated_at": "2026/2/4 上午 08:33",
+    "doc_create_no": "1151290670",
+    "doc_sender_org": "臺灣高等法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001335",
@@ -2612,7 +2980,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/2/4 上午 09:43",
-    "updated_at": "2026/2/4 上午 09:43"
+    "updated_at": "2026/2/4 上午 09:43",
+    "doc_create_no": "1151290657",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150001399",
@@ -2636,7 +3008,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "許秉閎",
     "doc_attachments": [],
     "created_at": "2026/2/4 上午 11:07",
-    "updated_at": "2026/2/4 上午 11:07"
+    "updated_at": "2026/2/4 上午 11:07",
+    "doc_create_no": "1151290681",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114091007459",
+    "doc_chart_status": "許秉閎"
   },
   {
     "doc_receive_no": "1150001385",
@@ -2660,7 +3036,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林孟穎",
     "doc_attachments": [],
     "created_at": "2026/2/4 下午 12:15",
-    "updated_at": "2026/2/4 下午 12:15"
+    "updated_at": "2026/2/4 下午 12:15",
+    "doc_create_no": "1150100403",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021088103號",
+    "doc_chart_status": "林孟穎"
   },
   {
     "doc_receive_no": "1150001522",
@@ -2684,7 +3064,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳加憲",
     "doc_attachments": [],
     "created_at": "2026/2/9 上午 10:26",
-    "updated_at": "2026/2/9 上午 10:26"
+    "updated_at": "2026/2/9 上午 10:26",
+    "doc_create_no": "1151290757",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021205422-E號",
+    "doc_chart_status": "陳加憲"
   },
   {
     "doc_receive_no": "1150001575",
@@ -2708,7 +3092,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳致宇",
     "doc_attachments": [],
     "created_at": "2026/2/9 上午 11:49",
-    "updated_at": "2026/2/9 上午 11:49"
+    "updated_at": "2026/2/9 上午 11:49",
+    "doc_create_no": "1151290781",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115023000412",
+    "doc_chart_status": "陳致宇"
   },
   {
     "doc_receive_no": "1150001509",
@@ -2719,7 +3107,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北衛醫字第1150239061號",
     "doc_subject": "有關民眾陳情貴院施行雙側腎臟結石及左側輸尿管結石手術，疑術後右側輸尿管狹窄造成腎水腫感染涉醫療爭議並申請調解一案，詳如說明段，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "01919011",
@@ -2732,7 +3120,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/2/9 下午 02:02",
-    "updated_at": "2026/2/9 下午 02:02"
+    "updated_at": "2026/2/9 下午 02:02",
+    "doc_create_no": "115290750",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001564",
@@ -2756,7 +3148,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "葉俊廷",
     "doc_attachments": [],
     "created_at": "2026/2/9 下午 03:29",
-    "updated_at": "2026/2/9 下午 03:29"
+    "updated_at": "2026/2/9 下午 03:29",
+    "doc_create_no": "1151290764",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021037413-E號",
+    "doc_chart_status": "葉俊廷"
   },
   {
     "doc_receive_no": "1150001558",
@@ -2780,7 +3176,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "邱彥碩",
     "doc_attachments": [],
     "created_at": "2026/2/9 下午 03:47",
-    "updated_at": "2026/2/9 下午 03:47"
+    "updated_at": "2026/2/9 下午 03:47",
+    "doc_create_no": "1151290772",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021002266-E號",
+    "doc_chart_status": "邱彥碩"
   },
   {
     "doc_receive_no": "1150001573",
@@ -2804,7 +3204,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "羅青山",
     "doc_attachments": [],
     "created_at": "2026/2/10 上午 11:09",
-    "updated_at": "2026/2/10 上午 11:09"
+    "updated_at": "2026/2/10 上午 11:09",
+    "doc_create_no": "1151290768",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "羅青山"
   },
   {
     "doc_receive_no": "1150001634",
@@ -2828,7 +3232,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林哲立",
     "doc_attachments": [],
     "created_at": "2026/2/10 下午 02:30",
-    "updated_at": "2026/2/10 下午 02:30"
+    "updated_at": "2026/2/10 下午 02:30",
+    "doc_create_no": "1151290825",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021019306-E號",
+    "doc_chart_status": "林哲立"
   },
   {
     "doc_receive_no": "1150001612",
@@ -2839,7 +3247,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民悅115板簡字第215號",
     "doc_subject": "惠請就說明第二至六項惠覆意見，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "07323724",
@@ -2852,7 +3260,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/2/10 下午 04:26",
-    "updated_at": "2026/2/10 下午 04:26"
+    "updated_at": "2026/2/10 下午 04:26",
+    "doc_create_no": "1150100458",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001304",
@@ -2876,7 +3288,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/2/11 上午 08:29",
-    "updated_at": "2026/2/11 上午 08:29"
+    "updated_at": "2026/2/11 上午 08:29",
+    "doc_create_no": "1151290614",
+    "doc_sender_org": "新北市板橋區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "時釋出病歷"
   },
   {
     "doc_receive_no": "1150001656",
@@ -2900,7 +3316,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠豪",
     "doc_attachments": [],
     "created_at": "2026/2/11 下午 01:40",
-    "updated_at": "2026/2/11 下午 01:40"
+    "updated_at": "2026/2/11 下午 01:40",
+    "doc_create_no": "1151290835",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021207536-E號",
+    "doc_chart_status": "陳冠豪"
   },
   {
     "doc_receive_no": "1150001647",
@@ -2911,7 +3331,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民佳113年度訴字第1016號",
     "doc_subject": "覆台端致電說明缺漏三頁附件，檢附三頁附件，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00638681",
@@ -2924,7 +3344,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/2/11 下午 02:03",
-    "updated_at": "2026/2/11 下午 02:03"
+    "updated_at": "2026/2/11 下午 02:03",
+    "doc_create_no": "1150100476",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001683",
@@ -2948,7 +3372,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳天恩",
     "doc_attachments": [],
     "created_at": "2026/2/12 上午 09:26",
-    "updated_at": "2026/2/12 上午 09:26"
+    "updated_at": "2026/2/12 上午 09:26",
+    "doc_create_no": "1151290851",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114082023790",
+    "doc_chart_status": "陳天恩"
   },
   {
     "doc_receive_no": "1150001698",
@@ -2972,7 +3400,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "吳佳璋",
     "doc_attachments": [],
     "created_at": "2026/2/12 上午 11:40",
-    "updated_at": "2026/2/12 上午 11:40"
+    "updated_at": "2026/2/12 上午 11:40",
+    "doc_create_no": "1150100492",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031035495號",
+    "doc_chart_status": "吳佳璋"
   },
   {
     "doc_receive_no": "1150001780",
@@ -2983,7 +3415,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "屏院昭刑節114易921字第1159003596號",
     "doc_subject": "惠請於文到後三週內查復說明事項。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "12792887",
@@ -2996,7 +3428,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/2/13 上午 11:37",
-    "updated_at": "2026/2/13 上午 11:37"
+    "updated_at": "2026/2/13 上午 11:37",
+    "doc_create_no": "1151290895",
+    "doc_sender_org": "臺灣屏東地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001799",
@@ -3020,7 +3456,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/2/14 下午 01:21",
-    "updated_at": "2026/2/14 下午 01:21"
+    "updated_at": "2026/2/14 下午 01:21",
+    "doc_create_no": "1151290912",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114021070150審-E",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150001730",
@@ -3044,7 +3484,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "許秉閎",
     "doc_attachments": [],
     "created_at": "2026/2/14 下午 01:24",
-    "updated_at": "2026/2/14 下午 01:24"
+    "updated_at": "2026/2/14 下午 01:24",
+    "doc_create_no": "1151290874",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021172467-E",
+    "doc_chart_status": "許秉閎"
   },
   {
     "doc_receive_no": "1150001793",
@@ -3055,7 +3499,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤刑廷114易2128字第1159003415號",
     "doc_subject": "請貴醫院惠復江威緒（男、民國51年11月25日生、身分證統一編號：P121141296號）先生是否於115年2月12日上午於貴醫院住院診療中，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "01741520",
@@ -3068,7 +3512,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/2/17 上午 10:53",
-    "updated_at": "2026/2/17 上午 10:53"
+    "updated_at": "2026/2/17 上午 10:53",
+    "doc_create_no": "1151290916",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001814",
@@ -3092,7 +3540,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "吳美儀",
     "doc_attachments": [],
     "created_at": "2026/2/23 上午 10:01",
-    "updated_at": "2026/2/23 上午 10:01"
+    "updated_at": "2026/2/23 上午 10:01",
+    "doc_create_no": "1150100520",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031001344-C號",
+    "doc_chart_status": "吳美儀"
   },
   {
     "doc_receive_no": "1150001862",
@@ -3103,7 +3555,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "士檢云道115他658字第1159010095號",
     "doc_subject": "請惠予提供如說明二之資料過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "04153384",
@@ -3116,7 +3568,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/2/23 下午 01:20",
-    "updated_at": "2026/2/23 下午 01:20"
+    "updated_at": "2026/2/23 下午 01:20",
+    "doc_create_no": "1150100534",
+    "doc_sender_org": "臺灣士林地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001865",
@@ -3127,7 +3583,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永音115偵7157字第1159017055號",
     "doc_subject": "惠請提供蘇愷琳(P270020035)於114年12月8日至貴院就診之病歷，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "06053633",
@@ -3140,7 +3596,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/2/23 下午 01:21",
-    "updated_at": "2026/2/23 下午 01:21"
+    "updated_at": "2026/2/23 下午 01:21",
+    "doc_create_no": "1150100537",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150001939",
@@ -3164,7 +3624,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "公文曾釋出過",
     "doc_attachments": [],
     "created_at": "2026/2/25 上午 09:18",
-    "updated_at": "2026/2/25 上午 09:18"
+    "updated_at": "2026/2/25 上午 09:18",
+    "doc_create_no": "1151290963",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031000227-C號",
+    "doc_chart_status": "公文曾釋出過"
   },
   {
     "doc_receive_no": "1150001983",
@@ -3188,7 +3652,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "邱彥碩",
     "doc_attachments": [],
     "created_at": "2026/2/26 上午 10:25",
-    "updated_at": "2026/2/26 上午 10:25"
+    "updated_at": "2026/2/26 上午 10:25",
+    "doc_create_no": "1151291004",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115-0-92-000074",
+    "doc_chart_status": "邱彥碩"
   },
   {
     "doc_receive_no": "1150001984",
@@ -3212,7 +3680,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳沛華",
     "doc_attachments": [],
     "created_at": "2026/2/26 上午 11:21",
-    "updated_at": "2026/2/26 上午 11:21"
+    "updated_at": "2026/2/26 上午 11:21",
+    "doc_create_no": "1151291007",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021013699-E號",
+    "doc_chart_status": "陳沛華"
   },
   {
     "doc_receive_no": "1150002002",
@@ -3223,7 +3695,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃院雲民孝114桃簡1509字第1150006678號",
     "doc_subject": "請惠復貴院病患呂佳穎(身分證統一編號：A228984477號)於113年間至貴院住院手術原因及進行之手術內容為何？是否與原告於112年5月間之車禍有關？請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "16545652",
@@ -3236,7 +3708,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉恆維",
     "doc_attachments": [],
     "created_at": "2026/2/26 下午 12:01",
-    "updated_at": "2026/2/26 下午 12:01"
+    "updated_at": "2026/2/26 下午 12:01",
+    "doc_create_no": "1150100561",
+    "doc_sender_org": "臺灣桃園地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "劉恆維"
   },
   {
     "doc_receive_no": "1150002001",
@@ -3247,7 +3723,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民允114簡上57字第05580號",
     "doc_subject": "請惠予就說明欄二事項回復過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "04275097",
@@ -3260,7 +3736,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林乾閔",
     "doc_attachments": [],
     "created_at": "2026/2/26 下午 05:14",
-    "updated_at": "2026/2/26 下午 05:14"
+    "updated_at": "2026/2/26 下午 05:14",
+    "doc_create_no": "1150100560",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "林乾閔"
   },
   {
     "doc_receive_no": "1150002069",
@@ -3284,7 +3764,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/2/27 上午 09:11",
-    "updated_at": "2026/2/27 上午 09:11"
+    "updated_at": "2026/2/27 上午 09:11",
+    "doc_create_no": "1151291057",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021196915-E號",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150002049",
@@ -3295,7 +3779,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "府授衛醫字第1150004893號",
     "doc_subject": "為民眾申請醫療爭議調解案，請貴院提供張秀鳳(出生年月日：49年*月*日、身分證號：G220370***)相關就醫資料(114年1月1日至115年2月10日)，俾利調解委員参閱，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17557533",
@@ -3308,7 +3792,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "蘇亦昌",
     "doc_attachments": [],
     "created_at": "2026/2/27 下午 02:19",
-    "updated_at": "2026/2/27 下午 02:19"
+    "updated_at": "2026/2/27 下午 02:19",
+    "doc_create_no": "1151291048",
+    "doc_sender_org": "宜蘭縣政府",
+    "doc_labor_no": "",
+    "doc_chart_status": "蘇亦昌"
   },
   {
     "doc_receive_no": "1150002109",
@@ -3319,7 +3807,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警中刑字第1155181646號",
     "doc_subject": "本分局因偵辦刑事過失致死案需要，請依說明二所示提供相關資料，俾利刑案偵辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "14323660",
@@ -3332,7 +3820,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "楊宗燁",
     "doc_attachments": [],
     "created_at": "2026/3/2 上午 10:45",
-    "updated_at": "2026/3/2 上午 10:45"
+    "updated_at": "2026/3/2 上午 10:45",
+    "doc_create_no": "1150100588",
+    "doc_sender_org": "新北市政府警察局中和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "楊宗燁"
   },
   {
     "doc_receive_no": "1150002115",
@@ -3343,7 +3835,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民通115年度簡上字第47號",
     "doc_subject": "請貴院急診室協助查明于秀麗(女、民國52年5月23日生、身分證統一編號：F222165722號)因車禍於111年12月1日至貴院急診室就醫，其所受傷害為何？請惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "12476460",
@@ -3356,7 +3848,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/2 上午 10:48",
-    "updated_at": "2026/3/2 上午 10:48"
+    "updated_at": "2026/3/2 上午 10:48",
+    "doc_create_no": "1150100594",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002117",
@@ -3367,7 +3863,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民毅115原訴1字第05975號",
     "doc_subject": "惠請於文到20日內就說明二以下所示之事項具狀函覆本院，如有相關文件並檢送過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "16957828",
@@ -3380,7 +3876,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/2 上午 10:51",
-    "updated_at": "2026/3/2 上午 10:51"
+    "updated_at": "2026/3/2 上午 10:51",
+    "doc_create_no": "1150100596",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002087",
@@ -3404,7 +3904,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林育如",
     "doc_attachments": [],
     "created_at": "2026/3/2 下午 12:01",
-    "updated_at": "2026/3/2 下午 12:01"
+    "updated_at": "2026/3/2 下午 12:01",
+    "doc_create_no": "1151291067",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021020645-E號",
+    "doc_chart_status": "林育如"
   },
   {
     "doc_receive_no": "1150002005",
@@ -3415,7 +3919,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃檢亮河115偵9352字第1159023153號",
     "doc_subject": "請提供如說明所示資料到署，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "04911814",
@@ -3428,7 +3932,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/3 下午 12:03",
-    "updated_at": "2026/3/3 下午 12:03"
+    "updated_at": "2026/3/3 下午 12:03",
+    "doc_create_no": "1150100564",
+    "doc_sender_org": "臺灣桃園地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002249",
@@ -3452,7 +3960,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/3/4 上午 09:15",
-    "updated_at": "2026/3/4 上午 09:15"
+    "updated_at": "2026/3/4 上午 09:15",
+    "doc_create_no": "1151291116",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021114798-E號",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150002296",
@@ -3463,7 +3975,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永和114醫他36字第1159022941號",
     "doc_subject": "請惠予查復說明一所示之事項過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00695639",
@@ -3476,7 +3988,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/5 上午 08:41",
-    "updated_at": "2026/3/5 上午 08:41"
+    "updated_at": "2026/3/5 上午 08:41",
+    "doc_create_no": "1150100641",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002314",
@@ -3487,7 +4003,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "院英民孝114上991字第1150002720號",
     "doc_subject": "請檢這黃耀賞(身分證統一編號：E122716208號)於貴院(所)之就醫紀錄、相關醫療費用明細及病歷資料過院參辦，惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "14446043",
@@ -3500,7 +4016,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/6 下午 01:40",
-    "updated_at": "2026/3/6 下午 01:40"
+    "updated_at": "2026/3/6 下午 01:40",
+    "doc_create_no": "1150100649",
+    "doc_sender_org": "臺灣高等法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002319",
@@ -3511,7 +4031,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永仁114調解醫偵12字第1159024312號",
     "doc_subject": "請提供告訴人洪玉梅(民國39年11月20日生、身分證統一編號：L201684646)至貴院(貴所)就診之完整病歷資料(包括但不限於護理紀錄)過署供參，惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "06451310",
@@ -3524,7 +4044,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/6 下午 01:43",
-    "updated_at": "2026/3/6 下午 01:43"
+    "updated_at": "2026/3/6 下午 01:43",
+    "doc_create_no": "1150100654",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002338",
@@ -3548,7 +4072,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/3/6 下午 02:36",
-    "updated_at": "2026/3/6 下午 02:36"
+    "updated_at": "2026/3/6 下午 02:36",
+    "doc_create_no": "1151291211",
+    "doc_sender_org": "新北市土城區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150002409",
@@ -3572,7 +4100,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/3/9 下午 01:26",
-    "updated_at": "2026/3/9 下午 01:26"
+    "updated_at": "2026/3/9 下午 01:26",
+    "doc_create_no": "1151291224",
+    "doc_sender_org": "基隆市衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150002424",
@@ -3596,7 +4128,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "馮博皓",
     "doc_attachments": [],
     "created_at": "2026/3/10 下午 01:08",
-    "updated_at": "2026/3/10 下午 01:08"
+    "updated_at": "2026/3/10 下午 01:08",
+    "doc_create_no": "1151291233",
+    "doc_sender_org": "桃園市政府社會局",
+    "doc_labor_no": "",
+    "doc_chart_status": "馮博皓"
   },
   {
     "doc_receive_no": "1150002418",
@@ -3620,7 +4156,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳聰明",
     "doc_attachments": [],
     "created_at": "2026/3/10 下午 01:39",
-    "updated_at": "2026/3/10 下午 01:39"
+    "updated_at": "2026/3/10 下午 01:39",
+    "doc_create_no": "1151291239",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031001462-C號",
+    "doc_chart_status": "陳聰明"
   },
   {
     "doc_receive_no": "1150002430",
@@ -3631,7 +4171,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民毅113簡上597字第1159004110號",
     "doc_subject": "請貴院將上訴人周美珠(女，身分證字號：A200996951，民國36年9月20日生)自114年3月迄今之就診病歷(含職能治療)過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "06667623",
@@ -3644,7 +4184,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/10 下午 02:57",
-    "updated_at": "2026/3/10 下午 02:57"
+    "updated_at": "2026/3/10 下午 02:57",
+    "doc_create_no": "1151291246",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002452",
@@ -3655,7 +4199,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信刑大114交易289字第1159010434號",
     "doc_subject": "惠請提供告訴人林祈賢（男、民國45年7月21日生、身分證統一編號：E101458541號）自民國113年3月迄今於貴院就醫之病歷表影本過院參辦。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "16577635",
@@ -3668,7 +4212,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/10 下午 03:35",
-    "updated_at": "2026/3/10 下午 03:35"
+    "updated_at": "2026/3/10 下午 03:35",
+    "doc_create_no": "1151291261",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002493",
@@ -3679,7 +4227,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤刑愛115易464字第1159004660號",
     "doc_subject": "請依說明欄意旨辦理，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "02070403",
@@ -3692,7 +4240,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/11 上午 10:43",
-    "updated_at": "2026/3/11 上午 10:43"
+    "updated_at": "2026/3/11 上午 10:43",
+    "doc_create_no": "1151291281",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002500",
@@ -3703,7 +4255,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北深衛字第1156250683號",
     "doc_subject": "為因應結核病個案病歷審查需求，惠請貴院提供個案病歷資料(如附件)，詳如說明段，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "15701611",
@@ -3716,7 +4268,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/11 上午 10:45",
-    "updated_at": "2026/3/11 上午 10:45"
+    "updated_at": "2026/3/11 上午 10:45",
+    "doc_create_no": "1151291271",
+    "doc_sender_org": "新北市深坑區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002491",
@@ -3740,7 +4296,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉郁欣",
     "doc_attachments": [],
     "created_at": "2026/3/11 下午 12:16",
-    "updated_at": "2026/3/11 下午 12:16"
+    "updated_at": "2026/3/11 下午 12:16",
+    "doc_create_no": "1151291280",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021183627-E號",
+    "doc_chart_status": "劉郁欣"
   },
   {
     "doc_receive_no": "1150002490",
@@ -3764,7 +4324,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "江長蓉",
     "doc_attachments": [],
     "created_at": "2026/3/11 下午 12:18",
-    "updated_at": "2026/3/11 下午 12:18"
+    "updated_at": "2026/3/11 下午 12:18",
+    "doc_create_no": "1151291282",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021002327-E號",
+    "doc_chart_status": "江長蓉"
   },
   {
     "doc_receive_no": "1150002205",
@@ -3788,7 +4352,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/11 下午 02:02",
-    "updated_at": "2026/3/11 下午 02:02"
+    "updated_at": "2026/3/11 下午 02:02",
+    "doc_create_no": "1150100618",
+    "doc_sender_org": "衛生福利部",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002457",
@@ -3812,7 +4380,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李明哲",
     "doc_attachments": [],
     "created_at": "2026/3/12 上午 11:25",
-    "updated_at": "2026/3/12 上午 11:25"
+    "updated_at": "2026/3/12 上午 11:25",
+    "doc_create_no": "1151291257",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031036176-C號",
+    "doc_chart_status": "李明哲"
   },
   {
     "doc_receive_no": "1150002512",
@@ -3836,7 +4408,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李紹榕",
     "doc_attachments": [],
     "created_at": "2026/3/12 下午 12:01",
-    "updated_at": "2026/3/12 下午 12:01"
+    "updated_at": "2026/3/12 下午 12:01",
+    "doc_create_no": "1150100689",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031004255-C號",
+    "doc_chart_status": "李紹榕"
   },
   {
     "doc_receive_no": "1150002571",
@@ -3860,7 +4436,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠元",
     "doc_attachments": [],
     "created_at": "2026/3/12 下午 02:10",
-    "updated_at": "2026/3/12 下午 02:10"
+    "updated_at": "2026/3/12 下午 02:10",
+    "doc_create_no": "1150100711",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114031025431-C號",
+    "doc_chart_status": "陳冠元"
   },
   {
     "doc_receive_no": "1150002576",
@@ -3871,7 +4451,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永審(淡)114偵37547字第30389號",
     "doc_subject": "依貴院病患劉岱雯(國民身分證統一編號：G222272330號)於民國114年1月17至114年8月20日日至貴院就診之診斷證明書，其內容記載：「左側大腿外側區感覺神經病變致感覺喪失」、「為永久性喪失」，請說明上開病狀在醫學上之意義為何？是否屬毀敗或嚴重減損一肢以上之機能，或於身體或健康，有重大不治或難治之傷害。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "06862192",
@@ -3884,7 +4464,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/12 下午 02:13",
-    "updated_at": "2026/3/12 下午 02:13"
+    "updated_at": "2026/3/12 下午 02:13",
+    "doc_create_no": "1150100716",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002533",
@@ -3895,7 +4479,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職傷字第11560061371號",
     "doc_subject": "本局為審核被保險人郭宜欣君保險給付需要，敬請貴院於文到15日內儘速檢附其因「右側腕部挫傷之初期照護、右側手肘挫傷之初期照護、右側手臂肩及上臂區位未明示肌肉、筋膜和肌腱拉傷之初期照護、右側腕部挫傷併舟狀骨骨折與伸肌肌腱撕裂傷、右側上臂肌肉拉傷、右手部挫傷」相關病症至貴院之全份病歷資料影本（含急、初、門診、住院病歷、護理紀錄、手術報告及記錄、X光片、CT、MRI等相關檢查記錄報告）及影像檢查光碟片各乙份，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。",
     "doc_lbi_no": "114021118729審-E",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00988140",
@@ -3908,7 +4492,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/12 下午 02:15",
-    "updated_at": "2026/3/12 下午 02:15"
+    "updated_at": "2026/3/12 下午 02:15",
+    "doc_create_no": "1151291293",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114021118729審-E",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002607",
@@ -3932,7 +4520,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/13 下午 04:22",
-    "updated_at": "2026/3/13 下午 04:22"
+    "updated_at": "2026/3/13 下午 04:22",
+    "doc_create_no": "1151291332",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021007517-E號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002606",
@@ -3943,7 +4535,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警中刑字第1155188915號",
     "doc_subject": "為偵辦刑事案件，亟需調閱於115年3月3日21時38分許，病患林忠育(男、民國71年7月14日生、身分證統一編號：J121743081)之送醫救護(急救)紀錄惠復，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "04311414",
@@ -3956,7 +4548,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/13 下午 04:24",
-    "updated_at": "2026/3/13 下午 04:24"
+    "updated_at": "2026/3/13 下午 04:24",
+    "doc_create_no": "1151291334",
+    "doc_sender_org": "新北市政府警察局中和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002640",
@@ -3967,7 +4563,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 列玉 114 他 8510字第11590302740號",
     "doc_subject": "請說明說明一所示事項，並請提供說明二所示病歷資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00305042",
@@ -3980,7 +4576,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/13 下午 04:25",
-    "updated_at": "2026/3/13 下午 04:25"
+    "updated_at": "2026/3/13 下午 04:25",
+    "doc_create_no": "1151291344",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002654",
@@ -3991,7 +4591,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "南院發民揚114消債職聲免127字第1151002112號",
     "doc_subject": "本院受理114年度消債職聲免字第127號依職權裁定免責案件，惠請貴院於文到10日內陳報說明欄所列事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17930684",
@@ -4004,7 +4604,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/13 下午 04:27",
-    "updated_at": "2026/3/13 下午 04:27"
+    "updated_at": "2026/3/13 下午 04:27",
+    "doc_create_no": "1151291359",
+    "doc_sender_org": "臺灣臺南地方法院民事庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002711",
@@ -4015,7 +4619,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃院雲民于114桃簡2015字第1159007171號",
     "doc_subject": "請惠予提供如說明二所示事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "16331992",
@@ -4028,7 +4632,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/17 下午 02:47",
-    "updated_at": "2026/3/17 下午 02:47"
+    "updated_at": "2026/3/17 下午 02:47",
+    "doc_create_no": "1151291380",
+    "doc_sender_org": "臺灣桃園地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002710",
@@ -4052,7 +4660,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "馬漢平",
     "doc_attachments": [],
     "created_at": "2026/3/17 下午 02:48",
-    "updated_at": "2026/3/17 下午 02:48"
+    "updated_at": "2026/3/17 下午 02:48",
+    "doc_create_no": "1151291389",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031030020-E",
+    "doc_chart_status": "馬漢平"
   },
   {
     "doc_receive_no": "1150002815",
@@ -4063,7 +4675,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永寒114偵52373字第1159030326號",
     "doc_subject": "惠請貴院就說明一所示之事項予以函覆，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17651167",
@@ -4076,7 +4688,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/18 下午 12:16",
-    "updated_at": "2026/3/18 下午 12:16"
+    "updated_at": "2026/3/18 下午 12:16",
+    "doc_create_no": "1150100769",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002857",
@@ -4087,7 +4703,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永銅115執4字第1159030664號",
     "doc_subject": "惠請查明受刑人曾英富(男、64年2月20日生、國民身分證統一編號：Q121614688號)現所罹膽囊炎、敗血性休克、菌血症等病變，有無因入監服刑執行刑罰，而不能保其生命情事？後續是否有至貴院復診？惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "04119959",
@@ -4100,7 +4716,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/19 上午 11:36",
-    "updated_at": "2026/3/19 上午 11:36"
+    "updated_at": "2026/3/19 上午 11:36",
+    "doc_create_no": "1150100785",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002860",
@@ -4111,7 +4731,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警刑二字第1154395064號",
     "doc_subject": "本大隊因偵辦刑案，亟需貴院提供說明二所示資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "18016275",
@@ -4124,7 +4744,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/19 上午 11:39",
-    "updated_at": "2026/3/19 上午 11:39"
+    "updated_at": "2026/3/19 上午 11:39",
+    "doc_create_no": "1150100788",
+    "doc_sender_org": "新北市政府警察局刑事警察大隊",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002845",
@@ -4148,7 +4772,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/19 下午 01:11",
-    "updated_at": "2026/3/19 下午 01:11"
+    "updated_at": "2026/3/19 下午 01:11",
+    "doc_create_no": "1151291458",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021176891（審）-E號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002844",
@@ -4172,7 +4800,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "楊政道",
     "doc_attachments": [],
     "created_at": "2026/3/19 下午 01:54",
-    "updated_at": "2026/3/19 下午 01:54"
+    "updated_at": "2026/3/19 下午 01:54",
+    "doc_create_no": "1151291459",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031019115-C號",
+    "doc_chart_status": "楊政道"
   },
   {
     "doc_receive_no": "1150002879",
@@ -4183,7 +4815,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民允113醫11字第08091號",
     "doc_subject": "請惠予提供謝承佑(身分證統一編號：F126503520號)於103年7月至104年8月之病歷資料過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "02215572",
@@ -4196,7 +4828,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/19 下午 02:32",
-    "updated_at": "2026/3/19 下午 02:32"
+    "updated_at": "2026/3/19 下午 02:32",
+    "doc_create_no": "1150100791",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002891",
@@ -4207,7 +4843,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "中檢原謹殊114偵38969字第1159033864號",
     "doc_subject": "請就說明欄所述事項辦理後惠復。請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17331533",
@@ -4220,7 +4856,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/19 下午 02:33",
-    "updated_at": "2026/3/19 下午 02:33"
+    "updated_at": "2026/3/19 下午 02:33",
+    "doc_create_no": "1150100803",
+    "doc_sender_org": "臺灣臺中地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002894",
@@ -4231,7 +4871,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警店刑字第1154008284號",
     "doc_subject": "因偵辦本轄刑事相驗案件，亟需貴院惠予提供相關資料，俾利辦理，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "03303773",
@@ -4244,7 +4884,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/20 上午 08:48",
-    "updated_at": "2026/3/20 上午 08:48"
+    "updated_at": "2026/3/20 上午 08:48",
+    "doc_create_no": "1150100806",
+    "doc_sender_org": "新北市政府警察局新店分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002907",
@@ -4268,7 +4912,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李垣樟",
     "doc_attachments": [],
     "created_at": "2026/3/20 上午 10:28",
-    "updated_at": "2026/3/20 上午 10:28"
+    "updated_at": "2026/3/20 上午 10:28",
+    "doc_create_no": "1151291490",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021208798-E號",
+    "doc_chart_status": "李垣樟"
   },
   {
     "doc_receive_no": "1150002906",
@@ -4292,7 +4940,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃錦前",
     "doc_attachments": [],
     "created_at": "2026/3/20 上午 11:59",
-    "updated_at": "2026/3/20 上午 11:59"
+    "updated_at": "2026/3/20 上午 11:59",
+    "doc_create_no": "1151291484",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021182791-E號",
+    "doc_chart_status": "黃錦前"
   },
   {
     "doc_receive_no": "1150002965",
@@ -4303,7 +4955,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "院英刑寅113侵上訴107字第1150401680號",
     "doc_subject": "請 貴院惠予提供告訴人A女(真實姓名年籍資料詳如彌封袋內附件所載)如說明二所示之就醫記錄，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "12654299",
@@ -4316,7 +4968,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/23 上午 10:58",
-    "updated_at": "2026/3/23 上午 10:58"
+    "updated_at": "2026/3/23 上午 10:58",
+    "doc_create_no": "1150100811",
+    "doc_sender_org": "臺灣高等法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002966",
@@ -4327,7 +4983,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民定113重簡字第1816號",
     "doc_subject": "惠請貴院檢送原告陳聖翰(男，民國的年5月7日生，身分證字號：F130580151號)病歷資料，詳如說明二，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "09591419",
@@ -4340,7 +4996,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/23 上午 11:00",
-    "updated_at": "2026/3/23 上午 11:00"
+    "updated_at": "2026/3/23 上午 11:00",
+    "doc_create_no": "1150100812",
+    "doc_sender_org": "臺灣新北地方法院三重簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150002970",
@@ -4364,7 +5024,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/23 上午 11:24",
-    "updated_at": "2026/3/23 上午 11:24"
+    "updated_at": "2026/3/23 上午 11:24",
+    "doc_create_no": "1150100816",
+    "doc_sender_org": "新北市板橋區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003014",
@@ -4388,7 +5052,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉郁欣",
     "doc_attachments": [],
     "created_at": "2026/3/24 上午 11:44",
-    "updated_at": "2026/3/24 上午 11:44"
+    "updated_at": "2026/3/24 上午 11:44",
+    "doc_create_no": "1151291551",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021200593-E號",
+    "doc_chart_status": "劉郁欣"
   },
   {
     "doc_receive_no": "1150003039",
@@ -4399,7 +5067,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤刑民115交訴7字第1159005413號",
     "doc_subject": "檢附告訴人衛生福利部雙和醫院診斷證明書（詳如附件電子檔），並請貴院就下列說明欄事項惠復，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17076292",
@@ -4412,7 +5080,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/24 下午 04:24",
-    "updated_at": "2026/3/24 下午 04:24"
+    "updated_at": "2026/3/24 下午 04:24",
+    "doc_create_no": "1151291568",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003012",
@@ -4423,7 +5095,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北衛醫字第1150510572號",
     "doc_subject": "有關民眾陳情因左手第5指骨折於貴院接受手術，疑術後感染蜂窩性組織炎、骨髓炎等涉醫療爭議並申請調解一案，詳如說明段，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "09088599",
@@ -4436,7 +5108,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/25 上午 09:32",
-    "updated_at": "2026/3/25 上午 09:32"
+    "updated_at": "2026/3/25 上午 09:32",
+    "doc_create_no": "1151291552",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003082",
@@ -4447,7 +5123,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民佳114年度重訴字第744號",
     "doc_subject": "請台端就下列函詢事項是否可以協助回覆，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "",
@@ -4460,7 +5136,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/25 上午 10:00",
-    "updated_at": "2026/3/25 上午 10:00"
+    "updated_at": "2026/3/25 上午 10:00",
+    "doc_create_no": "1150100830",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003085",
@@ -4471,7 +5151,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北執義113年公路罰執專字第00775126號",
     "doc_subject": "請惠予查復義務人杜時英(身分證統一編號：A100161689)就醫時所留存之通訊地址及聯絡電話，並檢送相關資料供參，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00105398",
@@ -4484,7 +5164,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/25 上午 10:02",
-    "updated_at": "2026/3/25 上午 10:02"
+    "updated_at": "2026/3/25 上午 10:02",
+    "doc_create_no": "1150100833",
+    "doc_sender_org": "法務部行政執行署新北分署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003093",
@@ -4495,7 +5179,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民函114板簡字第248號",
     "doc_subject": "請貴院檢送如說明二所示事項到院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00409889",
@@ -4508,7 +5192,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/25 上午 10:03",
-    "updated_at": "2026/3/25 上午 10:03"
+    "updated_at": "2026/3/25 上午 10:03",
+    "doc_create_no": "1150100841",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003052",
@@ -4519,7 +5207,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "財北國稅綜所遺贈字第1150007271號",
     "doc_subject": "因稽徵業務需要，請提供被繼承人胡林棼棼（身分證統一編號：Y200126814）自113年12月22日至114年4月9日止住院期間接受治療時之精神意識狀態、自行處理事務能力等資料(請勿提供病歷摘要)惠復，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "01150849",
@@ -4532,7 +5220,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/25 上午 10:05",
-    "updated_at": "2026/3/25 上午 10:05"
+    "updated_at": "2026/3/25 上午 10:05",
+    "doc_create_no": "1151291594",
+    "doc_sender_org": "財政部臺北國稅局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003113",
@@ -4556,7 +5248,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "吳俊穎",
     "doc_attachments": [],
     "created_at": "2026/3/25 上午 10:31",
-    "updated_at": "2026/3/25 上午 10:31"
+    "updated_at": "2026/3/25 上午 10:31",
+    "doc_create_no": "1151291611",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115091000252",
+    "doc_chart_status": "吳俊穎"
   },
   {
     "doc_receive_no": "1150003072",
@@ -4580,7 +5276,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李祐萱",
     "doc_attachments": [],
     "created_at": "2026/3/25 上午 11:18",
-    "updated_at": "2026/3/25 上午 11:18"
+    "updated_at": "2026/3/25 上午 11:18",
+    "doc_create_no": "1151291601",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021176202-E號",
+    "doc_chart_status": "李祐萱"
   },
   {
     "doc_receive_no": "1150003053",
@@ -4604,7 +5304,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠豪",
     "doc_attachments": [],
     "created_at": "2026/3/25 下午 12:12",
-    "updated_at": "2026/3/25 下午 12:12"
+    "updated_at": "2026/3/25 下午 12:12",
+    "doc_create_no": "1151291591",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021030964-E號",
+    "doc_chart_status": "陳冠豪"
   },
   {
     "doc_receive_no": "1150003083",
@@ -4628,7 +5332,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "賴鴻政",
     "doc_attachments": [],
     "created_at": "2026/3/25 下午 01:39",
-    "updated_at": "2026/3/25 下午 01:39"
+    "updated_at": "2026/3/25 下午 01:39",
+    "doc_create_no": "1150100831",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031002995號",
+    "doc_chart_status": "賴鴻政"
   },
   {
     "doc_receive_no": "1150003046",
@@ -4652,7 +5360,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "釋出114/12/18放射報告",
     "doc_attachments": [],
     "created_at": "2026/3/25 下午 02:15",
-    "updated_at": "2026/3/25 下午 02:15"
+    "updated_at": "2026/3/25 下午 02:15",
+    "doc_create_no": "1151291578",
+    "doc_sender_org": "新北市土城區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "釋出114/12/18放射報告"
   },
   {
     "doc_receive_no": "1150003200",
@@ -4663,7 +5375,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永忠114偵續一43字第1159037179號",
     "doc_subject": "惠請說明貴院於2021年5月2820時19分有關疼痛處置衛教室針對實際有疼痛狀況的病人；或是無論有無疼痛均需進行一般例行性衛教?請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00505684",
@@ -4676,7 +5388,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "葉雲凱",
     "doc_attachments": [],
     "created_at": "2026/3/27 下午 12:20",
-    "updated_at": "2026/3/27 下午 12:20"
+    "updated_at": "2026/3/27 下午 12:20",
+    "doc_create_no": "1150100885",
+    "doc_sender_org": "臺灣新北地檢署",
+    "doc_labor_no": "",
+    "doc_chart_status": "葉雲凱"
   },
   {
     "doc_receive_no": "1150003166",
@@ -4687,7 +5403,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "士院璿刑光115易199字第1159007529號",
     "doc_subject": "惠請於文到後7日內提供說明二所示之資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "11627692",
@@ -4700,7 +5416,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/27 下午 01:54",
-    "updated_at": "2026/3/27 下午 01:54"
+    "updated_at": "2026/3/27 下午 01:54",
+    "doc_create_no": "1151291620",
+    "doc_sender_org": "臺灣士林地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003194",
@@ -4711,7 +5431,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信民芳114年度店簡字第1438號",
     "doc_subject": "請貴院協助查復如說明二所示事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17077978",
@@ -4724,7 +5444,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/27 下午 01:56",
-    "updated_at": "2026/3/27 下午 01:56"
+    "updated_at": "2026/3/27 下午 01:56",
+    "doc_create_no": "1150100879",
+    "doc_sender_org": "臺灣臺北地方法院新店簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003148",
@@ -4735,7 +5459,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢詠文114執6919字第1159034711號",
     "doc_subject": "請查明受刑人林勝雄(男、42年1月25日生、國民身分證統一編號：A102645277號、病歷號碼：16506615號)現所罹下咽惡性腫瘤疾病之治療情形，有無因入監服刑執行刑罰，而不能保其生命情事？惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "16506615",
@@ -4748,7 +5472,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/3/27 下午 01:57",
-    "updated_at": "2026/3/27 下午 01:57"
+    "updated_at": "2026/3/27 下午 01:57",
+    "doc_create_no": "1150100868",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003323",
@@ -4772,7 +5500,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "胡朝榮",
     "doc_attachments": [],
     "created_at": "2026/3/31 下午 01:57",
-    "updated_at": "2026/3/31 下午 01:57"
+    "updated_at": "2026/3/31 下午 01:57",
+    "doc_create_no": "1150100922",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031007307-C號",
+    "doc_chart_status": "胡朝榮"
   },
   {
     "doc_receive_no": "1150003276",
@@ -4783,7 +5515,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "台唐律字第115006號",
     "doc_subject": "為代當事人請貴院依說明二辦理。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "12538694",
@@ -4796,7 +5528,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/1 上午 09:02",
-    "updated_at": "2026/4/1 上午 09:02"
+    "updated_at": "2026/4/1 上午 09:02",
+    "doc_create_no": "1150100903",
+    "doc_sender_org": "台鼎法津事務所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003392",
@@ -4807,7 +5543,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永御115偵15911字第1159039367號",
     "doc_subject": "檢附貴院診斷證明書影本1份，請協助說明所示事項，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "09696022",
@@ -4820,7 +5556,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/1 上午 09:04",
-    "updated_at": "2026/4/1 上午 09:04"
+    "updated_at": "2026/4/1 上午 09:04",
+    "doc_create_no": "1150100934",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003409",
@@ -4831,7 +5571,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 乙 115 執 1107字第11590411120號",
     "doc_subject": "請查明受刑人林孝柔（女、72年6月30日生、國民身分證統一編號：F225520510號、病歷號碼：12654356號）現所罹慢性收縮性（充血性）心臟衰竭，有無因入監服刑執行刑罰，而不能保其生命情事？惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "12654356",
@@ -4844,7 +5584,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/1 上午 09:05",
-    "updated_at": "2026/4/1 上午 09:05"
+    "updated_at": "2026/4/1 上午 09:05",
+    "doc_create_no": "1151291740",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003411",
@@ -4855,7 +5599,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "財北國稅綜所遺贈字第1150008019B號",
     "doc_subject": "為稽徵業務需要，請貴院惠予查告說明二所列事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17386836",
@@ -4868,7 +5612,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/1 上午 11:22",
-    "updated_at": "2026/4/1 上午 11:22"
+    "updated_at": "2026/4/1 上午 11:22",
+    "doc_create_no": "1151291750",
+    "doc_sender_org": "財政部臺北國稅局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003443",
@@ -4879,7 +5627,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信民力114勞訴259字第1159014431號",
     "doc_subject": "惠請提供如說明所示之完整病歷資料過院參辦。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "09599675",
@@ -4892,7 +5640,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/2 下午 04:34",
-    "updated_at": "2026/4/2 下午 04:34"
+    "updated_at": "2026/4/2 下午 04:34",
+    "doc_create_no": "1151291757",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003441",
@@ -4916,7 +5668,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "謝岳穎(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/4/2 下午 04:36",
-    "updated_at": "2026/4/2 下午 04:36"
+    "updated_at": "2026/4/2 下午 04:36",
+    "doc_create_no": "1151291759",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：115-0-82-005186。",
+    "doc_chart_status": "謝岳穎(回答問題)"
   },
   {
     "doc_receive_no": "1150003432",
@@ -4940,7 +5696,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李垣樟(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/4/2 下午 04:37",
-    "updated_at": "2026/4/2 下午 04:37"
+    "updated_at": "2026/4/2 下午 04:37",
+    "doc_create_no": "1151291768",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021018818-E號",
+    "doc_chart_status": "李垣樟(回答問題)"
   },
   {
     "doc_receive_no": "1150003475",
@@ -4951,7 +5711,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 列出 115 偵 12363字第11590393190號",
     "doc_subject": "請惠予查明如說明所示之事項，並提供相關資料供參，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "08499471",
@@ -4964,7 +5724,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/2 下午 04:38",
-    "updated_at": "2026/4/2 下午 04:38"
+    "updated_at": "2026/4/2 下午 04:38",
+    "doc_create_no": "1151291772",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003527",
@@ -4988,7 +5752,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅等(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/4/3 上午 11:52",
-    "updated_at": "2026/4/3 上午 11:52"
+    "updated_at": "2026/4/3 上午 11:52",
+    "doc_create_no": "1151291802",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021170318-E號",
+    "doc_chart_status": "王智毅等(回答問題)"
   },
   {
     "doc_receive_no": "1150003566",
@@ -4999,7 +5767,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北執愛115年房地稅執專字第00025226號",
     "doc_subject": "請查復江孟潔(身分證統一編號:F226379213)就醫時所留存之通訊地址及聯絡電話，並檢送相關資料供參，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "04052797",
@@ -5012,7 +5780,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/7 下午 01:16",
-    "updated_at": "2026/4/7 下午 01:16"
+    "updated_at": "2026/4/7 下午 01:16",
+    "doc_create_no": "1150101005",
+    "doc_sender_org": "法務部行政執行署新北分署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003565",
@@ -5036,7 +5808,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "楊順泰(補正診斷書)",
     "doc_attachments": [],
     "created_at": "2026/4/7 下午 01:32",
-    "updated_at": "2026/4/7 下午 01:32"
+    "updated_at": "2026/4/7 下午 01:32",
+    "doc_create_no": "1150101004",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼:115031004312-C號",
+    "doc_chart_status": "楊順泰(補正診斷書)"
   },
   {
     "doc_receive_no": "1150003562",
@@ -5047,7 +5823,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民函114板簡字第2422號",
     "doc_subject": "請惠予查明、鑑定如說明二所示，惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00933230",
@@ -5060,7 +5836,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/7 下午 01:33",
-    "updated_at": "2026/4/7 下午 01:33"
+    "updated_at": "2026/4/7 下午 01:33",
+    "doc_create_no": "1150101001",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003659",
@@ -5071,7 +5851,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永玄115他2472字第1159040479號",
     "doc_subject": "請協助辦理說明事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "08673936",
@@ -5084,7 +5864,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/9 上午 11:47",
-    "updated_at": "2026/4/9 上午 11:47"
+    "updated_at": "2026/4/9 上午 11:47",
+    "doc_create_no": "1150101020",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003718",
@@ -5095,7 +5879,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市警松分刑字第1153047961號",
     "doc_subject": "本分局偵辦刑事案件，惠請貴院提供下列說明二所示資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "12618941",
@@ -5108,7 +5892,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/10 上午 11:26",
-    "updated_at": "2026/4/10 上午 11:26"
+    "updated_at": "2026/4/10 上午 11:26",
+    "doc_create_no": "1150101035",
+    "doc_sender_org": "臺北市政府警察局松山分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003708",
@@ -5119,7 +5907,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北衛醫字第11506035561號",
     "doc_subject": "茲因調解業務需要，請貴院協助提供病患柳○(身分證統一編號：C22065****)115年2月12日於貴院就醫之病歷影本1份(含手術同意書、數位影像報告等)，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "03796331",
@@ -5132,7 +5920,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "關曉雯、謝岳穎",
     "doc_attachments": [],
     "created_at": "2026/4/10 上午 11:28",
-    "updated_at": "2026/4/10 上午 11:28"
+    "updated_at": "2026/4/10 上午 11:28",
+    "doc_create_no": "1151291888",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": "關曉雯、謝岳穎"
   },
   {
     "doc_receive_no": "1150003680",
@@ -5156,7 +5948,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林廉傑",
     "doc_attachments": [],
     "created_at": "2026/4/10 上午 11:57",
-    "updated_at": "2026/4/10 上午 11:57"
+    "updated_at": "2026/4/10 上午 11:57",
+    "doc_create_no": "1151291869",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114-0-92-013446",
+    "doc_chart_status": "林廉傑"
   },
   {
     "doc_receive_no": "1150003766",
@@ -5180,7 +5976,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "釋出即時病歷",
     "doc_attachments": [],
     "created_at": "2026/4/10 下午 02:23",
-    "updated_at": "2026/4/10 下午 02:23"
+    "updated_at": "2026/4/10 下午 02:23",
+    "doc_create_no": "1151291915",
+    "doc_sender_org": "新北市汐止區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "釋出即時病歷"
   },
   {
     "doc_receive_no": "1150003716",
@@ -5191,7 +5991,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北永衛字第1156381486號",
     "doc_subject": "為結核病防疫業務需要，惠請貴院提供本市結核病患林○瑜於貴院114年後歷次檢查之胸部X光片、病歷摘要、病理檢查報告及相關檢驗報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "何秀英",
     "doc_assignee_email": "12254@s.tmu.edu.tw",
     "doc_chart_no": "08842978",
@@ -5204,7 +6004,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "釋出即時病歷",
     "doc_attachments": [],
     "created_at": "2026/4/10 下午 02:25",
-    "updated_at": "2026/4/10 下午 02:25"
+    "updated_at": "2026/4/10 下午 02:25",
+    "doc_create_no": "1151291875",
+    "doc_sender_org": "新北市永和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "釋出即時病歷"
   },
   {
     "doc_receive_no": "1150003781",
@@ -5215,7 +6019,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "宜檢柏和114他1410字第1159007373號",
     "doc_subject": "惠予提供許浩偉(民國87年3月1日生，國民身分證統一編號:F130491104號)，於106年迄今之病歷資料及護理紀錄過署參辦。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "14445457",
@@ -5228,7 +6032,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/13 上午 11:01",
-    "updated_at": "2026/4/13 上午 11:01"
+    "updated_at": "2026/4/13 上午 11:01",
+    "doc_create_no": "1150101057",
+    "doc_sender_org": "臺灣宜蘭地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003790",
@@ -5239,7 +6047,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "中法機一字第11560523350號",
     "doc_subject": "因調查刑事案件需要，惠允提供如說明二資料參考，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "",
@@ -5252,7 +6060,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/13 上午 11:02",
-    "updated_at": "2026/4/13 上午 11:02"
+    "updated_at": "2026/4/13 上午 11:02",
+    "doc_create_no": "1151291933",
+    "doc_sender_org": "法務部調查局臺中市調查處",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003783",
@@ -5276,7 +6088,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "吳維喬",
     "doc_attachments": [],
     "created_at": "2026/4/13 上午 11:26",
-    "updated_at": "2026/4/13 上午 11:26"
+    "updated_at": "2026/4/13 上午 11:26",
+    "doc_create_no": "1150101059",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031005874-C號",
+    "doc_chart_status": "吳維喬"
   },
   {
     "doc_receive_no": "1150003819",
@@ -5287,7 +6103,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信民昌115年北簡574字第1156000565號",
     "doc_subject": "請於文到10日內檢送甘信宏（身分證統一編號：U120094855號）自民國112年8月29日起迄今之病歷資料影本及醫療影像過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "16029402",
@@ -5300,7 +6116,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/13 上午 11:46",
-    "updated_at": "2026/4/13 上午 11:46"
+    "updated_at": "2026/4/13 上午 11:46",
+    "doc_create_no": "1151291943",
+    "doc_sender_org": "臺灣臺北地方法院臺北簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003861",
@@ -5324,7 +6144,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/4/14 上午 10:10",
-    "updated_at": "2026/4/14 上午 10:10"
+    "updated_at": "2026/4/14 上午 10:10",
+    "doc_create_no": "1150101075",
+    "doc_sender_org": "新北市政府警察局新店分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150003847",
@@ -5348,7 +6172,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/14 上午 10:42",
-    "updated_at": "2026/4/14 上午 10:42"
+    "updated_at": "2026/4/14 上午 10:42",
+    "doc_create_no": "1151291957",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021012831-E號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003835",
@@ -5372,7 +6200,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/4/14 上午 10:38",
-    "updated_at": "2026/4/14 上午 10:38"
+    "updated_at": "2026/4/14 上午 10:38",
+    "doc_create_no": "1150101069",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021206748-E號",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150003836",
@@ -5396,7 +6228,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "韓政達",
     "doc_attachments": [],
     "created_at": "2026/4/14 上午 10:40",
-    "updated_at": "2026/4/14 上午 10:40"
+    "updated_at": "2026/4/14 上午 10:40",
+    "doc_create_no": "1150101070",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115082003853",
+    "doc_chart_status": "韓政達"
   },
   {
     "doc_receive_no": "1150003831",
@@ -5407,7 +6243,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北檢力寒114調解醫偵27字第1159036999號",
     "doc_subject": "請於文到3日內提供民眾蘇瑞坤(J120424603)112年10月至113年3月間於貴院之醫療影像光碟(需含眼底鏡檢查、X光、電腦斷層掃描、磁振造影等)。請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "03570870",
@@ -5420,7 +6256,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/14 上午 11:06",
-    "updated_at": "2026/4/14 上午 11:06"
+    "updated_at": "2026/4/14 上午 11:06",
+    "doc_create_no": "1150101065",
+    "doc_sender_org": "臺灣臺北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003895",
@@ -5444,7 +6284,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王子瑄",
     "doc_attachments": [],
     "created_at": "2026/4/14 下午 05:58",
-    "updated_at": "2026/4/14 下午 05:58"
+    "updated_at": "2026/4/14 下午 05:58",
+    "doc_create_no": "1151291976",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021048790-E號",
+    "doc_chart_status": "王子瑄"
   },
   {
     "doc_receive_no": "1150003897",
@@ -5468,7 +6312,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉郁欣",
     "doc_attachments": [],
     "created_at": "2026/4/14 下午 06:12",
-    "updated_at": "2026/4/14 下午 06:12"
+    "updated_at": "2026/4/14 下午 06:12",
+    "doc_create_no": "1151291979",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021033609-E號",
+    "doc_chart_status": "劉郁欣"
   },
   {
     "doc_receive_no": "1150003821",
@@ -5479,7 +6327,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北中衛字第1156372241號",
     "doc_subject": "本所為防疫業務需要，惠請貴院提供個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "何秀英",
     "doc_assignee_email": "12254@s.tmu.edu.tw",
     "doc_chart_no": "13870201",
@@ -5492,7 +6340,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/15 下午 03:00",
-    "updated_at": "2026/4/15 下午 03:00"
+    "updated_at": "2026/4/15 下午 03:00",
+    "doc_create_no": "1151291954",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003967",
@@ -5503,7 +6355,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北家防護字第1152382904號",
     "doc_subject": "請協助提供個案陳○真於貴醫院急診及入院就醫相關資料，詳如說明，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "03624140",
@@ -5516,7 +6368,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/16 上午 08:46",
-    "updated_at": "2026/4/16 上午 08:46"
+    "updated_at": "2026/4/16 上午 08:46",
+    "doc_create_no": "1151292017",
+    "doc_sender_org": "新北市政府家庭暴力暨性侵害防治中心",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003922",
@@ -5540,7 +6396,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳弘洲(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/4/16 上午 09:24",
-    "updated_at": "2026/4/16 上午 09:24"
+    "updated_at": "2026/4/16 上午 09:24",
+    "doc_create_no": "1151292010",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021169647-E號",
+    "doc_chart_status": "陳弘洲(回答問題)"
   },
   {
     "doc_receive_no": "1150003950",
@@ -5551,7 +6411,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民通115年度簡上字第47號",
     "doc_subject": "請貴單位協助提供于秀麗(身分證統一編號:F222165722號)於民國111年12月1日起迄今之病歷資料過院參辦，請惠復",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "12476460",
@@ -5564,7 +6424,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/16 上午 09:37",
-    "updated_at": "2026/4/16 上午 09:37"
+    "updated_at": "2026/4/16 上午 09:37",
+    "doc_create_no": "1150101109",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003947",
@@ -5588,7 +6452,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "謝岳穎(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/4/16 上午 09:38",
-    "updated_at": "2026/4/16 上午 09:38"
+    "updated_at": "2026/4/16 上午 09:38",
+    "doc_create_no": "1150101106",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031025920",
+    "doc_chart_status": "謝岳穎(回答問題)"
   },
   {
     "doc_receive_no": "1150003941",
@@ -5612,7 +6480,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/16 上午 09:39",
-    "updated_at": "2026/4/16 上午 09:39"
+    "updated_at": "2026/4/16 上午 09:39",
+    "doc_create_no": "1150101100",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003746",
@@ -5623,7 +6495,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北衛醫字第1150614357號",
     "doc_subject": "有關民眾陳情至貴院就醫疑義醫案，請於文到次日起7日內依說明函復本局，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "16424423",
@@ -5636,7 +6508,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/17 上午 10:33",
-    "updated_at": "2026/4/17 上午 10:33"
+    "updated_at": "2026/4/17 上午 10:33",
+    "doc_create_no": "1151291896",
+    "doc_sender_org": "新北市衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150004041",
@@ -5660,7 +6536,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/17 下午 02:38",
-    "updated_at": "2026/4/17 下午 02:38"
+    "updated_at": "2026/4/17 下午 02:38",
+    "doc_create_no": "1151292069",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：115031007103-C號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003996",
@@ -5671,7 +6551,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市衛疾字第1153089269號",
     "doc_subject": "為辦理預防接種受害救濟審議，請於文到14日內提供個案陳Ｏ龍自110年12月6日至115年4月1日之完整病歷資料影本1份，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "15151783",
@@ -5684,7 +6564,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/17 下午 02:40",
-    "updated_at": "2026/4/17 下午 02:40"
+    "updated_at": "2026/4/17 下午 02:40",
+    "doc_create_no": "1151292041",
+    "doc_sender_org": "臺北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003994",
@@ -5708,7 +6592,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林乾閔(確認病歷)",
     "doc_attachments": [],
     "created_at": "2026/4/17 下午 02:41",
-    "updated_at": "2026/4/17 下午 02:41"
+    "updated_at": "2026/4/17 下午 02:41",
+    "doc_create_no": "1151292040",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：115031000801-C號",
+    "doc_chart_status": "林乾閔(確認病歷)"
   },
   {
     "doc_receive_no": "1150004000",
@@ -5719,7 +6607,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信民火115醫1字第1150007701號",
     "doc_subject": "請貴院惠予提供姜宏宏(身分證統一編號:H290066845號)114年2月27日起至今之全部病例資料過院參辦，請查照",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17425559",
@@ -5732,7 +6620,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/17 下午 02:42",
-    "updated_at": "2026/4/17 下午 02:42"
+    "updated_at": "2026/4/17 下午 02:42",
+    "doc_create_no": "1150101117",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150003998",
@@ -5743,7 +6635,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永賢114調解醫他8字第1159047803號",
     "doc_subject": "請貴院惠予提供如說明所示之資料過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "01803495",
@@ -5756,7 +6648,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "張舜程",
     "doc_attachments": [],
     "created_at": "2026/4/17 下午 02:43",
-    "updated_at": "2026/4/17 下午 02:43"
+    "updated_at": "2026/4/17 下午 02:43",
+    "doc_create_no": "1150101115",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "張舜程"
   },
   {
     "doc_receive_no": "1150004066",
@@ -5780,7 +6676,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃子芬(確認病歷)",
     "doc_attachments": [],
     "created_at": "2026/4/20 下午 04:09",
-    "updated_at": "2026/4/20 下午 04:09"
+    "updated_at": "2026/4/20 下午 04:09",
+    "doc_create_no": "1151292073",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021020633-E號",
+    "doc_chart_status": "黃子芬(確認病歷)"
   },
   {
     "doc_receive_no": "1150004072",
@@ -5804,7 +6704,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林家瑋(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/4/20 下午 04:11",
-    "updated_at": "2026/4/20 下午 04:11"
+    "updated_at": "2026/4/20 下午 04:11",
+    "doc_create_no": "1151292089",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：115051601958C",
+    "doc_chart_status": "林家瑋(回答問題)"
   },
   {
     "doc_receive_no": "1150004095",
@@ -5815,7 +6719,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民元115板簡字第230號",
     "doc_subject": "檢附診斷證明書影本及醫療費用收據影本各一件，請貴院依說明二所列事項查明惠覆，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "03162664",
@@ -5828,7 +6732,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/22 上午 09:15",
-    "updated_at": "2026/4/22 上午 09:15"
+    "updated_at": "2026/4/22 上午 09:15",
+    "doc_create_no": "1150101140",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150004122",
@@ -5852,7 +6760,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病例",
     "doc_attachments": [],
     "created_at": "2026/4/22 下午 02:43",
-    "updated_at": "2026/4/22 下午 02:43"
+    "updated_at": "2026/4/22 下午 02:43",
+    "doc_create_no": "1151292131",
+    "doc_sender_org": "新北市永和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病例"
   },
   {
     "doc_receive_no": "1150004169",
@@ -5876,7 +6788,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林家瑋",
     "doc_attachments": [],
     "created_at": "2026/4/22 下午 02:45",
-    "updated_at": "2026/4/22 下午 02:45"
+    "updated_at": "2026/4/22 下午 02:45",
+    "doc_create_no": "1151292132",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021033831-E號",
+    "doc_chart_status": "林家瑋"
   },
   {
     "doc_receive_no": "1150004222",
@@ -5900,7 +6816,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "邱彥碩",
     "doc_attachments": [],
     "created_at": "2026/4/23 下午 02:30",
-    "updated_at": "2026/4/23 下午 02:30"
+    "updated_at": "2026/4/23 下午 02:30",
+    "doc_create_no": "1151292161",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021004348-E號",
+    "doc_chart_status": "邱彥碩"
   },
   {
     "doc_receive_no": "1150004203",
@@ -5924,7 +6844,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/23 下午 03:09",
-    "updated_at": "2026/4/23 下午 03:09"
+    "updated_at": "2026/4/23 下午 03:09",
+    "doc_create_no": "1151292159",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021017176-E號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150004303",
@@ -5948,7 +6872,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳嘉泓(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/4/24 下午 04:46",
-    "updated_at": "2026/4/24 下午 04:46"
+    "updated_at": "2026/4/24 下午 04:46",
+    "doc_create_no": "1151292207",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021046270-E號",
+    "doc_chart_status": "陳嘉泓(回答問題)"
   },
   {
     "doc_receive_no": "1150004321",
@@ -5959,7 +6887,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職醫字第11560106550號",
     "doc_subject": "本局為辦理楊動起君職災醫療給付需要，敬請貴院依說明三惠予見復，並檢附其因「左踝阿基里斯腱撕裂傷」至貴院急、門診及住院之相關病歷資料影本（含119救護紀錄、轉診單、Xray、CT、MRI、NCV等相關理學檢查報告及光碟片），請查照。",
     "doc_lbi_no": "115-0-91-002439",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "04945394",
@@ -5972,7 +6900,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳沛華(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/4/24 下午 04:51",
-    "updated_at": "2026/4/24 下午 04:51"
+    "updated_at": "2026/4/24 下午 04:51",
+    "doc_create_no": "1151292223",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115-0-91-002439",
+    "doc_chart_status": "陳沛華(回答問題)"
   },
   {
     "doc_receive_no": "1150004280",
@@ -5996,7 +6928,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "郭光泰(確認病歷)",
     "doc_attachments": [],
     "created_at": "2026/4/25 上午 09:37",
-    "updated_at": "2026/4/25 上午 09:37"
+    "updated_at": "2026/4/25 上午 09:37",
+    "doc_create_no": "1151292175",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：115031007156-C",
+    "doc_chart_status": "郭光泰(確認病歷)"
   },
   {
     "doc_receive_no": "1150004189",
@@ -6020,7 +6956,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "公文曾釋出過",
     "doc_attachments": [],
     "created_at": "2026/4/25 下午 03:14",
-    "updated_at": "2026/4/25 下午 03:14"
+    "updated_at": "2026/4/25 下午 03:14",
+    "doc_create_no": "1151292153",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031004705-C號",
+    "doc_chart_status": "公文曾釋出過"
   },
   {
     "doc_receive_no": "1150004344",
@@ -6031,7 +6971,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職醫字第11560109050號",
     "doc_subject": "本局為正確、迅速審核被保險人陳秀宜君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「右膝挫傷併前十字韌帶斷裂」至貴院就診之相關病歷資料影本（含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告），有勞協助，敬致謝忱，請查照。",
     "doc_lbi_no": "115092004340",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17919940",
@@ -6044,7 +6984,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠豪",
     "doc_attachments": [],
     "created_at": "2026/4/28 下午 02:57",
-    "updated_at": "2026/4/28 下午 02:57"
+    "updated_at": "2026/4/28 下午 02:57",
+    "doc_create_no": "1151292237",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115092004340",
+    "doc_chart_status": "陳冠豪"
   },
   {
     "doc_receive_no": "1150004376",
@@ -6055,7 +6999,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤刑戊115易157字第32301號",
     "doc_subject": "惠請貴院提供被告吳柔營(女、民國78年11月4日生、身分證統一編號:A226824334號)自115年1月迄今之病歷資料，並請查明被告是否具有清楚之意識及行動能力。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "02674863",
@@ -6068,7 +7012,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/28 下午 03:05",
-    "updated_at": "2026/4/28 下午 03:05"
+    "updated_at": "2026/4/28 下午 03:05",
+    "doc_create_no": "1150101223",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150004364",
@@ -6079,7 +7027,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北檢力宇114調醫偵續一1字第1159043057號",
     "doc_subject": "請貴院惠予說明病患李日傑(病歷號碼:6806279 號、國民身分證字號:A129519196號)目前或出院時是否因缺氧缺血性腦病變，受有重大不治或難治之傷害，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "14208713",
@@ -6092,7 +7040,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/28 下午 03:09",
-    "updated_at": "2026/4/28 下午 03:09"
+    "updated_at": "2026/4/28 下午 03:09",
+    "doc_create_no": "1150101211",
+    "doc_sender_org": "臺灣臺北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150004402",
@@ -6116,7 +7068,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "蔡同堯",
     "doc_attachments": [],
     "created_at": "2026/4/28 下午 03:12",
-    "updated_at": "2026/4/28 下午 03:12"
+    "updated_at": "2026/4/28 下午 03:12",
+    "doc_create_no": "1151292269",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031007668-E號",
+    "doc_chart_status": "蔡同堯"
   },
   {
     "doc_receive_no": "1150004404",
@@ -6140,7 +7096,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳弘洲",
     "doc_attachments": [],
     "created_at": "2026/4/28 下午 03:15",
-    "updated_at": "2026/4/28 下午 03:15"
+    "updated_at": "2026/4/28 下午 03:15",
+    "doc_create_no": "1151292266",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031001756-C號",
+    "doc_chart_status": "陳弘洲"
   },
   {
     "doc_receive_no": "1150004391",
@@ -6151,7 +7111,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北土衛字第1156292131號",
     "doc_subject": "為傳染病防治傳染病防治之需，惠請提供結核病個案胸部X光、電腦斷層影像光碟片及病歷相關資料，詳如說明段，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00697653",
@@ -6164,7 +7124,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/28 下午 03:18",
-    "updated_at": "2026/4/28 下午 03:18"
+    "updated_at": "2026/4/28 下午 03:18",
+    "doc_create_no": "1151292258",
+    "doc_sender_org": "新北市土城區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150004378",
@@ -6175,7 +7139,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃院雲民政114壢簡字第1460號",
     "doc_subject": "請就本院當事人張心獻(男、民國87年12月18日生、身分證統一編號:A130526009號)進行鑑定，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "10934445",
@@ -6188,7 +7152,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/28 下午 03:20",
-    "updated_at": "2026/4/28 下午 03:20"
+    "updated_at": "2026/4/28 下午 03:20",
+    "doc_create_no": "1150101225",
+    "doc_sender_org": "臺灣桃園地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150004443",
@@ -6199,7 +7167,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警中刑字第11552028992號",
     "doc_subject": "本分局為偵辦刑案，請提供民眾湯正焜(身分證號K120096600)於115年4月22日就醫紀錄，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "15577870",
@@ -6212,7 +7180,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/29 下午 03:07",
-    "updated_at": "2026/4/29 下午 03:07"
+    "updated_at": "2026/4/29 下午 03:07",
+    "doc_create_no": "1150101237",
+    "doc_sender_org": "新北市政府警察局中和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150004449",
@@ -6223,7 +7195,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永器115偵14007字第1159055595號",
     "doc_subject": "檢附姓名對照表乙件，惠請提供如附件所示之資料至本署以利偵辦，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17649131",
@@ -6236,7 +7208,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/4/29 下午 03:08",
-    "updated_at": "2026/4/29 下午 03:08"
+    "updated_at": "2026/4/29 下午 03:08",
+    "doc_create_no": "1150101243",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150004567",
@@ -6260,7 +7236,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "鄭景泉",
     "doc_attachments": [],
     "created_at": "2026/5/4 下午 12:15",
-    "updated_at": "2026/5/4 下午 12:15"
+    "updated_at": "2026/5/4 下午 12:15",
+    "doc_create_no": "1151292359",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021022662-E號",
+    "doc_chart_status": "鄭景泉"
   },
   {
     "doc_receive_no": "1150004530",
@@ -6284,7 +7264,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "張舜程",
     "doc_attachments": [],
     "created_at": "2026/5/4 下午 01:42",
-    "updated_at": "2026/5/4 下午 01:42"
+    "updated_at": "2026/5/4 下午 01:42",
+    "doc_create_no": "1151292328",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021057641-E號",
+    "doc_chart_status": "張舜程"
   },
   {
     "doc_receive_no": "1150004498",
@@ -6308,7 +7292,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "章筱玲",
     "doc_attachments": [],
     "created_at": "2026/5/4 下午 04:05",
-    "updated_at": "2026/5/4 下午 04:05"
+    "updated_at": "2026/5/4 下午 04:05",
+    "doc_create_no": "1151292319",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021052228-E號",
+    "doc_chart_status": "章筱玲"
   },
   {
     "doc_receive_no": "1150004566",
@@ -6332,7 +7320,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "吳俊穎",
     "doc_attachments": [],
     "created_at": "2026/5/4 下午 04:36",
-    "updated_at": "2026/5/4 下午 04:36"
+    "updated_at": "2026/5/4 下午 04:36",
+    "doc_create_no": "1151292360",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021031692-E號",
+    "doc_chart_status": "吳俊穎"
   },
   {
     "doc_receive_no": "1150004568",
@@ -6356,7 +7348,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "蔡青松",
     "doc_attachments": [],
     "created_at": "2026/5/4 下午 05:03",
-    "updated_at": "2026/5/4 下午 05:03"
+    "updated_at": "2026/5/4 下午 05:03",
+    "doc_create_no": "1151292356",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031010391-E號",
+    "doc_chart_status": "蔡青松"
   },
   {
     "doc_receive_no": "1150004618",
@@ -6380,7 +7376,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠豪",
     "doc_attachments": [],
     "created_at": "2026/5/5 上午 09:34",
-    "updated_at": "2026/5/5 上午 09:34"
+    "updated_at": "2026/5/5 上午 09:34",
+    "doc_create_no": "1151292385",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021203517-E號",
+    "doc_chart_status": "陳冠豪"
   },
   {
     "doc_receive_no": "1150004655",
@@ -6404,7 +7404,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病例",
     "doc_attachments": [],
     "created_at": "2026/5/5 上午 09:40",
-    "updated_at": "2026/5/5 上午 09:40"
+    "updated_at": "2026/5/5 上午 09:40",
+    "doc_create_no": "1151292400",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病例"
   },
   {
     "doc_receive_no": "1150004432",
@@ -6428,7 +7432,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "鄭琪睿",
     "doc_attachments": [],
     "created_at": "2026/5/5 下午 05:10",
-    "updated_at": "2026/5/5 下午 05:10"
+    "updated_at": "2026/5/5 下午 05:10",
+    "doc_create_no": "1151292286",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021056794-E號",
+    "doc_chart_status": "鄭琪睿"
   },
   {
     "doc_receive_no": "1150004698",
@@ -6452,7 +7460,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "廖家德",
     "doc_attachments": [],
     "created_at": "2026/5/6 下午 07:47",
-    "updated_at": "2026/5/6 下午 07:47"
+    "updated_at": "2026/5/6 下午 07:47",
+    "doc_create_no": "1150101314",
+    "doc_sender_org": "衛生福利部疾病管制署",
+    "doc_labor_no": "",
+    "doc_chart_status": "廖家德"
   },
   {
     "doc_receive_no": "1150004634",
@@ -6463,7 +7475,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "士院璿士民敬115士簡173字第1159011787號",
     "doc_subject": "請惠予查詢貴院、貴診所病患許麗卿（年籍等資料詳附件）於民國110年3月14日至113年3月14日間，有無因為頸部外傷性椎間盤突出致神經壓迫之相關傷勢至貴院、貴診所就診，惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "13254588",
@@ -6473,10 +7485,24 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "吳錦雯(回答問題)\n林哲立(回答問題)\n劉恆維(回答問題)\n張統優\n李文興\n林明錦",
+    "doc_doctor_name": "吳錦雯(回答問題)
+林哲立(回答問題)
+劉恆維(回答問題)
+張統優
+李文興
+林明錦",
     "doc_attachments": [],
     "created_at": "2026/5/6 上午 11:33",
-    "updated_at": "2026/5/6 上午 11:33"
+    "updated_at": "2026/5/6 上午 11:33",
+    "doc_create_no": "1151292397",
+    "doc_sender_org": "臺灣士林地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "吳錦雯(回答問題)
+林哲立(回答問題)
+劉恆維(回答問題)
+張統優
+李文興
+林明錦"
   },
   {
     "doc_receive_no": "1150004687",
@@ -6487,7 +7513,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北裁申字第1154841690號",
     "doc_subject": "臺北高等行政法院函請本處重新審查114年度交字第4203號交通裁決事件（原告：邱科華、TDS-8571號車第CH9G20930號違規）案，請於文到7日內回復，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "11025504",
@@ -6500,7 +7526,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "曾孟元(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/5/6 下午 01:19",
-    "updated_at": "2026/5/6 下午 01:19"
+    "updated_at": "2026/5/6 下午 01:19",
+    "doc_create_no": "1151292414",
+    "doc_sender_org": "新北市政府交通事件裁決處",
+    "doc_labor_no": "",
+    "doc_chart_status": "曾孟元(回答問題)"
   },
   {
     "doc_receive_no": "1150004696",
@@ -6524,7 +7554,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃立楷",
     "doc_attachments": [],
     "created_at": "2026/5/6 下午 08:00",
-    "updated_at": "2026/5/6 下午 08:00"
+    "updated_at": "2026/5/6 下午 08:00",
+    "doc_create_no": "1150101312",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031004256-E號",
+    "doc_chart_status": "黃立楷"
   },
   {
     "doc_receive_no": "1150004683",
@@ -6548,7 +7582,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/5/6 下午 08:02",
-    "updated_at": "2026/5/6 下午 08:02"
+    "updated_at": "2026/5/6 下午 08:02",
+    "doc_create_no": "1151292421",
+    "doc_sender_org": "新北市板橋區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150004744",
@@ -6559,7 +7597,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "士檢以確恭114他5583字第1159027508號",
     "doc_subject": "請 貴院協助回覆如說明二所示事項並提供相關資料，惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17587671",
@@ -6569,10 +7607,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "李俊年(回答問題)\n謝尚勳(回答問題)",
+    "doc_doctor_name": "李俊年(回答問題)
+謝尚勳(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/5/7 上午 10:48",
-    "updated_at": "2026/5/7 上午 10:48"
+    "updated_at": "2026/5/7 上午 10:48",
+    "doc_create_no": "1150101334",
+    "doc_sender_org": "臺灣士林地方檢查署",
+    "doc_labor_no": "",
+    "doc_chart_status": "李俊年(回答問題)
+謝尚勳(回答問題)"
   },
   {
     "doc_receive_no": "1150004733",
@@ -6583,7 +7627,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北衛心字第1150858585號",
     "doc_subject": "請貴院於115年5月15日前提供本市重大性侵害案件加害人王○毅之精神科病歷摘要等相關資料，詳如說明，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "02519007",
@@ -6593,10 +7637,22 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "蔡同堯\n許力云\n謝沛興\n黃婷韵\n林曄誠",
+    "doc_doctor_name": "蔡同堯
+許力云
+謝沛興
+黃婷韵
+林曄誠",
     "doc_attachments": [],
     "created_at": "2026/5/7 下午 04:48",
-    "updated_at": "2026/5/7 下午 04:48"
+    "updated_at": "2026/5/7 下午 04:48",
+    "doc_create_no": "1151292441",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": "蔡同堯
+許力云
+謝沛興
+黃婷韵
+林曄誠"
   },
   {
     "doc_receive_no": "1150004774",
@@ -6607,7 +7663,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職醫字第11560121752號",
     "doc_subject": "本局為審核被保險人彭文娟君職災保險給付需要，敬請貴院依說明三所列各點查明惠復，並檢附其因「左肩挫傷、左肩旋轉肌袖破裂」至貴院就診之相關病歷資料(含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告)影本，有勞協助，敬致謝忱，請查照。",
     "doc_lbi_no": "115-092-005020",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "02005827",
@@ -6620,7 +7676,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "許庭碩",
     "doc_attachments": [],
     "created_at": "2026/5/8 下午 01:58",
-    "updated_at": "2026/5/8 下午 01:58"
+    "updated_at": "2026/5/8 下午 01:58",
+    "doc_create_no": "1151292471",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115-092-005020",
+    "doc_chart_status": "許庭碩"
   },
   {
     "doc_receive_no": "1150004797",
@@ -6631,7 +7691,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永庚113執3897字第1159055651號",
     "doc_subject": "請查明受刑人周淑凌(女、56年11月3日生、國民身份證統一編號:F223055476號、病歷號碼:13273545號)現所罹腸道基質瘤病變，有無因入監服刑執行刑罰，而不能保其生命情事?並惠請提供其114年10月起迄今之病歷摘要、現有無住院等資料，俾利釐清其是否能入監服刑，惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "13273545",
@@ -6644,7 +7704,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "莊博雅(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/5/8 下午 02:19",
-    "updated_at": "2026/5/8 下午 02:19"
+    "updated_at": "2026/5/8 下午 02:19",
+    "doc_create_no": "1150101344",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "莊博雅(回答問題)"
   },
   {
     "doc_receive_no": "1150004828",
@@ -6655,7 +7719,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職失字第11560112300號",
     "doc_subject": "本局為正確、迅速審核被保險人徐美英君(身分證統一編號:C220548480，出生日期:55年12月4日)勞保失能給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。",
     "doc_lbi_no": "115031003809",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "00092696",
@@ -6668,7 +7732,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳美茜",
     "doc_attachments": [],
     "created_at": "2026/5/11 上午 10:52",
-    "updated_at": "2026/5/11 上午 10:52"
+    "updated_at": "2026/5/11 上午 10:52",
+    "doc_create_no": "1150101352",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031003809",
+    "doc_chart_status": "陳美茜"
   },
   {
     "doc_receive_no": "1150004830",
@@ -6679,7 +7747,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民化114重簡字第1645號",
     "doc_subject": "請就附件所示之蔡欣婷(身分證統一編號:W200317432號)診斷證明書、道路交通事故資料(談話紀錄表及現場照片)，說明蔡欣婷經貴院113年6月17日診斷病名「1.左肩肌腱炎 2.左側手腕尺神經病變」，是否係因其於民國113年2月15日發生交通事故所造成。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "11156149",
@@ -6692,7 +7760,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "饒紀倫(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/5/11 上午 11:01",
-    "updated_at": "2026/5/11 上午 11:01"
+    "updated_at": "2026/5/11 上午 11:01",
+    "doc_create_no": "1150101354",
+    "doc_sender_org": "臺灣新北地方法院三重簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "饒紀倫(回答問題)"
   },
   {
     "doc_receive_no": "1150004955",
@@ -6703,7 +7775,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "南執丁114年廢罰執字第00469879號",
     "doc_subject": "請查復李春山(身分證統一編號:Q101908894)就醫時所留存之通訊地址及聯絡電話，並檢送相關資料過署，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17998082",
@@ -6716,7 +7788,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/5/13 下午 02:50",
-    "updated_at": "2026/5/13 下午 02:50"
+    "updated_at": "2026/5/13 下午 02:50",
+    "doc_create_no": "1150101379",
+    "doc_sender_org": "法務部行政執行署臺南分署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150004910",
@@ -6727,7 +7803,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民元115板簡字第311號",
     "doc_subject": "請提供俞菁菁(身分證統一編號:L223076657號)於113年11月28日以後在貴醫院之所有病歷資料過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "06019365",
@@ -6737,10 +7813,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "洪千岱\n莫心怡\n張舜程",
+    "doc_doctor_name": "洪千岱
+莫心怡
+張舜程",
     "doc_attachments": [],
     "created_at": "2026/5/13 下午 03:15",
-    "updated_at": "2026/5/13 下午 03:15"
+    "updated_at": "2026/5/13 下午 03:15",
+    "doc_create_no": "1150101366",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "洪千岱
+莫心怡
+張舜程"
   },
   {
     "doc_receive_no": "1150004881",
@@ -6764,7 +7848,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃裕閔",
     "doc_attachments": [],
     "created_at": "2026/5/13 下午 03:28",
-    "updated_at": "2026/5/13 下午 03:28"
+    "updated_at": "2026/5/13 下午 03:28",
+    "doc_create_no": "1151292518",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021006081-E",
+    "doc_chart_status": "黃裕閔"
   },
   {
     "doc_receive_no": "1150004922",
@@ -6775,7 +7863,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "嘉院弘刑揚114金訴1343字第1159004799號",
     "doc_subject": "惠請查明並提供說明欄二所示事項後儘速函復本院，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "08233994",
@@ -6785,10 +7873,20 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "陳柏志\n陳柏伸\n葉俊廷\n許嘉容",
+    "doc_doctor_name": "陳柏志
+陳柏伸
+葉俊廷
+許嘉容",
     "doc_attachments": [],
     "created_at": "2026/5/13 下午 03:32",
-    "updated_at": "2026/5/13 下午 03:32"
+    "updated_at": "2026/5/13 下午 03:32",
+    "doc_create_no": "1151292541",
+    "doc_sender_org": "臺灣嘉義地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳柏志
+陳柏伸
+葉俊廷
+許嘉容"
   },
   {
     "doc_receive_no": "1150004904",
@@ -6799,7 +7897,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警中刑字第1155205690號",
     "doc_subject": "本分局為偵辦刑事案件，亟需提供說明二之資料惠復，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "",
@@ -6812,7 +7910,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/5/13 下午 03:35",
-    "updated_at": "2026/5/13 下午 03:35"
+    "updated_at": "2026/5/13 下午 03:35",
+    "doc_create_no": "1150101360",
+    "doc_sender_org": "新北市政府警察局中和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150004985",
@@ -6836,7 +7938,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳沛華",
     "doc_attachments": [],
     "created_at": "2026/5/14 下午 03:07",
-    "updated_at": "2026/5/14 下午 03:07"
+    "updated_at": "2026/5/14 下午 03:07",
+    "doc_create_no": "1151292555",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021043756-E",
+    "doc_chart_status": "陳沛華"
   },
   {
     "doc_receive_no": "1150004962",
@@ -6847,7 +7953,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民棠115年度簡上字第51號",
     "doc_subject": "請惠予提供劉緁安(更名前:劉黛葦)(身分證統一編號:Q222835307號)於貴院骨科(病歷號碼:03676451)、復健科(病歷號碼:03676451)、精神科就診病歷等相關資料過院參辦，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "03676451",
@@ -6857,10 +7963,22 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "林曄誠\n謝岳穎\n陳弘洲\n曾美智\n胡翔越",
+    "doc_doctor_name": "林曄誠
+謝岳穎
+陳弘洲
+曾美智
+胡翔越",
     "doc_attachments": [],
     "created_at": "2026/5/14 下午 04:42",
-    "updated_at": "2026/5/14 下午 04:42"
+    "updated_at": "2026/5/14 下午 04:42",
+    "doc_create_no": "1150101386",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "林曄誠
+謝岳穎
+陳弘洲
+曾美智
+胡翔越"
   },
   {
     "doc_receive_no": "1150004983",
@@ -6884,7 +8002,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "謝岳穎",
     "doc_attachments": [],
     "created_at": "2026/5/14 下午 06:06",
-    "updated_at": "2026/5/14 下午 06:06"
+    "updated_at": "2026/5/14 下午 06:06",
+    "doc_create_no": "1151292552",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021043015-E",
+    "doc_chart_status": "謝岳穎"
   },
   {
     "doc_receive_no": "1150005005",
@@ -6895,7 +8017,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北裁申字第1154839602號",
     "doc_subject": "臺北高等行政法院函請本處重新審查114年度交字第4203號交通裁決事件（原告：邱科華、TDS-8571號車第CH9G20930號違規）案，請於文到3日內回復，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "11025504",
@@ -6908,7 +8030,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/5/15 下午 02:53",
-    "updated_at": "2026/5/15 下午 02:53"
+    "updated_at": "2026/5/15 下午 02:53",
+    "doc_create_no": "1151292586",
+    "doc_sender_org": "新北市政府交通事件裁決處",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150005003",
@@ -6932,7 +8058,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "曾立揚",
     "doc_attachments": [],
     "created_at": "2026/5/15 下午 03:09",
-    "updated_at": "2026/5/15 下午 03:09"
+    "updated_at": "2026/5/15 下午 03:09",
+    "doc_create_no": "1151292587",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114031028086-C",
+    "doc_chart_status": "曾立揚"
   },
   {
     "doc_receive_no": "1150004986",
@@ -6943,7 +8073,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信民己115年北簡1734字第1156000787號",
     "doc_subject": "請惠予檢送簡美純（身分證: H201669254號）自113年3月30日發生交通事故後迄今之相關病歷（含影像光碟）過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "16669468",
@@ -6953,10 +8083,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "洪家佩\n蘇鈺凱",
+    "doc_doctor_name": "洪家佩
+蘇鈺凱",
     "doc_attachments": [],
     "created_at": "2026/5/15 下午 03:51",
-    "updated_at": "2026/5/15 下午 03:51"
+    "updated_at": "2026/5/15 下午 03:51",
+    "doc_create_no": "1151292546",
+    "doc_sender_org": "臺灣臺北地方法院臺北簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "洪家佩
+蘇鈺凱"
   },
   {
     "doc_receive_no": "1150005059",
@@ -6967,7 +8103,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北莊衛字第1156423138號",
     "doc_subject": "為防疫業務之需求，惠請貴院協助提供本區結核病個案資料，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18035210",
@@ -6980,7 +8116,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李俊年",
     "doc_attachments": [],
     "created_at": "2026/5/15 下午 04:52",
-    "updated_at": "2026/5/15 下午 04:52"
+    "updated_at": "2026/5/15 下午 04:52",
+    "doc_create_no": "1151292602",
+    "doc_sender_org": "新北市新莊區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "李俊年"
   },
   {
     "doc_receive_no": "1150005087",
@@ -6991,7 +8131,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "藥濟調字第1154000326號",
     "doc_subject": "請 貴院提供民眾洪幸之相關病歷資料，敬請查照見復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "00497022",
@@ -7004,18 +8144,22 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "鄭明哲",
     "doc_attachments": [],
     "created_at": "2026/5/18 下午 05:33",
-    "updated_at": "2026/5/18 下午 05:33"
+    "updated_at": "2026/5/18 下午 05:33",
+    "doc_create_no": "1151292633",
+    "doc_sender_org": "財團法人藥害救濟基金會",
+    "doc_labor_no": "",
+    "doc_chart_status": "鄭明哲"
   },
   {
     "doc_receive_no": "協辦-1150520",
     "doc_receive_date": "2026/5/20",
     "doc_draft_no": "1151201052",
-    "doc_source_unit": "",
+    "doc_source_unit": "勞動部勞工保險局",
     "doc_issue_date": "",
     "doc_issue_no": "",
     "doc_subject": "本院列報非癌症慢性頑固型疼痛病人長期處方成癮性麻醉藥品，請核報。",
-    "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_lbi_no": "第115021150520-E號",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "01437229",
@@ -7028,7 +8172,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/5/20 下午 02:00",
-    "updated_at": "2026/5/20 下午 02:00"
+    "updated_at": "2026/5/20 下午 02:00",
+    "doc_create_no": "1151201052",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021150520-E號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150005176",
@@ -7052,7 +8200,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠元",
     "doc_attachments": [],
     "created_at": "2026/5/20 下午 03:36",
-    "updated_at": "2026/5/20 下午 03:36"
+    "updated_at": "2026/5/20 下午 03:36",
+    "doc_create_no": "151292679",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021039681-E",
+    "doc_chart_status": "陳冠元"
   },
   {
     "doc_receive_no": "1150005180",
@@ -7063,7 +8215,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤刑省115交訴40字第1159009932號",
     "doc_subject": "惠請 提供貴院病患黃長生（男，民國31年5月5日生，身分證統一編號: A110619736號）於114年3、4間之就診病歷過院參辦，惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "06763147",
@@ -7073,10 +8225,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "劉惠文\n蔡同堯",
+    "doc_doctor_name": "劉惠文
+蔡同堯",
     "doc_attachments": [],
     "created_at": "2026/5/20 下午 03:40",
-    "updated_at": "2026/5/20 下午 03:40"
+    "updated_at": "2026/5/20 下午 03:40",
+    "doc_create_no": "1151292671",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "劉惠文
+蔡同堯"
   },
   {
     "doc_receive_no": "1150005186",
@@ -7100,7 +8258,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃立楷",
     "doc_attachments": [],
     "created_at": "2026/5/20 下午 03:53",
-    "updated_at": "2026/5/20 下午 03:53"
+    "updated_at": "2026/5/20 下午 03:53",
+    "doc_create_no": "1151292665",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031012374-C",
+    "doc_chart_status": "黃立楷"
   },
   {
     "doc_receive_no": "1150005133",
@@ -7111,7 +8273,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "基院麗刑法115交簡上6字第05218號",
     "doc_subject": "惠請檢送貴院病患林煥堂(男、民國38年4月14日生、身分證統一編號:G100288136號)在貴院於114年4月7日直至文到後之就醫病歷資料(包括但不限於:腦部CT、手術紀錄、術前及術後病歷、水腦症診斷、神經內外科醫生診斷書、神經內外科門診病歷)過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17317223",
@@ -7121,10 +8283,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "許秉閎\n胡朝榮\n林乾閔",
+    "doc_doctor_name": "許秉閎
+胡朝榮
+林乾閔",
     "doc_attachments": [],
     "created_at": "2026/5/20 下午 04:07",
-    "updated_at": "2026/5/20 下午 04:07"
+    "updated_at": "2026/5/20 下午 04:07",
+    "doc_create_no": "1150101419",
+    "doc_sender_org": "臺灣基隆地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "許秉閎
+胡朝榮
+林乾閔"
   },
   {
     "doc_receive_no": "1150005125",
@@ -7135,7 +8305,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永怡115相549字第1159062074號",
     "doc_subject": "惠請如說明所示事項過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18076271",
@@ -7145,10 +8315,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "李美慧(回答問題)\n陳國智",
+    "doc_doctor_name": "李美慧(回答問題)
+陳國智",
     "doc_attachments": [],
     "created_at": "2026/5/20 下午 04:11",
-    "updated_at": "2026/5/20 下午 04:11"
+    "updated_at": "2026/5/20 下午 04:11",
+    "doc_create_no": "1150101411",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "李美慧(回答問題)
+陳國智"
   },
   {
     "doc_receive_no": "1150005124",
@@ -7159,7 +8335,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永孝綺115偵12683字第1159060717號",
     "doc_subject": "請查復貴院病患彭素霞(國民身分證統一編號:S222061130號)之資料過署參辦。請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "11029676",
@@ -7172,7 +8348,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉宇鈞(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/5/20 下午 04:14",
-    "updated_at": "2026/5/20 下午 04:14"
+    "updated_at": "2026/5/20 下午 04:14",
+    "doc_create_no": "1150101410",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "劉宇鈞(回答問題)"
   },
   {
     "doc_receive_no": "1150005221",
@@ -7196,7 +8376,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳兆俊",
     "doc_attachments": [],
     "created_at": "2026/5/20 下午 04:34",
-    "updated_at": "2026/5/20 下午 04:34"
+    "updated_at": "2026/5/20 下午 04:34",
+    "doc_create_no": "1151292702",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "11502102967001-E",
+    "doc_chart_status": "陳兆俊"
   },
   {
     "doc_receive_no": "1150005229",
@@ -7220,7 +8404,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/5/21 上午 10:14",
-    "updated_at": "2026/5/21 上午 10:14"
+    "updated_at": "2026/5/21 上午 10:14",
+    "doc_create_no": "1151292713",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021044241-E號",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150005273",
@@ -7244,7 +8432,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/5/22 上午 10:11",
-    "updated_at": "2026/5/22 上午 10:11"
+    "updated_at": "2026/5/22 上午 10:11",
+    "doc_create_no": "1151292742",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150005318",
@@ -7268,7 +8460,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李瑋恩",
     "doc_attachments": [],
     "created_at": "2026/5/22 上午 10:55",
-    "updated_at": "2026/5/22 上午 10:55"
+    "updated_at": "2026/5/22 上午 10:55",
+    "doc_create_no": "1150101467",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021018169-E號",
+    "doc_chart_status": "李瑋恩"
   },
   {
     "doc_receive_no": "1150005327",
@@ -7292,7 +8488,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "吳維喬",
     "doc_attachments": [],
     "created_at": "2026/5/22 下午 12:12",
-    "updated_at": "2026/5/22 下午 12:12"
+    "updated_at": "2026/5/22 下午 12:12",
+    "doc_create_no": "1150101476",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031004705-C號",
+    "doc_chart_status": "吳維喬"
   },
   {
     "doc_receive_no": "1150005247",
@@ -7303,7 +8503,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永成115偵23243字第1159064595號",
     "doc_subject": "請惠予提供如說明指示之事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "04127666",
@@ -7313,10 +8513,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "莫心怡\n陳致宇",
+    "doc_doctor_name": "莫心怡
+陳致宇",
     "doc_attachments": [],
     "created_at": "2026/5/25 上午 09:38",
-    "updated_at": "2026/5/25 上午 09:38"
+    "updated_at": "2026/5/25 上午 09:38",
+    "doc_create_no": "1150101438",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "莫心怡
+陳致宇"
   },
   {
     "doc_receive_no": "1150005317",
@@ -7327,7 +8533,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃檢春申101執10214字第1159065323號",
     "doc_subject": "請查明受刑人馮堯琳(男、47年2月22日生、國民身分證統一編號:H121481209號、診斷證明書字號:診字第0150413803501號)現所罹薦骨部壓瘡感染，有無因執行刑罰(即入監服刑)而不能保其生命情事?惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "08834991",
@@ -7340,7 +8546,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "張舜程(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/5/25 上午 11:58",
-    "updated_at": "2026/5/25 上午 11:58"
+    "updated_at": "2026/5/25 上午 11:58",
+    "doc_create_no": "1150101466",
+    "doc_sender_org": "臺灣桃園地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "張舜程(回答問題)"
   },
   {
     "doc_receive_no": "1150005437",
@@ -7351,7 +8561,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警店刑字第11540237741號",
     "doc_subject": "因偵辦民眾游永森(男、民國64年11月26日生、身分證統一編號F123731915)死亡案需要，請貴院協助提供病歷資料，俾利辦理，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "03329658",
@@ -7361,10 +8571,42 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "劉柏均\n楊千儀\n徐嘉鴻\n柯世佑\n莫心怡\n陳國智\n邱奕聰\n王鎮珄\n紀君儒\n束連文\n陳致中\n曾美智\n陳美茜\n吳佳璋\n張東晟",
+    "doc_doctor_name": "劉柏均
+楊千儀
+徐嘉鴻
+柯世佑
+莫心怡
+陳國智
+邱奕聰
+王鎮珄
+紀君儒
+束連文
+陳致中
+曾美智
+陳美茜
+吳佳璋
+張東晟",
     "doc_attachments": [],
     "created_at": "2026/5/26 下午 03:13",
-    "updated_at": "2026/5/26 下午 03:13"
+    "updated_at": "2026/5/26 下午 03:13",
+    "doc_create_no": "1150101519",
+    "doc_sender_org": "新北市政府警察局新店分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "劉柏均
+楊千儀
+徐嘉鴻
+柯世佑
+莫心怡
+陳國智
+邱奕聰
+王鎮珄
+紀君儒
+束連文
+陳致中
+曾美智
+陳美茜
+吳佳璋
+張東晟"
   },
   {
     "doc_receive_no": "1150005348",
@@ -7375,7 +8617,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警重刑字第1152716206號",
     "doc_subject": "本分局為偵辦刑案需要，惠請貴院提供資料如說明二，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18076271",
@@ -7385,10 +8627,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "陳國智\n李美慧",
+    "doc_doctor_name": "陳國智
+李美慧",
     "doc_attachments": [],
     "created_at": "2026/5/27 上午 10:41",
-    "updated_at": "2026/5/27 上午 10:41"
+    "updated_at": "2026/5/27 上午 10:41",
+    "doc_create_no": "1150101488",
+    "doc_sender_org": "新北市政府警察局三重分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳國智
+李美慧"
   },
   {
     "doc_receive_no": "150005515",
@@ -7412,7 +8660,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/5/27 上午 10:54",
-    "updated_at": "2026/5/27 上午 10:54"
+    "updated_at": "2026/5/27 上午 10:54",
+    "doc_create_no": "1150101545",
+    "doc_sender_org": "新北市蘆洲區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150005496",
@@ -7436,7 +8688,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "謝沛興",
     "doc_attachments": [],
     "created_at": "2026/5/27 上午 10:55",
-    "updated_at": "2026/5/27 上午 10:55"
+    "updated_at": "2026/5/27 上午 10:55",
+    "doc_create_no": "1151292824",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115-0-82-014186",
+    "doc_chart_status": "謝沛興"
   },
   {
     "doc_receive_no": "1150005494",
@@ -7460,7 +8716,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/5/27 上午 10:57",
-    "updated_at": "2026/5/27 上午 10:57"
+    "updated_at": "2026/5/27 上午 10:57",
+    "doc_create_no": "1151292834",
+    "doc_sender_org": "新北市板橋區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150005530",
@@ -7471,7 +8731,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北衛醫字第1150965217號",
     "doc_subject": "有關民眾陳情家屬因腹瀉轉診貴院急診，疑未診斷出自發性細菌性腹膜炎且有代謝性酸中毒惡化、敗血性休克等涉醫療爭議並申請調解一案，詳如說明段，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18114139",
@@ -7481,10 +8741,22 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "許力云\n關曉雯\n蔡同堯\n江采蓮\n王鎮珄",
+    "doc_doctor_name": "許力云
+關曉雯
+蔡同堯
+江采蓮
+王鎮珄",
     "doc_attachments": [],
     "created_at": "2026/5/27 下午 01:51",
-    "updated_at": "2026/5/27 下午 01:51"
+    "updated_at": "2026/5/27 下午 01:51",
+    "doc_create_no": "1151292841",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": "許力云
+關曉雯
+蔡同堯
+江采蓮
+王鎮珄"
   },
   {
     "doc_receive_no": "1150005365",
@@ -7495,7 +8767,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "財北國稅綜所遺贈字第1150013180號",
     "doc_subject": "為稽徵業務需要，請貴院惠予查告說明二所列事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "05840726",
@@ -7505,10 +8777,22 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "李俊年(回答問題)\n李岡遠(回答問題)\n羅青山(回答問題)\n馮博皓(回答問題)\n楊宗燁(回答問題)",
+    "doc_doctor_name": "李俊年(回答問題)
+李岡遠(回答問題)
+羅青山(回答問題)
+馮博皓(回答問題)
+楊宗燁(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/5/27 下午 04:17",
-    "updated_at": "2026/5/27 下午 04:17"
+    "updated_at": "2026/5/27 下午 04:17",
+    "doc_create_no": "1151292767",
+    "doc_sender_org": "財政部臺北國稅局",
+    "doc_labor_no": "",
+    "doc_chart_status": "李俊年(回答問題)
+李岡遠(回答問題)
+羅青山(回答問題)
+馮博皓(回答問題)
+楊宗燁(回答問題)"
   },
   {
     "doc_receive_no": "1150005402",
@@ -7519,7 +8803,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民允113醫11字第35701號",
     "doc_subject": "請貴院惠予提供謝承佑(身分證統一編號:F126503520號)於103年7月至104年8月之醫療影像光碟(如:X光片等)過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "02215572",
@@ -7532,7 +8816,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/5/27 下午 04:57",
-    "updated_at": "2026/5/27 下午 04:57"
+    "updated_at": "2026/5/27 下午 04:57",
+    "doc_create_no": "1150101510",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150005353",
@@ -7543,7 +8831,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永音115偵26192字第1159067111號",
     "doc_subject": "惠請提供簡銘智(F132410572/96.11.19)、簡宏焜(A121736284/52.3.17)於115年3月16日至貴院急診之相關病歷資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "02170448、18042498",
@@ -7553,10 +8841,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "曾孟元\n王妍方",
+    "doc_doctor_name": "曾孟元
+王妍方",
     "doc_attachments": [],
     "created_at": "2026/5/27 下午 05:46",
-    "updated_at": "2026/5/27 下午 05:46"
+    "updated_at": "2026/5/27 下午 05:46",
+    "doc_create_no": "1150101493",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "曾孟元
+王妍方"
   },
   {
     "doc_receive_no": "1150005566",
@@ -7580,7 +8874,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/5/28 上午 11:05",
-    "updated_at": "2026/5/28 上午 11:05"
+    "updated_at": "2026/5/28 上午 11:05",
+    "doc_create_no": "1151292844",
+    "doc_sender_org": "新北市永和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150005551",
@@ -7604,7 +8902,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "徐嘉鴻",
     "doc_attachments": [],
     "created_at": "2026/5/28 上午 11:28",
-    "updated_at": "2026/5/28 上午 11:28"
+    "updated_at": "2026/5/28 上午 11:28",
+    "doc_create_no": "1151292860",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021073984-E號",
+    "doc_chart_status": "徐嘉鴻"
   },
   {
     "doc_receive_no": "1150005401",
@@ -7615,7 +8917,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民悅114板簡字第552號",
     "doc_subject": "惠請就說明二惠復意見，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "15896223",
@@ -7625,10 +8927,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "林孟穎(回答問題)\n束連文(回答問題)",
+    "doc_doctor_name": "林孟穎(回答問題)
+束連文(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/5/29 上午 09:54",
-    "updated_at": "2026/5/29 上午 09:54"
+    "updated_at": "2026/5/29 上午 09:54",
+    "doc_create_no": "1150101509",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "林孟穎(回答問題)
+束連文(回答問題)"
   },
   {
     "doc_receive_no": "1150005412",
@@ -7652,7 +8960,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "吳連禎",
     "doc_attachments": [],
     "created_at": "2026/5/29 下午 01:45",
-    "updated_at": "2026/5/29 下午 01:45"
+    "updated_at": "2026/5/29 下午 01:45",
+    "doc_create_no": "1151292779",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "11402117955801(審)-E",
+    "doc_chart_status": "吳連禎"
   },
   {
     "doc_receive_no": "1150005458",
@@ -7663,7 +8975,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永實115偵26277字第1159066418號",
     "doc_subject": "請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "08316738",
@@ -7673,10 +8985,30 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "關曉雯\n王智毅\n劉如濟\n吳忠擇\n張安妮\n謝安慈\n陳冠豪\n江長蓉\n洪明佑",
+    "doc_doctor_name": "關曉雯
+王智毅
+劉如濟
+吳忠擇
+張安妮
+謝安慈
+陳冠豪
+江長蓉
+洪明佑",
     "doc_attachments": [],
     "created_at": "2026/5/29 下午 05:21",
-    "updated_at": "2026/5/29 下午 05:21"
+    "updated_at": "2026/5/29 下午 05:21",
+    "doc_create_no": "1150101529",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "關曉雯
+王智毅
+劉如濟
+吳忠擇
+張安妮
+謝安慈
+陳冠豪
+江長蓉
+洪明佑"
   },
   {
     "doc_receive_no": "1150005528",
@@ -7687,7 +9019,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警店刑字第1154023806號",
     "doc_subject": "為調查詐欺等案，請貴院惠予提供民眾江秀香接受醫師陳弘洲治療之相關紀錄，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "15780854",
@@ -7700,7 +9032,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳弘洲",
     "doc_attachments": [],
     "created_at": "2026/5/29 下午 06:04",
-    "updated_at": "2026/5/29 下午 06:04"
+    "updated_at": "2026/5/29 下午 06:04",
+    "doc_create_no": "1151292838",
+    "doc_sender_org": "新北市政府警察局新店分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳弘洲"
   },
   {
     "doc_receive_no": "1150005520",
@@ -7711,7 +9047,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民通115年度簡上字第47號",
     "doc_subject": "請貴單位協助提供于秀麗(身分證統一編號:F222165722 號)於民國111年12月1日起迄今之全部病歷資料(診斷證明書、門診及住院病歷、手術記錄、所有檢驗之文字報告及影像檢查光碟)過院參辦，請惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "12476460",
@@ -7721,10 +9057,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "許庭碩\n王忠信",
+    "doc_doctor_name": "許庭碩
+王忠信",
     "doc_attachments": [],
     "created_at": "2026/5/29 下午 06:37",
-    "updated_at": "2026/5/29 下午 06:37"
+    "updated_at": "2026/5/29 下午 06:37",
+    "doc_create_no": "1150101550",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "許庭碩
+王忠信"
   },
   {
     "doc_receive_no": "1150005675",
@@ -7735,7 +9077,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 御115相 706字第1159072521號",
     "doc_subject": "惠請貴院提供KYAW SITHU HEIN(中文姓名:李根強，護照號碼:MF413548號，居留證號碼:F800446506號)於民國115年5月7日至貴院醫院急診及後續住院之完整病歷記錄。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18141735",
@@ -7745,10 +9087,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "王忠信\n葉雲凱",
+    "doc_doctor_name": "王忠信
+葉雲凱",
     "doc_attachments": [],
     "created_at": "2026/5/29 下午 06:50",
-    "updated_at": "2026/5/29 下午 06:50"
+    "updated_at": "2026/5/29 下午 06:50",
+    "doc_create_no": "1150101597",
+    "doc_sender_org": "臺灣新北地方法院檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "王忠信
+葉雲凱"
   },
   {
     "doc_receive_no": "1150005634",
@@ -7757,9 +9105,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_source_unit": "臺灣新北地方法院板橋簡易庭",
     "doc_issue_date": "115年05月08日",
     "doc_issue_no": "新北院胤民板115板司醫調字第4號",
-    "doc_subject": "本庭受理115年度板司醫調字第4號聲請人彭泰治與相對人陸惠宗、雙和醫院、衛生福利部間侵權行為損害賠償事件，認有下列事項應予補正。\n \t　　\t1.請提供陸惠宗醫生基本資料\n \t　　\t2.請於「115年6月04日」庭期前補正。",
+    "doc_subject": "本庭受理115年度板司醫調字第4號聲請人彭泰治與相對人陸惠宗、雙和醫院、衛生福利部間侵權行為損害賠償事件，認有下列事項應予補正。
+ 	　　	1.請提供陸惠宗醫生基本資料
+ 	　　	2.請於「115年6月04日」庭期前補正。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "",
@@ -7772,7 +9122,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陸惠宗",
     "doc_attachments": [],
     "created_at": "2026/6/1 上午 10:48",
-    "updated_at": "2026/6/1 上午 10:48"
+    "updated_at": "2026/6/1 上午 10:48",
+    "doc_create_no": "1150101581",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "陸惠宗"
   },
   {
     "doc_receive_no": "1150005691",
@@ -7783,7 +9137,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市醫毒危字第11530337861號",
     "doc_subject": "為「結核病防疫業務之需，落實結核病接觸者之追蹤管理」，請貴院於115年6月11日前提供結核病接觸者之病歷相關資料，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "00344124",
@@ -7796,7 +9150,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/6/2 下午 03:00",
-    "updated_at": "2026/6/2 下午 03:00"
+    "updated_at": "2026/6/2 下午 03:00",
+    "doc_create_no": "1151292921",
+    "doc_sender_org": "臺北市立聯合醫院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150005659",
@@ -7807,7 +9165,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤刑悟115簡上70字第1159010606號",
     "doc_subject": "請於文到10日內函復說明二所列事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "05506961",
@@ -7820,7 +9178,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "藥劑部(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/6/2 下午 03:22",
-    "updated_at": "2026/6/2 下午 03:22"
+    "updated_at": "2026/6/2 下午 03:22",
+    "doc_create_no": "1151292910",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "藥劑部(回答問題)"
   },
   {
     "doc_receive_no": "1150005654",
@@ -7831,7 +9193,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北永衛字第1156382325號",
     "doc_subject": "為結核病防疫業務需求，惠請貴院提供本市結核病接觸者唐○順今年於貴院檢查之胸部X光、電腦斷層、磁振造影、支氣管鏡檢等檢驗報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "01229475",
@@ -7841,10 +9203,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "劉文德\n李岡遠",
+    "doc_doctor_name": "劉文德
+李岡遠",
     "doc_attachments": [],
     "created_at": "2026/6/2 下午 03:56",
-    "updated_at": "2026/6/2 下午 03:56"
+    "updated_at": "2026/6/2 下午 03:56",
+    "doc_create_no": "1151292912",
+    "doc_sender_org": "新北市永和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "劉文德
+李岡遠"
   },
   {
     "doc_receive_no": "1150005626",
@@ -7855,7 +9223,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永致115偵緝1514字第1159069504號",
     "doc_subject": "請貴單位提供說明欄所示資料，過署供參，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17117928",
@@ -7868,7 +9236,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林欣儀",
     "doc_attachments": [],
     "created_at": "2026/6/2 下午 05:38",
-    "updated_at": "2026/6/2 下午 05:38"
+    "updated_at": "2026/6/2 下午 05:38",
+    "doc_create_no": "1150101573",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "林欣儀"
   },
   {
     "doc_receive_no": "1150005627",
@@ -7879,7 +9251,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永致115偵26185字第1159069120號",
     "doc_subject": "請貴院提供說明欄所列資料，過署供參，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17165741",
@@ -7892,7 +9264,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳柏伸(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/6/2 下午 05:44",
-    "updated_at": "2026/6/2 下午 05:44"
+    "updated_at": "2026/6/2 下午 05:44",
+    "doc_create_no": "1150101574",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳柏伸(回答問題)"
   },
   {
     "doc_receive_no": "1150005612",
@@ -7916,7 +9292,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "邱奕璁",
     "doc_attachments": [],
     "created_at": "2026/6/3 上午 10:53",
-    "updated_at": "2026/6/3 上午 10:53"
+    "updated_at": "2026/6/3 上午 10:53",
+    "doc_create_no": "1151292888",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114021096725-E",
+    "doc_chart_status": "邱奕璁"
   },
   {
     "doc_receive_no": "1150005601",
@@ -7927,7 +9307,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職醫字第11560142240號",
     "doc_subject": "本局為正確、迅速審核被保險人陳金威君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「腰椎第五節、薦椎第一節滑脫併神經壓迫」至貴院就診之相關病歷資料影本（含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告），有勞協助，敬致謝忱，請查照。",
     "doc_lbi_no": "115092005905",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18038561",
@@ -7940,7 +9320,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "蘇鈺凱(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/6/3 上午 10:59",
-    "updated_at": "2026/6/3 上午 10:59"
+    "updated_at": "2026/6/3 上午 10:59",
+    "doc_create_no": "1151292891",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115092005905",
+    "doc_chart_status": "蘇鈺凱(回答問題)"
   },
   {
     "doc_receive_no": "1150005512",
@@ -7951,7 +9335,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警婦字第1150983475號",
     "doc_subject": "本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "03345757",
@@ -7961,10 +9345,26 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "王傳育\n郭雲鼎\n方旭彬\n林聖傑\n呂盈哲\n吳錦雯\n陳淑惠",
+    "doc_doctor_name": "王傳育
+郭雲鼎
+方旭彬
+林聖傑
+呂盈哲
+吳錦雯
+陳淑惠",
     "doc_attachments": [],
     "created_at": "2026/6/3 下午 05:30",
-    "updated_at": "2026/6/3 下午 05:30"
+    "updated_at": "2026/6/3 下午 05:30",
+    "doc_create_no": "1150101542",
+    "doc_sender_org": "新北市政府警察局婦幼警察隊",
+    "doc_labor_no": "",
+    "doc_chart_status": "王傳育
+郭雲鼎
+方旭彬
+林聖傑
+呂盈哲
+吳錦雯
+陳淑惠"
   },
   {
     "doc_receive_no": "1150005835",
@@ -7975,7 +9375,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職失字第11560143370號",
     "doc_subject": "本局為正確、迅速審核被保險人焦德驥君(身分證統一編號:F121839945，出生日期:58年7月28日)勞保失能給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。",
     "doc_lbi_no": "115031006360-C",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "03716265",
@@ -7988,7 +9388,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃金聲",
     "doc_attachments": [],
     "created_at": "2026/6/4 上午 09:06",
-    "updated_at": "2026/6/4 上午 09:06"
+    "updated_at": "2026/6/4 上午 09:06",
+    "doc_create_no": "1150101631",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031006360-C",
+    "doc_chart_status": "黃金聲"
   },
   {
     "doc_receive_no": "1150005746",
@@ -7999,7 +9403,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市警安分刑字第11530661282號",
     "doc_subject": "本分局因偵辦司法相驗案，亟需如說明二資料，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18176014",
@@ -8012,7 +9416,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "江采蓮",
     "doc_attachments": [],
     "created_at": "2026/6/4 上午 10:27",
-    "updated_at": "2026/6/4 上午 10:27"
+    "updated_at": "2026/6/4 上午 10:27",
+    "doc_create_no": "1151292957",
+    "doc_sender_org": "臺北市政府警察局大安分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "江采蓮"
   },
   {
     "doc_receive_no": "1150005894",
@@ -8023,7 +9431,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市警同分刑字第1153008211號",
     "doc_subject": "本分局因偵辦重傷害案，惠請貴院提供說明二之病患完整就醫紀錄等相關資料，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18180402",
@@ -8033,10 +9441,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "邱奕璁\n邱瑋婷",
+    "doc_doctor_name": "邱奕璁
+邱瑋婷",
     "doc_attachments": [],
     "created_at": "2026/6/4 下午 03:09",
-    "updated_at": "2026/6/4 下午 03:09"
+    "updated_at": "2026/6/4 下午 03:09",
+    "doc_create_no": "1150101656",
+    "doc_sender_org": "臺北市政府警察局大同分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "邱奕璁
+邱瑋婷"
   },
   {
     "doc_receive_no": "1150005752",
@@ -8060,7 +9474,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃錦前(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/6/5 上午 11:24",
-    "updated_at": "2026/6/5 上午 11:24"
+    "updated_at": "2026/6/5 上午 11:24",
+    "doc_create_no": "1151292945",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021056160-E",
+    "doc_chart_status": "黃錦前(回答問題)"
   },
   {
     "doc_receive_no": "1150005648",
@@ -8071,7 +9489,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民團115訴237字第1159010590號",
     "doc_subject": "請惠予提供病患葉依婷（身分證統一編號: F230806885號）於貴院之全部病歷資料（包含診斷證明書、門診及住院病歷、檢查之文字報告及影像光碟）過院參辦，惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17097598",
@@ -8084,7 +9502,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "張舜程",
     "doc_attachments": [],
     "created_at": "2026/6/9 下午 01:35",
-    "updated_at": "2026/6/9 下午 01:35"
+    "updated_at": "2026/6/9 下午 01:35",
+    "doc_create_no": "1151292902",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "張舜程"
   },
   {
     "doc_receive_no": "1150005805",
@@ -8108,7 +9530,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳致宇",
     "doc_attachments": [],
     "created_at": "2026/6/9 下午 02:13",
-    "updated_at": "2026/6/9 下午 02:13"
+    "updated_at": "2026/6/9 下午 02:13",
+    "doc_create_no": "1151292976",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021007472-E",
+    "doc_chart_status": "陳致宇"
   },
   {
     "doc_receive_no": "1150005816",
@@ -8132,7 +9558,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳弘洲",
     "doc_attachments": [],
     "created_at": "2026/6/9 下午 03:30",
-    "updated_at": "2026/6/9 下午 03:30"
+    "updated_at": "2026/6/9 下午 03:30",
+    "doc_create_no": "1151293000",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114021129877-E",
+    "doc_chart_status": "陳弘洲"
   },
   {
     "doc_receive_no": "1150005905",
@@ -8156,7 +9586,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳柏志",
     "doc_attachments": [],
     "created_at": "2026/6/9 下午 05:45",
-    "updated_at": "2026/6/9 下午 05:45"
+    "updated_at": "2026/6/9 下午 05:45",
+    "doc_create_no": "1151293054",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031014253-C",
+    "doc_chart_status": "陳柏志"
   },
   {
     "doc_receive_no": "1150006033",
@@ -8167,7 +9601,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "士執已105年營所稅執專字第00013733號",
     "doc_subject": "請惠予提供張臺驊(身分證字號:S102551524)留存貴院之聯絡地址、電話，請惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17454898",
@@ -8180,7 +9614,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/6/10 上午 10:23",
-    "updated_at": "2026/6/10 上午 10:23"
+    "updated_at": "2026/6/10 上午 10:23",
+    "doc_create_no": "1150101698",
+    "doc_sender_org": "法務部行政執行署士林分署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150005927",
@@ -8204,7 +9642,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "羅偉倫",
     "doc_attachments": [],
     "created_at": "2026/6/10 上午 10:30",
-    "updated_at": "2026/6/10 上午 10:30"
+    "updated_at": "2026/6/10 上午 10:30",
+    "doc_create_no": "1150101661",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031013885-C",
+    "doc_chart_status": "羅偉倫"
   },
   {
     "doc_receive_no": "1150006026",
@@ -8215,7 +9657,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警中刑字第1155214287號",
     "doc_subject": "本分局為偵辦刑事案件，亟需提供說明二之資料惠復，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "12932894",
@@ -8228,7 +9670,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/6/10 下午 03:23",
-    "updated_at": "2026/6/10 下午 03:23"
+    "updated_at": "2026/6/10 下午 03:23",
+    "doc_create_no": "1150101691",
+    "doc_sender_org": "新北市政府警察局中和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150006050",
@@ -8252,7 +9698,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "翁佩韋",
     "doc_attachments": [],
     "created_at": "2026/6/10 下午 04:32",
-    "updated_at": "2026/6/10 下午 04:32"
+    "updated_at": "2026/6/10 下午 04:32",
+    "doc_create_no": "1151293099",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021043889-E",
+    "doc_chart_status": "翁佩韋"
   },
   {
     "doc_receive_no": "1150006084",
@@ -8263,7 +9713,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北中衛字第1156373645號",
     "doc_subject": "本所為防疫業務需要，惠請貴院提供個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "07025846",
@@ -8276,7 +9726,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李俊年",
     "doc_attachments": [],
     "created_at": "2026/6/10 下午 04:38",
-    "updated_at": "2026/6/10 下午 04:38"
+    "updated_at": "2026/6/10 下午 04:38",
+    "doc_create_no": "1151293127",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "李俊年"
   },
   {
     "doc_receive_no": "1150005992",
@@ -8287,7 +9741,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民精114重簡字第1744號",
     "doc_subject": "惠請提供陳彥蓉(身份證號碼:C220654698)於民國113年1月30日至114年3月10日間，至貴院就醫之病歷資料過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "12911363",
@@ -8300,7 +9754,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "洪家佩",
     "doc_attachments": [],
     "created_at": "2026/6/11 上午 10:50",
-    "updated_at": "2026/6/11 上午 10:50"
+    "updated_at": "2026/6/11 上午 10:50",
+    "doc_create_no": "1150101677",
+    "doc_sender_org": "臺灣新北地方法院三重簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "洪家佩"
   },
   {
     "doc_receive_no": "1150006138",
@@ -8324,7 +9782,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/6/11 下午 04:31",
-    "updated_at": "2026/6/11 下午 04:31"
+    "updated_at": "2026/6/11 下午 04:31",
+    "doc_create_no": "1151293159",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021084678-E",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150006072",
@@ -8348,7 +9810,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳嘉鴻",
     "doc_attachments": [],
     "created_at": "2026/6/12 上午 09:07",
-    "updated_at": "2026/6/12 上午 09:07"
+    "updated_at": "2026/6/12 上午 09:07",
+    "doc_create_no": "1151293116",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021036588-E",
+    "doc_chart_status": "陳嘉鴻"
   },
   {
     "doc_receive_no": "1150006151",
@@ -8359,7 +9825,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信民秋115店簡352字第1150003206號",
     "doc_subject": "惠請回覆說明欄事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "08282864",
@@ -8372,7 +9838,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林譁誠",
     "doc_attachments": [],
     "created_at": "2026/6/12 下午 01:19",
-    "updated_at": "2026/6/12 下午 01:19"
+    "updated_at": "2026/6/12 下午 01:19",
+    "doc_create_no": "1150101722",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "林譁誠"
   },
   {
     "doc_receive_no": "1150006152",
@@ -8383,7 +9853,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民勇114年度勞訴字第253號",
     "doc_subject": "希貴單位惠予提供李承潔(女、民國92年2月6日生、身分證統一編號:F230966180號)之病歷資料到院，惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "11330187",
@@ -8396,7 +9866,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "鄔逸群",
     "doc_attachments": [],
     "created_at": "2026/6/12 下午 02:00",
-    "updated_at": "2026/6/12 下午 02:00"
+    "updated_at": "2026/6/12 下午 02:00",
+    "doc_create_no": "1150101723",
+    "doc_sender_org": "臺灣新北地方法院民事庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "鄔逸群"
   },
   {
     "doc_receive_no": "1150005931",
@@ -8407,7 +9881,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 群 115 偵 29442字第11590771510號",
     "doc_subject": "請惠予提供如說明一之資料過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18084630",
@@ -8420,7 +9894,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "紀則宇",
     "doc_attachments": [],
     "created_at": "2026/6/12 下午 03:17",
-    "updated_at": "2026/6/12 下午 03:17"
+    "updated_at": "2026/6/12 下午 03:17",
+    "doc_create_no": "1151293060",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "紀則宇"
   },
   {
     "doc_receive_no": "1150006167",
@@ -8431,7 +9909,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警中刑字第1155218040號",
     "doc_subject": "本分局為偵辦刑案，請提供夏○珊（身分證號A228521274）115年2月22日在貴院辦理疑似遭性侵害之驗傷診斷證明，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17465126",
@@ -8444,7 +9922,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "毛士鵬",
     "doc_attachments": [],
     "created_at": "2026/6/13 下午 03:54",
-    "updated_at": "2026/6/13 下午 03:54"
+    "updated_at": "2026/6/13 下午 03:54",
+    "doc_create_no": "1151293168",
+    "doc_sender_org": "新北市政府警察局中和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "毛士鵬"
   },
   {
     "doc_receive_no": "1150006181",
@@ -8455,7 +9937,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市警南分刑字第11530413213號",
     "doc_subject": "本分局為偵辦刑事案件，亟需貴醫院協助提供如說明二所示資料，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "04109947",
@@ -8468,7 +9950,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉永慶",
     "doc_attachments": [],
     "created_at": "2026/6/15 下午 02:17",
-    "updated_at": "2026/6/15 下午 02:17"
+    "updated_at": "2026/6/15 下午 02:17",
+    "doc_create_no": "1151293171",
+    "doc_sender_org": "臺北市政府警察局南港分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "劉永慶"
   },
   {
     "doc_receive_no": "1150006178",
@@ -8492,7 +9978,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林哲立",
     "doc_attachments": [],
     "created_at": "2026/6/15 下午 02:45",
-    "updated_at": "2026/6/15 下午 02:45"
+    "updated_at": "2026/6/15 下午 02:45",
+    "doc_create_no": "1151293184",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114021011226-E（審）",
+    "doc_chart_status": "林哲立"
   },
   {
     "doc_receive_no": "1150006249",
@@ -8516,7 +10006,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳信安",
     "doc_attachments": [],
     "created_at": "2026/6/17 上午 09:53",
-    "updated_at": "2026/6/17 上午 09:53"
+    "updated_at": "2026/6/17 上午 09:53",
+    "doc_create_no": "1151293217",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021044964",
+    "doc_chart_status": "陳信安"
   },
   {
     "doc_receive_no": "1150006216",
@@ -8527,7 +10021,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 意 115 他 2143字第11590817640號",
     "doc_subject": "請提供病患翁紹瑋（F127191882）於112年7月至112年11月間至貴院/診所就醫之病名、病歷資料供參，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "10012284",
@@ -8540,7 +10034,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/6/17 上午 10:01",
-    "updated_at": "2026/6/17 上午 10:01"
+    "updated_at": "2026/6/17 上午 10:01",
+    "doc_create_no": "1151293201",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150006230",
@@ -8551,7 +10049,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤家嫺113年度重家繼訴字第54號",
     "doc_subject": "請惠予函覆貴院是否留有被繼承人何美英(病歷號0338388-3)之生物資料(例如病理組織蠟塊檢體或骨骸等)，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "03383883",
@@ -8564,7 +10062,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/6/17 下午 02:40",
-    "updated_at": "2026/6/17 下午 02:40"
+    "updated_at": "2026/6/17 下午 02:40",
+    "doc_create_no": "1150101739",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150006299",
@@ -8575,7 +10077,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北中衛字第1156373814號",
     "doc_subject": "本所為防疫業務需要，惠請貴院提供個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "00594211",
@@ -8588,7 +10090,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳資濤",
     "doc_attachments": [],
     "created_at": "2026/6/18 上午 11:56",
-    "updated_at": "2026/6/18 上午 11:56"
+    "updated_at": "2026/6/18 上午 11:56",
+    "doc_create_no": "1151293236",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳資濤"
   },
   {
     "doc_receive_no": "1150006237",
@@ -8599,7 +10105,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "彰衛保字第1150036936號",
     "doc_subject": "請惠予提供本縣「推動社區民眾肝癌高危險群巡迴定點篩檢服務計畫」(附件1)個案於貴院所就診之肝臟相關檢查報告，俾以完成追蹤，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "00266903",
@@ -8612,7 +10118,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/6/18 下午 04:13",
-    "updated_at": "2026/6/18 下午 04:13"
+    "updated_at": "2026/6/18 下午 04:13",
+    "doc_create_no": "1150101746",
+    "doc_sender_org": "彰化縣衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150006292",
@@ -8636,7 +10146,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "賴慧穎",
     "doc_attachments": [],
     "created_at": "2026/6/22 上午 09:59",
-    "updated_at": "2026/6/22 上午 09:59"
+    "updated_at": "2026/6/22 上午 09:59",
+    "doc_create_no": "1151293241",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021060222-E",
+    "doc_chart_status": "賴慧穎"
   },
   {
     "doc_receive_no": "1150006345",
@@ -8647,7 +10161,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民悅115板簡字第1343號",
     "doc_subject": "惠請就說明第二至三項惠復意見，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "11279369",
@@ -8660,7 +10174,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "楊順泰(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/6/22 上午 10:36",
-    "updated_at": "2026/6/22 上午 10:36"
+    "updated_at": "2026/6/22 上午 10:36",
+    "doc_create_no": "1150101779",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "楊順泰(回答問題)"
   },
   {
     "doc_receive_no": "1150006392",
@@ -8671,7 +10189,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤家儀115年度家護字第1099號",
     "doc_subject": "惠請貴院所提供呂相賢(身分證統一編號:F131376473號)近一年內有關精神、身心科之病歷記錄，以供鑑定參考使用，惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "10690826",
@@ -8684,7 +10202,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李尚",
     "doc_attachments": [],
     "created_at": "2026/6/22 上午 11:44",
-    "updated_at": "2026/6/22 上午 11:44"
+    "updated_at": "2026/6/22 上午 11:44",
+    "doc_create_no": "1150101788",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "李尚"
   },
   {
     "doc_receive_no": "1150006465",
@@ -8695,7 +10217,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北汐衛字第1156392708號",
     "doc_subject": "為防疫需求，請貴院協助提供王○燕、黃○容君胸部X光檢查相關轉診及診療資料，以利後續公共衛生防疫追蹤，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "05196168.10930429",
@@ -8708,7 +10230,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "張又升",
     "doc_attachments": [],
     "created_at": "2026/6/22 下午 03:20",
-    "updated_at": "2026/6/22 下午 03:20"
+    "updated_at": "2026/6/22 下午 03:20",
+    "doc_create_no": "1151293354",
+    "doc_sender_org": "新北市汐止區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "張又升"
   },
   {
     "doc_receive_no": "1150006488",
@@ -8732,7 +10258,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "許瓅文",
     "doc_attachments": [],
     "created_at": "2026/6/23 上午 11:14",
-    "updated_at": "2026/6/23 上午 11:14"
+    "updated_at": "2026/6/23 上午 11:14",
+    "doc_create_no": "1151293365",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115-0-92-001696",
+    "doc_chart_status": "許瓅文"
   },
   {
     "doc_receive_no": "1150006489",
@@ -8756,7 +10286,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李尚",
     "doc_attachments": [],
     "created_at": "2026/6/23 上午 11:52",
-    "updated_at": "2026/6/23 上午 11:52"
+    "updated_at": "2026/6/23 上午 11:52",
+    "doc_create_no": "151293356",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115-0-92-005893",
+    "doc_chart_status": "李尚"
   },
   {
     "doc_receive_no": "1150006399",
@@ -8767,7 +10301,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "士檢以結青115偵12078字第11590383010號",
     "doc_subject": "惠請提供病患于自祥(身分證字號：F124554903)於115年5月26日在貴院接受急診治療之照片，請查照辦理。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18180402",
@@ -8780,7 +10314,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "邱奕璁",
     "doc_attachments": [],
     "created_at": "2026/6/23 下午 04:28",
-    "updated_at": "2026/6/23 下午 04:28"
+    "updated_at": "2026/6/23 下午 04:28",
+    "doc_create_no": "1151293307",
+    "doc_sender_org": "臺灣士林地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "邱奕璁"
   },
   {
     "doc_receive_no": "1150006426",
@@ -8804,7 +10342,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉恆維",
     "doc_attachments": [],
     "created_at": "2026/6/24 上午 10:09",
-    "updated_at": "2026/6/24 上午 10:09"
+    "updated_at": "2026/6/24 上午 10:09",
+    "doc_create_no": "1151293324",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021069605-E",
+    "doc_chart_status": "劉恆維"
   },
   {
     "doc_receive_no": "1150006477",
@@ -8828,7 +10370,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李岡遠",
     "doc_attachments": [],
     "created_at": "2026/6/24 上午 10:13",
-    "updated_at": "2026/6/24 上午 10:13"
+    "updated_at": "2026/6/24 上午 10:13",
+    "doc_create_no": "1151293344",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031016429",
+    "doc_chart_status": "李岡遠"
   },
   {
     "doc_receive_no": "1150006478",
@@ -8852,7 +10398,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "許秉閎",
     "doc_attachments": [],
     "created_at": "2026/6/24 下午 04:44",
-    "updated_at": "2026/6/24 下午 04:44"
+    "updated_at": "2026/6/24 下午 04:44",
+    "doc_create_no": "1151293342",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031013471-C",
+    "doc_chart_status": "許秉閎"
   },
   {
     "doc_receive_no": "1150006613",
@@ -8876,7 +10426,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "邱彥碩",
     "doc_attachments": [],
     "created_at": "2026/6/25 上午 10:29",
-    "updated_at": "2026/6/25 上午 10:29"
+    "updated_at": "2026/6/25 上午 10:29",
+    "doc_create_no": "1151293438",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021033573-E號",
+    "doc_chart_status": "邱彥碩"
   },
   {
     "doc_receive_no": "1150006625",
@@ -8900,7 +10454,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/6/25 上午 11:17",
-    "updated_at": "2026/6/25 上午 11:17"
+    "updated_at": "2026/6/25 上午 11:17",
+    "doc_create_no": "1151293428",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031015901-C號",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150006575",
@@ -8909,9 +10467,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_source_unit": "新北市政府衛生局",
     "doc_issue_date": "115年06月23日",
     "doc_issue_no": "新北衛醫字第1151163872號",
-    "doc_subject": "有關民眾陳情於貴院接受關節腔注射治療，疑引發患部發炎\n且加劇關節組織損害、敗血症診斷延誤治療時機等，涉醫療\n爭議並申請調解一案，詳如說明段，請查照。",
+    "doc_subject": "有關民眾陳情於貴院接受關節腔注射治療，疑引發患部發炎
+且加劇關節組織損害、敗血症診斷延誤治療時機等，涉醫療
+爭議並申請調解一案，詳如說明段，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17087160",
@@ -8921,10 +10481,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "醫療爭議",
-    "doc_doctor_name": "許瓅文\n林廉傑",
+    "doc_doctor_name": "許瓅文
+林廉傑",
     "doc_attachments": [],
     "created_at": "2026/6/25 下午 03:12",
-    "updated_at": "2026/6/25 下午 03:12"
+    "updated_at": "2026/6/25 下午 03:12",
+    "doc_create_no": "1151293421",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": "許瓅文
+林廉傑"
   },
   {
     "doc_receive_no": "1150006207",
@@ -8933,9 +10499,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_source_unit": "新北市政府衛生局",
     "doc_issue_date": "115年06月12日",
     "doc_issue_no": "新北衛醫字第1151096305號",
-    "doc_subject": "有關民眾陳情於貴院接受左眼白內障手術，疑術中水晶體破\n裂致術後眼內炎涉醫療爭議並申請調解一案，詳如說明段，\n請查照。",
+    "doc_subject": "有關民眾陳情於貴院接受左眼白內障手術，疑術中水晶體破
+裂致術後眼內炎涉醫療爭議並申請調解一案，詳如說明段，
+請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "00241119",
@@ -8948,7 +10516,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "章筱伶",
     "doc_attachments": [],
     "created_at": "2026/6/25 下午 04:30",
-    "updated_at": "2026/6/25 下午 04:30"
+    "updated_at": "2026/6/25 下午 04:30",
+    "doc_create_no": "1151293211",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": "章筱伶"
   },
   {
     "doc_receive_no": "1150006507",
@@ -8959,7 +10531,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民允113醫11字第1159012602號",
     "doc_subject": "請惠予提供謝承佑（身分證統一編號: F126503520號）於111年3月至113年2月之病歷資料（附件）及醫療影像光碟（如: X光片等）過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "02215572",
@@ -8972,7 +10544,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "江長蓉",
     "doc_attachments": [],
     "created_at": "2026/6/25 下午 05:55",
-    "updated_at": "2026/6/25 下午 05:55"
+    "updated_at": "2026/6/25 下午 05:55",
+    "doc_create_no": "1151293371",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "江長蓉"
   },
   {
     "doc_receive_no": "1150006674",
@@ -8996,7 +10572,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "毛士鵬",
     "doc_attachments": [],
     "created_at": "2026/6/26 下午 01:24",
-    "updated_at": "2026/6/26 下午 01:24"
+    "updated_at": "2026/6/26 下午 01:24",
+    "doc_create_no": "1150101860",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031015969-C號",
+    "doc_chart_status": "毛士鵬"
   },
   {
     "doc_receive_no": "1150006640",
@@ -9007,7 +10587,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北執戊107年營所稅執專字第00064224號",
     "doc_subject": "請查復義務人之負責人高進旺(身分證字號:A111011789)就醫時所留存之通訊地址及聯絡電話，並檢送相關資料過署，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "14436930",
@@ -9020,7 +10600,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/6/26 下午 02:18",
-    "updated_at": "2026/6/26 下午 02:18"
+    "updated_at": "2026/6/26 下午 02:18",
+    "doc_create_no": "1150101847",
+    "doc_sender_org": "法務部行政執行署新北分署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150006569",
@@ -9031,7 +10615,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信民代115保險24字第1150013585號",
     "doc_subject": "請協助查明如說明二所示之事項，惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "查無此人",
@@ -9044,7 +10628,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/6/26 下午 03:11",
-    "updated_at": "2026/6/26 下午 03:11"
+    "updated_at": "2026/6/26 下午 03:11",
+    "doc_create_no": "1150101828",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150006676",
@@ -9055,7 +10643,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤刑隆115侵易3字第40305號",
     "doc_subject": "請惠予查覆說明二所示事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "00725688",
@@ -9065,10 +10653,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "譚家偉\n林芊芊\n曾美智",
+    "doc_doctor_name": "譚家偉
+林芊芊
+曾美智",
     "doc_attachments": [],
     "created_at": "2026/6/26 下午 04:38",
-    "updated_at": "2026/6/26 下午 04:38"
+    "updated_at": "2026/6/26 下午 04:38",
+    "doc_create_no": "1150101862",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "譚家偉
+林芊芊
+曾美智"
   },
   {
     "doc_receive_no": "1150006562",
@@ -9079,7 +10675,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北警中刑字第1155217405號",
     "doc_subject": "本分局為偵辦竊盜案件需要，請惠予提供如說明二所示相關資料俾利偵辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "03058321",
@@ -9089,10 +10685,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "羅偉倫(回答問題)\n蔡宏達(回答問題)",
+    "doc_doctor_name": "羅偉倫(回答問題)
+蔡宏達(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/6/30 下午 04:15",
-    "updated_at": "2026/6/30 下午 04:15"
+    "updated_at": "2026/6/30 下午 04:15",
+    "doc_create_no": "1150101821",
+    "doc_sender_org": "新北市政府警察局中和分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "羅偉倫(回答問題)
+蔡宏達(回答問題)"
   },
   {
     "doc_receive_no": "1150006712",
@@ -9103,7 +10705,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民悅115板簡字第1454號",
     "doc_subject": "惠請就說明第二項惠復意見，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "04072801",
@@ -9116,7 +10718,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "莊凱迪",
     "doc_attachments": [],
     "created_at": "2026/6/30 下午 06:18",
-    "updated_at": "2026/6/30 下午 06:18"
+    "updated_at": "2026/6/30 下午 06:18",
+    "doc_create_no": "1150101887",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "莊凱迪"
   },
   {
     "doc_receive_no": "1150006774",
@@ -9127,7 +10733,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北永衛字第1156382786號",
     "doc_subject": "為結核病防疫業務需要，惠請貴院提供本市結核病患林○瑜於貴院114年後歷次檢查之胸部X光片、病歷摘要、病理檢查報告及相關檢驗報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "10809615",
@@ -9140,7 +10746,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠元",
     "doc_attachments": [],
     "created_at": "2026/7/1 上午 11:33",
-    "updated_at": "2026/7/1 上午 11:33"
+    "updated_at": "2026/7/1 上午 11:33",
+    "doc_create_no": "1151293493",
+    "doc_sender_org": "新北市永和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳冠元"
   },
   {
     "doc_receive_no": "1150006720",
@@ -9151,7 +10761,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永知115調偵992字第1159084643號",
     "doc_subject": "請惠予確認本案刀刃刺入方式是否可能構成重大不治或難治之重傷害，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "10809615",
@@ -9164,7 +10774,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "周大鈞(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/1 下午 12:01",
-    "updated_at": "2026/7/1 下午 12:01"
+    "updated_at": "2026/7/1 下午 12:01",
+    "doc_create_no": "1150101895",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "周大鈞(回答問題)"
   },
   {
     "doc_receive_no": "1150006743",
@@ -9188,7 +10802,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李垣樟(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/1 下午 03:13",
-    "updated_at": "2026/7/1 下午 03:13"
+    "updated_at": "2026/7/1 下午 03:13",
+    "doc_create_no": "1151293483",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021044611-E",
+    "doc_chart_status": "李垣樟(回答問題)"
   },
   {
     "doc_receive_no": "1150006784",
@@ -9212,7 +10830,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林哲立",
     "doc_attachments": [],
     "created_at": "2026/7/1 下午 05:09",
-    "updated_at": "2026/7/1 下午 05:09"
+    "updated_at": "2026/7/1 下午 05:09",
+    "doc_create_no": "1151293491",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021068550-E",
+    "doc_chart_status": "林哲立"
   },
   {
     "doc_receive_no": "1150006566",
@@ -9236,7 +10858,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "廖晏輝",
     "doc_attachments": [],
     "created_at": "2026/7/2 下午 12:08",
-    "updated_at": "2026/7/2 下午 12:08"
+    "updated_at": "2026/7/2 下午 12:08",
+    "doc_create_no": "1150101825",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "114021204497-E",
+    "doc_chart_status": "廖晏輝"
   },
   {
     "doc_receive_no": "1150006971",
@@ -9260,7 +10886,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "許永和",
     "doc_attachments": [],
     "created_at": "2026/7/3 上午 08:37",
-    "updated_at": "2026/7/3 上午 08:37"
+    "updated_at": "2026/7/3 上午 08:37",
+    "doc_create_no": "1150101974",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031015953-C號",
+    "doc_chart_status": "許永和"
   },
   {
     "doc_receive_no": "1150006852",
@@ -9284,7 +10914,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳沛華",
     "doc_attachments": [],
     "created_at": "2026/7/3 上午 08:42",
-    "updated_at": "2026/7/3 上午 08:42"
+    "updated_at": "2026/7/3 上午 08:42",
+    "doc_create_no": "1151293520",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021055821-E號",
+    "doc_chart_status": "陳沛華"
   },
   {
     "doc_receive_no": "1150006836",
@@ -9295,7 +10929,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北裁申字第11549044631號",
     "doc_subject": "臺北高等行政法院函請本處重新審查115年度交字第1451號（原告：陳俊賢、車號：KLE-1629、違規單號：CH9G70073、CH9G70074號違規）交通裁決事件案，請於文到7日內回復，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "01533383",
@@ -9308,7 +10942,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "徐嘉鴻",
     "doc_attachments": [],
     "created_at": "2026/7/3 下午 03:34",
-    "updated_at": "2026/7/3 下午 03:34"
+    "updated_at": "2026/7/3 下午 03:34",
+    "doc_create_no": "1151293532",
+    "doc_sender_org": "新北市政府交通事件裁決處",
+    "doc_labor_no": "",
+    "doc_chart_status": "徐嘉鴻"
   },
   {
     "doc_receive_no": "1150007029",
@@ -9332,7 +10970,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/7/3 下午 04:38",
-    "updated_at": "2026/7/3 下午 04:38"
+    "updated_at": "2026/7/3 下午 04:38",
+    "doc_create_no": "1151293617",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150006639",
@@ -9343,7 +10985,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永玄115相712字第1159083895號",
     "doc_subject": "請惠予提供史銘水(A120180322)於115年3月22日前往貴醫院就診或住院治療等所有資料(含病歷、護理紀錄、光學影像等)，供本署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18052275",
@@ -9353,10 +10995,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "翁健瑞\n葉雲凱",
+    "doc_doctor_name": "翁健瑞
+葉雲凱",
     "doc_attachments": [],
     "created_at": "2026/7/3 下午 05:39",
-    "updated_at": "2026/7/3 下午 05:39"
+    "updated_at": "2026/7/3 下午 05:39",
+    "doc_create_no": "1150101846",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "翁健瑞
+葉雲凱"
   },
   {
     "doc_receive_no": "1150006969",
@@ -9367,7 +11015,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信民代115保險24字第1150014155號",
     "doc_subject": "請協助查明如說明二所示之事項，惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "12423732",
@@ -9380,7 +11028,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "胡朝榮",
     "doc_attachments": [],
     "created_at": "2026/7/3 下午 06:00",
-    "updated_at": "2026/7/3 下午 06:00"
+    "updated_at": "2026/7/3 下午 06:00",
+    "doc_create_no": "1150101972",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "胡朝榮"
   },
   {
     "doc_receive_no": "1150006882",
@@ -9391,7 +11043,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北衛醫字第1151205259號",
     "doc_subject": "有關民眾陳情於貴院因鼻中隔彎曲併肥厚性鼻炎接受鼻中膈矯正手術併下鼻甲部分切除，疑鼻甲切除過多致空鼻症涉醫療爭議並申請調解一案，詳如說明段，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "08533986",
@@ -9401,10 +11053,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "醫療爭議",
-    "doc_doctor_name": "袁聖博\n趙品植",
+    "doc_doctor_name": "袁聖博
+趙品植",
     "doc_attachments": [],
     "created_at": "2026/7/3 下午 06:22",
-    "updated_at": "2026/7/3 下午 06:22"
+    "updated_at": "2026/7/3 下午 06:22",
+    "doc_create_no": "1151293566",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": "袁聖博
+趙品植"
   },
   {
     "doc_receive_no": "1150006721",
@@ -9415,7 +11073,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永盈115偵23237字第1159083088號",
     "doc_subject": "請貴院協助提供說明一所示之資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "08882545",
@@ -9425,10 +11083,20 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "束連文\n王俊凱\n莊凱迪\n賴虹均",
+    "doc_doctor_name": "束連文
+王俊凱
+莊凱迪
+賴虹均",
     "doc_attachments": [],
     "created_at": "2026/7/7 下午 03:47",
-    "updated_at": "2026/7/7 下午 03:47"
+    "updated_at": "2026/7/7 下午 03:47",
+    "doc_create_no": "1150101896",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "束連文
+王俊凱
+莊凱迪
+賴虹均"
   },
   {
     "doc_receive_no": "1150006915",
@@ -9439,7 +11107,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信民秋115店簡384字第1150003759號",
     "doc_subject": "請回覆說明欄事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "01190955",
@@ -9449,10 +11117,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "邱彥碩\n紀則宇",
+    "doc_doctor_name": "邱彥碩
+紀則宇",
     "doc_attachments": [],
     "created_at": "2026/7/7 下午 05:48",
-    "updated_at": "2026/7/7 下午 05:48"
+    "updated_at": "2026/7/7 下午 05:48",
+    "doc_create_no": "1150101950",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "邱彥碩
+紀則宇"
   },
   {
     "doc_receive_no": "1150006869",
@@ -9463,7 +11137,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民陽114年度保險字第24號",
     "doc_subject": "惠請答復如說明二所示事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "13151124",
@@ -9476,7 +11150,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "蘇勤芳",
     "doc_attachments": [],
     "created_at": "2026/7/7 下午 05:56",
-    "updated_at": "2026/7/7 下午 05:56"
+    "updated_at": "2026/7/7 下午 05:56",
+    "doc_create_no": "1150101939",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "蘇勤芳"
   },
   {
     "doc_receive_no": "1150007008",
@@ -9487,7 +11165,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "院英刑往115上易818字第1150108212號",
     "doc_subject": "檢送貴院病患黃黛琳之診斷證明書影本2件，惠請函復如說明二事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "12346523",
@@ -9500,7 +11178,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳美茜(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/7 下午 06:12",
-    "updated_at": "2026/7/7 下午 06:12"
+    "updated_at": "2026/7/7 下午 06:12",
+    "doc_create_no": "1150101992",
+    "doc_sender_org": "臺灣高等法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳美茜(回答問題)"
   },
   {
     "doc_receive_no": "1150007002",
@@ -9511,7 +11193,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永洪114調偵1969字第1159088863號",
     "doc_subject": "請惠予提供如說明所示之資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17128166",
@@ -9521,10 +11203,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "蔡同堯\n許秉閎",
+    "doc_doctor_name": "蔡同堯
+許秉閎",
     "doc_attachments": [],
     "created_at": "2026/7/7 下午 06:47",
-    "updated_at": "2026/7/7 下午 06:47"
+    "updated_at": "2026/7/7 下午 06:47",
+    "doc_create_no": "1150101986",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "蔡同堯
+許秉閎"
   },
   {
     "doc_receive_no": "1150007148",
@@ -9548,7 +11236,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/7/7 下午 08:10",
-    "updated_at": "2026/7/7 下午 08:10"
+    "updated_at": "2026/7/7 下午 08:10",
+    "doc_create_no": "1151293681",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150007090",
@@ -9559,7 +11251,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北中衛字第1156374257號",
     "doc_subject": "本所為防疫業務需要，惠請貴院提供肺結核個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "何秀英",
     "doc_assignee_email": "12254@s.tmu.edu.tw",
     "doc_chart_no": "01356533",
@@ -9572,7 +11264,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "即時釋出病歷",
     "doc_attachments": [],
     "created_at": "2026/7/7 下午 08:12",
-    "updated_at": "2026/7/7 下午 08:12"
+    "updated_at": "2026/7/7 下午 08:12",
+    "doc_create_no": "1151293642",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "即時釋出病歷"
   },
   {
     "doc_receive_no": "1150007120",
@@ -9583,7 +11279,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北永衛字第1156382945號",
     "doc_subject": "為結核病防疫業務需求，惠請貴院提供本市結核病王○凱於貴院113年後檢查之胸部X光、電腦斷層、磁振造影等檢驗報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "02556110",
@@ -9596,7 +11292,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/7/8 上午 11:08",
-    "updated_at": "2026/7/8 上午 11:08"
+    "updated_at": "2026/7/8 上午 11:08",
+    "doc_create_no": "1151293675",
+    "doc_sender_org": "新北市永和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150007143",
@@ -9607,7 +11307,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市醫毒危字第11530423224號",
     "doc_subject": "為「配合中央及衛生局辦理結核病防治業務-每月協助辦理結核病病例討論會議調閱病歷及報告」，請貴院於115年7月20日下午5時前提供結核病列管個案之病歷相關資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "04584988",
@@ -9620,7 +11320,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/7/8 下午 12:02",
-    "updated_at": "2026/7/8 下午 12:02"
+    "updated_at": "2026/7/8 下午 12:02",
+    "doc_create_no": "1151293683",
+    "doc_sender_org": "臺北市立聯合醫院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150006865",
@@ -9631,7 +11335,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民萬115板簡字第1121號",
     "doc_subject": "請貴院檢送如說明二之資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "15649296",
@@ -9641,10 +11345,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "紀則宇\n柯世祐\n陳致宇",
+    "doc_doctor_name": "紀則宇
+柯世祐
+陳致宇",
     "doc_attachments": [],
     "created_at": "2026/7/8 下午 02:50",
-    "updated_at": "2026/7/8 下午 02:50"
+    "updated_at": "2026/7/8 下午 02:50",
+    "doc_create_no": "1150101935",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "紀則宇
+柯世祐
+陳致宇"
   },
   {
     "doc_receive_no": "1150006999",
@@ -9655,7 +11367,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永暑1154724字第1159087851號",
     "doc_subject": "請貴院協助提供以下說明一之事項過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "02492658",
@@ -9668,7 +11380,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林冠宏",
     "doc_attachments": [],
     "created_at": "2026/7/8 下午 05:24",
-    "updated_at": "2026/7/8 下午 05:24"
+    "updated_at": "2026/7/8 下午 05:24",
+    "doc_create_no": "1150101983",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "林冠宏"
   },
   {
     "doc_receive_no": "1150007000",
@@ -9679,7 +11395,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永盈115偵27850字第1159086559號",
     "doc_subject": "請貴院協助提供病患李長壽(國民身分證統一編號:A122224961號)於114年迄今之就醫狀況、科別及診斷證明，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17105633",
@@ -9689,10 +11405,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "陳天恩\n楊浩銓",
+    "doc_doctor_name": "陳天恩
+楊浩銓",
     "doc_attachments": [],
     "created_at": "2026/7/9 下午 02:25",
-    "updated_at": "2026/7/9 下午 02:25"
+    "updated_at": "2026/7/9 下午 02:25",
+    "doc_create_no": "1150101984",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳天恩
+楊浩銓"
   },
   {
     "doc_receive_no": "1150007140",
@@ -9703,7 +11425,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職醫字第11560187770號",
     "doc_subject": "本局為審核被保險人陳允孝君職災保險給付需要，敬請貴院於文到15日內依說明三所列各點儘速查明惠復，並檢附其因「急性壓力反應」至貴院就診之相關病歷資料(含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告)影本，有勞協助，敬致謝忱，請查照。",
     "doc_lbi_no": "115-082-011418",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "02180539",
@@ -9716,7 +11438,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "曾美智",
     "doc_attachments": [],
     "created_at": "2026/7/9 下午 02:38",
-    "updated_at": "2026/7/9 下午 02:38"
+    "updated_at": "2026/7/9 下午 02:38",
+    "doc_create_no": "1151293685",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115-082-011418",
+    "doc_chart_status": "曾美智"
   },
   {
     "doc_receive_no": "1150007116",
@@ -9727,7 +11453,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信民恭115簡上184字第1159031087號",
     "doc_subject": "請惠復如說明所詢之事項，並提供相關資料到院，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "16274875",
@@ -9740,7 +11466,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃錦前(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/9 下午 03:32",
-    "updated_at": "2026/7/9 下午 03:32"
+    "updated_at": "2026/7/9 下午 03:32",
+    "doc_create_no": "1151293663",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "黃錦前(回答問題)"
   },
   {
     "doc_receive_no": "1150007243",
@@ -9751,7 +11481,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃院雲民孝114桃簡1509字第1150025735號",
     "doc_subject": "請貴院惠予函覆如說明二所示之事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "16545652",
@@ -9761,10 +11491,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "劉恆維(回答問題)\n羅偉倫(回答問題)",
+    "doc_doctor_name": "劉恆維(回答問題)
+羅偉倫(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/13 下午 05:20",
-    "updated_at": "2026/7/13 下午 05:20"
+    "updated_at": "2026/7/13 下午 05:20",
+    "doc_create_no": "1150102047",
+    "doc_sender_org": "臺灣桃園地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "劉恆維(回答問題)
+羅偉倫(回答問題)"
   },
   {
     "doc_receive_no": "1150006722",
@@ -9775,7 +11511,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永黃115偵30336字第1159083939號",
     "doc_subject": "請惠予查明潘景山(C121177750)於114年間是否曾經因病就診，而開立具有特拉嗎竇成分之止痛藥與潘景山服用?如有，最後開立上開處方箋之時間為何?請查明惠復憑辦。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "10464623",
@@ -9788,7 +11524,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "藥劑部(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/13 下午 05:31",
-    "updated_at": "2026/7/13 下午 05:31"
+    "updated_at": "2026/7/13 下午 05:31",
+    "doc_create_no": "1150101897",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "藥劑部(回答問題)"
   },
   {
     "doc_receive_no": "1150007001",
@@ -9799,7 +11539,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永餘114相897字第1159088399號",
     "doc_subject": "請惠於文到後兩週內儘速提供病患林萬福(Y100095518)114年3月27日至6月24日於貴院之完整病歷資料(含病程紀錄、護理紀錄、檢驗檢查報告、呼吸治療紀錄單及醫療影像光碟[含心導管影像、磁振造影、電腦斷層掃描])，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "16603422",
@@ -9809,10 +11549,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "醫療糾紛",
-    "doc_doctor_name": "官怡君(8月離職目前休假中，職代黃立楷主任)\n邱瑋婷\n黃立楷主任(電聯回覆ok)",
+    "doc_doctor_name": "官怡君(8月離職目前休假中，職代黃立楷主任)
+邱瑋婷
+黃立楷主任(電聯回覆ok)",
     "doc_attachments": [],
     "created_at": "2026/7/13 下午 06:54",
-    "updated_at": "2026/7/13 下午 06:54"
+    "updated_at": "2026/7/13 下午 06:54",
+    "doc_create_no": "1150101985",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "官怡君(8月離職目前休假中，職代黃立楷主任)
+邱瑋婷
+黃立楷主任(電聯回覆ok)"
   },
   {
     "doc_receive_no": "1150007352",
@@ -9836,7 +11584,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "柯世祐",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 01:23",
-    "updated_at": "2026/7/14 下午 01:23"
+    "updated_at": "2026/7/14 下午 01:23",
+    "doc_create_no": "1151293771",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115091002623",
+    "doc_chart_status": "柯世祐"
   },
   {
     "doc_receive_no": "1150007221",
@@ -9860,7 +11612,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林哲立",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 01:56",
-    "updated_at": "2026/7/14 下午 01:56"
+    "updated_at": "2026/7/14 下午 01:56",
+    "doc_create_no": "1151293729",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021051072-E",
+    "doc_chart_status": "林哲立"
   },
   {
     "doc_receive_no": "1150007373",
@@ -9884,7 +11640,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 02:24",
-    "updated_at": "2026/7/14 下午 02:24"
+    "updated_at": "2026/7/14 下午 02:24",
+    "doc_create_no": "1151293804",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021067728-E號",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150007356",
@@ -9895,7 +11655,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永福115偵20072字第1159092750號",
     "doc_subject": "惠請提供貴單位與代號AD000-A115131(真實姓名詳對照表)聯繫及關懷紀錄到署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "04211064",
@@ -9908,7 +11668,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 02:32",
-    "updated_at": "2026/7/14 下午 02:32"
+    "updated_at": "2026/7/14 下午 02:32",
+    "doc_create_no": "1150102054",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150007374",
@@ -9932,7 +11696,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "饒紀倫",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 02:57",
-    "updated_at": "2026/7/14 下午 02:57"
+    "updated_at": "2026/7/14 下午 02:57",
+    "doc_create_no": "1151293812",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021093554-E號",
+    "doc_chart_status": "饒紀倫"
   },
   {
     "doc_receive_no": "1150007287",
@@ -9956,7 +11724,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠豪",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 03:23",
-    "updated_at": "2026/7/14 下午 03:23"
+    "updated_at": "2026/7/14 下午 03:23",
+    "doc_create_no": "1151293730",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第114021186422（審）-E號",
+    "doc_chart_status": "陳冠豪"
   },
   {
     "doc_receive_no": "1150007288",
@@ -9980,7 +11752,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 03:54",
-    "updated_at": "2026/7/14 下午 03:54"
+    "updated_at": "2026/7/14 下午 03:54",
+    "doc_create_no": "1151293736",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021003037-E號",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150007266",
@@ -10004,7 +11780,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃錦前",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 05:37",
-    "updated_at": "2026/7/14 下午 05:37"
+    "updated_at": "2026/7/14 下午 05:37",
+    "doc_create_no": "1151293747",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021087809-E號",
+    "doc_chart_status": "黃錦前"
   },
   {
     "doc_receive_no": "1150007341",
@@ -10028,7 +11808,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳弘洲",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 05:58",
-    "updated_at": "2026/7/14 下午 05:58"
+    "updated_at": "2026/7/14 下午 05:58",
+    "doc_create_no": "1151293777",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021067770-E號",
+    "doc_chart_status": "陳弘洲"
   },
   {
     "doc_receive_no": "1150007387",
@@ -10052,7 +11836,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳弘洲",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 06:31",
-    "updated_at": "2026/7/14 下午 06:31"
+    "updated_at": "2026/7/14 下午 06:31",
+    "doc_create_no": "1151293817",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021081721-E號",
+    "doc_chart_status": "陳弘洲"
   },
   {
     "doc_receive_no": "1150007331",
@@ -10063,7 +11851,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "府社工字第1150133250號",
     "doc_subject": "為協助本府兒童保護個案林○○豐（詳如年籍資料表）處遇事宜，惠請貴院協助提供林童115年5月14日之檢傷報告1份，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18156843",
@@ -10076,7 +11864,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 06:35",
-    "updated_at": "2026/7/14 下午 06:35"
+    "updated_at": "2026/7/14 下午 06:35",
+    "doc_create_no": "1151293796",
+    "doc_sender_org": "花蓮縣政府",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150007361",
@@ -10087,7 +11879,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民永113年度簡上字第619號",
     "doc_subject": "希貴院就附件部分補充說明，相關問題如說明欄所示，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "00716970",
@@ -10100,7 +11892,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "鄔逸群(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 06:50",
-    "updated_at": "2026/7/14 下午 06:50"
+    "updated_at": "2026/7/14 下午 06:50",
+    "doc_create_no": "1150102059",
+    "doc_sender_org": "臺灣新北地方法院民事庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "鄔逸群(回答問題)"
   },
   {
     "doc_receive_no": "1150007376",
@@ -10111,7 +11907,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃院雲民于115桃簡940字第1159020785號",
     "doc_subject": "請依說明二、三所示事項辦理，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "10935660",
@@ -10124,7 +11920,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃立楷(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/14 下午 07:08",
-    "updated_at": "2026/7/14 下午 07:08"
+    "updated_at": "2026/7/14 下午 07:08",
+    "doc_create_no": "1151293811",
+    "doc_sender_org": "臺灣桃園地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "黃立楷(回答問題)"
   },
   {
     "doc_receive_no": "1150007398",
@@ -10135,7 +11935,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民元115板簡字第311號",
     "doc_subject": "請惠予提供俞菁菁(身分證統一編號:L223076657號)於民國113年11月28日以後於貴醫院之所有病歷資料(含診斷證明書、門診及住院病歷、檢查之文字報告及影像光碟)，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "06019365",
@@ -10148,7 +11948,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/7/16 上午 09:48",
-    "updated_at": "2026/7/16 上午 09:48"
+    "updated_at": "2026/7/16 上午 09:48",
+    "doc_create_no": "1150102073",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150007391",
@@ -10159,7 +11963,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永信綺115偵24358字第1159090188號",
     "doc_subject": "請查復病患洪柏新(民國76年11月7日生，國民身分證統一編號:M122238956號)如說明所示事項過署參辦。請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "02944492",
@@ -10172,7 +11976,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/16 上午 10:51",
-    "updated_at": "2026/7/16 上午 10:51"
+    "updated_at": "2026/7/16 上午 10:51",
+    "doc_create_no": "1150102066",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "王智毅(回答問題)"
   },
   {
     "doc_receive_no": "1150007397",
@@ -10183,7 +11991,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "中院漢刑吉115侵訴63字第1150059217號",
     "doc_subject": "惠請就說明欄內所示事項予以說明，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "02519007",
@@ -10196,7 +12004,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王俊凱(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/16 上午 11:25",
-    "updated_at": "2026/7/16 上午 11:25"
+    "updated_at": "2026/7/16 上午 11:25",
+    "doc_create_no": "1150102072",
+    "doc_sender_org": "臺灣臺中地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "王俊凱(回答問題)"
   },
   {
     "doc_receive_no": "1150007433",
@@ -10220,7 +12032,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/7/16 下午 01:08",
-    "updated_at": "2026/7/16 下午 01:08"
+    "updated_at": "2026/7/16 下午 01:08",
+    "doc_create_no": "1150102093",
+    "doc_sender_org": "新北市政府社會局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150007458",
@@ -10231,7 +12047,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "中院漢民優115保險18字第1159015998號",
     "doc_subject": "請提供施耀翔（身分證統一編號: B122906530號）於貴院就診之全部病歷資料過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "15560489",
@@ -10241,10 +12057,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "高偉棠\n王萬榆",
+    "doc_doctor_name": "高偉棠
+王萬榆",
     "doc_attachments": [],
     "created_at": "2026/7/16 下午 02:21",
-    "updated_at": "2026/7/16 下午 02:21"
+    "updated_at": "2026/7/16 下午 02:21",
+    "doc_create_no": "1151293858",
+    "doc_sender_org": "臺灣臺中地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "高偉棠
+王萬榆"
   },
   {
     "doc_receive_no": "1150007473",
@@ -10255,7 +12077,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市警安分刑字第1153073061號",
     "doc_subject": "本分局因偵辦刑事案件，亟需貴院提供說明二所示資料，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "01335002",
@@ -10265,10 +12087,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "游順帆\n吳昱心",
+    "doc_doctor_name": "游順帆
+吳昱心",
     "doc_attachments": [],
     "created_at": "2026/7/16 下午 02:50",
-    "updated_at": "2026/7/16 下午 02:50"
+    "updated_at": "2026/7/16 下午 02:50",
+    "doc_create_no": "1151293838",
+    "doc_sender_org": "臺北市政府警察局大安分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "游順帆
+吳昱心"
   },
   {
     "doc_receive_no": "1150007436",
@@ -10279,7 +12107,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民元115板簡字第230號",
     "doc_subject": "檢附診斷證明書影本一件，請惠予提供楊思郁(身分證統一編號:F229064246號)於民國112年6月21日以後於貴醫院就診之所有病歷資料(含診斷證明書、門診及住院病歷、檢查之文字報告及影像光碟)，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "03162664",
@@ -10289,10 +12117,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "黃錦前\n徐嘉鴻",
+    "doc_doctor_name": "黃錦前
+徐嘉鴻",
     "doc_attachments": [],
     "created_at": "2026/7/16 下午 02:56",
-    "updated_at": "2026/7/16 下午 02:56"
+    "updated_at": "2026/7/16 下午 02:56",
+    "doc_create_no": "1150102095",
+    "doc_sender_org": "臺灣新北地方法院板橋簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": "黃錦前
+徐嘉鴻"
   },
   {
     "doc_receive_no": "1150007500",
@@ -10303,7 +12137,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北衛醫字第1151310978號",
     "doc_subject": "有關民眾陳情家屬跌倒撞擊頭部送至貴院急救處置涉醫療爭議並申請調解一案，詳如說明段，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "03517882",
@@ -10313,10 +12147,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "醫療爭議7/28瑋洋通知病人已撤銷告訴",
-    "doc_doctor_name": "曾孟元\n楊宗燁",
+    "doc_doctor_name": "曾孟元
+楊宗燁",
     "doc_attachments": [],
     "created_at": "2026/7/20 下午 12:14",
-    "updated_at": "2026/7/20 下午 12:14"
+    "updated_at": "2026/7/20 下午 12:14",
+    "doc_create_no": "1151293873",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": "曾孟元
+楊宗燁"
   },
   {
     "doc_receive_no": "1150007267",
@@ -10340,7 +12180,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林廉傑",
     "doc_attachments": [],
     "created_at": "2026/7/20 下午 02:41",
-    "updated_at": "2026/7/20 下午 02:41"
+    "updated_at": "2026/7/20 下午 02:41",
+    "doc_create_no": "1151293744",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021073892-E",
+    "doc_chart_status": "林廉傑"
   },
   {
     "doc_receive_no": "1150007269",
@@ -10351,7 +12195,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信刑寧114金訴55字第1159031564號",
     "doc_subject": "請貴院協助提供姓名為張書豪（性別: 男、身分證字號: F126447303號、生日: 民國74年4月29日）自115年4月1日起迄今於貴院就醫（含門診、住院、急診）之病歷資料與診斷證明書，以利審理程序之進行。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18079926",
@@ -10361,10 +12205,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "翁健瑞\n吳宣毅",
+    "doc_doctor_name": "翁健瑞
+吳宣毅",
     "doc_attachments": [],
     "created_at": "2026/7/21 下午 02:18",
-    "updated_at": "2026/7/21 下午 02:18"
+    "updated_at": "2026/7/21 下午 02:18",
+    "doc_create_no": "1151293751",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "翁健瑞
+吳宣毅"
   },
   {
     "doc_receive_no": "1150007579",
@@ -10388,7 +12238,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠豪",
     "doc_attachments": [],
     "created_at": "2026/7/21 下午 06:50",
-    "updated_at": "2026/7/21 下午 06:50"
+    "updated_at": "2026/7/21 下午 06:50",
+    "doc_create_no": "1151293896",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021107505-E號",
+    "doc_chart_status": "陳冠豪"
   },
   {
     "doc_receive_no": "1150007577",
@@ -10412,7 +12266,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "張舜程",
     "doc_attachments": [],
     "created_at": "2026/7/21 下午 06:52",
-    "updated_at": "2026/7/21 下午 06:52"
+    "updated_at": "2026/7/21 下午 06:52",
+    "doc_create_no": "1151293899",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021104710-E號",
+    "doc_chart_status": "張舜程"
   },
   {
     "doc_receive_no": "1150007658",
@@ -10436,7 +12294,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "馬尚德",
     "doc_attachments": [],
     "created_at": "2026/7/21 下午 06:54",
-    "updated_at": "2026/7/21 下午 06:54"
+    "updated_at": "2026/7/21 下午 06:54",
+    "doc_create_no": "1151293953",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021004577-E號",
+    "doc_chart_status": "馬尚德"
   },
   {
     "doc_receive_no": "1150007538",
@@ -10447,7 +12309,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永實115調解醫他3字第1159096263號",
     "doc_subject": "請貴院儘速惠予提供吳勝雄(55年12月20日生、國民身分證統一字號:A121111876號)113年12月19日至114年5月間於貴院之醫療影像光碟(含X光、超音波)請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "05194863",
@@ -10460,7 +12322,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/7/23 上午 11:20",
-    "updated_at": "2026/7/23 上午 11:20"
+    "updated_at": "2026/7/23 上午 11:20",
+    "doc_create_no": "1150102128",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150007757",
@@ -10484,7 +12350,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "邱彥碩",
     "doc_attachments": [],
     "created_at": "2026/7/23 上午 11:47",
-    "updated_at": "2026/7/23 上午 11:47"
+    "updated_at": "2026/7/23 上午 11:47",
+    "doc_create_no": "1151293991",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "1150920016152",
+    "doc_chart_status": "邱彥碩"
   },
   {
     "doc_receive_no": "1150007696",
@@ -10495,7 +12365,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "電廉一字第11578556550號",
     "doc_subject": "因調查刑事案件需要，請惠予提供如說明一所列資料參考，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18054963",
@@ -10508,7 +12378,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/7/23 下午 01:45",
-    "updated_at": "2026/7/23 下午 01:45"
+    "updated_at": "2026/7/23 下午 01:45",
+    "doc_create_no": "1150102170",
+    "doc_sender_org": "法務部調查局北部地區機動工作站",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150007749",
@@ -10532,7 +12406,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/7/23 下午 02:00",
-    "updated_at": "2026/7/23 下午 02:00"
+    "updated_at": "2026/7/23 下午 02:00",
+    "doc_create_no": "1151293997",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021083184-E號",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150007541",
@@ -10543,7 +12421,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃檢春霜115保全145字第1159095727號",
     "doc_subject": "惠請提供如說明所載之協助，詳如說明所載，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "11772705",
@@ -10556,7 +12434,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "杜永光",
     "doc_attachments": [],
     "created_at": "2026/7/23 下午 04:04",
-    "updated_at": "2026/7/23 下午 04:04"
+    "updated_at": "2026/7/23 下午 04:04",
+    "doc_create_no": "1150102131",
+    "doc_sender_org": "臺灣桃園地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "杜永光"
   },
   {
     "doc_receive_no": "1150007504",
@@ -10567,7 +12449,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "竹檢汾 捷 115 醫偵 10字第11590324320號",
     "doc_subject": "請提供王筱雯(國民身分證統一編號：H223282537)111年6月迄今骨科就診病歷紀錄，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "15444378",
@@ -10580,7 +12462,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃裕閔",
     "doc_attachments": [],
     "created_at": "2026/7/23 下午 04:25",
-    "updated_at": "2026/7/23 下午 04:25"
+    "updated_at": "2026/7/23 下午 04:25",
+    "doc_create_no": "1151293868",
+    "doc_sender_org": "臺灣新竹地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "黃裕閔"
   },
   {
     "doc_receive_no": "1150007497",
@@ -10591,7 +12477,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃檢春 結 115 偵 28928字第11590994910號",
     "doc_subject": "惠請貴院提供說明二資料過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "10626971",
@@ -10601,10 +12487,20 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "廖家德\n柯世祐\n李垣樟\n林鈺凱",
+    "doc_doctor_name": "廖家德
+柯世祐
+李垣樟
+林鈺凱",
     "doc_attachments": [],
     "created_at": "2026/7/23 下午 05:32",
-    "updated_at": "2026/7/23 下午 05:32"
+    "updated_at": "2026/7/23 下午 05:32",
+    "doc_create_no": "1151293876",
+    "doc_sender_org": "臺灣桃園地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "廖家德
+柯世祐
+李垣樟
+林鈺凱"
   },
   {
     "doc_receive_no": "1150007823",
@@ -10615,7 +12511,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永言115醫偵11字第1159098388號",
     "doc_subject": "請貴院惠予函復說明所示之事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "01790951",
@@ -10628,7 +12524,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "章筱伶",
     "doc_attachments": [],
     "created_at": "2026/7/24 下午 01:49",
-    "updated_at": "2026/7/24 下午 01:49"
+    "updated_at": "2026/7/24 下午 01:49",
+    "doc_create_no": "1150007823",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "章筱伶"
   },
   {
     "doc_receive_no": "1150007810",
@@ -10652,7 +12552,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳弘洲",
     "doc_attachments": [],
     "created_at": "2026/7/24 下午 02:14",
-    "updated_at": "2026/7/24 下午 02:14"
+    "updated_at": "2026/7/24 下午 02:14",
+    "doc_create_no": "1151294019",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021021856-E",
+    "doc_chart_status": "陳弘洲"
   },
   {
     "doc_receive_no": "1150007809",
@@ -10676,7 +12580,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "辜筱倫",
     "doc_attachments": [],
     "created_at": "2026/7/24 下午 02:38",
-    "updated_at": "2026/7/24 下午 02:38"
+    "updated_at": "2026/7/24 下午 02:38",
+    "doc_create_no": "1151294013",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021097120-E",
+    "doc_chart_status": "辜筱倫"
   },
   {
     "doc_receive_no": "1150007759",
@@ -10687,7 +12595,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永成115偵23243字第1159098945號",
     "doc_subject": "請惠予提供如說明指示之事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "04127666",
@@ -10700,7 +12608,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳致宇",
     "doc_attachments": [],
     "created_at": "2026/7/25 下午 03:57",
-    "updated_at": "2026/7/25 下午 03:57"
+    "updated_at": "2026/7/25 下午 03:57",
+    "doc_create_no": "1150102186",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳致宇"
   },
   {
     "doc_receive_no": "1150007965",
@@ -10711,7 +12623,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北衛醫字第1151461718號",
     "doc_subject": "有關民眾陳情貴院有收費疑義一案，請於文到次日起7日內依限函復本局，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "03498587",
@@ -10721,10 +12633,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "醫療爭議",
-    "doc_doctor_name": "張馨元\n陳茞君",
+    "doc_doctor_name": "張馨元
+陳茞君",
     "doc_attachments": [],
     "created_at": "2026/7/28 下午 02:12",
-    "updated_at": "2026/7/28 下午 02:12"
+    "updated_at": "2026/7/28 下午 02:12",
+    "doc_create_no": "1151294095",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": "張馨元
+陳茞君"
   },
   {
     "doc_receive_no": "1150007802",
@@ -10748,7 +12666,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉燦宏",
     "doc_attachments": [],
     "created_at": "2026/7/28 下午 05:38",
-    "updated_at": "2026/7/28 下午 05:38"
+    "updated_at": "2026/7/28 下午 05:38",
+    "doc_create_no": "1151294028",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031012975-E",
+    "doc_chart_status": "劉燦宏"
   },
   {
     "doc_receive_no": "1150007933",
@@ -10772,7 +12694,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "邵孔昱",
     "doc_attachments": [],
     "created_at": "2026/7/29 下午 03:44",
-    "updated_at": "2026/7/29 下午 03:44"
+    "updated_at": "2026/7/29 下午 03:44",
+    "doc_create_no": "1150102221",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031013445-C",
+    "doc_chart_status": "邵孔昱"
   },
   {
     "doc_receive_no": "1150007923",
@@ -10783,7 +12709,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北板衛字第1156445909號",
     "doc_subject": "為防疫業務需求，惠請提供本區列管結核病於貴院追蹤之胸部X光檢查片及相關檢驗報告，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "07917936",
@@ -10793,10 +12719,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "謝尚勳\n王鎮珄\n蔡同堯",
+    "doc_doctor_name": "謝尚勳
+王鎮珄
+蔡同堯",
     "doc_attachments": [],
     "created_at": "2026/7/29 下午 04:22",
-    "updated_at": "2026/7/29 下午 04:22"
+    "updated_at": "2026/7/29 下午 04:22",
+    "doc_create_no": "1150102212",
+    "doc_sender_org": "新北市板橋區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "謝尚勳
+王鎮珄
+蔡同堯"
   },
   {
     "doc_receive_no": "1150007930",
@@ -10807,7 +12741,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北執114年房地稅執特專字第00021700號",
     "doc_subject": "請查復義務人董秀芬如說明三所示事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "09925016",
@@ -10820,7 +12754,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠豪(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/29 下午 04:24",
-    "updated_at": "2026/7/29 下午 04:24"
+    "updated_at": "2026/7/29 下午 04:24",
+    "doc_create_no": "1150102219",
+    "doc_sender_org": "法務部行政執行署新北分署",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳冠豪(回答問題)"
   },
   {
     "doc_receive_no": "1150007929",
@@ -10831,7 +12769,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃檢春光115調院偵1362字第1159102590號",
     "doc_subject": "請查覆說明二所示事項惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "04911814",
@@ -10844,7 +12782,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "胡朝榮(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/29 下午 05:15",
-    "updated_at": "2026/7/29 下午 05:15"
+    "updated_at": "2026/7/29 下午 05:15",
+    "doc_create_no": "1150102218",
+    "doc_sender_org": "臺灣桃園地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "胡朝榮(回答問題)"
   },
   {
     "doc_receive_no": "1150008026",
@@ -10855,7 +12797,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永仁115他2711字第1159102834號",
     "doc_subject": "請協助提供貴院羅偉倫醫師為病患羅光華(58年9月19日生、身分證統一編號：F121906165)診治之病歷資料，並檢附羅瑋倫醫師為羅光華做加馬刀治療等醫療處置所做健保申報之詳細資料，並說明是否符合健保申報規範，惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17081760",
@@ -10868,7 +12810,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "羅偉倫(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/30 下午 02:56",
-    "updated_at": "2026/7/30 下午 02:56"
+    "updated_at": "2026/7/30 下午 02:56",
+    "doc_create_no": "1150730醫他",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "羅偉倫(回答問題)"
   },
   {
     "doc_receive_no": "1150007993",
@@ -10879,7 +12825,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北衛疾字第1151470657號",
     "doc_subject": "為辦理預防接種受害救濟審議，請於文到2週內提供個案鍾○榮於112年3月16日至115年5月18日完整病歷資料影本1份，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "01592467",
@@ -10889,10 +12835,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "藥害救濟",
-    "doc_doctor_name": "廖立民\n吳俊穎",
+    "doc_doctor_name": "廖立民
+吳俊穎",
     "doc_attachments": [],
     "created_at": "2026/7/30 下午 03:40",
-    "updated_at": "2026/7/30 下午 03:40"
+    "updated_at": "2026/7/30 下午 03:40",
+    "doc_create_no": "1151294128",
+    "doc_sender_org": "新北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": "廖立民
+吳俊穎"
   },
   {
     "doc_receive_no": "1150008022",
@@ -10903,7 +12855,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永法(牧)115偵24326字第11591061420號",
     "doc_subject": "請提供如說明一之事項，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "01373992",
@@ -10913,10 +12865,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "許庭碩(回答問題)\n鄔逸群(回答問題)",
+    "doc_doctor_name": "許庭碩(回答問題)
+鄔逸群(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/30 下午 04:29",
-    "updated_at": "2026/7/30 下午 04:29"
+    "updated_at": "2026/7/30 下午 04:29",
+    "doc_create_no": "1151294110",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "許庭碩(回答問題)
+鄔逸群(回答問題)"
   },
   {
     "doc_receive_no": "1150007891",
@@ -10940,7 +12898,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃錦前(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/7/30 下午 05:17",
-    "updated_at": "2026/7/30 下午 05:17"
+    "updated_at": "2026/7/30 下午 05:17",
+    "doc_create_no": "1151294054",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021056266-E",
+    "doc_chart_status": "黃錦前(回答問題)"
   },
   {
     "doc_receive_no": "1150008059",
@@ -10964,7 +12926,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "翁佩韋",
     "doc_attachments": [],
     "created_at": "2026/7/31 下午 06:02",
-    "updated_at": "2026/7/31 下午 06:02"
+    "updated_at": "2026/7/31 下午 06:02",
+    "doc_create_no": "1151294154",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021109417-E",
+    "doc_chart_status": "翁佩韋"
   },
   {
     "doc_receive_no": "1150007934",
@@ -10975,7 +12941,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職失字第11560199750號",
     "doc_subject": "本局為正確、迅速審核被保險人陳麗羽君(身分證統一編號:Q222972261，出生日期:69年3月16日)勞工保險給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。",
     "doc_lbi_no": "115031017700",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "03047295",
@@ -10988,7 +12954,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林廉傑",
     "doc_attachments": [],
     "created_at": "2026/8/3 上午 08:48",
-    "updated_at": "2026/8/3 上午 08:48"
+    "updated_at": "2026/8/3 上午 08:48",
+    "doc_create_no": "1150102222",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031017700",
+    "doc_chart_status": "林廉傑"
   },
   {
     "doc_receive_no": "1150008070",
@@ -10999,7 +12969,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "士檢以結青115偵12078字第11590464780號",
     "doc_subject": "惠請提供病患于自祥(身分證字號：F124554903)於115年5月27日至死亡期間內之全部病歷資料(含護理紀錄等)，請查照辦理。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18180402",
@@ -11009,10 +12979,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "邱奕璁\n邱瑋婷",
+    "doc_doctor_name": "邱奕璁
+邱瑋婷",
     "doc_attachments": [],
     "created_at": "2026/8/3 上午 11:27",
-    "updated_at": "2026/8/3 上午 11:27"
+    "updated_at": "2026/8/3 上午 11:27",
+    "doc_create_no": "1151294140",
+    "doc_sender_org": "臺灣士林地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "邱奕璁
+邱瑋婷"
   },
   {
     "doc_receive_no": "1150008153",
@@ -11023,7 +12999,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永實115調偵1279字第1159105402號",
     "doc_subject": "請貴院惠予提供廉明振(國民身分證統一編號:L120651969號)自115年3月12日迄今至貴院就醫之護理紀錄，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "08316738",
@@ -11033,10 +13009,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "書記官回覆因之前公文已提供至115/5/4病歷，此件公文因無護理記錄，僅需提供7/29門診病歷",
-    "doc_doctor_name": "王智毅\n吳忠擇",
+    "doc_doctor_name": "王智毅
+吳忠擇",
     "doc_attachments": [],
     "created_at": "2026/8/5 上午 09:11",
-    "updated_at": "2026/8/5 上午 09:11"
+    "updated_at": "2026/8/5 上午 09:11",
+    "doc_create_no": "1150102297",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "王智毅
+吳忠擇"
   },
   {
     "doc_receive_no": "1150008276",
@@ -11047,7 +13029,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永日115調院偵794字第1159105633號",
     "doc_subject": "請貴院協助說明病患陳柏廷(詳附件)之右手指肌腱傷勢是否已達嚴重減損右手機能之程度，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "02649304",
@@ -11060,7 +13042,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/8/5 上午 10:40",
-    "updated_at": "2026/8/5 上午 10:40"
+    "updated_at": "2026/8/5 上午 10:40",
+    "doc_create_no": "1150102330",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150008282",
@@ -11071,7 +13057,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北院信民樹114重勞訴12字第1150016979號",
     "doc_subject": "請惠予提供病患張博智(身分證統一編號:G121774413號)，因如附件所示傷勢至貴院就診之相關病歷資料(包含護理資料)，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "06119669",
@@ -11084,7 +13070,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/8/5 上午 10:41",
-    "updated_at": "2026/8/5 上午 10:41"
+    "updated_at": "2026/8/5 上午 10:41",
+    "doc_create_no": "1150102336",
+    "doc_sender_org": "臺灣臺北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150008006",
@@ -11108,7 +13098,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳龍",
     "doc_attachments": [],
     "created_at": "2026/8/5 上午 11:49",
-    "updated_at": "2026/8/5 上午 11:49"
+    "updated_at": "2026/8/5 上午 11:49",
+    "doc_create_no": "1151294107",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031018941-C",
+    "doc_chart_status": "陳龍"
   },
   {
     "doc_receive_no": "1150008041",
@@ -11119,7 +13113,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永音115偵33451字第1159101618號",
     "doc_subject": "惠請提供告訴人(真實姓名詳證物袋)115年1月迄今於貴院就診之所有病歷摘要、診斷證明(無須完整病歷，需病患主訴紀錄、用藥或診斷證明等)，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "15003784",
@@ -11129,10 +13123,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "江舒欣\n許瓅文\n林芊芊",
+    "doc_doctor_name": "江舒欣
+許瓅文
+林芊芊",
     "doc_attachments": [],
     "created_at": "2026/8/5 下午 04:11",
-    "updated_at": "2026/8/5 下午 04:11"
+    "updated_at": "2026/8/5 下午 04:11",
+    "doc_create_no": "1150102259",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "江舒欣
+許瓅文
+林芊芊"
   },
   {
     "doc_receive_no": "1150008099",
@@ -11143,7 +13145,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "藥濟調字第1154000534號",
     "doc_subject": "請　貴院提供民眾謝玉真之相關病歷資料，敬請查照見復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "09984213",
@@ -11156,7 +13158,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林聖閎",
     "doc_attachments": [],
     "created_at": "2026/8/5 下午 05:13",
-    "updated_at": "2026/8/5 下午 05:13"
+    "updated_at": "2026/8/5 下午 05:13",
+    "doc_create_no": "1151294156",
+    "doc_sender_org": "財團法人藥害救濟基金會",
+    "doc_labor_no": "",
+    "doc_chart_status": "林聖閎"
   },
   {
     "doc_receive_no": "1150008232",
@@ -11167,7 +13173,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北執辰114年道罰執專字第00037618號",
     "doc_subject": "請查復黃宗林(身分證統一編號:G120954211)就醫時所留存之通訊地址及聯絡電話，並檢送相關資料供參，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17929716",
@@ -11180,7 +13186,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/8/5 下午 05:41",
-    "updated_at": "2026/8/5 下午 05:41"
+    "updated_at": "2026/8/5 下午 05:41",
+    "doc_create_no": "1150102306",
+    "doc_sender_org": "法務部行政執行署新北分署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150007503",
@@ -11191,7 +13201,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃院雲民齊114壢簡2141字第1159021091號",
     "doc_subject": "請檢送病患許家明（男、民國87年9月13日生、身分證統一編號: H125328392號）於貴院之病歷及醫療影像資料(含115年7月7日接受檢查之相關資料)2份過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18116636",
@@ -11201,10 +13211,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "胡朝榮\n王俊凱",
+    "doc_doctor_name": "胡朝榮
+王俊凱",
     "doc_attachments": [],
     "created_at": "2026/8/6 上午 10:37",
-    "updated_at": "2026/8/6 上午 10:37"
+    "updated_at": "2026/8/6 上午 10:37",
+    "doc_create_no": "1151293866",
+    "doc_sender_org": "臺灣桃園地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "胡朝榮
+王俊凱"
   },
   {
     "doc_receive_no": "1150008168",
@@ -11225,10 +13241,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "陳天恩\n陳沛華(回答問題)",
+    "doc_doctor_name": "陳天恩
+陳沛華(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/6 下午 12:15",
-    "updated_at": "2026/8/6 下午 12:15"
+    "updated_at": "2026/8/6 下午 12:15",
+    "doc_create_no": "1151294190",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021108872-E",
+    "doc_chart_status": "陳天恩
+陳沛華(回答問題)"
   },
   {
     "doc_receive_no": "1150008169",
@@ -11252,7 +13274,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉郁欣(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/6 下午 01:22",
-    "updated_at": "2026/8/6 下午 01:22"
+    "updated_at": "2026/8/6 下午 01:22",
+    "doc_create_no": "1151294195",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021093732-E",
+    "doc_chart_status": "劉郁欣(回答問題)"
   },
   {
     "doc_receive_no": "1150008074",
@@ -11273,10 +13299,24 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "陳致宇(回答問題)\n陳國智\n紀君儒\n黃婷韵\n許彤年\n馬尚德",
+    "doc_doctor_name": "陳致宇(回答問題)
+陳國智
+紀君儒
+黃婷韵
+許彤年
+馬尚德",
     "doc_attachments": [],
     "created_at": "2026/8/6 下午 03:18",
-    "updated_at": "2026/8/6 下午 03:18"
+    "updated_at": "2026/8/6 下午 03:18",
+    "doc_create_no": "1151294142",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021111916-E",
+    "doc_chart_status": "陳致宇(回答問題)
+陳國智
+紀君儒
+黃婷韵
+許彤年
+馬尚德"
   },
   {
     "doc_receive_no": "1150008102",
@@ -11287,7 +13327,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職醫字第11560208510號",
     "doc_subject": "本局為審核被保險人賴昱蓉君申請核退職災自墊醫療費用案需要，敬請貴院依說明三所列各點儘速查明惠復，並檢附其因「右側骨盆骨折、會陰蜂窩組織炎」至貴院就診之相關病歷資料(含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告)影本，有勞協助，敬致謝忱，請查照。",
     "doc_lbi_no": "115-092-008032",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "14360015",
@@ -11297,10 +13337,22 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "謝岳穎(回答問題)\n邱奕璁\n劉宇鈞\n吳俊穎\n陳嘉維",
+    "doc_doctor_name": "謝岳穎(回答問題)
+邱奕璁
+劉宇鈞
+吳俊穎
+陳嘉維",
     "doc_attachments": [],
     "created_at": "2026/8/6 下午 03:23",
-    "updated_at": "2026/8/6 下午 03:23"
+    "updated_at": "2026/8/6 下午 03:23",
+    "doc_create_no": "1151294186",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115-092-008032",
+    "doc_chart_status": "謝岳穎(回答問題)
+邱奕璁
+劉宇鈞
+吳俊穎
+陳嘉維"
   },
   {
     "doc_receive_no": "1150008180",
@@ -11321,10 +13373,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "黃立楷(回答問題)\n胡朝榮",
+    "doc_doctor_name": "黃立楷(回答問題)
+胡朝榮",
     "doc_attachments": [],
     "created_at": "2026/8/6 下午 03:27",
-    "updated_at": "2026/8/6 下午 03:27"
+    "updated_at": "2026/8/6 下午 03:27",
+    "doc_create_no": "1151294220",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115031020667-Ｅ",
+    "doc_chart_status": "黃立楷(回答問題)
+胡朝榮"
   },
   {
     "doc_receive_no": "1150008387",
@@ -11335,7 +13393,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市警中正一分刑字第1153036578號",
     "doc_subject": "本分局為調查民眾死亡案件，惠請貴院協查提供如說明二相關資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17961475",
@@ -11348,7 +13406,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/8/7 上午 09:02",
-    "updated_at": "2026/8/7 上午 09:02"
+    "updated_at": "2026/8/7 上午 09:02",
+    "doc_create_no": "1151294296",
+    "doc_sender_org": "臺北市政府警察局中正第一分局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150008380",
@@ -11359,7 +13421,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 溫果 114 偵 63392字第11591075590號",
     "doc_subject": "惠請提供病患林○鈞（國民身分證統一編號：A231322150號）於民國114年1月17日因車禍事故至貴院急診之相關病歷影本過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00068509",
@@ -11372,7 +13434,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/8/7 上午 09:04",
-    "updated_at": "2026/8/7 上午 09:04"
+    "updated_at": "2026/8/7 上午 09:04",
+    "doc_create_no": "1151294307",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150008413",
@@ -11383,7 +13449,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北永衛字第1156383311號",
     "doc_subject": "為結核病防疫業務需求，惠請貴院提供本市結核病接觸者黃○誠於貴院115年檢查之胸部X光、電腦斷層、磁振造影等檢驗報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "11878511",
@@ -11396,7 +13462,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/8/7 上午 09:06",
-    "updated_at": "2026/8/7 上午 09:06"
+    "updated_at": "2026/8/7 上午 09:06",
+    "doc_create_no": "1151294331",
+    "doc_sender_org": "新北市永和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150008078",
@@ -11420,7 +13490,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林乾閔(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/7 上午 10:41",
-    "updated_at": "2026/8/7 上午 10:41"
+    "updated_at": "2026/8/7 上午 10:41",
+    "doc_create_no": "1151294164",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021099254-E",
+    "doc_chart_status": "林乾閔(回答問題)"
   },
   {
     "doc_receive_no": "1150008310",
@@ -11431,7 +13505,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職醫字第11560210590號",
     "doc_subject": "本局為審核被保險人黃若喬君申請核退職災自墊醫療費用案需要，敬請貴院依說明三所列各點儘速查明惠復，並檢附其因「左手肘蜂窩組織炎、左側尺骨鷹嘴突移位閉鎖性骨折經開放復位內固定手術」至貴院就診之相關病歷資料(含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告)影本，有勞協助，敬致謝忱，請查照。",
     "doc_lbi_no": "115-092-007632",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "09970779",
@@ -11441,10 +13515,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "陳致宇(回答問題)\n陳天恩\n黃婷韵",
+    "doc_doctor_name": "陳致宇(回答問題)
+陳天恩
+黃婷韵",
     "doc_attachments": [],
     "created_at": "2026/8/7 下午 12:03",
-    "updated_at": "2026/8/7 下午 12:03"
+    "updated_at": "2026/8/7 下午 12:03",
+    "doc_create_no": "1151294260",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115-092-007632",
+    "doc_chart_status": "陳致宇(回答問題)
+陳天恩
+黃婷韵"
   },
   {
     "doc_receive_no": "1150008340",
@@ -11455,7 +13537,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 意 115 他 5590字第11591100230號",
     "doc_subject": "請惠予提供附件所示收據病患之就醫病歷供參，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18071681",
@@ -11468,7 +13550,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "莫心怡",
     "doc_attachments": [],
     "created_at": "2026/8/7 下午 01:39",
-    "updated_at": "2026/8/7 下午 01:39"
+    "updated_at": "2026/8/7 下午 01:39",
+    "doc_create_no": "1151294281",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "莫心怡"
   },
   {
     "doc_receive_no": "1150007826",
@@ -11479,7 +13565,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "衛部統字第1152560114號",
     "doc_subject": "檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802",
@@ -11489,10 +13575,36 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "李垣樟\n林鈺凱\n邱寬饒\n許瓅文\n陳資濤\n游順帆\n葉雲凱\n蔡宏達\n李祐萱(蘇鈺凱代)\n蔡易杰\n謝燿宇\n翁健瑞",
+    "doc_doctor_name": "李垣樟
+林鈺凱
+邱寬饒
+許瓅文
+陳資濤
+游順帆
+葉雲凱
+蔡宏達
+李祐萱(蘇鈺凱代)
+蔡易杰
+謝燿宇
+翁健瑞",
     "doc_attachments": [],
     "created_at": "2026/8/10 上午 11:13",
-    "updated_at": "2026/8/10 上午 11:13"
+    "updated_at": "2026/8/10 上午 11:13",
+    "doc_create_no": "1150102203",
+    "doc_sender_org": "衛生福利部",
+    "doc_labor_no": "",
+    "doc_chart_status": "李垣樟
+林鈺凱
+邱寬饒
+許瓅文
+陳資濤
+游順帆
+葉雲凱
+蔡宏達
+李祐萱(蘇鈺凱代)
+蔡易杰
+謝燿宇
+翁健瑞"
   },
   {
     "doc_receive_no": "1150008406",
@@ -11503,7 +13615,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北中衛字第1156375025號",
     "doc_subject": "本所為防疫業務需要，惠請貴院提供個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "07025846",
@@ -11516,7 +13628,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李俊年(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/10 上午 11:58",
-    "updated_at": "2026/8/10 上午 11:58"
+    "updated_at": "2026/8/10 上午 11:58",
+    "doc_create_no": "1151294344",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "李俊年(回答問題)"
   },
   {
     "doc_receive_no": "1150008424",
@@ -11527,7 +13643,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永溫敏115補審161字第14756號",
     "doc_subject": "惠請提供病患王昱昕(國民身分證統一編號:A128360671號)病情概況，請惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17923923",
@@ -11540,7 +13656,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳沛華(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/10 下午 06:01",
-    "updated_at": "2026/8/10 下午 06:01"
+    "updated_at": "2026/8/10 下午 06:01",
+    "doc_create_no": "1150102362",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳沛華(回答問題)"
   },
   {
     "doc_receive_no": "1150008492",
@@ -11564,7 +13684,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/8/11 下午 12:05",
-    "updated_at": "2026/8/11 下午 12:05"
+    "updated_at": "2026/8/11 下午 12:05",
+    "doc_create_no": "1151294393",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021079976-E",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150008499",
@@ -11575,7 +13699,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市衛疾字第1153127368號",
     "doc_subject": "為辦理預防接種受害救濟審議，請於文到14日內提供個案鄭O蓉自109年7月15日至115年6月9日之完整病歷資料影本1份，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "13121963",
@@ -11588,7 +13712,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/8/11 下午 12:06",
-    "updated_at": "2026/8/11 下午 12:06"
+    "updated_at": "2026/8/11 下午 12:06",
+    "doc_create_no": "1151294394",
+    "doc_sender_org": "臺北市政府衛生局",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150008474",
@@ -11599,7 +13727,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃檢春光115偵17891字第1159109626號",
     "doc_subject": "請查覆說明二、三所示事項惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17721884",
@@ -11612,7 +13740,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃立楷(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/11 下午 03:02",
-    "updated_at": "2026/8/11 下午 03:02"
+    "updated_at": "2026/8/11 下午 03:02",
+    "doc_create_no": "1150102373",
+    "doc_sender_org": "臺灣桃園地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "黃立楷(回答問題)"
   },
   {
     "doc_receive_no": "1150008260",
@@ -11623,7 +13755,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "婦會生字第115206號",
     "doc_subject": "本會為辦理生產事故救濟申請案作業，請貴機構提供相關病歷一份，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "14436109.18251737",
@@ -11633,10 +13765,22 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "許力云\n陳嘉維\n黃慧瑜\n王妍方\n郭雲鼎",
+    "doc_doctor_name": "許力云
+陳嘉維
+黃慧瑜
+王妍方
+郭雲鼎",
     "doc_attachments": [],
     "created_at": "2026/8/11 下午 04:39",
-    "updated_at": "2026/8/11 下午 04:39"
+    "updated_at": "2026/8/11 下午 04:39",
+    "doc_create_no": "1150102323",
+    "doc_sender_org": "財團法人台灣婦女健康暨泌尿基金會",
+    "doc_labor_no": "",
+    "doc_chart_status": "許力云
+陳嘉維
+黃慧瑜
+王妍方
+郭雲鼎"
   },
   {
     "doc_receive_no": "1150008476",
@@ -11647,7 +13791,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永體115偵22159字第1159106984號",
     "doc_subject": "請惠予提供病患張庭瑜(身分證字號F224825212)有無精神疾病之相關就醫紀錄或診斷證明，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "04589590",
@@ -11660,7 +13804,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳致中",
     "doc_attachments": [],
     "created_at": "2026/8/12 上午 08:43",
-    "updated_at": "2026/8/12 上午 08:43"
+    "updated_at": "2026/8/12 上午 08:43",
+    "doc_create_no": "1150102375",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳致中"
   },
   {
     "doc_receive_no": "1150008355",
@@ -11681,10 +13829,20 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "馮博皓(回答問題)\n羅青山\n陳資濤\n謝尚勳",
+    "doc_doctor_name": "馮博皓(回答問題)
+羅青山
+陳資濤
+謝尚勳",
     "doc_attachments": [],
     "created_at": "2026/8/12 上午 09:22",
-    "updated_at": "2026/8/12 上午 09:22"
+    "updated_at": "2026/8/12 上午 09:22",
+    "doc_create_no": "1150102352",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115農障2512號",
+    "doc_chart_status": "馮博皓(回答問題)
+羅青山
+陳資濤
+謝尚勳"
   },
   {
     "doc_receive_no": "1150008420",
@@ -11695,7 +13853,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職醫字第11560219541號",
     "doc_subject": "本局為正確、迅速審核被保險人韓雅婷君核退職災自墊醫療費用需要，敬請貴院文到15日內依說明三惠予見復，並檢附其因「右側膝部鈍挫傷」至貴院急診之相關病歷影本（含護理紀錄、入院病摘、出院病摘、119救護紀錄、轉診單、Xray、CT、MRI、NCV等相關理學檢查報告等），有勞協助，敬致謝忱，請查照。",
     "doc_lbi_no": "115-0-82-022372",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "01148262",
@@ -11708,7 +13866,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "紀則宇(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/12 上午 09:33",
-    "updated_at": "2026/8/12 上午 09:33"
+    "updated_at": "2026/8/12 上午 09:33",
+    "doc_create_no": "1151294336",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115-0-82-022372",
+    "doc_chart_status": "紀則宇(回答問題)"
   },
   {
     "doc_receive_no": "1150008530",
@@ -11719,7 +13881,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北中衛字第1156375125號",
     "doc_subject": "本所為防疫業務需要，惠請貴院提供肺結核個案於貴院病歷、CXR、病理報告等相關報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "00118437",
@@ -11729,10 +13891,20 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "請存查，8/17以限掛寄出",
-    "doc_doctor_name": "紀君儒\n鄭景泉\n曾健華\n李俊年",
+    "doc_doctor_name": "紀君儒
+鄭景泉
+曾健華
+李俊年",
     "doc_attachments": [],
     "created_at": "2026/8/12 上午 10:42",
-    "updated_at": "2026/8/12 上午 10:42"
+    "updated_at": "2026/8/12 上午 10:42",
+    "doc_create_no": "1151294408",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": "紀君儒
+鄭景泉
+曾健華
+李俊年"
   },
   {
     "doc_receive_no": "1150008233",
@@ -11743,7 +13915,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職醫字第11560210400號",
     "doc_subject": "本局為正確、迅速審核被保險人曾霈祥君申請核退職災自墊自付差額特材費用案需要，敬請貴院依說明四所列事項於文到15日內惠予見復，有勞協助，敬致謝忱，請查照。",
     "doc_lbi_no": "115-0-93-000231",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "09853106",
@@ -11753,10 +13925,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "許彤年\n陳沛華",
+    "doc_doctor_name": "許彤年
+陳沛華",
     "doc_attachments": [],
     "created_at": "2026/8/12 上午 11:45",
-    "updated_at": "2026/8/12 上午 11:45"
+    "updated_at": "2026/8/12 上午 11:45",
+    "doc_create_no": "1150102307",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115-0-93-000231",
+    "doc_chart_status": "許彤年
+陳沛華"
   },
   {
     "doc_receive_no": "1150008631",
@@ -11767,7 +13945,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北板衛字第1156446882號",
     "doc_subject": "為防疫業務需求，惠請提供本區列管結核病個案接觸者於 貴院追蹤之胸部X光檢查報告，詳如說明段，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "00101192、00062716",
@@ -11780,7 +13958,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/8/13 上午 10:33",
-    "updated_at": "2026/8/13 上午 10:33"
+    "updated_at": "2026/8/13 上午 10:33",
+    "doc_create_no": "1151294474",
+    "doc_sender_org": "新北市板橋區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150008634",
@@ -11791,7 +13973,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北家防護字第1152398951號",
     "doc_subject": "為協助本中心兒少保護個案游○鵬後續處遇事宜，請貴院惠予提供就醫病歷資料1份，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "12160448",
@@ -11801,10 +13983,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "楊雅婷\n郭雲鼎\n陳瓊芬",
+    "doc_doctor_name": "楊雅婷
+郭雲鼎
+陳瓊芬",
     "doc_attachments": [],
     "created_at": "2026/8/13 上午 11:56",
-    "updated_at": "2026/8/13 上午 11:56"
+    "updated_at": "2026/8/13 上午 11:56",
+    "doc_create_no": "1151294462",
+    "doc_sender_org": "新北市政府家庭暴力暨性侵害防治中心",
+    "doc_labor_no": "",
+    "doc_chart_status": "楊雅婷
+郭雲鼎
+陳瓊芬"
   },
   {
     "doc_receive_no": "1150008507",
@@ -11828,7 +14018,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "李奐儒(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/13 下午 02:07",
-    "updated_at": "2026/8/13 下午 02:07"
+    "updated_at": "2026/8/13 下午 02:07",
+    "doc_create_no": "1151294386",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021082914-E",
+    "doc_chart_status": "李奐儒(回答問題)"
   },
   {
     "doc_receive_no": "1150008465",
@@ -11852,7 +14046,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉郁欣(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/13 下午 02:40",
-    "updated_at": "2026/8/13 下午 02:40"
+    "updated_at": "2026/8/13 下午 02:40",
+    "doc_create_no": "1151294369",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021105064-E",
+    "doc_chart_status": "劉郁欣(回答問題)"
   },
   {
     "doc_receive_no": "1150008605",
@@ -11873,10 +14071,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "王智毅\n蘇千田",
+    "doc_doctor_name": "王智毅
+蘇千田",
     "doc_attachments": [],
     "created_at": "2026/8/14 上午 10:40",
-    "updated_at": "2026/8/14 上午 10:40"
+    "updated_at": "2026/8/14 上午 10:40",
+    "doc_create_no": "1151294435",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021042926-E",
+    "doc_chart_status": "王智毅
+蘇千田"
   },
   {
     "doc_receive_no": "1150008451",
@@ -11887,7 +14091,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職醫字第11560221040號",
     "doc_subject": "本局為正確、迅速審核被保險人葉秀春君保險給付及自付差額特材費用需要，敬請貴院依說明三、四所列各點於文到15日內儘速查明惠復，並檢附其因「右肩脫臼合併唇盂軟骨撕裂傷及肱骨損傷」至貴院就診之相關病歷資料影本（含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告），有勞協助，敬致謝忱，請查照。",
     "doc_lbi_no": "115092008860",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "15473505",
@@ -11900,7 +14104,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/14 上午 11:51",
-    "updated_at": "2026/8/14 上午 11:51"
+    "updated_at": "2026/8/14 上午 11:51",
+    "doc_create_no": "1151294358",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115092008860",
+    "doc_chart_status": "王智毅(回答問題)"
   },
   {
     "doc_receive_no": "1150008649",
@@ -11921,10 +14129,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "江長蓉\n陳韋呈(回答問題)\n李垣樟(回答問題)",
+    "doc_doctor_name": "江長蓉
+陳韋呈(回答問題)
+李垣樟(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/14 下午 04:39",
-    "updated_at": "2026/8/14 下午 04:39"
+    "updated_at": "2026/8/14 下午 04:39",
+    "doc_create_no": "1151294485",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021100650-E",
+    "doc_chart_status": "江長蓉
+陳韋呈(回答問題)
+李垣樟(回答問題)"
   },
   {
     "doc_receive_no": "1150008697",
@@ -11935,7 +14151,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民佳113年度訴字第1016號",
     "doc_subject": "請台端惠予提供藍月(女、民國49年6月11日生、身分證統一編號:A221418050號)自112年4月8日至同年11月20日之病歷資料(包含門診、急診記錄、護理記錄、手術紀錄及檢驗報告等)",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "00638681",
@@ -11945,10 +14161,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "待回覆",
     "doc_remark": "",
-    "doc_doctor_name": "陳國智\n王智毅",
+    "doc_doctor_name": "陳國智
+王智毅",
     "doc_attachments": [],
     "created_at": "2026/8/17 下午 02:34",
-    "updated_at": "2026/8/17 下午 02:34"
+    "updated_at": "2026/8/17 下午 02:34",
+    "doc_create_no": "1150102415",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳國智
+王智毅"
   },
   {
     "doc_receive_no": "1150009071",
@@ -11969,10 +14191,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "陳嘉泓(回答問題)\n徐嘉鴻\n鄔定宇",
+    "doc_doctor_name": "陳嘉泓(回答問題)
+徐嘉鴻
+鄔定宇",
     "doc_attachments": [],
     "created_at": "2026/8/31 下午 02:24",
-    "updated_at": "2026/8/31 下午 02:24"
+    "updated_at": "2026/8/31 下午 02:24",
+    "doc_create_no": "1151294695",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021009222-E",
+    "doc_chart_status": "陳嘉泓(回答問題)
+徐嘉鴻
+鄔定宇"
   },
   {
     "doc_receive_no": "1150009103",
@@ -11993,10 +14223,18 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "已完成",
     "doc_remark": "",
-    "doc_doctor_name": "張統優(回答問題)\n翁佩韋(回答問題)\n陳國智",
+    "doc_doctor_name": "張統優(回答問題)
+翁佩韋(回答問題)
+陳國智",
     "doc_attachments": [],
     "created_at": "2026/8/31 下午 03:13",
-    "updated_at": "2026/8/31 下午 03:13"
+    "updated_at": "2026/8/31 下午 03:13",
+    "doc_create_no": "1151294712",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021099058-E",
+    "doc_chart_status": "張統優(回答問題)
+翁佩韋(回答問題)
+陳國智"
   },
   {
     "doc_receive_no": "1150009104",
@@ -12020,7 +14258,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/8/31 下午 04:00",
-    "updated_at": "2026/8/31 下午 04:00"
+    "updated_at": "2026/8/31 下午 04:00",
+    "doc_create_no": "1151294713",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021099248-E",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150009189",
@@ -12031,7 +14273,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市警松分刑字第1153059956號",
     "doc_subject": "本分局為偵辦刑事相驗案件，亟需貴院協助提供說明三資料，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "18309001",
@@ -12041,10 +14283,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "待回覆",
     "doc_remark": "",
-    "doc_doctor_name": "邱瑋婷\n王妍方",
+    "doc_doctor_name": "邱瑋婷
+王妍方",
     "doc_attachments": [],
     "created_at": "2026/8/31 下午 04:26",
-    "updated_at": "2026/8/31 下午 04:26"
+    "updated_at": "2026/8/31 下午 04:26",
+    "doc_create_no": "1151294749",
+    "doc_sender_org": "臺北市政府警察局松山分局",
+    "doc_labor_no": "",
+    "doc_chart_status": "邱瑋婷
+王妍方"
   },
   {
     "doc_receive_no": "1150009158",
@@ -12055,7 +14303,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永歲115調院偵612字第1159117210號",
     "doc_subject": "請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "06794578",
@@ -12065,10 +14313,24 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "待回覆",
     "doc_remark": "",
-    "doc_doctor_name": "謝沛興\n陳國智\n李苡萍\n陳聰明\n胡朝榮\n蘇勤方",
+    "doc_doctor_name": "謝沛興
+陳國智
+李苡萍
+陳聰明
+胡朝榮
+蘇勤方",
     "doc_attachments": [],
     "created_at": "2026/8/31 下午 04:49",
-    "updated_at": "2026/8/31 下午 04:49"
+    "updated_at": "2026/8/31 下午 04:49",
+    "doc_create_no": "1150102560",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "謝沛興
+陳國智
+李苡萍
+陳聰明
+胡朝榮
+蘇勤方"
   },
   {
     "doc_receive_no": "1150009184",
@@ -12089,10 +14351,16 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "待回覆",
     "doc_remark": "",
-    "doc_doctor_name": "邱奕璁\n陳志華(回答問題)",
+    "doc_doctor_name": "邱奕璁
+陳志華(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/31 下午 06:08",
-    "updated_at": "2026/8/31 下午 06:08"
+    "updated_at": "2026/8/31 下午 06:08",
+    "doc_create_no": "1151294751",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "115021089670-E",
+    "doc_chart_status": "邱奕璁
+陳志華(回答問題)"
   },
   {
     "doc_receive_no": "1150009144",
@@ -12103,7 +14371,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北檢閱115偵27805字第1159093500號",
     "doc_subject": "惠請查復如說明所示之事項，並請提供相關資料過署參辦。請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "17218043",
@@ -12116,7 +14384,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "翁佩韋(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/8/31 下午 06:30",
-    "updated_at": "2026/8/31 下午 06:30"
+    "updated_at": "2026/8/31 下午 06:30",
+    "doc_create_no": "1150102546",
+    "doc_sender_org": "臺灣臺北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": "翁佩韋(回答問題)"
   },
   {
     "doc_receive_no": "1150009270",
@@ -12140,7 +14412,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃裕閔(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/9/1 上午 11:18",
-    "updated_at": "2026/9/1 上午 11:18"
+    "updated_at": "2026/9/1 上午 11:18",
+    "doc_create_no": "1151294808",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "第115021132174-E號",
+    "doc_chart_status": "黃裕閔(回答問題)"
   },
   {
     "doc_receive_no": "1150009277",
@@ -12151,7 +14427,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "移署北新勤字第1158014536號",
     "doc_subject": "因偵辦刑事案件需要，亟需調閱國人游榮三住院相關資料，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "03649169",
@@ -12164,7 +14440,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳淑貞督導長(回覆問題)",
     "doc_attachments": [],
     "created_at": "2026/9/1 上午 11:20",
-    "updated_at": "2026/9/1 上午 11:20"
+    "updated_at": "2026/9/1 上午 11:20",
+    "doc_create_no": "1151294810",
+    "doc_sender_org": "內政部移民署北區事務大隊新北市專勤隊",
+    "doc_labor_no": "",
+    "doc_chart_status": "陳淑貞督導長(回覆問題)"
   },
   {
     "doc_receive_no": "1150009283",
@@ -12175,7 +14455,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "北市醫毒危字第11530544621號",
     "doc_subject": "為結核病防疫業務之需，請貴院於115年9月11日前提供結核病接觸者之病歷相關資料，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "14793622",
@@ -12188,7 +14468,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/1 上午 11:22",
-    "updated_at": "2026/9/1 上午 11:22"
+    "updated_at": "2026/9/1 上午 11:22",
+    "doc_create_no": "1151294816",
+    "doc_sender_org": "臺北市立聯合醫院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009240",
@@ -12199,7 +14483,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北中衛字第1156375621號",
     "doc_subject": "本所為防疫業務需要，惠請貴院提供個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "08492025",
@@ -12212,7 +14496,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/1 上午 11:23",
-    "updated_at": "2026/9/1 上午 11:23"
+    "updated_at": "2026/9/1 上午 11:23",
+    "doc_create_no": "1151294840",
+    "doc_sender_org": "新北市中和區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009151",
@@ -12223,7 +14511,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民定113重簡字第1816號",
     "doc_subject": "惠請貴院檢送如說明二所示之資料，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "09591419",
@@ -12236,7 +14524,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/2 上午 09:55",
-    "updated_at": "2026/9/2 上午 09:55"
+    "updated_at": "2026/9/2 上午 09:55",
+    "doc_create_no": "1150102553",
+    "doc_sender_org": "臺灣新北地方法院三重簡易庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009013",
@@ -12247,7 +14539,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "橋院甯民柔115醫5字第1151014033號",
     "doc_subject": "請惠予提供如說明二所列事項過院參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "02267333",
@@ -12257,10 +14549,26 @@ const DEFAULT_MAIN_DOCS = [
     "doc_att_count": 1,
     "doc_status": "待回覆",
     "doc_remark": "",
-    "doc_doctor_name": "林乾閔\n羅偉倫\n紀則宇\n柯世祐\n陳弘洲\n張德宇\n蘇明章",
+    "doc_doctor_name": "林乾閔
+羅偉倫
+紀則宇
+柯世祐
+陳弘洲
+張德宇
+蘇明章",
     "doc_attachments": [],
     "created_at": "2026/9/2 上午 10:10",
-    "updated_at": "2026/9/2 上午 10:10"
+    "updated_at": "2026/9/2 上午 10:10",
+    "doc_create_no": "1150102517",
+    "doc_sender_org": "臺灣橋頭地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": "林乾閔
+羅偉倫
+紀則宇
+柯世祐
+陳弘洲
+張德宇
+蘇明章"
   },
   {
     "doc_receive_no": "1150009359",
@@ -12271,7 +14579,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "潭衛字第1150002092號",
     "doc_subject": "為防疫業務之需求，惠請貴院協助提供本市結核病個案（總編號:TB115249490） 於貴院115年1月1日起起歷次胸部X光片、胸部斷層掃描及病歷摘要，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "14034013、18076091",
@@ -12284,7 +14592,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/2 上午 11:01",
-    "updated_at": "2026/9/2 上午 11:01"
+    "updated_at": "2026/9/2 上午 11:01",
+    "doc_create_no": "1151294843",
+    "doc_sender_org": "臺中市潭子區衛生所",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009015",
@@ -12295,7 +14607,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "院英刑正115交上易208字第1159005669號",
     "doc_subject": "惠請說明如說明二所示之事項惠復，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "陽書湘",
     "doc_assignee_email": "14301@s.tmu.edu.tw",
     "doc_chart_no": "07094639",
@@ -12308,7 +14620,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/2 下午 02:06",
-    "updated_at": "2026/9/2 下午 02:06"
+    "updated_at": "2026/9/2 下午 02:06",
+    "doc_create_no": "1151294684",
+    "doc_sender_org": "臺灣高等法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009355",
@@ -12332,7 +14648,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "羅偉倫(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/9/2 下午 02:19",
-    "updated_at": "2026/9/2 下午 02:19"
+    "updated_at": "2026/9/2 下午 02:19",
+    "doc_create_no": "1151294849",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：第114021210767-E號",
+    "doc_chart_status": "羅偉倫(回答問題)"
   },
   {
     "doc_receive_no": "1150009354",
@@ -12356,7 +14676,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳冠豪(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/9/2 下午 02:21",
-    "updated_at": "2026/9/2 下午 02:21"
+    "updated_at": "2026/9/2 下午 02:21",
+    "doc_create_no": "1151294853",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：115-0-91-006580。",
+    "doc_chart_status": "陳冠豪(回答問題)"
   },
   {
     "doc_receive_no": "1150009345",
@@ -12380,7 +14704,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/2 下午 02:22",
-    "updated_at": "2026/9/2 下午 02:22"
+    "updated_at": "2026/9/2 下午 02:22",
+    "doc_create_no": "1151294856",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：115-0-92-009147。",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009389",
@@ -12391,7 +14719,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永成115偵23243字第1159123671號",
     "doc_subject": "請惠予提供如說明指示之事項，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "04127666",
@@ -12404,7 +14732,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/3 下午 02:30",
-    "updated_at": "2026/9/3 下午 02:30"
+    "updated_at": "2026/9/3 下午 02:30",
+    "doc_create_no": "1150102617",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009397",
@@ -12415,7 +14747,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北院胤民棠115年度醫字第2號",
     "doc_subject": "請惠予提供病患曹一美(身分證字號:U220219309)於貴院急診醫學科、神經外科、腎臟內科之全部病歷資料過院參辦，請查照惠覆。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "03307069",
@@ -12428,7 +14760,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/3 下午 02:40",
-    "updated_at": "2026/9/3 下午 02:40"
+    "updated_at": "2026/9/3 下午 02:40",
+    "doc_create_no": "1150102625",
+    "doc_sender_org": "臺灣新北地方法院",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009426",
@@ -12452,7 +14788,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/3 下午 02:42",
-    "updated_at": "2026/9/3 下午 02:42"
+    "updated_at": "2026/9/3 下午 02:42",
+    "doc_create_no": "1151294864",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：115031024673-C號",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009427",
@@ -12476,7 +14816,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "翁佩韋(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/9/3 下午 02:44",
-    "updated_at": "2026/9/3 下午 02:44"
+    "updated_at": "2026/9/3 下午 02:44",
+    "doc_create_no": "1151294866",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：115-0-91-005394。",
+    "doc_chart_status": "翁佩韋(回答問題)"
   },
   {
     "doc_receive_no": "1150009431",
@@ -12487,7 +14831,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永 群 115 偵 45962字第11591249790號",
     "doc_subject": "請惠予依說明一事項辦理，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "02276658",
@@ -12500,7 +14844,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/3 下午 02:45",
-    "updated_at": "2026/9/3 下午 02:45"
+    "updated_at": "2026/9/3 下午 02:45",
+    "doc_create_no": "1151294870",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009413",
@@ -12524,7 +14872,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅(回答問題)",
     "doc_attachments": [],
     "created_at": "2026/9/3 下午 02:47",
-    "updated_at": "2026/9/3 下午 02:47"
+    "updated_at": "2026/9/3 下午 02:47",
+    "doc_create_no": "1151294879",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：第115021132208-E號。",
+    "doc_chart_status": "王智毅(回答問題)"
   },
   {
     "doc_receive_no": "1150009443",
@@ -12535,7 +14887,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永暑115他4724字第1159121395號",
     "doc_subject": "請貴院協助函復以下說明一之事項過署參辦，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "02492658",
@@ -12548,7 +14900,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/4 上午 11:06",
-    "updated_at": "2026/9/4 上午 11:06"
+    "updated_at": "2026/9/4 上午 11:06",
+    "doc_create_no": "1150102639",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009444",
@@ -12559,7 +14915,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "新北檢永御1155337字第1159120617號",
     "doc_subject": "檢附貴院驗傷診斷書影本1份，惠請提供病患莊0婷(身分證號碼:A230590458號)於民國115年4月3日11時39分許至貴醫院驗傷之傷勢照片、就醫紀錄，請查照。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "",
@@ -12572,7 +14928,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/4 上午 11:09",
-    "updated_at": "2026/9/4 上午 11:09"
+    "updated_at": "2026/9/4 上午 11:09",
+    "doc_create_no": "1150102640",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009446",
@@ -12583,7 +14943,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "桃院潔家勇115年度家親聲字第343號",
     "doc_subject": "請提供相對人金佩萱(民國83年11月10日生、身份證統一編號:M222394942號)於貴院/診所就診時所留存之聯絡地址及電話到院供參，請查照惠復。",
     "doc_lbi_no": "",
-    "doc_fee": "",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17916329",
@@ -12596,7 +14956,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/4 上午 11:10",
-    "updated_at": "2026/9/4 上午 11:10"
+    "updated_at": "2026/9/4 上午 11:10",
+    "doc_create_no": "1150102642",
+    "doc_sender_org": "臺灣桃園地方法院家事法庭",
+    "doc_labor_no": "",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009463",
@@ -12620,7 +14984,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "",
     "doc_attachments": [],
     "created_at": "2026/9/4 上午 11:11",
-    "updated_at": "2026/9/4 上午 11:11"
+    "updated_at": "2026/9/4 上午 11:11",
+    "doc_create_no": "1151294897",
+    "doc_sender_org": "勞動部勞工保險局",
+    "doc_labor_no": "受理號碼：115031021830-C。",
+    "doc_chart_status": ""
   },
   {
     "doc_receive_no": "1150009506",
@@ -12631,7 +14999,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職傷字第1150009506號",
     "doc_subject": ":因勞保局來函調閱病歷(06232698羅淑芬),請協助回答問題",
     "doc_lbi_no": "第115021009506-E號",
-    "doc_fee": "-",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "06232698",
@@ -12644,7 +15012,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "王智毅",
     "doc_attachments": [],
     "created_at": "2026/9/5 上午 11:08",
-    "updated_at": "2026/9/5 上午 11:08"
+    "updated_at": "2026/9/5 上午 11:08",
+    "doc_create_no": "115009506",
+    "doc_sender_org": "勞工保險局",
+    "doc_labor_no": "第115021009506-E號",
+    "doc_chart_status": "王智毅"
   },
   {
     "doc_receive_no": "1150009539",
@@ -12655,7 +15027,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職傷字第1150009539號",
     "doc_subject": "為審核被保險人梁力文君(病歷號:06400246)申請傷病給付案，敬請查覆醫療處置與病歷資料。",
     "doc_lbi_no": "第115021009539-E號",
-    "doc_fee": "-",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "06400246",
@@ -12668,7 +15040,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林毅成",
     "doc_attachments": [],
     "created_at": "2026/9/8 下午 05:04",
-    "updated_at": "2026/9/8 下午 05:04"
+    "updated_at": "2026/9/8 下午 05:04",
+    "doc_create_no": "115009539",
+    "doc_sender_org": "勞工保險局",
+    "doc_labor_no": "第115021009539-E號",
+    "doc_chart_status": "林毅成"
   },
   {
     "doc_receive_no": "1150009518",
@@ -12679,7 +15055,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職傷字第1150009518號",
     "doc_subject": "為審核被保險人汪芷萱君(病歷號:14318142)申請傷病給付案，敬請查覆醫療處置與病歷資料。",
     "doc_lbi_no": "第115021009518-E號",
-    "doc_fee": "-",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "14318142",
@@ -12692,7 +15068,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "柯世祐",
     "doc_attachments": [],
     "created_at": "2026/9/8 下午 05:48",
-    "updated_at": "2026/9/8 下午 05:48"
+    "updated_at": "2026/9/8 下午 05:48",
+    "doc_create_no": "115009518",
+    "doc_sender_org": "臺灣新北地方檢察署",
+    "doc_labor_no": "第115021009518-E號",
+    "doc_chart_status": "柯世祐"
   },
   {
     "doc_receive_no": "1150009536",
@@ -12703,7 +15083,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職傷字第1150009536號",
     "doc_subject": "為審核被保險人葉斯喜君(病歷號:02296807)申請傷病給付案，敬請查覆醫療處置與病歷資料。",
     "doc_lbi_no": "第115021009536-E號",
-    "doc_fee": "-",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "02296807",
@@ -12716,7 +15096,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "許秉閎",
     "doc_attachments": [],
     "created_at": "2026/9/8 下午 05:56",
-    "updated_at": "2026/9/8 下午 05:56"
+    "updated_at": "2026/9/8 下午 05:56",
+    "doc_create_no": "115009536",
+    "doc_sender_org": "勞工保險局",
+    "doc_labor_no": "第115021009536-E號",
+    "doc_chart_status": "許秉閎"
   },
   {
     "doc_receive_no": "1150009648",
@@ -12727,7 +15111,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職傷字第1150009648號",
     "doc_subject": "2.醫審會鑑定書(編號:1140001)敘明「依110年11月29歲日、12月2日、12月6日及12月9日胸部X光影像，確認有左側肩關節脫臼。胸部X光檢查目的為判斷胸廓範圍之病灶，不一定涵蓋雙側肩關節或上臂。依病人於上述住院期間之全部X光影像，皆無完整涵蓋右肩關節與右上臂區域，因此無法判斷病人於此期間是否發生或已存在右肱骨骨折一事」，倘雙和醫院之判斷與醫審會上開判斷不同，請惠予說明原因。",
     "doc_lbi_no": "第115021009648-E號",
-    "doc_fee": "-",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "13291141",
@@ -12740,7 +15124,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "林家瑋",
     "doc_attachments": [],
     "created_at": "2026/9/9 下午 01:49",
-    "updated_at": "2026/9/9 下午 01:49"
+    "updated_at": "2026/9/9 下午 01:49",
+    "doc_create_no": "115009648",
+    "doc_sender_org": "勞工保險局",
+    "doc_labor_no": "第115021009648-E號",
+    "doc_chart_status": "林家瑋"
   },
   {
     "doc_receive_no": "1150009517",
@@ -12751,7 +15139,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職傷字第1150009517號",
     "doc_subject": "本局接獲通報，有關旨揭個案115年6月25日於家中疑似遭受移工不當對待並於當日至貴院住院治療，因涉及身心障礙者不當對待行為，本局依據身心障礙者權益保障法第75條啟動調查，先予敘明。",
     "doc_lbi_no": "第115021009517-E號",
-    "doc_fee": "-",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "17962612",
@@ -12764,7 +15152,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "劉柏均",
     "doc_attachments": [],
     "created_at": "2026/9/9 下午 04:29",
-    "updated_at": "2026/9/9 下午 04:29"
+    "updated_at": "2026/9/9 下午 04:29",
+    "doc_create_no": "115009517",
+    "doc_sender_org": "勞工保險局",
+    "doc_labor_no": "第115021009517-E號",
+    "doc_chart_status": "劉柏均"
   },
   {
     "doc_receive_no": "1150009659",
@@ -12775,7 +15167,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職傷字第1150009659號",
     "doc_subject": "1.何時因「右頸肩挫傷、頸椎挫傷致頸椎神經炎、創傷後頸椎第一第二節半滑脫、右側臂神經叢損傷」「疑似臂神經損傷」傷病至貴院初診？",
     "doc_lbi_no": "第115021009659-E號",
-    "doc_fee": "-",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "01787609",
@@ -12788,7 +15180,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "柯子翔",
     "doc_attachments": [],
     "created_at": "2026/9/9 下午 04:39",
-    "updated_at": "2026/9/9 下午 04:39"
+    "updated_at": "2026/9/9 下午 04:39",
+    "doc_create_no": "115009659",
+    "doc_sender_org": "勞工保險局",
+    "doc_labor_no": "第115021009659-E號",
+    "doc_chart_status": "柯子翔"
   },
   {
     "doc_receive_no": "1150009531",
@@ -12799,7 +15195,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職傷字第1150009531號",
     "doc_subject": "2.發生日期及原因為何？",
     "doc_lbi_no": "第115021009531-E號",
-    "doc_fee": "-",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "13280004",
@@ -12812,7 +15208,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "陳致宇",
     "doc_attachments": [],
     "created_at": "2026/9/10 上午 09:30",
-    "updated_at": "2026/9/10 上午 09:30"
+    "updated_at": "2026/9/10 上午 09:30",
+    "doc_create_no": "115009531",
+    "doc_sender_org": "勞工保險局",
+    "doc_labor_no": "第115021009531-E號",
+    "doc_chart_status": "陳致宇"
   },
   {
     "doc_receive_no": "1150009547",
@@ -12823,7 +15223,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職傷字第1150009547號",
     "doc_subject": "1.何時因「腦動脈瘤破裂合併自發性腦出血」傷病至貴院初診？",
     "doc_lbi_no": "第115021009547-E號",
-    "doc_fee": "-",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "03253621",
@@ -12836,7 +15236,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "蘇亦昌",
     "doc_attachments": [],
     "created_at": "2026/9/10 上午 09:39",
-    "updated_at": "2026/9/10 上午 09:39"
+    "updated_at": "2026/9/10 上午 09:39",
+    "doc_create_no": "115009547",
+    "doc_sender_org": "勞工保險局",
+    "doc_labor_no": "第115021009547-E號",
+    "doc_chart_status": "蘇亦昌"
   },
   {
     "doc_receive_no": "1150009689",
@@ -12847,7 +15251,7 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "保職傷字第1150009689號",
     "doc_subject": "為審核被保險人李瑞珍君(病歷號:09290954)申請傷病給付案，敬請查覆醫療處置與病歷資料。",
     "doc_lbi_no": "第115021009689-E號",
-    "doc_fee": "-",
+    "doc_fee": "0",
     "doc_assignee": "錢佩妤",
     "doc_assignee_email": "19020@s.tmu.edu.tw",
     "doc_chart_no": "09290954",
@@ -12860,7 +15264,11 @@ const DEFAULT_MAIN_DOCS = [
     "doc_doctor_name": "黃錦前",
     "doc_attachments": [],
     "created_at": "2026/9/10 下午 01:52",
-    "updated_at": "2026/9/10 下午 01:52"
+    "updated_at": "2026/9/10 下午 01:52",
+    "doc_create_no": "115009689",
+    "doc_sender_org": "勞工保險局",
+    "doc_labor_no": "第115021009689-E號",
+    "doc_chart_status": "黃錦前"
   }
 ];
 
@@ -12878,7 +15286,8 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "1.請惠予提供江威緒於114年3月間進行腎臟切除手術之開刀及麻醉病歷，並請惠復該次手術進行麻醉之藥劑名稱，及注射使用該麻醉藥劑之副作用為何？\n2.該藥物是否曾有意識混亂等副作用之醫療文獻紀錄？",
+    "question": "1.請惠予提供江威緒於114年3月間進行腎臟切除手術之開刀及麻醉病歷，並請惠復該次手術進行麻醉之藥劑名稱，及注射使用該麻醉藥劑之副作用為何？
+2.該藥物是否曾有意識混亂等副作用之醫療文獻紀錄？",
     "doctor_reply": "",
     "remark": "因吳醫師出國，請主任代為說明謝謝。",
     "status": "已完成",
@@ -12904,7 +15313,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "病人姓名:艾瑪 (15900971)\n1.艾君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？請惠示醫理見解。\n請於12/15前回覆，謝謝您",
+    "question": "病人姓名:艾瑪 (15900971)
+1.艾君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？請惠示醫理見解。
+請於12/15前回覆，謝謝您",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -12930,7 +15344,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "惠請協助確認旨揭病患(17066448張敬東)所受傷勢是否有\n(1)器官或肢體機能受到重大傷害，完全而且永遠喪失其機能?\n(2)器官或肢體機能雖未完全喪失，但因器官或肢體嚴重受損，致其「機能嚴重減退者」，且經過相當之診治，而不能回復原狀或機能之情形?",
+    "question": "惠請協助確認旨揭病患(17066448張敬東)所受傷勢是否有
+(1)器官或肢體機能受到重大傷害，完全而且永遠喪失其機能?
+(2)器官或肢體機能雖未完全喪失，但因器官或肢體嚴重受損，致其「機能嚴重減退者」，且經過相當之診治，而不能回復原狀或機能之情形?",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -12956,7 +15372,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "(一)程君何時診斷患有「左側腦膜瘤、顱內動脈瘤」？所患「左側腦膜瘤、顱內動脈瘤」成因為何？與其所患「外傷性顱內出血」有無因果關係？\n(二)程君因上開傷病於貴院之治療經過及復原情形為何？有無併發症或後遺症？合理療養期為何？自何時起可恢復一般工作能力？\n請惠示醫理見解。",
+    "question": "(一)程君何時診斷患有「左側腦膜瘤、顱內動脈瘤」？所患「左側腦膜瘤、顱內動脈瘤」成因為何？與其所患「外傷性顱內出血」有無因果關係？
+(二)程君因上開傷病於貴院之治療經過及復原情形為何？有無併發症或後遺症？合理療養期為何？自何時起可恢復一般工作能力？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -12982,7 +15400,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "惠請於114年12月29日前其提供(陳文孝17846882)於114年11月12日就診之相關資料，\n1.並告知當日傷勢是否會嚴重減損其聽能，能否透過治療恢復？\n2.又或是會造成左耳聽力有重大不治或難治之傷害，是否對於健康有重大影響？\n請惠示醫理見解謝謝",
+    "question": "惠請於114年12月29日前其提供(陳文孝17846882)於114年11月12日就診之相關資料，
+1.並告知當日傷勢是否會嚴重減損其聽能，能否透過治療恢復？
+2.又或是會造成左耳聽力有重大不治或難治之傷害，是否對於健康有重大影響？
+請惠示醫理見解謝謝",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13008,7 +15429,21 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "病患(楊熺宗15810005)於民國112年5月1日發生交通事故受有外傷(參附件1.)，於同日至貴院急診即入院，經貴院骨科診斷受有附件2.所示「創傷性左側顱內出血、蜘蛛膜下腔出血、創傷性廣泛腦水腫、右第十至十二肋骨骨折、右恥骨支骨折、鼻骨骨折、左遠端腔骨腓骨骨折、右第五掌骨開放性骨折、膀胱血塊填塞及多處擦挂傷」，於112年6月3日出院，並陸續在貴院骨科門診複查(參附件2.)，又於112年8月10日起至貴院神經內科門診，經診斷為附件3.所示「失智症、腦出血」(參附件3.)。\n \t二、惠請參酌附件資料及楊嬉宗因附件2.3.傷勢病症在貴院就醫就診治療之相關病歷資料，說明下列事項。(一)依楊嬉宗附件2.「創傷性左側顱內出血，蜘蛛膜下腔出血、創傷性廣泛腦水腫，右第10至12肋骨骨折、右恥骨支骨、鼻骨骨折、左遠端腔骨腓骨骨折、右第五掌骨開放性骨折、膀胱血塊填塞及多處擦挂傷」傷勢病症程度、病情、臨床及復原預後狀況：\n\n1--1附件2.醫囑「宜需後續專人照顧6個月」，是自何時起算6個月？\n1-2需「全日」看護或「半日」看護？\n2-1楊嬉宗於113年2月17日至貴院骨科門診複查時，依附件2.傷勢病症程度、病情、、臨床及其當時復原預復狀況，是否仍需專人看護？\n2-2需「全日」看護或「半日」看護？\n3-1.楊嬉宗於113年2月18日起至113年5月4日至貴院骨科門診複查前之期間，依附件2.傷勢病症程度、病情、臨床及其當時復原預後狀況，是否仍需專人看護？\n3-2需「全日」看護或「半日」看護？\n4-1.楊嬉宗於113年5月4日至貴院骨科門診複查時，依附件2.傷勢病症程度、病情、臨床及其當時復原預後狀況，是否仍需專人看護？\n4-2需「全日」看護或「半日」看護？\n5-1楊嬉宗於113年5月5日起，是否仍需專人看護？\n5-2需「全日」看護或「半日」看護？\n5-3需再看護期間長短？\n請惠示醫理見解。",
+    "question": "病患(楊熺宗15810005)於民國112年5月1日發生交通事故受有外傷(參附件1.)，於同日至貴院急診即入院，經貴院骨科診斷受有附件2.所示「創傷性左側顱內出血、蜘蛛膜下腔出血、創傷性廣泛腦水腫、右第十至十二肋骨骨折、右恥骨支骨折、鼻骨骨折、左遠端腔骨腓骨骨折、右第五掌骨開放性骨折、膀胱血塊填塞及多處擦挂傷」，於112年6月3日出院，並陸續在貴院骨科門診複查(參附件2.)，又於112年8月10日起至貴院神經內科門診，經診斷為附件3.所示「失智症、腦出血」(參附件3.)。
+ 	二、惠請參酌附件資料及楊嬉宗因附件2.3.傷勢病症在貴院就醫就診治療之相關病歷資料，說明下列事項。(一)依楊嬉宗附件2.「創傷性左側顱內出血，蜘蛛膜下腔出血、創傷性廣泛腦水腫，右第10至12肋骨骨折、右恥骨支骨、鼻骨骨折、左遠端腔骨腓骨骨折、右第五掌骨開放性骨折、膀胱血塊填塞及多處擦挂傷」傷勢病症程度、病情、臨床及復原預後狀況：
+
+1--1附件2.醫囑「宜需後續專人照顧6個月」，是自何時起算6個月？
+1-2需「全日」看護或「半日」看護？
+2-1楊嬉宗於113年2月17日至貴院骨科門診複查時，依附件2.傷勢病症程度、病情、、臨床及其當時復原預復狀況，是否仍需專人看護？
+2-2需「全日」看護或「半日」看護？
+3-1.楊嬉宗於113年2月18日起至113年5月4日至貴院骨科門診複查前之期間，依附件2.傷勢病症程度、病情、臨床及其當時復原預後狀況，是否仍需專人看護？
+3-2需「全日」看護或「半日」看護？
+4-1.楊嬉宗於113年5月4日至貴院骨科門診複查時，依附件2.傷勢病症程度、病情、臨床及其當時復原預後狀況，是否仍需專人看護？
+4-2需「全日」看護或「半日」看護？
+5-1楊嬉宗於113年5月5日起，是否仍需專人看護？
+5-2需「全日」看護或「半日」看護？
+5-3需再看護期間長短？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "吳連禎醫師您好 據門診紀錄113年5月4日，請就當日骨科門診時狀況回覆第4題，並以113年5月4日狀況回覆第五題，謝謝。  4-1.楊嬉宗於113年5月4日至貴院骨科門診複查時，依附件2.傷勢病症程度、病情、臨床及其當時復原預後狀況，是否仍需專人看護？ 4-2需「全日」看護或「半日」看護？  第五題備註：第五題如 無法評估也請回覆無法評估。 5-1楊嬉宗於113年5月5日起，是否仍需專人看護？ 5-2需「全日」看護或「半日」看護？ 5-3需再看護期間長短？",
     "status": "已完成",
@@ -13034,7 +15469,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "病患(楊熺宗15810005)於民國112年5月1日發生交通事故受有外傷(參附件1.)，於同日至貴院急診即入院，經貴院骨科診斷受有附件2.所示「創傷性左側顱內出血、蜘蛛膜下腔出血、創傷性廣泛腦水腫、右第十至十二肋骨骨折、右恥骨支骨折、鼻骨骨折、左遠端腔骨腓骨骨折、右第五掌骨開放性骨折、膀胱血塊填塞及多處擦挂傷」，於112年6月3日出院，並陸續在貴院骨科門診複查(參附件2.)，又於112年8月10日起至貴院神經內科門診，經診斷為附件3.所示「失智症、腦出血」(參附件3.)。\n \t二、惠請參酌附件資料及楊嬉宗因附件2.3.傷勢病症在貴院就醫就診治療之相關病歷資料，說明下列事項。(一)依楊嬉宗附件2.「創傷性左側顱內出血，蜘蛛膜下腔出血、創傷性廣泛腦水腫，右第10至12肋骨骨折、右恥骨支骨、鼻骨骨折、左遠端腔骨腓骨骨折、右第五掌骨開放性骨折、膀胱血塊填塞及多處擦挂傷」傷勢病症程度、病情、臨床及復原預後狀況：\n\n1.1楊嬉宗罹有失智症，是否係因其於112年5月1日發生交通事故所造成？\n1-2亦即是否係因楊嬉宗於112年5月1日發生交通事」故才導致其因而罹有失智症？\n\n2-1若楊嬉宗在112年5月1日發生交通事故前已有失智症症狀，能否研判其失智症症狀有無因其於112年5月1日發生交通事故而加重加劇惡化？\n\n請惠示醫理見解",
+    "question": "病患(楊熺宗15810005)於民國112年5月1日發生交通事故受有外傷(參附件1.)，於同日至貴院急診即入院，經貴院骨科診斷受有附件2.所示「創傷性左側顱內出血、蜘蛛膜下腔出血、創傷性廣泛腦水腫、右第十至十二肋骨骨折、右恥骨支骨折、鼻骨骨折、左遠端腔骨腓骨骨折、右第五掌骨開放性骨折、膀胱血塊填塞及多處擦挂傷」，於112年6月3日出院，並陸續在貴院骨科門診複查(參附件2.)，又於112年8月10日起至貴院神經內科門診，經診斷為附件3.所示「失智症、腦出血」(參附件3.)。
+ 	二、惠請參酌附件資料及楊嬉宗因附件2.3.傷勢病症在貴院就醫就診治療之相關病歷資料，說明下列事項。(一)依楊嬉宗附件2.「創傷性左側顱內出血，蜘蛛膜下腔出血、創傷性廣泛腦水腫，右第10至12肋骨骨折、右恥骨支骨、鼻骨骨折、左遠端腔骨腓骨骨折、右第五掌骨開放性骨折、膀胱血塊填塞及多處擦挂傷」傷勢病症程度、病情、臨床及復原預後狀況：
+
+1.1楊嬉宗罹有失智症，是否係因其於112年5月1日發生交通事故所造成？
+1-2亦即是否係因楊嬉宗於112年5月1日發生交通事」故才導致其因而罹有失智症？
+
+2-1若楊嬉宗在112年5月1日發生交通事故前已有失智症症狀，能否研判其失智症症狀有無因其於112年5月1日發生交通事故而加重加劇惡化？
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13060,7 +15503,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "黃宗成(03717918)因「右手掌撕裂傷、鼻梁撕裂傷1公分、右手掌撕裂傷2公分、臉部多處挫傷、牙齒挫傷」在貴院診療\n(一)黃君何日因上開傷病初至貴院求診？有無主訴發生事故時間、地點及經過情形如何？\n(二)黃君因上開傷病至貴院治療之醫療經過及傷勢復原情形為何？有無何併發症或後遺症？合理休養起訖時間為何？依其傷勢療養至何日起可恢復一般工作能力？理由及依據為何？\n請惠示醫理見解",
+    "question": "黃宗成(03717918)因「右手掌撕裂傷、鼻梁撕裂傷1公分、右手掌撕裂傷2公分、臉部多處挫傷、牙齒挫傷」在貴院診療
+(一)黃君何日因上開傷病初至貴院求診？有無主訴發生事故時間、地點及經過情形如何？
+(二)黃君因上開傷病至貴院治療之醫療經過及傷勢復原情形為何？有無何併發症或後遺症？合理休養起訖時間為何？依其傷勢療養至何日起可恢復一般工作能力？理由及依據為何？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "請主任協助補充回答1.有無何併發症或後遺症？2.合理休養起訖時間為何？3.依其傷勢療養至何日起可恢復一般工作能力？4.理由及依據為何？請惠示醫理見解。",
     "status": "已完成",
@@ -13086,7 +15532,8 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "(一)黃君何日因上開傷病初至貴院求診？\n有無主訴發生事故時間、地點及經過情形如何？",
+    "question": "(一)黃君何日因上開傷病初至貴院求診？
+有無主訴發生事故時間、地點及經過情形如何？",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13112,7 +15559,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "徐妙聖君（17063074）因「過敏性休克、肢體三處瘀傷，自述蜜蜂叮咬」在貴院診療\n(一)徐君就診有無主訴傷害事故？發生日期及原因為何？所患「過敏性休克、肢體三處瘀傷，自述蜜蜂叮咬」是否係因主訴之傷害事故所致？\n(二)徐君因上開傷病治療經過為何？有無併發症或後遺症？療養至何時起可從事一般工作？認定理由及依據為何？\n請惠示醫理見解",
+    "question": "徐妙聖君（17063074）因「過敏性休克、肢體三處瘀傷，自述蜜蜂叮咬」在貴院診療
+(一)徐君就診有無主訴傷害事故？發生日期及原因為何？所患「過敏性休克、肢體三處瘀傷，自述蜜蜂叮咬」是否係因主訴之傷害事故所致？
+(二)徐君因上開傷病治療經過為何？有無併發症或後遺症？療養至何時起可從事一般工作？認定理由及依據為何？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13138,7 +15588,8 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "請提供郭博民(00002091)於1141113年月日至貴院急診之急診病歷、傷勢照片。\n1.前請惠予說明郭博民當時有無外觀可觀之傷害?",
+    "question": "請提供郭博民(00002091)於1141113年月日至貴院急診之急診病歷、傷勢照片。
+1.前請惠予說明郭博民當時有無外觀可觀之傷害?",
     "doctor_reply": "",
     "remark": "關曉雯",
     "status": "已完成",
@@ -13164,7 +15615,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "請就(吳啟章06044778)是否有行政執行法第21條第3款規定:「現罹疾病，恐因管收而不能治療者。」之不得管收事由惠示卓見。\n\n請惠示醫理見解",
+    "question": "請就(吳啟章06044778)是否有行政執行法第21條第3款規定:「現罹疾病，恐因管收而不能治療者。」之不得管收事由惠示卓見。
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13190,7 +15643,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "請就(吳啟章06044778)是否有行政執行法第21條第3款規定:「現罹疾病，恐因管收而不能治療者。」之不得管收事由惠示卓見。\n\n請惠示醫理見解",
+    "question": "請就(吳啟章06044778)是否有行政執行法第21條第3款規定:「現罹疾病，恐因管收而不能治療者。」之不得管收事由惠示卓見。
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13216,7 +15671,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "醫師好，請協助回覆\n病患(黃俊仁17125871)於114年1月20日至貴院就診，\n1.並以中文簡要說明病人就診時之病況、醫師處置或醫囑等\n2.請併予說明鑑別診斷是根據病人主訴或有其他參考依據?\n\n請惠示醫理見解",
+    "question": "醫師好，請協助回覆
+病患(黃俊仁17125871)於114年1月20日至貴院就診，
+1.並以中文簡要說明病人就診時之病況、醫師處置或醫囑等
+2.請併予說明鑑別診斷是根據病人主訴或有其他參考依據?
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13268,7 +15728,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "鄧博仁君（16746194）因「創傷性蜘蛛膜下出血合併認知障礙及第三對腦神經麻痺、高血壓」在貴院診療\n1.鄧博仁君醫療經過及傷勢復原情形如何？\n2.有無併發症或後遺症？\n3.其何時起應可恢復一般工作能力？\n4.病歷是否可釋出或有修改?\n請惠示醫理見解。",
+    "question": "鄧博仁君（16746194）因「創傷性蜘蛛膜下出血合併認知障礙及第三對腦神經麻痺、高血壓」在貴院診療
+1.鄧博仁君醫療經過及傷勢復原情形如何？
+2.有無併發症或後遺症？
+3.其何時起應可恢復一般工作能力？
+4.病歷是否可釋出或有修改?
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13294,7 +15759,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "病患(范富龍17544775)於114年8月25日至貴醫院急診室就診，其所受傷勢是否屬於於身體或健康有重大不治或難治之傷害。\n\n請惠示醫理見解。",
+    "question": "病患(范富龍17544775)於114年8月25日至貴醫院急診室就診，其所受傷勢是否屬於於身體或健康有重大不治或難治之傷害。
+
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13320,7 +15787,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "(陳彥蓉12911363)於民國113年1月29日，因交通事故前往衛生福利部臺北醫院急診治療時，經急診醫學科診斷其傷勢為「左樹臉頰頓上及下背部、左側髖部挂傷：(如附件一)日後陳彥蓉又在113年6月11日及11月20日前往貴院之後健科及骨科進行治療，當時診斷之病名則為「下背痛，雙肩旋轉肌破裂」及「右側肩部旋轉肌破裂」(如附件二、附件三)，請問：\n(一)附件一、二、三診斷證明書所載內容，是否皆為本件交通事故所造成之傷勢？\n(二)陳彥蓉是否曾在貴院治療旋轉肌破裂？\n(二之一)有無相關之病史？",
+    "question": "(陳彥蓉12911363)於民國113年1月29日，因交通事故前往衛生福利部臺北醫院急診治療時，經急診醫學科診斷其傷勢為「左樹臉頰頓上及下背部、左側髖部挂傷：(如附件一)日後陳彥蓉又在113年6月11日及11月20日前往貴院之後健科及骨科進行治療，當時診斷之病名則為「下背痛，雙肩旋轉肌破裂」及「右側肩部旋轉肌破裂」(如附件二、附件三)，請問：
+(一)附件一、二、三診斷證明書所載內容，是否皆為本件交通事故所造成之傷勢？
+(二)陳彥蓉是否曾在貴院治療旋轉肌破裂？
+(二之一)有無相關之病史？",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13372,7 +15842,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好:\n本案潘景山(10464623),請協助回覆以下問題,謝謝您\n1.113年6月7日就診時有無拍攝X光照片？\n2.當下潘景山有無腰堆骨折之情形或疑似有類似情形？\n請惠示醫理解。",
+    "question": "陳冠豪醫師您好:
+本案潘景山(10464623),請協助回覆以下問題,謝謝您
+1.113年6月7日就診時有無拍攝X光照片？
+2.當下潘景山有無腰堆骨折之情形或疑似有類似情形？
+請惠示醫理解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13398,7 +15872,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "巫承融醫師您好\n本案王正傑(16956210),請協助回覆公文問題,謝謝您\n三、\t原告就系爭手術，是否有使用「PRP血球細胞分離器」？\n如有，該器與上開治療或系爭手術有何必要、關連性？\n另對原告術後恢復有何影響？\n四、\t原告就系爭手術，有使用「Collagen Matrix(膠原發白基質)」、「NewEpi Plus Liquid Wound Dressing(水性創傷敷料)」、「Acti-PRP血球細胞分離器(手術膠體)」，被告抗辯此3類自費醫療材料的作用機制類似，均在止血、促進傷口癒合，何以有重複使用多種功能近似醫材之必要性？\n請惠示醫理見解",
+    "question": "巫承融醫師您好
+本案王正傑(16956210),請協助回覆公文問題,謝謝您
+三、	原告就系爭手術，是否有使用「PRP血球細胞分離器」？
+如有，該器與上開治療或系爭手術有何必要、關連性？
+另對原告術後恢復有何影響？
+四、	原告就系爭手術，有使用「Collagen Matrix(膠原發白基質)」、「NewEpi Plus Liquid Wound Dressing(水性創傷敷料)」、「Acti-PRP血球細胞分離器(手術膠體)」，被告抗辯此3類自費醫療材料的作用機制類似，均在止血、促進傷口癒合，何以有重複使用多種功能近似醫材之必要性？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "巫醫師您好:請您再協助回覆說明三之問題,如有，該器與上開治療或系爭手術有何必要、關連性？謝謝您",
     "status": "已完成",
@@ -13424,7 +15904,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "韓政達醫師您好:\n本案吳志明(02862660),目前仍住院中,請協助回復下列問題,謝謝您\n1.請問被告吳志明是否仍在貴院住院治療中？\n2.經診斷之病名為何？\n3.病況如何？\n4.是否有意識而能自主陳述？\n5.請確認病歷釋出區間是否可先釋出?\n6.手術紀錄單麻煩再送簽章\n請惠示醫理見解",
+    "question": "韓政達醫師您好:
+本案吳志明(02862660),目前仍住院中,請協助回復下列問題,謝謝您
+1.請問被告吳志明是否仍在貴院住院治療中？
+2.經診斷之病名為何？
+3.病況如何？
+4.是否有意識而能自主陳述？
+5.請確認病歷釋出區間是否可先釋出?
+6.手術紀錄單麻煩再送簽章
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "韓醫師您好:請問問題5點,您所謂的\"好\"是病歷可釋出還是您要再確認?",
     "status": "已完成",
@@ -13450,7 +15938,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "黃立楷主任您好:請主任協助回覆公文內文問題,病人姓名:江彥璋(17200853),謝謝您\n請貴院協助說明：\n1.江彥璋(身分證A122177109)因何病症至貴院就診?\n2.就診期間為何？\n3.江彥璋(身分證A122177109)因上開病症，於113年11月\n至114年4月間，是否有辨識行為能力？\n4.操作駕駛小客車能\n力?",
+    "question": "黃立楷主任您好:請主任協助回覆公文內文問題,病人姓名:江彥璋(17200853),謝謝您
+請貴院協助說明：
+1.江彥璋(身分證A122177109)因何病症至貴院就診?
+2.就診期間為何？
+3.江彥璋(身分證A122177109)因上開病症，於113年11月
+至114年4月間，是否有辨識行為能力？
+4.操作駕駛小客車能
+力?",
     "doctor_reply": "",
     "remark": "黃主任您好:因要回覆法院問題,可否再請教您,問題1.請問有中文病名嗎?另問題4.未知,可否再詳盡說明,是無法判斷或是其他原因,感謝您",
     "status": "已完成",
@@ -13476,7 +15971,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "莫心怡醫師您好:此為醫療糾案件,請協助回覆公文內文問題,病人姓名:邱垂聲(11509028),謝謝您\n說明一\n(二)如滯留針停留病人身體上，對身體會產生何影響？",
+    "question": "莫心怡醫師您好:此為醫療糾案件,請協助回覆公文內文問題,病人姓名:邱垂聲(11509028),謝謝您
+說明一
+(二)如滯留針停留病人身體上，對身體會產生何影響？",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13502,7 +15999,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "馮博皓主任您好:此為醫療糾案件,請協助回覆公文內文問題,病人姓名:邱垂聲(11509028),謝謝您\n病人住院期間為:112/12/27-112/12/30\n說明一\n(二)如滯留針停留病人身體上，對身體會產生何影響？",
+    "question": "馮博皓主任您好:此為醫療糾案件,請協助回覆公文內文問題,病人姓名:邱垂聲(11509028),謝謝您
+病人住院期間為:112/12/27-112/12/30
+說明一
+(二)如滯留針停留病人身體上，對身體會產生何影響？",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13528,7 +16028,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "請說明(汪樹博17569020)當時經診斷有無肉眼可見之傷勢?\n\n惠請提供醫理見解",
+    "question": "請說明(汪樹博17569020)當時經診斷有無肉眼可見之傷勢?
+
+惠請提供醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13554,7 +16056,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "可以",
     "remark": "醫療糾紛",
     "status": "已回覆",
@@ -13580,7 +16085,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "楊順泰醫師您好:\n因勞保局來函調閱病歷\n請協助確認病歷，是否可以釋出。\n因案件有時效性，病歷將於01月09日釋出，感謝您。\n1.已確認病歷可釋出\n2.需修改病歷\n備註：如需修改病歷請洽分機2043(非必要請勿修改電子病歷)\"",
+    "question": "楊順泰醫師您好:
+因勞保局來函調閱病歷
+請協助確認病歷，是否可以釋出。
+因案件有時效性，病歷將於01月09日釋出，感謝您。
+1.已確認病歷可釋出
+2.需修改病歷
+備註：如需修改病歷請洽分機2043(非必要請勿修改電子病歷)\"",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13606,7 +16117,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "黃錦前主任您好:\n因勞保局來函調閱病歷,病人姓名:徐有鎮(07270927)\n請協助確認病歷，是否可以釋出?\n因案件有時效性，病歷將於01月09日釋出，感謝您。\n1.已確認病歷可釋出\n2.需修改病歷\n備註：如需修改病歷請洽分機2043(非必要請勿修改電子病歷)\"",
+    "question": "黃錦前主任您好:
+因勞保局來函調閱病歷,病人姓名:徐有鎮(07270927)
+請協助確認病歷，是否可以釋出?
+因案件有時效性，病歷將於01月09日釋出，感謝您。
+1.已確認病歷可釋出
+2.需修改病歷
+備註：如需修改病歷請洽分機2043(非必要請勿修改電子病歷)\"",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13632,7 +16149,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "黃錦前主任您好:\n因勞保局來函調閱病歷,病人姓名:徐有鎮(07270927)\n請協助確認病歷，是否可以釋出?\n因案件有時效性，病歷將於02月14日釋出，感謝您。\n備註：如需修改病歷請洽分機2043(非必要請勿修改電子病歷)\"",
+    "question": "黃錦前主任您好:
+因勞保局來函調閱病歷,病人姓名:徐有鎮(07270927)
+請協助確認病歷，是否可以釋出?
+因案件有時效性，病歷將於02月14日釋出，感謝您。
+備註：如需修改病歷請洽分機2043(非必要請勿修改電子病歷)\"",
     "doctor_reply": "OK",
     "remark": "",
     "status": "已完成",
@@ -13658,7 +16179,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "蔡宏達醫師您好:\n因勞保局來函調閱病歷，病人姓名黃品琇(06272007)\n請協助確認病歷，是否可以釋出?\n因案件有時效性，病歷將於01月09日釋出，感謝您。\n1.已確認病歷可釋出\n2.需修改病歷\n備註：如需修改病歷請洽分機2043(非必要請勿修改電子病歷)\"",
+    "question": "蔡宏達醫師您好:
+因勞保局來函調閱病歷，病人姓名黃品琇(06272007)
+請協助確認病歷，是否可以釋出?
+因案件有時效性，病歷將於01月09日釋出，感謝您。
+1.已確認病歷可釋出
+2.需修改病歷
+備註：如需修改病歷請洽分機2043(非必要請勿修改電子病歷)\"",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13684,7 +16211,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "楊宗燁醫師您好:\n因勞保局來函調閱病歷\n請協助確認病歷是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於1月9釋出，感謝您。\n備註：非必要請勿修改電子病歷(如需修改病歷請洽分機2043)。",
+    "question": "楊宗燁醫師您好:
+因勞保局來函調閱病歷
+請協助確認病歷是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於1月9釋出，感謝您。
+備註：非必要請勿修改電子病歷(如需修改病歷請洽分機2043)。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13710,7 +16241,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "1.請查明並告知病人(林鼎勳01408744)於104年8月15日之病歷紀錄：「曾有一度短暫性意識喪失（1.5個月前）」，107年11月26日、29日之病歷紀錄：「失智症、躁症發作」，是否可視為病人林鼎勳在此時已對金錢、財產失去辨識與處理能力？\n2-1.請查明並告知病人林鼎勳，其生前是否有對金錢、財產失去辨識與處理能力之情況 ? \n2-2.若有，是自何時開始？\n2-3當時診斷結果為何？",
+    "question": "1.請查明並告知病人(林鼎勳01408744)於104年8月15日之病歷紀錄：「曾有一度短暫性意識喪失（1.5個月前）」，107年11月26日、29日之病歷紀錄：「失智症、躁症發作」，是否可視為病人林鼎勳在此時已對金錢、財產失去辨識與處理能力？
+2-1.請查明並告知病人林鼎勳，其生前是否有對金錢、財產失去辨識與處理能力之情況 ? 
+2-2.若有，是自何時開始？
+2-3當時診斷結果為何？",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13736,7 +16270,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "黃裕閔醫師您好:請協助回覆公文問題,病人姓名:陳冠文(15702500),謝謝您\n(一)查陳君於114年6月12日至貴院初診，當時有無主訴發生何傷害事故？事故發生日期、地點及經過情形為何？\n(二)陳君因上開傷病至貴院治療之醫療經過及復原情形為何？有無併發症或後遺症？療養至何日起可恢復一般工作能力？認定理由及依據為何？\n(三)請確認病歷是否可釋出?\n請惠示醫理見解。",
+    "question": "黃裕閔醫師您好:請協助回覆公文問題,病人姓名:陳冠文(15702500),謝謝您
+(一)查陳君於114年6月12日至貴院初診，當時有無主訴發生何傷害事故？事故發生日期、地點及經過情形為何？
+(二)陳君因上開傷病至貴院治療之醫療經過及復原情形為何？有無併發症或後遺症？療養至何日起可恢復一般工作能力？認定理由及依據為何？
+(三)請確認病歷是否可釋出?
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13762,7 +16300,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王智毅醫師您好，因勞保局來函調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於01月12日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "王智毅醫師您好，因勞保局來函調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於01月12日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13788,7 +16330,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "1病患(呂至哲04876982）於114年底送至貴院診療，目前已死亡，其死亡原因為何？ \n2.是否與114年2月13日車禍有關聯？\n請惠示醫理見解",
+    "question": "1病患(呂至哲04876982）於114年底送至貴院診療，目前已死亡，其死亡原因為何？ 
+2.是否與114年2月13日車禍有關聯？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13814,7 +16358,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳俊兆醫師您好:\n請醫師協助回覆公文內文問題,劉興中(15036959),謝謝您\n1.接受治療時之精神意識狀態。\n2.自行處理事務能力等情況。",
+    "question": "陳俊兆醫師您好:
+請醫師協助回覆公文內文問題,劉興中(15036959),謝謝您
+1.接受治療時之精神意識狀態。
+2.自行處理事務能力等情況。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13840,7 +16387,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "韓政達醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:李志哲(171341804)\n1.李君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n5.請確認病歷是否可釋出?\n請惠示醫理見解。",
+    "question": "韓政達醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:李志哲(171341804)
+1.李君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+5.請確認病歷是否可釋出?
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13866,7 +16420,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好:\n因勞保局來函調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於01月13日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "陳冠豪醫師您好:
+因勞保局來函調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於01月13日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13892,7 +16451,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "李致詮醫師您好:\n因財團法人藥害救濟基金會來函調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將01月15日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "李致詮醫師您好:
+因財團法人藥害救濟基金會來函調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將01月15日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13918,7 +16482,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "黃裕閔醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:張仲明(01782592),謝謝您\n(一)張君就診有無主訴傷害事故？發生日期及原因為何？所患「右足蜂窩組織炎併骨髓炎」是否係因主訴之傷害事故所致？\n(二)張君因上開傷病治療經過為何？有無併發症或後遺症？療養至何時起可從事一般工作？認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "黃裕閔醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:張仲明(01782592),謝謝您
+(一)張君就診有無主訴傷害事故？發生日期及原因為何？所患「右足蜂窩組織炎併骨髓炎」是否係因主訴之傷害事故所致？
+(二)張君因上開傷病治療經過為何？有無併發症或後遺症？療養至何時起可從事一般工作？認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13944,7 +16512,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "黃裕閔醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:吳怡璇(07380446),謝謝您\n(一)吳君就診有無主訴傷害事故？發生日期及原因為何？所患「左踝挫傷併韌帶受損」是否係因主訴之傷害事故所致？\n(二)吳君因上開傷病治療經過為何？有無併發症或後遺症？療養至何時起可從事一般工作？認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "黃裕閔醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:吳怡璇(07380446),謝謝您
+(一)吳君就診有無主訴傷害事故？發生日期及原因為何？所患「左踝挫傷併韌帶受損」是否係因主訴之傷害事故所致？
+(二)吳君因上開傷病治療經過為何？有無併發症或後遺症？療養至何時起可從事一般工作？認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "請醫師協助回復1.所患「左踝挫傷併韌帶受損」是否係因主訴之傷害事故所致？2.吳君因上開傷病治療經過為何？3.有無併發症或後遺症？4.認定理由及依據為何？請惠示醫理見解。",
     "status": "已完成",
@@ -13970,7 +16542,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "許庭碩醫師您好:\n請醫師協助回覆公文內文問題,陳佳惠(08503567),謝謝您\n(一)何時因該傷病至貴院初診?初診當時有無主訴發生傷害之事故?發生日期及經過為何?\n(二)所患傷病成因為何?是否為主訴之事故造成?\n(三)陳佳惠君醫療經過及傷勢復原情形如何？有無併發症或後遺症？其何時起應可恢復一般工作能力？\n請惠示醫理見解。",
+    "question": "許庭碩醫師您好:
+請醫師協助回覆公文內文問題,陳佳惠(08503567),謝謝您
+(一)何時因該傷病至貴院初診?初診當時有無主訴發生傷害之事故?發生日期及經過為何?
+(二)所患傷病成因為何?是否為主訴之事故造成?
+(三)陳佳惠君醫療經過及傷勢復原情形如何？有無併發症或後遺症？其何時起應可恢復一般工作能力？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -13996,7 +16573,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好:\n請醫師協助回覆公文內文問題,沙璁璐(08282864)謝謝您\n1.沙君因上開傷病至貴院治療之醫療經過及復原情形為何？\n2.有無併發症或後遺症？\n3.療養至何日起可恢復一般工作能力？\n4.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "陳冠豪醫師您好:
+請醫師協助回覆公文內文問題,沙璁璐(08282864)謝謝您
+1.沙君因上開傷病至貴院治療之醫療經過及復原情形為何？
+2.有無併發症或後遺症？
+3.療養至何日起可恢復一般工作能力？
+4.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14022,7 +16605,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林芊芊醫師您好:\n因楊歡醫師有電話聯絡，林哲因醫師離職後病人門診看診醫師為您,煩請請林醫師協助回覆公文內文問題,沙璁璐(08282864),謝謝您\n1.沙君因上開傷病至貴院治療之醫療經過及復原情形為何？\n2.有無併發症或後遺症？\n3.療養至何日起可恢復一般工作能力？\n4.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "林芊芊醫師您好:
+因楊歡醫師有電話聯絡，林哲因醫師離職後病人門診看診醫師為您,煩請請林醫師協助回覆公文內文問題,沙璁璐(08282864),謝謝您
+1.沙君因上開傷病至貴院治療之醫療經過及復原情形為何？
+2.有無併發症或後遺症？
+3.療養至何日起可恢復一般工作能力？
+4.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14048,7 +16637,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "1.病患郭旭紳原名(郭力緯15902782)最新診斷情形及回診情形？\n1.2 以其身體狀況，是否能於115年3月間之庭期出庭應訊？\n\n惠請提供醫理見解",
+    "question": "1.病患郭旭紳原名(郭力緯15902782)最新診斷情形及回診情形？
+1.2 以其身體狀況，是否能於115年3月間之庭期出庭應訊？
+
+惠請提供醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14074,7 +16666,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王智毅醫師您好:\n請醫師回覆公文內文問題,倪珮娸(03175242),謝謝您\n1.倪君所患「左側膝部後十字韌帶囊腫」成因為何？\n2.是否與所患「左側膝關節挫傷併膝部後十字韌帶斷裂」有因果關係？\n3.倪君因上開傷病至貴院治療之醫療經過及復原情形為何？\n4.有無併發症或後遺症？\n5.療養至何日起可恢復一般工作能力？\n6.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "王智毅醫師您好:
+請醫師回覆公文內文問題,倪珮娸(03175242),謝謝您
+1.倪君所患「左側膝部後十字韌帶囊腫」成因為何？
+2.是否與所患「左側膝關節挫傷併膝部後十字韌帶斷裂」有因果關係？
+3.倪君因上開傷病至貴院治療之醫療經過及復原情形為何？
+4.有無併發症或後遺症？
+5.療養至何日起可恢復一般工作能力？
+6.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14100,7 +16700,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "高芷華醫師您好:\n因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於01月19日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上\"",
+    "question": "高芷華醫師您好:
+因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於01月19日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上\"",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14126,7 +16730,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳冠元醫師您好:\n因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於01月19日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "陳冠元醫師您好:
+因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於01月19日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14152,7 +16760,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "劉郁欣醫師您好，因勞保局來函調閱病歷,請協助確認病歷是否可以釋出。病人姓名:向麗珠(00106221)\n因案件有時效性，如未收到回覆病歷將於01月20日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "劉郁欣醫師您好，因勞保局來函調閱病歷,請協助確認病歷是否可以釋出。病人姓名:向麗珠(00106221)
+因案件有時效性，如未收到回覆病歷將於01月20日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14178,7 +16789,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "1.惠請提供病患王自強(17123611)於民國114年迄今至貴院就診時，其受傷情形有無於身體或健康，有重大不治或難治之傷害？\n2.如有，則依勞工保險失能給付標準，其失能等級為何？\n\n請惠示醫理見解",
+    "question": "1.惠請提供病患王自強(17123611)於民國114年迄今至貴院就診時，其受傷情形有無於身體或健康，有重大不治或難治之傷害？
+2.如有，則依勞工保險失能給付標準，其失能等級為何？
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14204,7 +16818,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "1.惠請提供病患王自強(17123611)於民國114年迄今至貴院就診時，其受傷情形有無於身體或健康，有重大不治或難治之傷害？\n2.如有，則依勞工保險失能給付標準，其失能等級為何？\n\n請惠示醫理見解",
+    "question": "1.惠請提供病患王自強(17123611)於民國114年迄今至貴院就診時，其受傷情形有無於身體或健康，有重大不治或難治之傷害？
+2.如有，則依勞工保險失能給付標準，其失能等級為何？
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14256,7 +16873,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "許瓅文醫師您好，因臺灣新北地方檢察署調閱病歷(17923923王昱昕)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於01月21日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "許瓅文醫師您好，因臺灣新北地方檢察署調閱病歷(17923923王昱昕)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於01月21日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14282,7 +16903,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "關曉雯醫師您好:\n請醫師協助回覆公文內文問題，病人姓名周鳳娥(12002364),謝謝您\n1.查周君於114年8月15日因上開傷病至貴院急診，當時有無主訴發生何傷害事故？\n2.事故發生時間、地點及經過情形為何？\n請惠示醫理見解",
+    "question": "關曉雯醫師您好:
+請醫師協助回覆公文內文問題，病人姓名周鳳娥(12002364),謝謝您
+1.查周君於114年8月15日因上開傷病至貴院急診，當時有無主訴發生何傷害事故？
+2.事故發生時間、地點及經過情形為何？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14308,7 +16933,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "洪家佩醫師您好:\n因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於01月23日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "洪家佩醫師您好:
+因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於01月23日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14334,7 +16963,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "劉郁欣醫師您好:\n請醫師協助回覆公文問題,薛名杉(00049586),謝謝您。\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.治療部位如何？\n4.有無外傷？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n8.係屬普通疾病抑何時遭受外力傷害引起？\n請惠示醫理見解",
+    "question": "劉郁欣醫師您好:
+請醫師協助回覆公文問題,薛名杉(00049586),謝謝您。
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.治療部位如何？
+4.有無外傷？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+8.係屬普通疾病抑何時遭受外力傷害引起？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14360,7 +16999,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "柯子翔醫師您好:\n因勞保局來函調閱病歷,請協助確認病歷是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於01月27日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "柯子翔醫師您好:
+因勞保局來函調閱病歷,請協助確認病歷是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於01月27日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14386,7 +17029,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "(周福祥14309029)\n柯世祐醫師您好，請協助回答問題謝謝\n1.請說明貴院114年8月29日診斷書(詳如附件)載明「頸椎扭傷、拉傷」是否係病人主訴?\n2.有無其他儀器檢查輔助證明?\n\n請惠示醫理見解",
+    "question": "(周福祥14309029)
+柯世祐醫師您好，請協助回答問題謝謝
+1.請說明貴院114年8月29日診斷書(詳如附件)載明「頸椎扭傷、拉傷」是否係病人主訴?
+2.有無其他儀器檢查輔助證明?
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14412,7 +17060,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.王智毅 請協助回覆問題\n1.(03045282蔡翼陽)於109年1月16日經貴院施以右膝十字韌帶重建手術，同年月20日出院，醫囑「需專人照顧一個月」及「居家休養三個月」，於上述「居家休養三個月」之期間是否需「半日」專人照護?\n請惠示醫理見解",
+    "question": "Dr.王智毅 請協助回覆問題
+1.(03045282蔡翼陽)於109年1月16日經貴院施以右膝十字韌帶重建手術，同年月20日出院，醫囑「需專人照顧一個月」及「居家休養三個月」，於上述「居家休養三個月」之期間是否需「半日」專人照護?
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14438,7 +17088,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林哲立醫師您好:\n請協助回覆公文內文問題覆公文內文問題,病人姓名:朱安綺(16459993),謝謝您\n1.朱君因上開傷病至貴院治療之醫療經過及復原情形為何？\n2.有無併發症或後遺症？\n3.療養至何日起可恢復一般工作能力？\n4.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "林哲立醫師您好:
+請協助回覆公文內文問題覆公文內文問題,病人姓名:朱安綺(16459993),謝謝您
+1.朱君因上開傷病至貴院治療之醫療經過及復原情形為何？
+2.有無併發症或後遺症？
+3.療養至何日起可恢復一般工作能力？
+4.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14464,7 +17120,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王忠信醫師您好:\n請醫師協助回復公文內文問題,病人姓名:楊文慈(13221795),謝謝您\n1.楊君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「頭部外傷併腦震盪、左小腿及左足踝挫瘀傷」是否係因主訴之傷害事故所致？\n請惠示醫理見解",
+    "question": "王忠信醫師您好:
+請醫師協助回復公文內文問題,病人姓名:楊文慈(13221795),謝謝您
+1.楊君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「頭部外傷併腦震盪、左小腿及左足踝挫瘀傷」是否係因主訴之傷害事故所致？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14490,7 +17151,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "翁佩韋醫師您好:\n請醫師協助回復公文內文問題,病人姓名:楊文慈(13221795),謝謝您\n1.楊君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「頭部外傷併腦震盪、左小腿及左足踝挫瘀傷」是否係因主訴之傷害事故所致？\n4.楊君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解",
+    "question": "翁佩韋醫師您好:
+請醫師協助回復公文內文問題,病人姓名:楊文慈(13221795),謝謝您
+1.楊君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「頭部外傷併腦震盪、左小腿及左足踝挫瘀傷」是否係因主訴之傷害事故所致？
+4.楊君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14516,7 +17186,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "劉恆維醫師您好:\n請醫師協助回復公文內文問題,病人姓名:楊文慈(13221795),謝謝您\n1.楊君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「頭部外傷併腦震盪」是否係因主訴之傷害事故所致？\n4.楊君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解",
+    "question": "劉恆維醫師您好:
+請醫師協助回復公文內文問題,病人姓名:楊文慈(13221795),謝謝您
+1.楊君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「頭部外傷併腦震盪」是否係因主訴之傷害事故所致？
+4.楊君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14542,7 +17221,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "1. 請協助查明貴院病患（朱怡靜09107748）所受「右側手肘挫傷合併三頭肌肌腱部分斷裂及伸腕肌腱部分斷裂」、「右尺骨鷹嘴凸未移位骨折」之傷勢，是否為民國113年8月28日交通事故所致？\n2.是否具因果關係？\n3.並請說明判斷之依據。\n請惠示醫理見解",
+    "question": "1. 請協助查明貴院病患（朱怡靜09107748）所受「右側手肘挫傷合併三頭肌肌腱部分斷裂及伸腕肌腱部分斷裂」、「右尺骨鷹嘴凸未移位骨折」之傷勢，是否為民國113年8月28日交通事故所致？
+2.是否具因果關係？
+3.並請說明判斷之依據。
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14568,7 +17250,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "1. 請協助查明貴院病患（朱怡靜09107748）所受「右側手肘挫傷合併三頭肌肌腱部分斷裂及伸腕肌腱部分斷裂」、「右尺骨鷹嘴凸未移位骨折」之傷勢，是否為民國113年8月28日交通事故所致？\n2.是否具因果關係？\n3.並請說明判斷之依據。\n請惠示醫理見解",
+    "question": "1. 請協助查明貴院病患（朱怡靜09107748）所受「右側手肘挫傷合併三頭肌肌腱部分斷裂及伸腕肌腱部分斷裂」、「右尺骨鷹嘴凸未移位骨折」之傷勢，是否為民國113年8月28日交通事故所致？
+2.是否具因果關係？
+3.並請說明判斷之依據。
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14594,7 +17279,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師好，請協助回答問題，附件內病歷(出院病摘、門診醫令、檢查報告皆已copy釋出過)，請不要更改。\n1.旨揭案件告訴人即被害人（舒奕桓01502187）自民國1113年6月14日至貴院急診、接受手術、住院、出院後回診，綜合認定所受傷害，是否已達刑法第10條第4項之「重傷害」程度?\n\n附錄：中華民國刑法第10條第4項條文：　稱重傷者，謂下列傷害：　一、毀敗或嚴重減損一目或二目之視能。　二、毀敗或嚴重減損一耳或二耳之聽能。　三、毀敗或嚴重減損語能、味能或嗅能。　四、毀敗或嚴重減損一肢以上之機能。　五、毀敗或嚴重減損生殖之機能。　六、其他於身體或健康，有重大不治或難治之傷害。　\n\n請惠示醫理見解",
+    "question": "各位醫師好，請協助回答問題，附件內病歷(出院病摘、門診醫令、檢查報告皆已copy釋出過)，請不要更改。
+1.旨揭案件告訴人即被害人（舒奕桓01502187）自民國1113年6月14日至貴院急診、接受手術、住院、出院後回診，綜合認定所受傷害，是否已達刑法第10條第4項之「重傷害」程度?
+
+附錄：中華民國刑法第10條第4項條文：　稱重傷者，謂下列傷害：　一、毀敗或嚴重減損一目或二目之視能。　二、毀敗或嚴重減損一耳或二耳之聽能。　三、毀敗或嚴重減損語能、味能或嗅能。　四、毀敗或嚴重減損一肢以上之機能。　五、毀敗或嚴重減損生殖之機能。　六、其他於身體或健康，有重大不治或難治之傷害。　
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14620,7 +17310,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師好，請協助回答問題，附件內病歷(出院病摘、門診醫令、檢查報告皆已copy釋出過)，請不要更改。\n1.旨揭案件告訴人即被害人（舒奕桓01502187）自民國1113年6月14日至貴院急診、接受手術、住院、出院後回診，綜合認定所受傷害，是否已達刑法第10條第4項之「重傷害」程度?\n\n附錄：中華民國刑法第10條第4項條文：　稱重傷者，謂下列傷害：　一、毀敗或嚴重減損一目或二目之視能。　二、毀敗或嚴重減損一耳或二耳之聽能。　三、毀敗或嚴重減損語能、味能或嗅能。　四、毀敗或嚴重減損一肢以上之機能。　五、毀敗或嚴重減損生殖之機能。　六、其他於身體或健康，有重大不治或難治之傷害。　\n\n請惠示醫理見解",
+    "question": "各位醫師好，請協助回答問題，附件內病歷(出院病摘、門診醫令、檢查報告皆已copy釋出過)，請不要更改。
+1.旨揭案件告訴人即被害人（舒奕桓01502187）自民國1113年6月14日至貴院急診、接受手術、住院、出院後回診，綜合認定所受傷害，是否已達刑法第10條第4項之「重傷害」程度?
+
+附錄：中華民國刑法第10條第4項條文：　稱重傷者，謂下列傷害：　一、毀敗或嚴重減損一目或二目之視能。　二、毀敗或嚴重減損一耳或二耳之聽能。　三、毀敗或嚴重減損語能、味能或嗅能。　四、毀敗或嚴重減損一肢以上之機能。　五、毀敗或嚴重減損生殖之機能。　六、其他於身體或健康，有重大不治或難治之傷害。　
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14646,7 +17341,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師好，請協助回答問題，附件內病歷(出院病摘、門診醫令、檢查報告皆已copy釋出過)，請不要更改。\n1.旨揭案件告訴人即被害人（舒奕桓01502187）自民國1113年6月14日至貴院急診、接受手術、住院、出院後回診，綜合認定所受傷害，是否已達刑法第10條第4項之「重傷害」程度?\n\n附錄：中華民國刑法第10條第4項條文：　稱重傷者，謂下列傷害：　一、毀敗或嚴重減損一目或二目之視能。　二、毀敗或嚴重減損一耳或二耳之聽能。　三、毀敗或嚴重減損語能、味能或嗅能。　四、毀敗或嚴重減損一肢以上之機能。　五、毀敗或嚴重減損生殖之機能。　六、其他於身體或健康，有重大不治或難治之傷害。　\n\n請惠示醫理見解",
+    "question": "各位醫師好，請協助回答問題，附件內病歷(出院病摘、門診醫令、檢查報告皆已copy釋出過)，請不要更改。
+1.旨揭案件告訴人即被害人（舒奕桓01502187）自民國1113年6月14日至貴院急診、接受手術、住院、出院後回診，綜合認定所受傷害，是否已達刑法第10條第4項之「重傷害」程度?
+
+附錄：中華民國刑法第10條第4項條文：　稱重傷者，謂下列傷害：　一、毀敗或嚴重減損一目或二目之視能。　二、毀敗或嚴重減損一耳或二耳之聽能。　三、毀敗或嚴重減損語能、味能或嗅能。　四、毀敗或嚴重減損一肢以上之機能。　五、毀敗或嚴重減損生殖之機能。　六、其他於身體或健康，有重大不治或難治之傷害。　
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14672,7 +17372,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳志華醫師您好:\n請醫師協助回覆公文內文問題,萬逸雲(10311309)謝謝您\n1.萬君於何時因該症至貴診所初診？\n2.當時症狀如何？\n3.有無外傷？\n4.有無主訴至貴診所就診前曾至何家醫療院所就診？\n5.致病原因為何？\n6.曾否主訴發生事故時間、地點、原因及經過？\n請惠示醫裡見解",
+    "question": "陳志華醫師您好:
+請醫師協助回覆公文內文問題,萬逸雲(10311309)謝謝您
+1.萬君於何時因該症至貴診所初診？
+2.當時症狀如何？
+3.有無外傷？
+4.有無主訴至貴診所就診前曾至何家醫療院所就診？
+5.致病原因為何？
+6.曾否主訴發生事故時間、地點、原因及經過？
+請惠示醫裡見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14698,7 +17406,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.王俊凱  110.6.22-114.12.2 OPD\n1.請惠予告知告訴人（史伊玟00160502）是否有因身心障礙致「記憶喪失」或「無法陳述」之情形？\n請惠示醫理見解",
+    "question": "Dr.王俊凱  110.6.22-114.12.2 OPD
+1.請惠予告知告訴人（史伊玟00160502）是否有因身心障礙致「記憶喪失」或「無法陳述」之情形？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14724,7 +17434,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王智毅醫師您好:\n請醫師協助回覆公文內文問題,病人姓名朱克強(00184823),謝謝您\n1.朱君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「右側膝部內側半月板軟骨外傷性破裂」是否係因主訴之傷害事故所致？\n4.朱君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n8.請確認病歷是否可釋出?\n請惠示醫理見解。",
+    "question": "王智毅醫師您好:
+請醫師協助回覆公文內文問題,病人姓名朱克強(00184823),謝謝您
+1.朱君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「右側膝部內側半月板軟骨外傷性破裂」是否係因主訴之傷害事故所致？
+4.朱君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+8.請確認病歷是否可釋出?
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14750,7 +17470,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.林宜正 105.5.2 OPD\n林淯萱(02675785)為智能障礙及自閉症患者\n1(一)其是否有因前開疾病等於貴院進行治療?\n(二)其是否曾於貴院進行身心障礙鑑定或認定其心智年齡之相關心理衡鑑?",
+    "question": "Dr.林宜正 105.5.2 OPD
+林淯萱(02675785)為智能障礙及自閉症患者
+1(一)其是否有因前開疾病等於貴院進行治療?
+(二)其是否曾於貴院進行身心障礙鑑定或認定其心智年齡之相關心理衡鑑?",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14776,7 +17499,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.柯世祐 114.6.4 ER\n1.惠請說明如附件所示患者(林易彥08063782)於是日之診斷過程？\n2.患者有無外傷或透過儀器檢驗傷勢？\n請惠示醫理見解",
+    "question": "Dr.柯世祐 114.6.4 ER
+1.惠請說明如附件所示患者(林易彥08063782)於是日之診斷過程？
+2.患者有無外傷或透過儀器檢驗傷勢？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14802,7 +17528,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "吳連禎醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:陳騰輝(09234862),謝謝您\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.治療部位如何？\n4.有無外傷？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n8.係屬普通疾病抑何時遭受外力傷害引起？\n請惠示醫裡見解",
+    "question": "吳連禎醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:陳騰輝(09234862),謝謝您
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.治療部位如何？
+4.有無外傷？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+8.係屬普通疾病抑何時遭受外力傷害引起？
+請惠示醫裡見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14828,7 +17564,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "黃茂栓醫師您好，因臺灣新北地方法院調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於02月04日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n此為醫療糾紛請協助確認病歷\n111年至112年門診醫令皆已釋出過請不要修改謝謝\n\n佩妤敬上",
+    "question": "黃茂栓醫師您好，因臺灣新北地方法院調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於02月04日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+此為醫療糾紛請協助確認病歷
+111年至112年門診醫令皆已釋出過請不要修改謝謝
+
+佩妤敬上",
     "doctor_reply": "",
     "remark": "醫療糾紛",
     "status": "已完成",
@@ -14854,7 +17597,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳柏志醫師您好，因臺灣新北地方法院調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於02月04日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n此為醫療糾紛請協助確認病歷\n111年至112年門診醫令皆已釋出過請不要修改謝謝\n\n佩妤敬上",
+    "question": "陳柏志醫師您好，因臺灣新北地方法院調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於02月04日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+此為醫療糾紛請協助確認病歷
+111年至112年門診醫令皆已釋出過請不要修改謝謝
+
+佩妤敬上",
     "doctor_reply": "",
     "remark": "醫療糾紛",
     "status": "已完成",
@@ -14880,7 +17630,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師好   請協助回答問題\n1.病患(陳秋君03758957）復按貴院之診斷證明書所載「右第6頸椎神經根病變」之傷勢，是否已達刑法第10條第4項重傷害之程度？\n\n請惠示醫理見解",
+    "question": "各位醫師好   請協助回答問題
+1.病患(陳秋君03758957）復按貴院之診斷證明書所載「右第6頸椎神經根病變」之傷勢，是否已達刑法第10條第4項重傷害之程度？
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14906,7 +17659,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師好   請協助回答問題\n1.病患(陳秋君03758957）復按貴院之診斷證明書所載「右第6頸椎神經根病變」之傷勢，是否已達刑法第10條第4項重傷害之程度？\n\n請惠示醫理見解",
+    "question": "各位醫師好   請協助回答問題
+1.病患(陳秋君03758957）復按貴院之診斷證明書所載「右第6頸椎神經根病變」之傷勢，是否已達刑法第10條第4項重傷害之程度？
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "稱重傷者，謂下列傷害： 一、毀敗或嚴重減損一目或二目之視能。 二、毀敗或嚴重減損一耳或二耳之聽能。 三、毀敗或嚴重減損語能、味能或嗅能。 四、毀敗或嚴重減損一肢以上之機能。 五、毀敗或嚴重減損生殖之機能。 六、其他於身體或健康，有重大不治或難治之傷害。",
     "status": "已完成",
@@ -14932,7 +17688,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師好   請協助回答問題\n1.病患(陳秋君03758957）復按貴院之診斷證明書所載「右第6頸椎神經根病變」之傷勢，是否已達刑法第10條第4項重傷害之程度？\n\n請惠示醫理見解",
+    "question": "各位醫師好   請協助回答問題
+1.病患(陳秋君03758957）復按貴院之診斷證明書所載「右第6頸椎神經根病變」之傷勢，是否已達刑法第10條第4項重傷害之程度？
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14958,7 +17717,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "許秉閎醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:羅鉦筌(17541615),謝謝您\n於114年9月17日因「腰椎第四五節椎間盤突出併狹窄症」至貴院住院診療，申請職災醫療給付。\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.治療部位如何？\n4.有無外傷？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n8.係屬普通疾病抑何時遭受外力傷害引起？\n請惠示醫理見解",
+    "question": "許秉閎醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:羅鉦筌(17541615),謝謝您
+於114年9月17日因「腰椎第四五節椎間盤突出併狹窄症」至貴院住院診療，申請職災醫療給付。
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.治療部位如何？
+4.有無外傷？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+8.係屬普通疾病抑何時遭受外力傷害引起？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -14984,7 +17754,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林孟穎醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:余逸晴(12875003),謝謝您\n1.余君有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「右眼角膜糜爛、右眼疼痛、右側眼角膜創傷性糜爛，經雷射手術復」是否係因主訴之傷一害事故所致？\n4.余君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "林孟穎醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:余逸晴(12875003),謝謝您
+1.余君有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「右眼角膜糜爛、右眼疼痛、右側眼角膜創傷性糜爛，經雷射手術復」是否係因主訴之傷一害事故所致？
+4.余君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15010,7 +17789,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "許瓅文醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:余逸晴(12875003),謝謝您\n1.余君有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「右眼角膜糜爛、右眼疼痛、右側眼角膜創傷性糜爛，經雷射手術復」是否係因主訴之傷一害事故所致？\n請惠示醫理見解。",
+    "question": "許瓅文醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:余逸晴(12875003),謝謝您
+1.余君有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「右眼角膜糜爛、右眼疼痛、右側眼角膜創傷性糜爛，經雷射手術復」是否係因主訴之傷一害事故所致？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15036,7 +17820,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "19020",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師您好\n1. (藍月00638681)前於112年4月8日至貴院急診，診斷結果為：「多處挫傷併疼痛(雙肩、雙手掌、左髖部、雙膝、右足)」，上開傷勢之治療方式為何？\n\n請惠示醫理見解",
+    "question": "各位醫師您好
+1. (藍月00638681)前於112年4月8日至貴院急診，診斷結果為：「多處挫傷併疼痛(雙肩、雙手掌、左髖部、雙膝、右足)」，上開傷勢之治療方式為何？
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15062,7 +17849,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "醫師好請協助回答問題\n1. (藍月00638681)前於112年4月8日至貴院急診，診斷結果為：「多處挫傷併疼痛(雙肩、雙手掌、左髖部、雙膝、右足)」，嗣於同年月19日再次診斷結果為：「右側肩旋轉肌破裂、左側肩旋轉肌破裂、雙側膝挂傷」，上開傷勢之治療方式為何？\n2.1. 承上，有無進行附件163頁至165頁手術之必要？\n2.2.如有，請具體說明必要原因。\n3. 承上，上開傷勢有無進行中醫治療之必要？如有，請具體說明必要原因。\n6.1藍月前於111年3月29日進行左側旋轉肌破裂手術，手術完畢後，其左側旋轉肌破裂是否已完成修復？\n6.2手術完畢至完全痊癒需要多久時間？\n6.3如何判定其痊癒與否？\n7.承上，左側旋轉肌破裂手術完畢後，如因意外再行跌倒，是否有再次破裂之可能？\n請惠示醫理見解",
+    "question": "醫師好請協助回答問題
+1. (藍月00638681)前於112年4月8日至貴院急診，診斷結果為：「多處挫傷併疼痛(雙肩、雙手掌、左髖部、雙膝、右足)」，嗣於同年月19日再次診斷結果為：「右側肩旋轉肌破裂、左側肩旋轉肌破裂、雙側膝挂傷」，上開傷勢之治療方式為何？
+2.1. 承上，有無進行附件163頁至165頁手術之必要？
+2.2.如有，請具體說明必要原因。
+3. 承上，上開傷勢有無進行中醫治療之必要？如有，請具體說明必要原因。
+6.1藍月前於111年3月29日進行左側旋轉肌破裂手術，手術完畢後，其左側旋轉肌破裂是否已完成修復？
+6.2手術完畢至完全痊癒需要多久時間？
+6.3如何判定其痊癒與否？
+7.承上，左側旋轉肌破裂手術完畢後，如因意外再行跌倒，是否有再次破裂之可能？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "王醫師抱歉，我漏寫了一題，再麻煩您回答。8.1貴院前於112年11月20日診斷結果為「左膝半月板破裂及內副韌帶損傷」，可否判定該病況之造成原因為何? 8.2 與112年4月8日意外跌倒有無關聯? 如認定有關連，請具體敘明認定原因。",
     "status": "已完成",
@@ -15088,7 +17884,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "請協助回覆問題\n4. 1. (藍月00638681)前於112年11月13日至貴院一般外科就診(檢附附件155頁)，該日就診原因為何？\n4.2.診斷結果為何？\n4.3.為何有麻醉費5000元？\n請惠示醫理見解",
+    "question": "請協助回覆問題
+4. 1. (藍月00638681)前於112年11月13日至貴院一般外科就診(檢附附件155頁)，該日就診原因為何？
+4.2.診斷結果為何？
+4.3.為何有麻醉費5000元？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "蘇醫師您好，法院沒有說，請醫師再麻煩協助回覆問題 4. 1. (藍月00638681)前於112年11月13日至貴院一般外科就診(檢附附件155頁)，該日就診原因為何？ 4.2.診斷結果為何？ 4.3.為何有麻醉費5000元？ 請惠示醫理見解",
     "status": "已完成",
@@ -15114,7 +17914,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蘇醫師您好\n有關病人藍月，還是需要請您回答有關就診原因及診斷為何。\n4. 1. (藍月00638681)前於112年11月13日至貴院一般外科就診(檢附附件155頁)，該日就診原因為何？\n4.2.診斷結果為何？\n請惠示醫理見解",
+    "question": "蘇醫師您好
+有關病人藍月，還是需要請您回答有關就診原因及診斷為何。
+4. 1. (藍月00638681)前於112年11月13日至貴院一般外科就診(檢附附件155頁)，該日就診原因為何？
+4.2.診斷結果為何？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15140,7 +17944,21 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳致宇醫師您好\n請醫師協助回覆公文內文問題,病人姓名吳姿瑩(03543690),謝謝您\n1.吳姿瑩君因「右側近端肱骨骨折」何時至貴院初診？\n2.是否有外傷？\n3.是否受傷當天即就診？\n4.初診時傷勢如何？\n5.有無初診當日傷害照片、X光碟片供參？\n6.有無主訴所患發生事故時間、地點、原因及經過如何？\n7.是自行前往抑或由何人送醫？\n8.吳姿瑩君在貴院治療經過情形及傷勢復原情形如何？\n9.其傷勢療養至何時已穩定或轉輕？\n10何時起可恢復工作或於工作無影響？\n11.吳姿瑩君至貴院求診時，有無主訴至貴院就診前曾至何家醫療院所治療？\n12.病歷是否可釋出?\n請惠示醫理見解",
+    "question": "陳致宇醫師您好
+請醫師協助回覆公文內文問題,病人姓名吳姿瑩(03543690),謝謝您
+1.吳姿瑩君因「右側近端肱骨骨折」何時至貴院初診？
+2.是否有外傷？
+3.是否受傷當天即就診？
+4.初診時傷勢如何？
+5.有無初診當日傷害照片、X光碟片供參？
+6.有無主訴所患發生事故時間、地點、原因及經過如何？
+7.是自行前往抑或由何人送醫？
+8.吳姿瑩君在貴院治療經過情形及傷勢復原情形如何？
+9.其傷勢療養至何時已穩定或轉輕？
+10何時起可恢復工作或於工作無影響？
+11.吳姿瑩君至貴院求診時，有無主訴至貴院就診前曾至何家醫療院所治療？
+12.病歷是否可釋出?
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15166,7 +17984,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "紀則宇醫師您好:\n請醫師協助回覆公文內文問題,病人姓名吳姿瑩(03543690),謝謝您\n1.吳姿瑩君因「右側近端肱骨骨折」何時至貴院初診？\n2.是否有外傷？\n3.是否受傷當天即就診？\n4.初診時傷勢如何？\n5.有無初診當日傷害照片、X光碟片供參？\n6.有無主訴所患發生事故時間、地點、原因及經過如何？\n7.是自行前往抑或由何人送醫？\n請惠是醫理見解",
+    "question": "紀則宇醫師您好:
+請醫師協助回覆公文內文問題,病人姓名吳姿瑩(03543690),謝謝您
+1.吳姿瑩君因「右側近端肱骨骨折」何時至貴院初診？
+2.是否有外傷？
+3.是否受傷當天即就診？
+4.初診時傷勢如何？
+5.有無初診當日傷害照片、X光碟片供參？
+6.有無主訴所患發生事故時間、地點、原因及經過如何？
+7.是自行前往抑或由何人送醫？
+請惠是醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15192,7 +18019,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於02月11日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於02月11日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "醫療爭議",
     "status": "已完成",
@@ -15218,7 +18049,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於02月11日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於02月11日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "醫療爭議",
     "status": "已完成",
@@ -15244,7 +18079,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於02月11日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於02月11日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "經詢問吳美儀醫師: OK 可釋出。",
     "remark": "醫療爭議",
     "status": "已回覆",
@@ -15270,7 +18109,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於02月11日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於02月11日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "醫療爭議",
     "status": "已完成",
@@ -15296,7 +18139,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於02月11日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於02月11日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "醫療爭議",
     "status": "已完成",
@@ -15322,7 +18169,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "是",
     "remark": "",
     "status": "已回覆",
@@ -15348,7 +18198,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "可釋出",
     "remark": "醫療糾紛",
     "status": "已回覆",
@@ -15374,7 +18227,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "可",
     "remark": "",
     "status": "已回覆",
@@ -15400,7 +18256,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "醫療糾紛",
     "status": "待回覆",
@@ -15426,7 +18285,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "1.2.3可以",
     "remark": "醫療糾紛",
     "status": "已回覆",
@@ -15452,7 +18314,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "經詢問吳美儀醫師: OK 可釋出。",
     "remark": "醫療糾紛",
     "status": "已回覆",
@@ -15478,7 +18343,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "可釋出",
     "remark": "醫療糾紛",
     "status": "已回覆",
@@ -15504,7 +18372,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "醫療糾紛",
     "status": "待回覆",
@@ -15530,7 +18401,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療糾紛)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於09月04日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "神內部分可釋出，謝謝。",
     "remark": "醫療糾紛",
     "status": "已回覆",
@@ -15556,7 +18430,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "葉俊廷醫師您好:\n請醫師協助回覆公文內文問題,病人姓名陳偉祥(06849557),謝謝您\n1.陳君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「鼻血」是否係因主訴之傷害事故所致？\n請惠示醫理見解",
+    "question": "葉俊廷醫師您好:
+請醫師協助回覆公文內文問題,病人姓名陳偉祥(06849557),謝謝您
+1.陳君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「鼻血」是否係因主訴之傷害事故所致？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15582,7 +18461,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林哲立醫師您好\n請醫師協助回覆公文內文問題,病人姓名:林詩庭(17552370)\n1.林君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「左髖、左大腿骨折，手術後，合併重度左髖創傷性關節炎」是否係因主訴之傷害事故所致？\n4.林君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "林哲立醫師您好
+請醫師協助回覆公文內文問題,病人姓名:林詩庭(17552370)
+1.林君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「左髖、左大腿骨折，手術後，合併重度左髖創傷性關節炎」是否係因主訴之傷害事故所致？
+4.林君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15608,8 +18496,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "邱彥碩醫師您好\n請醫師協助回覆公文內文問題,病人姓名:林詩庭(17552370)\n1.林君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「左髖、左大腿骨折，手術後，合併重度左髖創傷性關節炎」是否係因主訴之傷害事故所致？\n4.林君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1. 有\n2. 2023-4月 受傷、骨盆骨折\n3. 是事故造成\n4. 來本院接受全人工髖關節置換手術\n5. 沒有併發症\n6. 本院手術後四個月後，可以一般工作\n7. 專業",
+    "question": "邱彥碩醫師您好
+請醫師協助回覆公文內文問題,病人姓名:林詩庭(17552370)
+1.林君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「左髖、左大腿骨折，手術後，合併重度左髖創傷性關節炎」是否係因主訴之傷害事故所致？
+4.林君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1. 有
+2. 2023-4月 受傷、骨盆骨折
+3. 是事故造成
+4. 來本院接受全人工髖關節置換手術
+5. 沒有併發症
+6. 本院手術後四個月後，可以一般工作
+7. 專業",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/26 上午 08:00",
@@ -15634,7 +18537,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林哲立醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:鄭市紘(03876138),謝謝您\n(一)\n1-1鄭君就診有無主訴傷害事故？\n1-2發生日期及原因為何？\n1-3所患「右肩關節脫臼，已復位」是否係因主訴之傷害事故所致？\n(二)\n2-1鄭君因上開傷病治療經過為何？\n2-2有無併發症或後遺症？\n2-3療養至何時起可從事一般工作？\n2-4認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "林哲立醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:鄭市紘(03876138),謝謝您
+(一)
+1-1鄭君就診有無主訴傷害事故？
+1-2發生日期及原因為何？
+1-3所患「右肩關節脫臼，已復位」是否係因主訴之傷害事故所致？
+(二)
+2-1鄭君因上開傷病治療經過為何？
+2-2有無併發症或後遺症？
+2-3療養至何時起可從事一般工作？
+2-4認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15660,8 +18574,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "郭庭如醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:鄭市紘(03876138),謝謝您\n(二)\n2-1鄭君因上開傷病治療經過為何？\n2-2有無併發症或後遺症？\n2-3療養至何時起可從事一般工作？\n2-4認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1. 病人因右肩膀脫位於北市聯醫復位，後仍疼痛與活動度受限，由本院骨科轉介至復健科\n2. 於 2025 年 3 月就診時，診斷存有肩關節沾黏（Frozen Shoulder），表現為右肩主動及被動活動度明顯受限。因病人僅就診一次，後續是否有改善、惡化或演變為習慣性脫位等後遺症，因缺乏追蹤紀錄而無法評估。\n3. 依據 2025 年 3 月就診時之病況，病人當時肩關節活動度受限，尚不具備從事需雙手上舉或粗重勞動之工作能力。然因病人後續未回診接受功能追蹤，目前無法判定其現階段之勞動能力或確切可恢復工作之日期。\n4. 因病人僅就診一次後即中斷診療，本院無後續復健參與紀錄或功能量表評估數據，故無法對其目前狀態做出進一步認定。",
+    "question": "郭庭如醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:鄭市紘(03876138),謝謝您
+(二)
+2-1鄭君因上開傷病治療經過為何？
+2-2有無併發症或後遺症？
+2-3療養至何時起可從事一般工作？
+2-4認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1. 病人因右肩膀脫位於北市聯醫復位，後仍疼痛與活動度受限，由本院骨科轉介至復健科
+2. 於 2025 年 3 月就診時，診斷存有肩關節沾黏（Frozen Shoulder），表現為右肩主動及被動活動度明顯受限。因病人僅就診一次，後續是否有改善、惡化或演變為習慣性脫位等後遺症，因缺乏追蹤紀錄而無法評估。
+3. 依據 2025 年 3 月就診時之病況，病人當時肩關節活動度受限，尚不具備從事需雙手上舉或粗重勞動之工作能力。然因病人後續未回診接受功能追蹤，目前無法判定其現階段之勞動能力或確切可恢復工作之日期。
+4. 因病人僅就診一次後即中斷診療，本院無後續復健參與紀錄或功能量表評估數據，故無法對其目前狀態做出進一步認定。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/28 上午 08:00",
@@ -15686,7 +18610,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳加憲醫師您好:\n請醫師協助回覆公文內文問題,病人姓名許柏男(15930507),謝謝您\n許君因「右側踝骨骨折、右小腿蜂窩性組織炎」在貴院診療，並檢具貴院出具之診斷書(病歷曾釋出過)\n1.許君醫療經過及傷勢復原情形如何？\n2.有無併發症或後遺症？\n3.其何時應可恢復一般工作能力？\n4.請確認病歷是否可釋出?\n請惠示醫理見解。",
+    "question": "陳加憲醫師您好:
+請醫師協助回覆公文內文問題,病人姓名許柏男(15930507),謝謝您
+許君因「右側踝骨骨折、右小腿蜂窩性組織炎」在貴院診療，並檢具貴院出具之診斷書(病歷曾釋出過)
+1.許君醫療經過及傷勢復原情形如何？
+2.有無併發症或後遺症？
+3.其何時應可恢復一般工作能力？
+4.請確認病歷是否可釋出?
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "請陳醫師協助回復許君何時應可恢復一般工作能力?謝謝您",
     "status": "已完成",
@@ -15712,7 +18643,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師您好請協助回覆問題\n1.原告(崔丹鳳07323724)於貴院診斷證明書所載傷害是否為本案車禍所致？\n2.1 原告是否因本件傷害而無法工作？\n2.2 若是，因傷無法工作之期間為何(原告自陳擔任居服員，原告有於貴院住院手術兩次，請分別回覆)？\n第一次手術：112.12.20 \n第二次手術：113.02.06 \n3.1原告就診、住院期間、出院後有無專人全日或半日照護之必要？\n3.2若有，其需用看護之期間為何(原告有於貴院住院手術兩次，請分別回覆)？\n4.1原告是否無法自行開車。騎車而需搭乘計程車之必要？\n4.2若是，需搭乘之期間為何(原告有於貴院住院手術兩次，請分別回覆)？\n\n請惠示醫理見解",
+    "question": "各位醫師您好請協助回覆問題
+1.原告(崔丹鳳07323724)於貴院診斷證明書所載傷害是否為本案車禍所致？
+2.1 原告是否因本件傷害而無法工作？
+2.2 若是，因傷無法工作之期間為何(原告自陳擔任居服員，原告有於貴院住院手術兩次，請分別回覆)？
+第一次手術：112.12.20 
+第二次手術：113.02.06 
+3.1原告就診、住院期間、出院後有無專人全日或半日照護之必要？
+3.2若有，其需用看護之期間為何(原告有於貴院住院手術兩次，請分別回覆)？
+4.1原告是否無法自行開車。騎車而需搭乘計程車之必要？
+4.2若是，需搭乘之期間為何(原告有於貴院住院手術兩次，請分別回覆)？
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15738,7 +18680,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師您好請協助回覆問題\n1.原告(崔丹鳳07323724)於貴院診斷證明書所載傷害是否為本案車禍所致？\n2.1 原告是否因本件傷害而無法工作？\n2.2 若是，因傷無法工作之期間為何(原告自陳擔任居服員，原告有於貴院住院手術兩次，請分別回覆)？\n第一次手術：112.12.20 \n第二次手術：113.02.06 \n3.1原告就診、住院期間、出院後有無專人全日或半日照護之必要？\n3.2若有，其需用看護之期間為何(原告有於貴院住院手術兩次，請分別回覆)？\n4.1原告是否無法自行開車。騎車而需搭乘計程車之必要？\n4.2若是，需搭乘之期間為何(原告有於貴院住院手術兩次，請分別回覆)？\n\n請惠示醫理見解",
+    "question": "各位醫師您好請協助回覆問題
+1.原告(崔丹鳳07323724)於貴院診斷證明書所載傷害是否為本案車禍所致？
+2.1 原告是否因本件傷害而無法工作？
+2.2 若是，因傷無法工作之期間為何(原告自陳擔任居服員，原告有於貴院住院手術兩次，請分別回覆)？
+第一次手術：112.12.20 
+第二次手術：113.02.06 
+3.1原告就診、住院期間、出院後有無專人全日或半日照護之必要？
+3.2若有，其需用看護之期間為何(原告有於貴院住院手術兩次，請分別回覆)？
+4.1原告是否無法自行開車。騎車而需搭乘計程車之必要？
+4.2若是，需搭乘之期間為何(原告有於貴院住院手術兩次，請分別回覆)？
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15764,7 +18717,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師您好請協助回覆問題\n1.原告(崔丹鳳07323724)於貴院診斷證明書所載傷害是否為本案車禍所致？\n2.1 原告是否因本件傷害而無法工作？\n2.2 若是，因傷無法工作之期間為何(原告自陳擔任居服員，原告有於貴院住院手術兩次，請分別回覆)？\n第一次手術：112.12.20 \n第二次手術：113.02.06 \n3.1原告就診、住院期間、出院後有無專人全日或半日照護之必要？\n3.2若有，其需用看護之期間為何(原告有於貴院住院手術兩次，請分別回覆)？\n4.1原告是否無法自行開車。騎車而需搭乘計程車之必要？\n4.2若是，需搭乘之期間為何(原告有於貴院住院手術兩次，請分別回覆)？\n\n請惠示醫理見解",
+    "question": "各位醫師您好請協助回覆問題
+1.原告(崔丹鳳07323724)於貴院診斷證明書所載傷害是否為本案車禍所致？
+2.1 原告是否因本件傷害而無法工作？
+2.2 若是，因傷無法工作之期間為何(原告自陳擔任居服員，原告有於貴院住院手術兩次，請分別回覆)？
+第一次手術：112.12.20 
+第二次手術：113.02.06 
+3.1原告就診、住院期間、出院後有無專人全日或半日照護之必要？
+3.2若有，其需用看護之期間為何(原告有於貴院住院手術兩次，請分別回覆)？
+4.1原告是否無法自行開車。騎車而需搭乘計程車之必要？
+4.2若是，需搭乘之期間為何(原告有於貴院住院手術兩次，請分別回覆)？
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15790,8 +18754,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:許雅鈞(02415563),謝謝您\n1.許君何時因上開傷病至貴院初診？\n2.當時有無主訴傷害事故？\n3.發生日期及經過為何？\n4.所患是否為主訴之事故所致？\n請惠示醫理見解",
-    "doctor_reply": "1. 病歷有，請自己讀\n2. 主訴為工作傷害(購物車撞擊)\n3. 不清楚\n4. 下背挫傷可能為主訴之原因造成",
+    "question": "陳冠豪醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:許雅鈞(02415563),謝謝您
+1.許君何時因上開傷病至貴院初診？
+2.當時有無主訴傷害事故？
+3.發生日期及經過為何？
+4.所患是否為主訴之事故所致？
+請惠示醫理見解",
+    "doctor_reply": "1. 病歷有，請自己讀
+2. 主訴為工作傷害(購物車撞擊)
+3. 不清楚
+4. 下背挫傷可能為主訴之原因造成",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/13 上午 08:00",
@@ -15816,7 +18789,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林哲立醫師您好\n請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.受傷之部位？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n請惠示醫理見解",
+    "question": "林哲立醫師您好
+請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.受傷之部位？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -15842,8 +18824,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳弘洲醫師您好\n請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.受傷之部位？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n請惠示醫理見解",
-    "doctor_reply": "1. 114年9月1日復健科初診。\n2. 右屁股、尾底骨、右肩痛併右下肢體不適。\n3. 無。\n4. 尾底骨、腰椎、頸椎。\n5. 114年6月14日車禍致傷。\n6. 114年6月14日去急診，後於本院骨科、神經外科、精神科皆有多次門診紀錄。\n7. 可能是車禍。",
+    "question": "陳弘洲醫師您好
+請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.受傷之部位？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+請惠示醫理見解",
+    "doctor_reply": "1. 114年9月1日復健科初診。
+2. 右屁股、尾底骨、右肩痛併右下肢體不適。
+3. 無。
+4. 尾底骨、腰椎、頸椎。
+5. 114年6月14日車禍致傷。
+6. 114年6月14日去急診，後於本院骨科、神經外科、精神科皆有多次門診紀錄。
+7. 可能是車禍。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/14 上午 08:00",
@@ -15868,8 +18865,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "莊凱迪醫師您好\n請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.受傷之部位？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n請惠示醫理見解",
-    "doctor_reply": "1. 114年6月21日\n2. 病人自述車禍後胡言亂語，說話不清楚。\n3. 非精神科診療範圍\n4. 非精神科診療範圍\n5. 6月14日之車禍讓他害怕、情緒不穩定\n6. 並未提及\n7. 創傷後壓力症成因至今仍不明",
+    "question": "莊凱迪醫師您好
+請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.受傷之部位？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+請惠示醫理見解",
+    "doctor_reply": "1. 114年6月21日
+2. 病人自述車禍後胡言亂語，說話不清楚。
+3. 非精神科診療範圍
+4. 非精神科診療範圍
+5. 6月14日之車禍讓他害怕、情緒不穩定
+6. 並未提及
+7. 創傷後壓力症成因至今仍不明",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/14 上午 08:00",
@@ -15894,8 +18906,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "蘇鈺凱醫師您好\n請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.受傷之部位？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n請惠示醫理見解",
-    "doctor_reply": "1.2025/6/21於神經外科門診初次就診。\n2.病人有持續頭暈、頭痛、噁心嘔吐之症狀。\n3.有外傷。\n4.右側小腿擦傷及頭皮腫脹。\n5.病人於2025/6/14至本院急診就醫，主訴為機車與機車車禍。\n6.病人於本院骨科(2025/6/16)、神經外科(2025/6/21)及精神科(2025/6/21)就診。\n7.輕度頭部外傷及頭皮腫脹，之後為頭部外傷創傷後症候群。",
+    "question": "蘇鈺凱醫師您好
+請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.受傷之部位？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+請惠示醫理見解",
+    "doctor_reply": "1.2025/6/21於神經外科門診初次就診。
+2.病人有持續頭暈、頭痛、噁心嘔吐之症狀。
+3.有外傷。
+4.右側小腿擦傷及頭皮腫脹。
+5.病人於2025/6/14至本院急診就醫，主訴為機車與機車車禍。
+6.病人於本院骨科(2025/6/16)、神經外科(2025/6/21)及精神科(2025/6/21)就診。
+7.輕度頭部外傷及頭皮腫脹，之後為頭部外傷創傷後症候群。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/14 上午 08:00",
@@ -15920,8 +18947,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳天恩醫師您好\n請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.受傷之部位？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n請惠示醫理見解",
-    "doctor_reply": "1. 114/06/14\n2. 右臀部及雙下肢疼痛\n3.有\n4. 右臀部及雙下肢外傷\n5. 車禍後發生\n6. 無\n7. 車禍後外傷",
+    "question": "陳天恩醫師您好
+請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.受傷之部位？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+請惠示醫理見解",
+    "doctor_reply": "1. 114/06/14
+2. 右臀部及雙下肢疼痛
+3.有
+4. 右臀部及雙下肢外傷
+5. 車禍後發生
+6. 無
+7. 車禍後外傷",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/14 上午 08:00",
@@ -15946,8 +18988,24 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "邱彥碩醫師您好\n請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.受傷之部位？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n請惠示醫理見解",
-    "doctor_reply": "1. 林小姐看了本院骨科至少四位醫師\n看邱醫師的初診是114-7-11\n2. 沒有特別聚焦的症狀\n3. 7-11 來門診已經沒有特別外傷\n4. 病人自述有腦震盪、多處挫傷\n5. 病人自述114-6-14車禍、其他沒有提及\n6. 沒有\n7. 不清楚，前面已經看了兩個以上的本院骨科醫師",
+    "question": "邱彥碩醫師您好
+請醫師協助回覆公文內文問題,病人姓名:林珊如(04915289),謝謝您
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.受傷之部位？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+請惠示醫理見解",
+    "doctor_reply": "1. 林小姐看了本院骨科至少四位醫師
+看邱醫師的初診是114-7-11
+2. 沒有特別聚焦的症狀
+3. 7-11 來門診已經沒有特別外傷
+4. 病人自述有腦震盪、多處挫傷
+5. 病人自述114-6-14車禍、其他沒有提及
+6. 沒有
+7. 不清楚，前面已經看了兩個以上的本院骨科醫師",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/26 上午 08:00",
@@ -15972,8 +19030,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "1.本件被告(廖瑞生12792887）目前是否於貴院治療失智症？\n2.倘是，請說明依被告目前治療狀況，其理解能力及語言能力如何，可否理解對話內容並陳述自己意見？\n請惠示醫理見解",
-    "doctor_reply": "1. 病患目前為極輕度失智症。自民國114年9月12日起於本院持續接受治療與追蹤。\n2. 病患能進行基本日常對話，惟對談內容之理解力有限，對於較複雜或抽象之事項較難掌握。陳述事件時僅能概略說明，無法清楚敘述具體細節，記憶力明顯減退，判斷能力亦有下降情形。於處理較複雜或需抽象思考之事務時，通常需家屬陪同或協助。目前個人基本生活照護尚可自行處理。精神症狀方面，偶有妄想表現及情緒不穩之情形。多次回診由家屬代為領藥。114年11月17日施行心智功能測驗結果如下：MMSE：10分,CASI：43分,CDR：0.5。綜合評估，病患對一般簡單對話尚可理解並表達基本意見，惟對於較複雜事項之理解與判斷能力明顯不足。",
+    "question": "1.本件被告(廖瑞生12792887）目前是否於貴院治療失智症？
+2.倘是，請說明依被告目前治療狀況，其理解能力及語言能力如何，可否理解對話內容並陳述自己意見？
+請惠示醫理見解",
+    "doctor_reply": "1. 病患目前為極輕度失智症。自民國114年9月12日起於本院持續接受治療與追蹤。
+2. 病患能進行基本日常對話，惟對談內容之理解力有限，對於較複雜或抽象之事項較難掌握。陳述事件時僅能概略說明，無法清楚敘述具體細節，記憶力明顯減退，判斷能力亦有下降情形。於處理較複雜或需抽象思考之事務時，通常需家屬陪同或協助。目前個人基本生活照護尚可自行處理。精神症狀方面，偶有妄想表現及情緒不穩之情形。多次回診由家屬代為領藥。114年11月17日施行心智功能測驗結果如下：MMSE：10分,CASI：43分,CDR：0.5。綜合評估，病患對一般簡單對話尚可理解並表達基本意見，惟對於較複雜事項之理解與判斷能力明顯不足。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/22 上午 08:00",
@@ -15998,8 +19059,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "1.本件被告(廖瑞生12792887）目前是否於貴院治療失智症？\n2.倘是，請說明依被告目前治療狀況，其理解能力及語言能力如何，可否理解對話內容並陳述自己意見？\n請惠示醫理見解",
-    "doctor_reply": "1. 是\n2. 語言能力尚可，但是記憶功能差，對事情都不記得。故可以理解問話內容，但是回答內容可能錯誤，尤其是回憶過去事項，很可能為錯誤。(CASI 43分，MMSE 10)\n3. 上述為門診與心理衡鑑之結果推估，實際狀況需要司法鑑定協助判別，尤其建議給予病人進行監護宣告之司法鑑定。",
+    "question": "1.本件被告(廖瑞生12792887）目前是否於貴院治療失智症？
+2.倘是，請說明依被告目前治療狀況，其理解能力及語言能力如何，可否理解對話內容並陳述自己意見？
+請惠示醫理見解",
+    "doctor_reply": "1. 是
+2. 語言能力尚可，但是記憶功能差，對事情都不記得。故可以理解問話內容，但是回答內容可能錯誤，尤其是回憶過去事項，很可能為錯誤。(CASI 43分，MMSE 10)
+3. 上述為門診與心理衡鑑之結果推估，實際狀況需要司法鑑定協助判別，尤其建議給予病人進行監護宣告之司法鑑定。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/15 上午 08:00",
@@ -16024,8 +19089,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "許秉閎醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:翁仁豐(07726833),謝謝您\n1.據貴院114年9月19日至114年10月9日期間出具之診斷書及職業病評估報告書載，翁君所患係屬職業傷病，究黃君之職業暴露係依其自述或實地訪視確認？\n2.其職業暴露之詳情為何？\n3.是否符合勞動部職業疾病認定參考指引之認定基準？\n4.所患與工作貢獻度是否大於50%？\n5.有無做成職業疾病評估報告？如有，請寄送本局供參。\n請惠示醫理見解",
-    "doctor_reply": "1.自述\n2.自述三十年工作中頸部，雙側肩部重物搬運暴露\n3.請詢問職醫科 蘇千田 10／09就診\n4.請詢問職醫科 蘇千田\n5.請詢問職醫科 蘇千田",
+    "question": "許秉閎醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:翁仁豐(07726833),謝謝您
+1.據貴院114年9月19日至114年10月9日期間出具之診斷書及職業病評估報告書載，翁君所患係屬職業傷病，究黃君之職業暴露係依其自述或實地訪視確認？
+2.其職業暴露之詳情為何？
+3.是否符合勞動部職業疾病認定參考指引之認定基準？
+4.所患與工作貢獻度是否大於50%？
+5.有無做成職業疾病評估報告？如有，請寄送本局供參。
+請惠示醫理見解",
+    "doctor_reply": "1.自述
+2.自述三十年工作中頸部，雙側肩部重物搬運暴露
+3.請詢問職醫科 蘇千田 10／09就診
+4.請詢問職醫科 蘇千田
+5.請詢問職醫科 蘇千田",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/16 上午 08:00",
@@ -16050,8 +19126,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "蘇千田醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:翁仁豐(07726833),謝謝您\n1.據貴院114年9月19日至114年10月9日期間出具之診斷書及職業病評估報告書載，翁君所患係屬職業傷病，究黃君之職業暴露係依其自述或實地訪視確認？\n2.其職業暴露之詳情為何？\n3.是否符合勞動部職業疾病認定參考指引之認定基準？\n4.所患與工作貢獻度是否大於50%？\n5.有無做成職業疾病評估報告？如有，請寄送本局供參。\n請惠示醫理見解",
-    "doctor_reply": "1. 自述。\n2. 30年以上泥作相關重物搬運。\n3. 未確認完全符合。\n4. 是。\n5. 無。",
+    "question": "蘇千田醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:翁仁豐(07726833),謝謝您
+1.據貴院114年9月19日至114年10月9日期間出具之診斷書及職業病評估報告書載，翁君所患係屬職業傷病，究黃君之職業暴露係依其自述或實地訪視確認？
+2.其職業暴露之詳情為何？
+3.是否符合勞動部職業疾病認定參考指引之認定基準？
+4.所患與工作貢獻度是否大於50%？
+5.有無做成職業疾病評估報告？如有，請寄送本局供參。
+請惠示醫理見解",
+    "doctor_reply": "1. 自述。
+2. 30年以上泥作相關重物搬運。
+3. 未確認完全符合。
+4. 是。
+5. 無。",
     "remark": "請蘇主任再麻煩回覆公文問題,謝謝",
     "status": "已完成",
     "due_date": "2026/2/16 上午 08:00",
@@ -16076,8 +19163,36 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "吳美儀副院長您好:\n請副院長協助回覆公文內文問題,病人名姓名:施麗玲(00619130),謝謝您\n(一)\n1-1.施君初診時有何主訴？\n1-2.其發生之時間、原因及經過如何？\n1-3.其至貴院就診前曾至何醫院就診過？\n(二)\n2-1.其所息係屬先天性疾病？\n2-2.退化性疾病一？\n2-3.突發性疾病？\n2.4.抑或遭受外傷引起或其他何原因所致？\n請惠示醫理見解",
-    "doctor_reply": "1-1.施君初診時有何主訴？\n2015年04月22日因dysuria for one week, lower suprapubic pain 至門診就診\n\n1-2.其發生之時間、原因及經過如何？\n2015年因解尿難至門診就診，診斷泌尿道感染給予抗生素治療\n2020 年05月因泌尿道感染於泌尿科追蹤腹部電腦斷層顯示\nA 2.3 cm left renal pelvic stone causing hydronephrosis and perirenal fat stranding.並於2020/6/2 接受Left PCNL手術\n2021/1/22 因左腰傷口持續滲液住院,於2021/1/23 安排left endoureterectomy + left D-J insertion+wound debridement手術，並持續於腎臟科門診追蹤，發現左側腎臟萎縮，且動態腎檢查顯示Left = 5.1 ml/min , Right = 61.3 ml/min , Total = 66.4 ml/min.\n\n1-3.其至貴院就診前曾至何醫院就診過？\n不詳\n\n\n(二)\n2-1.其所息係屬先天性疾病？非\n2-2.退化性疾病一？ 是\n2-3.突發性疾病？ 非\n2.4.抑或遭受外傷引起或其他何原因所致？非",
+    "question": "吳美儀副院長您好:
+請副院長協助回覆公文內文問題,病人名姓名:施麗玲(00619130),謝謝您
+(一)
+1-1.施君初診時有何主訴？
+1-2.其發生之時間、原因及經過如何？
+1-3.其至貴院就診前曾至何醫院就診過？
+(二)
+2-1.其所息係屬先天性疾病？
+2-2.退化性疾病一？
+2-3.突發性疾病？
+2.4.抑或遭受外傷引起或其他何原因所致？
+請惠示醫理見解",
+    "doctor_reply": "1-1.施君初診時有何主訴？
+2015年04月22日因dysuria for one week, lower suprapubic pain 至門診就診
+
+1-2.其發生之時間、原因及經過如何？
+2015年因解尿難至門診就診，診斷泌尿道感染給予抗生素治療
+2020 年05月因泌尿道感染於泌尿科追蹤腹部電腦斷層顯示
+A 2.3 cm left renal pelvic stone causing hydronephrosis and perirenal fat stranding.並於2020/6/2 接受Left PCNL手術
+2021/1/22 因左腰傷口持續滲液住院,於2021/1/23 安排left endoureterectomy + left D-J insertion+wound debridement手術，並持續於腎臟科門診追蹤，發現左側腎臟萎縮，且動態腎檢查顯示Left = 5.1 ml/min , Right = 61.3 ml/min , Total = 66.4 ml/min.
+
+1-3.其至貴院就診前曾至何醫院就診過？
+不詳
+
+
+(二)
+2-1.其所息係屬先天性疾病？非
+2-2.退化性疾病一？ 是
+2-3.突發性疾病？ 非
+2.4.抑或遭受外傷引起或其他何原因所致？非",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/25 上午 08:00",
@@ -16102,8 +19217,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "1.貴院病患(簡永福04153384)如附件所示之診斷證明書，其中病名之認定係由病人主述？\n2.或是外觀上有明顯傷勢？\n3.或是曾經過科學儀器的檢查而認定？\n惠請提供醫理見解",
-    "doctor_reply": "1. 是\n2. 外觀無明顯傷口，但按壓會疼痛，因此理學檢查判斷為胸壁挫傷。\n3. 無儀器檢測",
+    "question": "1.貴院病患(簡永福04153384)如附件所示之診斷證明書，其中病名之認定係由病人主述？
+2.或是外觀上有明顯傷勢？
+3.或是曾經過科學儀器的檢查而認定？
+惠請提供醫理見解",
+    "doctor_reply": "1. 是
+2. 外觀無明顯傷口，但按壓會疼痛，因此理學檢查判斷為胸壁挫傷。
+3. 無儀器檢測",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/25 上午 08:00",
@@ -16128,8 +19248,27 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "邱彥碩主任您好:\n請主任協助回覆公文內文問題,病人姓名:黃義芳(08886998),謝謝您\n1.其於何時因該病症初診？\n2.由何人送達？\n3.當時症狀如何？\n4.有無外傷？\n5.受傷之部位？\n6.主訴發生事故之時間、地點、原因及經過如何？\n7.有無訴及曾至何處診療？\n8.所患成因如何？\n9.係屬普通疾病抑何時遭受外力傷害引起？\n謝謝您",
-    "doctor_reply": "1. 114-3-18\n2. 病人本人來門診\n3. 右肩疼痛活動受限\n4. 無外傷、是關節韌帶破裂\n5. 右肩\n6. 114-1月受傷、其他未提及\n7. 有去復健治療\n8. 受傷意外引起肌腱裂傷\n9. 應是外力",
+    "question": "邱彥碩主任您好:
+請主任協助回覆公文內文問題,病人姓名:黃義芳(08886998),謝謝您
+1.其於何時因該病症初診？
+2.由何人送達？
+3.當時症狀如何？
+4.有無外傷？
+5.受傷之部位？
+6.主訴發生事故之時間、地點、原因及經過如何？
+7.有無訴及曾至何處診療？
+8.所患成因如何？
+9.係屬普通疾病抑何時遭受外力傷害引起？
+謝謝您",
+    "doctor_reply": "1. 114-3-18
+2. 病人本人來門診
+3. 右肩疼痛活動受限
+4. 無外傷、是關節韌帶破裂
+5. 右肩
+6. 114-1月受傷、其他未提及
+7. 有去復健治療
+8. 受傷意外引起肌腱裂傷
+9. 應是外力",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/28 上午 08:00",
@@ -16154,8 +19293,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳沛華醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:李佳蓉(11910754),謝謝您\n李君傷勢療養至何時已痊癒或已可恢復工作能力？請惠示醫理見解。",
-    "doctor_reply": "病患李佳蓉(11910754)於114年8月7日至本人骨科門診就診。自述其於114年05月14日左腳踝扭傷，經三個月靜養後腳踝仍然疼痛。此次門診理學檢查後，本人判斷病患可能為腳踝三角韌帶(deltoid ligament)撕裂合併發炎。\n\n惟此病患僅就診本人門診一次，本人無法診斷需療養至何時，或判斷病患何時可恢復工作能力。尚需進一步檢查，如超音波或核磁共振(MRI)判斷組織受損程度，以做參考。",
+    "question": "陳沛華醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:李佳蓉(11910754),謝謝您
+李君傷勢療養至何時已痊癒或已可恢復工作能力？請惠示醫理見解。",
+    "doctor_reply": "病患李佳蓉(11910754)於114年8月7日至本人骨科門診就診。自述其於114年05月14日左腳踝扭傷，經三個月靜養後腳踝仍然疼痛。此次門診理學檢查後，本人判斷病患可能為腳踝三角韌帶(deltoid ligament)撕裂合併發炎。
+
+惟此病患僅就診本人門診一次，本人無法診斷需療養至何時，或判斷病患何時可恢復工作能力。尚需進一步檢查，如超音波或核磁共振(MRI)判斷組織受損程度，以做參考。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/28 上午 08:00",
@@ -16180,7 +19323,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "鄔逸群醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:李佳蓉(11910754),謝謝您\n李君傷勢療養至何時已痊癒或已可恢復工作能力？請惠示醫理見解。",
+    "question": "鄔逸群醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:李佳蓉(11910754),謝謝您
+李君傷勢療養至何時已痊癒或已可恢復工作能力？請惠示醫理見解。",
     "doctor_reply": "最後一次回診傷口已痊癒，已可恢復工作能力",
     "remark": "",
     "status": "已完成",
@@ -16206,7 +19351,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "蘇千田醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:李佳蓉(11910754),謝謝您\n李君傷勢療養至何時已痊癒或已可恢復工作能力？請惠示醫理見解。",
+    "question": "蘇千田醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:李佳蓉(11910754),謝謝您
+李君傷勢療養至何時已痊癒或已可恢復工作能力？請惠示醫理見解。",
     "doctor_reply": "2025.09 可恢復工作能力",
     "remark": "蘇醫師您好:請醫師再次確認回復內容,謝謝您",
     "status": "已完成",
@@ -16232,8 +19379,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "劉恆維醫師您好:\n請醫師協助回覆公文內文問題,呂佳穎(呂巧熏),病歷號碼:16545652,謝謝您\n1.請惠復貴院病患呂佳穎於113年間至貴院住院手術原因及進行之手術內容為何？\n2.是否與原告於112年5月間之車禍有關？\n請惠是醫理見解。",
-    "doctor_reply": "1.請見診斷書\n2.無證據顯示有因果關係",
+    "question": "劉恆維醫師您好:
+請醫師協助回覆公文內文問題,呂佳穎(呂巧熏),病歷號碼:16545652,謝謝您
+1.請惠復貴院病患呂佳穎於113年間至貴院住院手術原因及進行之手術內容為何？
+2.是否與原告於112年5月間之車禍有關？
+請惠是醫理見解。",
+    "doctor_reply": "1.請見診斷書
+2.無證據顯示有因果關係",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/28 上午 08:00",
@@ -16258,7 +19410,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林乾閔副院長您好:\n請副院長協助公文內文問題,病人姓名:蔡智宇(04275097),謝謝您\n請敘明蔡智宇除「頭部外傷以外」，所受如檢附之診斷證明書及病歷資料(附件三)所示其他傷勢或病症(如：腦震盪、視力模糊、雙膝挂傷等)，是否與本件車禍具相當因果關係？",
+    "question": "林乾閔副院長您好:
+請副院長協助公文內文問題,病人姓名:蔡智宇(04275097),謝謝您
+請敘明蔡智宇除「頭部外傷以外」，所受如檢附之診斷證明書及病歷資料(附件三)所示其他傷勢或病症(如：腦震盪、視力模糊、雙膝挂傷等)，是否與本件車禍具相當因果關係？",
     "doctor_reply": "",
     "remark": "醫師信箱錯誤重寄",
     "status": "已完成",
@@ -16284,7 +19438,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "馮博皓醫師您好:\n請醫師協助公文內文問題,病人姓名:蔡智宇(04275097),謝謝您\n請敘明蔡智宇除「頭部外傷以外」，所受如檢附之診斷證明書及病歷資料(附件三)所示其他傷勢或病症(如：腦震盪、視力模糊、雙膝挂傷等)，是否與本件車禍具相當因果關係？",
+    "question": "馮博皓醫師您好:
+請醫師協助公文內文問題,病人姓名:蔡智宇(04275097),謝謝您
+請敘明蔡智宇除「頭部外傷以外」，所受如檢附之診斷證明書及病歷資料(附件三)所示其他傷勢或病症(如：腦震盪、視力模糊、雙膝挂傷等)，是否與本件車禍具相當因果關係？",
     "doctor_reply": "由於患者就醫時間與發生車禍時間已有接近一個月的時間，以醫療而言，有可能但無法確定其因果關係。",
     "remark": "",
     "status": "已完成",
@@ -16310,8 +19466,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "洪千岱醫師您好\n請醫師協助公文內文問題,病人姓名:蔡智宇(04275097),謝謝您\n請敘明蔡智宇除「頭部外傷以外」，所受如檢附之診斷證明書及病歷資料(附件三)所示其他傷勢或病症(如：腦震盪、視力模糊、雙膝挂傷等)，是否與本件車禍具相當因果關係",
-    "doctor_reply": "一、腦震盪屬輕度腦部外傷之臨床診斷，通常係依據受傷機轉及臨床症狀綜合判斷。若患者於事故當時確有頭部受撞擊或加速減速之作用力，則該診斷在醫學上具有相當關聯之可能性。然而，腦震盪之相關症狀（如頭暈、噁心、注意力不集中等）亦可能受多重因素影響，難以僅憑單次門診資料即完全排除其他非事故因素之可能。\n\n二、至於視力模糊部分，因涉及眼科專業範疇，其成因可能包括屈光異常、眼部外傷、神經視覺傳導異常或其他全身性因素。是否與本次事故具相當因果關係，仍需結合事故當時受力情形、既往病史及專科檢查結果綜合判斷，非本專科診療範圍內所能單獨確認。\n\n三、雙膝挫傷屬軟組織傷害，若有直接撞擊機轉，醫學上確可能與事故相關。然而實際因果關係之判定，仍應依據現場事證、影像資料及完整病程紀錄綜合評估，單次神經科專科門診無法單獨確認。\n\n綜上所述，本人僅就神經科專業範圍內之醫療觀察與臨床判斷提供說明。至於法律上「相當因果關係」之認定，仍屬司法機關依全案證據綜合判斷之職權範圍，非醫療單位得以單獨認定。",
+    "question": "洪千岱醫師您好
+請醫師協助公文內文問題,病人姓名:蔡智宇(04275097),謝謝您
+請敘明蔡智宇除「頭部外傷以外」，所受如檢附之診斷證明書及病歷資料(附件三)所示其他傷勢或病症(如：腦震盪、視力模糊、雙膝挂傷等)，是否與本件車禍具相當因果關係",
+    "doctor_reply": "一、腦震盪屬輕度腦部外傷之臨床診斷，通常係依據受傷機轉及臨床症狀綜合判斷。若患者於事故當時確有頭部受撞擊或加速減速之作用力，則該診斷在醫學上具有相當關聯之可能性。然而，腦震盪之相關症狀（如頭暈、噁心、注意力不集中等）亦可能受多重因素影響，難以僅憑單次門診資料即完全排除其他非事故因素之可能。
+
+二、至於視力模糊部分，因涉及眼科專業範疇，其成因可能包括屈光異常、眼部外傷、神經視覺傳導異常或其他全身性因素。是否與本次事故具相當因果關係，仍需結合事故當時受力情形、既往病史及專科檢查結果綜合判斷，非本專科診療範圍內所能單獨確認。
+
+三、雙膝挫傷屬軟組織傷害，若有直接撞擊機轉，醫學上確可能與事故相關。然而實際因果關係之判定，仍應依據現場事證、影像資料及完整病程紀錄綜合評估，單次神經科專科門診無法單獨確認。
+
+綜上所述，本人僅就神經科專業範圍內之醫療觀察與臨床判斷提供說明。至於法律上「相當因果關係」之認定，仍屬司法機關依全案證據綜合判斷之職權範圍，非醫療單位得以單獨認定。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/2/28 上午 08:00",
@@ -16336,7 +19500,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林乾閔副院長您好:\n請副院長協助公文內文問題,病人姓名:蔡智宇(04275097),謝謝您\n請敘明蔡智宇除「頭部外傷以外」，所受如檢附之診斷證明書及病歷資料(附件三)所示其他傷勢或病症(如：腦震盪、視力模糊、雙膝挂傷等)，是否與本件車禍具相當因果關係？",
+    "question": "林乾閔副院長您好:
+請副院長協助公文內文問題,病人姓名:蔡智宇(04275097),謝謝您
+請敘明蔡智宇除「頭部外傷以外」，所受如檢附之診斷證明書及病歷資料(附件三)所示其他傷勢或病症(如：腦震盪、視力模糊、雙膝挂傷等)，是否與本件車禍具相當因果關係？",
     "doctor_reply": "腦震盪、視力模糊＇雙膝外傷與車禍具有相當因果關係",
     "remark": "",
     "status": "已完成",
@@ -16362,7 +19528,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王智毅醫師您好\n請醫師協助回覆公文內文問題,病人姓名:朱怡靜(0910747448),謝謝您\n1.朱君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "王智毅醫師您好
+請醫師協助回覆公文內文問題,病人姓名:朱怡靜(0910747448),謝謝您
+1.朱君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "1. 病患於113年9月2日至114年1月6日, 於骨科門診就診 ,其中檢查顯示右肘挫傷合併三頭肌肌腱部分斷裂及伸腕肌鍵部分斷裂 及右尺骨鷹嘴凸未移位骨折 於看診前間經保守治療(藥物 復健及自體血小板濃厚液注射) , 於114年1月6日(最後一次在雙和醫院王智毅醫師看診) 表示右肘仍疼痛無力, 建議須在休養, 爾後病患前往其他醫院繼續看診治療  2.無明顯併發症   3. 預計受傷後六個月能從事一般工作(因病患於受傷後四個月後就沒有再回診,故無法完全了解病患後續恢復, 僅就一般類似疾病病患的恢復來回復 ) 4. 依據醫療常規照顧經驗回復",
     "remark": "",
     "status": "已完成",
@@ -16388,8 +19560,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林育如醫師您好\n請醫師協助回覆公文內文問題,病人姓名:朱怡靜(0910747448),謝謝您\n1.朱君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "本人為復健醫學科主治醫師，於113年9月20日起負責追蹤治療一位因外傷導致右肘挫傷之病患。根據初步骨科診斷與影像結果（X光未見骨折，超音波顯示右肘肌腱及部分韌帶撕裂傷: 病人特別看診兩位復健科醫師，皆做過超音波檢查），在門診中即依其臨床症狀安排積極治療及相關復健治療計畫，包括物理治療與功能訓練，並持續進行病況追蹤。\n期間病患右肘持續有疼痛表現，故於113年12月進一步安排核磁共振檢查（MRI），以釐清是否有深層軟組織或骨性病變。影像結果(114年01月01日)顯示右肘鷹嘴凸處有一未移位骨折。對此情形，本人於114年01月07日檢查後首次病人回診時即請病患轉回骨科門診複診評估後續處置。 \n經骨科主治醫師再次評估後，確認該未移位骨折屬穩定性骨折，無需手術，建議持續保守性治療。因後續病人(自114年01月07日)未曾再回復健科門診,目前無法了解病人臨床之確切恢復情況, 但依之前治療類似狀況之相關經驗, 配合適切之治療及休養照顧, 應於傷後半年可恢復到可從事一般性工作, 但若是須右手前臂過度用力或反覆使力的工作性質, 可能有勝任的困難。",
+    "question": "林育如醫師您好
+請醫師協助回覆公文內文問題,病人姓名:朱怡靜(0910747448),謝謝您
+1.朱君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "本人為復健醫學科主治醫師，於113年9月20日起負責追蹤治療一位因外傷導致右肘挫傷之病患。根據初步骨科診斷與影像結果（X光未見骨折，超音波顯示右肘肌腱及部分韌帶撕裂傷: 病人特別看診兩位復健科醫師，皆做過超音波檢查），在門診中即依其臨床症狀安排積極治療及相關復健治療計畫，包括物理治療與功能訓練，並持續進行病況追蹤。
+期間病患右肘持續有疼痛表現，故於113年12月進一步安排核磁共振檢查（MRI），以釐清是否有深層軟組織或骨性病變。影像結果(114年01月01日)顯示右肘鷹嘴凸處有一未移位骨折。對此情形，本人於114年01月07日檢查後首次病人回診時即請病患轉回骨科門診複診評估後續處置。 
+經骨科主治醫師再次評估後，確認該未移位骨折屬穩定性骨折，無需手術，建議持續保守性治療。因後續病人(自114年01月07日)未曾再回復健科門診,目前無法了解病人臨床之確切恢復情況, 但依之前治療類似狀況之相關經驗, 配合適切之治療及休養照顧, 應於傷後半年可恢復到可從事一般性工作, 但若是須右手前臂過度用力或反覆使力的工作性質, 可能有勝任的困難。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/1 上午 08:00",
@@ -16414,7 +19594,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "謝沛興醫師您好:\n宜蘭縣政府調閱病歷,此為醫療爭議解案,\n請協助確認病歷內容,因案件有時效性(煩請務必回覆)。\n感謝您。\n備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "謝沛興醫師您好:
+宜蘭縣政府調閱病歷,此為醫療爭議解案,
+請協助確認病歷內容,因案件有時效性(煩請務必回覆)。
+感謝您。
+備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可釋出",
     "remark": "",
     "status": "已完成",
@@ -16440,7 +19625,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蘇亦昌醫師您好:\n宜蘭縣政府調閱病歷,此為醫療爭議解案,\n請協助確認病歷是否可以釋出,因案件有時效性,煩請務必回覆。\n感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "蘇亦昌醫師您好:
+宜蘭縣政府調閱病歷,此為醫療爭議解案,
+請協助確認病歷是否可以釋出,因案件有時效性,煩請務必回覆。
+感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可以釋出",
     "remark": "",
     "status": "已完成",
@@ -16466,7 +19656,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "謝沛興醫師您好:\n宜蘭縣政府調閱病歷,此為醫療爭議解案,\n請協助確認病歷內容,因案件有時效性(煩請務必回覆)。\n感謝您。\n備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "謝沛興醫師您好:
+宜蘭縣政府調閱病歷,此為醫療爭議解案,
+請協助確認病歷內容,因案件有時效性(煩請務必回覆)。
+感謝您。
+備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可以釋出",
     "remark": "",
     "status": "已完成",
@@ -16492,7 +19687,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蘇亦昌醫師您好: 宜蘭縣政府調閱病歷,此為醫療爭議解案, \n請協助確認病歷內容,因案件有時效性(煩請務必回覆)。感謝您。\n備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "蘇亦昌醫師您好: 宜蘭縣政府調閱病歷,此為醫療爭議解案, 
+請協助確認病歷內容,因案件有時效性(煩請務必回覆)。感謝您。
+備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可以釋出",
     "remark": "",
     "status": "已完成",
@@ -16518,8 +19716,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "李瑋恩醫師您好：\n1.病患(洪愷馡16957828)如附件所示之傷勢是否已經復原?\n2.又該傷勢是否為永久性，且有難以治癒之情形？\n惠請提供醫理見解。",
-    "doctor_reply": "1. \n後續之傷勢復原與否，應以後續門診追蹤之病歷記錄為準。惟傷患因外傷所致之傷病，皆有可能導致後遺症，故急診皆已有安排適當之門診予傷患進行追蹤。\n\n2. \n- 尾椎傷害部分：此區域之損傷涉及脊椎骨與諸多軟組織，因此後續能否完全復原，非短時間內可判斷。以臨床經驗論：此區域之傷害雖採保守治療即可，但許多傷患即使在復原良好的情形下，後續仍會有慢性下背痛之問題存在。因此，此類傷患在急診處置後，後續進入復健科、疼痛科長期門診的情形也不在少數。\n- 腦震盪部分：腦震盪症候群預後範圍落差極大。臨床經驗上，從數小時即可復原、到數月仍持續有症狀(亦即 Persistent post-concussive symptoms, PPCS ) 者都有諸多案例可循。目前文獻與專家意見一般認為，頭部外傷後長期有症狀者應持續追蹤評估，也可能會需要神經內外科等專科的長期治療。\n- 另外需要注意的是：此兩者多屬臨床診斷，不若部分疾病能以單一影像或抽血就評估預後。建議應以傷患之實際就診、追蹤門診之病歷記錄來判斷傷患之治癒情形。",
+    "question": "李瑋恩醫師您好：
+1.病患(洪愷馡16957828)如附件所示之傷勢是否已經復原?
+2.又該傷勢是否為永久性，且有難以治癒之情形？
+惠請提供醫理見解。",
+    "doctor_reply": "1. 
+後續之傷勢復原與否，應以後續門診追蹤之病歷記錄為準。惟傷患因外傷所致之傷病，皆有可能導致後遺症，故急診皆已有安排適當之門診予傷患進行追蹤。
+
+2. 
+- 尾椎傷害部分：此區域之損傷涉及脊椎骨與諸多軟組織，因此後續能否完全復原，非短時間內可判斷。以臨床經驗論：此區域之傷害雖採保守治療即可，但許多傷患即使在復原良好的情形下，後續仍會有慢性下背痛之問題存在。因此，此類傷患在急診處置後，後續進入復健科、疼痛科長期門診的情形也不在少數。
+- 腦震盪部分：腦震盪症候群預後範圍落差極大。臨床經驗上，從數小時即可復原、到數月仍持續有症狀(亦即 Persistent post-concussive symptoms, PPCS ) 者都有諸多案例可循。目前文獻與專家意見一般認為，頭部外傷後長期有症狀者應持續追蹤評估，也可能會需要神經內外科等專科的長期治療。
+- 另外需要注意的是：此兩者多屬臨床診斷，不若部分疾病能以單一影像或抽血就評估預後。建議應以傷患之實際就診、追蹤門診之病歷記錄來判斷傷患之治癒情形。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/4 上午 08:00",
@@ -16544,8 +19751,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳致中醫師您好：\n1.病患(洪愷馡16957828)如附件所示之傷勢是否已經復原?\n2.又該傷勢是否為永久性，且有難以治癒之情形？\n惠請提供醫理見解。",
-    "doctor_reply": "1.腦震盪徵候群應有改善\n2.腦震盪徵候群並非永久性,可自行緩解",
+    "question": "陳致中醫師您好：
+1.病患(洪愷馡16957828)如附件所示之傷勢是否已經復原?
+2.又該傷勢是否為永久性，且有難以治癒之情形？
+惠請提供醫理見解。",
+    "doctor_reply": "1.腦震盪徵候群應有改善
+2.腦震盪徵候群並非永久性,可自行緩解",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/4 上午 08:00",
@@ -16570,7 +19781,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "楊浩銓醫師您好：\n1.病患(洪愷馡16957828)如附件所示之傷勢是否已經復原?\n2.又該傷勢是否為永久性，且有難以治癒之情形？\n惠請提供醫理見解",
+    "question": "楊浩銓醫師您好：
+1.病患(洪愷馡16957828)如附件所示之傷勢是否已經復原?
+2.又該傷勢是否為永久性，且有難以治癒之情形？
+惠請提供醫理見解",
     "doctor_reply": "病患113年11月05日至114年10月07日於本門診就醫，期間長達6個月以上，以一般病情屬慢性。但病患自114年10月門診後就未再回診，如今病況如何發展難以掌握，是否為\"永久性\"或\"難以治癒\"需尋求後續照護醫師意見較精確。",
     "remark": "",
     "status": "已完成",
@@ -16596,8 +19810,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "楊順泰醫師您好：\n1.病患(洪愷馡16957828)如附件所示之傷勢是否已經復原?\n2.又該傷勢是否為永久性，且有難以治癒之情形？\n惠請提供醫理見解",
-    "doctor_reply": "1. 否\n2. 傷勢為永久性，難以復位或內固定，患者截至115年3月6日門診回訪，仍無法承受負重工作.",
+    "question": "楊順泰醫師您好：
+1.病患(洪愷馡16957828)如附件所示之傷勢是否已經復原?
+2.又該傷勢是否為永久性，且有難以治癒之情形？
+惠請提供醫理見解",
+    "doctor_reply": "1. 否
+2. 傷勢為永久性，難以復位或內固定，患者截至115年3月6日門診回訪，仍無法承受負重工作.",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/4 上午 08:00",
@@ -16622,7 +19840,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師您好，惠請協助回覆問題：\n1.請貴院急診室協助查明(于秀麗12476460)因車禍於111年12月1日至貴院急診室就醫，其所受傷害為何？\n請提供醫理見解",
+    "question": "各位醫師您好，惠請協助回覆問題：
+1.請貴院急診室協助查明(于秀麗12476460)因車禍於111年12月1日至貴院急診室就醫，其所受傷害為何？
+請提供醫理見解",
     "doctor_reply": "病患來診為行人對汽車車禍，主訴胸部,背部及髖部痛, 於急診安排影像檢查後診斷胸部及骨盆挫傷併薦椎骨及下恥骨骨折, 經會診骨科後安排後續住院治療",
     "remark": "",
     "status": "已完成",
@@ -16648,7 +19868,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "各位醫師您好，惠請協助回覆問題：\n1.請貴院急診室協助查明(于秀麗12476460)因車禍於111年12月1日至貴院急診室就醫，其所受傷害為何？\n請提供醫理見解",
+    "question": "各位醫師您好，惠請協助回覆問題：
+1.請貴院急診室協助查明(于秀麗12476460)因車禍於111年12月1日至貴院急診室就醫，其所受傷害為何？
+請提供醫理見解",
     "doctor_reply": "1.薦椎骨折及骨盆的下恥骨枝骨折",
     "remark": "",
     "status": "已完成",
@@ -16674,8 +19896,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林育如醫師您好\n請醫師協助確認病歷,開立診斷證明書為左側,但門診醫令診斷碼為右側,並回覆公文內文問題,謝謝您\n1.陳君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "病人實際患側為左側, 門診醫令診斷碼右側是選擇時不小心出錯,後續每次門診沒發現而沿用上次診斷碼. \n1+2. 病人受傷手術後(脛骨平台粉碎性骨折術後)相隔近半年才至雙和醫院復健科門診就診, 初次門診評估時已合併有術後顯著左膝關節沾黏, 嚴重影響日常行走步態及功能. \n3+4.目前經過為期半年積極復健, 左膝關節沾黏情況有逐步改善, 行走步態有進步,但相較一般正常狀態, 仍有明顯落差, 邊常人看其行走姿勢,明顯可見左腳行走不良, 且蹲姿有顯著障礙.  因其原本職業為木工, 已經過半年積極復健後, 目前的恢復情況要回到原工作仍有顯著困難, 這部分目前也很難斷定可以順利恢復至可蹲可正常行走的程度.",
+    "question": "林育如醫師您好
+請醫師協助確認病歷,開立診斷證明書為左側,但門診醫令診斷碼為右側,並回覆公文內文問題,謝謝您
+1.陳君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "病人實際患側為左側, 門診醫令診斷碼右側是選擇時不小心出錯,後續每次門診沒發現而沿用上次診斷碼. 
+1+2. 病人受傷手術後(脛骨平台粉碎性骨折術後)相隔近半年才至雙和醫院復健科門診就診, 初次門診評估時已合併有術後顯著左膝關節沾黏, 嚴重影響日常行走步態及功能. 
+3+4.目前經過為期半年積極復健, 左膝關節沾黏情況有逐步改善, 行走步態有進步,但相較一般正常狀態, 仍有明顯落差, 邊常人看其行走姿勢,明顯可見左腳行走不良, 且蹲姿有顯著障礙.  因其原本職業為木工, 已經過半年積極復健後, 目前的恢復情況要回到原工作仍有顯著困難, 這部分目前也很難斷定可以順利恢復至可蹲可正常行走的程度.",
     "remark": "林醫師您好:因確認診斷碼有誤,麻煩您撥分機2038開放修改門診醫令權限(114/07/15沒更正到),再麻煩您,謝謝您",
     "status": "已完成",
     "due_date": "2026/3/4 上午 08:00",
@@ -16700,8 +19930,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "許秉閎醫師您好，請您協助回復問題\n1.請提供病患張陳賓(P122653008)自111年1月1日至114年11月19日止之病歷資料，並說明該病患是否有因腰椎椎鍵盤突出而就醫之情形。\n2.另請說明該病患於114年11月19日入住貴院，經診斷出「因外傷造成腰椎堆問盤突出症併神經根壓迫」，判斷依據為何?\n惠請提供醫理見解",
-    "doctor_reply": "沒有診斷因外傷造成腰椎椎間盤突出症併神經根壓迫。\n病患主述外傷造成，但臨床上無法直接證明 腰椎椎間盤突出併神經根壓迫與外傷有關。",
+    "question": "許秉閎醫師您好，請您協助回復問題
+1.請提供病患張陳賓(P122653008)自111年1月1日至114年11月19日止之病歷資料，並說明該病患是否有因腰椎椎鍵盤突出而就醫之情形。
+2.另請說明該病患於114年11月19日入住貴院，經診斷出「因外傷造成腰椎堆問盤突出症併神經根壓迫」，判斷依據為何?
+惠請提供醫理見解",
+    "doctor_reply": "沒有診斷因外傷造成腰椎椎間盤突出症併神經根壓迫。
+病患主述外傷造成，但臨床上無法直接證明 腰椎椎間盤突出併神經根壓迫與外傷有關。",
     "remark": "在請醫師協助補充說明2. 1.是否因病人自述而診斷「因外傷造成腰椎椎間盤突出症併經根壓迫」? (附上診斷證明書供參閱)",
     "status": "已完成",
     "due_date": "2026/3/5 上午 08:00",
@@ -16726,7 +19960,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳沛華醫師您好，因臺灣桃園地方檢察署調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月05日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "陳沛華醫師您好，因臺灣桃園地方檢察署調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月05日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -16752,8 +19990,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "許秉閎醫師您好，請您再次協助回復問題\n依據您上次的回覆內容如下：1.病患自述於民國113年08月18日跌倒，背部疼痛，至本院神經外科許秉閎醫師門診就診。自述於民國114年11月12日自述遭他人毆打後，出現雙下肢麻木、疼痛及無力等症狀。病患就診時攜帶於民國114年10月15日於國軍桃園總醫院施作之腰椎磁振造影（MRI）檢查影像至本院供參考。MRI 報告為 腰椎椎間盤突出併神經根壓迫。2.臨床上無法 直接判定 腰椎椎間盤突出症併神經根壓迫  為 外傷造成\n\n在請醫師協助補充說明2.\n1.是否因病人自述而診斷「因外傷造成腰椎椎間盤突出症併經根壓迫」?\n(附上診斷證明書供參閱)",
-    "doctor_reply": "沒有診斷因外傷造成腰椎椎間盤突出症併神經根壓迫。\n病患主述外傷造成，但臨床上無法直接證明 腰椎椎間盤突出併神經根壓迫與外傷有關。",
+    "question": "許秉閎醫師您好，請您再次協助回復問題
+依據您上次的回覆內容如下：1.病患自述於民國113年08月18日跌倒，背部疼痛，至本院神經外科許秉閎醫師門診就診。自述於民國114年11月12日自述遭他人毆打後，出現雙下肢麻木、疼痛及無力等症狀。病患就診時攜帶於民國114年10月15日於國軍桃園總醫院施作之腰椎磁振造影（MRI）檢查影像至本院供參考。MRI 報告為 腰椎椎間盤突出併神經根壓迫。2.臨床上無法 直接判定 腰椎椎間盤突出症併神經根壓迫  為 外傷造成
+
+在請醫師協助補充說明2.
+1.是否因病人自述而診斷「因外傷造成腰椎椎間盤突出症併經根壓迫」?
+(附上診斷證明書供參閱)",
+    "doctor_reply": "沒有診斷因外傷造成腰椎椎間盤突出症併神經根壓迫。
+病患主述外傷造成，但臨床上無法直接證明 腰椎椎間盤突出併神經根壓迫與外傷有關。",
     "remark": "請補充說明",
     "status": "已完成",
     "due_date": "2026/3/22 上午 08:00",
@@ -16778,8 +20022,29 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王智毅醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:曹文雯(12520774),謝謝您\n(一)\n1-1.曹君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n2-3.所患「右側肩部旋轉肌破裂，創傷性」是否係因主訴之傷害事故所致？\n(二)\n2-1.曹君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n2-5.請確認病歷是否可釋出?\n請惠示醫理見解。",
-    "doctor_reply": "(一)\n1-1.曹君就診有無主訴傷害事故？    有     主訴因搬動重物導致右肩扭傷\n1-2.發生日期及原因為何？     2024/9 月間 \n2-3.所患「右側肩部旋轉肌破裂，創傷性」是否係因主訴之傷害事故所致？  是  \n(二)\n2-1.曹君因上開傷病治療經過為何？    於  2025/5/16 住院接受手術縫補    術後恢復良好 \n2-2.有無併發症或後遺症？     無   \n2-3.療養至何時起可從事一般工作？  預計 六個月後    \n2-4.認定理由及依據為何？     一般常規旋轉肌縫補術後恢復 \n2-5.請確認病歷是否可釋出?   可釋出",
+    "question": "王智毅醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:曹文雯(12520774),謝謝您
+(一)
+1-1.曹君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+2-3.所患「右側肩部旋轉肌破裂，創傷性」是否係因主訴之傷害事故所致？
+(二)
+2-1.曹君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+2-5.請確認病歷是否可釋出?
+請惠示醫理見解。",
+    "doctor_reply": "(一)
+1-1.曹君就診有無主訴傷害事故？    有     主訴因搬動重物導致右肩扭傷
+1-2.發生日期及原因為何？     2024/9 月間 
+2-3.所患「右側肩部旋轉肌破裂，創傷性」是否係因主訴之傷害事故所致？  是  
+(二)
+2-1.曹君因上開傷病治療經過為何？    於  2025/5/16 住院接受手術縫補    術後恢復良好 
+2-2.有無併發症或後遺症？     無   
+2-3.療養至何時起可從事一般工作？  預計 六個月後    
+2-4.認定理由及依據為何？     一般常規旋轉肌縫補術後恢復 
+2-5.請確認病歷是否可釋出?   可釋出",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/6 上午 08:00",
@@ -16804,7 +20069,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "黃金聲醫師您好，因臺灣新北地方檢察署調閱病歷(00695639康倍菁)。\n本件為(非本院)醫療糾紛\n114/5/26-114/8/19門診醫令已釋出過，請勿修改\n另有同意書未簽署，由於未簽署且重複開單，請確認是否可以釋出\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月07日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上\nDr.黃金聲 114/7/18、8/8、8/19、9/5 OPD\nDr.馬自強 114/7/7 OPD\nDr.韓松穎 114/7/1、7/8、8/7、10/2、11/3 OPD",
+    "question": "黃金聲醫師您好，因臺灣新北地方檢察署調閱病歷(00695639康倍菁)。
+本件為(非本院)醫療糾紛
+114/5/26-114/8/19門診醫令已釋出過，請勿修改
+另有同意書未簽署，由於未簽署且重複開單，請確認是否可以釋出
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月07日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上
+Dr.黃金聲 114/7/18、8/8、8/19、9/5 OPD
+Dr.馬自強 114/7/7 OPD
+Dr.韓松穎 114/7/1、7/8、8/7、10/2、11/3 OPD",
     "doctor_reply": "那份名子上有我。但都不是我的治療項目。我覺得就不用釋出了",
     "remark": "黃醫師您好，附件檔案有一份同意書，第一頁有關兒童牙科治療同意書，請問此份有需要釋出嗎?因為有開單沒有簽署。",
     "status": "已完成",
@@ -16830,8 +20105,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "韓松穎醫師您好，因臺灣新北地方檢察署調閱病歷(00695639康倍菁)。\n本件為(非本院)醫療糾紛\n114/5/26-114/8/19門診醫令已釋出過，請勿修改\n另有同意書未簽署，由於未簽署且重複開單，請確認是否可以釋出\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月07日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上\nDr.黃金聲 114/7/18、8/8、8/19、9/5 OPD\nDr.馬自強 114/7/7 OPD\nDr.韓松穎 114/7/1、7/8、8/7、10/2、11/3 OPD",
-    "doctor_reply": "韓醫師已確認沒問題\n未簽署的同意書為系統自動額外跳出，可直接刪除。",
+    "question": "韓松穎醫師您好，因臺灣新北地方檢察署調閱病歷(00695639康倍菁)。
+本件為(非本院)醫療糾紛
+114/5/26-114/8/19門診醫令已釋出過，請勿修改
+另有同意書未簽署，由於未簽署且重複開單，請確認是否可以釋出
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月07日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上
+Dr.黃金聲 114/7/18、8/8、8/19、9/5 OPD
+Dr.馬自強 114/7/7 OPD
+Dr.韓松穎 114/7/1、7/8、8/7、10/2、11/3 OPD",
+    "doctor_reply": "韓醫師已確認沒問題
+未簽署的同意書為系統自動額外跳出，可直接刪除。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/7 上午 08:00",
@@ -16856,8 +20142,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "馬自強醫師您好，因臺灣新北地方檢察署調閱病歷(00695639康倍菁)。\n本件為(非本院)醫療糾紛\n114/5/26-114/8/19門診醫令已釋出過，請勿修改\n另有同意書未簽署，由於未簽署且重複開單，請確認是否可以釋出\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月07日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上\nDr.黃金聲 114/7/18、8/8、8/19、9/5 OPD\nDr.馬自強 114/7/7 OPD\nDr.韓松穎 114/7/1、7/8、8/7、10/2、11/3 OPD",
-    "doctor_reply": "馬醫師已確認沒問題\n未簽署的同意書為系統自動額外跳出，可直接刪除。",
+    "question": "馬自強醫師您好，因臺灣新北地方檢察署調閱病歷(00695639康倍菁)。
+本件為(非本院)醫療糾紛
+114/5/26-114/8/19門診醫令已釋出過，請勿修改
+另有同意書未簽署，由於未簽署且重複開單，請確認是否可以釋出
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月07日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上
+Dr.黃金聲 114/7/18、8/8、8/19、9/5 OPD
+Dr.馬自強 114/7/7 OPD
+Dr.韓松穎 114/7/1、7/8、8/7、10/2、11/3 OPD",
+    "doctor_reply": "馬醫師已確認沒問題
+未簽署的同意書為系統自動額外跳出，可直接刪除。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/7 上午 08:00",
@@ -16882,7 +20179,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "許家禎醫師您好，因臺灣新北地方檢察署調閱病歷。(調解醫偵字)\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月8日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上\n\nDr.許家禎114.5.16、114.7.23 OPD\nDr.關曉雯 114.7.16 ER",
+    "question": "許家禎醫師您好，因臺灣新北地方檢察署調閱病歷。(調解醫偵字)
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月8日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上
+
+Dr.許家禎114.5.16、114.7.23 OPD
+Dr.關曉雯 114.7.16 ER",
     "doctor_reply": "可以",
     "remark": "",
     "status": "已完成",
@@ -16908,7 +20212,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "關曉雯醫師您好，因臺灣新北地方檢察署調閱病歷。(調解醫偵字)\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月8日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上\n\nDr.許家禎114.5.16、114.7.23 OPD\nDr.關曉雯 114.7.16 ER",
+    "question": "關曉雯醫師您好，因臺灣新北地方檢察署調閱病歷。(調解醫偵字)
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月8日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上
+
+Dr.許家禎114.5.16、114.7.23 OPD
+Dr.關曉雯 114.7.16 ER",
     "doctor_reply": "可釋出 感謝",
     "remark": "",
     "status": "已完成",
@@ -16934,7 +20245,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳聰明醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月12日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "陳聰明醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月12日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "記得copy所有的門診語言治療",
     "remark": "",
     "status": "已完成",
@@ -16960,7 +20274,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "鄭偉宏醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月12日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上\"",
+    "question": "鄭偉宏醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月12日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上\"",
     "doctor_reply": "可以釋出",
     "remark": "",
     "status": "已完成",
@@ -16986,7 +20303,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蔡宏達醫師您好，因臺灣新北地方法院調閱病歷。(06667623周美珠)\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月12日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "蔡宏達醫師您好，因臺灣新北地方法院調閱病歷。(06667623周美珠)
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月12日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可以",
     "remark": "",
     "status": "已完成",
@@ -17012,7 +20333,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "馮博皓醫師您好\n請醫師協助回覆公文內文問題,病人姓名:莊柏榕(09052444),謝謝您\n莊員是否具有工作能力及期限（永久無工作能力或是需休養多久等資訊）?\n請惠示醫理見解",
+    "question": "馮博皓醫師您好
+請醫師協助回覆公文內文問題,病人姓名:莊柏榕(09052444),謝謝您
+莊員是否具有工作能力及期限（永久無工作能力或是需休養多久等資訊）?
+請惠示醫理見解",
     "doctor_reply": "莊先生為第二期肺癌，經開刀後目前無殘存腫瘤，一般肺癌病患可完全切除者且無其他疾病者，術後休養三個月即可回復工作。",
     "remark": "",
     "status": "已完成",
@@ -17038,7 +20362,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "羅偉倫醫師您好，因臺灣台北地方法院調閱病歷。(16577635林祈賢)\n113.5.4-113.5.20出院病摘、113.4.29 門診醫令已釋出過，請勿更改。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月12日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "羅偉倫醫師您好，因臺灣台北地方法院調閱病歷。(16577635林祈賢)
+113.5.4-113.5.20出院病摘、113.4.29 門診醫令已釋出過，請勿更改。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月12日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "釋出",
     "remark": "",
     "status": "已完成",
@@ -17064,7 +20393,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王智毅醫師您好請協助回覆問題\n(02181811邱昱儒)\n1.1邱君就診有無主訴傷害事故？\n1.2發生日期及原因為何？\n1.3所患「腰椎第五節椎弓斷裂」是否係因主訴之傷害事故所致？\n2邱君因上開傷病治療經過為何？\n2.1有無併發症或後遺症？\n2.2療養至何時起可從事一般工作？\n2.3認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "王智毅醫師您好請協助回覆問題
+(02181811邱昱儒)
+1.1邱君就診有無主訴傷害事故？
+1.2發生日期及原因為何？
+1.3所患「腰椎第五節椎弓斷裂」是否係因主訴之傷害事故所致？
+2邱君因上開傷病治療經過為何？
+2.1有無併發症或後遺症？
+2.2療養至何時起可從事一般工作？
+2.3認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -17090,8 +20428,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "江長蓉醫師您好請協助回覆問題\n(02181811邱昱儒)\n1.1邱君就診有無主訴傷害事故？\n1.2發生日期及原因為何？\n1.3所患「腰椎第五節椎弓斷裂」是否係因主訴之傷害事故所致？\n2邱君因上開傷病治療經過為何？\n2.1有無併發症或後遺症？\n2.2療養至何時起可從事一般工作？\n2.3認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1. 病人自述於 114-9-6 跌倒撞擊到背部, 於114-9-8 至門診就診,x-ray顯示第五腰椎椎弓有骨折情形\n2. 進行保守治療,  病人於 114-9-10,  114-9-11, 114-10-30 於骨科門診追蹤治療, 後續無併發症 \n  建議休養三個月後, 才能進行負重的工作, 以免症狀復發",
+    "question": "江長蓉醫師您好請協助回覆問題
+(02181811邱昱儒)
+1.1邱君就診有無主訴傷害事故？
+1.2發生日期及原因為何？
+1.3所患「腰椎第五節椎弓斷裂」是否係因主訴之傷害事故所致？
+2邱君因上開傷病治療經過為何？
+2.1有無併發症或後遺症？
+2.2療養至何時起可從事一般工作？
+2.3認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1. 病人自述於 114-9-6 跌倒撞擊到背部, 於114-9-8 至門診就診,x-ray顯示第五腰椎椎弓有骨折情形
+2. 進行保守治療,  病人於 114-9-10,  114-9-11, 114-10-30 於骨科門診追蹤治療, 後續無併發症 
+  建議休養三個月後, 才能進行負重的工作, 以免症狀復發",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/20 上午 08:00",
@@ -17116,8 +20465,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "劉郁欣醫師您好請協助回覆問題\n朱鴻霖（07909904）因「左側踝部鈍挫傷、左側膝部鈍挫傷、左側腓骨外踝移位閉鎖性骨折術後骨癒合」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.朱君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1.病患因左側腓骨外踝移位閉鎖性骨折於2024/09/10至本院急診就診並安排入院，於同次住院期間接受開放式復位內固定手術。後續門診追蹤傷口及骨頭癒合良好。遂於2025/10/15再次入院接受植入物移除手術，並於隔日出院。\n2.無。\n3.第二次手術為植入物移除手術，待傷口癒合及可行一般工作。\n4.由影像檢查可見骨折處癒合良好，傷口也於2025/10/30門診追蹤檢查癒合良好行縫線拆除。",
+    "question": "劉郁欣醫師您好請協助回覆問題
+朱鴻霖（07909904）因「左側踝部鈍挫傷、左側膝部鈍挫傷、左側腓骨外踝移位閉鎖性骨折術後骨癒合」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.朱君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1.病患因左側腓骨外踝移位閉鎖性骨折於2024/09/10至本院急診就診並安排入院，於同次住院期間接受開放式復位內固定手術。後續門診追蹤傷口及骨頭癒合良好。遂於2025/10/15再次入院接受植入物移除手術，並於隔日出院。
+2.無。
+3.第二次手術為植入物移除手術，待傷口癒合及可行一般工作。
+4.由影像檢查可見骨折處癒合良好，傷口也於2025/10/30門診追蹤檢查癒合良好行縫線拆除。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/13 上午 08:00",
@@ -17142,7 +20500,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "賴雨欣醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n(因病歷影本容量過大，請各位醫師上ONEPAGE確認)\n因案件有時效性，如未收到回覆病歷將於3月14日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "賴雨欣醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+(因病歷影本容量過大，請各位醫師上ONEPAGE確認)
+因案件有時效性，如未收到回覆病歷將於3月14日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "同意釋出",
     "remark": "",
     "status": "已完成",
@@ -17168,7 +20530,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳明堯醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n(因病歷影本容量過大，請各位醫師上ONEPAGE確認)\n因案件有時效性，如未收到回覆病歷將於3月14日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "陳明堯醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+(因病歷影本容量過大，請各位醫師上ONEPAGE確認)
+因案件有時效性，如未收到回覆病歷將於3月14日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可以。麻煩您。謝謝",
     "remark": "",
     "status": "已完成",
@@ -17194,7 +20560,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳明堯醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n(因病歷影本容量過大，請各位醫師上ONEPAGE確認)\n因案件有時效性，如未收到回覆病歷將於3月14日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "陳明堯醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+(因病歷影本容量過大，請各位醫師上ONEPAGE確認)
+因案件有時效性，如未收到回覆病歷將於3月14日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -17220,7 +20590,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "李明哲醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n(因病歷影本容量過大，請各位醫師上ONEPAGE確認)\n因案件有時效性，如未收到回覆病歷將於3月14日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "李明哲醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+(因病歷影本容量過大，請各位醫師上ONEPAGE確認)
+因案件有時效性，如未收到回覆病歷將於3月14日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -17246,7 +20620,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "周大鈞醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n(因病歷影本容量過大，請各位醫師上ONEPAGE確認)\n因案件有時效性，如未收到回覆病歷將於3月14日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "周大鈞醫師您好:因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+(因病歷影本容量過大，請各位醫師上ONEPAGE確認)
+因案件有時效性，如未收到回覆病歷將於3月14日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -17272,8 +20650,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "洪千岱醫師您好\n請協助回覆問題\n1.依貴院病患劉岱雯(06862192)於民國114年1月17至114年8月20日日至貴院就診之診斷證明書，其內容記載：「左側大腿外側區感覺神經病變致感覺喪失」、「為永久性喪失」，請說明上開病狀在醫學上之意義為何？\n2.是否屬毀敗或嚴重減損一肢以上之機能，或於身體或健康，有重大不治或難治之傷害?",
-    "doctor_reply": "依本院病歷紀錄，病患劉岱雯於民國114年1月因左大腿嚴重外傷至本院整形外科就醫，當時診斷為左側大腿大型撕裂傷併皮膚缺損及肌腱損傷，並接受清創、筋膜切開、肌腱修補及皮瓣重建等手術治療。其後於民國114年6月25日及8月20日至本院神經科門診追蹤時，神經學檢查顯示左側大腿外側區域對針刺及溫度刺激無反應，呈現局部感覺喪失之情形，臨床上屬於該區域皮神經功能受損所致之感覺神經病變。所謂「左側大腿外側區感覺神經病變致感覺喪失」，在醫學上係指支配該部位之周邊感覺神經受損後，造成該區域對疼痛、溫度或觸覺刺激之感受能力下降或消失，此類情形常見於局部神經因外傷或組織破壞而受損之後。若神經受損程度較重或經相當期間觀察後未見恢復，臨床上可判定為神經功能之永久性缺損，亦即該區域之感覺功能可能長期或終身無法恢復。\n\n就醫學觀點而言，此類周邊感覺神經受損主要造成局部感覺功能缺失，通常不直接影響肢體之主要運動功能或關節活動能力。至於是否構成刑事法律上所稱「毀敗或嚴重減損一肢以上之機能」，或屬「身體或健康有重大不治或難治之傷害」，係屬法律上對傷害程度之評價與認定範疇，仍須由司法機關依整體事實、證據及相關法律規定綜合判斷。本院僅能依病歷紀錄及醫學專業說明其神經學檢查所見及可能之醫學意義，提供司法機關參考",
+    "question": "洪千岱醫師您好
+請協助回覆問題
+1.依貴院病患劉岱雯(06862192)於民國114年1月17至114年8月20日日至貴院就診之診斷證明書，其內容記載：「左側大腿外側區感覺神經病變致感覺喪失」、「為永久性喪失」，請說明上開病狀在醫學上之意義為何？
+2.是否屬毀敗或嚴重減損一肢以上之機能，或於身體或健康，有重大不治或難治之傷害?",
+    "doctor_reply": "依本院病歷紀錄，病患劉岱雯於民國114年1月因左大腿嚴重外傷至本院整形外科就醫，當時診斷為左側大腿大型撕裂傷併皮膚缺損及肌腱損傷，並接受清創、筋膜切開、肌腱修補及皮瓣重建等手術治療。其後於民國114年6月25日及8月20日至本院神經科門診追蹤時，神經學檢查顯示左側大腿外側區域對針刺及溫度刺激無反應，呈現局部感覺喪失之情形，臨床上屬於該區域皮神經功能受損所致之感覺神經病變。所謂「左側大腿外側區感覺神經病變致感覺喪失」，在醫學上係指支配該部位之周邊感覺神經受損後，造成該區域對疼痛、溫度或觸覺刺激之感受能力下降或消失，此類情形常見於局部神經因外傷或組織破壞而受損之後。若神經受損程度較重或經相當期間觀察後未見恢復，臨床上可判定為神經功能之永久性缺損，亦即該區域之感覺功能可能長期或終身無法恢復。
+
+就醫學觀點而言，此類周邊感覺神經受損主要造成局部感覺功能缺失，通常不直接影響肢體之主要運動功能或關節活動能力。至於是否構成刑事法律上所稱「毀敗或嚴重減損一肢以上之機能」，或屬「身體或健康有重大不治或難治之傷害」，係屬法律上對傷害程度之評價與認定範疇，仍須由司法機關依整體事實、證據及相關法律規定綜合判斷。本院僅能依病歷紀錄及醫學專業說明其神經學檢查所見及可能之醫學意義，提供司法機關參考",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/14 上午 08:00",
@@ -17298,8 +20681,24 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "洪邦傑醫師您好，請協助回覆問題\n梅偉豪(00305042)於114年7月14日18時20分許發生交通事故，並於114年7月14日19時14分許至貴院急診，診斷病名為「右側胸壁挫傷、右側小腿挫傷」（詳附件）；梅偉豪復於同月16日前往貴院就診，診斷病名為「右側第六至第七肋骨不完全骨折」（詳附件），請說明下列事項：\n1.梅偉豪急診時有無拍攝X光片？\n2.急診時有無肋骨受損之跡象？\n3.114年7月16日所診斷之「右側第六至第七肋骨不完全骨折」，其受傷位置與114年7月14日所診斷之「右側胸壁挫傷」是否為同一部位？\n4.依據醫學經驗，肋骨受撞擊後，是否可能因裂縫細微、影像夾角或初期腫脹，導致受傷初期之 X 光檢查難以立即判讀出骨折，而需於數日後複查方能確認？\n5.梅偉豪所受「右側第六至第七肋骨不完全骨折」之傷害與其於114年7月14日所發生之交通事故間是否具有醫學關聯或因果關係？\n請惠示醫理見解",
-    "doctor_reply": "1.梅偉豪急診時有無拍攝X光片？\n有\n2.急診時有無肋骨受損之跡象？\n急診時的X光片無法看出肋骨有錯位受損的情形, 因X光片有其診斷極限, 尤其是在non-displacement rib fracture 的病人上面\n3.114年7月16日所診斷之「右側第六至第七肋骨不完全骨折」，其受傷位置與114年7月14日所診斷之「右側胸壁挫傷」是否為同一部位？\n是\n4.依據醫學經驗，肋骨受撞擊後，是否可能因裂縫細微、影像夾角或初期腫脹，導致受傷初期之 X 光檢查難以立即判讀出骨折，而需於數日後複查方能確認？\n是, 其實08/02的電腦斷層看得出來右側第七肋和第八肋斷掉之處仍然沒有錯位, 所以一開始受傷時可能就只有裂縫, 需要靠病人回診後,  \"持續疼痛\" 超過兩周以上 的症狀 ,才有排電腦斷層來排除細微裂縫的需要 \n5.梅偉豪所受「右側第六至第七肋骨不完全骨折」之傷害與其於114年7月14日所發生之交通事故間是否具有醫學關聯或因果關係？\n雖急診無直接證據(電腦斷層), 但我認為是撞擊當下就發生的裂縫, 因為08/02號的電腦斷層發現第八根肋骨已經開始在生長骨頭, 學理上來看差不多就是受傷2~3周以後開始骨頭生長, 剛好跟病人受傷日期吻合",
+    "question": "洪邦傑醫師您好，請協助回覆問題
+梅偉豪(00305042)於114年7月14日18時20分許發生交通事故，並於114年7月14日19時14分許至貴院急診，診斷病名為「右側胸壁挫傷、右側小腿挫傷」（詳附件）；梅偉豪復於同月16日前往貴院就診，診斷病名為「右側第六至第七肋骨不完全骨折」（詳附件），請說明下列事項：
+1.梅偉豪急診時有無拍攝X光片？
+2.急診時有無肋骨受損之跡象？
+3.114年7月16日所診斷之「右側第六至第七肋骨不完全骨折」，其受傷位置與114年7月14日所診斷之「右側胸壁挫傷」是否為同一部位？
+4.依據醫學經驗，肋骨受撞擊後，是否可能因裂縫細微、影像夾角或初期腫脹，導致受傷初期之 X 光檢查難以立即判讀出骨折，而需於數日後複查方能確認？
+5.梅偉豪所受「右側第六至第七肋骨不完全骨折」之傷害與其於114年7月14日所發生之交通事故間是否具有醫學關聯或因果關係？
+請惠示醫理見解",
+    "doctor_reply": "1.梅偉豪急診時有無拍攝X光片？
+有
+2.急診時有無肋骨受損之跡象？
+急診時的X光片無法看出肋骨有錯位受損的情形, 因X光片有其診斷極限, 尤其是在non-displacement rib fracture 的病人上面
+3.114年7月16日所診斷之「右側第六至第七肋骨不完全骨折」，其受傷位置與114年7月14日所診斷之「右側胸壁挫傷」是否為同一部位？
+是
+4.依據醫學經驗，肋骨受撞擊後，是否可能因裂縫細微、影像夾角或初期腫脹，導致受傷初期之 X 光檢查難以立即判讀出骨折，而需於數日後複查方能確認？
+是, 其實08/02的電腦斷層看得出來右側第七肋和第八肋斷掉之處仍然沒有錯位, 所以一開始受傷時可能就只有裂縫, 需要靠病人回診後,  \"持續疼痛\" 超過兩周以上 的症狀 ,才有排電腦斷層來排除細微裂縫的需要 
+5.梅偉豪所受「右側第六至第七肋骨不完全骨折」之傷害與其於114年7月14日所發生之交通事故間是否具有醫學關聯或因果關係？
+雖急診無直接證據(電腦斷層), 但我認為是撞擊當下就發生的裂縫, 因為08/02號的電腦斷層發現第八根肋骨已經開始在生長骨頭, 學理上來看差不多就是受傷2~3周以後開始骨頭生長, 剛好跟病人受傷日期吻合",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/15 上午 08:00",
@@ -17324,8 +20723,28 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蔡同堯醫師您好，請協助回覆問題\n梅偉豪(00305042)於114年7月14日18時20分許發生交通事故，並於114年7月14日19時14分許至貴院急診，診斷病名為「右側胸壁挫傷、右側小腿挫傷」（詳附件）；梅偉豪復於同月16日前往貴院就診，診斷病名為「右側第六至第七肋骨不完全骨折」（詳附件），請說明下列事項：\n1.梅偉豪急診時有無拍攝X光片？\n2.急診時有無肋骨受損之跡象？\n3.114年7月16日所診斷之「右側第六至第七肋骨不完全骨折」，其受傷位置與114年7月14日所診斷之「右側胸壁挫傷」是否為同一部位？\n4.依據醫學經驗，肋骨受撞擊後，是否可能因裂縫細微、影像夾角或初期腫脹，導致受傷初期之 X 光檢查難以立即判讀出骨折，而需於數日後複查方能確認？\n5.梅偉豪所受「右側第六至第七肋骨不完全骨折」之傷害與其於114年7月14日所發生之交通事故間是否具有醫學關聯或因果關係？\n請惠示醫理見解",
-    "doctor_reply": "1. 梅偉豪急診時有無拍攝X光片？\nA: 依病歷記載：有。\n\n2.急診時有無肋骨受損之跡象？\nA: 依病歷記載：有「右側胸壁挫傷」；然急診當日之X光片未發現明顯骨折。\n\n3.114年7月16日所診斷之「右側第六至第七肋骨不完全骨折」，其受傷位置與114年7月14日所診斷之「右側胸壁挫傷」是否為同一部位？\nA: 依病歷記載：「右側第六至第七肋骨不完全骨折」之診斷依據，應為114年8月2日門診所安排之胸部電腦斷層影像發現。依急診及門診之追蹤連續性，合理推斷應為同一部位。建議可徵詢胸外門診醫師之意見。\n\n4.依據醫學經驗，肋骨受撞擊後，是否可能因裂縫細微、影像夾角或初期腫脹，導致受傷初期之 X 光檢查難以立即判讀出骨折，而需於數日後複查A: 方能確認？\n是。\n\n5.梅偉豪所受「右側第六至第七肋骨不完全骨折」之傷害與其於114年7月14日所發生之交通事故間是否具有醫學關聯或因果關係？請惠示醫理見解\nA: 依急診及門診之追蹤連續性，應可合理推斷為同次事故所致之傷害，即有因果關係。建議可徵詢胸外門診醫師之意見。",
+    "question": "蔡同堯醫師您好，請協助回覆問題
+梅偉豪(00305042)於114年7月14日18時20分許發生交通事故，並於114年7月14日19時14分許至貴院急診，診斷病名為「右側胸壁挫傷、右側小腿挫傷」（詳附件）；梅偉豪復於同月16日前往貴院就診，診斷病名為「右側第六至第七肋骨不完全骨折」（詳附件），請說明下列事項：
+1.梅偉豪急診時有無拍攝X光片？
+2.急診時有無肋骨受損之跡象？
+3.114年7月16日所診斷之「右側第六至第七肋骨不完全骨折」，其受傷位置與114年7月14日所診斷之「右側胸壁挫傷」是否為同一部位？
+4.依據醫學經驗，肋骨受撞擊後，是否可能因裂縫細微、影像夾角或初期腫脹，導致受傷初期之 X 光檢查難以立即判讀出骨折，而需於數日後複查方能確認？
+5.梅偉豪所受「右側第六至第七肋骨不完全骨折」之傷害與其於114年7月14日所發生之交通事故間是否具有醫學關聯或因果關係？
+請惠示醫理見解",
+    "doctor_reply": "1. 梅偉豪急診時有無拍攝X光片？
+A: 依病歷記載：有。
+
+2.急診時有無肋骨受損之跡象？
+A: 依病歷記載：有「右側胸壁挫傷」；然急診當日之X光片未發現明顯骨折。
+
+3.114年7月16日所診斷之「右側第六至第七肋骨不完全骨折」，其受傷位置與114年7月14日所診斷之「右側胸壁挫傷」是否為同一部位？
+A: 依病歷記載：「右側第六至第七肋骨不完全骨折」之診斷依據，應為114年8月2日門診所安排之胸部電腦斷層影像發現。依急診及門診之追蹤連續性，合理推斷應為同一部位。建議可徵詢胸外門診醫師之意見。
+
+4.依據醫學經驗，肋骨受撞擊後，是否可能因裂縫細微、影像夾角或初期腫脹，導致受傷初期之 X 光檢查難以立即判讀出骨折，而需於數日後複查A: 方能確認？
+是。
+
+5.梅偉豪所受「右側第六至第七肋骨不完全骨折」之傷害與其於114年7月14日所發生之交通事故間是否具有醫學關聯或因果關係？請惠示醫理見解
+A: 依急診及門診之追蹤連續性，應可合理推斷為同次事故所致之傷害，即有因果關係。建議可徵詢胸外門診醫師之意見。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/15 上午 08:00",
@@ -17350,8 +20769,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "張舜程醫師您好 請協助回答問題\n陳冠升即陳永彬(17930684)曾於民國114年12月30日、115年1月6日、115年1月20日、115年1月27日就醫，\n1.請貴院簡述陳冠升即陳永彬之病情。\n 2.陳冠升即陳永彬目前有無意識?有無工作能力?\n請惠示醫理見解",
-    "doctor_reply": "1.根據115年1月06日本科門診紀錄，病患為頭皮潰瘍，併有惡性淋巴腫瘤。其他日期之門診狀況應請其他科別醫師回覆。\n2.有意識但應無工作能力。",
+    "question": "張舜程醫師您好 請協助回答問題
+陳冠升即陳永彬(17930684)曾於民國114年12月30日、115年1月6日、115年1月20日、115年1月27日就醫，
+1.請貴院簡述陳冠升即陳永彬之病情。
+ 2.陳冠升即陳永彬目前有無意識?有無工作能力?
+請惠示醫理見解",
+    "doctor_reply": "1.根據115年1月06日本科門診紀錄，病患為頭皮潰瘍，併有惡性淋巴腫瘤。其他日期之門診狀況應請其他科別醫師回覆。
+2.有意識但應無工作能力。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/15 上午 08:00",
@@ -17376,8 +20800,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳致中醫師您好 請協助回答問題\n陳冠升即陳永彬(17930684)曾於民國114年12月30日、115年1月6日、115年1月20日、115年1月27日就醫，\n1.請貴院簡述陳冠升即陳永彬之病情。\n 2.陳冠升即陳永彬目前有無意識?有無工作能力?\n請惠示醫理見解",
-    "doctor_reply": "1. 2025.12.30 神經科初診, 自述病史為一氧化碳中毒, 橫紋肌溶解症, 腎病變, 高血壓, 糖尿病\n2. 根據 2026.01.27 神經科門診紀錄, 病患有意識, 但可能僅可從事非常簡單之工作",
+    "question": "陳致中醫師您好 請協助回答問題
+陳冠升即陳永彬(17930684)曾於民國114年12月30日、115年1月6日、115年1月20日、115年1月27日就醫，
+1.請貴院簡述陳冠升即陳永彬之病情。
+ 2.陳冠升即陳永彬目前有無意識?有無工作能力?
+請惠示醫理見解",
+    "doctor_reply": "1. 2025.12.30 神經科初診, 自述病史為一氧化碳中毒, 橫紋肌溶解症, 腎病變, 高血壓, 糖尿病
+2. 根據 2026.01.27 神經科門診紀錄, 病患有意識, 但可能僅可從事非常簡單之工作",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/15 上午 08:00",
@@ -17402,8 +20831,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "劉惠文醫師您好 請協助回答問題\n陳冠升即陳永彬(17930684)曾於民國114年12月30日、115年1月6日、115年1月20日、115年1月27日就醫，\n1.請貴院簡述陳冠升即陳永彬之病情。\n 2.陳冠升即陳永彬目前有無意識?有無工作能力?\n請惠示醫理見解",
-    "doctor_reply": "1. 病人於115年1月6日被家屬帶來門診接受第二意見諮詢，因過往淋巴瘤資料不全，當下開立腦部核磁共振檢查單，截至目前未再回門診就診，無法判斷病情。\n2. 病人僅於115年1月6日曾經就診，「目前」已時隔兩個月以上，無法判斷「目前」有無意識或有無工作能力。",
+    "question": "劉惠文醫師您好 請協助回答問題
+陳冠升即陳永彬(17930684)曾於民國114年12月30日、115年1月6日、115年1月20日、115年1月27日就醫，
+1.請貴院簡述陳冠升即陳永彬之病情。
+ 2.陳冠升即陳永彬目前有無意識?有無工作能力?
+請惠示醫理見解",
+    "doctor_reply": "1. 病人於115年1月6日被家屬帶來門診接受第二意見諮詢，因過往淋巴瘤資料不全，當下開立腦部核磁共振檢查單，截至目前未再回門診就診，無法判斷病情。
+2. 病人僅於115年1月6日曾經就診，「目前」已時隔兩個月以上，無法判斷「目前」有無意識或有無工作能力。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/15 上午 08:00",
@@ -17428,8 +20862,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "許庭碩醫師您好，請協助回覆問題\n曾彥祥(09983919)因「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.1曾君就診有無主訴傷害事故？\n1.2發生日期及原因為何？\n1.3所患「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」是否係因主訴之傷害事故所致？\n2.1曾君因上開傷病治療經過為何？\n2.2有無併發症或後遺症？\n2.3療養至何時起可從事一般工作？\n2.4認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1.1摩托車車禍\n1.2 3/1至急診\n1.3 是車禍造成骨折\n2.1 於2025/03/01接受骨折開放復位內固定，2025/06/17 接受傷口清創，2025/10/21接受內固定移除。\n2.2 傷口癒合不良已於2025/06/17處理，後續無後遺症\n2.3 第一次手術後3個月可正常工作（2025/09/17後）。\n2.4 醫學研究骨折3個月可負重活動。",
+    "question": "許庭碩醫師您好，請協助回覆問題
+曾彥祥(09983919)因「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.1曾君就診有無主訴傷害事故？
+1.2發生日期及原因為何？
+1.3所患「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」是否係因主訴之傷害事故所致？
+2.1曾君因上開傷病治療經過為何？
+2.2有無併發症或後遺症？
+2.3療養至何時起可從事一般工作？
+2.4認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1.1摩托車車禍
+1.2 3/1至急診
+1.3 是車禍造成骨折
+2.1 於2025/03/01接受骨折開放復位內固定，2025/06/17 接受傷口清創，2025/10/21接受內固定移除。
+2.2 傷口癒合不良已於2025/06/17處理，後續無後遺症
+2.3 第一次手術後3個月可正常工作（2025/09/17後）。
+2.4 醫學研究骨折3個月可負重活動。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/18 上午 08:00",
@@ -17454,8 +20903,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "許庭碩醫師您好，請協助回覆問題\n曾彥祥(09983919)因「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.1曾君就診有無主訴傷害事故？\n1.2發生日期及原因為何？\n1.3所患「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」是否係因主訴之傷害事故所致？\n2.1曾君因上開傷病治療經過為何？\n2.2有無併發症或後遺症？\n2.3療養至何時起可從事一般工作？\n2.4認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1.1摩托車車禍\n1.2 3/1至急診\n1.3 是車禍造成骨折\n2.1 於2025/03/01接受骨折開放復位內固定，2025/06/17 接受傷口清創，2025/10/21接受內固定移除。\n2.2 傷口癒合不良已於2025/06/17處理，後續無後遺症\n2.3 第一次手術後3個月可正常工作（2025/09/17後）。\n2.4 醫學研究骨折3個月可負重活動。",
+    "question": "許庭碩醫師您好，請協助回覆問題
+曾彥祥(09983919)因「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.1曾君就診有無主訴傷害事故？
+1.2發生日期及原因為何？
+1.3所患「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」是否係因主訴之傷害事故所致？
+2.1曾君因上開傷病治療經過為何？
+2.2有無併發症或後遺症？
+2.3療養至何時起可從事一般工作？
+2.4認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1.1摩托車車禍
+1.2 3/1至急診
+1.3 是車禍造成骨折
+2.1 於2025/03/01接受骨折開放復位內固定，2025/06/17 接受傷口清創，2025/10/21接受內固定移除。
+2.2 傷口癒合不良已於2025/06/17處理，後續無後遺症
+2.3 第一次手術後3個月可正常工作（2025/09/17後）。
+2.4 醫學研究骨折3個月可負重活動。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/18 上午 08:00",
@@ -17480,8 +20944,30 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳天恩醫師您好，請協助回覆問題\n曾彥祥(09983919)因「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.1曾君就診有無主訴傷害事故？\n1.2發生日期及原因為何？\n1.3所患「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」是否係因主訴之傷害事故所致？\n2.1曾君因上開傷病治療經過為何？\n2.2有無併發症或後遺症？\n2.3療養至何時起可從事一般工作？\n2.4認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1.1曾君就診有無主訴傷害事故？\n不知，急診就診時為處理術後併發症，未告知手術前狀況。\n1.2發生日期及原因為何？\n不知，急診就診時為處理術後併發症，未告知手術前狀況。\n1.3所患「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」是否係因主訴之傷害事故所致？\n不知，急診就診時為處理術後併發症，未告知手術前狀況。\n2.1曾君因上開傷病治療經過為何？\n急診二次就診皆因術後傷口癒合不良並疑似感染，第二次就診安排住院治療。\n2.2有無併發症或後遺症？\n不知，急診不會長期追蹤併發症及後遺症。\n2.3療養至何時起可從事一般工作？\n不知，急診不會判斷。\n2.4認定理由及依據為何？\n急診不會判斷。",
+    "question": "陳天恩醫師您好，請協助回覆問題
+曾彥祥(09983919)因「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.1曾君就診有無主訴傷害事故？
+1.2發生日期及原因為何？
+1.3所患「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」是否係因主訴之傷害事故所致？
+2.1曾君因上開傷病治療經過為何？
+2.2有無併發症或後遺症？
+2.3療養至何時起可從事一般工作？
+2.4認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1.1曾君就診有無主訴傷害事故？
+不知，急診就診時為處理術後併發症，未告知手術前狀況。
+1.2發生日期及原因為何？
+不知，急診就診時為處理術後併發症，未告知手術前狀況。
+1.3所患「左側鎖骨骨折、左肩鎖骨骨折術後併傷口癒合不良」是否係因主訴之傷害事故所致？
+不知，急診就診時為處理術後併發症，未告知手術前狀況。
+2.1曾君因上開傷病治療經過為何？
+急診二次就診皆因術後傷口癒合不良並疑似感染，第二次就診安排住院治療。
+2.2有無併發症或後遺症？
+不知，急診不會長期追蹤併發症及後遺症。
+2.3療養至何時起可從事一般工作？
+不知，急診不會判斷。
+2.4認定理由及依據為何？
+急診不會判斷。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/18 上午 08:00",
@@ -17506,8 +20992,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "洪家佩醫師您好請協助回覆問題謝謝\n1.蔡政錡(17651167)於國民114年10月6日至貴院就醫後迄今傷勢為何?\n2.有無完全復原之可能?",
-    "doctor_reply": "1.患者目前平衡仍顯不足，行動較為緩慢。語言功能尚有顯著缺損，溝通流暢度不佳，尚無法使用完整流暢之語句表達。右側第三對腦神經損傷，影響視力與瞳孔功能。認知功能顯著缺損，包含智能缺損、記憶缺損、及執行功能不足。\n2.上述功能缺損應無完全復原之可能。",
+    "question": "洪家佩醫師您好請協助回覆問題謝謝
+1.蔡政錡(17651167)於國民114年10月6日至貴院就醫後迄今傷勢為何?
+2.有無完全復原之可能?",
+    "doctor_reply": "1.患者目前平衡仍顯不足，行動較為緩慢。語言功能尚有顯著缺損，溝通流暢度不佳，尚無法使用完整流暢之語句表達。右側第三對腦神經損傷，影響視力與瞳孔功能。認知功能顯著缺損，包含智能缺損、記憶缺損、及執行功能不足。
+2.上述功能缺損應無完全復原之可能。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/20 上午 08:00",
@@ -17532,8 +21021,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "江采蓮醫師您好，請協助回覆問題謝謝\n1.惠請查明受刑人曾英富(04119959)現所罹膽囊炎、敗血性休克、菌血症等病變，有無因入監服刑執行刑罰，而不能保其生命情事？\n2.後續是否有至貴院復診？\n惠請提供醫理見解",
-    "doctor_reply": "1. 本院病歷系統有01/03急診就診、01/19出院紀錄，不清楚病患服刑時間為何，無法判斷因果關係\n2. 本院病歷系統有01/26及02/02門診就診紀錄",
+    "question": "江采蓮醫師您好，請協助回覆問題謝謝
+1.惠請查明受刑人曾英富(04119959)現所罹膽囊炎、敗血性休克、菌血症等病變，有無因入監服刑執行刑罰，而不能保其生命情事？
+2.後續是否有至貴院復診？
+惠請提供醫理見解",
+    "doctor_reply": "1. 本院病歷系統有01/03急診就診、01/19出院紀錄，不清楚病患服刑時間為何，無法判斷因果關係
+2. 本院病歷系統有01/26及02/02門診就診紀錄",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/21 上午 08:00",
@@ -17558,8 +21051,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "劉柏鈞醫師您好，請協助回覆問題謝謝\n1.惠請查明受刑人曾英富(04119959)現所罹膽囊炎、敗血性休克、菌血症等病變，有無因入監服刑執行刑罰，而不能保其生命情事？\n2.後續是否有至貴院復診？\n惠請提供醫理見解",
-    "doctor_reply": "1. 曾英富(國民身分證統一編號: Q121614688)之前所罹膽囊炎、敗血性休克、菌血症，在 2026/01/03-2026/01/19 住院治療後已痊癒，已無膽囊炎、敗血性休克、菌血症\n2. 曾英富(國民身分證統一編號: Q121614688) 2026/01/19 出院後，曾於 2026/01/26、2026/02/02 回診\n3. 曾英富(國民身分證統一編號: Q121614688) 因住院期間的敗血性休克併發慢性腎臟病，需腎臟科門診長期追蹤，應避免高鹽飲食",
+    "question": "劉柏鈞醫師您好，請協助回覆問題謝謝
+1.惠請查明受刑人曾英富(04119959)現所罹膽囊炎、敗血性休克、菌血症等病變，有無因入監服刑執行刑罰，而不能保其生命情事？
+2.後續是否有至貴院復診？
+惠請提供醫理見解",
+    "doctor_reply": "1. 曾英富(國民身分證統一編號: Q121614688)之前所罹膽囊炎、敗血性休克、菌血症，在 2026/01/03-2026/01/19 住院治療後已痊癒，已無膽囊炎、敗血性休克、菌血症
+2. 曾英富(國民身分證統一編號: Q121614688) 2026/01/19 出院後，曾於 2026/01/26、2026/02/02 回診
+3. 曾英富(國民身分證統一編號: Q121614688) 因住院期間的敗血性休克併發慢性腎臟病，需腎臟科門診長期追蹤，應避免高鹽飲食",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/21 上午 08:00",
@@ -17584,7 +21082,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "許永和醫師您好，請協助回覆問題謝謝\n1.惠請查明受刑人曾英富(04119959)現所罹膽囊炎、敗血性休克、菌血症等病變，有無因入監服刑執行刑罰，而不能保其生命情事？\n2.後續是否有至貴院復診？\n惠請提供醫理見解",
+    "question": "許永和醫師您好，請協助回覆問題謝謝
+1.惠請查明受刑人曾英富(04119959)現所罹膽囊炎、敗血性休克、菌血症等病變，有無因入監服刑執行刑罰，而不能保其生命情事？
+2.後續是否有至貴院復診？
+惠請提供醫理見解",
     "doctor_reply": "115-01-26 有至腎臟內科就診也安排追蹤腎功能受損是否已恢復，但病人並未抽受檢，當日在門診無發燒情形、生命跡象也穩定。膽道炎併發敗血症後續追蹤診療在住院時的消化內科主治醫師那邊。",
     "remark": "",
     "status": "已完成",
@@ -17610,7 +21111,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "翁佩韋主任您好:\n因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月21日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "翁佩韋主任您好:
+因勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月21日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "可釋出, 謝謝",
     "remark": "",
     "status": "已完成",
@@ -17636,7 +21141,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "楊政道醫師您好:\n勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於03月23日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "楊政道醫師您好:
+勞保局來函調閱病歷,請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於03月23日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "可以釋出，謝謝。",
     "remark": "",
     "status": "已完成",
@@ -17662,7 +21171,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳弘洲醫師您好，請協助回覆問題\n1.王振東(17331533)於113年12月13日車禍復至貴院治療之傷勢(詳如附件診斷證明書)是否已達刑法第10條第4項所謂重傷之定義？\n稱重傷者，謂下列傷害：\n一、毀敗或嚴重減損一目或二目之視能。\n二、毀敗或嚴重減損一耳或二耳之聽能。\n三、毀敗或嚴重減損語能、味能或嗅能。\n四、毀敗或嚴重減損一肢以上之機能。\n五、毀敗或嚴重減損生殖之機能。\n六、其他於身體或健康，有重大不治或難治之傷害。\n\n請惠示醫理見解",
+    "question": "陳弘洲醫師您好，請協助回覆問題
+1.王振東(17331533)於113年12月13日車禍復至貴院治療之傷勢(詳如附件診斷證明書)是否已達刑法第10條第4項所謂重傷之定義？
+稱重傷者，謂下列傷害：
+一、毀敗或嚴重減損一目或二目之視能。
+二、毀敗或嚴重減損一耳或二耳之聽能。
+三、毀敗或嚴重減損語能、味能或嗅能。
+四、毀敗或嚴重減損一肢以上之機能。
+五、毀敗或嚴重減損生殖之機能。
+六、其他於身體或健康，有重大不治或難治之傷害。
+
+請惠示醫理見解",
     "doctor_reply": "該名患者雙下肢無力且關節攣縮無法步行，應符合重傷之定義。",
     "remark": "",
     "status": "已完成",
@@ -17688,7 +21207,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "李垣樟醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:闕志銘(06264817),謝謝您\n1.闕君何時因上開傷病至貴院初診？\n2.當時有無主訴傷害事故？\n3.發生日期及經過為何？\n4.所患是否為主訴之事故所致？\n5.請確認病歷是否可釋出?非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n請惠示醫理見解",
+    "question": "李垣樟醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:闕志銘(06264817),謝謝您
+1.闕君何時因上開傷病至貴院初診？
+2.當時有無主訴傷害事故？
+3.發生日期及經過為何？
+4.所患是否為主訴之事故所致？
+5.請確認病歷是否可釋出?非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+請惠示醫理見解",
     "doctor_reply": "2025/9/15初診醫師為感染科李美慧醫師 麻煩請她回覆(當時) 狀況.",
     "remark": "李醫師您好:傷害事故是否為闕君自述因工作意外導致傷害事故,附上診斷證明書,再麻煩您確認,所患是否為主訴之事故所致?謝謝您",
     "status": "已完成",
@@ -17714,8 +21240,20 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "李美慧醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:闕志銘(06264817),謝謝您\n1.闕君何時因上開傷病至貴院初診？\n2.當時有無主訴傷害事故？\n3.發生日期及經過為何？\n4.所患是否為主訴之事故所致？\n5.附上李垣樟醫師回復影本\n請惠示醫裡見解",
-    "doctor_reply": "根據病歷 且當日病人也看診骨科的病例\n1.左下肢紅腫熱燙約10天\n2.無\n3.無\n4.並不能判斷\n謝謝",
+    "question": "李美慧醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:闕志銘(06264817),謝謝您
+1.闕君何時因上開傷病至貴院初診？
+2.當時有無主訴傷害事故？
+3.發生日期及經過為何？
+4.所患是否為主訴之事故所致？
+5.附上李垣樟醫師回復影本
+請惠示醫裡見解",
+    "doctor_reply": "根據病歷 且當日病人也看診骨科的病例
+1.左下肢紅腫熱燙約10天
+2.無
+3.無
+4.並不能判斷
+謝謝",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/25 上午 08:00",
@@ -17740,8 +21278,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳韋呈醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:闕志銘(06264817),謝謝您\n1.闕君何時因上開傷病至貴院初診？\n2.當時有無主訴傷害事故？\n3.發生日期及經過為何？\n4.所患是否為主訴之事故所致？\n5.附上李美慧醫師回復影本\n請惠示醫裡見解",
-    "doctor_reply": "1. 骨科門診是9.15\n2. 外觀外踝部紅腫熱痛，鑑別診斷可能為蜂窩性組織炎或扭傷\n3. 無確切提供\n4. 無法判斷",
+    "question": "陳韋呈醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:闕志銘(06264817),謝謝您
+1.闕君何時因上開傷病至貴院初診？
+2.當時有無主訴傷害事故？
+3.發生日期及經過為何？
+4.所患是否為主訴之事故所致？
+5.附上李美慧醫師回復影本
+請惠示醫裡見解",
+    "doctor_reply": "1. 骨科門診是9.15
+2. 外觀外踝部紅腫熱痛，鑑別診斷可能為蜂窩性組織炎或扭傷
+3. 無確切提供
+4. 無法判斷",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/25 上午 08:00",
@@ -17766,7 +21314,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "黃錦前醫師您好:\n勞保局來函調閱病歷,病人姓名:徐有鎮(07270927)請協助確認病歷，是否可以釋出。\n110/12/2-110/12/4住院病歷公文曾釋出過\n111/07/28-111/07/31住院(出院病摘及手術紀錄本人申請過)\n因案件有時效性，如未收到回覆病歷將於03月23日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "黃錦前醫師您好:
+勞保局來函調閱病歷,病人姓名:徐有鎮(07270927)請協助確認病歷，是否可以釋出。
+110/12/2-110/12/4住院病歷公文曾釋出過
+111/07/28-111/07/31住院(出院病摘及手術紀錄本人申請過)
+因案件有時效性，如未收到回覆病歷將於03月23日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "ok",
     "remark": "",
     "status": "已完成",
@@ -17792,7 +21346,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "邱彥碩醫師您好:\n臺灣新北市地方檢察署三重簡易庭調閱病歷,\n請協助確認病歷內容,因案件有時效性(煩請務必回覆)。\n感謝您。\n備註：(住院之出院病摘及門診醫令皆已釋出過)\n請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "邱彥碩醫師您好:
+臺灣新北市地方檢察署三重簡易庭調閱病歷,
+請協助確認病歷內容,因案件有時效性(煩請務必回覆)。
+感謝您。
+備註：(住院之出院病摘及門診醫令皆已釋出過)
+請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "內容ok",
     "remark": "",
     "status": "已完成",
@@ -17818,8 +21378,20 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "劉郁欣醫師您好:\n請醫師協助回覆公文內文問題病人姓名:黃博煜(00712943),謝謝您\n1.黃君何日因上開傷病初次至貴院就診？\n2.當時有無主訴發生何傷害事故？\n3.事故發生日期、地點及經過情形為何？\n4.所患是否係因主訴之傷害事故所致？\n5.請確認病歷是否可釋出?(出院病摘/放射報告及門診醫令本人申請釋出過)\n非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n請惠示醫理見解",
-    "doctor_reply": "1.黃君於2026/06/26由本院復健科醫師轉至骨科本人門診就診，在其之前已於本院復健科門診就診多次。\n2.病患本人有說明於2025年年初發生意外以致手腕鈍挫傷。\n3.病患右手腕當時是以FOOSH 姿勢受傷「摔倒時伸手著地（Fall On an OutStretched Hand）」的縮寫，是一種極常見的骨科損傷機制。這通常發生在落地時，人體本能地伸手支撐以減緩衝擊，導致力量透過手部傳導至手腕，引起扭傷及挫傷。\n4.病患右側腕部三角纖維軟骨複合體損傷及右側腕部舟月韌帶損傷為FOOSH injury所致。\n5.確認。",
+    "question": "劉郁欣醫師您好:
+請醫師協助回覆公文內文問題病人姓名:黃博煜(00712943),謝謝您
+1.黃君何日因上開傷病初次至貴院就診？
+2.當時有無主訴發生何傷害事故？
+3.事故發生日期、地點及經過情形為何？
+4.所患是否係因主訴之傷害事故所致？
+5.請確認病歷是否可釋出?(出院病摘/放射報告及門診醫令本人申請釋出過)
+非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+請惠示醫理見解",
+    "doctor_reply": "1.黃君於2026/06/26由本院復健科醫師轉至骨科本人門診就診，在其之前已於本院復健科門診就診多次。
+2.病患本人有說明於2025年年初發生意外以致手腕鈍挫傷。
+3.病患右手腕當時是以FOOSH 姿勢受傷「摔倒時伸手著地（Fall On an OutStretched Hand）」的縮寫，是一種極常見的骨科損傷機制。這通常發生在落地時，人體本能地伸手支撐以減緩衝擊，導致力量透過手部傳導至手腕，引起扭傷及挫傷。
+4.病患右側腕部三角纖維軟骨複合體損傷及右側腕部舟月韌帶損傷為FOOSH injury所致。
+5.確認。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/26 上午 08:00",
@@ -17844,7 +21416,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "張志誠醫師您好，因臺灣高等法院調閱病歷。\n請協助確認病歷，是否可以釋出。\n因出院病歷摘要及檢查報告已釋出過，請勿修改電子病歷\n因案件有時效性，如未收到回覆病歷將於03月26日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "張志誠醫師您好，因臺灣高等法院調閱病歷。
+請協助確認病歷，是否可以釋出。
+因出院病歷摘要及檢查報告已釋出過，請勿修改電子病歷
+因案件有時效性，如未收到回覆病歷將於03月26日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "病歷已於3/27釋出",
     "status": "已完成",
@@ -17870,7 +21447,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "謝岳穎醫師您好，請協助回覆問題\n1.依趙清和後續治療及復原情形，其所受「左側股骨粗隆骨折、右小腿深度撕裂傷」等傷害，是否已嚴重減損其下肢之機能？\n2.或對其身體或健康，有重大不治或難治之傷害？\n請惠示醫理見解",
+    "question": "謝岳穎醫師您好，請協助回覆問題
+1.依趙清和後續治療及復原情形，其所受「左側股骨粗隆骨折、右小腿深度撕裂傷」等傷害，是否已嚴重減損其下肢之機能？
+2.或對其身體或健康，有重大不治或難治之傷害？
+請惠示醫理見解",
     "doctor_reply": "1. 短期在骨頭及傷口尚未恢復前必定會減損病人下肢機能。 2. 下肢機能減損會影響到病人活動的功能，工作能力也會受到影響，但應該不至於因為下肢的受傷造成身體其他部位有重大不治或難治的傷害。",
     "remark": "",
     "status": "已完成",
@@ -17896,8 +21476,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "黃裕閔醫師您好，請協助回覆問題\n1.依趙清和後續治療及復原情形，其所受「左側股骨粗隆骨折、右小腿深度撕裂傷」等傷害，是否已嚴重減損其下肢之機能？\n2.或對其身體或健康，有重大不治或難治之傷害？\n請惠示醫理見解",
-    "doctor_reply": "1.病人左側股骨骨折後施行內固定手術，後續因為骨折癒合不良，又再施行拔除內固定及全人工髖關節置換術，其近端股骨疏鬆，同時進行內固定手術加強，對於其左下肢的髖關節會導致行動不便之影響。\n2.因進行人工髖節置換術，已無法恢復原始髖關節的功能。",
+    "question": "黃裕閔醫師您好，請協助回覆問題
+1.依趙清和後續治療及復原情形，其所受「左側股骨粗隆骨折、右小腿深度撕裂傷」等傷害，是否已嚴重減損其下肢之機能？
+2.或對其身體或健康，有重大不治或難治之傷害？
+請惠示醫理見解",
+    "doctor_reply": "1.病人左側股骨骨折後施行內固定手術，後續因為骨折癒合不良，又再施行拔除內固定及全人工髖關節置換術，其近端股骨疏鬆，同時進行內固定手術加強，對於其左下肢的髖關節會導致行動不便之影響。
+2.因進行人工髖節置換術，已無法恢復原始髖關節的功能。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/26 上午 08:00",
@@ -17922,7 +21506,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "鄔逸群醫師您好，請協助回覆問題\n1.依趙清和後續治療及復原情形，其所受「左側股骨粗隆骨折、右小腿深度撕裂傷」等傷害，是否已嚴重減損其下肢之機能？\n2.或對其身體或健康，有重大不治或難治之傷害？\n請惠示醫理見解",
+    "question": "鄔逸群醫師您好，請協助回覆問題
+1.依趙清和後續治療及復原情形，其所受「左側股骨粗隆骨折、右小腿深度撕裂傷」等傷害，是否已嚴重減損其下肢之機能？
+2.或對其身體或健康，有重大不治或難治之傷害？
+請惠示醫理見解",
     "doctor_reply": "本科部分為傷口治療照護，建議以骨科回復機能及傷害部分評估。",
     "remark": "",
     "status": "已完成",
@@ -17948,7 +21535,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "吳俊穎醫師您好:\n新北市政府衛生局調閱病歷,此為醫療爭議解案,\n請協助確認病歷內容,因案件有時效性(煩請務必回覆)。\n感謝您。\n備註：急診及出院病摘、門診醫令等病歷已釋出過，請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "吳俊穎醫師您好:
+新北市政府衛生局調閱病歷,此為醫療爭議解案,
+請協助確認病歷內容,因案件有時效性(煩請務必回覆)。
+感謝您。
+備註：急診及出院病摘、門診醫令等病歷已釋出過，請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "OK",
     "remark": "醫療爭議(病歷釋出過請勿修改)",
     "status": "已完成",
@@ -17974,7 +21566,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "劉宇鈞醫師您好:\n新北市政府衛生局調閱病歷,此為醫療爭議解案,\n請協助確認病歷內容,因案件有時效性(煩請務必回覆)。\n感謝您。\n備註：急診及出院病摘、門診醫令等病歷已釋出過，請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "劉宇鈞醫師您好:
+新北市政府衛生局調閱病歷,此為醫療爭議解案,
+請協助確認病歷內容,因案件有時效性(煩請務必回覆)。
+感謝您。
+備註：急診及出院病摘、門診醫令等病歷已釋出過，請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "急診醫師從不負責解釋自費項目手術事項，請找手術醫師，謝謝",
     "remark": "醫療爭議(病歷已釋出過請勿修改)",
     "status": "已完成",
@@ -18000,8 +21597,25 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "吳俊穎醫師您好:\n請協助回公文內文問題,病人姓名:陳威華(02335531),謝謝您.\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.治療部位如何？\n4.有無外傷？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n8.係屬普通疾病抑何時遭受外力傷害引起？\n請惠示醫理見解.",
-    "doctor_reply": "1. 2025/06/06\n2.左側膝關節疼痛\n3. 左側膝關節給予消炎止痛藥\n4. 外觀腫及瘀青\n5. 當天發生事故.未說明地點.機車壓到腳\n6. 沒有提到\n7.因壓傷造成的膝關節疼痛\n8. 因外傷造成的疼痛",
+    "question": "吳俊穎醫師您好:
+請協助回公文內文問題,病人姓名:陳威華(02335531),謝謝您.
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.治療部位如何？
+4.有無外傷？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+8.係屬普通疾病抑何時遭受外力傷害引起？
+請惠示醫理見解.",
+    "doctor_reply": "1. 2025/06/06
+2.左側膝關節疼痛
+3. 左側膝關節給予消炎止痛藥
+4. 外觀腫及瘀青
+5. 當天發生事故.未說明地點.機車壓到腳
+6. 沒有提到
+7.因壓傷造成的膝關節疼痛
+8. 因外傷造成的疼痛",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/27 上午 08:00",
@@ -18026,8 +21640,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "李祐萱醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:何月紋(06906483),謝謝您.\n1.何君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1: 如病歷記載\n2: 意識清楚，四肢健全有力，具獨立自主生活能力\n3: 門診有診斷書記載，宜休養2周，而後可視情況工作，因為病人無再回診，所以可視為獨立自主生活無礙。\n4:電腦斷層及醫療專業知識。",
+    "question": "李祐萱醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:何月紋(06906483),謝謝您.
+1.何君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1: 如病歷記載
+2: 意識清楚，四肢健全有力，具獨立自主生活能力
+3: 門診有診斷書記載，宜休養2周，而後可視情況工作，因為病人無再回診，所以可視為獨立自主生活無礙。
+4:電腦斷層及醫療專業知識。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/27 上午 08:00",
@@ -18052,8 +21675,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "韓松穎主任您好:\n請主任協助回覆公文內文問題,病人姓名:何月紋(06906483),謝謝您.\n1.何君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1.根據診斷證明，病患何月紋小姐之治療過程如下：\n病患因上述疾病於114年02月19日08時06分至急診就診，經縫合手術於114年02月20日12時55分離開急診，住院繼續接受治療。\n\n病患因上述病因於民國114年03月04日至門診就診，根據牙髓壞死及齒質結構的考量，安排左上、右上正中門齒及右上犬齒之顯微根管治療，分別於114年03月18日、114年03月25日、114年04月15日、114年04月22日、114年04月29日、114年05月13日進行根管治療，於114年05月20日完成顯微根管療程。於114年06月03日製作左上、右上正中門齒臨時固定假牙；於114年06月19日製作右上犬齒的臨時固定假牙，於114年06月24日進行正式印模，並於114年07月15日完成左上、右上正中門齒及右上犬齒共三顆正式固定假牙之裝戴。宜於門診後續追蹤。\n\n2.考量該病患為外傷造成之牙齒傷病，以至於牙髓治療及牙冠贋復，因此後續建議持續觀察，並避免較硬、較韌的食物，避免牙齒因結構受損的關係承受過度咬力而牙根斷裂，並建議維持良好口腔清潔避免牙周病及蛀牙。\n\n3.外傷後是否影響從事一般工作，主要考量為外傷牽涉之範圍與痊癒過程，若無神經外科或生理功能障礙，於初步傷癒後應可正常工作，惟後續牙科治療牽涉到病患之工作性質(例如：業務工作、社交需考量外觀)、約診治療與上班時間衝突，故可能有斟酌情況請假之必要。\n\n4.認定之標準為臨床經驗及文獻與案例追蹤之觀察結果",
+    "question": "韓松穎主任您好:
+請主任協助回覆公文內文問題,病人姓名:何月紋(06906483),謝謝您.
+1.何君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1.根據診斷證明，病患何月紋小姐之治療過程如下：
+病患因上述疾病於114年02月19日08時06分至急診就診，經縫合手術於114年02月20日12時55分離開急診，住院繼續接受治療。
+
+病患因上述病因於民國114年03月04日至門診就診，根據牙髓壞死及齒質結構的考量，安排左上、右上正中門齒及右上犬齒之顯微根管治療，分別於114年03月18日、114年03月25日、114年04月15日、114年04月22日、114年04月29日、114年05月13日進行根管治療，於114年05月20日完成顯微根管療程。於114年06月03日製作左上、右上正中門齒臨時固定假牙；於114年06月19日製作右上犬齒的臨時固定假牙，於114年06月24日進行正式印模，並於114年07月15日完成左上、右上正中門齒及右上犬齒共三顆正式固定假牙之裝戴。宜於門診後續追蹤。
+
+2.考量該病患為外傷造成之牙齒傷病，以至於牙髓治療及牙冠贋復，因此後續建議持續觀察，並避免較硬、較韌的食物，避免牙齒因結構受損的關係承受過度咬力而牙根斷裂，並建議維持良好口腔清潔避免牙周病及蛀牙。
+
+3.外傷後是否影響從事一般工作，主要考量為外傷牽涉之範圍與痊癒過程，若無神經外科或生理功能障礙，於初步傷癒後應可正常工作，惟後續牙科治療牽涉到病患之工作性質(例如：業務工作、社交需考量外觀)、約診治療與上班時間衝突，故可能有斟酌情況請假之必要。
+
+4.認定之標準為臨床經驗及文獻與案例追蹤之觀察結果",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/27 上午 08:00",
@@ -18078,7 +21716,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:林筠芮(13561635),謝謝您。\n1.林君於113年11月29日接受關節鏡前十字韌帶重建及外側半月板修補手術，術後於何時檢查傷勢已痊癒？\n2.其傷勢療養至何時已可恢復工作能力？\n請惠示醫理見解。",
+    "question": "陳冠豪醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:林筠芮(13561635),謝謝您。
+1.林君於113年11月29日接受關節鏡前十字韌帶重建及外側半月板修補手術，術後於何時檢查傷勢已痊癒？
+2.其傷勢療養至何時已可恢復工作能力？
+請惠示醫理見解。",
     "doctor_reply": "1. 十字韌帶加上半月板修補之修復期約3-6個月。病患術後恢復較慢，活動度不佳，因此需半年休養期。",
     "remark": "",
     "status": "已完成",
@@ -18104,7 +21746,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "官怡君醫師您好\n請協助回覆問題(16804863劉泉英)\n1.劉泉英所受傷勢有無恢復可能性？\n2.劉泉英於113年12月19日起至114年1月18日止，是否有依賴兩名全日看護照顧之必要？\n 3.劉泉英是否有終生依賴全日看護之必要？\n 4.劉泉英是否於終生之平日護照上，均有購買如附表4-1號所示照護用品之必要？\n\n請惠示醫理見解\n \t　　\t5.劉泉英是否終生均有定期至腦神經外科回診以補充抗癲癇藥物及抗凝血劑及抽血檢查之必要？如有，則回診頻率為何？",
+    "question": "官怡君醫師您好
+請協助回覆問題(16804863劉泉英)
+1.劉泉英所受傷勢有無恢復可能性？
+2.劉泉英於113年12月19日起至114年1月18日止，是否有依賴兩名全日看護照顧之必要？
+ 3.劉泉英是否有終生依賴全日看護之必要？
+ 4.劉泉英是否於終生之平日護照上，均有購買如附表4-1號所示照護用品之必要？
+
+請惠示醫理見解
+ 	　　	5.劉泉英是否終生均有定期至腦神經外科回診以補充抗癲癇藥物及抗凝血劑及抽血檢查之必要？如有，則回診頻率為何？",
     "doctor_reply": "抱歉 此病患僅於113年九月至門診看過一次，對於其後續發生的事情無法給予任何意見，謝謝。",
     "remark": "",
     "status": "已完成",
@@ -18130,8 +21780,27 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "葉雲凱醫師您好請協助回覆問題\n(00505684洪堯見) 110.5.28-220.6.3 住院\n1.惠請說明貴院於2021年5月2820時19分有關疼痛處置衛教室針對實際有疼痛狀況的病人；或是無論有無疼痛均需進行一般例行性衛教?\n請惠示醫理見解",
-    "doctor_reply": "下依照醫師所附件之word內容\n\n貴署函詢有關本院病人洪堯見於 2021 年 5 月 28 日 20 時 19 分之「疼痛處置衛教」性質，本人身為其住院期間之主治醫師，提供醫理見解如下：\n一、 疼痛處置衛教之性質：臨床常規與預防性說明\n本院於護理紀錄單所記載之「疼痛處置衛教」，性質上屬於住院初期之一般例行性衛教 。其目的並非僅針對「當下已有疼痛症狀」之病人，而是基於以下醫理考量：\n•\t醫療品質基準：根據醫院評鑑及護理標準，病人在入院時均應接受完整的衛教資訊，包含病房環境、用藥安全及疼痛管理，以確保病人具備基礎醫療知識 。\n•\t預防性介入：疼痛是生理狀態惡化的重要警訊。向病人說明疼痛量表（如 NRS 分數）及處置方式，是為了讓病人在未來若出現症狀時，能及時、準確地向醫護人員回報，避免因疼痛引發焦慮、心跳過快或呼吸急促等併發症 。\n二、 針對 2021 年 5 月 28 日紀錄之具體說明\n根據 2021 年 5 月 28 日之護理紀錄，當晚 20 時許病人剛入院，醫護人員正進行一系列入院準備：\n1.\t密集的入院衛教：紀錄顯示從 20:00 至 20:45 之間，護理人員接連執行了「住院須知」、「洗手禮節」、「防跌倒」、「疼痛處置」等多項衛教項目 。這反映了臨床上護理師在接案初期，會系統性地向病人完整說明各項衛教權利與義務 。\n2.\t病理狀態關聯：該名病人入院時血壓高達 171/113 mmHg 且伴隨低血鉀（2.9 mmol/L）及呼吸困難等症狀 。在這種生理壓力下，進行疼痛衛教是為了讓病人理解，若因肺炎導致胸痛、全身無力感加劇時，醫療團隊將提供哪些介入手段（如止痛藥物使用），以利穩定病人情緒與生命徵象 。\n三、 醫理見解總結\n綜上所述，2021 年 5 月 28 日 20 時 19 分之紀錄，係屬針對新入院病人所進行之全方位例行性衛教。\n雖然衛教內容包含「止痛藥物」及「疼痛評量方式」之知識傳達，但該行為之觸發並非必須建立在「病人當下自訴劇痛」之前提下。此舉旨在建立醫病溝通橋樑，落實「病人自主權利」與「疼痛控制」之早期介入。\n \n主治醫師：葉雲凱\n日期：2026年4月8日",
+    "question": "葉雲凱醫師您好請協助回覆問題
+(00505684洪堯見) 110.5.28-220.6.3 住院
+1.惠請說明貴院於2021年5月2820時19分有關疼痛處置衛教室針對實際有疼痛狀況的病人；或是無論有無疼痛均需進行一般例行性衛教?
+請惠示醫理見解",
+    "doctor_reply": "下依照醫師所附件之word內容
+
+貴署函詢有關本院病人洪堯見於 2021 年 5 月 28 日 20 時 19 分之「疼痛處置衛教」性質，本人身為其住院期間之主治醫師，提供醫理見解如下：
+一、 疼痛處置衛教之性質：臨床常規與預防性說明
+本院於護理紀錄單所記載之「疼痛處置衛教」，性質上屬於住院初期之一般例行性衛教 。其目的並非僅針對「當下已有疼痛症狀」之病人，而是基於以下醫理考量：
+•	醫療品質基準：根據醫院評鑑及護理標準，病人在入院時均應接受完整的衛教資訊，包含病房環境、用藥安全及疼痛管理，以確保病人具備基礎醫療知識 。
+•	預防性介入：疼痛是生理狀態惡化的重要警訊。向病人說明疼痛量表（如 NRS 分數）及處置方式，是為了讓病人在未來若出現症狀時，能及時、準確地向醫護人員回報，避免因疼痛引發焦慮、心跳過快或呼吸急促等併發症 。
+二、 針對 2021 年 5 月 28 日紀錄之具體說明
+根據 2021 年 5 月 28 日之護理紀錄，當晚 20 時許病人剛入院，醫護人員正進行一系列入院準備：
+1.	密集的入院衛教：紀錄顯示從 20:00 至 20:45 之間，護理人員接連執行了「住院須知」、「洗手禮節」、「防跌倒」、「疼痛處置」等多項衛教項目 。這反映了臨床上護理師在接案初期，會系統性地向病人完整說明各項衛教權利與義務 。
+2.	病理狀態關聯：該名病人入院時血壓高達 171/113 mmHg 且伴隨低血鉀（2.9 mmol/L）及呼吸困難等症狀 。在這種生理壓力下，進行疼痛衛教是為了讓病人理解，若因肺炎導致胸痛、全身無力感加劇時，醫療團隊將提供哪些介入手段（如止痛藥物使用），以利穩定病人情緒與生命徵象 。
+三、 醫理見解總結
+綜上所述，2021 年 5 月 28 日 20 時 19 分之紀錄，係屬針對新入院病人所進行之全方位例行性衛教。
+雖然衛教內容包含「止痛藥物」及「疼痛評量方式」之知識傳達，但該行為之觸發並非必須建立在「病人當下自訴劇痛」之前提下。此舉旨在建立醫病溝通橋樑，落實「病人自主權利」與「疼痛控制」之早期介入。
+ 
+主治醫師：葉雲凱
+日期：2026年4月8日",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/29 上午 08:00",
@@ -18156,7 +21825,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "張志誠醫師您好 請協助回覆問題\n請提供被繼承人胡林棼棼（01150849)\n1.自113.12.22-113.12.30 日止住院期間接受治療時之精神意識狀態、自行處理事務能力?\n2.自114.01.08-114.01.19 日止住院期間接受治療時之精神意識狀態、自行處理事務能力?\n3.自113.03.24-114.04.09 日止住院期間接受治療時之精神意識狀態、自行處理事務能力?\n請惠示醫理見解",
+    "question": "張志誠醫師您好 請協助回覆問題
+請提供被繼承人胡林棼棼（01150849)
+1.自113.12.22-113.12.30 日止住院期間接受治療時之精神意識狀態、自行處理事務能力?
+2.自114.01.08-114.01.19 日止住院期間接受治療時之精神意識狀態、自行處理事務能力?
+3.自113.03.24-114.04.09 日止住院期間接受治療時之精神意識狀態、自行處理事務能力?
+請惠示醫理見解",
     "doctor_reply": "病人在最後一次入院前，皆能清楚回覆問題自如，最後一次住院期間，僅在死亡前4-5天昏迷無法問答",
     "remark": "",
     "status": "已完成",
@@ -18182,8 +21856,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林毅成醫師您好，請協助回覆問題\n貴院病患張均溢(17077978)前於113年9月9日因交通事故到萬芳醫院急診並後續門診就診，經該院診斷有「四肢挫傷」之傷勢(見附件一)。嗣病患張均溢於113年12月24日至貴院骨科就診，經貴院診斷有「腰堆椎聞盤突出」之疾患(見附件二)，先予敘明。請貴院就下列事項惠覆：\n1.貴院診斷病患張均溢有「腰堆椎問盤突出」之疾患，是否可能為外力所導致？\n2.是否可能為113年9月9日交通事故所造成之傷勢？\n\n惠請提供醫理見解",
-    "doctor_reply": "1. 腰椎椎間盤突出的原因非常複雜，有可能是因為退化，也有可能是因為受傷，但也有可能是兩者皆有。\n2. 所以，無法確定是因為交通事故所造成。",
+    "question": "林毅成醫師您好，請協助回覆問題
+貴院病患張均溢(17077978)前於113年9月9日因交通事故到萬芳醫院急診並後續門診就診，經該院診斷有「四肢挫傷」之傷勢(見附件一)。嗣病患張均溢於113年12月24日至貴院骨科就診，經貴院診斷有「腰堆椎聞盤突出」之疾患(見附件二)，先予敘明。請貴院就下列事項惠覆：
+1.貴院診斷病患張均溢有「腰堆椎問盤突出」之疾患，是否可能為外力所導致？
+2.是否可能為113年9月9日交通事故所造成之傷勢？
+
+惠請提供醫理見解",
+    "doctor_reply": "1. 腰椎椎間盤突出的原因非常複雜，有可能是因為退化，也有可能是因為受傷，但也有可能是兩者皆有。
+2. 所以，無法確定是因為交通事故所造成。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/3/29 上午 08:00",
@@ -18208,7 +21888,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.鄭偉宏 您好 請協助回覆問題\n1.請查明受刑人林勝雄(16506615)現所罹下咽惡性腫瘤疾病之治療情形，有無因入監服刑執行刑罰，而不能保其生命情事？惠覆\n請惠示醫理見解",
+    "question": "Dr.鄭偉宏 您好 請協助回覆問題
+1.請查明受刑人林勝雄(16506615)現所罹下咽惡性腫瘤疾病之治療情形，有無因入監服刑執行刑罰，而不能保其生命情事？惠覆
+請惠示醫理見解",
     "doctor_reply": "林員為一轉移性下咽惡性腫瘤患者，目前正進行第三線緩和性化學藥物治療。其活動指數（ECOG performace status）是兩分。因個人不了解監所環境與相關設備與治療能力。因此只能提供客觀事實給檢座參考。",
     "remark": "",
     "status": "已完成",
@@ -18234,7 +21916,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "李紹榕醫師您好 請協助回覆問題\n1.請查明受刑人林孝柔(12654356)現所罹慢性收縮性（充血性）心臟衰竭，有無因入監服刑執行刑罰，而不能保其生命情事？\n請惠示醫理見解",
+    "question": "李紹榕醫師您好 請協助回覆問題
+1.請查明受刑人林孝柔(12654356)現所罹慢性收縮性（充血性）心臟衰竭，有無因入監服刑執行刑罰，而不能保其生命情事？
+請惠示醫理見解",
     "doctor_reply": "中度心臟衰竭，如果能夠規則用藥，應該暫時沒有生命危險",
     "remark": "",
     "status": "已完成",
@@ -18260,8 +21944,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "楊浩銓醫師您好 請協助回覆問題\n一、\t患者陳春梅(09696022)於115年2月16日至貴院就診時，有無主訴受傷原因?\n二、患者有無頭部受傷?\n三、依診斷證明所載傷勢，患者有無可能係因遭人外力傷害或毆打所致?\n請惠示醫理見解",
-    "doctor_reply": "1. 就以急診紀錄所呈現，轉院至本院急診是因為主述有“呼吸道相關症狀、發燒，意識較頓”，並沒有直接敘述外傷原因。照會神經外科是因為急診有做電腦斷層，發現有顱內出血，爾後安排血管攝影，確認是否有急性血管病灶情形。\n2. 病患為2月期間住院，離現今4月多有點時間，只能以病歷及部份記憶提供資訊：病患在住院期間意識屬清醒，但印象中有時反應較冷漠，好像注意力比較差，常需要旁邊的人幫忙提醒、答話。\n3. 診斷書是於神經外科治療時開立，以顱內出血為主，如果是要鑑別是否有外傷，可以參考急診驗傷紀錄。以神經外科立場，病患的出血就難以歸咎是單純外傷引起或單純血管病灶引起，只能確定有出血事實。",
+    "question": "楊浩銓醫師您好 請協助回覆問題
+一、	患者陳春梅(09696022)於115年2月16日至貴院就診時，有無主訴受傷原因?
+二、患者有無頭部受傷?
+三、依診斷證明所載傷勢，患者有無可能係因遭人外力傷害或毆打所致?
+請惠示醫理見解",
+    "doctor_reply": "1. 就以急診紀錄所呈現，轉院至本院急診是因為主述有“呼吸道相關症狀、發燒，意識較頓”，並沒有直接敘述外傷原因。照會神經外科是因為急診有做電腦斷層，發現有顱內出血，爾後安排血管攝影，確認是否有急性血管病灶情形。
+2. 病患為2月期間住院，離現今4月多有點時間，只能以病歷及部份記憶提供資訊：病患在住院期間意識屬清醒，但印象中有時反應較冷漠，好像注意力比較差，常需要旁邊的人幫忙提醒、答話。
+3. 診斷書是於神經外科治療時開立，以顱內出血為主，如果是要鑑別是否有外傷，可以參考急診驗傷紀錄。以神經外科立場，病患的出血就難以歸咎是單純外傷引起或單純血管病灶引起，只能確定有出血事實。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/3 上午 08:00",
@@ -18286,8 +21976,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "王妍方醫師您好 請協助回覆問題\n一、\t患者陳春梅(09696022)於115年2月16日至貴院就診時，有無主訴受傷原因?\n二、患者有無頭部受傷?\n三、依診斷證明所載傷勢，患者有無可能係因遭人外力傷害或毆打所致?\n請惠示醫理見解",
-    "doctor_reply": "1.病人為先生送來急診，來診意識比較遲鈍，有些問題無法回答，都是先生代為回答，先生表示是覺得病人反應較慢所以送來急診\n2. 先生沒有看到有撞到頭也沒有聽到撞到的聲音\n3.先生和病人都沒有提 不確定",
+    "question": "王妍方醫師您好 請協助回覆問題
+一、	患者陳春梅(09696022)於115年2月16日至貴院就診時，有無主訴受傷原因?
+二、患者有無頭部受傷?
+三、依診斷證明所載傷勢，患者有無可能係因遭人外力傷害或毆打所致?
+請惠示醫理見解",
+    "doctor_reply": "1.病人為先生送來急診，來診意識比較遲鈍，有些問題無法回答，都是先生代為回答，先生表示是覺得病人反應較慢所以送來急診
+2. 先生沒有看到有撞到頭也沒有聽到撞到的聲音
+3.先生和病人都沒有提 不確定",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/3 上午 08:00",
@@ -18312,8 +22008,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "楊浩銓醫師您好 請協助回覆問題\n一、\t患者陳春梅(09696022)於115年2月16日至貴院就診時，有無主訴受傷原因?\n二、患者有無頭部受傷?\n三、依診斷證明所載傷勢，患者有無可能係因遭人外力傷害或毆打所致?\n請惠示醫理見解",
-    "doctor_reply": "1. 臨床診斷只會以外傷或自發性出血做基本鑑別診斷，至於外傷肇因還須法醫或警務協助釐清。\n2. 因為是02月住院，詳細相關的理學檢查結果可以參考病歷(急診驗傷紀錄等)。\n3. 最終診斷是綜合臨床及影像檢查的推斷。出血所在位子為大腦廉附近，此腦部位於外傷或自發出血都有機率，雖有近一 步電腦斷層血管攝影，但判斷真實出血肇因仍然相對困難。",
+    "question": "楊浩銓醫師您好 請協助回覆問題
+一、	患者陳春梅(09696022)於115年2月16日至貴院就診時，有無主訴受傷原因?
+二、患者有無頭部受傷?
+三、依診斷證明所載傷勢，患者有無可能係因遭人外力傷害或毆打所致?
+請惠示醫理見解",
+    "doctor_reply": "1. 臨床診斷只會以外傷或自發性出血做基本鑑別診斷，至於外傷肇因還須法醫或警務協助釐清。
+2. 因為是02月住院，詳細相關的理學檢查結果可以參考病歷(急診驗傷紀錄等)。
+3. 最終診斷是綜合臨床及影像檢查的推斷。出血所在位子為大腦廉附近，此腦部位於外傷或自發出血都有機率，雖有近一 步電腦斷層血管攝影，但判斷真實出血肇因仍然相對困難。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/11 上午 08:00",
@@ -18338,8 +22040,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "吳美儀醫師您好 請協助回覆問題\n1.請查明被繼承人(呂文安17386836)於114年6月1日至114年6月9日止之住院期間，包括有無急診或請假紀錄?\n2.接受治療時之精神意識狀態、自行處理事務能力?\n3.何時於貴院診斷出該引起死亡之病因等資料?\n請惠示醫理見解\n114.6.1 ER\n114.6.1-114.6.9 住院",
-    "doctor_reply": "1. 於民國114年6月1日至雙和醫院急診就醫，於住院期間無請假紀錄\n2. 依醫療及護理紀錄，該病人精神意識狀態可合理有邏輯應答，但因末期腎病變尿毒症自行處理事務能力局部受限\n3. 依該病人於至急診前的北醫住院病程，臨床尿毒症狀和實驗室檢查極重度尿毒氮血症(Bun/Cr 203/16.6 mg/dL)和腎臟超音波呈雙側慢性腎實質病變，於民國114年6月1日當日即診斷末期腎病變，當日即施行緊急血液透析治療，該病人於雙和醫院住院期間，於民國114年6月3日施行骨髓穿刺檢查以鑑別診斷末期腎病變病因，於民國114年6月7日施行右頸內頸靜脈長期血液透析管路置放手術，經治療後於民國114年6月9日血液透析後出院",
+    "question": "吳美儀醫師您好 請協助回覆問題
+1.請查明被繼承人(呂文安17386836)於114年6月1日至114年6月9日止之住院期間，包括有無急診或請假紀錄?
+2.接受治療時之精神意識狀態、自行處理事務能力?
+3.何時於貴院診斷出該引起死亡之病因等資料?
+請惠示醫理見解
+114.6.1 ER
+114.6.1-114.6.9 住院",
+    "doctor_reply": "1. 於民國114年6月1日至雙和醫院急診就醫，於住院期間無請假紀錄
+2. 依醫療及護理紀錄，該病人精神意識狀態可合理有邏輯應答，但因末期腎病變尿毒症自行處理事務能力局部受限
+3. 依該病人於至急診前的北醫住院病程，臨床尿毒症狀和實驗室檢查極重度尿毒氮血症(Bun/Cr 203/16.6 mg/dL)和腎臟超音波呈雙側慢性腎實質病變，於民國114年6月1日當日即診斷末期腎病變，當日即施行緊急血液透析治療，該病人於雙和醫院住院期間，於民國114年6月3日施行骨髓穿刺檢查以鑑別診斷末期腎病變病因，於民國114年6月7日施行右頸內頸靜脈長期血液透析管路置放手術，經治療後於民國114年6月9日血液透析後出院",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/3 上午 08:00",
@@ -18364,7 +22074,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.謝岳穎醫師您好 請協助回覆問題\n1.劉志毅(03023266)於114年11月25日至114年12月30日期間因「腰椎神經根病變、左側第六根肋骨骨折」至貴院門診，申請核退職災自墊醫療費用，其於何時因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.受傷之部位？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？所患成因如何？\n7.係屬普通疾病抑何時遭受外力傷害引起？\n請惠示醫理見解",
+    "question": "Dr.謝岳穎醫師您好 請協助回覆問題
+1.劉志毅(03023266)於114年11月25日至114年12月30日期間因「腰椎神經根病變、左側第六根肋骨骨折」至貴院門診，申請核退職災自墊醫療費用，其於何時因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.受傷之部位？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？所患成因如何？
+7.係屬普通疾病抑何時遭受外力傷害引起？
+請惠示醫理見解",
     "doctor_reply": "1.2025/11/25至骨科門診就診 2. 胸壁疼痛 3. 無明顯外傷 4.肋骨5. 無特別描述 6. 沒有印象 7. 一般為外傷引起",
     "remark": "",
     "status": "已完成",
@@ -18390,7 +22108,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蔡同堯醫師您好 請協助回覆問題謝謝\n1.請告知貴院於民國115年2月3日所開立之乙診字第E1409004004號診斷證明書(病人張梅勲、病歷號碼急診科NO.08499471)中所記載之診斷內容「左側大腿脫皮性傷口，左側遠端股骨骨折，左側腓骨骨折，左側內踝骨折」之傷勢是否為永久性?\n2.或是可以經由醫學治療而痊癒? \n請惠示醫理見解",
+    "question": "蔡同堯醫師您好 請協助回覆問題謝謝
+1.請告知貴院於民國115年2月3日所開立之乙診字第E1409004004號診斷證明書(病人張梅勲、病歷號碼急診科NO.08499471)中所記載之診斷內容「左側大腿脫皮性傷口，左側遠端股骨骨折，左側腓骨骨折，左側內踝骨折」之傷勢是否為永久性?
+2.或是可以經由醫學治療而痊癒? 
+請惠示醫理見解",
     "doctor_reply": "透過積極治療，有機會改善甚至恢復功能。然其傷勢是否造成永久性之功能障礙，除初期治療外，尚需後續追蹤檢查及復健狀況進行綜合判斷。此非急診當時所能準確預估，建議進一步諮詢後線各科醫師意見。",
     "remark": "",
     "status": "已完成",
@@ -18416,7 +22137,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "洪家佩醫師您好 請協助回覆問題謝謝\n1.請告知貴院於民國115年2月3日所開立之乙診字第E1409004004號診斷證明書(病人張梅勲、病歷號碼急診科NO.08499471)中所記載之診斷內容「左側大腿脫皮性傷口，左側遠端股骨骨折，左側腓骨骨折，左側內踝骨折」之傷勢是否為永久性?\n2.或是可以經由醫學治療而痊癒? \n請惠示醫理見解",
+    "question": "洪家佩醫師您好 請協助回覆問題謝謝
+1.請告知貴院於民國115年2月3日所開立之乙診字第E1409004004號診斷證明書(病人張梅勲、病歷號碼急診科NO.08499471)中所記載之診斷內容「左側大腿脫皮性傷口，左側遠端股骨骨折，左側腓骨骨折，左側內踝骨折」之傷勢是否為永久性?
+2.或是可以經由醫學治療而痊癒? 
+請惠示醫理見解",
     "doctor_reply": "患者於2025/9/20因上述診斷於長庚醫院接受手術與治療，後於2026/1/20轉至本院復健部門診就診。診斷書之開立為根據長庚醫院之出院病歷摘要以及患者於2025/12/23於本院整形外科門診之就診資料所開立。傷勢是否為永久性以及預後建議詢問長庚醫院原開刀醫師。",
     "remark": "",
     "status": "已完成",
@@ -18442,8 +22166,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "張舜程醫師您好 請協助回覆問題謝謝\n1.請告知貴院於民國115年2月3日所開立之乙診字第E1409004004號診斷證明書(病人張梅勲、病歷號碼急診科NO.08499471)中所記載之診斷內容「左側大腿脫皮性傷口，左側遠端股骨骨折，左側腓骨骨折，左側內踝骨折」之傷勢是否為永久性?\n2.或是可以經由醫學治療而痊癒? \n請惠示醫理見解",
-    "doctor_reply": "1、傷勢為可癒合、可改善,但需長時間治療及復健(數年)、疤痕將可能永久性存在。\n2、無法完全治療痊癒、可能會有後遺症。",
+    "question": "張舜程醫師您好 請協助回覆問題謝謝
+1.請告知貴院於民國115年2月3日所開立之乙診字第E1409004004號診斷證明書(病人張梅勲、病歷號碼急診科NO.08499471)中所記載之診斷內容「左側大腿脫皮性傷口，左側遠端股骨骨折，左側腓骨骨折，左側內踝骨折」之傷勢是否為永久性?
+2.或是可以經由醫學治療而痊癒? 
+請惠示醫理見解",
+    "doctor_reply": "1、傷勢為可癒合、可改善,但需長時間治療及復健(數年)、疤痕將可能永久性存在。
+2、無法完全治療痊癒、可能會有後遺症。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/4 上午 08:00",
@@ -18468,8 +22196,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "黃婷韻醫師您好 請協助回覆問題\n(劉俊言17747129)因「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.劉君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」是否係因主訴之傷害事故所致？\n請惠示醫理見解",
-    "doctor_reply": "1.劉君就診有無主訴傷害事故？2025/10/27 就診時自述為搬重物後下背痛，當時有撞到右膝。然而無明顯外傷，膝蓋X光無明顯骨折。\n2. 就診日期為2025/10/27 主訴為上周四，約4天前。自述為搬重物後開始不舒服。\n3. 頸椎後滑脫合併脊椎狹窄與外傷（搬重物）無直接關係，腰椎椎弓骨折無法確認因果關係，是否為搬重物引起，因當下無明顯撞擊。\n2025/10/27就診時，右大腿與膝蓋無明顯外傷。敗血性關節炎成因有可能為菌血症後引起或是外傷傷口導致細菌進入關節腔內，但當天就診時無明顯開放性外傷，因此無法明確判定是否為外傷造成右膝敗血性關節炎/菌血症。",
+    "question": "黃婷韻醫師您好 請協助回覆問題
+(劉俊言17747129)因「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.劉君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」是否係因主訴之傷害事故所致？
+請惠示醫理見解",
+    "doctor_reply": "1.劉君就診有無主訴傷害事故？2025/10/27 就診時自述為搬重物後下背痛，當時有撞到右膝。然而無明顯外傷，膝蓋X光無明顯骨折。
+2. 就診日期為2025/10/27 主訴為上周四，約4天前。自述為搬重物後開始不舒服。
+3. 頸椎後滑脫合併脊椎狹窄與外傷（搬重物）無直接關係，腰椎椎弓骨折無法確認因果關係，是否為搬重物引起，因當下無明顯撞擊。
+2025/10/27就診時，右大腿與膝蓋無明顯外傷。敗血性關節炎成因有可能為菌血症後引起或是外傷傷口導致細菌進入關節腔內，但當天就診時無明顯開放性外傷，因此無法明確判定是否為外傷造成右膝敗血性關節炎/菌血症。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/5 上午 08:00",
@@ -18494,7 +22230,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "李垣樟醫師您好 請協助回覆問題\n(劉俊言17747129)因「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.劉君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」是否係因主訴之傷害事故所致？\n請惠示醫理見解",
+    "question": "李垣樟醫師您好 請協助回覆問題
+(劉俊言17747129)因「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.劉君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」是否係因主訴之傷害事故所致？
+請惠示醫理見解",
     "doctor_reply": "1. 有 2. 來急診前一星期. 約2025/10/20左右 因搬物品造成右大腿有挫傷. 3.研判是有可能的",
     "remark": "",
     "status": "已完成",
@@ -18520,7 +22261,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "謝岳穎醫師您好 請協助回覆問題\n(劉俊言17747129)因「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.劉君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」是否係因主訴之傷害事故所致？\n請惠示醫理見解",
+    "question": "謝岳穎醫師您好 請協助回覆問題
+(劉俊言17747129)因「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.劉君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「菌血症合併右膝敗血性關節炎、頸椎後滑脫合併脊椎狹窄，腰椎椎弓骨折、右大腿傷口併菌血症及右膝敗血性關節炎」是否係因主訴之傷害事故所致？
+請惠示醫理見解",
     "doctor_reply": "無主訴傷害事故，因這位病人是感染科會診骨科病人，因此當時就已經發生膝蓋因感染造成明顯腫脹。至於感染的原因沒辦法直接認定。脊椎相關問題看起來都是長期慢性的退化表現，沒辦法直接說是一次的事故傷害造成。",
     "remark": "",
     "status": "已完成",
@@ -18546,7 +22292,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "丘基泰醫師您好，因臺灣台北地方法院調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於4月6日釋出，感謝您。\n備註：門診病歷皆釋出過，請勿更改!\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "丘基泰醫師您好，因臺灣台北地方法院調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於4月6日釋出，感謝您。
+備註：門診病歷皆釋出過，請勿更改!
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "好",
     "remark": "",
     "status": "已完成",
@@ -18572,8 +22323,22 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "王智毅醫師您好 請協助回覆問題謝謝\n(徐灝勛00023735)因「左側第四指近端指骨粉碎性併開放性骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.徐君因上開傷病治療經過為何？\n2有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1.徐君因上開傷病治療經過為何？\n病患因上症於2024/10/9 接受鋼釘手術,  術後追蹤時發現骨折癒合不良, 於2024/10/27 安排骨折復位鋼釘鋼板固定手術, 術後持續復健追蹤 . 於2025/8/26 於本院最後一次門診追蹤 \n\n\n2有無併發症或後遺症？\n術後關節沾黏情形嚴重 \n3.療養至何時起可從事一般工作？\n術後滿一年(2025/10/27後)可從事一般工作\n4.認定理由及依據為何？ 因該病患接受兩次手術   術後恢復時期較長  臨床經驗約需一年 .",
+    "question": "王智毅醫師您好 請協助回覆問題謝謝
+(徐灝勛00023735)因「左側第四指近端指骨粉碎性併開放性骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.徐君因上開傷病治療經過為何？
+2有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1.徐君因上開傷病治療經過為何？
+病患因上症於2024/10/9 接受鋼釘手術,  術後追蹤時發現骨折癒合不良, 於2024/10/27 安排骨折復位鋼釘鋼板固定手術, 術後持續復健追蹤 . 於2025/8/26 於本院最後一次門診追蹤 
+
+
+2有無併發症或後遺症？
+術後關節沾黏情形嚴重 
+3.療養至何時起可從事一般工作？
+術後滿一年(2025/10/27後)可從事一般工作
+4.認定理由及依據為何？ 因該病患接受兩次手術   術後恢復時期較長  臨床經驗約需一年 .",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/5 上午 08:00",
@@ -18598,8 +22363,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林育如醫師您好 請協助回覆問題謝謝\n(徐灝勛00023735)因「左側第四指近端指骨粉碎性併開放性骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.徐君因上開傷病治療經過為何？\n2有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1.  患者因左手第四指近端指節開放性骨折於113/10/08接受局部清創及骨折固定手術, 後續因癒合不良於113/12/27再次手術, 之後於骨科門診追蹤恢復情況, 於114/05/16轉介至復健科門診, 針對左手第四指近端及遠端指節關節沾黏安排復健治療, 於113/06/24. 114/08/26 回復健科門診追蹤. \n2.手術後有左手第四指近端及遠端指節關節沾黏狀況, 安排復健治療. 但於 114/08/26最後一次就診, 門診中有衛教在家可自行進行之簡易復健動作,並開立診斷書. (總過程中病人實際到院復健次數不到10次)\n3. 因為病人自114/08/26起沒有回診, 且治療期間只看過病人3次復健門診, 無法很確定病人近期恢復狀況為何.  因為患處在左手, 推斷其恢復狀況, 極需手部費力或雙手高度依賴之精細工作可能有受限. \n4. 主要依多數臨床病人恢復經驗為依據.",
+    "question": "林育如醫師您好 請協助回覆問題謝謝
+(徐灝勛00023735)因「左側第四指近端指骨粉碎性併開放性骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.徐君因上開傷病治療經過為何？
+2有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1.  患者因左手第四指近端指節開放性骨折於113/10/08接受局部清創及骨折固定手術, 後續因癒合不良於113/12/27再次手術, 之後於骨科門診追蹤恢復情況, 於114/05/16轉介至復健科門診, 針對左手第四指近端及遠端指節關節沾黏安排復健治療, 於113/06/24. 114/08/26 回復健科門診追蹤. 
+2.手術後有左手第四指近端及遠端指節關節沾黏狀況, 安排復健治療. 但於 114/08/26最後一次就診, 門診中有衛教在家可自行進行之簡易復健動作,並開立診斷書. (總過程中病人實際到院復健次數不到10次)
+3. 因為病人自114/08/26起沒有回診, 且治療期間只看過病人3次復健門診, 無法很確定病人近期恢復狀況為何.  因為患處在左手, 推斷其恢復狀況, 極需手部費力或雙手高度依賴之精細工作可能有受限. 
+4. 主要依多數臨床病人恢復經驗為依據.",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/19 上午 08:00",
@@ -18624,7 +22398,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林廉傑醫師您好 請協助回覆問題謝謝\n謝采玲00933230\n請依隨函檢附之診斷證明書，惠賜醫理見解，說明:\n(一)謝采玲所受「左側膝部前十字韌帶扭傷合併膝關節不穩定」、「左膝關節半月板損傷」、「左膝鵝掌肌腱炎」，是否與其於車禍時所受傷勢，具有合理關聯性?\n(二之一)謝采玲經診斷上開病名，有無休養必要?\n(二之二)如有，期間為何?\n(三之一)謝采玲經診斷上開病名，有無專人看護必要?\n(三之二)如有，期間為何?\n(三之三)係全日看護或半日看護?\n\n請惠示醫理見解",
+    "question": "林廉傑醫師您好 請協助回覆問題謝謝
+謝采玲00933230
+請依隨函檢附之診斷證明書，惠賜醫理見解，說明:
+(一)謝采玲所受「左側膝部前十字韌帶扭傷合併膝關節不穩定」、「左膝關節半月板損傷」、「左膝鵝掌肌腱炎」，是否與其於車禍時所受傷勢，具有合理關聯性?
+(二之一)謝采玲經診斷上開病名，有無休養必要?
+(二之二)如有，期間為何?
+(三之一)謝采玲經診斷上開病名，有無專人看護必要?
+(三之二)如有，期間為何?
+(三之三)係全日看護或半日看護?
+
+請惠示醫理見解",
     "doctor_reply": "(一)謝采玲所受「左側膝部前十字韌帶扭傷合併膝關節不穩定」、「左膝關節半月板損傷」、「左膝鵝掌肌腱炎」，是否與其於車禍時所受傷勢，具有合理關聯性? 與左膝部前十字韌帶扭傷合併膝關節不穩定及半月板損傷確有其合理相關性；唯鵝掌肌腱炎較不明確。 (二之一)謝采玲經診斷上開病名，有無休養必要? 於初始受傷期間須適度休養，避免過度上下樓梯、負重、不平之路面。 (二之二)如有，期間為何? 因病人至我們診主要從113/08/29開始，這段期間我認為113/08-114/02這半年內皆須特別注意，須盡量避免上述提到的過度上下樓梯、負重、不平之路面。 (三之一)謝采玲經診斷上開病名，有無專人看護必要? 不須專人照護。 (三之二)如有，期間為何? 無。 (三之三)係全日看護或半日看護? 無。",
     "remark": "林醫師您好，本案謝君至您的門診應該是113年8月29日起，故是否可以請您更改回覆內容謝謝。",
     "status": "已完成",
@@ -18650,7 +22434,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "官怡君醫師您好:因勞保局來函調閱病歷(12810169楊麗梅),請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於4月10日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "官怡君醫師您好:因勞保局來函調閱病歷(12810169楊麗梅),請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於4月10日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "好",
     "remark": "",
     "status": "已完成",
@@ -18676,7 +22463,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林廉傑醫師您好:因勞保局來函調閱病歷(12810169楊麗梅),請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於4月10日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "林廉傑醫師您好:因勞保局來函調閱病歷(12810169楊麗梅),請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於4月10日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可以釋出，謝謝。",
     "remark": "",
     "status": "已完成",
@@ -18702,7 +22492,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "楊順泰醫師您好:因勞保局來函調閱病歷(12810169楊麗梅),請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於4月10日釋出，感謝您。\n請補填114.3.30 病程，須補填勞工失能診斷書正本將於4/10午診時送至您的門診\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "楊順泰醫師您好:因勞保局來函調閱病歷(12810169楊麗梅),請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於4月10日釋出，感謝您。
+請補填114.3.30 病程，須補填勞工失能診斷書正本將於4/10午診時送至您的門診
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "已完成並面交予病歷室負責人",
     "remark": "",
     "status": "已完成",
@@ -18728,7 +22522,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "莊凱迪醫師您好，因臺灣新北地方檢察署調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於04月11日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "莊凱迪醫師您好，因臺灣新北地方檢察署調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於04月11日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "因為發生兒少保護案件，檢察署需要本院資料作為佐證。已經有向醫療團隊說明，敬請盡速提供病歷協助司法案件處理。",
     "remark": "",
     "status": "已完成",
@@ -18754,7 +22552,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "謝岳穎醫師您好:\n新北市政府衛生局調閱病歷,此為醫療爭議解案,\n請協助確認病歷內容,因案件有時效性(煩請務必回覆)。\n感謝您。\n備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "謝岳穎醫師您好:
+新北市政府衛生局調閱病歷,此為醫療爭議解案,
+請協助確認病歷內容,因案件有時效性(煩請務必回覆)。
+感謝您。
+備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "因為病人也只有回診一次，後續沒有再回診，最後一次門診看起來傷口沒有問題，直接幫病人將縫線拆除。",
     "remark": "",
     "status": "已完成",
@@ -18780,7 +22583,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "關曉雯醫師您好:\n新北市政府衛生局調閱病歷,此為醫療爭議解案,\n請協助確認病歷內容,因案件有時效性(煩請務必回覆)。\n感謝您。\n備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "關曉雯醫師您好:
+新北市政府衛生局調閱病歷,此為醫療爭議解案,
+請協助確認病歷內容,因案件有時效性(煩請務必回覆)。
+感謝您。
+備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "病歷無需修改。惟病人就醫為右側臀部異物，而公文上寫右側手臂異物；不知是否為誤植",
     "remark": "",
     "status": "已完成",
@@ -18806,8 +22614,21 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "戴震宇醫師您好:\n請醫師協助回覆公文內文問題,黃建嚴(04617222),謝謝您\n1.黃建嚴君於何時因該症至貴院初診？\n2.當時係由何人、何時送醫？\n3.症狀如何？\n4.有無主訴至貴院就診前曾至何家醫療院所就診？\n5.致病原因為何？\n6.曾否主訴發生事故時間、地點、原因及經過？\n請惠示醫裡見解",
-    "doctor_reply": "1、2024/09/02\n2、自行前往\n3、肩膀疼痛\n4、不確定，該病人係由林廉傑醫師主治\n5、車禍\n6、不確定，該病人係由林廉傑醫師主治",
+    "question": "戴震宇醫師您好:
+請醫師協助回覆公文內文問題,黃建嚴(04617222),謝謝您
+1.黃建嚴君於何時因該症至貴院初診？
+2.當時係由何人、何時送醫？
+3.症狀如何？
+4.有無主訴至貴院就診前曾至何家醫療院所就診？
+5.致病原因為何？
+6.曾否主訴發生事故時間、地點、原因及經過？
+請惠示醫裡見解",
+    "doctor_reply": "1、2024/09/02
+2、自行前往
+3、肩膀疼痛
+4、不確定，該病人係由林廉傑醫師主治
+5、車禍
+6、不確定，該病人係由林廉傑醫師主治",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/12 上午 08:00",
@@ -18832,8 +22653,27 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林廉傑醫師您好:\n請醫師協助回覆公文內文問題,黃建嚴(04617222),謝謝您\n1.黃建嚴君於何時因該症至貴院初診？\n2.當時係由何人、何時送醫？\n3.症狀如何？\n4.有無主訴至貴院就診前曾至何家醫療院所就診？\n5.致病原因為何？\n6.曾否主訴發生事故時間、地點、原因及經過？\n請惠示醫裡見解",
-    "doctor_reply": "1.黃建嚴君於何時因該症至貴院初診？\n2024/08/28\n2.當時係由何人、何時送醫？\n自行就醫\n3.症狀如何？\n左肩疼痛\n4.有無主訴至貴院就診前曾至何家醫療院所就診？\n並無特別告知\n5.致病原因為何？\n左肩旋轉肌撕裂導致次發性關節炎應與外力有關。\n6.曾否主訴發生事故時間、地點、原因及經過？\n就診時即提到左肩疼痛始於112年10月25日車禍後。",
+    "question": "林廉傑醫師您好:
+請醫師協助回覆公文內文問題,黃建嚴(04617222),謝謝您
+1.黃建嚴君於何時因該症至貴院初診？
+2.當時係由何人、何時送醫？
+3.症狀如何？
+4.有無主訴至貴院就診前曾至何家醫療院所就診？
+5.致病原因為何？
+6.曾否主訴發生事故時間、地點、原因及經過？
+請惠示醫裡見解",
+    "doctor_reply": "1.黃建嚴君於何時因該症至貴院初診？
+2024/08/28
+2.當時係由何人、何時送醫？
+自行就醫
+3.症狀如何？
+左肩疼痛
+4.有無主訴至貴院就診前曾至何家醫療院所就診？
+並無特別告知
+5.致病原因為何？
+左肩旋轉肌撕裂導致次發性關節炎應與外力有關。
+6.曾否主訴發生事故時間、地點、原因及經過？
+就診時即提到左肩疼痛始於112年10月25日車禍後。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/12 上午 08:00",
@@ -18858,7 +22698,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "戴振宇醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?\n病人姓名:詹易明(08314039),因案件有時效性，如未收到回覆病歷將於4月16日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "戴振宇醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?
+病人姓名:詹易明(08314039),因案件有時效性，如未收到回覆病歷將於4月16日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "",
     "remark": "病歷已於4/16釋出勞保局",
     "status": "已完成",
@@ -18884,7 +22727,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "吳維喬醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?\n病人姓名:詹易明(08314039),因案件有時效性，如未收到回覆病歷將於4月16日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "吳維喬醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?
+病人姓名:詹易明(08314039),因案件有時效性，如未收到回覆病歷將於4月16日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "是",
     "remark": "",
     "status": "已完成",
@@ -18910,8 +22756,30 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王智毅醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:林瑛文(06573685),病歷曾釋出過.\n1-1.林君就診有無主訴傷害事故?\n1-2.發生日期及原因為何?\n1-3.所患「左肘軟組織挫傷」是否係因主訴之傷害事故所致?\n2-1.林君因上開傷病治療經過為何?\n2-2.有無併發症或後遺症?\n2-3.療養至何時起可從事一般工作?\n2-4.認定理由及依據為何?\n請惠示醫理見解。",
-    "doctor_reply": "1-1.林君就診有無主訴傷害事故? \n有\n1-2.發生日期及原因為何?\n1140609 主訴因左肘撞到硬物\n1-3.所患「左肘軟組織挫傷」是否係因主訴之傷害事故所致?\n是\n2-1.林君因上開傷病治療經過為何?\n安排左肘鋼板移除手術 術後恢復良好\n2-2.有無併發症或後遺症?\n無\n2-3.療養至何時起可從事一般工作?\n術後一個月\n2-4.認定理由及依據為何?\n常規醫理",
+    "question": "王智毅醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:林瑛文(06573685),病歷曾釋出過.
+1-1.林君就診有無主訴傷害事故?
+1-2.發生日期及原因為何?
+1-3.所患「左肘軟組織挫傷」是否係因主訴之傷害事故所致?
+2-1.林君因上開傷病治療經過為何?
+2-2.有無併發症或後遺症?
+2-3.療養至何時起可從事一般工作?
+2-4.認定理由及依據為何?
+請惠示醫理見解。",
+    "doctor_reply": "1-1.林君就診有無主訴傷害事故? 
+有
+1-2.發生日期及原因為何?
+1140609 主訴因左肘撞到硬物
+1-3.所患「左肘軟組織挫傷」是否係因主訴之傷害事故所致?
+是
+2-1.林君因上開傷病治療經過為何?
+安排左肘鋼板移除手術 術後恢復良好
+2-2.有無併發症或後遺症?
+無
+2-3.療養至何時起可從事一般工作?
+術後一個月
+2-4.認定理由及依據為何?
+常規醫理",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/16 上午 08:00",
@@ -18936,7 +22804,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林乾閔醫師您好，因臺灣臺北地方法院調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於04月16日釋出，感謝您。\n備註：出院病摘已本人釋出過，請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "林乾閔醫師您好，因臺灣臺北地方法院調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於04月16日釋出，感謝您。
+備註：出院病摘已本人釋出過，請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "病歷已於4/17釋出",
     "status": "已完成",
@@ -18962,8 +22834,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "韓政達醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:余國優(16820243),謝謝您\n1.其於何時因上述病症初診?\n2.當時症狀如何?\n3.治療部位如何?\n4.有無外傷?\n5.主訴發生事故之時間、地點、原因及經過如何?\n6.有無訴及曾至何處診療?\n7.所患成因如何?係屬普通疾病抑何時遭受外力傷害引起?\n請惠示醫理見解",
-    "doctor_reply": "1.其於何時因上述病症初診? 頭部外傷併發right F-T-P SDH, left occipital fracture \n2.當時症狀如何? 重度昏迷, 昏迷指數6分\n3.治療部位如何? 頭部\n4.有無外傷? 高處跌落\n5.主訴發生事故之時間、地點、原因及經過如何? 2024/09/24來診為A梯跌落後昏迷\n6.有無訴及曾至何處診療? 由119送入本院急診\n7.所患成因如何?係屬普通疾病抑何時遭受外力傷害引起? 腦出血與骨折係因外傷造成",
+    "question": "韓政達醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:余國優(16820243),謝謝您
+1.其於何時因上述病症初診?
+2.當時症狀如何?
+3.治療部位如何?
+4.有無外傷?
+5.主訴發生事故之時間、地點、原因及經過如何?
+6.有無訴及曾至何處診療?
+7.所患成因如何?係屬普通疾病抑何時遭受外力傷害引起?
+請惠示醫理見解",
+    "doctor_reply": "1.其於何時因上述病症初診? 頭部外傷併發right F-T-P SDH, left occipital fracture 
+2.當時症狀如何? 重度昏迷, 昏迷指數6分
+3.治療部位如何? 頭部
+4.有無外傷? 高處跌落
+5.主訴發生事故之時間、地點、原因及經過如何? 2024/09/24來診為A梯跌落後昏迷
+6.有無訴及曾至何處診療? 由119送入本院急診
+7.所患成因如何?係屬普通疾病抑何時遭受外力傷害引起? 腦出血與骨折係因外傷造成",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/16 上午 08:00",
@@ -18988,8 +22875,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王子瑄醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:黃麟凱(03218475),謝謝您.\n1.黃君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1.多處鈍挫傷，左足大片擦挫傷\n2.左足大片擦挫傷併發蜂窩性組織炎與足部慢性疼痛\n3.約4-6週應可恢復從事一般工作\n4.若工作為需要多處走動，傷後約4-5週左右傷口可癒合，約傷後6週左右可恢復從事一般走動",
+    "question": "王子瑄醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:黃麟凱(03218475),謝謝您.
+1.黃君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1.多處鈍挫傷，左足大片擦挫傷
+2.左足大片擦挫傷併發蜂窩性組織炎與足部慢性疼痛
+3.約4-6週應可恢復從事一般工作
+4.若工作為需要多處走動，傷後約4-5週左右傷口可癒合，約傷後6週左右可恢復從事一般走動",
     "remark": "王醫師您好:請醫師再協助回復問題1,病人治療經過為何?謝謝您",
     "status": "已完成",
     "due_date": "2026/4/16 上午 08:00",
@@ -19014,7 +22910,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "劉郁欣醫師您好:\n因勞保局來函調閱病歷,病人姓名:張天俊(05765104)\n請協助確認病歷是否可以釋出?\n因案件有時效性，如未收到回覆病歷將於04月17日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "劉郁欣醫師您好:
+因勞保局來函調閱病歷,病人姓名:張天俊(05765104)
+請協助確認病歷是否可以釋出?
+因案件有時效性，如未收到回覆病歷將於04月17日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "是",
     "remark": "",
     "status": "已完成",
@@ -19040,8 +22941,27 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "王智毅醫師您好 請協助回答問題謝謝\n馬文源(01807073）因「右側拇指挫傷合併韌帶撕裂傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1-1馬君就診有無主訴傷害事故？1-2發生日期及原因為何？1-3所患「右側拇指挫傷合併韌帶撕裂傷」是否係因主訴之傷害事故所致？\n2-1馬君因上開傷病治療經過為何？2-2有無併發症或後遺症？2-3療養至何時起可從事一般工作？2-4認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1-1馬君就診有無主訴傷害事故？\n\n主訴於運動中發生右側拇指嚴重扭挫傷 \n1-2發生日期及原因為何？\n2025/3/3 \n1-3所患「右側拇指挫傷合併韌帶撕裂傷」是否係因主訴之傷害事故所致？\n是\n2-1馬君因上開傷病治療經過為何？\n經門診保守治療  2025/3~ 2025/12 於骨科及復健科門診規律複診\n2-2有無併發症或後遺症？\n無\n2-3療養至何時起可從事一般工作？\n2026/1 可從事一般工作\n2-4認定理由及依據為何？\n常規醫理恢復\n請惠示醫理見解。",
+    "question": "王智毅醫師您好 請協助回答問題謝謝
+馬文源(01807073）因「右側拇指挫傷合併韌帶撕裂傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1-1馬君就診有無主訴傷害事故？1-2發生日期及原因為何？1-3所患「右側拇指挫傷合併韌帶撕裂傷」是否係因主訴之傷害事故所致？
+2-1馬君因上開傷病治療經過為何？2-2有無併發症或後遺症？2-3療養至何時起可從事一般工作？2-4認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1-1馬君就診有無主訴傷害事故？
+
+主訴於運動中發生右側拇指嚴重扭挫傷 
+1-2發生日期及原因為何？
+2025/3/3 
+1-3所患「右側拇指挫傷合併韌帶撕裂傷」是否係因主訴之傷害事故所致？
+是
+2-1馬君因上開傷病治療經過為何？
+經門診保守治療  2025/3~ 2025/12 於骨科及復健科門診規律複診
+2-2有無併發症或後遺症？
+無
+2-3療養至何時起可從事一般工作？
+2026/1 可從事一般工作
+2-4認定理由及依據為何？
+常規醫理恢復
+請惠示醫理見解。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/18 上午 08:00",
@@ -19066,7 +22986,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳弘洲醫師您好 請協助回答問題謝謝\n馬文源(01807073）因「右側拇指挫傷合併韌帶撕裂傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1-1馬君就診有無主訴傷害事故？1-2發生日期及原因為何？1-3所患「右側拇指挫傷合併韌帶撕裂傷」是否係因主訴之傷害事故所致？\n2-1馬君因上開傷病治療經過為何？2-2有無併發症或後遺症？2-3療養至何時起可從事一般工作？2-4認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "陳弘洲醫師您好 請協助回答問題謝謝
+馬文源(01807073）因「右側拇指挫傷合併韌帶撕裂傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1-1馬君就診有無主訴傷害事故？1-2發生日期及原因為何？1-3所患「右側拇指挫傷合併韌帶撕裂傷」是否係因主訴之傷害事故所致？
+2-1馬君因上開傷病治療經過為何？2-2有無併發症或後遺症？2-3療養至何時起可從事一般工作？2-4認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "1-1. 根據首次看診的骨科醫師及復健科醫師門診紀錄致傷原因寫嚴重拉傷。1-2.  根據首次看診的骨科醫師及復健科醫師門診紀錄皆無致傷原因及日期。只知可能很接近首次看診骨科醫師的日期(114年3月3日)。1-3. 是，因其後骨科醫師幫病患安排之超音波檢查有韌帶撕裂傷，首次看診的復健科醫師亦根據超音波檢查報告給了挫傷的診斷。2-1. 自114年3月底起自115年1月初持續於接受復健治療。2-2. 仍有些許壓痛之症狀。2-3. 115年2月起應可從事一般工作，但不能過度使用右拇指。2-4. 病歷。",
     "remark": "",
     "status": "已完成",
@@ -19092,7 +23016,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "許庭碩醫師您好，因臺灣新北地方法院調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於4月16日釋出，感謝您。\n備註：出院病摘、門診醫令已釋出過，請勿修改電子病歷。\n佩妤敬上",
+    "question": "許庭碩醫師您好，因臺灣新北地方法院調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於4月16日釋出，感謝您。
+備註：出院病摘、門診醫令已釋出過，請勿修改電子病歷。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "病歷已於4/20釋出",
     "status": "已完成",
@@ -19118,7 +23046,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "謝岳穎醫師您好，請協助回覆問題，感謝您\n崔丹鳳君(07323724)因「Fracture of left scapula」來院就診\n1.另查貴院114年8月26日出具之勞工職業災害保險失能診斷書第12頁下方載，崔君所患經評估後「不符合」症狀固定永久失能，原因為何?\n2.其左肩關節是否再治療仍有好轉可能?\n\n出院病歷摘要及門診醫令已釋出過，請勿更改\n請惠示醫理見解。",
+    "question": "謝岳穎醫師您好，請協助回覆問題，感謝您
+崔丹鳳君(07323724)因「Fracture of left scapula」來院就診
+1.另查貴院114年8月26日出具之勞工職業災害保險失能診斷書第12頁下方載，崔君所患經評估後「不符合」症狀固定永久失能，原因為何?
+2.其左肩關節是否再治療仍有好轉可能?
+
+出院病歷摘要及門診醫令已釋出過，請勿更改
+請惠示醫理見解。",
     "doctor_reply": "1.按照病人肩胛骨骨折完全癒合的狀況，以及之前相關的治療經驗，理論上不至於會明顯影響到他的活動功能，而且如果有透過適當的復健應該可以保有大部分的活動功能。2.建議如果病人還想要改善左肩關節的功能，可以去復健科或職業醫學科做相關的評估或治療，不過病人自身的配合度也相當重要。",
     "remark": "",
     "status": "已完成",
@@ -19144,7 +23078,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "張統優醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?\n因案件有時效性，如未收到回覆病歷將於4月18日釋出，感謝您。\n備註：出院病歷摘要已釋出過，請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "張統優醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?
+因案件有時效性，如未收到回覆病歷將於4月18日釋出，感謝您。
+備註：出院病歷摘要已釋出過，請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可",
     "remark": "",
     "status": "已完成",
@@ -19170,7 +23107,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "韓松穎醫師您好:\n新北市政府衛生局調閱病歷,此為醫療爭議解案,\n請協助確認病歷內容,因案件有時效性(煩請務必回覆)。\n感謝您。\n備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "韓松穎醫師您好:
+新北市政府衛生局調閱病歷,此為醫療爭議解案,
+請協助確認病歷內容,因案件有時效性(煩請務必回覆)。
+感謝您。
+備註：請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "郵件附上的病歷內容和牙科病歷不同，請聯絡2551 emma",
     "remark": "醫療爭議",
     "status": "已完成",
@@ -19196,7 +23138,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林乾閔醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?\n因案件有時效性，如未收到回覆病歷將於04月19日釋出，感謝您。\n備註：出院病歷摘要釋出過。\n非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "林乾閔醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?
+因案件有時效性，如未收到回覆病歷將於04月19日釋出，感謝您。
+備註：出院病歷摘要釋出過。
+非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "",
     "remark": "病歷已於4/20釋出",
     "status": "已完成",
@@ -19222,8 +23168,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "(呂鑑軒02559203)於115年1月22日因「腦幹出血、中樞神經系統衰竭」死亡，其家屬申請死亡給付。\n1.經查呂鑑軒君生前曾因非創傷性腦幹出血於貴院診療，當時症狀如何？\n2.其死因「腦幹出血、中樞神經系統衰竭」與呂鑑軒君生前所患第二型糖尿病是否具有因果關係?\n\n請惠示醫理見解",
-    "doctor_reply": "1. 深度昏迷, 昏迷指數3分\n2. 第二型糖尿病為腦部出血性中風之危險因子, 但非主要原因",
+    "question": "(呂鑑軒02559203)於115年1月22日因「腦幹出血、中樞神經系統衰竭」死亡，其家屬申請死亡給付。
+1.經查呂鑑軒君生前曾因非創傷性腦幹出血於貴院診療，當時症狀如何？
+2.其死因「腦幹出血、中樞神經系統衰竭」與呂鑑軒君生前所患第二型糖尿病是否具有因果關係?
+
+請惠示醫理見解",
+    "doctor_reply": "1. 深度昏迷, 昏迷指數3分
+2. 第二型糖尿病為腦部出血性中風之危險因子, 但非主要原因",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/22 上午 08:00",
@@ -19248,7 +23199,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "邱奕璁醫師您好 請協助回覆問題\n(呂鑑軒02559203)於115年1月22日因「腦幹出血、中樞神經系統衰竭」死亡，其家屬申請死亡給付。\n1.經查呂鑑軒君生前曾因非創傷性腦幹出血於貴院診療，當時症狀如何？\n2.其死因「腦幹出血、中樞神經系統衰竭」與呂鑑軒君生前所患第二型糖尿病是否具有因果關係?\n\n請惠示醫理見解",
+    "question": "邱奕璁醫師您好 請協助回覆問題
+(呂鑑軒02559203)於115年1月22日因「腦幹出血、中樞神經系統衰竭」死亡，其家屬申請死亡給付。
+1.經查呂鑑軒君生前曾因非創傷性腦幹出血於貴院診療，當時症狀如何？
+2.其死因「腦幹出血、中樞神經系統衰竭」與呂鑑軒君生前所患第二型糖尿病是否具有因果關係?
+
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -19274,7 +23230,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "黃子芬醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?\n因案件有時效性，如未收到回覆病歷將於4月22日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "黃子芬醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?
+因案件有時效性，如未收到回覆病歷將於4月22日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可以釋出",
     "remark": "",
     "status": "已完成",
@@ -19300,7 +23259,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "鄭彩梅醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?\n因案件有時效性，如未收到回覆病歷將於4月23日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "鄭彩梅醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?
+因案件有時效性，如未收到回覆病歷將於4月23日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可以釋出",
     "remark": "",
     "status": "已完成",
@@ -19326,7 +23288,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林冠宏醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?\n因案件有時效性，如未收到回覆病歷將於4月23日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "林冠宏醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?
+因案件有時效性，如未收到回覆病歷將於4月23日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "無須修改,謝謝",
     "remark": "",
     "status": "已完成",
@@ -19352,8 +23317,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "黃錦前醫師您好，請協助回覆問題\n1. (楊思郁03162664)於民國112年9月21日至貴院進行手術時，是否因為貴院當時病房不足，或是基於病情需要，而須使用自費之病房?\n2. 112年9月26日之收據中，「62特殊醫材及技」107,500之收費項目，具體而言係指何種醫材或醫療項目?\n3. 是否為楊思郁當時所受傷之必要支出項目?\n\n惠請提供醫理見解",
-    "doctor_reply": "1. 有可能, 現已無法確定\n2. 是關節鏡十字韌帶重建手術及外側副韌帶修補手術所需要的必須耗材 (韌帶固定物)\n3. 必須項目",
+    "question": "黃錦前醫師您好，請協助回覆問題
+1. (楊思郁03162664)於民國112年9月21日至貴院進行手術時，是否因為貴院當時病房不足，或是基於病情需要，而須使用自費之病房?
+2. 112年9月26日之收據中，「62特殊醫材及技」107,500之收費項目，具體而言係指何種醫材或醫療項目?
+3. 是否為楊思郁當時所受傷之必要支出項目?
+
+惠請提供醫理見解",
+    "doctor_reply": "1. 有可能, 現已無法確定
+2. 是關節鏡十字韌帶重建手術及外側副韌帶修補手術所需要的必須耗材 (韌帶固定物)
+3. 必須項目",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/24 上午 08:00",
@@ -19378,8 +23350,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "蔡同堯主任您好:\n請主任協助回覆公文內文問題,病人姓名:卓曉慧(00072739),謝謝您\n1.卓君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「左側橫靜脈竇硬膜動靜脈瘻管併顱內出血、呼吸衰竭」是否係因主訴之傷害事故所致？\n請惠示醫裡見解",
-    "doctor_reply": "1. 無。\n2. 依當時病歷記載：病人於2025/05/23 14:58由救護車送入，同事陪同。同事代述病人當日早上頭暈嘔吐，下午意識改變，故呼叫救護車。\n3. 依當時急診病歷，尚無法判定。建議進一步徵詢神經外科之專家意見。",
+    "question": "蔡同堯主任您好:
+請主任協助回覆公文內文問題,病人姓名:卓曉慧(00072739),謝謝您
+1.卓君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「左側橫靜脈竇硬膜動靜脈瘻管併顱內出血、呼吸衰竭」是否係因主訴之傷害事故所致？
+請惠示醫裡見解",
+    "doctor_reply": "1. 無。
+2. 依當時病歷記載：病人於2025/05/23 14:58由救護車送入，同事陪同。同事代述病人當日早上頭暈嘔吐，下午意識改變，故呼叫救護車。
+3. 依當時急診病歷，尚無法判定。建議進一步徵詢神經外科之專家意見。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/24 上午 08:00",
@@ -19404,8 +23383,25 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林家瑋醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:卓曉慧(00072739),謝謝您\n1-1.卓君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「左側橫靜脈竇硬膜動靜脈瘻管併顱內出血、呼吸衰竭」是否係因主訴之傷害事故所致？\n2-1.卓君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n2-5.請確認病歷是否可釋出?\n請惠示醫裡見解",
-    "doctor_reply": "1-1. 沒有。\n1-2.114/05/23 自發性顱內出血。\n1-3.「左側橫靜脈竇硬膜動靜脈瘻管」並非事故傷害，而是自發性顱內出血，並造成呼吸衰竭。\n2-1. 病人於住院當日接受開顱手術，術後入住加護病房治療，後於6月16號過逝。\n2-2.病人因嚴重顱內出血併深度昏迷，導致呼吸衰竭而過逝。\n2-3.住院當天之後就一直呈現深度昏迷到過逝，不可能從事一般工作。\n2-4. 依據電腦斷層掃描及電腦斷層掃描血管攝影之結果。\n2-5.可以。",
+    "question": "林家瑋醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:卓曉慧(00072739),謝謝您
+1-1.卓君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「左側橫靜脈竇硬膜動靜脈瘻管併顱內出血、呼吸衰竭」是否係因主訴之傷害事故所致？
+2-1.卓君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+2-5.請確認病歷是否可釋出?
+請惠示醫裡見解",
+    "doctor_reply": "1-1. 沒有。
+1-2.114/05/23 自發性顱內出血。
+1-3.「左側橫靜脈竇硬膜動靜脈瘻管」並非事故傷害，而是自發性顱內出血，並造成呼吸衰竭。
+2-1. 病人於住院當日接受開顱手術，術後入住加護病房治療，後於6月16號過逝。
+2-2.病人因嚴重顱內出血併深度昏迷，導致呼吸衰竭而過逝。
+2-3.住院當天之後就一直呈現深度昏迷到過逝，不可能從事一般工作。
+2-4. 依據電腦斷層掃描及電腦斷層掃描血管攝影之結果。
+2-5.可以。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/24 上午 08:00",
@@ -19430,8 +23426,25 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "邱彥碩主任您好:\n請主任協助回覆公文內文問題,病人姓名:王宗盛(03315406),謝謝您.\n1-1.王君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「右側性膝部挫傷、右膝創傷性關節病變，屬職業傷害、右膝挫傷（自述114年10月14日工作跌倒），合併重度創傷關節炎」是否係因主訴之傷害事故所致？\n2-1.王君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n2-5.請確認病歷是否可釋出?\n請惠示醫理見解。",
-    "doctor_reply": "1-1.王君就診有無主訴傷害事故？       114-10-14 自述.工作跌倒\n1-2.發生日期及原因為何？                  114-10-14 自述.工作跌倒\n1-3.所患「右側性膝部挫傷、右膝創傷性關節病變，屬職業傷害、右膝挫傷（自述114年10月14日工作跌倒），合併重度創傷關節炎」是否係因主訴之傷害事故所致？     應該是跌倒\n2-1.王君因上開傷病治療經過為何？         保守治療無效，關節軟骨狀況變差，需以手術治療\n2-2.有無併發症或後遺症？      無\n2-3.療養至何時起可從事一般工作？  手術後三個月可以一般工作 (115-4-16 可以工作)\n2-4.認定理由及依據為何？      醫理常規、病人恢復情況\n2-5.請確認病歷是否可釋出?    可",
+    "question": "邱彥碩主任您好:
+請主任協助回覆公文內文問題,病人姓名:王宗盛(03315406),謝謝您.
+1-1.王君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「右側性膝部挫傷、右膝創傷性關節病變，屬職業傷害、右膝挫傷（自述114年10月14日工作跌倒），合併重度創傷關節炎」是否係因主訴之傷害事故所致？
+2-1.王君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+2-5.請確認病歷是否可釋出?
+請惠示醫理見解。",
+    "doctor_reply": "1-1.王君就診有無主訴傷害事故？       114-10-14 自述.工作跌倒
+1-2.發生日期及原因為何？                  114-10-14 自述.工作跌倒
+1-3.所患「右側性膝部挫傷、右膝創傷性關節病變，屬職業傷害、右膝挫傷（自述114年10月14日工作跌倒），合併重度創傷關節炎」是否係因主訴之傷害事故所致？     應該是跌倒
+2-1.王君因上開傷病治療經過為何？         保守治療無效，關節軟骨狀況變差，需以手術治療
+2-2.有無併發症或後遺症？      無
+2-3.療養至何時起可從事一般工作？  手術後三個月可以一般工作 (115-4-16 可以工作)
+2-4.認定理由及依據為何？      醫理常規、病人恢復情況
+2-5.請確認病歷是否可釋出?    可",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/25 上午 08:00",
@@ -19456,7 +23469,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "邱彥碩主任您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?\n病人姓名:林月鳳(17709868)\n因案件有時效性，如未收到回覆病歷將於04月27日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "邱彥碩主任您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?
+病人姓名:林月鳳(17709868)
+因案件有時效性，如未收到回覆病歷將於04月27日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "可以釋出",
     "remark": "",
     "status": "已完成",
@@ -19482,8 +23499,25 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "曾孟元醫師您好，請協助回覆問題謝謝\n(楊動起(04945394)因「左踝阿基里斯腱撕裂傷」於115年3月16日起至貴院住院，申請職災醫療給付。\n1.其於何日何時分因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.主訴發生事故之時間、地點、原因及經過如何？\n5.有無訴及曾至何處診療？\n6.所患成因如何？\n7.係屬普通疾病或何時遭受外力傷害所引起？\n8.過去有無相關疾患之病史？\n請惠示醫理見解",
-    "doctor_reply": "1.20260316 133821\n2.左腳踝4公分撕裂傷\n3.左腳踝4公分撕裂傷\n4.病患來診為左腳踝被鐵板割傷\n5.無\n6.被鐵板割傷\n7.外力\n8.無",
+    "question": "曾孟元醫師您好，請協助回覆問題謝謝
+(楊動起(04945394)因「左踝阿基里斯腱撕裂傷」於115年3月16日起至貴院住院，申請職災醫療給付。
+1.其於何日何時分因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.主訴發生事故之時間、地點、原因及經過如何？
+5.有無訴及曾至何處診療？
+6.所患成因如何？
+7.係屬普通疾病或何時遭受外力傷害所引起？
+8.過去有無相關疾患之病史？
+請惠示醫理見解",
+    "doctor_reply": "1.20260316 133821
+2.左腳踝4公分撕裂傷
+3.左腳踝4公分撕裂傷
+4.病患來診為左腳踝被鐵板割傷
+5.無
+6.被鐵板割傷
+7.外力
+8.無",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/27 上午 08:00",
@@ -19508,8 +23542,42 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳沛華醫師您好，請協助回覆問題謝謝\n(楊動起(04945394)因「左踝阿基里斯腱撕裂傷」於115年3月16日起至貴院住院，申請職災醫療給付。\n1.其於何日何時分因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.主訴發生事故之時間、地點、原因及經過如何？\n5.有無訴及曾至何處診療？\n6.所患成因如何？\n7.係屬普通疾病或何時遭受外力傷害所引起？\n8.過去有無相關疾患之病史？\n請惠示醫理見解",
-    "doctor_reply": "關於病患楊動起(04945394)之回覆如下:\n\n1.其於何日何時分因上述病症初診？\n答:病患楊動起於民國115年03月16日13：46至急診檢傷就診。於民國115年03月16日14：19由急診會診骨科陳沛華醫師，診斷為左側小腿撕裂傷、左側跟腱部分斷裂。\n\n2.當時症狀如何？\n答:左側小腿撕裂傷，經檢查發現左側跟腱部分斷裂。\n\n3.有無外傷？\n答:有，左側小腿撕裂傷。\n\n4.主訴發生事故之時間、地點、原因及經過如何？\n答:依據急診檢傷醫療紀錄，病患來診為左腳踝被鐵板割傷。\n\n5.有無訴及曾至何處診療？\n答:無。\n\n6.所患成因如何？\n答:依據急診檢傷醫療紀錄，病患來診為左腳踝被鐵板割傷。\n\n7.係屬普通疾病或何時遭受外力傷害所引起？\n答:依據急診檢傷醫療紀錄，病患來診為左腳踝被鐵板割傷，故為遭受外力傷害所引起。\n\n8.過去有無相關疾患之病史？\n答:無。",
+    "question": "陳沛華醫師您好，請協助回覆問題謝謝
+(楊動起(04945394)因「左踝阿基里斯腱撕裂傷」於115年3月16日起至貴院住院，申請職災醫療給付。
+1.其於何日何時分因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.主訴發生事故之時間、地點、原因及經過如何？
+5.有無訴及曾至何處診療？
+6.所患成因如何？
+7.係屬普通疾病或何時遭受外力傷害所引起？
+8.過去有無相關疾患之病史？
+請惠示醫理見解",
+    "doctor_reply": "關於病患楊動起(04945394)之回覆如下:
+
+1.其於何日何時分因上述病症初診？
+答:病患楊動起於民國115年03月16日13：46至急診檢傷就診。於民國115年03月16日14：19由急診會診骨科陳沛華醫師，診斷為左側小腿撕裂傷、左側跟腱部分斷裂。
+
+2.當時症狀如何？
+答:左側小腿撕裂傷，經檢查發現左側跟腱部分斷裂。
+
+3.有無外傷？
+答:有，左側小腿撕裂傷。
+
+4.主訴發生事故之時間、地點、原因及經過如何？
+答:依據急診檢傷醫療紀錄，病患來診為左腳踝被鐵板割傷。
+
+5.有無訴及曾至何處診療？
+答:無。
+
+6.所患成因如何？
+答:依據急診檢傷醫療紀錄，病患來診為左腳踝被鐵板割傷。
+
+7.係屬普通疾病或何時遭受外力傷害所引起？
+答:依據急診檢傷醫療紀錄，病患來診為左腳踝被鐵板割傷，故為遭受外力傷害所引起。
+
+8.過去有無相關疾患之病史？
+答:無。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/27 上午 08:00",
@@ -19534,8 +23602,20 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "徐嘉鴻醫師您好 請協助回覆問題謝謝\n(葉篤誠17972736)因「急性腦梗塞、左頸動脈阻塞、心房震顫」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.葉君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「急性腦梗塞、左頸動脈阻塞、心房震顫」是否係因主訴之傷害事故所致？\n4.葉君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解",
-    "doctor_reply": "1，3、無主訴傷害事故\n2、1/29 21:00同事與其交接班，隔日早上換班發現異常，因此發生時間為1/29 21:00至 1/30 07:00之間。\n4、腦梗塞治療及住院\n5，6、需依照治療後殘留症狀及復健進度而定",
+    "question": "徐嘉鴻醫師您好 請協助回覆問題謝謝
+(葉篤誠17972736)因「急性腦梗塞、左頸動脈阻塞、心房震顫」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.葉君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「急性腦梗塞、左頸動脈阻塞、心房震顫」是否係因主訴之傷害事故所致？
+4.葉君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解",
+    "doctor_reply": "1，3、無主訴傷害事故
+2、1/29 21:00同事與其交接班，隔日早上換班發現異常，因此發生時間為1/29 21:00至 1/30 07:00之間。
+4、腦梗塞治療及住院
+5，6、需依照治療後殘留症狀及復健進度而定",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/27 上午 08:00",
@@ -19560,8 +23640,30 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳嘉泓醫師您好 請協助回覆問題謝謝\n(葉篤誠17972736)因「急性腦梗塞、左頸動脈阻塞、心房震顫」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.葉君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「急性腦梗塞、左頸動脈阻塞、心房震顫」是否係因主訴之傷害事故所致？\n4.葉君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解",
-    "doctor_reply": "1.葉君就診有無主訴傷害事故？\nANS: 主訴被發現倒在警衛室，右側無力\n2.發生日期及原因為何？\nANS: 發生於1/30，因急性中風\n3.所患「急性腦梗塞、左頸動脈阻塞、心房震顫」是否係因主訴之傷害事故所致？\nANS: 是\n4.葉君因上開傷病治療經過為何？\nANS: 接受經動脈取栓手術，抗生素治療，與床邊復健\n5.有無併發症或後遺症？\nANS: 右側無力併意識障礙，長期臥床\n6.療養至何時起可從事一般工作？\nANS: 終身無法工作\n7.認定理由及依據為何？\nANS: 病患臥床且意識障礙",
+    "question": "陳嘉泓醫師您好 請協助回覆問題謝謝
+(葉篤誠17972736)因「急性腦梗塞、左頸動脈阻塞、心房震顫」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.葉君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「急性腦梗塞、左頸動脈阻塞、心房震顫」是否係因主訴之傷害事故所致？
+4.葉君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解",
+    "doctor_reply": "1.葉君就診有無主訴傷害事故？
+ANS: 主訴被發現倒在警衛室，右側無力
+2.發生日期及原因為何？
+ANS: 發生於1/30，因急性中風
+3.所患「急性腦梗塞、左頸動脈阻塞、心房震顫」是否係因主訴之傷害事故所致？
+ANS: 是
+4.葉君因上開傷病治療經過為何？
+ANS: 接受經動脈取栓手術，抗生素治療，與床邊復健
+5.有無併發症或後遺症？
+ANS: 右側無力併意識障礙，長期臥床
+6.療養至何時起可從事一般工作？
+ANS: 終身無法工作
+7.認定理由及依據為何？
+ANS: 病患臥床且意識障礙",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/4/27 上午 08:00",
@@ -19586,7 +23688,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "郭光泰醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?\n因案件有時效性，如未收到回覆病歷將於4月27日釋出，感謝您。\n備註：出院病歷摘要已釋出過，請勿更改病歷。\n佩妤敬上",
+    "question": "郭光泰醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?
+因案件有時效性，如未收到回覆病歷將於4月27日釋出，感謝您。
+備註：出院病歷摘要已釋出過，請勿更改病歷。
+佩妤敬上",
     "doctor_reply": "可釋出",
     "remark": "",
     "status": "已完成",
@@ -19612,7 +23717,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林哲立醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:林慧如(11162180),謝謝您。\n1-1.林君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「右膝前十字韌帶斷裂、右膝挫傷」是否係因主訴之傷害事故所致？\n2-1.林君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n2-5.請確認病歷是否可釋出?\n請惠示醫裡見解",
+    "question": "林哲立醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:林慧如(11162180),謝謝您。
+1-1.林君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「右膝前十字韌帶斷裂、右膝挫傷」是否係因主訴之傷害事故所致？
+2-1.林君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+2-5.請確認病歷是否可釋出?
+請惠示醫裡見解",
     "doctor_reply": "1-1.病人主訴摔倒受傷，1-2.3個月前，1-3.是有可能的，病人之前無重大傷害過，2-1.接受前十字韌帶重建手術，恢復膝蓋穩定度，2-2.無併發症，2-3.術後三個月開始復健，以恢復工作能力，2-4.可以詢問職業傷害科跟復健科，暸解病人何時可以正常工作，2-5.病歷可以釋出。",
     "remark": "",
     "status": "已完成",
@@ -19638,8 +23753,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳弘洲主任您好:\n請主任協助回覆公文內文問題,病人姓名:林慧如(11162180),謝謝您。\n1-1.林君因上開傷病治療經過為何？\n1-2.有無併發症或後遺症？\n1-3.療養至何時起可從事一般工作？\n1-4.認定理由及依據為何？",
-    "doctor_reply": "1-1. 114/5/5接受關節鏡重建手術，114/6/30、114/7/23、114/8/11間於復健科門診診治並於期間接受復健治療。 1-2. 無併發症，至於有無後遺症無從得知，因本人僅於114/6/30、114/7/23間於門診診治病患，當時尚未痊癒，其後未曾再見過病患。 1-3. 同前所述，因本人僅於114/6/30、114/7/23間於門診診治病患，當時尚未痊癒，其後未曾再見過病患，因此無法得知患者後續進展。 1-4. 病歷。\n(PS. 因病患後續持續於骨科門診追蹤，病患後續狀況建議徵詢骨科林哲立醫師)。",
+    "question": "陳弘洲主任您好:
+請主任協助回覆公文內文問題,病人姓名:林慧如(11162180),謝謝您。
+1-1.林君因上開傷病治療經過為何？
+1-2.有無併發症或後遺症？
+1-3.療養至何時起可從事一般工作？
+1-4.認定理由及依據為何？",
+    "doctor_reply": "1-1. 114/5/5接受關節鏡重建手術，114/6/30、114/7/23、114/8/11間於復健科門診診治並於期間接受復健治療。 1-2. 無併發症，至於有無後遺症無從得知，因本人僅於114/6/30、114/7/23間於門診診治病患，當時尚未痊癒，其後未曾再見過病患。 1-3. 同前所述，因本人僅於114/6/30、114/7/23間於門診診治病患，當時尚未痊癒，其後未曾再見過病患，因此無法得知患者後續進展。 1-4. 病歷。
+(PS. 因病患後續持續於骨科門診追蹤，病患後續狀況建議徵詢骨科林哲立醫師)。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/6 上午 08:00",
@@ -19664,7 +23785,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "洪家佩醫師您好，請協助回覆問題謝謝\n1.請貴院惠予說明病患(李日傑14208713)目前或出院時是否因缺氧缺血性腦病變，受有重大不治或難治之傷害，請查照。\n請惠示醫理見解",
+    "question": "洪家佩醫師您好，請協助回覆問題謝謝
+1.請貴院惠予說明病患(李日傑14208713)目前或出院時是否因缺氧缺血性腦病變，受有重大不治或難治之傷害，請查照。
+請惠示醫理見解",
     "doctor_reply": "患者因缺氧性腦病變於2025年2月起於本院復健科門診接受復健治療，目前雖可行走但長距離仍需輪椅輔助，日常生活因認知功能缺損尚須部分輔助(MMSE ( 9 /30)，CRD: 2)。",
     "remark": "",
     "status": "已完成",
@@ -19690,7 +23813,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "鄔定宇醫師您好，請協助回覆問題謝謝\n1.請貴院惠予說明病患(李日傑14208713)目前或出院時是否因缺氧缺血性腦病變，受有重大不治或難治之傷害，請查照。\n請惠示醫理見解",
+    "question": "鄔定宇醫師您好，請協助回覆問題謝謝
+1.請貴院惠予說明病患(李日傑14208713)目前或出院時是否因缺氧缺血性腦病變，受有重大不治或難治之傷害，請查照。
+請惠示醫理見解",
     "doctor_reply": "依神經科2025年神經科門診以及過去住院紀錄，李先生於2022年於他院住院期間心臟驟停導致缺血性腦病變，檢查發現有智力衰退、肢體活動僵硬與動作障礙，應屬難治之腦部缺氧性傷害。",
     "remark": "",
     "status": "已完成",
@@ -19716,7 +23841,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "李繼弘醫師您好，請協助回覆問題謝謝\n1.請貴院惠予說明病患(李日傑14208713)目前或出院時是否因缺氧缺血性腦病變，受有重大不治或難治之傷害，請查照。\n請惠示醫理見解",
+    "question": "李繼弘醫師您好，請協助回覆問題謝謝
+1.請貴院惠予說明病患(李日傑14208713)目前或出院時是否因缺氧缺血性腦病變，受有重大不治或難治之傷害，請查照。
+請惠示醫理見解",
     "doctor_reply": "非感染科專業，",
     "remark": "",
     "status": "已完成",
@@ -19742,8 +23869,24 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好，請協助回覆問題謝謝。\n(陳秀宜17919940)於114年12月18日起因「右膝挫傷併前十字韌帶斷裂」至貴院門診及住院診療，申請核退職災自墊醫療費用。\n1其於何時因上述病症初診？\n2.當時症狀如何？\n3.治療部位如何？\n4.有無外傷？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n8.係屬普通疾病抑何時遭受外力傷害引起？\n請惠示醫理見解",
-    "doctor_reply": "1. 114年12月18日\n2. 右膝持續疼痛及腫脹\n3. 右膝\n4+5. 主訴為114年12月初於公車上摔倒造成右膝扭挫傷\n6. 曾至耕莘醫院檢查及治療，後核磁共振診斷為十字韌帶斷裂，而轉院至本院治療\n7. 外傷相關\n8. 病患年紀十字韌帶斷裂多數為外傷所致，與病患主訴相符。",
+    "question": "陳冠豪醫師您好，請協助回覆問題謝謝。
+(陳秀宜17919940)於114年12月18日起因「右膝挫傷併前十字韌帶斷裂」至貴院門診及住院診療，申請核退職災自墊醫療費用。
+1其於何時因上述病症初診？
+2.當時症狀如何？
+3.治療部位如何？
+4.有無外傷？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+8.係屬普通疾病抑何時遭受外力傷害引起？
+請惠示醫理見解",
+    "doctor_reply": "1. 114年12月18日
+2. 右膝持續疼痛及腫脹
+3. 右膝
+4+5. 主訴為114年12月初於公車上摔倒造成右膝扭挫傷
+6. 曾至耕莘醫院檢查及治療，後核磁共振診斷為十字韌帶斷裂，而轉院至本院治療
+7. 外傷相關
+8. 病患年紀十字韌帶斷裂多數為外傷所致，與病患主訴相符。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/1 上午 08:00",
@@ -19768,8 +23911,25 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "馮博皓醫師您好\n請醫師協助回覆公文內文問題,病人姓名:徐源良(08476791)，謝謝您.\n1-1.徐君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「未明示部位之泌尿道感染症、慢性呼吸衰竭，未明示是否伴有缺氧或高碳酸血症、高血脂症」是否係因主訴之傷害事故所致？\n2-1.徐君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n2-5.請確認病歷是否可釋出?\n請惠示醫理見解。",
-    "doctor_reply": "1-1  無，急診病歷紀錄為家屬敘述，晚間看護嘗試要抽痰時抽痰管放不進氣切，之後就越來越喘送來急診。\n1-2  2025年10月11日晚間送來急診\n1-3  本次為泌尿道合併呼吸喘住院，與傷害無關\n2-1  感染症經過住院抗生素治療後疾病控制穩定，於2025-10-24日出院\n2-2 依據病歷紀錄，病患於2025年9月有在他院經過急救後復甦，上次出院後即是長期臥床與有氣管造廔口術後狀況，與本次治療無關\n2-3 因病患上次他院急救後就是意識不清長期臥床，目前完全無法工作\n2-4 同2-2 與2-3\n2-5 可釋出",
+    "question": "馮博皓醫師您好
+請醫師協助回覆公文內文問題,病人姓名:徐源良(08476791)，謝謝您.
+1-1.徐君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「未明示部位之泌尿道感染症、慢性呼吸衰竭，未明示是否伴有缺氧或高碳酸血症、高血脂症」是否係因主訴之傷害事故所致？
+2-1.徐君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+2-5.請確認病歷是否可釋出?
+請惠示醫理見解。",
+    "doctor_reply": "1-1  無，急診病歷紀錄為家屬敘述，晚間看護嘗試要抽痰時抽痰管放不進氣切，之後就越來越喘送來急診。
+1-2  2025年10月11日晚間送來急診
+1-3  本次為泌尿道合併呼吸喘住院，與傷害無關
+2-1  感染症經過住院抗生素治療後疾病控制穩定，於2025-10-24日出院
+2-2 依據病歷紀錄，病患於2025年9月有在他院經過急救後復甦，上次出院後即是長期臥床與有氣管造廔口術後狀況，與本次治療無關
+2-3 因病患上次他院急救後就是意識不清長期臥床，目前完全無法工作
+2-4 同2-2 與2-3
+2-5 可釋出",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/6 上午 08:00",
@@ -19794,7 +23954,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "鄭景泉醫師您好\n因勞保局來函調閱病歷,病人姓名:徐源良(08476791)\n請協助確認病歷是否可以釋出?\n因案件有時效性，如未收到回覆病歷將於05月07日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "鄭景泉醫師您好
+因勞保局來函調閱病歷,病人姓名:徐源良(08476791)
+請協助確認病歷是否可以釋出?
+因案件有時效性，如未收到回覆病歷將於05月07日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "可以釋出",
     "remark": "",
     "status": "已完成",
@@ -19820,8 +23985,43 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "邱寬饒主任您好\n請主任協助回覆公文內文問題,病人姓名:徐源良(08476791)，謝謝您.\n1-1.徐君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「未明示部位之泌尿道感染症、慢性呼吸衰竭，未明示是否伴有缺氧或高碳酸血症、高血脂症」是否係因主訴之傷害事故所致？\n2-1.徐君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據\n請惠示醫理見解",
-    "doctor_reply": "徐學良(08476791)於2025/09/16復健科門診安排復健(病歷紀載 1.AMI; 2.Hypoxic encepalopathy onset: 2025/8/8; 3.Central DI; on tracheostomy, on NG; on foley)。於2025/10/11因呼吸短促 到本院急診，於2025/10/14住院，於2025/10/24胸腔內科病房出院，此次出院診斷為: urinary tract infection, suspected catheter-related，出院病歷紀載: underlying 1. 2025/08 out of hospital cardiac arrest, status post tracheostomy for chronic respiratory failure, bedridden since then, status post foley and nasogastric tube since then; 2. Gout; 3. Hyperlipidemia; 4. obstructive sleep apnea。\n於2025/11/21第一次到心臟科門診，邱寬饒醫師依據家屬敘述、病歷紀載及家屬提供外院用藥，開立心臟科用藥，及抽血檢查。\n於2026/01/19第二次到心臟科門診追蹤，家屬 (太太)要求開立診斷證明，邱寬饒醫師有跟家屬說明，診斷書是依據上次住院的病歷記載開立（1.心肌梗塞併休克，(2.)慢性呼吸衰竭; (3.) 高血脂症），至於徐先生cardiac arrest事件原因及因果關係的判定，是要原先住院的醫院提供資料，邱醫師無法確定因果關係，家屬表示了解。\n\n依據前述，回答如下：\n1-1.\t徐君就診有無主訴傷害事故？ \n答覆：診斷是依據本院出院時病歷紀載開立，未探討cardiac arrest、AMI 因果關係或相關因素。\n\n1-2.\t發生日期及原因為何？\n答覆: 心肌梗塞及休克日期及原因，因不是在本院治療，確實時間原因，建議由原先住院醫院提供(台北榮總)\n\n1-3.\t所患「未明示部位之泌尿道感染症、慢性呼吸衰竭，未明示是否伴有缺氧或高碳酸血症、高血脂症」是否係因主訴之傷害事故所致？ \n答覆: 此次出院診斷有urinary tract infection, suspected catheter-related，病患有接受氣管氣切，是因為事故之後 (cardiac arrest, AMI) 常見的照顧問題。患者在2025/12/24血液檢查Triglycerides （TG425 mg/dl）是符合高血脂症。至於是否和cardiac arrest, AMI 有關　建議原先住院醫院提供(台北榮總)\n\n2-1.徐君因上開傷病治療經過為何？\n答覆:依病歷紀載，徐先生是在台北榮總住院治療， 建議原先住院醫院提供(台北榮總)\n\n2-2.有無併發症或後遺症？ \n答覆:依病歷紀載。徐先生北榮總住院治療cardiac arrest, AMI， 後續的醫療復健、居家照顧　到本院就診。\n\n2-3.療養至何時起可從事一般工作？ \n答覆:依病歷紀載。目前仍無法從事一般工作，建議 3-6月後　相關科別　在評估。\\\n\n2-4.認定理由及依據請惠示醫理見解\n答覆: 事發現場、送醫過程、台北榮總 等重要關鍵資料，才是重要依據。上述資料要請相關單位提供給貴單位確認。\n徐先生只有在邱醫師門診兩次，由家屬（太太）陳述及要求藥物開立。邱醫師是根據本院病歷紀載作為回答依據\n。",
+    "question": "邱寬饒主任您好
+請主任協助回覆公文內文問題,病人姓名:徐源良(08476791)，謝謝您.
+1-1.徐君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「未明示部位之泌尿道感染症、慢性呼吸衰竭，未明示是否伴有缺氧或高碳酸血症、高血脂症」是否係因主訴之傷害事故所致？
+2-1.徐君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據
+請惠示醫理見解",
+    "doctor_reply": "徐學良(08476791)於2025/09/16復健科門診安排復健(病歷紀載 1.AMI; 2.Hypoxic encepalopathy onset: 2025/8/8; 3.Central DI; on tracheostomy, on NG; on foley)。於2025/10/11因呼吸短促 到本院急診，於2025/10/14住院，於2025/10/24胸腔內科病房出院，此次出院診斷為: urinary tract infection, suspected catheter-related，出院病歷紀載: underlying 1. 2025/08 out of hospital cardiac arrest, status post tracheostomy for chronic respiratory failure, bedridden since then, status post foley and nasogastric tube since then; 2. Gout; 3. Hyperlipidemia; 4. obstructive sleep apnea。
+於2025/11/21第一次到心臟科門診，邱寬饒醫師依據家屬敘述、病歷紀載及家屬提供外院用藥，開立心臟科用藥，及抽血檢查。
+於2026/01/19第二次到心臟科門診追蹤，家屬 (太太)要求開立診斷證明，邱寬饒醫師有跟家屬說明，診斷書是依據上次住院的病歷記載開立（1.心肌梗塞併休克，(2.)慢性呼吸衰竭; (3.) 高血脂症），至於徐先生cardiac arrest事件原因及因果關係的判定，是要原先住院的醫院提供資料，邱醫師無法確定因果關係，家屬表示了解。
+
+依據前述，回答如下：
+1-1.	徐君就診有無主訴傷害事故？ 
+答覆：診斷是依據本院出院時病歷紀載開立，未探討cardiac arrest、AMI 因果關係或相關因素。
+
+1-2.	發生日期及原因為何？
+答覆: 心肌梗塞及休克日期及原因，因不是在本院治療，確實時間原因，建議由原先住院醫院提供(台北榮總)
+
+1-3.	所患「未明示部位之泌尿道感染症、慢性呼吸衰竭，未明示是否伴有缺氧或高碳酸血症、高血脂症」是否係因主訴之傷害事故所致？ 
+答覆: 此次出院診斷有urinary tract infection, suspected catheter-related，病患有接受氣管氣切，是因為事故之後 (cardiac arrest, AMI) 常見的照顧問題。患者在2025/12/24血液檢查Triglycerides （TG425 mg/dl）是符合高血脂症。至於是否和cardiac arrest, AMI 有關　建議原先住院醫院提供(台北榮總)
+
+2-1.徐君因上開傷病治療經過為何？
+答覆:依病歷紀載，徐先生是在台北榮總住院治療， 建議原先住院醫院提供(台北榮總)
+
+2-2.有無併發症或後遺症？ 
+答覆:依病歷紀載。徐先生北榮總住院治療cardiac arrest, AMI， 後續的醫療復健、居家照顧　到本院就診。
+
+2-3.療養至何時起可從事一般工作？ 
+答覆:依病歷紀載。目前仍無法從事一般工作，建議 3-6月後　相關科別　在評估。\
+
+2-4.認定理由及依據請惠示醫理見解
+答覆: 事發現場、送醫過程、台北榮總 等重要關鍵資料，才是重要依據。上述資料要請相關單位提供給貴單位確認。
+徐先生只有在邱醫師門診兩次，由家屬（太太）陳述及要求藥物開立。邱醫師是根據本院病歷紀載作為回答依據
+。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/6 上午 08:00",
@@ -19846,8 +24046,20 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "張舜程醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:薛佳綺(06595038),謝謝您\n1-1.薛君因上開傷病治療經過為何？\n1-2.有無併發症或後遺症？\n1-3.療養至何時起可從事一般工作？\n1-4.認定理由及依據為何？\n1-5.請確認病歷是否可釋出?\n請惠示醫理見解。",
-    "doctor_reply": "1-1\t如病歷及診斷證明所述，病患因全身多處15%燙傷入院，接受多次手術及\n    重建治療，出院後繼續於門診追蹤及接受疤痕治療。\n1-2\t術後無併發症；但燒傷疤痕肥厚及失去皮膚排汗功能為長期之後遺症。\n1-3\t大約於傷後12-18個月可回復較輕省之一般工作，並須長期穿著壓力衣。\n1-4\t理由及依據包括 : 教科書、臨床經驗與病患實際恢復情況判定。\n1-5\t病歷可依規定釋出。",
+    "question": "張舜程醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:薛佳綺(06595038),謝謝您
+1-1.薛君因上開傷病治療經過為何？
+1-2.有無併發症或後遺症？
+1-3.療養至何時起可從事一般工作？
+1-4.認定理由及依據為何？
+1-5.請確認病歷是否可釋出?
+請惠示醫理見解。",
+    "doctor_reply": "1-1	如病歷及診斷證明所述，病患因全身多處15%燙傷入院，接受多次手術及
+    重建治療，出院後繼續於門診追蹤及接受疤痕治療。
+1-2	術後無併發症；但燒傷疤痕肥厚及失去皮膚排汗功能為長期之後遺症。
+1-3	大約於傷後12-18個月可回復較輕省之一般工作，並須長期穿著壓力衣。
+1-4	理由及依據包括 : 教科書、臨床經驗與病患實際恢復情況判定。
+1-5	病歷可依規定釋出。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/6 上午 08:00",
@@ -19872,8 +24084,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "張筱玲醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:陳雅惠(06690876),謝謝您.\n1-1.陳君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「雙眼視網膜裂孔及格子狀退化」是否係因主訴之傷害事故所致？\n2-1.陳君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1-1.無主訴傷害事故。\n1-2.此次病症初診日期為2025年12月2日，雙眼視網膜裂孔及格子狀退化常見原因為高度近視所引起。\n1-3. 無主訴傷害事故。\n2-1.陳君於2025年12月2日接受雙眼視網膜雷射光凝固術，術後使用類固醇消炎眼藥水。\n2-2.無。\n2-3.若無特別不適，於治療完成當下即可從事一般工作。\n2-4.醫療專業及執業經驗。",
+    "question": "張筱玲醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:陳雅惠(06690876),謝謝您.
+1-1.陳君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「雙眼視網膜裂孔及格子狀退化」是否係因主訴之傷害事故所致？
+2-1.陳君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1-1.無主訴傷害事故。
+1-2.此次病症初診日期為2025年12月2日，雙眼視網膜裂孔及格子狀退化常見原因為高度近視所引起。
+1-3. 無主訴傷害事故。
+2-1.陳君於2025年12月2日接受雙眼視網膜雷射光凝固術，術後使用類固醇消炎眼藥水。
+2-2.無。
+2-3.若無特別不適，於治療完成當下即可從事一般工作。
+2-4.醫療專業及執業經驗。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/6 上午 08:00",
@@ -19898,8 +24125,24 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "吳俊穎醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:黃勝福(17178532),謝謝您.\n1-1.黃君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「左側肩部旋轉肌腱斷裂」是否係因主訴之傷害事故所致？\n2-1.黃君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n2-5.請確認病歷是否可釋出?\n請惠示醫理見解。",
-    "doctor_reply": "1-1 1-2 12/18 因車禍受傷左肩疼痛\n1-3 創傷性肩關節旋轉肌腱斷裂\n2-1 肌腱斷裂術後修復需三個月 \n2-2 後遺症可包含肩關節僵硬 活動限制\n2-3 一般三個月復健治療可恢復工作\n2-4 可觀察肩關節提重物力量及活動範圍\n2-5 可釋出",
+    "question": "吳俊穎醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:黃勝福(17178532),謝謝您.
+1-1.黃君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「左側肩部旋轉肌腱斷裂」是否係因主訴之傷害事故所致？
+2-1.黃君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+2-5.請確認病歷是否可釋出?
+請惠示醫理見解。",
+    "doctor_reply": "1-1 1-2 12/18 因車禍受傷左肩疼痛
+1-3 創傷性肩關節旋轉肌腱斷裂
+2-1 肌腱斷裂術後修復需三個月 
+2-2 後遺症可包含肩關節僵硬 活動限制
+2-3 一般三個月復健治療可恢復工作
+2-4 可觀察肩關節提重物力量及活動範圍
+2-5 可釋出",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/6 上午 08:00",
@@ -19924,8 +24167,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "蔡青松醫師您好:\n勞保局來函調閱病歷,請協助確認病歷是否可以釋出?病人姓名:陳國華(16971936)\n因案件有時效性，如未收到回覆病歷將於05月07日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上\"",
-    "doctor_reply": "敬啓者：\n              抱歉！可以釋出。太晚回覆、因為看到的訊息和確定病人情況時日、已經在要釋出的時期、以為已經釋出。\n                         蔡青松",
+    "question": "蔡青松醫師您好:
+勞保局來函調閱病歷,請協助確認病歷是否可以釋出?病人姓名:陳國華(16971936)
+因案件有時效性，如未收到回覆病歷將於05月07日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上\"",
+    "doctor_reply": "敬啓者：
+              抱歉！可以釋出。太晚回覆、因為看到的訊息和確定病人情況時日、已經在要釋出的時期、以為已經釋出。
+                         蔡青松",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/6 上午 08:00",
@@ -19950,8 +24199,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:林美岑(00666200),謝謝您\n1-1.林君因上開傷病治療經過為何？\n1-2.有無併發症或後遺症？\n1-3.療養至何時起可從事一般工作？\n1-4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1. 自述113年05月06日車禍外傷導致胸廓及右髖疼痛，05月16日至門診就診。核磁共振檢查後05月30日看報告，髖關節並無大礙。給予止痛藥並建議復健。後續無追蹤。\n2. 無\n3. 從車禍起算最多一個月。\n4. 單純挫傷，休息一個月應已足夠。除非有至其他院所做檢查有其他發現。",
+    "question": "陳冠豪醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:林美岑(00666200),謝謝您
+1-1.林君因上開傷病治療經過為何？
+1-2.有無併發症或後遺症？
+1-3.療養至何時起可從事一般工作？
+1-4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1. 自述113年05月06日車禍外傷導致胸廓及右髖疼痛，05月16日至門診就診。核磁共振檢查後05月30日看報告，髖關節並無大礙。給予止痛藥並建議復健。後續無追蹤。
+2. 無
+3. 從車禍起算最多一個月。
+4. 單純挫傷，休息一個月應已足夠。除非有至其他院所做檢查有其他發現。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/7 上午 08:00",
@@ -19976,7 +24234,8 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林哲立醫師您好，請協助回覆問題，謝謝。病患許麗卿於民國110年3月14日至113年3月14日間，有無因為頸部外傷性椎間盤突出致神經壓迫之相關傷勢至貴院、貴診所就診?\n請惠示醫理見解。",
+    "question": "林哲立醫師您好，請協助回覆問題，謝謝。病患許麗卿於民國110年3月14日至113年3月14日間，有無因為頸部外傷性椎間盤突出致神經壓迫之相關傷勢至貴院、貴診所就診?
+請惠示醫理見解。",
     "doctor_reply": "病人來骨科是看板機指跟肋骨骨折，頸部外傷椎間盤凸出是看神經外科，非骨科處理。",
     "remark": "",
     "status": "已完成",
@@ -20002,7 +24261,8 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉恆維醫師您好，請協助回覆問題，謝謝。病患許麗卿於民國110年3月14日至113年3月14日間，有無因為頸部外傷性椎間盤突出致神經壓迫之相關傷勢至貴院、貴診所就診?\n請惠示醫理見解。",
+    "question": "劉恆維醫師您好，請協助回覆問題，謝謝。病患許麗卿於民國110年3月14日至113年3月14日間，有無因為頸部外傷性椎間盤突出致神經壓迫之相關傷勢至貴院、貴診所就診?
+請惠示醫理見解。",
     "doctor_reply": "病患於110/10/08至我的診間就診，並沒有頸部外傷性椎間盤突出等相關診斷",
     "remark": "",
     "status": "已完成",
@@ -20028,7 +24288,8 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "吳錦雯醫師您好，請協助回覆問題，謝謝。病患許麗卿於民國110年3月14日至113年3月14日間，有無因為頸部外傷性椎間盤突出致神經壓迫之相關傷勢至貴院、貴診所就診?\n請惠示醫理見解。",
+    "question": "吳錦雯醫師您好，請協助回覆問題，謝謝。病患許麗卿於民國110年3月14日至113年3月14日間，有無因為頸部外傷性椎間盤突出致神經壓迫之相關傷勢至貴院、貴診所就診?
+請惠示醫理見解。",
     "doctor_reply": "病患於110年9月至110年11月期間至本院復健科看診三次並無記載頸部椎間盤突出之診斷.",
     "remark": "",
     "status": "已完成",
@@ -20054,7 +24315,8 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林明錦醫師您好，請協助回覆問題，謝謝。病患許麗卿於民國110年3月14日至113年3月14日間，有無因為頸部外傷性椎間盤突出致神經壓迫之相關傷勢至貴院、貴診所就診?\n請惠示醫理見解。",
+    "question": "林明錦醫師您好，請協助回覆問題，謝謝。病患許麗卿於民國110年3月14日至113年3月14日間，有無因為頸部外傷性椎間盤突出致神經壓迫之相關傷勢至貴院、貴診所就診?
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -20080,7 +24342,8 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "張統優醫師您好，請協助回覆問題，謝謝。病患許麗卿於民國110年3月14日至113年3月14日間，有無因為頸部外傷性椎間盤突出致神經壓迫之相關傷勢至貴院、貴診所就診?\n請惠示醫理見解。",
+    "question": "張統優醫師您好，請協助回覆問題，謝謝。病患許麗卿於民國110年3月14日至113年3月14日間，有無因為頸部外傷性椎間盤突出致神經壓迫之相關傷勢至貴院、貴診所就診?
+請惠示醫理見解。",
     "doctor_reply": "這個問題需要問神經外科林明錦醫師。感謝",
     "remark": "",
     "status": "已完成",
@@ -20106,8 +24369,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "曾孟元醫師您好，請協助回覆問題，謝謝。本案係原告因駕駛車輛未禮讓行人致行人受傷，為符行政訴訟法第237條之4第2項規定，爰請貴院協助查明行人（張宇鈞，身分證號：G122376948）。\n1.於114年10月20日晚上是否有前往就醫之紀錄？\n2.當日就醫診斷內容為何？\n3.是否有受傷的情形？\n請惠示醫理見解",
-    "doctor_reply": "1.  20251020 184303 就醫\n2. 診斷書診斷：頭部外傷併腦震盪症候群\n3. 左側頭部血腫",
+    "question": "曾孟元醫師您好，請協助回覆問題，謝謝。本案係原告因駕駛車輛未禮讓行人致行人受傷，為符行政訴訟法第237條之4第2項規定，爰請貴院協助查明行人（張宇鈞，身分證號：G122376948）。
+1.於114年10月20日晚上是否有前往就醫之紀錄？
+2.當日就醫診斷內容為何？
+3.是否有受傷的情形？
+請惠示醫理見解",
+    "doctor_reply": "1.  20251020 184303 就醫
+2. 診斷書診斷：頭部外傷併腦震盪症候群
+3. 左側頭部血腫",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/8 上午 08:00",
@@ -20132,7 +24401,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "洪麗玉醫師您好:\n因衛生福利部疾病管制署來函調閱病歷,病人姓名:鄭正忠(05295292)\n請協助確認病歷是否可以釋出?(住院醫囑完整版)\n因案件有時效性，如未收到回覆病歷將於05月08日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "洪麗玉醫師您好:
+因衛生福利部疾病管制署來函調閱病歷,病人姓名:鄭正忠(05295292)
+請協助確認病歷是否可以釋出?(住院醫囑完整版)
+因案件有時效性，如未收到回覆病歷將於05月08日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "Ok",
     "remark": "",
     "status": "已完成",
@@ -20158,7 +24432,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "廖家德醫師您好:\n因衛生福利部疾病管制署來函調閱病歷,病人姓名:彭桂妹(04994354)\n請協助確認病歷是否可以釋出?(住院醫囑完整版)\n因案件有時效性，如未收到回覆病歷將於05月08日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "廖家德醫師您好:
+因衛生福利部疾病管制署來函調閱病歷,病人姓名:彭桂妹(04994354)
+請協助確認病歷是否可以釋出?(住院醫囑完整版)
+因案件有時效性，如未收到回覆病歷將於05月08日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "同意病歷釋出",
     "remark": "",
     "status": "已完成",
@@ -20184,7 +24463,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李俊年醫師好，請協助回覆問題。請協助查明病患黃琇\n1.於民國114年10月26日因急診「支氣管肺炎、因車禍引起腦中風合併長期臥床以及氣管切開、薦骨處壓」該病患黃琇珠是否已屬重大不治或難治之重傷害?\n2.請協助確認病歷，是否可以釋出?\n請惠示醫理見解\n\n因案件有時效性，如未收到回覆病歷將於05月09日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李俊年醫師好，請協助回覆問題。請協助查明病患黃琇
+1.於民國114年10月26日因急診「支氣管肺炎、因車禍引起腦中風合併長期臥床以及氣管切開、薦骨處壓」該病患黃琇珠是否已屬重大不治或難治之重傷害?
+2.請協助確認病歷，是否可以釋出?
+請惠示醫理見解
+
+因案件有時效性，如未收到回覆病歷將於05月09日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -20210,8 +24495,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "謝尚勳醫師好，請協助回覆問題。請協助查明病患黃琇\n1.115年1月7日因急診「急性腎衰竭、肺炎」該病患黃琇珠是否已屬重大不治或難治之重傷害?\n2.請協助確認病歷，是否可以釋出?\n請惠示醫理見解\n\n因案件有時效性，如未收到回覆病歷將於05月09日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "1. 115年1月住院之狀況相對簡單而且可以治療，無法認定屬重大不治或難治之重傷害，我無法認定導致病患當下氣管切開及長期臥床之前因後果，須以之前住院狀況認定\n2. 病歷可以釋出，謝謝",
+    "question": "謝尚勳醫師好，請協助回覆問題。請協助查明病患黃琇
+1.115年1月7日因急診「急性腎衰竭、肺炎」該病患黃琇珠是否已屬重大不治或難治之重傷害?
+2.請協助確認病歷，是否可以釋出?
+請惠示醫理見解
+
+因案件有時效性，如未收到回覆病歷將於05月09日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "doctor_reply": "1. 115年1月住院之狀況相對簡單而且可以治療，無法認定屬重大不治或難治之重傷害，我無法認定導致病患當下氣管切開及長期臥床之前因後果，須以之前住院狀況認定
+2. 病歷可以釋出，謝謝",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/9 上午 08:00",
@@ -20262,8 +24554,20 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許庭碩醫師您好，請協助回覆問題，謝謝。彭文娟 因「左肩挫傷、左肩旋轉肌袖破裂」於114年11月17日起至115年4月7日至貴院門診，申請核退職災自墊醫療費用。\n1.彭君於何時因該症至貴院初診？\n2.當時症狀如何？\n3.有無外傷？\n4.有無主訴至貴院就診前曾至何家醫療院所就診？\n5.致病原因為何？\n6.曾否主訴發生事故時間、地點、原因及經過？\n請惠示醫理見解。",
-    "doctor_reply": "1）114.11.17\n2）左肩疼痛、活動受限\n3）跌倒\n4）病患無特別說明\n5）外傷\n6）病患無特別說明時間地點，在114.11.17門診只聲明跌倒後左肩明顯不舒服。",
+    "question": "許庭碩醫師您好，請協助回覆問題，謝謝。彭文娟 因「左肩挫傷、左肩旋轉肌袖破裂」於114年11月17日起至115年4月7日至貴院門診，申請核退職災自墊醫療費用。
+1.彭君於何時因該症至貴院初診？
+2.當時症狀如何？
+3.有無外傷？
+4.有無主訴至貴院就診前曾至何家醫療院所就診？
+5.致病原因為何？
+6.曾否主訴發生事故時間、地點、原因及經過？
+請惠示醫理見解。",
+    "doctor_reply": "1）114.11.17
+2）左肩疼痛、活動受限
+3）跌倒
+4）病患無特別說明
+5）外傷
+6）病患無特別說明時間地點，在114.11.17門診只聲明跌倒後左肩明顯不舒服。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/10 上午 08:00",
@@ -20288,8 +24592,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蘇千田醫師您好，請協助回覆問題，謝謝。彭文娟 因「左肩挫傷、左肩旋轉肌袖破裂」於114年11月17日起至115年4月7日至貴院門診，申請核退職災自墊醫療費用。\n1.彭君於何時因該症至貴院初診？\n2.當時症狀如何？\n3.有無外傷？\n4.有無主訴至貴院就診前曾至何家醫療院所就診？\n5.致病原因為何？\n6.曾否主訴發生事故時間、地點、原因及經過？\n請惠示醫理見解。",
-    "doctor_reply": "1～5: 不明\n6. 2026.04.07 自訴 2025.11.17於本院跌倒",
+    "question": "蘇千田醫師您好，請協助回覆問題，謝謝。彭文娟 因「左肩挫傷、左肩旋轉肌袖破裂」於114年11月17日起至115年4月7日至貴院門診，申請核退職災自墊醫療費用。
+1.彭君於何時因該症至貴院初診？
+2.當時症狀如何？
+3.有無外傷？
+4.有無主訴至貴院就診前曾至何家醫療院所就診？
+5.致病原因為何？
+6.曾否主訴發生事故時間、地點、原因及經過？
+請惠示醫理見解。",
+    "doctor_reply": "1～5: 不明
+6. 2026.04.07 自訴 2025.11.17於本院跌倒",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/10 上午 08:00",
@@ -20314,7 +24626,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳柏志醫師您好，因臺灣嘉義地方法院調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於05月16日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n書湘敬上",
+    "question": "陳柏志醫師您好，因臺灣嘉義地方法院調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於05月16日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+書湘敬上",
     "doctor_reply": "可以釋出,我這邊沒有意見",
     "remark": "",
     "status": "已完成",
@@ -20340,7 +24656,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "張舜程醫師您好，因臺灣新北地方法院板橋簡易庭調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於05月16日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "張舜程醫師您好，因臺灣新北地方法院板橋簡易庭調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於05月16日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "同意",
     "remark": "",
     "status": "已完成",
@@ -20366,8 +24686,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "謝岳穎醫師您好，請協助回覆問題。陳雙慧君 因「右手第五掌骨骨折、右側骨盆骨折、右手第五指骨開放性骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.陳君骨折於何時檢查已癒合?\n2.有無何併發症或後遺症?\n3.依其傷勢療養至何時已可恢復一般工作能力？\n4.請協助確認病歷是否可以釋出?\n請惠示醫理見解。\n\n因案件有時效性，如未收到回覆病歷將於05月18日釋出，感謝您。\n備註 : 非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "1. 7/22的X光顯示骨頭已癒合\n2. 右手第五指的關節僵硬及活動功能受損\n3. 四個月後可恢復一般工作能力\n4. 可以釋出",
+    "question": "謝岳穎醫師您好，請協助回覆問題。陳雙慧君 因「右手第五掌骨骨折、右側骨盆骨折、右手第五指骨開放性骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.陳君骨折於何時檢查已癒合?
+2.有無何併發症或後遺症?
+3.依其傷勢療養至何時已可恢復一般工作能力？
+4.請協助確認病歷是否可以釋出?
+請惠示醫理見解。
+
+因案件有時效性，如未收到回覆病歷將於05月18日釋出，感謝您。
+備註 : 非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "doctor_reply": "1. 7/22的X光顯示骨頭已癒合
+2. 右手第五指的關節僵硬及活動功能受損
+3. 四個月後可恢復一般工作能力
+4. 可以釋出",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/17 上午 08:00",
@@ -20392,7 +24723,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李俊年醫師您好，因新北市新莊區衛生所調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於05月18日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "李俊年醫師您好，因新北市新莊區衛生所調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於05月18日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -20418,8 +24753,36 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳沛華醫師您好，請協助回覆問題，謝謝。黃秀雲君因「左足第一趾近端/遠端趾骨骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n(一)1.黃君就診有無主訴傷害事故？\n     2.發生日期及原因為何？\n     3.所患「左足第一趾近端/遠端趾骨骨折」是否係因主訴之傷害事故所致？\n(二)1.黃君因上開傷病治療經過為何？\n     2.有無併發症或後遺症？\n     3.療養至何時起可從事一般工作？\n     4.認定理由及依據為何？\n請惠示醫理見解\n\n因案件有時效性，請於05月19日前回覆問題，感謝您。",
-    "doctor_reply": "關於病患黃秀雲(02578158)之公文回覆如下:\n\n(一)1.黃君就診有無主訴傷害事故？ \n答: 有，病患黃秀雲表示遭遇左腳第一趾挫傷。\n\n2.發生日期及原因為何？\n答: 病患黃秀雲因左腳第一趾挫傷，於民國114年11月20日至骨科門診就診。病患並未更詳細描述受傷狀況及原因。\n\n3.所患「左足第一趾近端/遠端趾骨骨折」是否係因主訴之傷害事故所致？ \n答: 根據患部表現(瘀傷、腫脹)，可判斷此傷害是近期(至少就診日期三日內)所造成。\n\n(二)1.黃君因上開傷病治療經過為何？ \n答: 經多次骨科門診回診(114-11-20,114-12-18,115-01-15,115-02-12)，以及X光檢查，發現骨折處已經癒合。\n2.有無併發症或後遺症？ \n答: 根據醫療紀錄，無併發症或後遺症。\n3.療養至何時起可從事一般工作？ \n答: 此類型骨折，保護三個月，經X光判定骨癒合後，可從事一般工作。\n4.認定理由及依據為何？\n答: 病患於民國115年02月12日，至骨科門診就診X光顯示骨折處已癒合，且腳部疼痛及腫脹症狀腫脹有所改善，可開始從事一般工作。",
+    "question": "陳沛華醫師您好，請協助回覆問題，謝謝。黃秀雲君因「左足第一趾近端/遠端趾骨骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+(一)1.黃君就診有無主訴傷害事故？
+     2.發生日期及原因為何？
+     3.所患「左足第一趾近端/遠端趾骨骨折」是否係因主訴之傷害事故所致？
+(二)1.黃君因上開傷病治療經過為何？
+     2.有無併發症或後遺症？
+     3.療養至何時起可從事一般工作？
+     4.認定理由及依據為何？
+請惠示醫理見解
+
+因案件有時效性，請於05月19日前回覆問題，感謝您。",
+    "doctor_reply": "關於病患黃秀雲(02578158)之公文回覆如下:
+
+(一)1.黃君就診有無主訴傷害事故？ 
+答: 有，病患黃秀雲表示遭遇左腳第一趾挫傷。
+
+2.發生日期及原因為何？
+答: 病患黃秀雲因左腳第一趾挫傷，於民國114年11月20日至骨科門診就診。病患並未更詳細描述受傷狀況及原因。
+
+3.所患「左足第一趾近端/遠端趾骨骨折」是否係因主訴之傷害事故所致？ 
+答: 根據患部表現(瘀傷、腫脹)，可判斷此傷害是近期(至少就診日期三日內)所造成。
+
+(二)1.黃君因上開傷病治療經過為何？ 
+答: 經多次骨科門診回診(114-11-20,114-12-18,115-01-15,115-02-12)，以及X光檢查，發現骨折處已經癒合。
+2.有無併發症或後遺症？ 
+答: 根據醫療紀錄，無併發症或後遺症。
+3.療養至何時起可從事一般工作？ 
+答: 此類型骨折，保護三個月，經X光判定骨癒合後，可從事一般工作。
+4.認定理由及依據為何？
+答: 病患於民國115年02月12日，至骨科門診就診X光顯示骨折處已癒合，且腳部疼痛及腫脹症狀腫脹有所改善，可開始從事一般工作。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/20 上午 08:00",
@@ -20445,7 +24808,9 @@ const DEFAULT_ISSUES = [
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
     "question": "饒紀倫醫師您好，請協助回覆問題，謝謝。請就附件所示之蔡欣婷診斷證明書、道路交通事故資料(談話紀錄表及現場照片)，說明蔡欣婷經貴院113年6月17日診斷病名「1.左肩肌腱炎 2.左側手腕尺神經病變」，是否係因其於民國113年2月15日發生交通事故所造成?",
-    "doctor_reply": "1.\t該病人於113年2月15日至本院急診就診，主訴為左肩及左手肘受傷，後於113年5月27日至本院復健科就診，經超音波檢查發現有左肩肌腱炎，經神經傳導檢查發現該病人左側手肘尺神經病變，最新診斷證明書已重新修正開立。\n2.\t手肘尺神經病變最常見的原因是長時間姿勢不當導致神經壓迫或外力撞擊。該病人113年5月31日神經傳導檢查發現之左側手肘尺神經病變，受傷時間可能為一個月以上。\n3.\t交通事故所造成的傷害除了顯而易見的外傷和第一時間的影像學檢查所發現之外，其他證據只能比對受傷前後是否曾就醫，受傷前後的病歷紀錄是否有症狀，受傷前後是否有治療等等來判斷。因為受傷前並未接受檢查，受傷一段時間後的檢查結果僅能輔助證明因果關係。",
+    "doctor_reply": "1.	該病人於113年2月15日至本院急診就診，主訴為左肩及左手肘受傷，後於113年5月27日至本院復健科就診，經超音波檢查發現有左肩肌腱炎，經神經傳導檢查發現該病人左側手肘尺神經病變，最新診斷證明書已重新修正開立。
+2.	手肘尺神經病變最常見的原因是長時間姿勢不當導致神經壓迫或外力撞擊。該病人113年5月31日神經傳導檢查發現之左側手肘尺神經病變，受傷時間可能為一個月以上。
+3.	交通事故所造成的傷害除了顯而易見的外傷和第一時間的影像學檢查所發現之外，其他證據只能比對受傷前後是否曾就醫，受傷前後的病歷紀錄是否有症狀，受傷前後是否有治療等等來判斷。因為受傷前並未接受檢查，受傷一段時間後的檢查結果僅能輔助證明因果關係。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/20 上午 08:00",
@@ -20470,7 +24835,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "鄭明哲醫師您好:\n因財團法人藥害救濟基金會來函調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將05月22日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "鄭明哲醫師您好:
+因財團法人藥害救濟基金會來函調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將05月22日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "已看過。可釋出",
     "remark": "",
     "status": "已完成",
@@ -20496,7 +24866,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "劉恆維醫師您好，因藥劑部須提供病歷給衛服部。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於05月22日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "劉恆維醫師您好，因藥劑部須提供病歷給衛服部。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於05月22日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "病歷已於115.5.22 下午1:23釋出給藥劑部。",
     "status": "已完成",
@@ -20522,8 +24896,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉宇鈞醫師您好，請協助回覆問題，謝謝。\n1.病患彭素霞於114年9月26日前往貴院治療，貴院於附件所示診斷證明書上「病名」欄位記載「頭頸部鈍挫傷」及腰椎鈍挫傷」等描述，係依據傷勢外觀判斷抑或僅係其主訴?\n2.請協助確認病歷，是否可釋出?\n請惠示醫理見解。\n\n(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))\t\t\t\t\n因案件有時效性，病歷將於05月22日釋出，感謝您。",
-    "doctor_reply": "1. 主訴\n2. 可",
+    "question": "劉宇鈞醫師您好，請協助回覆問題，謝謝。
+1.病患彭素霞於114年9月26日前往貴院治療，貴院於附件所示診斷證明書上「病名」欄位記載「頭頸部鈍挫傷」及腰椎鈍挫傷」等描述，係依據傷勢外觀判斷抑或僅係其主訴?
+2.請協助確認病歷，是否可釋出?
+請惠示醫理見解。
+
+(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))				
+因案件有時效性，病歷將於05月22日釋出，感謝您。",
+    "doctor_reply": "1. 主訴
+2. 可",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/22 上午 08:00",
@@ -20548,8 +24929,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李美慧醫師您好，請協助回覆問題，謝謝。\n1.依照李捷榮之健康存摺紀錄，於115年4月15日登載有「敗血症」，於115年4月16日開立之診斷證明書(蓋有隋家洺醫師印章)記載有「組織壞死」，然於另一診斷證明書(蓋有李美慧醫師印章)上並未記載「敗血症」或「組織壞死」，上述記載差異之原因為何?\n2.請協助確認病歷，是否可釋出?\n請惠示醫理見解。\n\n(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))\t\t\t\t\n因案件有時效性，病歷將於05月23日釋出，感謝您。",
-    "doctor_reply": "1.依照李捷榮之健康存摺紀錄，於115年4月15日登載有「敗血症」，於115年4月16日開立之診斷證明書(蓋有隋家洺醫師印章)記載有「組織壞死」，然於另一診斷證明書(蓋有李美慧醫師印章)上並未記載「敗血症」或「組織壞死」，上述記載差異之原因為何?\n=>此病人符合敗血症, 但在開立暫時性的診斷證明書時因未注意未將所以疾病全部提及, 至於組織壞死處, 因左小腿處有乾燥和壞死部分都有,也是如前面狀況一樣\n2.請協助確認病歷，是否可釋出?\n=>請我再做些修改\n請惠示醫理見解。",
+    "question": "李美慧醫師您好，請協助回覆問題，謝謝。
+1.依照李捷榮之健康存摺紀錄，於115年4月15日登載有「敗血症」，於115年4月16日開立之診斷證明書(蓋有隋家洺醫師印章)記載有「組織壞死」，然於另一診斷證明書(蓋有李美慧醫師印章)上並未記載「敗血症」或「組織壞死」，上述記載差異之原因為何?
+2.請協助確認病歷，是否可釋出?
+請惠示醫理見解。
+
+(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))				
+因案件有時效性，病歷將於05月23日釋出，感謝您。",
+    "doctor_reply": "1.依照李捷榮之健康存摺紀錄，於115年4月15日登載有「敗血症」，於115年4月16日開立之診斷證明書(蓋有隋家洺醫師印章)記載有「組織壞死」，然於另一診斷證明書(蓋有李美慧醫師印章)上並未記載「敗血症」或「組織壞死」，上述記載差異之原因為何?
+=>此病人符合敗血症, 但在開立暫時性的診斷證明書時因未注意未將所以疾病全部提及, 至於組織壞死處, 因左小腿處有乾燥和壞死部分都有,也是如前面狀況一樣
+2.請協助確認病歷，是否可釋出?
+=>請我再做些修改
+請惠示醫理見解。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/23 上午 08:00",
@@ -20574,8 +24965,27 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳俊兆醫師您好，請協助回覆問題，謝謝。牟晨睿君因「ST段上升之急性心肌梗塞(STEMI)、冠狀動脈疾病、右眼下瘀傷、心臟衰竭、心肌梗塞病史」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.牟君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「ST段上升之急性心肌梗塞(STEMI)、冠狀動脈疾病、右眼下瘀傷、心臟衰竭、心肌梗塞病史」是否係因主訴之傷害事故所致？\n4.牟君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n8.請協助確認病歷，是否可釋出?\n請惠示醫理見解。\n\n(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))\t\t\t\t\n因案件有時效性，病歷將於05月23日釋出，感謝您。",
-    "doctor_reply": "1.牟君就診有無主訴傷害事故？ 依急診病例記載，病人主訴 \"主訴:病患來診為騎車到一半覺得胸悶，自含NTG *2。\"\n2.發生日期及原因為何？ 2025/06/23。冠狀動脈急性血栓。\n3.所患「ST段上升之急性心肌梗塞(STEMI)、冠狀動脈疾病、右眼下瘀傷、心臟衰竭、心肌梗塞病史」是否係因主訴之傷害事故所致？ 依急診病例記載主訴，無法回答此問題。\n4.牟君因上開傷病治療經過為何？緊急經皮冠狀動脈介入治療\n5.有無併發症或後遺症？無處置相關併發症\n6.療養至何時起可從事一般工作？心肌梗塞併發心臟衰竭何時可從事一般工作牽涉到所謂一般工作定義，病人恢復情形，須個別個案評估\n7.認定理由及依據為何？ 如上\n8.請協助確認病歷，是否可釋出? 我的部分可以",
+    "question": "陳俊兆醫師您好，請協助回覆問題，謝謝。牟晨睿君因「ST段上升之急性心肌梗塞(STEMI)、冠狀動脈疾病、右眼下瘀傷、心臟衰竭、心肌梗塞病史」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.牟君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「ST段上升之急性心肌梗塞(STEMI)、冠狀動脈疾病、右眼下瘀傷、心臟衰竭、心肌梗塞病史」是否係因主訴之傷害事故所致？
+4.牟君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+8.請協助確認病歷，是否可釋出?
+請惠示醫理見解。
+
+(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))				
+因案件有時效性，病歷將於05月23日釋出，感謝您。",
+    "doctor_reply": "1.牟君就診有無主訴傷害事故？ 依急診病例記載，病人主訴 \"主訴:病患來診為騎車到一半覺得胸悶，自含NTG *2。\"
+2.發生日期及原因為何？ 2025/06/23。冠狀動脈急性血栓。
+3.所患「ST段上升之急性心肌梗塞(STEMI)、冠狀動脈疾病、右眼下瘀傷、心臟衰竭、心肌梗塞病史」是否係因主訴之傷害事故所致？ 依急診病例記載主訴，無法回答此問題。
+4.牟君因上開傷病治療經過為何？緊急經皮冠狀動脈介入治療
+5.有無併發症或後遺症？無處置相關併發症
+6.療養至何時起可從事一般工作？心肌梗塞併發心臟衰竭何時可從事一般工作牽涉到所謂一般工作定義，病人恢復情形，須個別個案評估
+7.認定理由及依據為何？ 如上
+8.請協助確認病歷，是否可釋出? 我的部分可以",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/23 上午 08:00",
@@ -20600,7 +25010,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "邱淳志醫師您好，請協助回覆問題，謝謝。牟晨睿君因「ST段上升之急性心肌梗塞(STEMI)、冠狀動脈疾病、右眼下瘀傷、心臟衰竭、心肌梗塞病史」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.牟君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「ST段上升之急性心肌梗塞(STEMI)、冠狀動脈疾病、右眼下瘀傷、心臟衰竭、心肌梗塞病史」是否係因主訴之傷害事故所致？\n4.牟君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n8.請協助確認病歷，是否可釋出?\n請惠示醫理見解。\n\n(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))\t\t\t\t\n因案件有時效性，病歷將於05月23日釋出，感謝您。",
+    "question": "邱淳志醫師您好，請協助回覆問題，謝謝。牟晨睿君因「ST段上升之急性心肌梗塞(STEMI)、冠狀動脈疾病、右眼下瘀傷、心臟衰竭、心肌梗塞病史」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.牟君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「ST段上升之急性心肌梗塞(STEMI)、冠狀動脈疾病、右眼下瘀傷、心臟衰竭、心肌梗塞病史」是否係因主訴之傷害事故所致？
+4.牟君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+8.請協助確認病歷，是否可釋出?
+請惠示醫理見解。
+
+(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))				
+因案件有時效性，病歷將於05月23日釋出，感謝您。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -20626,7 +25048,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林哲立醫師您好:因勞保局來函調閱病歷,病人姓名:黃秀紅(00098232)\n請協助確認病歷是否可以釋出?\n因案件有時效性，如未收到回覆病歷將於05月25日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "林哲立醫師您好:因勞保局來函調閱病歷,病人姓名:黃秀紅(00098232)
+請協助確認病歷是否可以釋出?
+因案件有時效性，如未收到回覆病歷將於05月25日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "可釋出",
     "remark": "",
     "status": "已完成",
@@ -20652,7 +25078,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "劉永慶醫師您好:因勞保局來函調閱病歷,病人姓名:黃秀紅(00098232)\n請協助確認病歷是否可以釋出?\n因案件有時效性，如未收到回覆病歷將於05月25日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "劉永慶醫師您好:因勞保局來函調閱病歷,病人姓名:黃秀紅(00098232)
+請協助確認病歷是否可以釋出?
+因案件有時效性，如未收到回覆病歷將於05月25日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "OK",
     "remark": "",
     "status": "已完成",
@@ -20678,8 +25108,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "李瑋恩醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:黃秀紅(00098232),謝謝您\n1.黃君114年4月25日係因何傷病至急診就診?\n2.就診時有無主訴發生何事故?\n3.發生日期及原因為何?\n4.所患「肺炎、胃食道逆流」成因為何?\n請惠示醫理見解\n如無法使用O365回復,請醫師直接回覆\n12254@s.tmu.edu.tw信箱即可,謝謝您",
-    "doctor_reply": "1. 患者主訴全身虛弱。關於意外傷病之主訴，應調調閱 4/21之急診病歷而非此次就醫。\n2. 僅提到數天前發生車禍，但未明示其傷害部位。詳細傷害情形應以4/21 之病歷為準。\n3. 不明。只能確定該次急診當下有疑似肺炎。該情形是否為 4/21 之傷害所致之繼發性傷病，應參考 4/21 之病歷紀錄。\n4. 肺炎之成因有可能與外傷性肺部挫傷有關，但難以單一一次之就診病歷做判斷，此部分請參考病患4/21 就診記錄。胃食道逆流屬慢性問題，與病患之主訴無關、僅為一意外發現之問題。",
+    "question": "李瑋恩醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:黃秀紅(00098232),謝謝您
+1.黃君114年4月25日係因何傷病至急診就診?
+2.就診時有無主訴發生何事故?
+3.發生日期及原因為何?
+4.所患「肺炎、胃食道逆流」成因為何?
+請惠示醫理見解
+如無法使用O365回復,請醫師直接回覆
+12254@s.tmu.edu.tw信箱即可,謝謝您",
+    "doctor_reply": "1. 患者主訴全身虛弱。關於意外傷病之主訴，應調調閱 4/21之急診病歷而非此次就醫。
+2. 僅提到數天前發生車禍，但未明示其傷害部位。詳細傷害情形應以4/21 之病歷為準。
+3. 不明。只能確定該次急診當下有疑似肺炎。該情形是否為 4/21 之傷害所致之繼發性傷病，應參考 4/21 之病歷紀錄。
+4. 肺炎之成因有可能與外傷性肺部挫傷有關，但難以單一一次之就診病歷做判斷，此部分請參考病患4/21 就診記錄。胃食道逆流屬慢性問題，與病患之主訴無關、僅為一意外發現之問題。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/29 上午 08:00",
@@ -20704,7 +25145,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉柏均醫師您好，因(司法相驗)新北市政府警察局新店分局來函調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於05月28日釋出，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "劉柏均醫師您好，因(司法相驗)新北市政府警察局新店分局來函調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於05月28日釋出，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "可以釋出，謝謝",
     "remark": "",
     "status": "已完成",
@@ -20730,7 +25175,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許力云醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於05月29日釋出，感謝您。\n備註：急診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "許力云醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於05月29日釋出，感謝您。
+備註：急診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "沒修改過",
     "remark": "",
     "status": "已完成",
@@ -20756,7 +25205,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李俊年醫師好，請協助回覆問題。\n旨揭待查資料如下：被繼承人蔡玉葉於114年2月10日死亡前2年內住院期間(含請假)紀錄，及接受治療時之精神意識狀態、自行處理事務能力等情況?\n請惠示醫理見解\n\n因案件有時效性，請於05月29日前回覆，感謝您。",
+    "question": "李俊年醫師好，請協助回覆問題。
+旨揭待查資料如下：被繼承人蔡玉葉於114年2月10日死亡前2年內住院期間(含請假)紀錄，及接受治療時之精神意識狀態、自行處理事務能力等情況?
+請惠示醫理見解
+
+因案件有時效性，請於05月29日前回覆，感謝您。",
     "doctor_reply": "當時精神狀態正常",
     "remark": "",
     "status": "已完成",
@@ -20782,7 +25235,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "羅青山醫師好，請協助回覆問題。\n旨揭待查資料如下：被繼承人蔡玉葉於114年2月10日死亡前2年內住院期間(含請假)紀錄，及接受治療時之精神意識狀態、自行處理事務能力等情況?\n請惠示醫理見解\n\n因案件有時效性，請於05月29日前回覆，感謝您。",
+    "question": "羅青山醫師好，請協助回覆問題。
+旨揭待查資料如下：被繼承人蔡玉葉於114年2月10日死亡前2年內住院期間(含請假)紀錄，及接受治療時之精神意識狀態、自行處理事務能力等情況?
+請惠示醫理見解
+
+因案件有時效性，請於05月29日前回覆，感謝您。",
     "doctor_reply": "時間久遠，不復記憶",
     "remark": "",
     "status": "已完成",
@@ -20808,7 +25265,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "馮博皓醫師好，請協助回覆問題。\n旨揭待查資料如下：被繼承人蔡玉葉於114年2月10日死亡前2年內住院期間(含請假)紀錄，及接受治療時之精神意識狀態、自行處理事務能力等情況?\n請惠示醫理見解\n\n因案件有時效性，請於05月29日前回覆，感謝您。",
+    "question": "馮博皓醫師好，請協助回覆問題。
+旨揭待查資料如下：被繼承人蔡玉葉於114年2月10日死亡前2年內住院期間(含請假)紀錄，及接受治療時之精神意識狀態、自行處理事務能力等情況?
+請惠示醫理見解
+
+因案件有時效性，請於05月29日前回覆，感謝您。",
     "doctor_reply": "病患於113/09/30-113/10/02住院期間意識清楚，順利接受治療。",
     "remark": "",
     "status": "已完成",
@@ -20834,7 +25295,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "楊宗燁醫師好，請協助回覆問題。\n旨揭待查資料如下：被繼承人蔡玉葉於114年2月10日死亡前2年內住院期間(含請假)紀錄，及接受治療時之精神意識狀態、自行處理事務能力等情況?\n請惠示醫理見解\n\n因案件有時效性，請於05月29日前回覆，感謝您。",
+    "question": "楊宗燁醫師好，請協助回覆問題。
+旨揭待查資料如下：被繼承人蔡玉葉於114年2月10日死亡前2年內住院期間(含請假)紀錄，及接受治療時之精神意識狀態、自行處理事務能力等情況?
+請惠示醫理見解
+
+因案件有時效性，請於05月29日前回覆，感謝您。",
     "doctor_reply": "114年2月10日為昏迷狀態，其他時間我非診療醫師無法判斷",
     "remark": "",
     "status": "已完成",
@@ -20860,8 +25325,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李岡遠醫師好，請協助回覆問題。\n旨揭待查資料如下：被繼承人蔡玉葉於114年2月10日死亡前2年內住院期間(含請假)紀錄，及接受治療時之精神意識狀態、自行處理事務能力等情況?\n請惠示醫理見解\n\n因案件有時效性，請於05月29日前回覆，感謝您。",
-    "doctor_reply": "此病患於2024/6月診斷為肺癌第四期.於2024年7月參加肺癌臨床試驗.試驗期間意識狀態為清醒.於2024年12月因腫瘤控制不佳退出試驗案.至2025/02期間意識仍算清醒\n        自行處理事務能力?此部分,因界定不明確.我方無法回覆此判定\n        如有不詳盡之處.請告知",
+    "question": "李岡遠醫師好，請協助回覆問題。
+旨揭待查資料如下：被繼承人蔡玉葉於114年2月10日死亡前2年內住院期間(含請假)紀錄，及接受治療時之精神意識狀態、自行處理事務能力等情況?
+請惠示醫理見解
+
+因案件有時效性，請於05月29日前回覆，感謝您。",
+    "doctor_reply": "此病患於2024/6月診斷為肺癌第四期.於2024年7月參加肺癌臨床試驗.試驗期間意識狀態為清醒.於2024年12月因腫瘤控制不佳退出試驗案.至2025/02期間意識仍算清醒
+        自行處理事務能力?此部分,因界定不明確.我方無法回覆此判定
+        如有不詳盡之處.請告知",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/6 上午 08:00",
@@ -20886,8 +25357,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "謝沛興醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:張恩齊(05683350),謝謝您\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？受傷之部位？\n4.主訴發生事故之時間、地點、原因及經過如何？\n5.有無訴及曾至何處診療？\n6.所患成因如何？\n7.係屬普通疾病抑何時遭受外力傷害引起？\n請惠示醫理見解",
-    "doctor_reply": "1.20240511 16:29\n2.後頸痛、右手麻\n3.頸部壓痛.肢體擦傷\n4.自述於就診前日騎摩托車，被後面汽車追撞\n5.無\n6.疑似為前日車禍導致。\n7.疑似為前日車禍導致。",
+    "question": "謝沛興醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:張恩齊(05683350),謝謝您
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？受傷之部位？
+4.主訴發生事故之時間、地點、原因及經過如何？
+5.有無訴及曾至何處診療？
+6.所患成因如何？
+7.係屬普通疾病抑何時遭受外力傷害引起？
+請惠示醫理見解",
+    "doctor_reply": "1.20240511 16:29
+2.後頸痛、右手麻
+3.頸部壓痛.肢體擦傷
+4.自述於就診前日騎摩托車，被後面汽車追撞
+5.無
+6.疑似為前日車禍導致。
+7.疑似為前日車禍導致。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/30 上午 08:00",
@@ -20912,7 +25398,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "徐嘉鴻醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:許哲豪(08063186),謝謝您\n1.許君受傷部位為何？\n2.許君就診有無主訴傷害發生時間及成因為何?\n請惠示醫理見解",
+    "question": "徐嘉鴻醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:許哲豪(08063186),謝謝您
+1.許君受傷部位為何？
+2.許君就診有無主訴傷害發生時間及成因為何?
+請惠示醫理見解",
     "doctor_reply": "1. 左小腿  2.患者自訴兩周前工作中被櫃子撞到",
     "remark": "",
     "status": "已完成",
@@ -20938,7 +25428,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "劉柏均醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?\n病人姓名:許哲豪(08063186),因公文有時效性，\n如未收到回覆病歷將於06月01日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上\"",
+    "question": "劉柏均醫師您好:因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?
+病人姓名:許哲豪(08063186),因公文有時效性，
+如未收到回覆病歷將於06月01日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上\"",
     "doctor_reply": "可以釋出",
     "remark": "",
     "status": "已完成",
@@ -20964,7 +25458,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林孟穎醫師您好，請協助回覆問題，謝謝。\n原告王凱立於112年6月13日因車禍至貴院就診，診斷證明書載有原告傷勢。然原告嗣接受他院勞動力減損鑑定，指出原告受有雙眼創傷性視神經病變、憂鬱症之病症。就原告嗣後檢出之雙眼創傷性視神經病變、憂鬱症，是否係112年6月13日車禍所致?\n請惠示醫理見解。\n\n(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))\t\t\t\t\n因案件有時效性，病歷將於05月31日釋出，感謝您。",
+    "question": "林孟穎醫師您好，請協助回覆問題，謝謝。
+原告王凱立於112年6月13日因車禍至貴院就診，診斷證明書載有原告傷勢。然原告嗣接受他院勞動力減損鑑定，指出原告受有雙眼創傷性視神經病變、憂鬱症之病症。就原告嗣後檢出之雙眼創傷性視神經病變、憂鬱症，是否係112年6月13日車禍所致?
+請惠示醫理見解。
+
+(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))				
+因案件有時效性，病歷將於05月31日釋出，感謝您。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -20990,8 +25489,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "束連文醫師好，請協助回覆問題。\n\t原告王凱立於112年6月13日因車禍至貴院就診，診斷證明書載有原告傷勢。然原告嗣接受他院勞動力減損鑑定，指出原告受有雙眼創傷性視神經病變、憂鬱症之病症。就原告嗣後檢出之雙眼創傷性視神經病變、憂鬱症，是否係112年6月13日車禍所致?\n請惠示醫理見解 。\n\n因案件有時效性，請於05月31日前回覆，感謝您。\n書湘敬上",
-    "doctor_reply": "該病患於113年初至精神科門診, 當時精神狀態為憂鬱狀態. 並合併有其他功能障礙.\n來文詢問 憂鬱症 \"是否為因為112年6月11日車禍所致\", 依臨床紀錄並上不足以判斷其為必然的因果關係, 不過臨床上常見在招受重大傷害後, 情緒受影響出現憂鬱現象.",
+    "question": "束連文醫師好，請協助回覆問題。
+	原告王凱立於112年6月13日因車禍至貴院就診，診斷證明書載有原告傷勢。然原告嗣接受他院勞動力減損鑑定，指出原告受有雙眼創傷性視神經病變、憂鬱症之病症。就原告嗣後檢出之雙眼創傷性視神經病變、憂鬱症，是否係112年6月13日車禍所致?
+請惠示醫理見解 。
+
+因案件有時效性，請於05月31日前回覆，感謝您。
+書湘敬上",
+    "doctor_reply": "該病患於113年初至精神科門診, 當時精神狀態為憂鬱狀態. 並合併有其他功能障礙.
+來文詢問 憂鬱症 \"是否為因為112年6月11日車禍所致\", 依臨床紀錄並上不足以判斷其為必然的因果關係, 不過臨床上常見在招受重大傷害後, 情緒受影響出現憂鬱現象.",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/31 上午 08:00",
@@ -21016,8 +25521,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "張舜程醫師好，請協助回覆問題。 1.請查明受刑人馮堯琳(診斷證明書字號:診字第0150413803501號)現所罹薦骨部壓瘡感染，有無因執行刑罰(即入監服刑)而不能保其生命情事? \n請惠示醫理見解 \n\n因案件有時效性，請於05月30日前回覆，感謝您。",
-    "doctor_reply": "貴所來函詢問受刑人馮堯琳罹薦骨部壓瘡感染，會容易因執行刑罰(即入監服刑)而惡化及細菌加重感染之可能性，且病患無法自理大小二便，極難於貴所照料 (服刑)。至於是否會因入監服刑而不能保其生命，則可能無急迫之生命危險。\n以上回覆醫療意見，敬請貴所卓參。",
+    "question": "張舜程醫師好，請協助回覆問題。 1.請查明受刑人馮堯琳(診斷證明書字號:診字第0150413803501號)現所罹薦骨部壓瘡感染，有無因執行刑罰(即入監服刑)而不能保其生命情事? 
+請惠示醫理見解 
+
+因案件有時效性，請於05月30日前回覆，感謝您。",
+    "doctor_reply": "貴所來函詢問受刑人馮堯琳罹薦骨部壓瘡感染，會容易因執行刑罰(即入監服刑)而惡化及細菌加重感染之可能性，且病患無法自理大小二便，極難於貴所照料 (服刑)。至於是否會因入監服刑而不能保其生命，則可能無急迫之生命危險。
+以上回覆醫療意見，敬請貴所卓參。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/5/31 上午 08:00",
@@ -21042,7 +25551,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "葉雲凱醫師您好:\n因(司法相驗)臺灣新北地方檢察署來函調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將06月03日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "葉雲凱醫師您好:
+因(司法相驗)臺灣新北地方檢察署來函調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將06月03日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -21068,7 +25582,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王忠信醫師您好:\n因(司法相驗)臺灣新北地方檢察署來函調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將06月03日釋出，感謝您。",
+    "question": "王忠信醫師您好:
+因(司法相驗)臺灣新北地方檢察署來函調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將06月03日釋出，感謝您。",
     "doctor_reply": "可以",
     "remark": "",
     "status": "已完成",
@@ -21094,8 +25611,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳柏伸醫師您好，請協助回覆問題，謝謝。\n1.並惠請說明宋俊毅當日就診時之傷口狀態是否符合遭犬隻咬傷之傷勢型態。\n2.請協助確認病歷，是否可以釋出?\n請惠示醫理見解\n\n因案件有時效性，如未收到回覆病歷將於06月04日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "1.單就傷口外觀無法直接認定為狗咬傷，狗咬機轉為病人自述。\n2.可以釋出",
+    "question": "陳柏伸醫師您好，請協助回覆問題，謝謝。
+1.並惠請說明宋俊毅當日就診時之傷口狀態是否符合遭犬隻咬傷之傷勢型態。
+2.請協助確認病歷，是否可以釋出?
+請惠示醫理見解
+
+因案件有時效性，如未收到回覆病歷將於06月04日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "doctor_reply": "1.單就傷口外觀無法直接認定為狗咬傷，狗咬機轉為病人自述。
+2.可以釋出",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/4 上午 08:00",
@@ -21120,8 +25644,27 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蘇鈺凱醫師好，請協助回覆問題。\n陳金威君（病歷號碼：18038561）於115年3月14日起因「腰椎第五節、薦椎第一節滑脫併神經壓迫」至貴院急、門診及住院診療，申請核退職災自墊醫療費用。\n1.其於何時因上述病症初診？\n2.當時症狀如何？\n3.治療部位如何？\n4.有無外傷？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n8.係屬普通疾病抑何時遭受外力傷害引起？本局亟待明瞭。\n請惠示醫理見解\n\n因案件有時效性，請於06月05日前回覆，感謝您。",
-    "doctor_reply": "1. 於115 年2月至萬芳醫院就診\n2. 背痛雙腳麻 跛行\n3. 藥物治療與復健無效\n4. 無外傷病史, 身上也無外傷\n5.  無提及事故\n6. 萬芳醫院神經外科門診\n7. 成因不明, 基因, 工作, 體質,  皆有可能\n8. 無外力傷害致病的證據",
+    "question": "蘇鈺凱醫師好，請協助回覆問題。
+陳金威君（病歷號碼：18038561）於115年3月14日起因「腰椎第五節、薦椎第一節滑脫併神經壓迫」至貴院急、門診及住院診療，申請核退職災自墊醫療費用。
+1.其於何時因上述病症初診？
+2.當時症狀如何？
+3.治療部位如何？
+4.有無外傷？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+8.係屬普通疾病抑何時遭受外力傷害引起？本局亟待明瞭。
+請惠示醫理見解
+
+因案件有時效性，請於06月05日前回覆，感謝您。",
+    "doctor_reply": "1. 於115 年2月至萬芳醫院就診
+2. 背痛雙腳麻 跛行
+3. 藥物治療與復健無效
+4. 無外傷病史, 身上也無外傷
+5.  無提及事故
+6. 萬芳醫院神經外科門診
+7. 成因不明, 基因, 工作, 體質,  皆有可能
+8. 無外力傷害致病的證據",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/5 上午 08:00",
@@ -21146,8 +25689,21 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃錦前醫師好，請協助回覆問題。\n吳婉瑜 因「左側膝部前十字韌帶斷裂、外側半月軟骨破裂、外側副韌帶撕裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.吳君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n5.請協助確認是否可以釋出?\n請惠示醫理見解\n\n因案件有時效性，請於06月08日前回覆，感謝您。",
-    "doctor_reply": "1. 病患因意外受傷故至本院骨科門診就診後發現上述問題遂住院手術治療\n2. 無手術併發症\n3. 術後3-6個月\n4. 根據病患之診斷, 判定上述膝關節綜合傷害所需的復原時間為依據\n5. 可以釋出",
+    "question": "黃錦前醫師好，請協助回覆問題。
+吳婉瑜 因「左側膝部前十字韌帶斷裂、外側半月軟骨破裂、外側副韌帶撕裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.吳君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+5.請協助確認是否可以釋出?
+請惠示醫理見解
+
+因案件有時效性，請於06月08日前回覆，感謝您。",
+    "doctor_reply": "1. 病患因意外受傷故至本院骨科門診就診後發現上述問題遂住院手術治療
+2. 無手術併發症
+3. 術後3-6個月
+4. 根據病患之診斷, 判定上述膝關節綜合傷害所需的復原時間為依據
+5. 可以釋出",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/7 上午 08:00",
@@ -21172,8 +25728,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳弘洲主任您好，請協助回覆問題。林珊如 因「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n(一)1.林君就診有無主訴傷害事故？\n      2.發生日期及原因為何？\n      3.所患「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」是否係因主訴之傷害事故所致？\n(二)1.林君因上開傷病治療經過為何？\n      2.有無併發症或後遺症？ \n      3.療養至何時起可從事一般工作？\n      4.認定理由及依據為何？\n請惠示醫理見解\n因案件有時效性，請於06月11日前回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "(一) 1 &2. 主訴於114年6月14日因車禍致傷。3. 初次於復健科看診時已是114年9月1日，急性期已過且影像大多正常，故無法判定是否係因主訴之傷害事故所致，唯其尾椎於X光影像上有脫位現象，應為意外傷害，但發生意外傷害之時間無法確定。\n(二) 1. 於復健科主要就其頸椎、腰椎與尾椎相關之不適症狀持續進行復健治療。2. 症狀持續緩慢而逐漸改善但仍持續有不適之症狀。3. 可進行較輕便之工作，但如進行需久站、抱托及負重工作可能會造成疼痛不適之症狀。4. 依據病歷紀錄。",
+    "question": "陳弘洲主任您好，請協助回覆問題。林珊如 因「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+(一)1.林君就診有無主訴傷害事故？
+      2.發生日期及原因為何？
+      3.所患「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」是否係因主訴之傷害事故所致？
+(二)1.林君因上開傷病治療經過為何？
+      2.有無併發症或後遺症？ 
+      3.療養至何時起可從事一般工作？
+      4.認定理由及依據為何？
+請惠示醫理見解
+因案件有時效性，請於06月11日前回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "doctor_reply": "(一) 1 &2. 主訴於114年6月14日因車禍致傷。3. 初次於復健科看診時已是114年9月1日，急性期已過且影像大多正常，故無法判定是否係因主訴之傷害事故所致，唯其尾椎於X光影像上有脫位現象，應為意外傷害，但發生意外傷害之時間無法確定。
+(二) 1. 於復健科主要就其頸椎、腰椎與尾椎相關之不適症狀持續進行復健治療。2. 症狀持續緩慢而逐漸改善但仍持續有不適之症狀。3. 可進行較輕便之工作，但如進行需久站、抱托及負重工作可能會造成疼痛不適之症狀。4. 依據病歷紀錄。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/11 上午 08:00",
@@ -21198,8 +25765,26 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "莊凱迪主任您好，請協助回覆問題。林珊如 因「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n(一)1.林君就診有無主訴傷害事故？\n      2.發生日期及原因為何？\n      3.所患「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」是否係因主訴之傷害事故所致？\n(二)1.林君因上開傷病治療經過為何？\n      2.有無併發症或後遺症？ \n      3.療養至何時起可從事一般工作？\n      4.認定理由及依據為何？\n請惠示醫理見解\n因案件有時效性，請於06月11日前回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "（一）\n急性壓力反應，之後變為車禍後之創傷後壓力症,非特定，因主訴之傷害所致。\n鬱症,復發,重度無精神病特徵，部分為此次之傷害所致。\n偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀，非因主訴之傷害所致。\n（二）\n１.治療經過如病歷所述，症狀相當頑固，大劑量多重藥物才改善。\n2. 目前仍無法判定後遺症。\n3. 精神科方面最近開始有明顯改善，精神科方面自今年七月一日起，可以逐漸嘗試從事工作。\n4. 頑固型憂鬱症與創傷後壓力症之治療經驗與文獻。",
+    "question": "莊凱迪主任您好，請協助回覆問題。林珊如 因「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+(一)1.林君就診有無主訴傷害事故？
+      2.發生日期及原因為何？
+      3.所患「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」是否係因主訴之傷害事故所致？
+(二)1.林君因上開傷病治療經過為何？
+      2.有無併發症或後遺症？ 
+      3.療養至何時起可從事一般工作？
+      4.認定理由及依據為何？
+請惠示醫理見解
+因案件有時效性，請於06月11日前回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "doctor_reply": "（一）
+急性壓力反應，之後變為車禍後之創傷後壓力症,非特定，因主訴之傷害所致。
+鬱症,復發,重度無精神病特徵，部分為此次之傷害所致。
+偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀，非因主訴之傷害所致。
+（二）
+１.治療經過如病歷所述，症狀相當頑固，大劑量多重藥物才改善。
+2. 目前仍無法判定後遺症。
+3. 精神科方面最近開始有明顯改善，精神科方面自今年七月一日起，可以逐漸嘗試從事工作。
+4. 頑固型憂鬱症與創傷後壓力症之治療經驗與文獻。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/11 上午 08:00",
@@ -21224,8 +25809,39 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蘇鈺凱主任您好，請協助回覆問題。林珊如 因「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n(一)1.林君就診有無主訴傷害事故？\n      2.發生日期及原因為何？\n      3.所患「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」是否係因主訴之傷害事故所致？\n(二)1.林君因上開傷病治療經過為何？\n      2.有無併發症或後遺症？ \n      3.療養至何時起可從事一般工作？\n      4.認定理由及依據為何？\n請惠示醫理見解\n因案件有時效性，請於06月11日前回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "(一)\n1. 就診有無主訴傷害事故:\n有。病人於本科門診首診(114年6月21日)即主訴於114年6月14日騎乘機車發生車禍受傷,事故當日曾至本院急診就診(本科病歷轉載)。\n2. 發生日期及原因:\n114年6月14日,依病人主訴為騎乘機車發生車禍倒地受傷。事故經過本科未能查證,悉依病人及家屬陳述記載。\n3. 所患傷病是否係主訴事故所致:\n函列傷病中,屬本科門診診斷者為「頭部外傷併腦震盪」、「持續頭痛」及「創傷後壓力症,非特定(114年8月5日起列入診斷)」。依病歷記載,病人於上開車禍後出現持續頭痛、噁心、嘔吐,家屬並述事故後曾有言語表達困難,症狀時序與主訴事故相符,本科據此為臨床診斷;114年6月21日腦部電腦斷層無顱內出血或明顯異常。另114年8月5日門診記載偶然發現左側前床突旁動脈瘤(6.4×4.2公釐),屬偶發病灶,與本次事故無關。其餘函列診斷(頸部挫傷、下背和骨盆尾骨挫傷、右上肢各部位挫傷、憂鬱症、急性壓力反應、非特定焦慮症、偏頭痛、尾椎挫傷併脫位、腰椎拉扭傷等)非本科診治項目,本科無法表示意見。\n(二)\n1. 治療經過(本科門診):\n\n114年6月21日首診:主訴車禍後持續頭痛伴噁心嘔吐,神經學檢查無局部異常,安排腦部電腦斷層並給予藥物治療,囑休養一週不宜工作至114年6月28日。同日腦部電腦斷層(未施打顯影劑):無顱內出血、無明顯異常。\n114年6月28日:持續頭痛,續藥物治療,囑因持續頭痛需休養一個月不宜工作至114年7月14日。\n114年7月10日:仍持續頭痛、噁心,病人自述將至外院接受腦部磁振造影,囑完成後攜影像回診評估。\n114年8月5日:診斷頭部外傷併腦震盪、創傷後症候群,給予症狀用藥(需要時服用),囑自受傷後需休養兩個月至114年8月14日,門診追蹤;同日病歷記載偶然發現左側前床突旁動脈瘤。\n此後本科門診無就診紀錄。\n\n2. 有無併發症或後遺症:\n腦部影像無顱內出血等器質性併發症。本科病歷記載持續頭痛及創傷後症候群;創傷後壓力症、鬱症之後續評估與治療由精神科進行,屬精神科範疇,本科無法表示意見。左側前床突旁動脈瘤為偶然發現,非本次事故之併發症或後遺症。\n3. 療養至何時可從事一般工作:\n依本科114年8月5日門診醫囑,自受傷後需休養兩個月至114年8月14日。其後本科未再評估或開立休養證明,114年8月15日以後可否從事一般工作,本科病歷無記載,無法判斷。\n4. 認定理由及依據:\n依病人主訴與症狀時序、神經學檢查、114年6月21日腦部電腦斷層結果及門診追蹤病程綜合判斷。腦震盪及腦震盪後症候群屬臨床診斷,休養期間係依症狀嚴重度與恢復情形評估。",
+    "question": "蘇鈺凱主任您好，請協助回覆問題。林珊如 因「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+(一)1.林君就診有無主訴傷害事故？
+      2.發生日期及原因為何？
+      3.所患「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」是否係因主訴之傷害事故所致？
+(二)1.林君因上開傷病治療經過為何？
+      2.有無併發症或後遺症？ 
+      3.療養至何時起可從事一般工作？
+      4.認定理由及依據為何？
+請惠示醫理見解
+因案件有時效性，請於06月11日前回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "doctor_reply": "(一)
+1. 就診有無主訴傷害事故:
+有。病人於本科門診首診(114年6月21日)即主訴於114年6月14日騎乘機車發生車禍受傷,事故當日曾至本院急診就診(本科病歷轉載)。
+2. 發生日期及原因:
+114年6月14日,依病人主訴為騎乘機車發生車禍倒地受傷。事故經過本科未能查證,悉依病人及家屬陳述記載。
+3. 所患傷病是否係主訴事故所致:
+函列傷病中,屬本科門診診斷者為「頭部外傷併腦震盪」、「持續頭痛」及「創傷後壓力症,非特定(114年8月5日起列入診斷)」。依病歷記載,病人於上開車禍後出現持續頭痛、噁心、嘔吐,家屬並述事故後曾有言語表達困難,症狀時序與主訴事故相符,本科據此為臨床診斷;114年6月21日腦部電腦斷層無顱內出血或明顯異常。另114年8月5日門診記載偶然發現左側前床突旁動脈瘤(6.4×4.2公釐),屬偶發病灶,與本次事故無關。其餘函列診斷(頸部挫傷、下背和骨盆尾骨挫傷、右上肢各部位挫傷、憂鬱症、急性壓力反應、非特定焦慮症、偏頭痛、尾椎挫傷併脫位、腰椎拉扭傷等)非本科診治項目,本科無法表示意見。
+(二)
+1. 治療經過(本科門診):
+
+114年6月21日首診:主訴車禍後持續頭痛伴噁心嘔吐,神經學檢查無局部異常,安排腦部電腦斷層並給予藥物治療,囑休養一週不宜工作至114年6月28日。同日腦部電腦斷層(未施打顯影劑):無顱內出血、無明顯異常。
+114年6月28日:持續頭痛,續藥物治療,囑因持續頭痛需休養一個月不宜工作至114年7月14日。
+114年7月10日:仍持續頭痛、噁心,病人自述將至外院接受腦部磁振造影,囑完成後攜影像回診評估。
+114年8月5日:診斷頭部外傷併腦震盪、創傷後症候群,給予症狀用藥(需要時服用),囑自受傷後需休養兩個月至114年8月14日,門診追蹤;同日病歷記載偶然發現左側前床突旁動脈瘤。
+此後本科門診無就診紀錄。
+
+2. 有無併發症或後遺症:
+腦部影像無顱內出血等器質性併發症。本科病歷記載持續頭痛及創傷後症候群;創傷後壓力症、鬱症之後續評估與治療由精神科進行,屬精神科範疇,本科無法表示意見。左側前床突旁動脈瘤為偶然發現,非本次事故之併發症或後遺症。
+3. 療養至何時可從事一般工作:
+依本科114年8月5日門診醫囑,自受傷後需休養兩個月至114年8月14日。其後本科未再評估或開立休養證明,114年8月15日以後可否從事一般工作,本科病歷無記載,無法判斷。
+4. 認定理由及依據:
+依病人主訴與症狀時序、神經學檢查、114年6月21日腦部電腦斷層結果及門診追蹤病程綜合判斷。腦震盪及腦震盪後症候群屬臨床診斷,休養期間係依症狀嚴重度與恢復情形評估。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/11 上午 08:00",
@@ -21251,7 +25867,11 @@ const DEFAULT_ISSUES = [
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
     "question": "邱彥碩主任您好，請協助回覆問題。林珊如 因「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。 (一)1.林君就診有無主訴傷害事故？ 2.發生日期及原因為何？ 3.所患「頸部挫傷、下背和骨盆.尾骨挫傷、右手.右前臂.右肘挫傷、創傷後壓力症、憂鬱症、雙下肢多處擦挫傷、下背鈍挫傷、頭部.右肩.右肘.右腕挫傷、急性壓力反應、非特定的焦慮症、頭部外傷併腦震盪、持續頭痛、車禍後之創傷後壓力症,非特定、鬱症,復發,重度無精神病特徵、偏頭痛,未明確定義型態,非頑固性,伴有偏頭痛重積症狀、尾椎挫傷併尾椎脫位、腰椎拉扭傷」是否係因主訴之傷害事故所致？ (二)1.林君因上開傷病治療經過為何？ 2.有無併發症或後遺症？ 3.療養至何時起可從事一般工作？ 4.認定理由及依據為何？請惠示醫理見解因案件有時效性，請於06月11日前回覆，感謝您。 (備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "（ㄧ）\n1. 及2. 114-4-14 車禍 急診\n3. 主訴過多，無法確認（因為邱醫師7/11門診，之前非邱醫師看診）\n（二）1.2.3.4.\n病患僅來邱醫師門診兩次（114-7-11及8-8）完全無法判斷這四點",
+    "doctor_reply": "（ㄧ）
+1. 及2. 114-4-14 車禍 急診
+3. 主訴過多，無法確認（因為邱醫師7/11門診，之前非邱醫師看診）
+（二）1.2.3.4.
+病患僅來邱醫師門診兩次（114-7-11及8-8）完全無法判斷這四點",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/11 上午 08:00",
@@ -21302,8 +25922,26 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王智毅醫師您好，請協助回覆問題。陳榮相君 因「左側膝部半月板軟骨巨大破裂、左側膝部半月板軟骨外傷性破裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.陳君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「左側膝部半月板軟骨巨大破裂、左側膝部半月板軟骨外傷性破裂」是否係因主訴之傷害事故所致？\n4.陳君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n8.請協助確認病歷是否可釋出?\n請惠示醫理見解。\n\n因案件有時效性，請於06月15日回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "1.陳君就診有無主訴傷害事故？主訴因跌倒導致\n2.發生日期及原因為何？8／21 跌倒\n3.所患「左側膝部半月板軟骨巨大破裂、左側膝部半月板軟骨外傷性破裂」是否係因主訴之傷害事故所致？是\n4.陳君因上開傷病治療經過為何？於20251128接受左膝半月板縫補手術\n5.有無併發症或後遺症？無\n6.療養至何時起可從事一般工作？6個月\n7.認定理由及依據為何？ 一般常規恢復",
+    "question": "王智毅醫師您好，請協助回覆問題。陳榮相君 因「左側膝部半月板軟骨巨大破裂、左側膝部半月板軟骨外傷性破裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.陳君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「左側膝部半月板軟骨巨大破裂、左側膝部半月板軟骨外傷性破裂」是否係因主訴之傷害事故所致？
+4.陳君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+8.請協助確認病歷是否可釋出?
+請惠示醫理見解。
+
+因案件有時效性，請於06月15日回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "doctor_reply": "1.陳君就診有無主訴傷害事故？主訴因跌倒導致
+2.發生日期及原因為何？8／21 跌倒
+3.所患「左側膝部半月板軟骨巨大破裂、左側膝部半月板軟骨外傷性破裂」是否係因主訴之傷害事故所致？是
+4.陳君因上開傷病治療經過為何？於20251128接受左膝半月板縫補手術
+5.有無併發症或後遺症？無
+6.療養至何時起可從事一般工作？6個月
+7.認定理由及依據為何？ 一般常規恢復",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/14 上午 08:00",
@@ -21328,8 +25966,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "賴慧穎醫師您好:\n請醫師協助回覆公文問題，李閎洋(01148363)，謝謝您。\n1.李君醫療經過及傷勢復原情形如何？\n2.有無併發症或後遺症？\n3.其何時應可恢復一般工作能力？\n請惠示醫理見解",
-    "doctor_reply": "1.  病人於115年04月01日至一般外科門診複診時，外傷(擦傷及瘀傷)已痊癒。\n2.  至一般外科門診就診時已無明顯外傷，但病人表示一直腰酸背痛，後續轉至復健科評估治療。\n3.  由復健/家醫科醫師評估。",
+    "question": "賴慧穎醫師您好:
+請醫師協助回覆公文問題，李閎洋(01148363)，謝謝您。
+1.李君醫療經過及傷勢復原情形如何？
+2.有無併發症或後遺症？
+3.其何時應可恢復一般工作能力？
+請惠示醫理見解",
+    "doctor_reply": "1.  病人於115年04月01日至一般外科門診複診時，外傷(擦傷及瘀傷)已痊癒。
+2.  至一般外科門診就診時已無明顯外傷，但病人表示一直腰酸背痛，後續轉至復健科評估治療。
+3.  由復健/家醫科醫師評估。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/24 上午 08:00",
@@ -21354,8 +25999,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "郭庭如醫師您好:\n請醫師協助回覆公文問題，李閎洋(01148363)，謝謝您。\n1.李君醫療經過及傷勢復原情形如何？\n2.有無併發症或後遺症？\n3.其何時應可恢復一般工作能力？\n請惠示醫理見解",
-    "doctor_reply": "1.病人於0222因車禍(人壓在機車下)至急診就診，後至一般外科就診，於0407至復健科門診就診，就診時當時外傷的傷口皆已癒合，無明顯外傷。\n2.無明顯外傷但病人仍抱怨多處疼痛。\n3.病人僅就醫一次，有幫他安排復健，但他傾向診所復健並未至雙和復健，後續也無回診，有建議病人至職醫科做後續評估。",
+    "question": "郭庭如醫師您好:
+請醫師協助回覆公文問題，李閎洋(01148363)，謝謝您。
+1.李君醫療經過及傷勢復原情形如何？
+2.有無併發症或後遺症？
+3.其何時應可恢復一般工作能力？
+請惠示醫理見解",
+    "doctor_reply": "1.病人於0222因車禍(人壓在機車下)至急診就診，後至一般外科就診，於0407至復健科門診就診，就診時當時外傷的傷口皆已癒合，無明顯外傷。
+2.無明顯外傷但病人仍抱怨多處疼痛。
+3.病人僅就醫一次，有幫他安排復健，但他傾向診所復健並未至雙和復健，後續也無回診，有建議病人至職醫科做後續評估。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/24 上午 08:00",
@@ -21380,8 +26032,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "楊順泰醫師您好，請協助回覆問題。\n1.原告王旗田於112年8月28日因當日車禍事故入他院(診斷傷害如刑事判決所載)，原告於112年9月19日起復至貴院就診，診斷結果為第5、6頸椎間盤骨刺併神經孔狹窄及頸部酸痛(下稱系爭傷勢)，系爭傷勢是否為112年8月28日車禍所致?\n2.若為上開車禍所致，原告有無需持續復建之必要，如有，復建期間、頻率(如到X年X月X日有復建必要)?\n請惠示醫理見解\n因案件有時效性，請於06月24日前回覆，感謝您。",
-    "doctor_reply": "1. 患者112年8月28日因當日車禍事故入他院，於112年9月19日起因頸部酸痛至本院神經外科就診，當日頸椎X光片顯示第5、6頸椎椎間盤狹窄有骨刺生成，第5、6頸椎前軟組織已無明顯外傷相關的腫漲情形，因此無法判定是否直接為112年8月28日車禍所致。\n\n2. 有無需持續復建之必要，復建期間及頻率需視病人症狀是否持續及復健治療反應決定. 112年9月19日當次門診已建議患者至復健科或復健診療院所接受進一步復健治療.",
+    "question": "楊順泰醫師您好，請協助回覆問題。
+1.原告王旗田於112年8月28日因當日車禍事故入他院(診斷傷害如刑事判決所載)，原告於112年9月19日起復至貴院就診，診斷結果為第5、6頸椎間盤骨刺併神經孔狹窄及頸部酸痛(下稱系爭傷勢)，系爭傷勢是否為112年8月28日車禍所致?
+2.若為上開車禍所致，原告有無需持續復建之必要，如有，復建期間、頻率(如到X年X月X日有復建必要)?
+請惠示醫理見解
+因案件有時效性，請於06月24日前回覆，感謝您。",
+    "doctor_reply": "1. 患者112年8月28日因當日車禍事故入他院，於112年9月19日起因頸部酸痛至本院神經外科就診，當日頸椎X光片顯示第5、6頸椎椎間盤狹窄有骨刺生成，第5、6頸椎前軟組織已無明顯外傷相關的腫漲情形，因此無法判定是否直接為112年8月28日車禍所致。
+
+2. 有無需持續復建之必要，復建期間及頻率需視病人症狀是否持續及復健治療反應決定. 112年9月19日當次門診已建議患者至復健科或復健診療院所接受進一步復健治療.",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/24 上午 08:00",
@@ -21406,8 +26064,32 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "李尚醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:劉貞吟(02398079),謝謝您\n1.其於何日何時分因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.主訴發生事故之時間、地點、原因及經過如何？\n5.有無訴及曾至何處診療？\n6.所患成因如何？\n7.係屬自身普通疾病(暈倒)或何時遭受外力傷害所引起？\n8.過去有無相關疾患之病史？\n請惠示醫理見解",
-    "doctor_reply": "我前幾天已經填寫表單回覆了\n\n因事件發生距今已超過半年，只能就病歷紀錄稍作回應\n\n1. 依據病歷上面記載，病患到院時間: 2025年12月02日 05時19分12秒\n2. 依據病歷上面記載，當時來診的主訴是頭痛\n3. 依據病歷上面記載，病患到院時有全身多處擦挫傷以及眼睛周圍瘀血\n4. 依據病歷上面記載，病患主訴四天前行走時被汽車撞，病歷上面並沒有特別註明撞擊的地點\n5. 依據病歷上面記載，病患描述有先去花蓮慈濟醫院以及診所就診\n6. 應為外力撞擊\n7-1. 依據病歷上面記載，當時病患的主訴只有外傷，客觀上也的確是外力造成的外傷，並無法判定是否因為暈倒或其他自身疾病後再被外力所傷。\n7-2. 依據病歷上面記載，只能看到是陳舊性的外傷，應是幾天內受傷，但是無法確定外傷的確切時間點。另外因為本身是急診醫師，並非法醫，我們主要看診及病歷紀載都是根據相信病患口述的時間及機轉。\n8. 依據病歷上面記載以及手術前的影像紀錄，病患於此次外傷之前左手前臂橈骨及尺骨皆有骨折開刀過，並留有植入物。\n\n在這裡再重新回覆一次",
+    "question": "李尚醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:劉貞吟(02398079),謝謝您
+1.其於何日何時分因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.主訴發生事故之時間、地點、原因及經過如何？
+5.有無訴及曾至何處診療？
+6.所患成因如何？
+7.係屬自身普通疾病(暈倒)或何時遭受外力傷害所引起？
+8.過去有無相關疾患之病史？
+請惠示醫理見解",
+    "doctor_reply": "我前幾天已經填寫表單回覆了
+
+因事件發生距今已超過半年，只能就病歷紀錄稍作回應
+
+1. 依據病歷上面記載，病患到院時間: 2025年12月02日 05時19分12秒
+2. 依據病歷上面記載，當時來診的主訴是頭痛
+3. 依據病歷上面記載，病患到院時有全身多處擦挫傷以及眼睛周圍瘀血
+4. 依據病歷上面記載，病患主訴四天前行走時被汽車撞，病歷上面並沒有特別註明撞擊的地點
+5. 依據病歷上面記載，病患描述有先去花蓮慈濟醫院以及診所就診
+6. 應為外力撞擊
+7-1. 依據病歷上面記載，當時病患的主訴只有外傷，客觀上也的確是外力造成的外傷，並無法判定是否因為暈倒或其他自身疾病後再被外力所傷。
+7-2. 依據病歷上面記載，只能看到是陳舊性的外傷，應是幾天內受傷，但是無法確定外傷的確切時間點。另外因為本身是急診醫師，並非法醫，我們主要看診及病歷紀載都是根據相信病患口述的時間及機轉。
+8. 依據病歷上面記載以及手術前的影像紀錄，病患於此次外傷之前左手前臂橈骨及尺骨皆有骨折開刀過，並留有植入物。
+
+在這裡再重新回覆一次",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/25 上午 08:00",
@@ -21432,8 +26114,25 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳韋呈醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:劉貞吟(02398079),謝謝您\n1.其於何日何時分因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.主訴發生事故之時間、地點、原因及經過如何？\n5.有無訴及曾至何處診療？\n6.所患成因如何？\n7.係屬自身普通疾病(暈倒)或何時遭受外力傷害所引起？\n8.過去有無相關疾患之病史？\n請惠示醫理見解",
-    "doctor_reply": "1. 病人11/28被車撞，12/2來診 \n2. 多處骨折外傷，左手橈骨幹骨折 右腳第五蹠骨骨折，左五到七肋骨骨折，胸椎三到五骨折，\n3. 有多處外傷骨折\n4. 據病人所述，病人11/28走路被車撞，也去過診所發現骨折，12/2來急診做更進一步檢查\n5.有先去過診所\n6 被車撞\n7 被車撞到多處骨折\n8 據所述無",
+    "question": "陳韋呈醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:劉貞吟(02398079),謝謝您
+1.其於何日何時分因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.主訴發生事故之時間、地點、原因及經過如何？
+5.有無訴及曾至何處診療？
+6.所患成因如何？
+7.係屬自身普通疾病(暈倒)或何時遭受外力傷害所引起？
+8.過去有無相關疾患之病史？
+請惠示醫理見解",
+    "doctor_reply": "1. 病人11/28被車撞，12/2來診 
+2. 多處骨折外傷，左手橈骨幹骨折 右腳第五蹠骨骨折，左五到七肋骨骨折，胸椎三到五骨折，
+3. 有多處外傷骨折
+4. 據病人所述，病人11/28走路被車撞，也去過診所發現骨折，12/2來急診做更進一步檢查
+5.有先去過診所
+6 被車撞
+7 被車撞到多處骨折
+8 據所述無",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/25 上午 08:00",
@@ -21458,8 +26157,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉恆維主任您好，請協助公文回覆問題。陳昆宏 因「腰椎第一節壓迫性骨折、外傷性顱內出血、後枕撕裂傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.陳君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1. 請見病歷資料\n2. 無併發症，病人仍有背痛\n3. 頭部外傷合併腰椎壓迫性骨折一般建議休養三個月，因骨頭生長時間約三個月至半年，但神經外科專業無法評估工作能力。\n4. 見3之回覆",
+    "question": "劉恆維主任您好，請協助公文回覆問題。陳昆宏 因「腰椎第一節壓迫性骨折、外傷性顱內出血、後枕撕裂傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.陳君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1. 請見病歷資料
+2. 無併發症，病人仍有背痛
+3. 頭部外傷合併腰椎壓迫性骨折一般建議休養三個月，因骨頭生長時間約三個月至半年，但神經外科專業無法評估工作能力。
+4. 見3之回覆",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/6/26 上午 08:00",
@@ -21484,7 +26191,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "韓政達醫師您好，請協助公文回覆問題。陳昆宏 因「腰椎第一節壓迫性骨折、外傷性顱內出血、後枕撕裂傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.陳君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "韓政達醫師您好，請協助公文回覆問題。陳昆宏 因「腰椎第一節壓迫性骨折、外傷性顱內出血、後枕撕裂傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.陳君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "這不是我的病人是劉恆維醫師的",
     "remark": "",
     "status": "已完成",
@@ -21510,7 +26222,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "邱彥碩主任您好:\n因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?\n病人姓名:陳建興(08548207)\n因公文有時效性，如未收到回覆病歷將於06月27日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n秀英敬上",
+    "question": "邱彥碩主任您好:
+因勞保局來函調閱病歷,請協助確認病歷是否可以釋出?
+病人姓名:陳建興(08548207)
+因公文有時效性，如未收到回覆病歷將於06月27日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+秀英敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -21536,7 +26253,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於06月27日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於06月27日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可釋出",
     "remark": "",
     "status": "已完成",
@@ -21562,7 +26283,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於06月27日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "各位醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於06月27日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "您好，可以釋出，感謝。",
     "remark": "",
     "status": "已完成",
@@ -21588,7 +26313,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "章筱伶醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於06月27日釋出，感謝您。\n備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "章筱伶醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於06月27日釋出，感謝您。
+備註：門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "可以釋出，謝謝您的協助！(系統維修，用Mail回覆)",
     "remark": "",
     "status": "已完成",
@@ -21614,7 +26343,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254s.tmu.edu.tw",
-    "question": "許瓅文醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:張憲光(09344437),謝謝您\n1.其於何日何時分因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.主訴發生事故之時間、地點、原因及經過如何？\n5.有無訴及曾至何處診療？\n6.所患成因如何？\n7.係屬自身普通疾病(暈倒)或何時遭受外力傷害所引起？\n8.過去有無相關疾患之病史？\n請惠示醫理見解",
+    "question": "許瓅文醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:張憲光(09344437),謝謝您
+1.其於何日何時分因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.主訴發生事故之時間、地點、原因及經過如何？
+5.有無訴及曾至何處診療？
+6.所患成因如何？
+7.係屬自身普通疾病(暈倒)或何時遭受外力傷害所引起？
+8.過去有無相關疾患之病史？
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -21640,8 +26379,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "羅偉倫醫師您好:\n請醫師協助回覆公文問題，請提供民眾張劉雅貞於105年起迄115年期間之就醫紀錄。\n1.並於復函文註記是否有關失智症之病史?\n2.請協助確認病歷是否可釋出?\n\n請惠示醫理見解",
-    "doctor_reply": "1. 無失智症之病史\n2. 可釋出",
+    "question": "羅偉倫醫師您好:
+請醫師協助回覆公文問題，請提供民眾張劉雅貞於105年起迄115年期間之就醫紀錄。
+1.並於復函文註記是否有關失智症之病史?
+2.請協助確認病歷是否可釋出?
+
+請惠示醫理見解",
+    "doctor_reply": "1. 無失智症之病史
+2. 可釋出",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/2 上午 08:00",
@@ -21666,8 +26411,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蔡宏達醫師您好:\n請醫師協助回覆公文問題，請提供民眾張劉雅貞於105年起迄115年期間之就醫紀錄。\n1.並於復函文註記是否有關失智症之病史?\n2.請協助確認病歷是否可釋出?\n\n請惠示醫理見解",
-    "doctor_reply": "有失智症 雖無於住院有確切診斷 但因腦出血高機率有失智後遺症 \n可釋出病歷",
+    "question": "蔡宏達醫師您好:
+請醫師協助回覆公文問題，請提供民眾張劉雅貞於105年起迄115年期間之就醫紀錄。
+1.並於復函文註記是否有關失智症之病史?
+2.請協助確認病歷是否可釋出?
+
+請惠示醫理見解",
+    "doctor_reply": "有失智症 雖無於住院有確切診斷 但因腦出血高機率有失智後遺症 
+可釋出病歷",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/2 上午 08:00",
@@ -21692,7 +26443,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "莊凱迪主任您好:因林哲因醫師離職，煩請協助代為回覆公文問題。\n1.原告黃雅琳如附件診斷證明書所載之病症，導致之原因為何?\n2.與附件所示之刑事判決有無因果關係?\n\n請惠示醫理見解",
+    "question": "莊凱迪主任您好:因林哲因醫師離職，煩請協助代為回覆公文問題。
+1.原告黃雅琳如附件診斷證明書所載之病症，導致之原因為何?
+2.與附件所示之刑事判決有無因果關係?
+
+請惠示醫理見解",
     "doctor_reply": "其所罹患之適應障礙，並非嚴重之精神疾病，僅為輕微之情緒問題。在行為上，無法作為任何行為因果關係之論證，此類輕微精神疾病無可能達到減免刑責之程度，或用以為犯罪行為之歸因。",
     "remark": "",
     "status": "已完成",
@@ -21718,7 +26473,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "周大鈞醫師您好:\n請醫師協助回覆公文問題。\n1.請惠予確認本案刀刃刺入方式是否可能構成重大不治或難治之重傷害?\n\n請惠示醫理見解",
+    "question": "周大鈞醫師您好:
+請醫師協助回覆公文問題。
+1.請惠予確認本案刀刃刺入方式是否可能構成重大不治或難治之重傷害?
+
+請惠示醫理見解",
     "doctor_reply": "如果傷到腹內血管 腸子穿孔 未即時就醫 則可能造成重傷害",
     "remark": "",
     "status": "已完成",
@@ -21744,7 +26503,20 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李垣樟醫師您好，請醫師協助回覆問題。\n1.杜君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「敗血症」是否係因主訴之傷害事故所致？\n4.杜君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n8.因勞保局調閱病歷，請協助確認病歷，是否可以釋出。\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "李垣樟醫師您好，請醫師協助回覆問題。
+1.杜君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「敗血症」是否係因主訴之傷害事故所致？
+4.杜君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+8.因勞保局調閱病歷，請協助確認病歷，是否可以釋出。
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "1. 主訴為發燒肌肉痠痛 無其他傷害事故. 2. 發生日期及原因為何？2026/1/20 原因為不典型感染 懷疑跟老鼠相關 3. 是 4. 住院使用抗感染藥物治療 後漸漸康復5. 恢復良好 6.出院後1個月應可回復工作 7.病史及臨床症狀檢驗及 影像報告 8.可釋出",
     "remark": "",
     "status": "已完成",
@@ -21770,7 +26542,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林哲立醫師您好，請醫師協助回覆問題。張嘉蕙君因「踝部挫傷、下背和骨盆挫傷、右側踝部挫傷、右踝韌帶撕裂傷、右踝挫傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.張君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "林哲立醫師您好，請醫師協助回覆問題。張嘉蕙君因「踝部挫傷、下背和骨盆挫傷、右側踝部挫傷、右踝韌帶撕裂傷、右踝挫傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.張君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "正常腳踝挫傷加上韌帶撕裂傷，完全恢復需要三個月，其中傷後六到八週要開始復健，評估病人是否可以重回工作，畢竟韌帶癒合可跟可以使用工作是兩回事，所以還要請職業傷害科進一步評估。",
     "remark": "",
     "status": "已完成",
@@ -21796,8 +26577,25 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳沛華醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:羅志浩(14747700),謝謝您\n1.羅君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n5.請確認病歷是否可釋出?\n請惠示醫理見解。",
-    "doctor_reply": "關於病人羅志浩(14747700)之公文回覆如下:\n\n1.病患於113年12月20日致急診就診，於113年12月20日住院，於113年12月21日行開放式復位及內固定手術，於113年12月28日出院。於114年01月10日、01月14日、01月24日、02月07日、03月14日、04月25日、06月06日、08月01日、11月28日至骨科門診就診。於114年12月17日住院，於114年12月17日行內固定移除手術，於114年12月18日出院。於114年12月26日、115年03月27日至骨科門診就診。\n\n2.併發症或後遺症為，左側肩膀慢性疼痛、活動範圍受限、肌力減弱；右側大腿慢性疼痛、肌力減弱。\n\n3.因患部受傷情況嚴重，為多處骨折；且病患對手術內置物感到不適，於114年進行第二次手術移除內置物。綜合以上，建議第二次手術過後一個月起，方可從事一般工作。\n\n4.認定理由及依據如上第3點所示。若需更詳細建議，可諮詢職業醫學科醫師，針對病患從事的工作進行分析。\n\n 5.確認病歷是否可釋出。",
+    "question": "陳沛華醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:羅志浩(14747700),謝謝您
+1.羅君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+5.請確認病歷是否可釋出?
+請惠示醫理見解。",
+    "doctor_reply": "關於病人羅志浩(14747700)之公文回覆如下:
+
+1.病患於113年12月20日致急診就診，於113年12月20日住院，於113年12月21日行開放式復位及內固定手術，於113年12月28日出院。於114年01月10日、01月14日、01月24日、02月07日、03月14日、04月25日、06月06日、08月01日、11月28日至骨科門診就診。於114年12月17日住院，於114年12月17日行內固定移除手術，於114年12月18日出院。於114年12月26日、115年03月27日至骨科門診就診。
+
+2.併發症或後遺症為，左側肩膀慢性疼痛、活動範圍受限、肌力減弱；右側大腿慢性疼痛、肌力減弱。
+
+3.因患部受傷情況嚴重，為多處骨折；且病患對手術內置物感到不適，於114年進行第二次手術移除內置物。綜合以上，建議第二次手術過後一個月起，方可從事一般工作。
+
+4.認定理由及依據如上第3點所示。若需更詳細建議，可諮詢職業醫學科醫師，針對病患從事的工作進行分析。
+
+ 5.確認病歷是否可釋出。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/5 上午 08:00",
@@ -21822,7 +26620,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "徐嘉鴻主任您好，請協助公文回覆問題。本案係原告因駕駛車輛所載貨物滲漏致人受傷，為符行政訴訟法第237條之4第2項規定，\n1.爰請貴院協助查明黃世豪於115年2月5日是否有前往就醫之紀錄？\n2.當日就醫診斷內容為何？\n3.是否有受傷的情形？\n\n惠復，俾憑辦理後續行政訴訟事宜。",
+    "question": "徐嘉鴻主任您好，請協助公文回覆問題。本案係原告因駕駛車輛所載貨物滲漏致人受傷，為符行政訴訟法第237條之4第2項規定，
+1.爰請貴院協助查明黃世豪於115年2月5日是否有前往就醫之紀錄？
+2.當日就醫診斷內容為何？
+3.是否有受傷的情形？
+
+惠復，俾憑辦理後續行政訴訟事宜。",
     "doctor_reply": "1. 115年2月5日 17:27有急診掛號紀錄 2. 診斷受傷情形如診斷書所載 左膝.左肘及雙手擦挫傷",
     "remark": "",
     "status": "已完成",
@@ -21848,7 +26651,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "趙品植醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於07月07日釋出，感謝您。\n備註：全院.門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "趙品植醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於07月07日釋出，感謝您。
+備註：全院.門診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "可釋出",
     "remark": "",
     "status": "已完成",
@@ -21874,8 +26681,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蘇勤方主任您好，請醫師協助回覆問題。惠請說明病患張安逸於如附件之附表編號2、5、8、11所示住院日期之下列各項疑義:\n1.依張安逸之體況，認定各該次住院有必要性之判斷依據或理由為何?\n2.張安逸各該次住院是否曾發生任何副作用或不良反應?\n3.嗣後評估可出院之依據或理由為何?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "1. 異位性皮膚炎合併蕁麻疹，癢感難耐，需要使用靜脈劑型抗組織胺及生物製劑\n2. 每次施打杜避炎後均有噁心嘔吐之反應，需使用止吐藥物輔助。唯該藥是少數能夠緩解張先生皮膚發癢之藥物。\n3. 噁心嘔吐改善後即可出院等待生物製劑產生療效。",
+    "question": "蘇勤方主任您好，請醫師協助回覆問題。惠請說明病患張安逸於如附件之附表編號2、5、8、11所示住院日期之下列各項疑義:
+1.依張安逸之體況，認定各該次住院有必要性之判斷依據或理由為何?
+2.張安逸各該次住院是否曾發生任何副作用或不良反應?
+3.嗣後評估可出院之依據或理由為何?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "1. 異位性皮膚炎合併蕁麻疹，癢感難耐，需要使用靜脈劑型抗組織胺及生物製劑
+2. 每次施打杜避炎後均有噁心嘔吐之反應，需使用止吐藥物輔助。唯該藥是少數能夠緩解張先生皮膚發癢之藥物。
+3. 噁心嘔吐改善後即可出院等待生物製劑產生療效。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/9 上午 08:00",
@@ -21900,8 +26717,20 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳美茜醫師您好，請醫師協助回覆問題。院病患黃黛琳如診斷證明書所載受有左耳傳導性聽力障礙之病歷，  \n1.惠請說明病患於民國113年6月3日急診受有如附件2所示顏面挫傷等傷害，是否會造成113年6月17日之上揭左耳聽損狀況?\n2.病因為何? \n3.貴院以純音聽力檢查是如何進行?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "1.      病人於113年6月7日於門診就診，主訴6月3日後腦勺被打巴掌，於6月7日早上出現右耳耳鳴症狀，後續聽力檢查顯示右耳聽力於正常範圍，左耳則有聽力障礙，與病人主訴非同側，因無之前聽力檢查可以對照，無法確切得知左耳狀況是否為新或舊，但一般無狀況兩耳聽力應為對稱，故也無法完全排除是否為外傷造成。\n\n2.      如上所述，可以是外傷造成。\n\n3.      純音聽力檢查為受測者於隔音室帶耳機，聽力師透過儀器播放不同頻率的純音，受測者若有聽到聲音則按鈕表示，以此尋找受測者不同頻率可聽到的最小音量。",
+    "question": "陳美茜醫師您好，請醫師協助回覆問題。院病患黃黛琳如診斷證明書所載受有左耳傳導性聽力障礙之病歷，  
+1.惠請說明病患於民國113年6月3日急診受有如附件2所示顏面挫傷等傷害，是否會造成113年6月17日之上揭左耳聽損狀況?
+2.病因為何? 
+3.貴院以純音聽力檢查是如何進行?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "1.      病人於113年6月7日於門診就診，主訴6月3日後腦勺被打巴掌，於6月7日早上出現右耳耳鳴症狀，後續聽力檢查顯示右耳聽力於正常範圍，左耳則有聽力障礙，與病人主訴非同側，因無之前聽力檢查可以對照，無法確切得知左耳狀況是否為新或舊，但一般無狀況兩耳聽力應為對稱，故也無法完全排除是否為外傷造成。
+
+2.      如上所述，可以是外傷造成。
+
+3.      純音聽力檢查為受測者於隔音室帶耳機，聽力師透過儀器播放不同頻率的純音，受測者若有聽到聲音則按鈕表示，以此尋找受測者不同頻率可聽到的最小音量。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/9 上午 08:00",
@@ -21926,8 +26755,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃錦前醫師您好，請協助回覆問題，謝謝。本院受理115年度簡上字第184號上訴人陳建辰等人與被上訴人許啟政間損害賠償(交通)事件，為究明被上訴人因車禍事故住院所支付之醫療費用是否屬必要費用，對後列事項認有查明之必要:\n1.若尚有上開3種病房種類可供被上訴人選擇，被上訴人選擇入住單日需額外支付新臺幣5,000元之尊榮病房，是否為本件醫療上之必要費用？\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "病患當日因近端脛骨粉碎性骨折亟需緊急手術, 然並無上開三種病房可供選擇, 為了緊急手術的目的, 只能選擇.入住單日需額外支付新臺幣5,000元之尊榮病房 (沒有病房則無法手術).\n以上",
+    "question": "黃錦前醫師您好，請協助回覆問題，謝謝。本院受理115年度簡上字第184號上訴人陳建辰等人與被上訴人許啟政間損害賠償(交通)事件，為究明被上訴人因車禍事故住院所支付之醫療費用是否屬必要費用，對後列事項認有查明之必要:
+1.若尚有上開3種病房種類可供被上訴人選擇，被上訴人選擇入住單日需額外支付新臺幣5,000元之尊榮病房，是否為本件醫療上之必要費用？
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "病患當日因近端脛骨粉碎性骨折亟需緊急手術, 然並無上開三種病房可供選擇, 為了緊急手術的目的, 只能選擇.入住單日需額外支付新臺幣5,000元之尊榮病房 (沒有病房則無法手術).
+以上",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/11 上午 08:00",
@@ -21952,8 +26788,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林冠宏醫師您好，請協助回覆問題，謝謝。\n1.查柯陳慧美於114年12月30日因跌倒致創傷性硬腦膜下出血併頭皮撕裂及血腫，而貴院診斷證明書上載柯陳慧美患有泌尿道感染、急性腎衰竭，此部分是否為柯陳慧美於114年12月30日跌倒有無關係?\n2.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "1. 無法證明是否有無直接關聯。病人發生跌倒事件時，會病史詢問病人跌倒當下狀況及跌倒後是否受傷，評估其神經系統、血液動力學、平衡、環境等因素。學理上生物體急性感染發炎或臟器急性衰竭本就會導致改生物體體能下降，可能會有間接影響造成體能下降之發生。\n2. 可釋出。",
+    "question": "林冠宏醫師您好，請協助回覆問題，謝謝。
+1.查柯陳慧美於114年12月30日因跌倒致創傷性硬腦膜下出血併頭皮撕裂及血腫，而貴院診斷證明書上載柯陳慧美患有泌尿道感染、急性腎衰竭，此部分是否為柯陳慧美於114年12月30日跌倒有無關係?
+2.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "1. 無法證明是否有無直接關聯。病人發生跌倒事件時，會病史詢問病人跌倒當下狀況及跌倒後是否受傷，評估其神經系統、血液動力學、平衡、環境等因素。學理上生物體急性感染發炎或臟器急性衰竭本就會導致改生物體體能下降，可能會有間接影響造成體能下降之發生。
+2. 可釋出。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/11 上午 08:00",
@@ -21978,7 +26822,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉恆維醫師您好，請協助回覆問題，謝謝。\n1.本件前函詢病患呂巧熏即(呂佳穎)於113年間至貴院住院手術情形，及與該病患於112年5月間之車禍是否有關等節，業經貴院函覆在案。因當事人對上開函覆內容容有疑問，請參酌確認如附件所示資料是否影響貴院前開函詢之回覆內容。\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "劉恆維醫師您好，請協助回覆問題，謝謝。
+1.本件前函詢病患呂巧熏即(呂佳穎)於113年間至貴院住院手術情形，及與該病患於112年5月間之車禍是否有關等節，業經貴院函覆在案。因當事人對上開函覆內容容有疑問，請參酌確認如附件所示資料是否影響貴院前開函詢之回覆內容。
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "1. 手術之目的是處理椎間盤突出，但椎間盤突出乃他院之MRI於病患至本院前即診斷，依病患於本院就診記錄，無法判定112年車禍與椎間盤突出是否有因果關係。",
     "remark": "",
     "status": "已完成",
@@ -22004,7 +26854,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "官怡君醫師您好，因臺灣新北地方法檢察署調閱病歷(醫療糾紛)。請惠於文到後兩週內儘速提供病患林萬福114年3月27日至6月24日於貴院之完整病歷資料，請協助確認病歷，是否可以釋出。\n\n因案件有時效性，如未收到回覆病歷將於07月15日釋出，感謝您。\n備註：住院醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "官怡君醫師您好，因臺灣新北地方法檢察署調閱病歷(醫療糾紛)。請惠於文到後兩週內儘速提供病患林萬福114年3月27日至6月24日於貴院之完整病歷資料，請協助確認病歷，是否可以釋出。
+
+因案件有時效性，如未收到回覆病歷將於07月15日釋出，感謝您。
+備註：住院醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "麻煩請交由黃立楷醫師 謝謝",
     "remark": "",
     "status": "已完成",
@@ -22030,7 +26884,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "柯世祐醫師您好:\n請協助回覆公文內文問題,病人姓名:陳諺萭(17882376)\n1.陳君於何時因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.主訴發生事故之時間、地點、原因及經過如何？\n5.有無訴及曾至何處診療？\n6.所患成因如何？\n7.是否為外力傷害抑或為普通疾病？\n請惠示醫理見解",
+    "question": "柯世祐醫師您好:
+請協助回覆公文內文問題,病人姓名:陳諺萭(17882376)
+1.陳君於何時因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.主訴發生事故之時間、地點、原因及經過如何？
+5.有無訴及曾至何處診療？
+6.所患成因如何？
+7.是否為外力傷害抑或為普通疾病？
+請惠示醫理見解",
     "doctor_reply": "1. 114年11月19號 .   2.臀部及左大腿疼痛 ,  3. 無明顯撕裂傷或是擦傷 4.病患主訴受傷機轉為車禍受傷，機車跟機車車禍，地點不明，原因不明, 5.沒有, 6. 機車車禍, 7.外力",
     "remark": "",
     "status": "已完成",
@@ -22056,8 +26919,24 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王智毅醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:黃建勳(06274346),謝謝您\n1-1.黃君何日因上開傷病至貴院初次就診？\n1-2.當時有無主訴發生何傷害事故？\n1-3.事故發生日期、地點及經過情形為何？\n2-1.黃君所患「左側肩部三角肌斷裂」成因為何？\n2-2.是否係因主訴之傷害事故所致或加重？\n請惠示醫理見解。",
-    "doctor_reply": "1-1.黃君何日因上開傷病至貴院初次就診？ \n115/2/23 \n1-2.當時有無主訴發生何傷害事故？ \n交通意外\n1-3.事故發生日期、地點及經過情形為何？ \n114/10/9 於台北市發生交通意外導致左肩挫傷, 核磁共振顯示為左側肩部三角肌斷裂 \n2-1.黃君所患「左側肩部三角肌斷裂」成因為何？ \n意外 \n2-2.是否係因主訴之傷害事故所致或加重？\n是",
+    "question": "王智毅醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:黃建勳(06274346),謝謝您
+1-1.黃君何日因上開傷病至貴院初次就診？
+1-2.當時有無主訴發生何傷害事故？
+1-3.事故發生日期、地點及經過情形為何？
+2-1.黃君所患「左側肩部三角肌斷裂」成因為何？
+2-2.是否係因主訴之傷害事故所致或加重？
+請惠示醫理見解。",
+    "doctor_reply": "1-1.黃君何日因上開傷病至貴院初次就診？ 
+115/2/23 
+1-2.當時有無主訴發生何傷害事故？ 
+交通意外
+1-3.事故發生日期、地點及經過情形為何？ 
+114/10/9 於台北市發生交通意外導致左肩挫傷, 核磁共振顯示為左側肩部三角肌斷裂 
+2-1.黃君所患「左側肩部三角肌斷裂」成因為何？ 
+意外 
+2-2.是否係因主訴之傷害事故所致或加重？
+是",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/16 上午 08:00",
@@ -22082,7 +26961,20 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林哲立醫師您好，請協助回覆問題，謝謝。姜維祐君 因「左肩膀挫傷、左肩旋轉肌肌腱破裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.何時因上開傷病至貴院初診?初診當時有無主訴發生傷害之事故?\n2.發生日期及經過為何?\n3.所患傷病成因為何?是否為主訴之事故造成?\n4.姜維祐君醫療經過及傷勢復原情形如何？\n5.有無併發症或後遺症？\n6.其何時起應可恢復一般工作能力？\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上\n\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林哲立醫師您好，請協助回覆問題，謝謝。姜維祐君 因「左肩膀挫傷、左肩旋轉肌肌腱破裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.何時因上開傷病至貴院初診?初診當時有無主訴發生傷害之事故?
+2.發生日期及經過為何?
+3.所患傷病成因為何?是否為主訴之事故造成?
+4.姜維祐君醫療經過及傷勢復原情形如何？
+5.有無併發症或後遺症？
+6.其何時起應可恢復一般工作能力？
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上
+
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "病人於114/12/27初診，主訴於114/12/22車禍，導致左肩疼痛，建議復健科治療，發現琁轉肌腱撕裂傷，並於復健科治療，判斷何時可以恢復工作",
     "remark": "",
     "status": "已完成",
@@ -22108,7 +27000,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "洪家佩醫師您好，請協助回覆問題，謝謝。姜維祐君 因「左肩膀挫傷、左肩旋轉肌肌腱破裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.何時因上開傷病至貴院初診?初診當時有無主訴發生傷害之事故?\n2.發生日期及經過為何?\n3.所患傷病成因為何?是否為主訴之事故造成?\n4.姜維祐君醫療經過及傷勢復原情形如何？\n5.有無併發症或後遺症？\n6.其何時起應可恢復一般工作能力？\n7.請協助確認病歷是否可釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "洪家佩醫師您好，請協助回覆問題，謝謝。姜維祐君 因「左肩膀挫傷、左肩旋轉肌肌腱破裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.何時因上開傷病至貴院初診?初診當時有無主訴發生傷害之事故?
+2.發生日期及經過為何?
+3.所患傷病成因為何?是否為主訴之事故造成?
+4.姜維祐君醫療經過及傷勢復原情形如何？
+5.有無併發症或後遺症？
+6.其何時起應可恢復一般工作能力？
+7.請協助確認病歷是否可釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "患者於115/1/10至骨科門診就診，據病歷記載顯示，當時患者主訴為114/12/22車禍後導致左肩疼痛與肩關節活動度受限。後於115/1/28至復健科門診就診，主訴為左肩疼痛與關節活動度受限。X光報告顯示疑似左肩峰扯裂性骨折。因無之前的左肩X光可以比對，並無法完全確定係為患者自述之事故所造成。但扯裂性骨折有較大的機率是外力所造成。患者最後一次回診日期為115/3/3，當時肩痛有所改善，應可恢復一般輕便工作。病歷可釋出。",
     "remark": "",
     "status": "已完成",
@@ -22134,7 +27038,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "饒紀倫醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:張義楠(02148836)謝謝您\n1-1.張君何日因「頸部揮鞭症候群疑似左側椎神經根病變」初次至貴院就診？\n1-2.當時有無主訴發生何傷害事故？\n1-3.事故發生日期、地點及經過情形為何？\n2-1.張君所患「頸部揮鞭症候群疑似左側椎神經根病變」成因為何？\n2-2.是否係因主訴之傷害事故所致或加重？\n3-1.張君因上開傷病至貴院治療之醫療經過及復原情形為何？\n3-2.有無併發症或後遺症？\n3-3.療養至何日起可恢復一般工作能力？\n3-4.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "饒紀倫醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:張義楠(02148836)謝謝您
+1-1.張君何日因「頸部揮鞭症候群疑似左側椎神經根病變」初次至貴院就診？
+1-2.當時有無主訴發生何傷害事故？
+1-3.事故發生日期、地點及經過情形為何？
+2-1.張君所患「頸部揮鞭症候群疑似左側椎神經根病變」成因為何？
+2-2.是否係因主訴之傷害事故所致或加重？
+3-1.張君因上開傷病至貴院治療之醫療經過及復原情形為何？
+3-2.有無併發症或後遺症？
+3-3.療養至何日起可恢復一般工作能力？
+3-4.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "該病人於114年9月30日至本院急診就診，114年10月13日至本院復健科門診就診，主訴為車禍造成頭部前胸挫傷，頸部扭傷，左手及左上肢麻木無力。當時診斷為頸部揮鞭症候群疑似左側頸椎神經根病變，之後在神經內科門診接受相關檢查，也在復健科門診接受治療。頸部揮鞭症候群常出現在車禍後的病人。至115年4月20日復健科門診就診時表示症狀已完全減輕，因此停止治療。",
     "remark": "饒醫師您好:麻煩您協助補充公文回覆2-1.張君所患「頸部揮鞭症候群疑似左側椎神經根病變」成因為何？2-2.是否係因主訴之傷害事故所致或加重？3-2.有無併發症或後遺症？3-3.療養至何日起可恢復一般工作能力？3-4.認定理由及依據為何？感謝您",
     "status": "已完成",
@@ -22160,8 +27075,21 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:許秀安(03499634),謝謝您\n1.許君因上開傷病至貴院治療之醫療經過及傷勢復原情形如何？\n2.有無併發症或後遺症？\n3.其何日起應可恢復一般工作能力？\n4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1.許君因上開傷病至貴院治療之醫療經過及傷勢復原情形如何？\n114年9月25日及10月9日至門診就醫，114年9月25日當日接受PRP治療。爾後未再追蹤。\n2.有無併發症或後遺症？\n以門診紀錄所見並無併發症\n3.其何日起應可恢復一般工作能力？\n以診斷書所述，114年10月23日後可恢復工作。\n4.認定理由及依據為何？\n接受治療後須2-3周休養及修復，病患自述工作性質需負重，因此需休養。",
+    "question": "陳冠豪醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:許秀安(03499634),謝謝您
+1.許君因上開傷病至貴院治療之醫療經過及傷勢復原情形如何？
+2.有無併發症或後遺症？
+3.其何日起應可恢復一般工作能力？
+4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1.許君因上開傷病至貴院治療之醫療經過及傷勢復原情形如何？
+114年9月25日及10月9日至門診就醫，114年9月25日當日接受PRP治療。爾後未再追蹤。
+2.有無併發症或後遺症？
+以門診紀錄所見並無併發症
+3.其何日起應可恢復一般工作能力？
+以診斷書所述，114年10月23日後可恢復工作。
+4.認定理由及依據為何？
+接受治療後須2-3周休養及修復，病患自述工作性質需負重，因此需休養。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/16 上午 08:00",
@@ -22186,8 +27114,31 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王智毅醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:陳貞諭(04407050),謝謝您\n1-1.陳君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「左側膝部扭傷、左膝扭挫傷合併前十字韌帶外傷性斷裂及半月板軟骨外傷性破裂、左下肢水腫」是否係因主訴之傷害事故所致？\n2-1.陳君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1-1.陳君就診有無主訴傷害事故？ \n\n主訴於工作中滑倒 \n1-2.發生日期及原因為何？ \n2024/10 /6  於工作中滑倒  \n1-3.所患「左側膝部扭傷、左膝扭挫傷合併前十字韌帶外傷性斷裂及半月板軟骨外傷性破裂、左下肢水腫」是否係因主訴之傷害事故所致？\n是\n2-1.陳君因上開傷病治療經過為何？\n於113/10/7~ 115/7/17持續於骨科及復健科就診  \n2-2.有無併發症或後遺症？ \n於115/7/17 表示左膝仍持續有疼痛\n2-3.療養至何時起可從事一般工作？ \n病患因上述病因, 預計療養一年可從事一般工作 \n2-4.認定理由及依據為何？\n依常規醫理 及 病患之就診紀錄",
+    "question": "王智毅醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:陳貞諭(04407050),謝謝您
+1-1.陳君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「左側膝部扭傷、左膝扭挫傷合併前十字韌帶外傷性斷裂及半月板軟骨外傷性破裂、左下肢水腫」是否係因主訴之傷害事故所致？
+2-1.陳君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1-1.陳君就診有無主訴傷害事故？ 
+
+主訴於工作中滑倒 
+1-2.發生日期及原因為何？ 
+2024/10 /6  於工作中滑倒  
+1-3.所患「左側膝部扭傷、左膝扭挫傷合併前十字韌帶外傷性斷裂及半月板軟骨外傷性破裂、左下肢水腫」是否係因主訴之傷害事故所致？
+是
+2-1.陳君因上開傷病治療經過為何？
+於113/10/7~ 115/7/17持續於骨科及復健科就診  
+2-2.有無併發症或後遺症？ 
+於115/7/17 表示左膝仍持續有疼痛
+2-3.療養至何時起可從事一般工作？ 
+病患因上述病因, 預計療養一年可從事一般工作 
+2-4.認定理由及依據為何？
+依常規醫理 及 病患之就診紀錄",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/16 上午 08:00",
@@ -22212,7 +27163,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "林育如醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:陳貞諭(04407050),謝謝您\n1.陳君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "林育如醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:陳貞諭(04407050),謝謝您
+1.陳君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -22238,7 +27195,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳弘洲主任您好:\n請主任協助回覆公文內文問題,病人姓名:林盛謙(01104185),謝謝您\n1-1.林君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「左側膝部內半月板破損、左膝前後十字韌帶部分撕裂傷」是否係因主訴之傷害事故所致？\n2-1.林君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "陳弘洲主任您好:
+請主任協助回覆公文內文問題,病人姓名:林盛謙(01104185),謝謝您
+1-1.林君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「左側膝部內半月板破損、左膝前後十字韌帶部分撕裂傷」是否係因主訴之傷害事故所致？
+2-1.林君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "1-1: 有，左膝意外創傷。1-2: 114年10月間，原因不詳，但查雲端於耕莘醫院114年12月18日左膝核磁共振報告顯示半月板破損以及前後十字韌帶部分撕裂傷，顯然為意外創傷所造成之傷勢。1-3: 是。2-1: 首先進行復健治療，且評估其傷勢建議接受自體富含血小板血漿注射以期能有較佳之恢復，故安排接受一次超音波導引自體富含血小板血漿注射。2-2: 仍有些許痠痛症狀。2-3: 115/7起應可從事一般工作，但應避免左膝過度負重或過度使用之工作。2-4: 病歷。",
     "remark": "",
     "status": "已完成",
@@ -22264,8 +27230,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "謝岳穎醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:林盛謙(01104185),謝謝您\n1-1.林君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「左側膝部內半月板破損、左膝前後十字韌帶部分撕裂傷」是否係因主訴之傷害事故所致？\n2-1.林君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n請惠示醫理見解",
-    "doctor_reply": "1-1, 1-2, 1-3: 沒有特別提及事故傷害過程，因此沒有辦法判斷\n2-1~2-4: 因病人只來看過兩次門診諮詢，與病人討論後建議他先以復健治療為主，因此無法回答後續的治療經過以及恢復的狀況。",
+    "question": "謝岳穎醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:林盛謙(01104185),謝謝您
+1-1.林君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「左側膝部內半月板破損、左膝前後十字韌帶部分撕裂傷」是否係因主訴之傷害事故所致？
+2-1.林君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+請惠示醫理見解",
+    "doctor_reply": "1-1, 1-2, 1-3: 沒有特別提及事故傷害過程，因此沒有辦法判斷
+2-1~2-4: 因病人只來看過兩次門診諮詢，與病人討論後建議他先以復健治療為主，因此無法回答後續的治療經過以及恢復的狀況。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/16 上午 08:00",
@@ -22290,7 +27266,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳弘州主任您好:\n請主任協助回覆公文內文問題,病人姓名:許淑珍(01470002)\n1-1.許君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「左肩旋轉肌肌腱炎併關節炎、頸椎椎間盤突出」是否係因主訴之傷害事故所致？\n2-1.許君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "陳弘州主任您好:
+請主任協助回覆公文內文問題,病人姓名:許淑珍(01470002)
+1-1.許君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「左肩旋轉肌肌腱炎併關節炎、頸椎椎間盤突出」是否係因主訴之傷害事故所致？
+2-1.許君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "1-1. 於復健科門診病歷未有相關紀錄，但於骨科門診有記錄因意外致傷。1-2. 約在114年8月間，可能為工作需負重致傷。1-3. 左肩之傷勢可能與意外傷害有關。2-1. 主要於114年11月至115年4月間接受復健治療。2-2. 仍有左肩疼痛及無力之症狀，其後骨科醫師所安排之115年4月29日核磁共振檢查發現左肩有肌腱及軟骨之撕裂傷。2-3. 左肩仍無法負重工作，僅能從事輕便工作，後續仍需持續治療。2-4.  根據病歷記載。",
     "remark": "",
     "status": "已完成",
@@ -22316,8 +27301,21 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "鄔逸群醫師您好，請協助回覆問題，謝謝。\n1.病患江雨蓉 附件一診斷證明書有關「宜休養及專人照顧三個月」是否為該診斷證明書診治醫生之專業判斷?\n2.與附件二「江君之傷情生活仍能自理，只是需人協助起居」等語，有無不符?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "診斷證明書所載「宜休養及專人照護」與公文回覆所載的「仍能自理，需人協助」兩者並無矛盾。\n\n「宜休養及專人照護」係考量病人術前即有肌肉撕裂傷，術後因植皮手術及疤痕癒合需求，須避免過度活動，以降低傷口張力並促進傷口癒合，故建議於休養期間由專人協助照護。\n\n而「仍能自理，需人協助」則係指病人於身體狀況許可下，仍可完成部分基本日常生活活動，例如可坐於桌邊進食、刷牙、採坐姿沐浴及短距離行動等；惟於移位、站立及步行時仍需他人扶持協助，且整體活動能力受術前肌肉撕裂傷及術後植皮、疤痕影響而受限，不宜長時間或大量活動，以免影響傷口癒合。\n\n爰此，前述兩項記載係分別反映病人整體照護需求及實際生活功能，內容一致且無相互衝突之情形。",
+    "question": "鄔逸群醫師您好，請協助回覆問題，謝謝。
+1.病患江雨蓉 附件一診斷證明書有關「宜休養及專人照顧三個月」是否為該診斷證明書診治醫生之專業判斷?
+2.與附件二「江君之傷情生活仍能自理，只是需人協助起居」等語，有無不符?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "診斷證明書所載「宜休養及專人照護」與公文回覆所載的「仍能自理，需人協助」兩者並無矛盾。
+
+「宜休養及專人照護」係考量病人術前即有肌肉撕裂傷，術後因植皮手術及疤痕癒合需求，須避免過度活動，以降低傷口張力並促進傷口癒合，故建議於休養期間由專人協助照護。
+
+而「仍能自理，需人協助」則係指病人於身體狀況許可下，仍可完成部分基本日常生活活動，例如可坐於桌邊進食、刷牙、採坐姿沐浴及短距離行動等；惟於移位、站立及步行時仍需他人扶持協助，且整體活動能力受術前肌肉撕裂傷及術後植皮、疤痕影響而受限，不宜長時間或大量活動，以免影響傷口癒合。
+
+爰此，前述兩項記載係分別反映病人整體照護需求及實際生活功能，內容一致且無相互衝突之情形。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/16 上午 08:00",
@@ -22342,8 +27340,26 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王俊凱醫師您好，請協助回覆問題，謝謝。\n(1)1.被告王俊毅經貴醫師診斷患有思覺失調症，則被告患病之時間點係於何時?\n    2.於本案發生之前(即115年1月21日之前)之病情控制是否穩定?\n(2)(檢附門診記錄單)被告於案發日(即115年1月21日晚間8 時50分許)就醫時，有無向貴醫師提及本案性侵情節?\n    1.如有，則:被告係如何向貴醫師描述該事件?\n    2.被告有無提及其於「案發時(即115年1月21日凌晨1時許)」之精神狀態?\n    3.或者，因犯案後感受精神壓力?\n(3)承上，以貴醫師之觀察,被告於案發日晚間就醫時之精 神狀態如何?與其先前就醫情形相較，有無特別異常情形(例如急性精神病症狀)?\n(4)承上，案發日之醫令欄註記「Invega!extend release 3mg/tab for psychotic symptoms」、「Binin U(錠)!5mf/tab for psychotic symptoms」，且用法均為「HSPRN」(睡前需要時服用,以下合稱為「HSPRN」藥物)，則該次除原固定藥物外，另加開上揭「HSPRN」藥物，其原因為何?係一時情緒波動所致，抑或有精神病症惡化現象?為何115年2月26日之門診記錄單醫令欄即「無」上開「HSPRN藥物之記載?\n(5)(檢附診斷證明書)此診斷證明書係經貴醫師於115年2月26日所開立，則被告係以如何之理由，請求貴醫師開立該診斷證明書?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "(1) 1. 根據本院病歷紀錄，被告於104/09/27~ 104/10/27經急診至本院精神科急性病房住院，出院診斷即為思覺失調症，當時年齡為23歲。2. 根據本院病歷紀錄，被告就診時話少，多由案母陳述病情。檢視案發當日(含)最近三次就診紀錄：\"狀況都還可以...藥都有吃\" (114/11/9)、\"狀況還好...藥物沒有中斷\"(114/12/24)、\"過年要回台東...藥照之前就好\"(115/1/21)，難謂病情控制不穩定。\n(2) 1. 沒有提及本案性侵情節 \n(3) 沒有特別異常之狀況 \n(4) 因為單筆無法一次開立35天藥物（最多30天），另外5天採用PRN之開法，純係補足下次就診前劑量不足的部份，跟病情穩不穩定無關。115年2月26日之門診只開立20天，故不需要另外開立PRN藥物。\n(5) 被告不是第一次開立診斷書，經查112/11/15門診紀錄，案母陳述 \"觀護人希望我每個月報告, 藥都有吃\"，當次即有開立診斷書，乃應司法機關人員之要求開立。115年2月26日所開立之診斷書，病歷並未特別記載理由，案母僅陳述 \"過年沒回台東...藥都有吃\"，要求開立「和之前一樣的診斷書」。此次就診亦無提到性侵案件。",
+    "question": "王俊凱醫師您好，請協助回覆問題，謝謝。
+(1)1.被告王俊毅經貴醫師診斷患有思覺失調症，則被告患病之時間點係於何時?
+    2.於本案發生之前(即115年1月21日之前)之病情控制是否穩定?
+(2)(檢附門診記錄單)被告於案發日(即115年1月21日晚間8 時50分許)就醫時，有無向貴醫師提及本案性侵情節?
+    1.如有，則:被告係如何向貴醫師描述該事件?
+    2.被告有無提及其於「案發時(即115年1月21日凌晨1時許)」之精神狀態?
+    3.或者，因犯案後感受精神壓力?
+(3)承上，以貴醫師之觀察,被告於案發日晚間就醫時之精 神狀態如何?與其先前就醫情形相較，有無特別異常情形(例如急性精神病症狀)?
+(4)承上，案發日之醫令欄註記「Invega!extend release 3mg/tab for psychotic symptoms」、「Binin U(錠)!5mf/tab for psychotic symptoms」，且用法均為「HSPRN」(睡前需要時服用,以下合稱為「HSPRN」藥物)，則該次除原固定藥物外，另加開上揭「HSPRN」藥物，其原因為何?係一時情緒波動所致，抑或有精神病症惡化現象?為何115年2月26日之門診記錄單醫令欄即「無」上開「HSPRN藥物之記載?
+(5)(檢附診斷證明書)此診斷證明書係經貴醫師於115年2月26日所開立，則被告係以如何之理由，請求貴醫師開立該診斷證明書?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "(1) 1. 根據本院病歷紀錄，被告於104/09/27~ 104/10/27經急診至本院精神科急性病房住院，出院診斷即為思覺失調症，當時年齡為23歲。2. 根據本院病歷紀錄，被告就診時話少，多由案母陳述病情。檢視案發當日(含)最近三次就診紀錄：\"狀況都還可以...藥都有吃\" (114/11/9)、\"狀況還好...藥物沒有中斷\"(114/12/24)、\"過年要回台東...藥照之前就好\"(115/1/21)，難謂病情控制不穩定。
+(2) 1. 沒有提及本案性侵情節 
+(3) 沒有特別異常之狀況 
+(4) 因為單筆無法一次開立35天藥物（最多30天），另外5天採用PRN之開法，純係補足下次就診前劑量不足的部份，跟病情穩不穩定無關。115年2月26日之門診只開立20天，故不需要另外開立PRN藥物。
+(5) 被告不是第一次開立診斷書，經查112/11/15門診紀錄，案母陳述 \"觀護人希望我每個月報告, 藥都有吃\"，當次即有開立診斷書，乃應司法機關人員之要求開立。115年2月26日所開立之診斷書，病歷並未特別記載理由，案母僅陳述 \"過年沒回台東...藥都有吃\"，要求開立「和之前一樣的診斷書」。此次就診亦無提到性侵案件。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/18 上午 08:00",
@@ -22368,8 +27384,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王智毅醫師您好，請協助回覆問題，謝謝。\n1.病患洪柏新於民國114年10月7日因車禍前往貴院就醫，貴院於114年10月8日開立診斷證明書記載「尾椎挫傷、雙側臀部挫傷，右手肘擦挫傷、114年12月7日開立之診斷證明書記載「尾股骨折』等病情，是否有回復可能?\n2.如能回復約需要多少時間?\n3.該患者上述之傷勢，是否於身體或健康有其重大影響，且達不能診療或難於治療之程度?\n檢附患者於方舟復健科診所115年2月11日、115年3月10日開立之診斷證明書供參。\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)",
-    "doctor_reply": "1.病患洪柏新於民國114年10月7日因車禍前往貴院就醫，貴院於114年10月8日開立診斷證明書記載「尾椎挫傷、雙側臀部挫傷，右手肘擦挫傷、114年12月7日開立之診斷證明書記載「尾股骨折』等病情，是否有回復可能? \n尾骨骨折 不需手術，只要透過藥物、坐墊與物理治療等保守療法，通常在 6 至 8 週內即可自行癒合\n2.如能回復約需要多少時間?通常在 6 至 8 週內即可自行癒合\n3.該患者上述之傷勢，是否於身體或健康有其重大影響，且達不能診療或難於治療之程度? 不會",
+    "question": "王智毅醫師您好，請協助回覆問題，謝謝。
+1.病患洪柏新於民國114年10月7日因車禍前往貴院就醫，貴院於114年10月8日開立診斷證明書記載「尾椎挫傷、雙側臀部挫傷，右手肘擦挫傷、114年12月7日開立之診斷證明書記載「尾股骨折』等病情，是否有回復可能?
+2.如能回復約需要多少時間?
+3.該患者上述之傷勢，是否於身體或健康有其重大影響，且達不能診療或難於治療之程度?
+檢附患者於方舟復健科診所115年2月11日、115年3月10日開立之診斷證明書供參。
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)",
+    "doctor_reply": "1.病患洪柏新於民國114年10月7日因車禍前往貴院就醫，貴院於114年10月8日開立診斷證明書記載「尾椎挫傷、雙側臀部挫傷，右手肘擦挫傷、114年12月7日開立之診斷證明書記載「尾股骨折』等病情，是否有回復可能? 
+尾骨骨折 不需手術，只要透過藥物、坐墊與物理治療等保守療法，通常在 6 至 8 週內即可自行癒合
+2.如能回復約需要多少時間?通常在 6 至 8 週內即可自行癒合
+3.該患者上述之傷勢，是否於身體或健康有其重大影響，且達不能診療或難於治療之程度? 不會",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/18 上午 08:00",
@@ -22394,8 +27421,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "黃錦前主任您好:\n請主任協助回覆公文內文問題,病人姓名:張文展(04158222)謝謝您\n1-1.張君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「右側遠端脛骨骨折、右側遠端脛骨骨折及癒合不良」是否係因主訴之傷害事故所致？\n2-1.張君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1-1. 病患有主訴於1141121因跌倒外傷導致右側下肢骨折\n1-2. 1141121, 跌倒外傷\n1-3. 是\n2-1: 11412~11502 於骨科林哲立醫師門診採保守治療; 後因骨折癒合不良故於1150214至黃錦前醫師門診求診, 建議手術治療. 病患於1150226住院並接受手術治療, 於1150302出院.\n2-2: 術後恢復良好\n2.3: 術後三個月\n2.4: 因本次骨折情形為癒合不良, 骨頭本身生長能力較差, 故建議手術後持續追蹤, 約略需三個月時間大致骨折癒合穩定",
+    "question": "黃錦前主任您好:
+請主任協助回覆公文內文問題,病人姓名:張文展(04158222)謝謝您
+1-1.張君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「右側遠端脛骨骨折、右側遠端脛骨骨折及癒合不良」是否係因主訴之傷害事故所致？
+2-1.張君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1-1. 病患有主訴於1141121因跌倒外傷導致右側下肢骨折
+1-2. 1141121, 跌倒外傷
+1-3. 是
+2-1: 11412~11502 於骨科林哲立醫師門診採保守治療; 後因骨折癒合不良故於1150214至黃錦前醫師門診求診, 建議手術治療. 病患於1150226住院並接受手術治療, 於1150302出院.
+2-2: 術後恢復良好
+2.3: 術後三個月
+2.4: 因本次骨折情形為癒合不良, 骨頭本身生長能力較差, 故建議手術後持續追蹤, 約略需三個月時間大致骨折癒合穩定",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/19 上午 08:00",
@@ -22420,8 +27462,24 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "黃錦前主任您好:\n請主任協助回覆公文內文問題,病人姓名:張文展(04158222),謝謝您\n1-1.張君就診有無主訴傷害事故？\n1-2.發生日期及原因為何？\n1-3.所患「右側遠端脛骨骨折、右側遠端脛骨骨折及癒合不良」是否係因主訴之傷害事故所致？\n2-1.張君因上開傷病治療經過為何？\n2-2.有無併發症或後遺症？\n2-3.療養至何時起可從事一般工作？\n2-4.認定理由及依據為何？\n3-1請確認病歷是否可釋出?\n請惠示醫理見解。",
-    "doctor_reply": "1-1. 病患有主訴於1141121因跌倒外傷導致右側下肢骨折\n1-2. 1141121, 跌倒外傷\n1-3. 是\n2-1: 11412~11502 於骨科林哲立醫師門診採保守治療; 後因骨折癒合不良故於1150214至黃錦前醫師門診求診, 建議手術治療. 病患於1150226住院並接受手術治療, 於1150302出院.\n2-2: 術後恢復良好\n2.3: 術後三個月\n2.4: 因本次骨折情形為癒合不良, 骨頭本身生長能力較差, 故建議手術後持續追蹤, 約略需三個月時間大致骨折癒合穩定",
+    "question": "黃錦前主任您好:
+請主任協助回覆公文內文問題,病人姓名:張文展(04158222),謝謝您
+1-1.張君就診有無主訴傷害事故？
+1-2.發生日期及原因為何？
+1-3.所患「右側遠端脛骨骨折、右側遠端脛骨骨折及癒合不良」是否係因主訴之傷害事故所致？
+2-1.張君因上開傷病治療經過為何？
+2-2.有無併發症或後遺症？
+2-3.療養至何時起可從事一般工作？
+2-4.認定理由及依據為何？
+3-1請確認病歷是否可釋出?
+請惠示醫理見解。",
+    "doctor_reply": "1-1. 病患有主訴於1141121因跌倒外傷導致右側下肢骨折
+1-2. 1141121, 跌倒外傷
+1-3. 是
+2-1: 11412~11502 於骨科林哲立醫師門診採保守治療; 後因骨折癒合不良故於1150214至黃錦前醫師門診求診, 建議手術治療. 病患於1150226住院並接受手術治療, 於1150302出院.
+2-2: 術後恢復良好
+2.3: 術後三個月
+2.4: 因本次骨折情形為癒合不良, 骨頭本身生長能力較差, 故建議手術後持續追蹤, 約略需三個月時間大致骨折癒合穩定",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/19 上午 08:00",
@@ -22446,7 +27504,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "曾孟元醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於07月22日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "曾孟元醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於07月22日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "可",
     "remark": "",
     "status": "已完成",
@@ -22472,7 +27534,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "楊宗燁醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於07月22日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "楊宗燁醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於07月22日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "可釋出",
     "remark": "",
     "status": "已完成",
@@ -22498,8 +27564,25 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "馬尚德醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:陳昶翰(01007941),謝謝您\n1-1.陳君何時因上開傷病至貴院初診?\n1-2.當時有無主訴傷害事故?\n1-3.發生日期及經過為何?\n1-4.所患是否為主訴之事故所致？\n2-1陳君因上開傷病於貴院之治療經過及復原情形為何？\n2-2.有無併發症或後遺症？\n2-3.合理療養期為何？\n2-4.自何時起可恢復一般工作能力？\n請惠示醫理見解。",
-    "doctor_reply": "1-1 2025/10/3\n1-2 主訴為被水泥噴濺\n1-3 一次性發生，就醫前一週內發生\n1-4.是\n2-1.就診時傷害狀況不嚴重，復原佳，惟後續未複診，無從判斷治療經過與後續復原情形\n2-2.同上，後續無從得知\n2-3 兩週以內\n2-4.同上，受傷後兩週內",
+    "question": "馬尚德醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:陳昶翰(01007941),謝謝您
+1-1.陳君何時因上開傷病至貴院初診?
+1-2.當時有無主訴傷害事故?
+1-3.發生日期及經過為何?
+1-4.所患是否為主訴之事故所致？
+2-1陳君因上開傷病於貴院之治療經過及復原情形為何？
+2-2.有無併發症或後遺症？
+2-3.合理療養期為何？
+2-4.自何時起可恢復一般工作能力？
+請惠示醫理見解。",
+    "doctor_reply": "1-1 2025/10/3
+1-2 主訴為被水泥噴濺
+1-3 一次性發生，就醫前一週內發生
+1-4.是
+2-1.就診時傷害狀況不嚴重，復原佳，惟後續未複診，無從判斷治療經過與後續復原情形
+2-2.同上，後續無從得知
+2-3 兩週以內
+2-4.同上，受傷後兩週內",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/24 上午 08:00",
@@ -22524,8 +27607,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "張舜程主任您好\n請主任協助回覆公文內文問題,病人姓名:許哲青(17930235),謝謝您\n1.許哲青君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n5.請確認病歷是否可釋出?\n請惠示醫理見解。",
-    "doctor_reply": "1. 外傷 : 入院手術及後續門診治療\n2. 無併發症\n3. 大約 115-04-01 可從事一般工作\n4. 傷口及手指活動能力與復健成果\n5. 可以釋出病歷",
+    "question": "張舜程主任您好
+請主任協助回覆公文內文問題,病人姓名:許哲青(17930235),謝謝您
+1.許哲青君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+5.請確認病歷是否可釋出?
+請惠示醫理見解。",
+    "doctor_reply": "1. 外傷 : 入院手術及後續門診治療
+2. 無併發症
+3. 大約 115-04-01 可從事一般工作
+4. 傷口及手指活動能力與復健成果
+5. 可以釋出病歷",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/24 上午 08:00",
@@ -22550,8 +27644,39 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好:\n請醫師協處回覆公文內文問題,病人姓名:方希士(17895707),謝謝您\n1-1.何時因「右肩挫傷併旋轉肌袖破裂」傷病至貴院初診？\n1-2.初診當時有無主訴發生傷害之事故？\n1-3.發生日期及經過為何？\n1-4.有無主訴至其他醫療院所就醫？\n2-1.所患「右肩挫傷併旋轉肌袖破裂」傷病成因為何？\n2-2.是否為主訴之事故造成？\n3-1.方君醫療經過及傷勢復原情形如何？\n3-2.有無併發症或後遺症？\n3-3.其何時應可恢復一般工作能力？\n3-4.請確認病歷是否可釋出?\n請惠示醫理見解。",
-    "doctor_reply": "1-1.何時因「右肩挫傷併旋轉肌袖破裂」傷病至貴院初診？\n2025年11月28日\n 1-2.初診當時有無主訴發生傷害之事故？ \n主訴為就診前一年前工作跌傷挫傷肩膀後，長期疼痛\n1-3.發生日期及經過為何？\n醫療端不清楚\n 1-4.有無主訴至其他醫療院所就醫？ \n無相關主訴\n2-1.所患「右肩挫傷併旋轉肌袖破裂」傷病成因為何？\n以病患年紀來說，外傷為主要致病機轉\n 2-2.是否為主訴之事故造成？\n高度相關\n 3-1.方君醫療經過及傷勢復原情形如何？ \n2026年03月27日接受關節鏡肌袖修補手術，術後恢復良好\n3-2.有無併發症或後遺症？ \n無\n3-3.其何時應可恢復一般工作能力？\n三個月，若需負重需延長至一年\n 3-4.請確認病歷是否可釋出? \n可",
+    "question": "陳冠豪醫師您好:
+請醫師協處回覆公文內文問題,病人姓名:方希士(17895707),謝謝您
+1-1.何時因「右肩挫傷併旋轉肌袖破裂」傷病至貴院初診？
+1-2.初診當時有無主訴發生傷害之事故？
+1-3.發生日期及經過為何？
+1-4.有無主訴至其他醫療院所就醫？
+2-1.所患「右肩挫傷併旋轉肌袖破裂」傷病成因為何？
+2-2.是否為主訴之事故造成？
+3-1.方君醫療經過及傷勢復原情形如何？
+3-2.有無併發症或後遺症？
+3-3.其何時應可恢復一般工作能力？
+3-4.請確認病歷是否可釋出?
+請惠示醫理見解。",
+    "doctor_reply": "1-1.何時因「右肩挫傷併旋轉肌袖破裂」傷病至貴院初診？
+2025年11月28日
+ 1-2.初診當時有無主訴發生傷害之事故？ 
+主訴為就診前一年前工作跌傷挫傷肩膀後，長期疼痛
+1-3.發生日期及經過為何？
+醫療端不清楚
+ 1-4.有無主訴至其他醫療院所就醫？ 
+無相關主訴
+2-1.所患「右肩挫傷併旋轉肌袖破裂」傷病成因為何？
+以病患年紀來說，外傷為主要致病機轉
+ 2-2.是否為主訴之事故造成？
+高度相關
+ 3-1.方君醫療經過及傷勢復原情形如何？ 
+2026年03月27日接受關節鏡肌袖修補手術，術後恢復良好
+3-2.有無併發症或後遺症？ 
+無
+3-3.其何時應可恢復一般工作能力？
+三個月，若需負重需延長至一年
+ 3-4.請確認病歷是否可釋出? 
+可",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/24 上午 08:00",
@@ -22576,8 +27701,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "王智毅醫師您好:\n請醫師協助回覆公文內文問題,病人姓名:陳正良(03183544),謝謝您\n1.陳君就診有無主訴傷病發生時間及原因為何？\n2.有無主訴何時開始患部有不適症狀？\n3.其於114年4月9日入院安排右肩旋轉肌縫補手術，術後於何時檢查已痊癒或已可恢復工作能力？\n4.請確認病歷是否可釋出?\n請惠示醫理見解。",
-    "doctor_reply": "1.陳君就診有無主訴傷病發生時間及原因為何？ 主訴因跌倒導致右肩挫傷  114 /2 \n 2.有無主訴何時開始患部有不適症狀？  114/2 跌倒後開始右肩疼痛\n3.其於114年4月9日入院安排右肩旋轉肌縫補手術，術後於何時檢查已痊癒或已可恢復工作能力？ 術後約六個月可恢復工作能力 \n 4.請確認病歷是否可釋出?  可釋出",
+    "question": "王智毅醫師您好:
+請醫師協助回覆公文內文問題,病人姓名:陳正良(03183544),謝謝您
+1.陳君就診有無主訴傷病發生時間及原因為何？
+2.有無主訴何時開始患部有不適症狀？
+3.其於114年4月9日入院安排右肩旋轉肌縫補手術，術後於何時檢查已痊癒或已可恢復工作能力？
+4.請確認病歷是否可釋出?
+請惠示醫理見解。",
+    "doctor_reply": "1.陳君就診有無主訴傷病發生時間及原因為何？ 主訴因跌倒導致右肩挫傷  114 /2 
+ 2.有無主訴何時開始患部有不適症狀？  114/2 跌倒後開始右肩疼痛
+3.其於114年4月9日入院安排右肩旋轉肌縫補手術，術後於何時檢查已痊癒或已可恢復工作能力？ 術後約六個月可恢復工作能力 
+ 4.請確認病歷是否可釋出?  可釋出",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/25 上午 08:00",
@@ -22602,7 +27736,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "廖家德醫師好，臺灣桃園地方檢察署來文調閱病歷。\n惠請貴院提供說明二資料過署參辦，請查照。\n請提供病患賀照榮於115年2月間之病歷資料過署。\n1.請協助確認病歷，是否可以釋出?\n請惠示醫理見解\n\n因案件有時效性，如未收到回覆病歷將於07月25日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "廖家德醫師好，臺灣桃園地方檢察署來文調閱病歷。
+惠請貴院提供說明二資料過署參辦，請查照。
+請提供病患賀照榮於115年2月間之病歷資料過署。
+1.請協助確認病歷，是否可以釋出?
+請惠示醫理見解
+
+因案件有時效性，如未收到回覆病歷將於07月25日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "同意可以送出，謝謝。",
     "remark": "",
     "status": "已完成",
@@ -22628,7 +27769,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃裕閔醫師好，此件為(醫療偵查)案件。\n需提供王筱雯111年6月迄今骨科就診病歷紀錄，請查照。\n1.請協助確認病歷，是否可以釋出?\n請惠示醫理見解\n\n因案件有時效性，如未收到回覆病歷將於07月25日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "黃裕閔醫師好，此件為(醫療偵查)案件。
+需提供王筱雯111年6月迄今骨科就診病歷紀錄，請查照。
+1.請協助確認病歷，是否可以釋出?
+請惠示醫理見解
+
+因案件有時效性，如未收到回覆病歷將於07月25日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "可以",
     "remark": "",
     "status": "已完成",
@@ -22654,7 +27801,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "章筱伶醫師您好，請協助回覆問題，謝謝。\n1.貴院病患周欣怡關於左眼治療的癒後情況，有無已達毀敗或嚴重減損一目之視能程度?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機\n書湘 敬上",
+    "question": "章筱伶醫師您好，請協助回覆問題，謝謝。
+1.貴院病患周欣怡關於左眼治療的癒後情況，有無已達毀敗或嚴重減損一目之視能程度?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機
+書湘 敬上",
     "doctor_reply": "您好， 病患周欣怡最近一次就診日期為115年06月03日，於當日測得左眼矯正視力零點陸參，目前左眼視網膜未再出血，但左眼白內障嚴重度稍微增加，推測與左眼玻璃體切除手術術後相關。",
     "remark": "",
     "status": "已完成",
@@ -22680,8 +27833,49 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "辜筱倫醫師您好，請協助回覆問題，謝謝。劉沛聞 因「失眠 焦慮憂鬱情緒、頭暈、噁心；腦震盪症候群」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.劉沛聞君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「失眠 焦慮憂鬱情緒、頭暈、噁心；腦震盪症候群」是否係因主訴之傷害事故所致？\n4.劉沛聞君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n8.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)\n書湘 敬上",
-    "doctor_reply": "1.\t劉沛聞君就診有無主訴傷害事故？\n病患自述為空服員, 工作中被客人於左臉打巴掌。\n\n2.\t發生日期及原因為何？\n病患自述為空服員, 工作中被客人於左臉打巴掌。根據病患自述, 發生日期約為2026年4月3日。\n\n3.\t所患「失眠 焦慮憂鬱情緒、頭暈、噁心；腦震盪症候群」是否係因主訴之傷害事故所致？ \n無法確定。\n\n4.\t劉沛聞君因上開傷病治療經過為何？ \n於民國115 年 4月7日和民國115年7月21日至本院精神科門診就診, 有開立睡前必要時服用的藥物Ativan (學名為Lorazepam)。\n\n民國115 年 4月7日的診斷書內容醫囑如下: \n病患於民國115 年 4月7日至門診就診。近兩週宜視病況休養併民國115 年 4 月 16  日和民國115 年 4 月 21 日至門診追蹤治療, 以下空白。\n\n民國115 年 4月21日的診斷書內容醫囑如下: \n病患於民國115 年 4月21日至門診就診。近兩週宜視病況休養併民國115 年 5 月 5  日至門診追蹤治療, 以下空白。\n\n5.\t有無併發症或後遺症？ \n無法判定。\n\n6.\t療養至何時起可從事一般工作？ \n無法判定。\n\n7.\t認定理由及依據為何？ \n如上。\n\n8.請協助確認病歷可否釋出?\n可釋出。",
+    "question": "辜筱倫醫師您好，請協助回覆問題，謝謝。劉沛聞 因「失眠 焦慮憂鬱情緒、頭暈、噁心；腦震盪症候群」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.劉沛聞君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「失眠 焦慮憂鬱情緒、頭暈、噁心；腦震盪症候群」是否係因主訴之傷害事故所致？
+4.劉沛聞君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+8.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)
+書湘 敬上",
+    "doctor_reply": "1.	劉沛聞君就診有無主訴傷害事故？
+病患自述為空服員, 工作中被客人於左臉打巴掌。
+
+2.	發生日期及原因為何？
+病患自述為空服員, 工作中被客人於左臉打巴掌。根據病患自述, 發生日期約為2026年4月3日。
+
+3.	所患「失眠 焦慮憂鬱情緒、頭暈、噁心；腦震盪症候群」是否係因主訴之傷害事故所致？ 
+無法確定。
+
+4.	劉沛聞君因上開傷病治療經過為何？ 
+於民國115 年 4月7日和民國115年7月21日至本院精神科門診就診, 有開立睡前必要時服用的藥物Ativan (學名為Lorazepam)。
+
+民國115 年 4月7日的診斷書內容醫囑如下: 
+病患於民國115 年 4月7日至門診就診。近兩週宜視病況休養併民國115 年 4 月 16  日和民國115 年 4 月 21 日至門診追蹤治療, 以下空白。
+
+民國115 年 4月21日的診斷書內容醫囑如下: 
+病患於民國115 年 4月21日至門診就診。近兩週宜視病況休養併民國115 年 5 月 5  日至門診追蹤治療, 以下空白。
+
+5.	有無併發症或後遺症？ 
+無法判定。
+
+6.	療養至何時起可從事一般工作？ 
+無法判定。
+
+7.	認定理由及依據為何？ 
+如上。
+
+8.請協助確認病歷可否釋出?
+可釋出。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/7/29 上午 08:00",
@@ -22706,7 +27900,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "張馨元醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於07月30日釋出，感謝您。\n備註：急診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)\n書湘 敬上",
+    "question": "張馨元醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於07月30日釋出，感謝您。
+備註：急診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)
+書湘 敬上",
     "doctor_reply": "可以釋出沒有問題",
     "remark": "",
     "status": "已完成",
@@ -22732,7 +27930,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳茞君醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於07月30日釋出，感謝您。\n備註：急診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)\n書湘 敬上",
+    "question": "陳茞君醫師您好，因新北市政府衛生局調閱病歷(醫療爭議)。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於07月30日釋出，感謝您。
+備註：急診醫令皆已釋出過，請勿更改。非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)
+書湘 敬上",
     "doctor_reply": "可以釋出",
     "remark": "",
     "status": "已完成",
@@ -22758,7 +27960,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好，請協助回覆問題，謝謝。義務人董秀芬於114年10月27日就診貴院診斷為「胸椎第十二節骨折不癒合，目前無法久坐久站」等情，\n1.請提供義務人目前癒合情形、治療方式、預後評估及是否仍有行動或工作能力限制等相關醫療意見函復本分署。\n請惠示醫理見解。\n\n(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))\t\t\t\t\n因案件有時效性，請協助儘快回覆，感謝您。\n書湘 敬上",
+    "question": "陳冠豪醫師您好，請協助回覆問題，謝謝。義務人董秀芬於114年10月27日就診貴院診斷為「胸椎第十二節骨折不癒合，目前無法久坐久站」等情，
+1.請提供義務人目前癒合情形、治療方式、預後評估及是否仍有行動或工作能力限制等相關醫療意見函復本分署。
+請惠示醫理見解。
+
+(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))				
+因案件有時效性，請協助儘快回覆，感謝您。
+書湘 敬上",
     "doctor_reply": "病患胸椎爆裂性骨折已數年，初期接受保守治療(該時期不是在本人門診治療追蹤)。本人接手時病患主訴無法久坐久站及負重，因會導致嚴重背痛而耐力不佳。後續均執行藥物、復健治療，然預期病患狀況已無法順利恢復。因此會有工作能力上的限制。",
     "remark": "",
     "status": "已完成",
@@ -22784,7 +27992,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。貴院病患張陳賓於民國114年12月24日因車禍案件經診斷受有頸部及下背疼痛、疑似挫傷之傷害(詳如附件國軍桃園總醫院附設民眾診療服務處診斷證明書)，\n1.嗣經貴院於115年2月5日診斷下肢癱瘓，該下肢癱瘓之原因為何?\n2.是否為前述車禍事故所造成?\n請惠示醫理見解。\n\n(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))\t\t\t\t\n因案件有時效性，請協助儘快回覆，感謝您。\n書湘 敬上",
+    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。貴院病患張陳賓於民國114年12月24日因車禍案件經診斷受有頸部及下背疼痛、疑似挫傷之傷害(詳如附件國軍桃園總醫院附設民眾診療服務處診斷證明書)，
+1.嗣經貴院於115年2月5日診斷下肢癱瘓，該下肢癱瘓之原因為何?
+2.是否為前述車禍事故所造成?
+請惠示醫理見解。
+
+(備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷))				
+因案件有時效性，請協助儘快回覆，感謝您。
+書湘 敬上",
     "doctor_reply": "病人於2012年5月31日至本人門診求治, 主訴頸椎損傷, 術後, 疼痛, 經MRI檢查, 有頸髓病兆, 與神經外科醫師一起於門診追蹤照顧, 2019年4月29日, 病人大腸癌術後, 增加左下肢乏力委縮, 當時懷疑是化療藥物引起之神經病變, 2020年10月5日, 病人主訴跌倒後又下肢骨折, 接下來幾年病人於神經外科及骨科就醫, 至今年3月12日再至本人門診求治, 當時病人4肢乏力, 懷疑頸脊髓疾病, 安排MRI檢查, 尚未完成, 但依據2022年8月8日神經外科病歷紀錄 Muscle power of arm (Grade:0-5): R2 /L 2, Muscle power of Leg (Grade:0-5): R2 /L 0, 2026年2月5日病歷紀錄 Muscle power of arm (Grade:0-5): R2 /L 2, Muscle power of Leg (Grade:0-5): R0 /L 0, 病人自111年8月8日即有下肢癱瘓情況, 病因仍在探查中, 但應非主要由民國114年12月24日因車禍案件引起",
     "remark": "",
     "status": "已完成",
@@ -22810,7 +28025,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "羅偉倫醫師您好，請協助回覆問題謝謝\n本文為醫療糾紛，病歷以釋出過，病歷請不要更改。\n1.請協助提供貴院羅偉倫醫師為病患羅光華(17081760)診治之病歷資料，並檢附羅瑋倫醫師為羅光華做加馬刀治療等醫療處置所做健保申報之詳細資料，並「說明是否符合健保申報規範」，惠請提供醫理見解。",
+    "question": "羅偉倫醫師您好，請協助回覆問題謝謝
+本文為醫療糾紛，病歷以釋出過，病歷請不要更改。
+1.請協助提供貴院羅偉倫醫師為病患羅光華(17081760)診治之病歷資料，並檢附羅瑋倫醫師為羅光華做加馬刀治療等醫療處置所做健保申報之詳細資料，並「說明是否符合健保申報規範」，惠請提供醫理見解。",
     "doctor_reply": "1. 本案件治療前均有依照健保申報規範送健保署進行事前審查，待審查結果批准進行治療後方安排治療，治療均有神經外科主治醫師、醫學物理師、放射腫瘤科醫師等該健保處置所需之治療團隊人員參與治療，一切均依照健保申報規範",
     "remark": "醫療糾紛",
     "status": "已完成",
@@ -22836,7 +28053,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "廖立民醫師您好:\n因財團法人藥害救濟基金會來函調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將08月01日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "廖立民醫師您好:
+因財團法人藥害救濟基金會來函調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將08月01日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -22862,7 +28084,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "吳俊穎醫師您好:\n因財團法人藥害救濟基金會來函調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將08月01日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "吳俊穎醫師您好:
+因財團法人藥害救濟基金會來函調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將08月01日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "沒問題",
     "remark": "",
     "status": "已完成",
@@ -22888,7 +28115,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃錦前主任您好，請協助回覆問題，謝謝。于玉珠因「左側膝關節挫傷合併內側半月板撕裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\t1.于君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「左側膝關節挫傷合併內側半月板撕裂」是否係因主訴之傷害事故所致？\n4.于君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n8.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "黃錦前主任您好，請協助回覆問題，謝謝。于玉珠因「左側膝關節挫傷合併內側半月板撕裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。	1.于君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「左側膝關節挫傷合併內側半月板撕裂」是否係因主訴之傷害事故所致？
+4.于君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+8.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "1. 有. 因膝關節扭挫傷所致; 2. 114/12/27就診時候敘述3-4天前受傷; 3. 是; 4. 接受膝關節鏡半月軟骨修補手術; 5. 無; 6. 3-6個月; 6. 依據組織修復成效及功能恢復情形 8. 可以",
     "remark": "",
     "status": "已完成",
@@ -22914,8 +28153,22 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "翁佩韋主任您好，請協助回覆問題，謝謝。\n1.李君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n5.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)\n書湘 敬上",
-    "doctor_reply": "1.李君因上開傷病治療經過為何？ \n答: 病人於115/02/19 入院，115/02/10 接受左膝膝關節鏡併前十字韌帶重建及外側半月軟骨部分修整手術，115/02/13 出院。\n\n2.有無併發症或後遺症？ \n術後直至最後一次門診追蹤日(115/07/09)，恢復情況平順良好。",
+    "question": "翁佩韋主任您好，請協助回覆問題，謝謝。
+1.李君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+5.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)
+書湘 敬上",
+    "doctor_reply": "1.李君因上開傷病治療經過為何？ 
+答: 病人於115/02/19 入院，115/02/10 接受左膝膝關節鏡併前十字韌帶重建及外側半月軟骨部分修整手術，115/02/13 出院。
+
+2.有無併發症或後遺症？ 
+術後直至最後一次門診追蹤日(115/07/09)，恢復情況平順良好。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/8/2 上午 08:00",
@@ -22940,8 +28193,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許庭碩醫師您好，請協助回覆問題，謝謝。\n1.被害人韓適宇於114年10月至114年12月間，分別係因何病症至貴院就醫？\n2.醫生診斷結果為何？\n3.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "1.車禍\n2.左腳踝開放性骨折 3. 可釋出",
+    "question": "許庭碩醫師您好，請協助回覆問題，謝謝。
+1.被害人韓適宇於114年10月至114年12月間，分別係因何病症至貴院就醫？
+2.醫生診斷結果為何？
+3.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "1.車禍
+2.左腳踝開放性骨折 3. 可釋出",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/8/2 上午 08:00",
@@ -22966,8 +28228,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "鄔逸群醫師您好，請協助回覆問題，謝謝。\n1.被害人韓適宇於114年10月至114年12月間，分別係因何病症至貴院就醫？\n2.醫生診斷結果為何？\n3.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "1.2.左側小腿皮膚壞死\n3.可釋出",
+    "question": "鄔逸群醫師您好，請協助回覆問題，謝謝。
+1.被害人韓適宇於114年10月至114年12月間，分別係因何病症至貴院就醫？
+2.醫生診斷結果為何？
+3.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "1.2.左側小腿皮膚壞死
+3.可釋出",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/8/2 上午 08:00",
@@ -22992,7 +28263,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "王智毅醫師您好\n請協助回覆問題感謝您\n1.請貴院協助說明病患陳柏廷(02649304)之右手指肌腱傷勢是否已達嚴重減損右手機能之程度，請惠示醫理見解。",
+    "question": "王智毅醫師您好
+請協助回覆問題感謝您
+1.請貴院協助說明病患陳柏廷(02649304)之右手指肌腱傷勢是否已達嚴重減損右手機能之程度，請惠示醫理見解。",
     "doctor_reply": "經查該病患於2/6接受右手指肌腱縫補手術, 但術後僅回診一次, 無從判定其勞動力減損狀況.",
     "remark": "",
     "status": "已完成",
@@ -23018,7 +28291,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳弘洲主任您好:\n因勞保局來函調閱病歷\n請協助確認病歷，是否可以釋出。\n因案件有時效性，病歷將於08月07日釋出，感謝您。\n1.請確認病歷是否可釋出?\n\n備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷)\"",
+    "question": "陳弘洲主任您好:
+因勞保局來函調閱病歷
+請協助確認病歷，是否可以釋出。
+因案件有時效性，病歷將於08月07日釋出，感謝您。
+1.請確認病歷是否可釋出?
+
+備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷)\"",
     "doctor_reply": "可以釋出，謝謝您",
     "remark": "",
     "status": "已完成",
@@ -23044,7 +28323,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "羅偉倫醫師您好:\n因勞保局來函調閱病歷\n請協助確認病歷，是否可以釋出。\n因案件有時效性，病歷將於08月07日釋出，感謝您。\n1.請確認病歷是否可釋出?\n\n備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷)\"",
+    "question": "羅偉倫醫師您好:
+因勞保局來函調閱病歷
+請協助確認病歷，是否可以釋出。
+因案件有時效性，病歷將於08月07日釋出，感謝您。
+1.請確認病歷是否可釋出?
+
+備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷)\"",
     "doctor_reply": "1. 可以釋出",
     "remark": "",
     "status": "已完成",
@@ -23070,7 +28355,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林聖閎醫師您好:\n因(藥害救濟)財團法人藥害救濟基金會來函調閱病歷\n請協助確認病歷，是否可以釋出。\n因案件有時效性，病歷將於08月07日釋出，感謝您。\n1.請確認病歷是否可釋出?\n\n備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷)\"",
+    "question": "林聖閎醫師您好:
+因(藥害救濟)財團法人藥害救濟基金會來函調閱病歷
+請協助確認病歷，是否可以釋出。
+因案件有時效性，病歷將於08月07日釋出，感謝您。
+1.請確認病歷是否可釋出?
+
+備註：如需修改病歷請洽分機2037(非必要請勿修改電子病歷)\"",
     "doctor_reply": "1.可以釋出。謝謝。",
     "remark": "",
     "status": "已完成",
@@ -23096,7 +28387,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "王智毅醫師您好:因臺灣臺北地發法院來函調閱病歷,請協助確認病歷是否可以釋出?\n手術紀錄及其他住院、門診醫令皆已釋出過，請勿更改。\n因公文有時效性，如未收到回覆病歷將於8月8日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "王智毅醫師您好:因臺灣臺北地發法院來函調閱病歷,請協助確認病歷是否可以釋出?
+手術紀錄及其他住院、門診醫令皆已釋出過，請勿更改。
+因公文有時效性，如未收到回覆病歷將於8月8日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "逾期未回病歷已釋出",
     "status": "已完成",
@@ -23122,8 +28417,28 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉郁欣醫師您好，請協助回覆問題，謝謝。吳建稷君 因「左側腕部挫傷、左側橈骨下端閉鎖性骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.何時因上開傷病至貴院初診?初診當時有無主訴發生傷害之事故?\n2.發生日期及經過為何?\n3.所患傷病成因為何?\n4.是否為主訴之事故造成?\n5.吳建稷君醫療經過及傷勢復原情形如何？\n6.有無併發症或後遺症？\n7.其何時起應可恢復一般工作能力？\n8.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "1.初診時間為2025/09/25。主訴為2025/09/10時左手腕撞擊鈍挫傷。\n2.依照病歷記載及病人主訴為2025/09/10時因跌倒造成左手腕撞擊鈍挫傷。\n3.外力撞擊造成。\n4.跌倒造成外力撞擊若集中在同一手腕會造成相關傷病。\n5.2025/09/25初診。建議輔具或石膏保護，輔以藥物止痛消炎。2025/10/16門診追蹤Ｘ片，可見骨折處維持原本準線。2025/11/20門診骨折處初步癒合，但病人仍有尺側處疼痛，疑似三角纖維軟骨複合體損傷，囑以復健治療。2026/03/24門診理學檢查發現遠端橈尺關節仍有壓痛，尺側處仍有症狀。\n6.三角纖維軟骨複合體損傷若無良好癒合，會造成後續搬運重物或手腕旋轉時疼痛。\n7.依據工作內容性質而定，骨折處於2025/11/20時已初步癒合。但後續尺側處仍有症狀，若工作需勞力搬運，則需約再輔以三個月時間行復健治療修復。\n8.可以。",
+    "question": "劉郁欣醫師您好，請協助回覆問題，謝謝。吳建稷君 因「左側腕部挫傷、左側橈骨下端閉鎖性骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.何時因上開傷病至貴院初診?初診當時有無主訴發生傷害之事故?
+2.發生日期及經過為何?
+3.所患傷病成因為何?
+4.是否為主訴之事故造成?
+5.吳建稷君醫療經過及傷勢復原情形如何？
+6.有無併發症或後遺症？
+7.其何時起應可恢復一般工作能力？
+8.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "1.初診時間為2025/09/25。主訴為2025/09/10時左手腕撞擊鈍挫傷。
+2.依照病歷記載及病人主訴為2025/09/10時因跌倒造成左手腕撞擊鈍挫傷。
+3.外力撞擊造成。
+4.跌倒造成外力撞擊若集中在同一手腕會造成相關傷病。
+5.2025/09/25初診。建議輔具或石膏保護，輔以藥物止痛消炎。2025/10/16門診追蹤Ｘ片，可見骨折處維持原本準線。2025/11/20門診骨折處初步癒合，但病人仍有尺側處疼痛，疑似三角纖維軟骨複合體損傷，囑以復健治療。2026/03/24門診理學檢查發現遠端橈尺關節仍有壓痛，尺側處仍有症狀。
+6.三角纖維軟骨複合體損傷若無良好癒合，會造成後續搬運重物或手腕旋轉時疼痛。
+7.依據工作內容性質而定，骨折處於2025/11/20時已初步癒合。但後續尺側處仍有症狀，若工作需勞力搬運，則需約再輔以三個月時間行復健治療修復。
+8.可以。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/8/8 上午 08:00",
@@ -23148,8 +28463,28 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "謝岳穎醫師您好，請協助回覆問題，謝謝。賴昱蓉君 病歷號碼：14360015於115年5月6日起因「右側骨盆骨折、會陰蜂窩組織炎」至貴院急、門診及住院，申請核退職災自墊醫療費用。\n1.賴君於何時因該症至貴院初診？\n2.當時係由何人、何時送醫？\n3.症狀如何？\n4.有無外傷？\n5.有無主訴至貴院就診前曾至何家醫療院所就診？\n6.致病原因為何？\n7.曾否主訴發生事故時間、地點、原因及經過？\n8.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "1. 2026/05/06\n2. 病歷未記載\n3. 右側髖部疼痛\n4. 四肢有擦傷\n5. 無\n6. 依病人自訴為車禍\n7. 無\n8. 可以",
+    "question": "謝岳穎醫師您好，請協助回覆問題，謝謝。賴昱蓉君 病歷號碼：14360015於115年5月6日起因「右側骨盆骨折、會陰蜂窩組織炎」至貴院急、門診及住院，申請核退職災自墊醫療費用。
+1.賴君於何時因該症至貴院初診？
+2.當時係由何人、何時送醫？
+3.症狀如何？
+4.有無外傷？
+5.有無主訴至貴院就診前曾至何家醫療院所就診？
+6.致病原因為何？
+7.曾否主訴發生事故時間、地點、原因及經過？
+8.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "1. 2026/05/06
+2. 病歷未記載
+3. 右側髖部疼痛
+4. 四肢有擦傷
+5. 無
+6. 依病人自訴為車禍
+7. 無
+8. 可以",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/8/8 上午 08:00",
@@ -23174,8 +28509,35 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉宇鈞醫師您好，請協助回覆問題，謝謝。賴昱蓉君 病歷號碼：14360015於115年5月6日起因「右側骨盆骨折、會陰蜂窩組織炎」至貴院急、門診及住院，申請核退職災自墊醫療費用。\n1.賴君於何時因該症至貴院初診？\n2.當時係由何人、何時送醫？\n3.症狀如何？\n4.有無外傷？\n5.有無主訴至貴院就診前曾至何家醫療院所就診？\n6.致病原因為何？\n7.曾否主訴發生事故時間、地點、原因及經過？\n8.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "115/5/6 09:18 來診主訴為機車被汽車撞，現右髖部痛，四肢擦傷。\n\n 119送入\n\n 右髖部痛\n\n 擦挫傷 \n\n無\n\n車禍\n\n無發生事故地點 但由救護車送入 相信跟車禍有所相關 \n\n可",
+    "question": "劉宇鈞醫師您好，請協助回覆問題，謝謝。賴昱蓉君 病歷號碼：14360015於115年5月6日起因「右側骨盆骨折、會陰蜂窩組織炎」至貴院急、門診及住院，申請核退職災自墊醫療費用。
+1.賴君於何時因該症至貴院初診？
+2.當時係由何人、何時送醫？
+3.症狀如何？
+4.有無外傷？
+5.有無主訴至貴院就診前曾至何家醫療院所就診？
+6.致病原因為何？
+7.曾否主訴發生事故時間、地點、原因及經過？
+8.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "115/5/6 09:18 來診主訴為機車被汽車撞，現右髖部痛，四肢擦傷。
+
+ 119送入
+
+ 右髖部痛
+
+ 擦挫傷 
+
+無
+
+車禍
+
+無發生事故地點 但由救護車送入 相信跟車禍有所相關 
+
+可",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/8/8 上午 08:00",
@@ -23200,7 +28562,17 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。王志文君 因「右額葉硬腦膜下血腫、右額骨及額竇骨折、薦椎粉碎性骨折、右側骨盆髖臼骨折、右側第七及第八肋骨骨折併血胸、右眼眶底及鼻眼複合骨折、左上牙齒裂斷、右側骨盆髖臼骨折術後傷口感染」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.王君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n5.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。王志文君 因「右額葉硬腦膜下血腫、右額骨及額竇骨折、薦椎粉碎性骨折、右側骨盆髖臼骨折、右側第七及第八肋骨骨折併血胸、右眼眶底及鼻眼複合骨折、左上牙齒裂斷、右側骨盆髖臼骨折術後傷口感染」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.王君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+5.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "1. 王君因上開傷病治療經過為何？王君於114年7月5日因從10公尺高處墜落導致多重創傷送至急診並入院。  於114年7月10日接受右側骨盆髖臼與雙側薦椎骨折之開放性復位及內固定手術(ORIF)。  因右眼眶骨折併脂肪與下直肌嵌頓，於114年7月25日進行眼眶探查與修補手術。  114年7月26日因血塊壓迫視神經，再次進行前眼眶切開與血塊、異物移除手術。  住院治療期間併發骨盆血腫與膿瘍感染，接受抗生素治療及引流管置入，並於114年9月15日進行右側髖部與骨盆膿瘍清創及死骨移除手術。  病患於病況較為穩定後，於114年8月9日辦理出院，並安排門診持續追蹤。  2. 有無併發症或後遺症？併發症：包含急性出血後貧血、橫紋肌溶解症（CPK數值升高），以及右側骨盆臀部傷口血腫併發膿瘍感染。  後遺症：因眼眶骨折及神經受損導致右眶下神經感覺異常與複視現象（出院前複視已有顯著改善）。此外，顏面仍有不對稱與腫脹情形。右下肢因骨盆骨折術後需持續限制負重（Partial weight bearing），導致活動能力與步態受限。  3. 療養至何時起可從事一般工作？考量王君受有多重嚴重創傷，包含顱內出血、雙側顏面骨折及嚴重的骨盆薦椎粉碎性骨折。骨盆結構為人體核心負重樞紐，且王君併發了骨盆深部膿瘍感染。  臨床上，此類重大骨盆與薦椎重建手術，骨頭初步癒合及下肢可完全負重通常需要至少3至6個月的休養與積極復健。綜合評估其多重創傷與感染狀況，建議自受傷日起算，至少需休養及復健半年（6個月）以上，方有機會逐步從事無須勞力負重之一般輕便工作；若為需搬重物或長時間走動之高勞力工作，則需評估休養達1年左右。4. 認定理由及依據為何？認定依據：主要依據出院病歷摘要、手術紀錄及各項影像學（CT）檢查報告。  認定理由：影像學與手術紀錄確診其受有右側薦椎（S1-S5）與髖臼後柱之嚴重粉碎性、位移性骨折。醫囑中亦明確規範其術後活動需「限制負重 (Partial weight bearing, 右下肢)」，且需安排每日多次之連續性被動關節活動（CPM）與坐站轉位平衡訓練。再加上其住院期間因發燒、發炎指數（CRP）升高而需長期接受廣效抗生素治療及多次清創，顯示其整體組織復原時間將大幅延長，故作上述較長休養期之判定。  5. 請協助確認病歷可否釋出?經確認，該份電子病歷文件各頁面之標頭與頁尾均已明確標示「已簽章」狀態。  該病歷同時載明了「釋出日期: 2026/08/06 15:09:14」。因此，該病歷已完成正式簽核程序，確認可以釋出做為相關給付申請之醫療憑證。",
     "remark": "",
     "status": "已完成",
@@ -23226,7 +28598,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃立楷醫師您好，請協助回覆問題，謝謝。請提供劉素英君 因外傷性腦病變就醫之全份病歷影本暨相關檢查報告（含病歷摘要、電腦斷層攝影(CT)、核磁共振造影(MRI)檢查報告、語言復健及物理復健治療紀錄、簡明失語症測驗報告（CCAT）影像及光碟]）\n1.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "黃立楷醫師您好，請協助回覆問題，謝謝。請提供劉素英君 因外傷性腦病變就醫之全份病歷影本暨相關檢查報告（含病歷摘要、電腦斷層攝影(CT)、核磁共振造影(MRI)檢查報告、語言復健及物理復健治療紀錄、簡明失語症測驗報告（CCAT）影像及光碟]）
+1.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "可以",
     "remark": "",
     "status": "已完成",
@@ -23252,8 +28630,24 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林乾閔醫師您好，請協助回覆問題，謝謝。林惠萍君 因「下背挫傷、腰椎第五節、薦椎第一節脊椎滑脫症及腰椎第五節椎弓骨折」於貴院診療，並檢具貴院出具之診斷書申請傷病給付。\n1.林君何日因「腰椎第五節、薦椎第一節脊椎滑脫症及腰椎第五節椎弓骨折」至貴院初診？\n2.當時有無主訴發生何傷害事故？\n3.發生日期、地點及經過情形為何？\n4.林君所患「腰椎第五節、薦椎第一節脊椎滑脫症及腰椎第五節椎弓骨折」成因為何？\n5.是否為主訴之事故所致或加重？\n6.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "1:108年3月27日\n2:無記錄\n3:無\n4:退化或外力均𠕇可能、無法判定\n5:有可能\n6:可",
+    "question": "林乾閔醫師您好，請協助回覆問題，謝謝。林惠萍君 因「下背挫傷、腰椎第五節、薦椎第一節脊椎滑脫症及腰椎第五節椎弓骨折」於貴院診療，並檢具貴院出具之診斷書申請傷病給付。
+1.林君何日因「腰椎第五節、薦椎第一節脊椎滑脫症及腰椎第五節椎弓骨折」至貴院初診？
+2.當時有無主訴發生何傷害事故？
+3.發生日期、地點及經過情形為何？
+4.林君所患「腰椎第五節、薦椎第一節脊椎滑脫症及腰椎第五節椎弓骨折」成因為何？
+5.是否為主訴之事故所致或加重？
+6.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "1:108年3月27日
+2:無記錄
+3:無
+4:退化或外力均𠕇可能、無法判定
+5:有可能
+6:可",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/8/9 上午 08:00",
@@ -23278,8 +28672,29 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。黃若喬君 因「左手肘蜂窩組織炎、左側尺骨鷹嘴突移位閉鎖性骨折經開放復位內固定手術」於114年10月22日起至貴院急、門診及住院，申請核退職災自墊醫療費用。\n1.黃君於何時因該病症至貴院初診？\n2.當時係由何人、何時送醫？\n3.症狀如何？有無外傷？\n4.有無主訴至貴院就診前曾至何家醫療院所就診？\n5.致病原因為何？\n6.曾否主訴發生事故時間、地點、原因及經過？\n7.上述兩種病症是否為相關治療？\n8.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "1. 病患係於114年10月22日事故發生後隨即送醫（急診記錄描述為「Traffic accident just now」）。\n2. 歷記載為「送至本院急診」，但並未明確註記是由家屬、救護人員或何人送達。 \n3. 病患就診時主訴為車禍後左手肘疼痛與腫脹。理學檢查與護理評估確認有外傷，包含左手肘、左膝及嘴部（左下唇）之鈍傷與挫傷，且左下唇外傷採開放式護理。\n4.  無。病歷顯示車禍發生後便直接送至本院急診，並無至其他醫療院所就診之主訴紀錄。 \n5. 致病原因為交通事故（車禍）所致之創傷。 \n6. 有。病患於入院護理評估中主訴事故經過：於10月22日「騎機車在路上被汽車從後方追撞，往左側倒地」，導致左側肢體鈍傷及疼痛。病歷僅記載地點為「在路上」，未詳細載明具體路段。\n7. 是，兩者為相關治療。病歷顯示「左手肘蜂窩組織炎」為「左側尺骨鷹嘴突移位閉鎖性骨折」於114年10月22日進行開放性復位內固定手術（ORIF）後，所引發之術後急性感染併發症。\n8. 病歷資料確認無誤，可配合法規釋出以供核退審查使用。\n醫理見解：病患於114年12月因左手肘蜂窩組織炎入院進行清創手術，臨床診斷確為114年10月因車禍導致左側尺骨鷹嘴突骨折手術後之感染併發症。兩病症具明確之延續性與直接因果關係，皆屬同一交通事故所致之衍生治療。",
+    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。黃若喬君 因「左手肘蜂窩組織炎、左側尺骨鷹嘴突移位閉鎖性骨折經開放復位內固定手術」於114年10月22日起至貴院急、門診及住院，申請核退職災自墊醫療費用。
+1.黃君於何時因該病症至貴院初診？
+2.當時係由何人、何時送醫？
+3.症狀如何？有無外傷？
+4.有無主訴至貴院就診前曾至何家醫療院所就診？
+5.致病原因為何？
+6.曾否主訴發生事故時間、地點、原因及經過？
+7.上述兩種病症是否為相關治療？
+8.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "1. 病患係於114年10月22日事故發生後隨即送醫（急診記錄描述為「Traffic accident just now」）。
+2. 歷記載為「送至本院急診」，但並未明確註記是由家屬、救護人員或何人送達。 
+3. 病患就診時主訴為車禍後左手肘疼痛與腫脹。理學檢查與護理評估確認有外傷，包含左手肘、左膝及嘴部（左下唇）之鈍傷與挫傷，且左下唇外傷採開放式護理。
+4.  無。病歷顯示車禍發生後便直接送至本院急診，並無至其他醫療院所就診之主訴紀錄。 
+5. 致病原因為交通事故（車禍）所致之創傷。 
+6. 有。病患於入院護理評估中主訴事故經過：於10月22日「騎機車在路上被汽車從後方追撞，往左側倒地」，導致左側肢體鈍傷及疼痛。病歷僅記載地點為「在路上」，未詳細載明具體路段。
+7. 是，兩者為相關治療。病歷顯示「左手肘蜂窩組織炎」為「左側尺骨鷹嘴突移位閉鎖性骨折」於114年10月22日進行開放性復位內固定手術（ORIF）後，所引發之術後急性感染併發症。
+8. 病歷資料確認無誤，可配合法規釋出以供核退審查使用。
+醫理見解：病患於114年12月因左手肘蜂窩組織炎入院進行清創手術，臨床診斷確為114年10月因車禍導致左側尺骨鷹嘴突骨折手術後之感染併發症。兩病症具明確之延續性與直接因果關係，皆屬同一交通事故所致之衍生治療。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/8/9 上午 08:00",
@@ -23304,7 +28719,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳沛華醫師您好，請協助回覆問題，謝謝。\n1.病患王昱昕於民國114年12月迄今至貴院就診時，其受傷情形有無於身體或健康，有重大不治或難治之傷害?\n2.如有，則依勞工保險失能給付標準，其失能等級為何?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "陳沛華醫師您好，請協助回覆問題，謝謝。
+1.病患王昱昕於民國114年12月迄今至貴院就診時，其受傷情形有無於身體或健康，有重大不治或難治之傷害?
+2.如有，則依勞工保險失能給付標準，其失能等級為何?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "病患王昱昕(17923923)此次住院所受之創傷若不立刻手術救治，即為符合「身體或健康，有重大不治或難治」之傷害。但本院以最緊急手術方式處理(急一)經過救治後，病患狀況恢復穩定，有可能在未來可以完全恢復正常生活功能。後續病患自行出院，前往臺北榮民總醫院繼續治療，故本人無法做後續的追蹤。病患後續之雙和醫院回診皆只開立診斷書，並無做後續檢查，故失能之判斷須請臺北榮民總醫院判定。",
     "remark": "",
     "status": "已完成",
@@ -23330,7 +28752,21 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "紀則宇醫師您好，請協助回覆問題，謝謝。韓雅婷君（病歷號碼：01148262）\n1.於115年6月20日因「右側膝部鈍挫傷」至貴院急診，申請核退職災自墊醫療費用，其於何時因上述病症初診？\n2.當時症狀如何？\n3.有無外傷？\n4.受傷之部位？\n5.主訴發生事故之時間、地點、原因及經過如何？\n6.有無訴及曾至何處診療？\n7.所患成因如何？\n8.係屬普通疾病抑何時遭受外力傷害引起？\n9.請協助確認病歷可否釋出?\n本局亟待明瞭。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "紀則宇醫師您好，請協助回覆問題，謝謝。韓雅婷君（病歷號碼：01148262）
+1.於115年6月20日因「右側膝部鈍挫傷」至貴院急診，申請核退職災自墊醫療費用，其於何時因上述病症初診？
+2.當時症狀如何？
+3.有無外傷？
+4.受傷之部位？
+5.主訴發生事故之時間、地點、原因及經過如何？
+6.有無訴及曾至何處診療？
+7.所患成因如何？
+8.係屬普通疾病抑何時遭受外力傷害引起？
+9.請協助確認病歷可否釋出?
+本局亟待明瞭。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -23356,7 +28792,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "鄭景泉醫師您好，請協助回覆問題，謝謝。本所為防疫業務需要，惠請貴院提供許榮民肺結核個案於貴院病歷、CXR、病理報告等相關報告，請查照。\n1.請協助確認病歷可否釋出?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
+    "question": "鄭景泉醫師您好，請協助回覆問題，謝謝。本所為防疫業務需要，惠請貴院提供許榮民肺結核個案於貴院病歷、CXR、病理報告等相關報告，請查照。
+1.請協助確認病歷可否釋出?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
     "doctor_reply": "可以釋出。 謝謝。",
     "remark": "",
     "status": "已完成",
@@ -23382,8 +28824,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許彤年醫師您好，請協助回覆問題，謝謝。據曾君所附收據及費用清單載，其當次住院自費材料費共計219,043元，包含LCP(3.5mm/鎖骨骨板):金額為54,600元、04.137.000S-007(髕骨骨板):金額為90,000元、96711(300ML/生理沖洗器):金額為45元、PLT-1007(直型骨板-20H):金額為18,139元、PLT-1008-101(C型骨板):金額為12,477元、3包SCR-1222:1225(骨釘-6支/包):金額為43,782元。為審核給付需要，請貴院就下列事項查明見復:經查詢收據中114年11月18日自費材料費品項明細為牙科手術所使用如(圖表3)示，供參。\n1.如係屬全自費特材，其自費原因為何?\n2.是否無健保自付差額特材可使用?\n隨函檢附曾霈祥君114年11月11日住院之醫療費用收據及診斷證明書影本共3紙。\n\n因案件有時效性，請協助8/21前回覆，感謝您。\n(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。\n書湘敬上",
-    "doctor_reply": "1. 病人選擇使用可吸收骨釘骨板\n2. 無健保可吸收骨釘骨板可使用",
+    "question": "許彤年醫師您好，請協助回覆問題，謝謝。據曾君所附收據及費用清單載，其當次住院自費材料費共計219,043元，包含LCP(3.5mm/鎖骨骨板):金額為54,600元、04.137.000S-007(髕骨骨板):金額為90,000元、96711(300ML/生理沖洗器):金額為45元、PLT-1007(直型骨板-20H):金額為18,139元、PLT-1008-101(C型骨板):金額為12,477元、3包SCR-1222:1225(骨釘-6支/包):金額為43,782元。為審核給付需要，請貴院就下列事項查明見復:經查詢收據中114年11月18日自費材料費品項明細為牙科手術所使用如(圖表3)示，供參。
+1.如係屬全自費特材，其自費原因為何?
+2.是否無健保自付差額特材可使用?
+隨函檢附曾霈祥君114年11月11日住院之醫療費用收據及診斷證明書影本共3紙。
+
+因案件有時效性，請協助8/21前回覆，感謝您。
+(備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。
+書湘敬上",
+    "doctor_reply": "1. 病人選擇使用可吸收骨釘骨板
+2. 無健保可吸收骨釘骨板可使用",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/8/22 上午 08:00",
@@ -23408,8 +28858,29 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳嘉泓醫師好，請協助回覆問題。林慶生因「急性腦梗塞、高血壓、高血脂」在貴院診療，並檢具貴院出具之診斷書申請傷病給付。\n1.何時因「急性腦梗塞、高血壓、高血脂」傷病至貴院初診？\n2.初診當時有無主訴發生傷害之事故？\n3.發生日期及經過為何？\n4.有無主訴至其他醫療院所就醫？\n5.所患「急性腦梗塞、高血壓、高血脂」傷病成因為何？\n6.是否為主訴之事故造成？\n7.林君醫療經過及傷勢復原情形如何？\n8.有無併發症或後遺症？\n9.其何時應可恢復一般工作能力？\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "1. 2025-11-21日\n2. 無主訴發生傷害之事故\n3. 發生日期2025-11-21日. 因右側無力至急診就診\n4. 無\n5. 推斷因高血壓、高血脂導致急性腦梗塞\n6. 無主訴發生傷害之事\n7. 經藥物治療與復健後狀況穩定\n8. 後遺症為右側輕微無力\n9. 目前應可從事一般輕便不須負重之工作",
+    "question": "陳嘉泓醫師好，請協助回覆問題。林慶生因「急性腦梗塞、高血壓、高血脂」在貴院診療，並檢具貴院出具之診斷書申請傷病給付。
+1.何時因「急性腦梗塞、高血壓、高血脂」傷病至貴院初診？
+2.初診當時有無主訴發生傷害之事故？
+3.發生日期及經過為何？
+4.有無主訴至其他醫療院所就醫？
+5.所患「急性腦梗塞、高血壓、高血脂」傷病成因為何？
+6.是否為主訴之事故造成？
+7.林君醫療經過及傷勢復原情形如何？
+8.有無併發症或後遺症？
+9.其何時應可恢復一般工作能力？
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "doctor_reply": "1. 2025-11-21日
+2. 無主訴發生傷害之事故
+3. 發生日期2025-11-21日. 因右側無力至急診就診
+4. 無
+5. 推斷因高血壓、高血脂導致急性腦梗塞
+6. 無主訴發生傷害之事
+7. 經藥物治療與復健後狀況穩定
+8. 後遺症為右側輕微無力
+9. 目前應可從事一般輕便不須負重之工作",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/9/2 上午 08:00",
@@ -23434,8 +28905,34 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "張統優主任您好，請協助回覆問題，謝謝。陳維菁君 因「胸部挫傷併右側2根肋骨骨折、多處擦挫傷及瘀傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.何時因上開傷病至貴院初診?初診當時有無主訴發生傷害之事故?發生日期及經過為何?\n2.所患傷病成因為何?\n3.是否為主訴之事故造成?\n4.陳維菁君醫療經過及傷勢復原情形如何？\n5.有無併發症或後遺症？\n6.其何時起應可恢復一般工作能力？\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "1.何時因上開傷病至貴院初診?初診當時有無主訴發生傷害之事故?發生日期及經過為何? \n115年2月3號到雙和急診. 請急診醫師回答. 我只有一次門診\n\n2.所患傷病成因為何? \n依急診及病患自訴, 來診為機車和汽車車禍，右腹及右膝痛\n\n3.是否為主訴之事故造成? \n門診看診日期03月05為無法判斷是何時造成\n\n4.陳維菁君醫療經過及傷勢復原情形如何？ \n給預安排胸X光, 發現有右側第七根肋骨骨折, 還沒有瘉合.\n\n5.有無併發症或後遺症？ \n無氣血胸\n\n6.其何時起應可恢復一般工作能力？\n肋骨瘉合因人而異,但一般為一至三個月.",
+    "question": "張統優主任您好，請協助回覆問題，謝謝。陳維菁君 因「胸部挫傷併右側2根肋骨骨折、多處擦挫傷及瘀傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.何時因上開傷病至貴院初診?初診當時有無主訴發生傷害之事故?發生日期及經過為何?
+2.所患傷病成因為何?
+3.是否為主訴之事故造成?
+4.陳維菁君醫療經過及傷勢復原情形如何？
+5.有無併發症或後遺症？
+6.其何時起應可恢復一般工作能力？
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "doctor_reply": "1.何時因上開傷病至貴院初診?初診當時有無主訴發生傷害之事故?發生日期及經過為何? 
+115年2月3號到雙和急診. 請急診醫師回答. 我只有一次門診
+
+2.所患傷病成因為何? 
+依急診及病患自訴, 來診為機車和汽車車禍，右腹及右膝痛
+
+3.是否為主訴之事故造成? 
+門診看診日期03月05為無法判斷是何時造成
+
+4.陳維菁君醫療經過及傷勢復原情形如何？ 
+給預安排胸X光, 發現有右側第七根肋骨骨折, 還沒有瘉合.
+
+5.有無併發症或後遺症？ 
+無氣血胸
+
+6.其何時起應可恢復一般工作能力？
+肋骨瘉合因人而異,但一般為一至三個月.",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/9/2 上午 08:00",
@@ -23460,8 +28957,27 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "翁佩韋主任您好，請協助回覆問題，謝謝。陳維菁君 因「胸部挫傷併右側2根肋骨骨折、多處擦挫傷及瘀傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.何時因上開傷病至貴院初診?\n2.初診當時有無主訴發生傷害之事故?\n3.發生日期及經過為何?\n4.所患傷病成因為何?\n5.是否為主訴之事故造成?\n6.陳維菁君醫療經過及傷勢復原情形如何？\n7.有無併發症或後遺症？\n8.其何時起應可恢復一般工作能力？\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "1.何時因上開傷病至貴院初診?  -- 115/02/03 本院急診。\n2.初診當時有無主訴發生傷害之事故?  -- 騎機車與對方的汽車發生車禍。\n3.發生日期及經過為何? -- 115/02/03  因車禍導致受傷。\n4.所患傷病成因為何? -- 115/02/03  因車禍事故中所遭受外力而導致之傷害\n5.是否為主訴之事故造成?  -- 其收傷害情形，確實需遭受外力而導致。\n6.陳維菁君醫療經過及傷勢復原情形如何？ -- 115/02/03 至本院急診求診，骨科病情相關部分，則曾於 115/02/09 於門診求診，雙膝及雙側上臂仍有些挫瘀傷，及右手食指活動疼痛。經x光檢查，雙膝及右手並無骨折發生。\n7.有無併發症或後遺症？ -- 骨科門診檢查部分，當日診視情形無特殊併發症，或可導致後遺症之症狀表現。\n8.其何時起應可恢復一般工作能力？ -- 煩請由此病人此次事件之主要傷害診斷之主要治療胸腔外科醫師回答。",
+    "question": "翁佩韋主任您好，請協助回覆問題，謝謝。陳維菁君 因「胸部挫傷併右側2根肋骨骨折、多處擦挫傷及瘀傷」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.何時因上開傷病至貴院初診?
+2.初診當時有無主訴發生傷害之事故?
+3.發生日期及經過為何?
+4.所患傷病成因為何?
+5.是否為主訴之事故造成?
+6.陳維菁君醫療經過及傷勢復原情形如何？
+7.有無併發症或後遺症？
+8.其何時起應可恢復一般工作能力？
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "doctor_reply": "1.何時因上開傷病至貴院初診?  -- 115/02/03 本院急診。
+2.初診當時有無主訴發生傷害之事故?  -- 騎機車與對方的汽車發生車禍。
+3.發生日期及經過為何? -- 115/02/03  因車禍導致受傷。
+4.所患傷病成因為何? -- 115/02/03  因車禍事故中所遭受外力而導致之傷害
+5.是否為主訴之事故造成?  -- 其收傷害情形，確實需遭受外力而導致。
+6.陳維菁君醫療經過及傷勢復原情形如何？ -- 115/02/03 至本院急診求診，骨科病情相關部分，則曾於 115/02/09 於門診求診，雙膝及雙側上臂仍有些挫瘀傷，及右手食指活動疼痛。經x光檢查，雙膝及右手並無骨折發生。
+7.有無併發症或後遺症？ -- 骨科門診檢查部分，當日診視情形無特殊併發症，或可導致後遺症之症狀表現。
+8.其何時起應可恢復一般工作能力？ -- 煩請由此病人此次事件之主要傷害診斷之主要治療胸腔外科醫師回答。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/9/2 上午 08:00",
@@ -23486,7 +29002,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王智毅醫師您好，請協助回覆問題，謝謝。\t王彥傑君因「右膝關節軟骨外傷性破裂、右膝關節半月板軟骨外傷性破裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.何時因上開傷病至貴院初診?\n2.初診當時有無主訴發生傷害之事故?\n3.發生日期及經過為何?\n4.所患傷病成因為何?\n5.是否為主訴之事故造成?\n6.王彥傑君醫療經過及傷勢復原情形如何？\n7.有無併發症或後遺症？\n8.其何時起應可恢復一般工作能力？\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王智毅醫師您好，請協助回覆問題，謝謝。	王彥傑君因「右膝關節軟骨外傷性破裂、右膝關節半月板軟骨外傷性破裂」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.何時因上開傷病至貴院初診?
+2.初診當時有無主訴發生傷害之事故?
+3.發生日期及經過為何?
+4.所患傷病成因為何?
+5.是否為主訴之事故造成?
+6.王彥傑君醫療經過及傷勢復原情形如何？
+7.有無併發症或後遺症？
+8.其何時起應可恢復一般工作能力？
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "其何時起應可恢復一般工作能力？   手術後半年能恢復一般工作能力",
     "remark": "其何時起應可恢復一般工作能力？",
     "status": "已回覆",
@@ -23512,8 +29040,26 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "翁佩韋主任您好，請協助回覆問題，謝謝。\n1.請告知貴院病患謝哲亭於114年10月28日接受手術後，期間有無回院檢查?\n2.檢查日期分別為何?\n3.又該病患於115年3月30日回院檢查之結果為何?\n4.與其前一次檢查結果相對照，有無因病患所稱遭外力撞擊影響而新生之傷勢?\n5.具體傷勢為何?\n請惠示醫理見解。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
-    "doctor_reply": "1.請告知貴院病患謝哲亭於114年10月28日接受手術後，期間有無回院檢查? \n   -- 有。\n2.檢查日期分別為何? \n -- 114/11/10, 11/27, 12/15, 115/01/12,  /26, 2/9, 2/23, 2/30, 4/27, 5/21, 5/28, 6/18 (請參閱骨科門診紀錄)。\n3.又該病患於115年3月30日回院檢查之結果為何?  \n-- 病人左膝關節於該日就診前一週，因撞挫傷而感覺腫痛。\n4.與其前一次檢查結果相對照，有無因病患所稱遭外力撞擊影響而新生之傷勢? \n-- 該日就診理學檢查發現左膝關節有輕微腫脹，無明顯外觀上的擦傷或瘀傷，外力撞擊是有可能導致此症狀的表現。\n5.具體傷勢為何? \n-- 該日就診理學檢查發現左膝關節有輕微腫脹，無明顯外觀上的擦傷或瘀傷，膝關節活動並無明顯受限。",
+    "question": "翁佩韋主任您好，請協助回覆問題，謝謝。
+1.請告知貴院病患謝哲亭於114年10月28日接受手術後，期間有無回院檢查?
+2.檢查日期分別為何?
+3.又該病患於115年3月30日回院檢查之結果為何?
+4.與其前一次檢查結果相對照，有無因病患所稱遭外力撞擊影響而新生之傷勢?
+5.具體傷勢為何?
+請惠示醫理見解。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "doctor_reply": "1.請告知貴院病患謝哲亭於114年10月28日接受手術後，期間有無回院檢查? 
+   -- 有。
+2.檢查日期分別為何? 
+ -- 114/11/10, 11/27, 12/15, 115/01/12,  /26, 2/9, 2/23, 2/30, 4/27, 5/21, 5/28, 6/18 (請參閱骨科門診紀錄)。
+3.又該病患於115年3月30日回院檢查之結果為何?  
+-- 病人左膝關節於該日就診前一週，因撞挫傷而感覺腫痛。
+4.與其前一次檢查結果相對照，有無因病患所稱遭外力撞擊影響而新生之傷勢? 
+-- 該日就診理學檢查發現左膝關節有輕微腫脹，無明顯外觀上的擦傷或瘀傷，外力撞擊是有可能導致此症狀的表現。
+5.具體傷勢為何? 
+-- 該日就診理學檢查發現左膝關節有輕微腫脹，無明顯外觀上的擦傷或瘀傷，膝關節活動並無明顯受限。",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/9/2 上午 08:00",
@@ -23538,8 +29084,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.黃裕閔醫師您好請協助回覆問題謝謝您。\n(陳永昌18136740)君就診有無主訴發生傷害事故時間及成因為何？\n其於115年5月14日入院手術，術後療養至何時已可恢復工作能力？\n請惠示醫理見解。\n佩妤敬上",
-    "doctor_reply": "病人主述三四個月前因跌倒導致腳受傷\n建議休養一個月",
+    "question": "Dr.黃裕閔醫師您好請協助回覆問題謝謝您。
+(陳永昌18136740)君就診有無主訴發生傷害事故時間及成因為何？
+其於115年5月14日入院手術，術後療養至何時已可恢復工作能力？
+請惠示醫理見解。
+佩妤敬上",
+    "doctor_reply": "病人主述三四個月前因跌倒導致腳受傷
+建議休養一個月",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/9/3 上午 08:00",
@@ -23564,7 +29115,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林哲立醫師您好\n因臺灣高等法院來函需回答問題。\n惠請協助確認旨揭病患 (07094639呂逸強  )相關問題\n1. 113年4月9日就診經診斷「下背挫傷」，是否係其113年4月7日急診主訴車禍所受之傷勢？\n2. 若是，為何113年4月7日之診斷證明書僅記載「臉部擦挫傷、背部鈍挫傷、雙側下肢擦挫傷」，而無「下背挫傷」？\n4.又該「下背挫傷」是否會導致其罹患「感染性脊椎炎/椎間盤炎」？\n5.該「下背挫傷」是否係造成其需於113年6月21日進行「胸椎椎板切除及固定術」之原因？\n請惠示醫理見解\n佩妤敬上",
+    "question": "林哲立醫師您好
+因臺灣高等法院來函需回答問題。
+惠請協助確認旨揭病患 (07094639呂逸強  )相關問題
+1. 113年4月9日就診經診斷「下背挫傷」，是否係其113年4月7日急診主訴車禍所受之傷勢？
+2. 若是，為何113年4月7日之診斷證明書僅記載「臉部擦挫傷、背部鈍挫傷、雙側下肢擦挫傷」，而無「下背挫傷」？
+4.又該「下背挫傷」是否會導致其罹患「感染性脊椎炎/椎間盤炎」？
+5.該「下背挫傷」是否係造成其需於113年6月21日進行「胸椎椎板切除及固定術」之原因？
+請惠示醫理見解
+佩妤敬上",
     "doctor_reply": "1.下背挫傷跟急診的背部鈍挫傷是ㄧ樣的意思，的確是跟車禍有關。2.至於下背挫傷是否會造成感染性脊椎炎/椎間盤炎？是否需要進行胸椎板切除及固定術，則要詢問開刀的神經外科醫生！",
     "remark": "",
     "status": "已回覆",
@@ -23590,7 +29149,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蘇鈺凱醫師您好  \n(因甘宜弘醫師離職請協助代為回答，因復健科楊醫師回復有提及請神外協助回覆)\n臺灣高等法院來函需回答問題。\n惠請協助確認旨揭病患 (07094639呂逸強  )相關問題\n1. 113年4月9日就診經診斷「下背挫傷」，是否係其113年4月7日急診主訴車禍所受之傷勢？\n2. 若是，為何113年4月7日之診斷證明書僅記載「臉部擦挫傷、背部鈍挫傷、雙側下肢擦挫傷」，而無「下背挫傷」？\n4.又該「下背挫傷」是否會導致其罹患「感染性脊椎炎/椎間盤炎」？\n5.該「下背挫傷」是否係造成其需於113年6月21日進行「胸椎椎板切除及固定術」之原因？\n請惠示醫理見解\n佩妤敬上",
+    "question": "蘇鈺凱醫師您好  
+(因甘宜弘醫師離職請協助代為回答，因復健科楊醫師回復有提及請神外協助回覆)
+臺灣高等法院來函需回答問題。
+惠請協助確認旨揭病患 (07094639呂逸強  )相關問題
+1. 113年4月9日就診經診斷「下背挫傷」，是否係其113年4月7日急診主訴車禍所受之傷勢？
+2. 若是，為何113年4月7日之診斷證明書僅記載「臉部擦挫傷、背部鈍挫傷、雙側下肢擦挫傷」，而無「下背挫傷」？
+4.又該「下背挫傷」是否會導致其罹患「感染性脊椎炎/椎間盤炎」？
+5.該「下背挫傷」是否係造成其需於113年6月21日進行「胸椎椎板切除及固定術」之原因？
+請惠示醫理見解
+佩妤敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -23616,7 +29184,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "羅偉倫醫師您好，請協助回覆問題謝謝\n(高志明17366238）因「頸椎脊髓外傷」於114年5月20日起至貴院門診，申請核退職災自墊醫療費用。\n1.高志明君於何時因該症至貴院初診？\n2.當時係由何人、何時送醫？\n3.症狀如何？\n4.有無主訴至貴院就診前曾至何家醫療院所就診？\n5.致病原因為何？\n6.曾否主訴發生事故時間、地點、原因及經過？\n請惠示醫理見解\n佩妤敬上",
+    "question": "羅偉倫醫師您好，請協助回覆問題謝謝
+(高志明17366238）因「頸椎脊髓外傷」於114年5月20日起至貴院門診，申請核退職災自墊醫療費用。
+1.高志明君於何時因該症至貴院初診？
+2.當時係由何人、何時送醫？
+3.症狀如何？
+4.有無主訴至貴院就診前曾至何家醫療院所就診？
+5.致病原因為何？
+6.曾否主訴發生事故時間、地點、原因及經過？
+請惠示醫理見解
+佩妤敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -23642,7 +29219,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "張統優醫師您好\n因勞保局來函請協助回覆問題(05423127侯樹林)\n病歷皆以釋出過請勿修改病歷\n1.侯君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「未明示部位脊椎僵直性脊椎炎、左側肩部旋轉環帶完全撕裂或破裂，未明示為創傷性」是否係因主訴之傷害事故所致？\n4.侯君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解。\n佩妤敬上",
+    "question": "張統優醫師您好
+因勞保局來函請協助回覆問題(05423127侯樹林)
+病歷皆以釋出過請勿修改病歷
+1.侯君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「未明示部位脊椎僵直性脊椎炎、左側肩部旋轉環帶完全撕裂或破裂，未明示為創傷性」是否係因主訴之傷害事故所致？
+4.侯君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "已完成",
@@ -23668,7 +29256,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "謝岳穎醫師您好\n因勞保局來函請協助回覆問題(05423127侯樹林)\n病歷皆以釋出過請勿修改病歷\n\n1.侯君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「未明示部位脊椎僵直性脊椎炎、左側肩部旋轉環帶完全撕裂或破裂，未明示為創傷性」是否係因主訴之傷害事故所致？\n4.侯君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解。\n佩妤敬上",
+    "question": "謝岳穎醫師您好
+因勞保局來函請協助回覆問題(05423127侯樹林)
+病歷皆以釋出過請勿修改病歷
+
+1.侯君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「未明示部位脊椎僵直性脊椎炎、左側肩部旋轉環帶完全撕裂或破裂，未明示為創傷性」是否係因主訴之傷害事故所致？
+4.侯君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解。
+佩妤敬上",
     "doctor_reply": "1.工作受傷 2. 未知 3. 僵直性脊椎炎與工作無關，左側肩部旋轉環帶完全撕裂或破裂無法證實與傷害事故有直接因果關係  4.骨科部分僅治療他脊椎骨折的問題。5. 還是會有一些背痛症狀，與本次受傷，本身疾病，及勞動工作都有相關。6. 一般半年。 7. 一般來說骨折癒合及恢復大部分的支撐強度大約就是半年。",
     "remark": "",
     "status": "已回覆",
@@ -23694,8 +29294,39 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "翁佩韋醫師您好\n因勞保局來函請協助回覆問題(05423127侯樹木)\n病歷皆以釋出過請勿修改病歷\n\n1.侯君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「未明示部位脊椎僵直性脊椎炎、左側肩部旋轉環帶完全撕裂或破裂，未明示為創傷性」是否係因主訴之傷害事故所致？\n4.侯君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解。\n佩妤敬上",
-    "doctor_reply": "1.侯君就診有無主訴傷害事故？ \n 答: 無近期特別重大傷害事故。\n\n2.發生日期及原因為何？ \n答: 左肩活動疼痛症狀已超過一年，今年來連非工作的休息時段也會感覺疼痛。經一系列的影像學檢查(含超音波與核磁共振)，其持續性症狀表現與其左肩肩關節旋轉肌腱斷裂有關。\n\n3.所患「未明示部位脊椎僵直性脊椎炎、左側肩部旋轉環帶完全撕裂或破裂，未明示為創傷性」是否係因主訴之傷害事故所致？ \n答: 無近期特別重大傷害事故。\n\n4.侯君因上開傷病治療經過為何？ \n114/3/13 因左肩上述症狀至本人門診就診，經本院核磁共振影像學檢查再次確認後，於114/04/29 入院，並於當日接受左肩關節鏡併旋轉肌腱縫合手術，於114/04/30 出院。\n\n5.有無併發症或後遺症？ \n截至病人最近一次本人回診日 115/02/05，左肩恢復情形平順。\n\n6.療養至何時起可從事一般工作？\n術後半年可從事一般、非重度勞力之工作 \n\n7.認定理由及依據為何？\n左肩旋轉肌腱縫合手術術後之照護建議。",
+    "question": "翁佩韋醫師您好
+因勞保局來函請協助回覆問題(05423127侯樹木)
+病歷皆以釋出過請勿修改病歷
+
+1.侯君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「未明示部位脊椎僵直性脊椎炎、左側肩部旋轉環帶完全撕裂或破裂，未明示為創傷性」是否係因主訴之傷害事故所致？
+4.侯君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解。
+佩妤敬上",
+    "doctor_reply": "1.侯君就診有無主訴傷害事故？ 
+ 答: 無近期特別重大傷害事故。
+
+2.發生日期及原因為何？ 
+答: 左肩活動疼痛症狀已超過一年，今年來連非工作的休息時段也會感覺疼痛。經一系列的影像學檢查(含超音波與核磁共振)，其持續性症狀表現與其左肩肩關節旋轉肌腱斷裂有關。
+
+3.所患「未明示部位脊椎僵直性脊椎炎、左側肩部旋轉環帶完全撕裂或破裂，未明示為創傷性」是否係因主訴之傷害事故所致？ 
+答: 無近期特別重大傷害事故。
+
+4.侯君因上開傷病治療經過為何？ 
+114/3/13 因左肩上述症狀至本人門診就診，經本院核磁共振影像學檢查再次確認後，於114/04/29 入院，並於當日接受左肩關節鏡併旋轉肌腱縫合手術，於114/04/30 出院。
+
+5.有無併發症或後遺症？ 
+截至病人最近一次本人回診日 115/02/05，左肩恢復情形平順。
+
+6.療養至何時起可從事一般工作？
+術後半年可從事一般、非重度勞力之工作 
+
+7.認定理由及依據為何？
+左肩旋轉肌腱縫合手術術後之照護建議。",
     "remark": "",
     "status": "已回覆",
     "due_date": "2026/9/5 上午 08:00",
@@ -23720,7 +29351,19 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蘇千田醫師您好(因吳景益醫師離職請協助代為回覆)\n因勞保局來函請協助回覆問題(05423127侯樹林)\n病歷皆以釋出過請勿修改病歷\n\n1.侯君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「未明示部位脊椎僵直性脊椎炎、左側肩部旋轉環帶完全撕裂或破裂，未明示為創傷性」是否係因主訴之傷害事故所致？\n4.侯君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解。\n佩妤敬上",
+    "question": "蘇千田醫師您好(因吳景益醫師離職請協助代為回覆)
+因勞保局來函請協助回覆問題(05423127侯樹林)
+病歷皆以釋出過請勿修改病歷
+
+1.侯君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「未明示部位脊椎僵直性脊椎炎、左側肩部旋轉環帶完全撕裂或破裂，未明示為創傷性」是否係因主訴之傷害事故所致？
+4.侯君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解。
+佩妤敬上",
     "doctor_reply": "0970-405-258",
     "remark": "",
     "status": "已回覆",
@@ -23746,8 +29389,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好\n因勞保局調閱病歷請協助回覆問題謝謝\n1.(林靖憲08223735）於115年8月10日因「左肩上關節前唇前後撕裂」至貴院住院，其於何時因上述病症初診？\n2.當時症狀如何？\n3.主訴發生事故之時間、地點、原因及經過如何？\n4.有無訴及曾至何處診療？\n請惠示醫理見解\n佩妤敬上",
-    "doctor_reply": "1. 左肩症狀初診為115年3月2日\n2. 左肩疼痛，特定角度會卡住過不去\n3. 主訴為工作中拉扯後導致(因工作需搬動病人)\n4. 就醫師可查詢範圍並無於其他醫療院所就診記錄",
+    "question": "陳冠豪醫師您好
+因勞保局調閱病歷請協助回覆問題謝謝
+1.(林靖憲08223735）於115年8月10日因「左肩上關節前唇前後撕裂」至貴院住院，其於何時因上述病症初診？
+2.當時症狀如何？
+3.主訴發生事故之時間、地點、原因及經過如何？
+4.有無訴及曾至何處診療？
+請惠示醫理見解
+佩妤敬上",
+    "doctor_reply": "1. 左肩症狀初診為115年3月2日
+2. 左肩疼痛，特定角度會卡住過不去
+3. 主訴為工作中拉扯後導致(因工作需搬動病人)
+4. 就醫師可查詢範圍並無於其他醫療院所就診記錄",
     "remark": "",
     "status": "已回覆",
     "due_date": "2026/9/4 上午 08:00",
@@ -23772,7 +29425,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳致宇醫師您好請協助回覆問題(04127666林克振)\n1.貴院115年8月3日函覆所稱「新傷，日期115年3月5日急診」之意所指為何?\n2.依林民(04127666)就醫紀錄所示，林民之「右側股骨幹骨折』傷勢約於何時形成?\n3.自受傷之日起，距其於115年3月5日前往貴院就醫約相隔多久?\n有關祐嘉診所就醫之病歷資料如附件，如需該筆光碟影像請來電告知。\n另檢附上次公文回覆之內容供參閱\n佩妤敬上",
+    "question": "陳致宇醫師您好請協助回覆問題(04127666林克振)
+1.貴院115年8月3日函覆所稱「新傷，日期115年3月5日急診」之意所指為何?
+2.依林民(04127666)就醫紀錄所示，林民之「右側股骨幹骨折』傷勢約於何時形成?
+3.自受傷之日起，距其於115年3月5日前往貴院就醫約相隔多久?
+有關祐嘉診所就醫之病歷資料如附件，如需該筆光碟影像請來電告知。
+另檢附上次公文回覆之內容供參閱
+佩妤敬上",
     "doctor_reply": "",
     "remark": "如須他院病歷光碟請來電告知",
     "status": "待回覆",
@@ -23798,7 +29457,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.李顓雅醫師您好\n請協助回覆問題(02276658吳典恩)\n1.惠請針對吳典恩於115年5月30日、7月29日在貴院接受治療所服用之藥物，是否有可能鑑驗出苯二氮平類陽性反應？\n惠請提供醫理見解\n佩妤敬上",
+    "question": "Dr.李顓雅醫師您好
+請協助回覆問題(02276658吳典恩)
+1.惠請針對吳典恩於115年5月30日、7月29日在貴院接受治療所服用之藥物，是否有可能鑑驗出苯二氮平類陽性反應？
+惠請提供醫理見解
+佩妤敬上",
     "doctor_reply": "根據病人門診開立之藥物，有可能驗出苯二氮平類陽性反應。",
     "remark": "",
     "status": "已完成",
@@ -23824,8 +29487,30 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "翁佩韋醫師您好\n因勞工保險局來函請協助回覆問題謝謝\n(莊淑芬00994136）因「左足阿基里斯腱斷裂」於115年6月29日入住貴院，申請職災醫療給付。\n1.莊淑芬君於何時因該症至貴院初診？\n2.當時係由何人、何時送醫？症狀如何？\n3.有無主訴至貴院就診前曾至何家醫療院所就診？\n4.致病原因為何？\n5.曾否主訴發生事故時間、地點、原因及經過？\n請惠示醫理見解\n佩妤敬上",
-    "doctor_reply": "1.莊淑芬君於何時因該症至貴院初診？ \n答: 115/6/18 骨科門診。\n\n2.當時係由何人、何時送醫？症狀如何？ \n答: 當日自行門診就診，左足踝及左足腫痛，且活動疼痛、受限。\n\n3.有無主訴至貴院就診前曾至何家醫療院所就診？ \n答: 病歷紀錄曾於他院就診過，但無紀錄確切的院所名稱。\n\n4.致病原因為何？ \n工作時因跌倒，造成足踝扭傷所導致。\n\n5.曾否主訴發生事故時間、地點、原因及經過？\n115/06/03 於工作時因行動跌倒，造成足踝扭傷所導致。",
+    "question": "翁佩韋醫師您好
+因勞工保險局來函請協助回覆問題謝謝
+(莊淑芬00994136）因「左足阿基里斯腱斷裂」於115年6月29日入住貴院，申請職災醫療給付。
+1.莊淑芬君於何時因該症至貴院初診？
+2.當時係由何人、何時送醫？症狀如何？
+3.有無主訴至貴院就診前曾至何家醫療院所就診？
+4.致病原因為何？
+5.曾否主訴發生事故時間、地點、原因及經過？
+請惠示醫理見解
+佩妤敬上",
+    "doctor_reply": "1.莊淑芬君於何時因該症至貴院初診？ 
+答: 115/6/18 骨科門診。
+
+2.當時係由何人、何時送醫？症狀如何？ 
+答: 當日自行門診就診，左足踝及左足腫痛，且活動疼痛、受限。
+
+3.有無主訴至貴院就診前曾至何家醫療院所就診？ 
+答: 病歷紀錄曾於他院就診過，但無紀錄確切的院所名稱。
+
+4.致病原因為何？ 
+工作時因跌倒，造成足踝扭傷所導致。
+
+5.曾否主訴發生事故時間、地點、原因及經過？
+115/06/03 於工作時因行動跌倒，造成足踝扭傷所導致。",
     "remark": "",
     "status": "已回覆",
     "due_date": "2026/9/5 上午 08:00",
@@ -23850,7 +29535,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "王智毅醫師您好\n因勞保局來文，請協助回覆問題謝謝(06783699李建儒)\n1.李君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「左側肩關節脫臼、左側肩旋轉肌巨大破裂合併肱骨凹陷缺損」是否係因主訴之傷害事故所致？\n4.李君因上開傷病治療經過為何？有無併發症或後遺症？療養至何時起可從事一般工作？認定理由及依據為何？\n5.請確認115.4.27門診醫令是否正確?\n請惠示醫理見解。",
+    "question": "王智毅醫師您好
+因勞保局來文，請協助回覆問題謝謝(06783699李建儒)
+1.李君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「左側肩關節脫臼、左側肩旋轉肌巨大破裂合併肱骨凹陷缺損」是否係因主訴之傷害事故所致？
+4.李君因上開傷病治療經過為何？有無併發症或後遺症？療養至何時起可從事一般工作？認定理由及依據為何？
+5.請確認115.4.27門診醫令是否正確?
+請惠示醫理見解。",
     "doctor_reply": "1.  工作中左肩嚴重扭傷  2.  114/11/29 3. 是 4.  114/11/29 - 115/4/27 於雙和醫院骨科門診就診, 建議手術治療  但病患猶豫 於115/4/27 最後一次追蹤  , 該疾病若不手術 會導致肩關節永久性損傷導致關節退化病變  , 因 不清楚病患後續恢復狀態 無法判斷需療養多久  何時可從事一般工作  5. 是",
     "remark": "",
     "status": "已回覆",
@@ -23876,7 +29568,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳碧華醫師您好:因新北地方檢察署來函調閱病歷,(莊怡婷16720477)請協助確認病歷是否可以釋出?\n因公文有時效性，如未收到回覆病歷將於9月8日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "陳碧華醫師您好:因新北地方檢察署來函調閱病歷,(莊怡婷16720477)請協助確認病歷是否可以釋出?
+因公文有時效性，如未收到回覆病歷將於9月8日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可以如期釋出",
     "remark": "",
     "status": "已回覆",
@@ -23902,8 +29597,21 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "王智毅醫師您好:因勞保局來函調閱病歷(06232698羅淑芬),請協助回答問題\n1羅君就診有無主訴傷害事故？發生日期及原因為何？所患「左側肩關節脫臼、全身多處鈍挫傷、左側肩關節脫臼合併旋轉肌外傷性破裂、右側肩關節挫傷」是否係因主訴之傷害事故所致？\n2.羅君因上開傷病治療經過為何？\n3.有無併發症或後遺症？\n4.療養至何時起可從事一般工作？\n5.認定理由及依據為何？\n請惠示醫理見解。\n佩妤敬上",
-    "doctor_reply": "1羅君就診有無主訴傷害事故？ 114 /12/30 工作中跌倒 \n發生日期及原因為何？\n所患「左側肩關節脫臼、全身多處鈍挫傷、左側肩關節脫臼合併旋轉肌外傷性破裂、右側肩關節挫傷」是否係因主訴之傷害事故所致？  是 \n2.羅君因上開傷病治療經過為何？  115/1/22 接受左肩關節鏡旋轉肌縫補手術  , 後續恢復良好 \n3.有無併發症或後遺症？   無 \n4.療養至何時起可從事一般工作？  手術後休養6個月可從事 一般工作\n5.認定理由及依據為何？ 一般常規旋轉肌術後恢復期程",
+    "question": "王智毅醫師您好:因勞保局來函調閱病歷(06232698羅淑芬),請協助回答問題
+1羅君就診有無主訴傷害事故？發生日期及原因為何？所患「左側肩關節脫臼、全身多處鈍挫傷、左側肩關節脫臼合併旋轉肌外傷性破裂、右側肩關節挫傷」是否係因主訴之傷害事故所致？
+2.羅君因上開傷病治療經過為何？
+3.有無併發症或後遺症？
+4.療養至何時起可從事一般工作？
+5.認定理由及依據為何？
+請惠示醫理見解。
+佩妤敬上",
+    "doctor_reply": "1羅君就診有無主訴傷害事故？ 114 /12/30 工作中跌倒 
+發生日期及原因為何？
+所患「左側肩關節脫臼、全身多處鈍挫傷、左側肩關節脫臼合併旋轉肌外傷性破裂、右側肩關節挫傷」是否係因主訴之傷害事故所致？  是 
+2.羅君因上開傷病治療經過為何？  115/1/22 接受左肩關節鏡旋轉肌縫補手術  , 後續恢復良好 
+3.有無併發症或後遺症？   無 
+4.療養至何時起可從事一般工作？  手術後休養6個月可從事 一般工作
+5.認定理由及依據為何？ 一般常規旋轉肌術後恢復期程",
     "remark": "",
     "status": "已回覆",
     "due_date": "2026/9/7 上午 08:00",
@@ -23928,7 +29636,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蘇智銘醫師您好，因勞保局調閱病歷。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於9月8日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "蘇智銘醫師您好，因勞保局調閱病歷。
+請協助確認病歷，是否可以釋出。
+因案件有時效性，如未收到回覆病歷將於9月8日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "可以，謝謝",
     "remark": "",
     "status": "已回覆",
@@ -23980,7 +29692,9 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.林毅成您好請協助回覆公文問題謝謝(06400246梁力文)\n\n1.請惠予說明貴院病患梁力文如附件所示之貴院診斷證明書所載病名「右側上臂挫傷」之具體位置為何？",
+    "question": "Dr.林毅成您好請協助回覆公文問題謝謝(06400246梁力文)
+
+1.請惠予說明貴院病患梁力文如附件所示之貴院診斷證明書所載病名「右側上臂挫傷」之具體位置為何？",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -24006,7 +29720,8 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.柯世祐 請協助回覆問題謝謝\n請提供AD000-A115453(真實年籍姓名對照表)於114年3月30日至同年9月間至貴醫院就診所有資料(含病歷、護理紀錄、光學影像、至貴院諮商所之訪談紀錄、諮商紀錄等)，並以中文簡要說明病人就診時之病況、醫師處置或醫囑等，供本署參辦。",
+    "question": "Dr.柯世祐 請協助回覆問題謝謝
+請提供AD000-A115453(真實年籍姓名對照表)於114年3月30日至同年9月間至貴醫院就診所有資料(含病歷、護理紀錄、光學影像、至貴院諮商所之訪談紀錄、諮商紀錄等)，並以中文簡要說明病人就診時之病況、醫師處置或醫囑等，供本署參辦。",
     "doctor_reply": "病患來診表示來診前一日跌倒，頭部外傷，噁心想吐，給予電腦斷層掃描檢查後確認沒有腦出血或是骨折，給予衛教及出院藥物後，允予離院。",
     "remark": "",
     "status": "已回覆",
@@ -24032,7 +29747,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.許秉閎醫師您好，請協助回覆問題(02296807葉斯喜)\n1.請惠予查覆如附件所示診斷證明書上所載傷勢與告訴人即葉斯喜113年11月19日之車禍是否有關？\n2.理由為何？\n惠請提供醫理見解",
+    "question": "Dr.許秉閎醫師您好，請協助回覆問題(02296807葉斯喜)
+1.請惠予查覆如附件所示診斷證明書上所載傷勢與告訴人即葉斯喜113年11月19日之車禍是否有關？
+2.理由為何？
+惠請提供醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -24058,7 +29776,10 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "王鎮甡醫師您好請協助回覆問題(02296807葉斯喜)\n1.請惠予查覆如附件所示診斷證明書上所載傷勢與告訴人即葉斯喜113年11月19日之車禍是否有關？\n2.理由為何？\n惠請提供醫理見解",
+    "question": "王鎮甡醫師您好請協助回覆問題(02296807葉斯喜)
+1.請惠予查覆如附件所示診斷證明書上所載傷勢與告訴人即葉斯喜113年11月19日之車禍是否有關？
+2.理由為何？
+惠請提供醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -24084,8 +29805,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林家瑋醫師您好請協助回覆問題謝謝\n病患林卉穎(13291141)於110年11月16日起至110年12月10日止於雙和醫院住院期間，有無左側肩關節脫臼及右側肱骨骨折情形，並請說明判斷依據。\n 1.雙和醫院於上開期間為病患林卉穎拍攝之胸部X光影像(拍攝日期分別為11月16日、11月22日、11月25日二次，11月29日、12月2日、12月6日、12月9日)，可否判斷病患林卉穎有無右側肱骨骨折情形。\n2.醫審會鑑定書(編號:1140001)敘明「依110年11月29歲日、12月2日、12月6日及12月9日胸部X光影像，確認有左側肩關節脫臼。胸部X光檢查目的為判斷胸廓範圍之病灶，不一定涵蓋雙側肩關節或上臂。依病人於上述住院期間之全部X光影像，皆無完整涵蓋右肩關節與右上臂區域，因此無法判斷病人於此期間是否發生或已存在右肱骨骨折一事」，倘雙和醫院之判斷與醫審會上開判斷不同，請惠予說明原因。",
-    "doctor_reply": "1.  臨床上即使是深度昏迷之病人對痛覺仍應有相當反應, 此病人於該住院護理照護期間, 當移動病人右上臂時無任何疼痛反應, 依此推論應無骨折之可能, 自然也不會因懷疑有骨折而安排相對應之檢查.\n2. 另自111年11月16日至111年12月10日住院期間之胸部X光都只可看到部分右側肱骨, 然而影像上來看及正式放射科報告皆未見骨折之現象. \n3. 依據上述兩點, 此次回覆內容支持  \"醫審會鑑定書(編號:1140001)敘明「依110年11月29歲日、12月2日、12月6日及12月9日胸部X光影像，確認有左側肩關節脫臼。胸部X光檢查目的為判斷胸廓範圍之病灶，不一定涵蓋雙側肩關節或上臂。依病人於上述住院期間之全部X光影像，皆無完整涵蓋右肩關節與右上臂區域，因此無法判斷病人於此期間是否發生或已存在右肱骨骨折一事」\"  之論述.",
+    "question": "林家瑋醫師您好請協助回覆問題謝謝
+病患林卉穎(13291141)於110年11月16日起至110年12月10日止於雙和醫院住院期間，有無左側肩關節脫臼及右側肱骨骨折情形，並請說明判斷依據。
+ 1.雙和醫院於上開期間為病患林卉穎拍攝之胸部X光影像(拍攝日期分別為11月16日、11月22日、11月25日二次，11月29日、12月2日、12月6日、12月9日)，可否判斷病患林卉穎有無右側肱骨骨折情形。
+2.醫審會鑑定書(編號:1140001)敘明「依110年11月29歲日、12月2日、12月6日及12月9日胸部X光影像，確認有左側肩關節脫臼。胸部X光檢查目的為判斷胸廓範圍之病灶，不一定涵蓋雙側肩關節或上臂。依病人於上述住院期間之全部X光影像，皆無完整涵蓋右肩關節與右上臂區域，因此無法判斷病人於此期間是否發生或已存在右肱骨骨折一事」，倘雙和醫院之判斷與醫審會上開判斷不同，請惠予說明原因。",
+    "doctor_reply": "1.  臨床上即使是深度昏迷之病人對痛覺仍應有相當反應, 此病人於該住院護理照護期間, 當移動病人右上臂時無任何疼痛反應, 依此推論應無骨折之可能, 自然也不會因懷疑有骨折而安排相對應之檢查.
+2. 另自111年11月16日至111年12月10日住院期間之胸部X光都只可看到部分右側肱骨, 然而影像上來看及正式放射科報告皆未見骨折之現象. 
+3. 依據上述兩點, 此次回覆內容支持  \"醫審會鑑定書(編號:1140001)敘明「依110年11月29歲日、12月2日、12月6日及12月9日胸部X光影像，確認有左側肩關節脫臼。胸部X光檢查目的為判斷胸廓範圍之病灶，不一定涵蓋雙側肩關節或上臂。依病人於上述住院期間之全部X光影像，皆無完整涵蓋右肩關節與右上臂區域，因此無法判斷病人於此期間是否發生或已存在右肱骨骨折一事」\"  之論述.",
     "remark": "",
     "status": "已完成",
     "due_date": "2026/9/11 上午 08:00",
@@ -24110,7 +29836,13 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "劉柏均醫師您好，請協助回覆問題謝謝(17962612姚毓隆)\n本局接獲通報，有關旨揭個案115年6月25日於家中疑似遭受移工不當對待並於當日至貴院住院治療，因涉及身心障礙者不當對待行為，本局依據身心障礙者權益保障法第75條啟動調查，先予敘明。\n有關上述情事，本局需查調資訊分述如下:\n1.姚君就醫期間之診斷及治療情形。\n2.姚君因有末期肝硬化及肝衰竭病史，請提供本次住院期間病況變化情形，並協助釐明是否受感染或敗血症影響致病況惡化。\n3.請協助評估姚君是否可能因誤吸、嗆入異物等因素致吸入性肺炎，以及是否可能併發敗血症、呼吸衰竭，並請提供醫療專業意見。\n佩妤敬上",
+    "question": "劉柏均醫師您好，請協助回覆問題謝謝(17962612姚毓隆)
+本局接獲通報，有關旨揭個案115年6月25日於家中疑似遭受移工不當對待並於當日至貴院住院治療，因涉及身心障礙者不當對待行為，本局依據身心障礙者權益保障法第75條啟動調查，先予敘明。
+有關上述情事，本局需查調資訊分述如下:
+1.姚君就醫期間之診斷及治療情形。
+2.姚君因有末期肝硬化及肝衰竭病史，請提供本次住院期間病況變化情形，並協助釐明是否受感染或敗血症影響致病況惡化。
+3.請協助評估姚君是否可能因誤吸、嗆入異物等因素致吸入性肺炎，以及是否可能併發敗血症、呼吸衰竭，並請提供醫療專業意見。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -24136,8 +29868,27 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.柯子翔請協助回覆問題(01787609羅妍羚)\n出院病歷摘要及門診醫令有釋出過\n1.何時因「右頸肩挫傷、頸椎挫傷致頸椎神經炎、創傷後頸椎第一第二節半滑脫、右側臂神經叢損傷」「疑似臂神經損傷」傷病至貴院初診？\n2.初診當時有無主訴發生傷害之事故？\n3.發生日期及經過為何？\n4.有無主訴至其他醫療院所就醫？\n 5.所患「右頸肩挫傷、頸椎挫傷致頸椎神經炎、創傷後頸椎第一第二節半滑脫、右側臂神經叢損傷」「疑似臂神經損傷」傷病成因為何？\n6.是否為主訴之事故造成？\n7.羅君醫療經過及傷勢復原情形如何？\n8.有無併發症或後遺症？\n9.其何時應可恢復一般工作能力？\n請惠示醫理見解。",
-    "doctor_reply": "1. 因上述傷病於民國115年4月20日於復健科門診初診。\n2. 依照復健科初診病歷紀錄，當時有主訴發生傷害之事故。\n3. 病患於民國115年3月26日於工作時遭受同事從旁經過時拿著的大型貨物撞擊右側肩膀及頸部造成挫傷。(有影片)\n4. 依照復健科初診病歷紀錄，無主訴至其他醫療院所就醫。\n5. 因工作時遭受同事從旁經過時拿著的大型貨物撞擊右側肩膀及頸部所造成。\n6. 是。\n7. 於初診後陸續安排檢查並診斷上述傷病，目前仍接受藥物治療及復健治療中，傷勢逐漸復原中。\n8. 目前仍有右側頸肩與右上肢疼痛，及本體感覺異常之後遺症。\n9. 目前無法推估，需視其復原情況而定。",
+    "question": "Dr.柯子翔請協助回覆問題(01787609羅妍羚)
+出院病歷摘要及門診醫令有釋出過
+1.何時因「右頸肩挫傷、頸椎挫傷致頸椎神經炎、創傷後頸椎第一第二節半滑脫、右側臂神經叢損傷」「疑似臂神經損傷」傷病至貴院初診？
+2.初診當時有無主訴發生傷害之事故？
+3.發生日期及經過為何？
+4.有無主訴至其他醫療院所就醫？
+ 5.所患「右頸肩挫傷、頸椎挫傷致頸椎神經炎、創傷後頸椎第一第二節半滑脫、右側臂神經叢損傷」「疑似臂神經損傷」傷病成因為何？
+6.是否為主訴之事故造成？
+7.羅君醫療經過及傷勢復原情形如何？
+8.有無併發症或後遺症？
+9.其何時應可恢復一般工作能力？
+請惠示醫理見解。",
+    "doctor_reply": "1. 因上述傷病於民國115年4月20日於復健科門診初診。
+2. 依照復健科初診病歷紀錄，當時有主訴發生傷害之事故。
+3. 病患於民國115年3月26日於工作時遭受同事從旁經過時拿著的大型貨物撞擊右側肩膀及頸部造成挫傷。(有影片)
+4. 依照復健科初診病歷紀錄，無主訴至其他醫療院所就醫。
+5. 因工作時遭受同事從旁經過時拿著的大型貨物撞擊右側肩膀及頸部所造成。
+6. 是。
+7. 於初診後陸續安排檢查並診斷上述傷病，目前仍接受藥物治療及復健治療中，傷勢逐漸復原中。
+8. 目前仍有右側頸肩與右上肢疼痛，及本體感覺異常之後遺症。
+9. 目前無法推估，需視其復原情況而定。",
     "remark": "",
     "status": "已回覆",
     "due_date": "2026/9/11 上午 08:00",
@@ -24162,7 +29913,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "Dr.林廉傑請協助回覆問題(01787609羅妍羚)\n出院病歷摘要及門診醫令有釋出過\n1.何時因「右頸肩挫傷、頸椎挫傷致頸椎神經炎、創傷後頸椎第一第二節半滑脫、右側臂神經叢損傷」「疑似臂神經損傷」傷病至貴院初診？\n2.初診當時有無主訴發生傷害之事故？\n3.發生日期及經過為何？\n4.有無主訴至其他醫療院所就醫？\n 5.所患「右頸肩挫傷、頸椎挫傷致頸椎神經炎、創傷後頸椎第一第二節半滑脫、右側臂神經叢損傷」「疑似臂神經損傷」傷病成因為何？\n6.是否為主訴之事故造成？\n7.羅君醫療經過及傷勢復原情形如何？\n8.有無併發症或後遺症？\n9.其何時應可恢復一般工作能力？\n請惠示醫理見解。",
+    "question": "Dr.林廉傑請協助回覆問題(01787609羅妍羚)
+出院病歷摘要及門診醫令有釋出過
+1.何時因「右頸肩挫傷、頸椎挫傷致頸椎神經炎、創傷後頸椎第一第二節半滑脫、右側臂神經叢損傷」「疑似臂神經損傷」傷病至貴院初診？
+2.初診當時有無主訴發生傷害之事故？
+3.發生日期及經過為何？
+4.有無主訴至其他醫療院所就醫？
+ 5.所患「右頸肩挫傷、頸椎挫傷致頸椎神經炎、創傷後頸椎第一第二節半滑脫、右側臂神經叢損傷」「疑似臂神經損傷」傷病成因為何？
+6.是否為主訴之事故造成？
+7.羅君醫療經過及傷勢復原情形如何？
+8.有無併發症或後遺症？
+9.其何時應可恢復一般工作能力？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -24188,7 +29950,11 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "許秉閎醫師您好，因勞保局調閱病歷。(羅妍羚01787609)\n請協助確認病歷，是否可以釋出。(出院病歷摘要已釋出過)\n因案件有時效性，如未收到回覆病歷將於9月11日釋出，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩妤敬上",
+    "question": "許秉閎醫師您好，因勞保局調閱病歷。(羅妍羚01787609)
+請協助確認病歷，是否可以釋出。(出院病歷摘要已釋出過)
+因案件有時效性，如未收到回覆病歷將於9月11日釋出，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -24214,7 +29980,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳志華醫師您好，請協助回覆問題，謝謝。李文德君因「右側鎖骨骨折、右側第3,4,5肋骨骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。\n1.李君因上開傷病治療經過為何？\n2.有無併發症或後遺症？\n3.療養至何時起可從事一般工作？\n4.認定理由及依據為何？\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳志華醫師您好，請協助回覆問題，謝謝。李文德君因「右側鎖骨骨折、右側第3,4,5肋骨骨折」在貴院診療並檢具貴院出具之診斷書申請傷病給付。
+1.李君因上開傷病治療經過為何？
+2.有無併發症或後遺症？
+3.療養至何時起可從事一般工作？
+4.認定理由及依據為何？
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -24240,7 +30013,15 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳致宇醫師您好，請協助回答問題(13280004劉庭曄)\n1.劉君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「左側大腿13cm*5cm撕裂傷、左下腹擦挫傷、左肘擦挫傷、左足擦挫傷、左側膝關節前十字韌帶重建手術、左側膝關節前十字韌帶斷裂」是否係因主訴之傷害事故所致？\n4.劉君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解。",
+    "question": "陳致宇醫師您好，請協助回答問題(13280004劉庭曄)
+1.劉君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「左側大腿13cm*5cm撕裂傷、左下腹擦挫傷、左肘擦挫傷、左足擦挫傷、左側膝關節前十字韌帶重建手術、左側膝關節前十字韌帶斷裂」是否係因主訴之傷害事故所致？
+4.劉君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -24266,8 +30047,23 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "王萬榆醫師您好，請協助回答問題(13280004劉庭曄)\n1.劉君就診有無主訴傷害事故？\n2.發生日期及原因為何？\n3.所患「左側大腿13cm*5cm撕裂傷、左下腹擦挫傷、左肘擦挫傷、左足擦挫傷、左側膝關節前十字韌帶重建手術、左側膝關節前十字韌帶斷裂」是否係因主訴之傷害事故所致？\n4.劉君因上開傷病治療經過為何？\n5.有無併發症或後遺症？\n6.療養至何時起可從事一般工作？\n7.認定理由及依據為何？\n請惠示醫理見解。",
-    "doctor_reply": "1. 騎機車閃車自摔\n2. 2025/08/10 騎機車閃車自摔\n3. 理論上是此事故所致\n4. 8/10 急診縫合\n8/12-15-26及9/02 一般外科門診換藥及拆線\n5. 後續不在本人門診就醫\n6. 手術非本人執行。故無法回答\n7. 同6",
+    "question": "王萬榆醫師您好，請協助回答問題(13280004劉庭曄)
+1.劉君就診有無主訴傷害事故？
+2.發生日期及原因為何？
+3.所患「左側大腿13cm*5cm撕裂傷、左下腹擦挫傷、左肘擦挫傷、左足擦挫傷、左側膝關節前十字韌帶重建手術、左側膝關節前十字韌帶斷裂」是否係因主訴之傷害事故所致？
+4.劉君因上開傷病治療經過為何？
+5.有無併發症或後遺症？
+6.療養至何時起可從事一般工作？
+7.認定理由及依據為何？
+請惠示醫理見解。",
+    "doctor_reply": "1. 騎機車閃車自摔
+2. 2025/08/10 騎機車閃車自摔
+3. 理論上是此事故所致
+4. 8/10 急診縫合
+8/12-15-26及9/02 一般外科門診換藥及拆線
+5. 後續不在本人門診就醫
+6. 手術非本人執行。故無法回答
+7. 同6",
     "remark": "",
     "status": "已回覆",
     "due_date": "2026/9/12 上午 08:00",
@@ -24292,7 +30088,18 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蘇亦昌醫師您好，請協助回覆公文(03253621程姿瑀)\n1.何時因「腦動脈瘤破裂合併自發性腦出血」傷病至貴院初診？\n2.初診當時有無主訴發生傷害之事故？\n3.發生日期及經過為何？\n4.有無主訴至其他醫療院所就醫？\n5.所患「腦動脈瘤破裂合併自發性腦出血」傷病成因為何？\n6.是否為主訴之事故造成？\n7.程君醫療經過及傷勢復原情形如何？\n8.有無併發症或後遺症？\n9.其何時應可恢復一般工作能力？\n請惠示醫理見解。\n佩妤敬上",
+    "question": "蘇亦昌醫師您好，請協助回覆公文(03253621程姿瑀)
+1.何時因「腦動脈瘤破裂合併自發性腦出血」傷病至貴院初診？
+2.初診當時有無主訴發生傷害之事故？
+3.發生日期及經過為何？
+4.有無主訴至其他醫療院所就醫？
+5.所患「腦動脈瘤破裂合併自發性腦出血」傷病成因為何？
+6.是否為主訴之事故造成？
+7.程君醫療經過及傷勢復原情形如何？
+8.有無併發症或後遺症？
+9.其何時應可恢復一般工作能力？
+請惠示醫理見解。
+佩妤敬上",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -24318,7 +30125,16 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "黃錦前醫師您好，請協助回覆問題(09290954李瑞珍)\n就附件診斷證明書，惠請說明如下事項:\n 一、貴院113年3月20日出具之診斷證明書:\n1.其中113年3月7日至113年3月9日之開刀住院期間，請問:就其開刀之患部及傷勢，有無需要他人照顧之必要?\n2.若有，是哪幾天需要照顧、是全日或半日?\n3.又醫囑所謂「宜休養2個月」是否指手術患肢即「右手第一指」而言?\n4.並非指涉全身其他部位及全身活動能力?\n5.貴院113年10月16日出具之診斷證明書，該病患於113年9月15日至113年9月17日住院手術取出固定物移除，請問:就其開刀之患部及傷勢，有無需要他人照顧之必要?\n6.若有，是哪幾天需要照顧、是全日或半日?\n請惠示醫理見解",
+    "question": "黃錦前醫師您好，請協助回覆問題(09290954李瑞珍)
+就附件診斷證明書，惠請說明如下事項:
+ 一、貴院113年3月20日出具之診斷證明書:
+1.其中113年3月7日至113年3月9日之開刀住院期間，請問:就其開刀之患部及傷勢，有無需要他人照顧之必要?
+2.若有，是哪幾天需要照顧、是全日或半日?
+3.又醫囑所謂「宜休養2個月」是否指手術患肢即「右手第一指」而言?
+4.並非指涉全身其他部位及全身活動能力?
+5.貴院113年10月16日出具之診斷證明書，該病患於113年9月15日至113年9月17日住院手術取出固定物移除，請問:就其開刀之患部及傷勢，有無需要他人照顧之必要?
+6.若有，是哪幾天需要照顧、是全日或半日?
+請惠示醫理見解",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -24344,7 +30160,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。\n病人：陳柏廷 (病歷號：06867232)\n案由主旨：本局為正確、迅速審核被保險人陳柏廷君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速提供病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，檢具本費用收據並依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。
+病人：陳柏廷 (病歷號：06867232)
+案由主旨：本局為正確、迅速審核被保險人陳柏廷君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速提供病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，檢具本費用收據並依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/1/26 完成函覆銷案。 (備註：公文曾釋出過)",
     "remark": "公文曾釋出過",
     "status": "已完成",
@@ -24370,7 +30191,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "羅青山醫師您好，請協助回覆問題，謝謝。\n病人：戴克仁 (病歷號：00353922)\n案由主旨：本所為防疫業務需要，惠請貴院提供肺結核個案於貴院病歷、CXR、病理報告等相關報告，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "羅青山醫師您好，請協助回覆問題，謝謝。
+病人：戴克仁 (病歷號：00353922)
+案由主旨：本所為防疫業務需要，惠請貴院提供肺結核個案於貴院病歷、CXR、病理報告等相關報告，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/2/14 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24396,7 +30222,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "吳佳璋醫師您好，請協助回覆問題，謝謝。\n病人：劉榮華 (病歷號：02467964)\n案由主旨：本局為正確、迅速審核被保險人劉榮華君(身分證統一編號：F122189300，出生日期：49年11月2日，病歷號碼：02467964)勞工保險給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "吳佳璋醫師您好，請協助回覆問題，謝謝。
+病人：劉榮華 (病歷號：02467964)
+案由主旨：本局為正確、迅速審核被保險人劉榮華君(身分證統一編號：F122189300，出生日期：49年11月2日，病歷號碼：02467964)勞工保險給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/2/24 完成函覆銷案。 (備註：補正失能診斷書)",
     "remark": "補正失能診斷書",
     "status": "已完成",
@@ -24422,7 +30253,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "楊宗燁醫師您好，請協助回覆問題，謝謝。\n病人：黃登戀 (病歷號：14323660)\n案由主旨：本分局因偵辦刑事過失致死案需要，請依說明二所示提供相關資料，俾利刑案偵辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "楊宗燁醫師您好，請協助回覆問題，謝謝。
+病人：黃登戀 (病歷號：14323660)
+案由主旨：本分局因偵辦刑事過失致死案需要，請依說明二所示提供相關資料，俾利刑案偵辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/3/6 完成函覆銷案。 (備註：公文已出過)",
     "remark": "公文已出過",
     "status": "已完成",
@@ -24448,7 +30284,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "李紹榕醫師您好，請協助回覆問題，謝謝。\n病人：邱建林 (病歷號：02777687)\n案由主旨：本局為正確、迅速審核被保險人邱建林君升保失能給付需要，敬請貴院就說明三於文到15日內儘速提供病歷影本，至於查詢費每案可依行政成本在1,000元範肉內，檢具本費用收據並依印花稅法相關規定自行負責貼甬印花稅票復，向本局申報費用(如無查詢資料可提供，則不予計費)，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "李紹榕醫師您好，請協助回覆問題，謝謝。
+病人：邱建林 (病歷號：02777687)
+案由主旨：本局為正確、迅速審核被保險人邱建林君升保失能給付需要，敬請貴院就說明三於文到15日內儘速提供病歷影本，至於查詢費每案可依行政成本在1,000元範肉內，檢具本費用收據並依印花稅法相關規定自行負責貼甬印花稅票復，向本局申報費用(如無查詢資料可提供，則不予計費)，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/3/20 完成函覆銷案。 (備註：(更正紙本診斷書)有提供病歷)",
     "remark": "(更正紙本診斷書)有提供病歷",
     "status": "已完成",
@@ -24474,7 +30315,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳冠元醫師您好，請協助回覆問題，謝謝。\n病人：盧筱蓉 (病歷號：14261363)\n案由主旨：本局為正確、迅速審核被保險人盧筱蓉君勞丰保險給付需要，敬請貴院就說明三於文到15日內儘速查明惠復並寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，儘速向本局申報費用(如無查詢資料可提供，則不予計費)，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "陳冠元醫師您好，請協助回覆問題，謝謝。
+病人：盧筱蓉 (病歷號：14261363)
+案由主旨：本局為正確、迅速審核被保險人盧筱蓉君勞丰保險給付需要，敬請貴院就說明三於文到15日內儘速查明惠復並寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，儘速向本局申報費用(如無查詢資料可提供，則不予計費)，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/3/24 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24500,7 +30346,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "馬漢平醫師您好，請協助回覆問題，謝謝。\n病人：何朝安 (病歷號：13541756)\n案由主旨：本局為正確、迅速審核被保險人何朝安君災保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "馬漢平醫師您好，請協助回覆問題，謝謝。
+病人：何朝安 (病歷號：13541756)
+案由主旨：本局為正確、迅速審核被保險人何朝安君災保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/3/24 完成函覆銷案。 (備註：直接釋出)",
     "remark": "直接釋出",
     "status": "已完成",
@@ -24526,7 +30377,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "賴鴻政醫師您好，請協助回覆問題，謝謝。\n病人：吳梅溶 (病歷號：01530661)\n案由主旨：本局為正確、迅速審核被保險人吳梅溶君(身分證統一編號：F225079509，出生日期：70年1月18日，病歷號碼：01530661)勞工保險給付需要，敬請貴院就離明二於文到15日內儘速惠予查明補正，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "賴鴻政醫師您好，請協助回覆問題，謝謝。
+病人：吳梅溶 (病歷號：01530661)
+案由主旨：本局為正確、迅速審核被保險人吳梅溶君(身分證統一編號：F225079509，出生日期：70年1月18日，病歷號碼：01530661)勞工保險給付需要，敬請貴院就離明二於文到15日內儘速惠予查明補正，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/4/2 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24552,7 +30408,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。\n病人：張明玲 (病歷號：02360775)\n案由主旨：本局為正確、迅速審核被保險人張明玲君勞保失能給付需要，敬請 貴院就說明三於文到15日內儘速青明補正並寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用(如無查詢資料可提供，則不予計費)，有勞協助，被致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。
+病人：張明玲 (病歷號：02360775)
+案由主旨：本局為正確、迅速審核被保險人張明玲君勞保失能給付需要，敬請 貴院就說明三於文到15日內儘速青明補正並寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用(如無查詢資料可提供，則不予計費)，有勞協助，被致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/4/10 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24578,7 +30439,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "張舜程醫師您好，請協助回覆問題，謝謝。\n病人：羅學賢 (病歷號：01803495)\n案由主旨：請貴院惠予提供如說明所示之資料過署參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "張舜程醫師您好，請協助回覆問題，謝謝。
+病人：羅學賢 (病歷號：01803495)
+案由主旨：請貴院惠予提供如說明所示之資料過署參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/5/4 完成函覆銷案。 (備註：醫療糾紛)",
     "remark": "醫療糾紛",
     "status": "已完成",
@@ -24604,7 +30470,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。\n病人：林文彥 (病歷號：09377736)\n案由主旨：本局為正確、迅速審核被保險人林文彥君災保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。
+病人：林文彥 (病歷號：09377736)
+案由主旨：本局為正確、迅速審核被保險人林文彥君災保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/5/11 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24630,7 +30501,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳弘洲醫師您好，請協助回覆問題，謝謝。\n病人：黃小萍 (病歷號：03076646)\n案由主旨：本局為正確、迅速審核被保險人黃小萍君勞保失能給付需要，敬請貴院就說明三所列各點於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "陳弘洲醫師您好，請協助回覆問題，謝謝。
+病人：黃小萍 (病歷號：03076646)
+案由主旨：本局為正確、迅速審核被保險人黃小萍君勞保失能給付需要，敬請貴院就說明三所列各點於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/5/11 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24656,7 +30532,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "鄭琪睿醫師您好，請協助回覆問題，謝謝。\n病人：郭珍鳳 (病歷號：16881116)\n案由主旨：本局為審核被保險人郭珍鳳保險給付需要，敬請貴院依說明三所列事項於文到15日內儘速查明惠復，並檢附其至貴院就診之全份病歷資料影本，每案依行政成本在1,000元範圍內申報費用，請按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於當月向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "鄭琪睿醫師您好，請協助回覆問題，謝謝。
+病人：郭珍鳳 (病歷號：16881116)
+案由主旨：本局為審核被保險人郭珍鳳保險給付需要，敬請貴院依說明三所列事項於文到15日內儘速查明惠復，並檢附其至貴院就診之全份病歷資料影本，每案依行政成本在1,000元範圍內申報費用，請按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於當月向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/5/11 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24682,7 +30563,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "黃立楷醫師您好，請協助回覆問題，謝謝。\n病人：羅暉騰 (病歷號：16627361)\n案由主旨：本局為正確、迅速審核被保險人羅暉騰君勞工職業災害保 險失能給付需要,敬請貴院就說明三於文到後儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內,依印花稅法相關規定自行負責貼用印花稅票後, 請儘速向本局申報費用(如無查詢資料可提供，則不予計費)，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "黃立楷醫師您好，請協助回覆問題，謝謝。
+病人：羅暉騰 (病歷號：16627361)
+案由主旨：本局為正確、迅速審核被保險人羅暉騰君勞工職業災害保 險失能給付需要,敬請貴院就說明三於文到後儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內,依印花稅法相關規定自行負責貼用印花稅票後, 請儘速向本局申報費用(如無查詢資料可提供，則不予計費)，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已完成函覆。",
     "remark": "",
     "status": "已完成",
@@ -24708,7 +30594,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。\n病人：王俊毅 (病歷號：02519007)\n案由主旨：請貴院於115年5月15日前提供本市重大性侵害案件加害人王○毅之精神科病歷摘要等相關資料，詳如說明，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。
+病人：王俊毅 (病歷號：02519007)
+案由主旨：請貴院於115年5月15日前提供本市重大性侵害案件加害人王○毅之精神科病歷摘要等相關資料，詳如說明，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/14 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24734,7 +30625,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許力云醫師您好，請協助回覆問題，謝謝。\n病人：王俊毅 (病歷號：02519007)\n案由主旨：請貴院於115年5月15日前提供本市重大性侵害案件加害人王○毅之精神科病歷摘要等相關資料，詳如說明，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "許力云醫師您好，請協助回覆問題，謝謝。
+病人：王俊毅 (病歷號：02519007)
+案由主旨：請貴院於115年5月15日前提供本市重大性侵害案件加害人王○毅之精神科病歷摘要等相關資料，詳如說明，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/14 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24760,7 +30656,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "謝沛興醫師您好，請協助回覆問題，謝謝。\n病人：王俊毅 (病歷號：02519007)\n案由主旨：請貴院於115年5月15日前提供本市重大性侵害案件加害人王○毅之精神科病歷摘要等相關資料，詳如說明，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "謝沛興醫師您好，請協助回覆問題，謝謝。
+病人：王俊毅 (病歷號：02519007)
+案由主旨：請貴院於115年5月15日前提供本市重大性侵害案件加害人王○毅之精神科病歷摘要等相關資料，詳如說明，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/14 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24786,7 +30687,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃婷韵醫師您好，請協助回覆問題，謝謝。\n病人：王俊毅 (病歷號：02519007)\n案由主旨：請貴院於115年5月15日前提供本市重大性侵害案件加害人王○毅之精神科病歷摘要等相關資料，詳如說明，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "黃婷韵醫師您好，請協助回覆問題，謝謝。
+病人：王俊毅 (病歷號：02519007)
+案由主旨：請貴院於115年5月15日前提供本市重大性侵害案件加害人王○毅之精神科病歷摘要等相關資料，詳如說明，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/14 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24812,7 +30718,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林曄誠醫師您好，請協助回覆問題，謝謝。\n病人：王俊毅 (病歷號：02519007)\n案由主旨：請貴院於115年5月15日前提供本市重大性侵害案件加害人王○毅之精神科病歷摘要等相關資料，詳如說明，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林曄誠醫師您好，請協助回覆問題，謝謝。
+病人：王俊毅 (病歷號：02519007)
+案由主旨：請貴院於115年5月15日前提供本市重大性侵害案件加害人王○毅之精神科病歷摘要等相關資料，詳如說明，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/14 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24838,7 +30749,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳美茜醫師您好，請協助回覆問題，謝謝。\n病人：徐美英 (病歷號：00092696)\n案由主旨：本局為正確、迅速審核被保險人徐美英君(身分證統一編號:C220548480，出生日期:55年12月4日)勞保失能給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳美茜醫師您好，請協助回覆問題，謝謝。
+病人：徐美英 (病歷號：00092696)
+案由主旨：本局為正確、迅速審核被保險人徐美英君(身分證統一編號:C220548480，出生日期:55年12月4日)勞保失能給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/14 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24864,7 +30780,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃裕閔醫師您好，請協助回覆問題，謝謝。\n病人：袁翊旗 (病歷號：16905977)\n案由主旨：本局為審核被保險人袁翊旗君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「右踝挫傷併韌帶受損」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "黃裕閔醫師您好，請協助回覆問題，謝謝。
+病人：袁翊旗 (病歷號：16905977)
+案由主旨：本局為審核被保險人袁翊旗君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「右踝挫傷併韌帶受損」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/26 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24890,7 +30811,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林曄誠醫師您好，請協助回覆問題，謝謝。\n病人：劉緁安(劉黛葦) (病歷號：03676451)\n案由主旨：請惠予提供劉緁安(更名前:劉黛葦)(身分證統一編號:Q222835307號)於貴院骨科(病歷號碼:03676451)、復健科(病歷號碼:03676451)、精神科就診病歷等相關資料過院參辦，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林曄誠醫師您好，請協助回覆問題，謝謝。
+病人：劉緁安(劉黛葦) (病歷號：03676451)
+案由主旨：請惠予提供劉緁安(更名前:劉黛葦)(身分證統一編號:Q222835307號)於貴院骨科(病歷號碼:03676451)、復健科(病歷號碼:03676451)、精神科就診病歷等相關資料過院參辦，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24916,7 +30842,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "謝岳穎醫師您好，請協助回覆問題，謝謝。\n病人：劉緁安(劉黛葦) (病歷號：03676451)\n案由主旨：請惠予提供劉緁安(更名前:劉黛葦)(身分證統一編號:Q222835307號)於貴院骨科(病歷號碼:03676451)、復健科(病歷號碼:03676451)、精神科就診病歷等相關資料過院參辦，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "謝岳穎醫師您好，請協助回覆問題，謝謝。
+病人：劉緁安(劉黛葦) (病歷號：03676451)
+案由主旨：請惠予提供劉緁安(更名前:劉黛葦)(身分證統一編號:Q222835307號)於貴院骨科(病歷號碼:03676451)、復健科(病歷號碼:03676451)、精神科就診病歷等相關資料過院參辦，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24942,7 +30873,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳弘洲醫師您好，請協助回覆問題，謝謝。\n病人：劉緁安(劉黛葦) (病歷號：03676451)\n案由主旨：請惠予提供劉緁安(更名前:劉黛葦)(身分證統一編號:Q222835307號)於貴院骨科(病歷號碼:03676451)、復健科(病歷號碼:03676451)、精神科就診病歷等相關資料過院參辦，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳弘洲醫師您好，請協助回覆問題，謝謝。
+病人：劉緁安(劉黛葦) (病歷號：03676451)
+案由主旨：請惠予提供劉緁安(更名前:劉黛葦)(身分證統一編號:Q222835307號)於貴院骨科(病歷號碼:03676451)、復健科(病歷號碼:03676451)、精神科就診病歷等相關資料過院參辦，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24968,7 +30904,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "曾美智醫師您好，請協助回覆問題，謝謝。\n病人：劉緁安(劉黛葦) (病歷號：03676451)\n案由主旨：請惠予提供劉緁安(更名前:劉黛葦)(身分證統一編號:Q222835307號)於貴院骨科(病歷號碼:03676451)、復健科(病歷號碼:03676451)、精神科就診病歷等相關資料過院參辦，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "曾美智醫師您好，請協助回覆問題，謝謝。
+病人：劉緁安(劉黛葦) (病歷號：03676451)
+案由主旨：請惠予提供劉緁安(更名前:劉黛葦)(身分證統一編號:Q222835307號)於貴院骨科(病歷號碼:03676451)、復健科(病歷號碼:03676451)、精神科就診病歷等相關資料過院參辦，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -24994,7 +30935,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "胡翔越醫師您好，請協助回覆問題，謝謝。\n病人：劉緁安(劉黛葦) (病歷號：03676451)\n案由主旨：請惠予提供劉緁安(更名前:劉黛葦)(身分證統一編號:Q222835307號)於貴院骨科(病歷號碼:03676451)、復健科(病歷號碼:03676451)、精神科就診病歷等相關資料過院參辦，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "胡翔越醫師您好，請協助回覆問題，謝謝。
+病人：劉緁安(劉黛葦) (病歷號：03676451)
+案由主旨：請惠予提供劉緁安(更名前:劉黛葦)(身分證統一編號:Q222835307號)於貴院骨科(病歷號碼:03676451)、復健科(病歷號碼:03676451)、精神科就診病歷等相關資料過院參辦，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25020,7 +30966,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "曾立揚醫師您好，請協助回覆問題，謝謝。\n病人：蔡麗青 (病歷號：17232207)\n案由主旨：本局為正確、迅速審核被保險人蔡麗青君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速提供病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，檢具本費用收據並依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "曾立揚醫師您好，請協助回覆問題，謝謝。
+病人：蔡麗青 (病歷號：17232207)
+案由主旨：本局為正確、迅速審核被保險人蔡麗青君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速提供病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，檢具本費用收據並依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25046,7 +30997,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "洪家佩醫師您好，請協助回覆問題，謝謝。\n病人：簡美純 (病歷號：16669468)\n案由主旨：請惠予檢送簡美純（身分證: H201669254號）自113年3月30日發生交通事故後迄今之相關病歷（含影像光碟）過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "洪家佩醫師您好，請協助回覆問題，謝謝。
+病人：簡美純 (病歷號：16669468)
+案由主旨：請惠予檢送簡美純（身分證: H201669254號）自113年3月30日發生交通事故後迄今之相關病歷（含影像光碟）過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25072,7 +31028,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蘇鈺凱醫師您好，請協助回覆問題，謝謝。\n病人：簡美純 (病歷號：16669468)\n案由主旨：請惠予檢送簡美純（身分證: H201669254號）自113年3月30日發生交通事故後迄今之相關病歷（含影像光碟）過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "蘇鈺凱醫師您好，請協助回覆問題，謝謝。
+病人：簡美純 (病歷號：16669468)
+案由主旨：請惠予檢送簡美純（身分證: H201669254號）自113年3月30日發生交通事故後迄今之相關病歷（含影像光碟）過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25098,7 +31059,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳冠元醫師您好，請協助回覆問題，謝謝。\n病人：林俊雄 (病歷號：02519377)\n案由主旨：本局為審核被保險人林俊雄君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「肺結核」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳冠元醫師您好，請協助回覆問題，謝謝。
+病人：林俊雄 (病歷號：02519377)
+案由主旨：本局為審核被保險人林俊雄君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「肺結核」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/5/26 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25124,7 +31090,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉惠文醫師您好，請協助回覆問題，謝謝。\n病人：黃長生 (病歷號：06763147)\n案由主旨：惠請 提供貴院病患黃長生（男，民國31年5月5日生，身分證統一編號: A110619736號）於114年3、4間之就診病歷過院參辦，惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "劉惠文醫師您好，請協助回覆問題，謝謝。
+病人：黃長生 (病歷號：06763147)
+案由主旨：惠請 提供貴院病患黃長生（男，民國31年5月5日生，身分證統一編號: A110619736號）於114年3、4間之就診病歷過院參辦，惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25150,7 +31121,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。\n病人：黃長生 (病歷號：06763147)\n案由主旨：惠請 提供貴院病患黃長生（男，民國31年5月5日生，身分證統一編號: A110619736號）於114年3、4間之就診病歷過院參辦，惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。
+病人：黃長生 (病歷號：06763147)
+案由主旨：惠請 提供貴院病患黃長生（男，民國31年5月5日生，身分證統一編號: A110619736號）於114年3、4間之就診病歷過院參辦，惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25176,7 +31152,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃立楷醫師您好，請協助回覆問題，謝謝。\n病人：王士源 (病歷號：03001701)\n案由主旨：本局為正確、迅速審核被保險人王士源君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "黃立楷醫師您好，請協助回覆問題，謝謝。
+病人：王士源 (病歷號：03001701)
+案由主旨：本局為正確、迅速審核被保險人王士源君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25202,7 +31183,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許秉閎醫師您好，請協助回覆問題，謝謝。\n病人：林煥堂 (病歷號：17317223)\n案由主旨：惠請檢送貴院病患林煥堂(男、民國38年4月14日生、身分證統一編號:G100288136號)在貴院於114年4月7日直至文到後之就醫病歷資料(包括但不限於:腦部CT、手術紀錄、術前及術後病歷、水腦症診斷、神經內外科醫生診斷書、神經內外科門診病歷)過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "許秉閎醫師您好，請協助回覆問題，謝謝。
+病人：林煥堂 (病歷號：17317223)
+案由主旨：惠請檢送貴院病患林煥堂(男、民國38年4月14日生、身分證統一編號:G100288136號)在貴院於114年4月7日直至文到後之就醫病歷資料(包括但不限於:腦部CT、手術紀錄、術前及術後病歷、水腦症診斷、神經內外科醫生診斷書、神經內外科門診病歷)過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25228,7 +31214,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。\n病人：林煥堂 (病歷號：17317223)\n案由主旨：惠請檢送貴院病患林煥堂(男、民國38年4月14日生、身分證統一編號:G100288136號)在貴院於114年4月7日直至文到後之就醫病歷資料(包括但不限於:腦部CT、手術紀錄、術前及術後病歷、水腦症診斷、神經內外科醫生診斷書、神經內外科門診病歷)過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。
+病人：林煥堂 (病歷號：17317223)
+案由主旨：惠請檢送貴院病患林煥堂(男、民國38年4月14日生、身分證統一編號:G100288136號)在貴院於114年4月7日直至文到後之就醫病歷資料(包括但不限於:腦部CT、手術紀錄、術前及術後病歷、水腦症診斷、神經內外科醫生診斷書、神經內外科門診病歷)過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25254,7 +31245,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林乾閔醫師您好，請協助回覆問題，謝謝。\n病人：林煥堂 (病歷號：17317223)\n案由主旨：惠請檢送貴院病患林煥堂(男、民國38年4月14日生、身分證統一編號:G100288136號)在貴院於114年4月7日直至文到後之就醫病歷資料(包括但不限於:腦部CT、手術紀錄、術前及術後病歷、水腦症診斷、神經內外科醫生診斷書、神經內外科門診病歷)過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林乾閔醫師您好，請協助回覆問題，謝謝。
+病人：林煥堂 (病歷號：17317223)
+案由主旨：惠請檢送貴院病患林煥堂(男、民國38年4月14日生、身分證統一編號:G100288136號)在貴院於114年4月7日直至文到後之就醫病歷資料(包括但不限於:腦部CT、手術紀錄、術前及術後病歷、水腦症診斷、神經內外科醫生診斷書、神經內外科門診病歷)過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25280,7 +31276,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "吳維喬醫師您好，請協助回覆問題，謝謝。\n病人：陳趯元 (病歷號：07998733)\n案由主旨：本局為正確、迅速審核被保險人陳耀元君(身分證統一編號:F123399953，出生日期:63年11月23日)災保失能給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "吳維喬醫師您好，請協助回覆問題，謝謝。
+病人：陳趯元 (病歷號：07998733)
+案由主旨：本局為正確、迅速審核被保險人陳耀元君(身分證統一編號:F123399953，出生日期:63年11月23日)災保失能給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/5/27 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25306,7 +31307,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "莫心怡醫師您好，請協助回覆問題，謝謝。\n病人：林克振 (病歷號：04127666)\n案由主旨：請惠予提供如說明指示之事項，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "莫心怡醫師您好，請協助回覆問題，謝謝。
+病人：林克振 (病歷號：04127666)
+案由主旨：請惠予提供如說明指示之事項，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25332,7 +31338,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。\n病人：林克振 (病歷號：04127666)\n案由主旨：請惠予提供如說明指示之事項，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。
+病人：林克振 (病歷號：04127666)
+案由主旨：請惠予提供如說明指示之事項，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25358,7 +31369,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳國智醫師您好，請協助回覆問題，謝謝。\n病人：李捷榮 (病歷號：18076271)\n案由主旨：本分局為偵辦刑案需要，惠請貴院提供資料如說明二，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳國智醫師您好，請協助回覆問題，謝謝。
+病人：李捷榮 (病歷號：18076271)
+案由主旨：本分局為偵辦刑案需要，惠請貴院提供資料如說明二，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25384,7 +31400,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李美慧醫師您好，請協助回覆問題，謝謝。\n病人：李捷榮 (病歷號：18076271)\n案由主旨：本分局為偵辦刑案需要，惠請貴院提供資料如說明二，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李美慧醫師您好，請協助回覆問題，謝謝。
+病人：李捷榮 (病歷號：18076271)
+案由主旨：本分局為偵辦刑案需要，惠請貴院提供資料如說明二，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25410,7 +31431,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "曾孟元醫師您好，請協助回覆問題，謝謝。\n病人：簡銘智、簡宏焜 (病歷號：02170448、18042498)\n案由主旨：惠請提供簡銘智(F132410572/96.11.19)、簡宏焜(A121736284/52.3.17)於115年3月16日至貴院急診之相關病歷資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "曾孟元醫師您好，請協助回覆問題，謝謝。
+病人：簡銘智、簡宏焜 (病歷號：02170448、18042498)
+案由主旨：惠請提供簡銘智(F132410572/96.11.19)、簡宏焜(A121736284/52.3.17)於115年3月16日至貴院急診之相關病歷資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25436,7 +31462,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王妍方醫師您好，請協助回覆問題，謝謝。\n病人：簡銘智、簡宏焜 (病歷號：02170448、18042498)\n案由主旨：惠請提供簡銘智(F132410572/96.11.19)、簡宏焜(A121736284/52.3.17)於115年3月16日至貴院急診之相關病歷資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王妍方醫師您好，請協助回覆問題，謝謝。
+病人：簡銘智、簡宏焜 (病歷號：02170448、18042498)
+案由主旨：惠請提供簡銘智(F132410572/96.11.19)、簡宏焜(A121736284/52.3.17)於115年3月16日至貴院急診之相關病歷資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25462,7 +31493,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "吳連禎醫師您好，請協助回覆問題，謝謝。\n病人：陳國華 (病歷號：09497032)\n案由主旨：本局為審核被保險人陳國華君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「左膝前十字韌帶斷裂及半月板破裂經前十字韌帶重建術後併關節炎及疑似外側半月板損傷」、「外側半月板損傷，上班中造成，屬職業傷害」、「S83.512A左側膝部前十字韌帶扭傷之初期照護、M23.202未明示側性膝部陳舊性撕裂或損傷引起外側未明示之半月板障礙」等膝部疾患於107年1月1日至114年10月17日期間至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "吳連禎醫師您好，請協助回覆問題，謝謝。
+病人：陳國華 (病歷號：09497032)
+案由主旨：本局為審核被保險人陳國華君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「左膝前十字韌帶斷裂及半月板破裂經前十字韌帶重建術後併關節炎及疑似外側半月板損傷」、「外側半月板損傷，上班中造成，屬職業傷害」、「S83.512A左側膝部前十字韌帶扭傷之初期照護、M23.202未明示側性膝部陳舊性撕裂或損傷引起外側未明示之半月板障礙」等膝部疾患於107年1月1日至114年10月17日期間至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25488,7 +31524,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "關曉雯醫師您好，請協助回覆問題，謝謝。\n病人：廉明振 (病歷號：08316738)\n案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "關曉雯醫師您好，請協助回覆問題，謝謝。
+病人：廉明振 (病歷號：08316738)
+案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25514,7 +31555,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王智毅醫師您好，請協助回覆問題，謝謝。\n病人：廉明振 (病歷號：08316738)\n案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王智毅醫師您好，請協助回覆問題，謝謝。
+病人：廉明振 (病歷號：08316738)
+案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25540,7 +31586,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉如濟醫師您好，請協助回覆問題，謝謝。\n病人：廉明振 (病歷號：08316738)\n案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "劉如濟醫師您好，請協助回覆問題，謝謝。
+病人：廉明振 (病歷號：08316738)
+案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25566,7 +31617,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "吳忠擇醫師您好，請協助回覆問題，謝謝。\n病人：廉明振 (病歷號：08316738)\n案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "吳忠擇醫師您好，請協助回覆問題，謝謝。
+病人：廉明振 (病歷號：08316738)
+案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25592,7 +31648,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "張安妮醫師您好，請協助回覆問題，謝謝。\n病人：廉明振 (病歷號：08316738)\n案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "張安妮醫師您好，請協助回覆問題，謝謝。
+病人：廉明振 (病歷號：08316738)
+案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25618,7 +31679,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "謝安慈醫師您好，請協助回覆問題，謝謝。\n病人：廉明振 (病歷號：08316738)\n案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "謝安慈醫師您好，請協助回覆問題，謝謝。
+病人：廉明振 (病歷號：08316738)
+案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25644,7 +31710,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳冠豪醫師您好，請協助回覆問題，謝謝。\n病人：廉明振 (病歷號：08316738)\n案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳冠豪醫師您好，請協助回覆問題，謝謝。
+病人：廉明振 (病歷號：08316738)
+案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25670,7 +31741,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "江長蓉醫師您好，請協助回覆問題，謝謝。\n病人：廉明振 (病歷號：08316738)\n案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "江長蓉醫師您好，請協助回覆問題，謝謝。
+病人：廉明振 (病歷號：08316738)
+案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25696,7 +31772,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "洪明佑醫師您好，請協助回覆問題，謝謝。\n病人：廉明振 (病歷號：08316738)\n案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "洪明佑醫師您好，請協助回覆問題，謝謝。
+病人：廉明振 (病歷號：08316738)
+案由主旨：請貴院惠予提供廉明振(身分證字號:L120651969號)，114年6月迄今之病歷資料，請查照
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25722,7 +31803,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳弘洲醫師您好，請協助回覆問題，謝謝。\n病人：江秀香 (病歷號：15780854)\n案由主旨：為調查詐欺等案，請貴院惠予提供民眾江秀香接受醫師陳弘洲治療之相關紀錄，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳弘洲醫師您好，請協助回覆問題，謝謝。
+病人：江秀香 (病歷號：15780854)
+案由主旨：為調查詐欺等案，請貴院惠予提供民眾江秀香接受醫師陳弘洲治療之相關紀錄，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25748,7 +31834,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許庭碩醫師您好，請協助回覆問題，謝謝。\n病人：于秀麗 (病歷號：12476460)\n案由主旨：請貴單位協助提供于秀麗(身分證統一編號:F222165722 號)於民國111年12月1日起迄今之全部病歷資料(診斷證明書、門診及住院病歷、手術記錄、所有檢驗之文字報告及影像檢查光碟)過院參辦，請惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "許庭碩醫師您好，請協助回覆問題，謝謝。
+病人：于秀麗 (病歷號：12476460)
+案由主旨：請貴單位協助提供于秀麗(身分證統一編號:F222165722 號)於民國111年12月1日起迄今之全部病歷資料(診斷證明書、門診及住院病歷、手術記錄、所有檢驗之文字報告及影像檢查光碟)過院參辦，請惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25774,7 +31865,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王忠信醫師您好，請協助回覆問題，謝謝。\n病人：于秀麗 (病歷號：12476460)\n案由主旨：請貴單位協助提供于秀麗(身分證統一編號:F222165722 號)於民國111年12月1日起迄今之全部病歷資料(診斷證明書、門診及住院病歷、手術記錄、所有檢驗之文字報告及影像檢查光碟)過院參辦，請惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王忠信醫師您好，請協助回覆問題，謝謝。
+病人：于秀麗 (病歷號：12476460)
+案由主旨：請貴單位協助提供于秀麗(身分證統一編號:F222165722 號)於民國111年12月1日起迄今之全部病歷資料(診斷證明書、門診及住院病歷、手術記錄、所有檢驗之文字報告及影像檢查光碟)過院參辦，請惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25800,7 +31896,14 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陸惠宗醫師您好，請協助回覆問題，謝謝。\n病人：陸惠宗 (病歷號：)\n案由主旨：本庭受理115年度板司醫調字第4號聲請人彭泰治與相對人陸惠宗、雙和醫院、衛生福利部間侵權行為損害賠償事件，認有下列事項應予補正。\n \t　　\t1.請提供陸惠宗醫生基本資料\n \t　　\t2.請於「115年6月04日」庭期前補正。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陸惠宗醫師您好，請協助回覆問題，謝謝。
+病人：陸惠宗 (病歷號：)
+案由主旨：本庭受理115年度板司醫調字第4號聲請人彭泰治與相對人陸惠宗、雙和醫院、衛生福利部間侵權行為損害賠償事件，認有下列事項應予補正。
+ 	　　	1.請提供陸惠宗醫生基本資料
+ 	　　	2.請於「115年6月04日」庭期前補正。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25826,7 +31929,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉文德醫師您好，請協助回覆問題，謝謝。\n病人：唐國順 (病歷號：01229475)\n案由主旨：為結核病防疫業務需求，惠請貴院提供本市結核病接觸者唐○順今年於貴院檢查之胸部X光、電腦斷層、磁振造影、支氣管鏡檢等檢驗報告，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "劉文德醫師您好，請協助回覆問題，謝謝。
+病人：唐國順 (病歷號：01229475)
+案由主旨：為結核病防疫業務需求，惠請貴院提供本市結核病接觸者唐○順今年於貴院檢查之胸部X光、電腦斷層、磁振造影、支氣管鏡檢等檢驗報告，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25852,7 +31960,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李岡遠醫師您好，請協助回覆問題，謝謝。\n病人：唐國順 (病歷號：01229475)\n案由主旨：為結核病防疫業務需求，惠請貴院提供本市結核病接觸者唐○順今年於貴院檢查之胸部X光、電腦斷層、磁振造影、支氣管鏡檢等檢驗報告，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李岡遠醫師您好，請協助回覆問題，謝謝。
+病人：唐國順 (病歷號：01229475)
+案由主旨：為結核病防疫業務需求，惠請貴院提供本市結核病接觸者唐○順今年於貴院檢查之胸部X光、電腦斷層、磁振造影、支氣管鏡檢等檢驗報告，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25878,7 +31991,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林欣儀醫師您好，請協助回覆問題，謝謝。\n病人：林威邑 (病歷號：17117928)\n案由主旨：請貴單位提供說明欄所示資料，過署供參，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林欣儀醫師您好，請協助回覆問題，謝謝。
+病人：林威邑 (病歷號：17117928)
+案由主旨：請貴單位提供說明欄所示資料，過署供參，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25904,7 +32022,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "邱奕璁醫師您好，請協助回覆問題，謝謝。\n病人：曹義珍 (病歷號：04616692)\n案由主旨：本局為審核被保險人曹義珍君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "邱奕璁醫師您好，請協助回覆問題，謝謝。
+病人：曹義珍 (病歷號：04616692)
+案由主旨：本局為審核被保險人曹義珍君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/12 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25930,7 +32053,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王傳育醫師您好，請協助回覆問題，謝謝。\n病人：方彥傑 (病歷號：03345757)\n案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王傳育醫師您好，請協助回覆問題，謝謝。
+病人：方彥傑 (病歷號：03345757)
+案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25956,7 +32084,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "郭雲鼎醫師您好，請協助回覆問題，謝謝。\n病人：方彥傑 (病歷號：03345757)\n案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "郭雲鼎醫師您好，請協助回覆問題，謝謝。
+病人：方彥傑 (病歷號：03345757)
+案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -25982,7 +32115,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "方旭彬醫師您好，請協助回覆問題，謝謝。\n病人：方彥傑 (病歷號：03345757)\n案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "方旭彬醫師您好，請協助回覆問題，謝謝。
+病人：方彥傑 (病歷號：03345757)
+案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26008,7 +32146,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林聖傑醫師您好，請協助回覆問題，謝謝。\n病人：方彥傑 (病歷號：03345757)\n案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林聖傑醫師您好，請協助回覆問題，謝謝。
+病人：方彥傑 (病歷號：03345757)
+案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26034,7 +32177,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "呂盈哲醫師您好，請協助回覆問題，謝謝。\n病人：方彥傑 (病歷號：03345757)\n案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "呂盈哲醫師您好，請協助回覆問題，謝謝。
+病人：方彥傑 (病歷號：03345757)
+案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26060,7 +32208,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "吳錦雯醫師您好，請協助回覆問題，謝謝。\n病人：方彥傑 (病歷號：03345757)\n案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "吳錦雯醫師您好，請協助回覆問題，謝謝。
+病人：方彥傑 (病歷號：03345757)
+案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26086,7 +32239,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳淑惠醫師您好，請協助回覆問題，謝謝。\n病人：方彥傑 (病歷號：03345757)\n案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳淑惠醫師您好，請協助回覆問題，謝謝。
+病人：方彥傑 (病歷號：03345757)
+案由主旨：本隊為偵辦刑案需要，惠請貴院提供附件所列病患之發展遲緩兒童評估綜合報告書及就診病歷資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26112,7 +32270,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃金聲醫師您好，請協助回覆問題，謝謝。\n病人：焦德驥 (病歷號：03716265)\n案由主旨：本局為正確、迅速審核被保險人焦德驥君(身分證統一編號:F121839945，出生日期:58年7月28日)勞保失能給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "黃金聲醫師您好，請協助回覆問題，謝謝。
+病人：焦德驥 (病歷號：03716265)
+案由主旨：本局為正確、迅速審核被保險人焦德驥君(身分證統一編號:F121839945，出生日期:58年7月28日)勞保失能給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26138,7 +32301,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "江采蓮醫師您好，請協助回覆問題，謝謝。\n病人：張茗濬 (病歷號：18176014)\n案由主旨：本分局因偵辦司法相驗案，亟需如說明二資料，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "江采蓮醫師您好，請協助回覆問題，謝謝。
+病人：張茗濬 (病歷號：18176014)
+案由主旨：本分局因偵辦司法相驗案，亟需如說明二資料，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26164,7 +32332,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "邱奕璁醫師您好，請協助回覆問題，謝謝。\n病人：于自祥 (病歷號：18180402)\n案由主旨：本分局因偵辦重傷害案，惠請貴院提供說明二之病患完整就醫紀錄等相關資料，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "邱奕璁醫師您好，請協助回覆問題，謝謝。
+病人：于自祥 (病歷號：18180402)
+案由主旨：本分局因偵辦重傷害案，惠請貴院提供說明二之病患完整就醫紀錄等相關資料，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26190,7 +32363,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "邱瑋婷醫師您好，請協助回覆問題，謝謝。\n病人：于自祥 (病歷號：18180402)\n案由主旨：本分局因偵辦重傷害案，惠請貴院提供說明二之病患完整就醫紀錄等相關資料，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "邱瑋婷醫師您好，請協助回覆問題，謝謝。
+病人：于自祥 (病歷號：18180402)
+案由主旨：本分局因偵辦重傷害案，惠請貴院提供說明二之病患完整就醫紀錄等相關資料，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26216,7 +32394,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "張舜程醫師您好，請協助回覆問題，謝謝。\n病人：葉依婷 (病歷號：17097598)\n案由主旨：請惠予提供病患葉依婷（身分證統一編號: F230806885號）於貴院之全部病歷資料（包含診斷證明書、門診及住院病歷、檢查之文字報告及影像光碟）過院參辦，惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "張舜程醫師您好，請協助回覆問題，謝謝。
+病人：葉依婷 (病歷號：17097598)
+案由主旨：請惠予提供病患葉依婷（身分證統一編號: F230806885號）於貴院之全部病歷資料（包含診斷證明書、門診及住院病歷、檢查之文字報告及影像光碟）過院參辦，惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/12 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26242,7 +32425,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。\n病人：張家齊 (病歷號：17557184)\n案由主旨：本局為審核被保險人張家齊君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「左側腕部挫傷三角纖維軟骨韌帶複合物受傷」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。
+病人：張家齊 (病歷號：17557184)
+案由主旨：本局為審核被保險人張家齊君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「左側腕部挫傷三角纖維軟骨韌帶複合物受傷」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/12 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26268,7 +32456,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳柏志醫師您好，請協助回覆問題，謝謝。\n病人：黃靖龍 (病歷號：03115268)\n案由主旨：本局為正確、迅速審核被保險人黃靖龍君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速提供病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，檢具本費用收據並依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳柏志醫師您好，請協助回覆問題，謝謝。
+病人：黃靖龍 (病歷號：03115268)
+案由主旨：本局為正確、迅速審核被保險人黃靖龍君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速提供病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，檢具本費用收據並依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/12 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26294,7 +32487,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "羅偉倫醫師您好，請協助回覆問題，謝謝。\n病人：羅于雅 (病歷號：07119963)\n案由主旨：本局為正確、迅速審核被保險人羅于雅君勞工保險給付需要，敬請貴院就說明三於文到15日內儘速補正並寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，儘速向本局申報費用(如無查詢資料可提供,則不予計費)，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "羅偉倫醫師您好，請協助回覆問題，謝謝。
+病人：羅于雅 (病歷號：07119963)
+案由主旨：本局為正確、迅速審核被保險人羅于雅君勞工保險給付需要，敬請貴院就說明三於文到15日內儘速補正並寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，儘速向本局申報費用(如無查詢資料可提供,則不予計費)，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/30 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26320,7 +32518,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "翁佩韋醫師您好，請協助回覆問題，謝謝。\n病人：王瓊霞 (病歷號：01202117)\n案由主旨：本局為審核被保險人王瓊霞君保險給付需要，敬請貴院依說明三於文到15日內儘速檢附其因「左膝挫扭傷併內側側副韌帶部分撕裂傷」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "翁佩韋醫師您好，請協助回覆問題，謝謝。
+病人：王瓊霞 (病歷號：01202117)
+案由主旨：本局為審核被保險人王瓊霞君保險給付需要，敬請貴院依說明三於文到15日內儘速檢附其因「左膝挫扭傷併內側側副韌帶部分撕裂傷」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/17 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26346,7 +32549,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李俊年醫師您好，請協助回覆問題，謝謝。\n病人：張維青 (病歷號：07025846)\n案由主旨：本所為防疫業務需要，惠請貴院提供個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李俊年醫師您好，請協助回覆問題，謝謝。
+病人：張維青 (病歷號：07025846)
+案由主旨：本所為防疫業務需要，惠請貴院提供個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/17 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26372,7 +32580,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "洪家佩醫師您好，請協助回覆問題，謝謝。\n病人：陳彥蓉 (病歷號：12911363)\n案由主旨：惠請提供陳彥蓉(身份證號碼:C220654698)於民國113年1月30日至114年3月10日間，至貴院就醫之病歷資料過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "洪家佩醫師您好，請協助回覆問題，謝謝。
+病人：陳彥蓉 (病歷號：12911363)
+案由主旨：惠請提供陳彥蓉(身份證號碼:C220654698)於民國113年1月30日至114年3月10日間，至貴院就醫之病歷資料過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/30 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26398,7 +32611,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳嘉鴻醫師您好，請協助回覆問題，謝謝。\n病人：陳正財 (病歷號：04065410)\n案由主旨：本局為審核被保險人陳正財君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「腦梗塞、缺血性腦中風」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳嘉鴻醫師您好，請協助回覆問題，謝謝。
+病人：陳正財 (病歷號：04065410)
+案由主旨：本局為審核被保險人陳正財君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「腦梗塞、缺血性腦中風」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/17 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26424,7 +32642,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林譁誠醫師您好，請協助回覆問題，謝謝。\n病人：沙璁璐 (病歷號：08282864)\n案由主旨：惠請回覆說明欄事項，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林譁誠醫師您好，請協助回覆問題，謝謝。
+病人：沙璁璐 (病歷號：08282864)
+案由主旨：惠請回覆說明欄事項，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/29 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26450,7 +32673,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "鄔逸群醫師您好，請協助回覆問題，謝謝。\n病人：李承潔 (病歷號：11330187)\n案由主旨：希貴單位惠予提供李承潔(女、民國92年2月6日生、身分證統一編號:F230966180號)之病歷資料到院，惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "鄔逸群醫師您好，請協助回覆問題，謝謝。
+病人：李承潔 (病歷號：11330187)
+案由主旨：希貴單位惠予提供李承潔(女、民國92年2月6日生、身分證統一編號:F230966180號)之病歷資料到院，惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/29 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26476,7 +32704,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "紀則宇醫師您好，請協助回覆問題，謝謝。\n病人：林昀佑 (病歷號：18084630)\n案由主旨：請惠予提供如說明一之資料過署參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "紀則宇醫師您好，請協助回覆問題，謝謝。
+病人：林昀佑 (病歷號：18084630)
+案由主旨：請惠予提供如說明一之資料過署參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/17 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26502,7 +32735,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "毛士鵬醫師您好，請協助回覆問題，謝謝。\n病人：夏尉珊 (病歷號：17465126)\n案由主旨：本分局為偵辦刑案，請提供夏○珊（身分證號A228521274）115年2月22日在貴院辦理疑似遭性侵害之驗傷診斷證明，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "毛士鵬醫師您好，請協助回覆問題，謝謝。
+病人：夏尉珊 (病歷號：17465126)
+案由主旨：本分局為偵辦刑案，請提供夏○珊（身分證號A228521274）115年2月22日在貴院辦理疑似遭性侵害之驗傷診斷證明，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/17 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26528,7 +32766,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉永慶醫師您好，請協助回覆問題，謝謝。\n病人：陳衫豪 (病歷號：04109947)\n案由主旨：本分局為偵辦刑事案件，亟需貴醫院協助提供如說明二所示資料，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "劉永慶醫師您好，請協助回覆問題，謝謝。
+病人：陳衫豪 (病歷號：04109947)
+案由主旨：本分局為偵辦刑事案件，亟需貴醫院協助提供如說明二所示資料，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/30 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26554,7 +32797,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林哲立醫師您好，請協助回覆問題，謝謝。\n病人：任士安 (病歷號：03817098)\n案由主旨：本局為審核被保險人任士安君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「左肩挫傷併旋轉肌袖韌帶斷裂」等症至貴院就診之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林哲立醫師您好，請協助回覆問題，謝謝。
+病人：任士安 (病歷號：03817098)
+案由主旨：本局為審核被保險人任士安君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「左肩挫傷併旋轉肌袖韌帶斷裂」等症至貴院就診之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/29 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26580,7 +32828,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳信安醫師您好，請協助回覆問題，謝謝。\n病人：江玉霜 (病歷號：00727512)\n案由主旨：本局為審核被保險人江玉霜君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳信安醫師您好，請協助回覆問題，謝謝。
+病人：江玉霜 (病歷號：00727512)
+案由主旨：本局為審核被保險人江玉霜君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/30 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26606,7 +32859,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳資濤醫師您好，請協助回覆問題，謝謝。\n病人：陳寬榮 (病歷號：00594211)\n案由主旨：本所為防疫業務需要，惠請貴院提供個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳資濤醫師您好，請協助回覆問題，謝謝。
+病人：陳寬榮 (病歷號：00594211)
+案由主旨：本所為防疫業務需要，惠請貴院提供個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/6/29 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26632,7 +32890,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李尚醫師您好，請協助回覆問題，謝謝。\n病人：呂相賢 (病歷號：10690826)\n案由主旨：惠請貴院所提供呂相賢(身分證統一編號:F131376473號)近一年內有關精神、身心科之病歷記錄，以供鑑定參考使用，惠覆。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李尚醫師您好，請協助回覆問題，謝謝。
+病人：呂相賢 (病歷號：10690826)
+案由主旨：惠請貴院所提供呂相賢(身分證統一編號:F131376473號)近一年內有關精神、身心科之病歷記錄，以供鑑定參考使用，惠覆。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/2 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26658,7 +32921,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "張又升醫師您好，請協助回覆問題，謝謝。\n病人：黃靖容.王椿燕 (病歷號：05196168.10930429)\n案由主旨：為防疫需求，請貴院協助提供王○燕、黃○容君胸部X光檢查相關轉診及診療資料，以利後續公共衛生防疫追蹤，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "張又升醫師您好，請協助回覆問題，謝謝。
+病人：黃靖容.王椿燕 (病歷號：05196168.10930429)
+案由主旨：為防疫需求，請貴院協助提供王○燕、黃○容君胸部X光檢查相關轉診及診療資料，以利後續公共衛生防疫追蹤，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/2 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26684,7 +32952,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "邱奕璁醫師您好，請協助回覆問題，謝謝。\n病人：于自祥 (病歷號：18180402)\n案由主旨：惠請提供病患于自祥(身分證字號：F124554903)於115年5月26日在貴院接受急診治療之照片，請查照辦理。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "邱奕璁醫師您好，請協助回覆問題，謝謝。
+病人：于自祥 (病歷號：18180402)
+案由主旨：惠請提供病患于自祥(身分證字號：F124554903)於115年5月26日在貴院接受急診治療之照片，請查照辦理。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/7 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26710,7 +32983,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李岡遠醫師您好，請協助回覆問題，謝謝。\n病人：何大任 (病歷號：05609572)\n案由主旨：本局為正確、迅速審核被保險人何大任君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李岡遠醫師您好，請協助回覆問題，謝謝。
+病人：何大任 (病歷號：05609572)
+案由主旨：本局為正確、迅速審核被保險人何大任君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/7 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26736,7 +33014,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許秉閎醫師您好，請協助回覆問題，謝謝。\n病人：陳文泉 (病歷號：17075707)\n案由主旨：本局為正確、迅速審核被保險人陳文泉君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "許秉閎醫師您好，請協助回覆問題，謝謝。
+病人：陳文泉 (病歷號：17075707)
+案由主旨：本局為正確、迅速審核被保險人陳文泉君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/2 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26762,7 +33045,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "江長蓉醫師您好，請協助回覆問題，謝謝。\n病人：謝承佑 (病歷號：02215572)\n案由主旨：請惠予提供謝承佑（身分證統一編號: F126503520號）於111年3月至113年2月之病歷資料（附件）及醫療影像光碟（如: X光片等）過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "江長蓉醫師您好，請協助回覆問題，謝謝。
+病人：謝承佑 (病歷號：02215572)
+案由主旨：請惠予提供謝承佑（身分證統一編號: F126503520號）於111年3月至113年2月之病歷資料（附件）及醫療影像光碟（如: X光片等）過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/2 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26788,7 +33076,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "毛士鵬醫師您好，請協助回覆問題，謝謝。\n病人：楊育能 (病歷號：18056482)\n案由主旨：本局為正確、迅速審核被保險人楊育能君(身分證統一編號:F226407187，出生日期:75年11月22日)勞工保險給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "毛士鵬醫師您好，請協助回覆問題，謝謝。
+病人：楊育能 (病歷號：18056482)
+案由主旨：本局為正確、迅速審核被保險人楊育能君(身分證統一編號:F226407187，出生日期:75年11月22日)勞工保險給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/7/3 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26814,7 +33107,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "譚家偉醫師您好，請協助回覆問題，謝謝。\n病人：代號AD000-A114482號(陳春伶) (病歷號：00725688)\n案由主旨：請惠予查覆說明二所示事項，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "譚家偉醫師您好，請協助回覆問題，謝謝。
+病人：代號AD000-A114482號(陳春伶) (病歷號：00725688)
+案由主旨：請惠予查覆說明二所示事項，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26840,7 +33138,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林芊芊醫師您好，請協助回覆問題，謝謝。\n病人：代號AD000-A114482號(陳春伶) (病歷號：00725688)\n案由主旨：請惠予查覆說明二所示事項，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林芊芊醫師您好，請協助回覆問題，謝謝。
+病人：代號AD000-A114482號(陳春伶) (病歷號：00725688)
+案由主旨：請惠予查覆說明二所示事項，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26866,7 +33169,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "曾美智醫師您好，請協助回覆問題，謝謝。\n病人：代號AD000-A114482號(陳春伶) (病歷號：00725688)\n案由主旨：請惠予查覆說明二所示事項，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "曾美智醫師您好，請協助回覆問題，謝謝。
+病人：代號AD000-A114482號(陳春伶) (病歷號：00725688)
+案由主旨：請惠予查覆說明二所示事項，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/1 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26892,7 +33200,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳冠元醫師您好，請協助回覆問題，謝謝。\n病人：林子瑜 (病歷號：10809615)\n案由主旨：為結核病防疫業務需要，惠請貴院提供本市結核病患林○瑜於貴院114年後歷次檢查之胸部X光片、病歷摘要、病理檢查報告及相關檢驗報告，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳冠元醫師您好，請協助回覆問題，謝謝。
+病人：林子瑜 (病歷號：10809615)
+案由主旨：為結核病防疫業務需要，惠請貴院提供本市結核病患林○瑜於貴院114年後歷次檢查之胸部X光片、病歷摘要、病理檢查報告及相關檢驗報告，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/9 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26918,7 +33231,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "廖晏輝醫師您好，請協助回覆問題，謝謝。\n病人：劉繼新 (病歷號：03179246)\n案由主旨：本局為審核被保險人劉继新君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「腦中風、I63.533源於雙側後大腦動脈阻塞或狹窄之腦梗塞、E11.9第二型糖尿病，未伴有併發症、I10本態性(原發性)高血壓」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用;如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "廖晏輝醫師您好，請協助回覆問題，謝謝。
+病人：劉繼新 (病歷號：03179246)
+案由主旨：本局為審核被保險人劉继新君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「腦中風、I63.533源於雙側後大腦動脈阻塞或狹窄之腦梗塞、E11.9第二型糖尿病，未伴有併發症、I10本態性(原發性)高血壓」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用;如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26944,7 +33262,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "許永和醫師您好，請協助回覆問題，謝謝。\n病人：李柏慶 (病歷號：17209829)\n案由主旨：本局為正確、迅速審核被保險人李柏慶君勞保失能給付需要，敬請貴院就說明三所列各點於文到15日內查明補正並提供病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，儘速向本局申報費用(如無查詢資料可提供，則不予計費)有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "許永和醫師您好，請協助回覆問題，謝謝。
+病人：李柏慶 (病歷號：17209829)
+案由主旨：本局為正確、迅速審核被保險人李柏慶君勞保失能給付需要，敬請貴院就說明三所列各點於文到15日內查明補正並提供病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，儘速向本局申報費用(如無查詢資料可提供，則不予計費)有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/7/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26970,7 +33293,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "翁健瑞醫師您好，請協助回覆問題，謝謝。\n病人：史銘水 (病歷號：18052275)\n案由主旨：請惠予提供史銘水(A120180322)於115年3月22日前往貴醫院就診或住院治療等所有資料(含病歷、護理紀錄、光學影像等)，供本署參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "翁健瑞醫師您好，請協助回覆問題，謝謝。
+病人：史銘水 (病歷號：18052275)
+案由主旨：請惠予提供史銘水(A120180322)於115年3月22日前往貴醫院就診或住院治療等所有資料(含病歷、護理紀錄、光學影像等)，供本署參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -26996,7 +33324,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "葉雲凱醫師您好，請協助回覆問題，謝謝。\n病人：史銘水 (病歷號：18052275)\n案由主旨：請惠予提供史銘水(A120180322)於115年3月22日前往貴醫院就診或住院治療等所有資料(含病歷、護理紀錄、光學影像等)，供本署參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "葉雲凱醫師您好，請協助回覆問題，謝謝。
+病人：史銘水 (病歷號：18052275)
+案由主旨：請惠予提供史銘水(A120180322)於115年3月22日前往貴醫院就診或住院治療等所有資料(含病歷、護理紀錄、光學影像等)，供本署參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27022,7 +33355,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。\n病人：李明宗 (病歷號：12423732)\n案由主旨：請協助查明如說明二所示之事項，惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。
+病人：李明宗 (病歷號：12423732)
+案由主旨：請協助查明如說明二所示之事項，惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/8 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27048,7 +33386,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "束連文醫師您好，請協助回覆問題，謝謝。\n病人：楊永慶 (病歷號：08882545)\n案由主旨：請貴院協助提供說明一所示之資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "束連文醫師您好，請協助回覆問題，謝謝。
+病人：楊永慶 (病歷號：08882545)
+案由主旨：請貴院協助提供說明一所示之資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27074,7 +33417,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王俊凱醫師您好，請協助回覆問題，謝謝。\n病人：楊永慶 (病歷號：08882545)\n案由主旨：請貴院協助提供說明一所示之資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王俊凱醫師您好，請協助回覆問題，謝謝。
+病人：楊永慶 (病歷號：08882545)
+案由主旨：請貴院協助提供說明一所示之資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27100,7 +33448,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "莊凱迪醫師您好，請協助回覆問題，謝謝。\n病人：楊永慶 (病歷號：08882545)\n案由主旨：請貴院協助提供說明一所示之資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "莊凱迪醫師您好，請協助回覆問題，謝謝。
+病人：楊永慶 (病歷號：08882545)
+案由主旨：請貴院協助提供說明一所示之資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27126,7 +33479,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "賴虹均醫師您好，請協助回覆問題，謝謝。\n病人：楊永慶 (病歷號：08882545)\n案由主旨：請貴院協助提供說明一所示之資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "賴虹均醫師您好，請協助回覆問題，謝謝。
+病人：楊永慶 (病歷號：08882545)
+案由主旨：請貴院協助提供說明一所示之資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27152,7 +33510,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "邱彥碩醫師您好，請協助回覆問題，謝謝。\n病人：傅偉宸 (病歷號：01190955)\n案由主旨：請回覆說明欄事項，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "邱彥碩醫師您好，請協助回覆問題，謝謝。
+病人：傅偉宸 (病歷號：01190955)
+案由主旨：請回覆說明欄事項，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27178,7 +33541,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "紀則宇醫師您好，請協助回覆問題，謝謝。\n病人：傅偉宸 (病歷號：01190955)\n案由主旨：請回覆說明欄事項，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "紀則宇醫師您好，請協助回覆問題，謝謝。
+病人：傅偉宸 (病歷號：01190955)
+案由主旨：請回覆說明欄事項，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27204,7 +33572,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。\n病人：陳曾金色 (病歷號：17128166)\n案由主旨：請惠予提供如說明所示之資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。
+病人：陳曾金色 (病歷號：17128166)
+案由主旨：請惠予提供如說明所示之資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/17 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27230,7 +33603,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許秉閎醫師您好，請協助回覆問題，謝謝。\n病人：陳曾金色 (病歷號：17128166)\n案由主旨：請惠予提供如說明所示之資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "許秉閎醫師您好，請協助回覆問題，謝謝。
+病人：陳曾金色 (病歷號：17128166)
+案由主旨：請惠予提供如說明所示之資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/17 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27256,7 +33634,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "紀則宇醫師您好，請協助回覆問題，謝謝。\n病人：張源廷 (病歷號：15649296)\n案由主旨：請貴院檢送如說明二之資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "紀則宇醫師您好，請協助回覆問題，謝謝。
+病人：張源廷 (病歷號：15649296)
+案由主旨：請貴院檢送如說明二之資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27282,7 +33665,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "柯世祐醫師您好，請協助回覆問題，謝謝。\n病人：張源廷 (病歷號：15649296)\n案由主旨：請貴院檢送如說明二之資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "柯世祐醫師您好，請協助回覆問題，謝謝。
+病人：張源廷 (病歷號：15649296)
+案由主旨：請貴院檢送如說明二之資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27308,7 +33696,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。\n病人：張源廷 (病歷號：15649296)\n案由主旨：請貴院檢送如說明二之資料，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。
+病人：張源廷 (病歷號：15649296)
+案由主旨：請貴院檢送如說明二之資料，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27334,7 +33727,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳天恩醫師您好，請協助回覆問題，謝謝。\n病人：李長壽 (病歷號：17105633)\n案由主旨：請貴院協助提供病患李長壽(國民身分證統一編號:A122224961號)於114年迄今之就醫狀況、科別及診斷證明，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳天恩醫師您好，請協助回覆問題，謝謝。
+病人：李長壽 (病歷號：17105633)
+案由主旨：請貴院協助提供病患李長壽(國民身分證統一編號:A122224961號)於114年迄今之就醫狀況、科別及診斷證明，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27360,7 +33758,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "楊浩銓醫師您好，請協助回覆問題，謝謝。\n病人：李長壽 (病歷號：17105633)\n案由主旨：請貴院協助提供病患李長壽(國民身分證統一編號:A122224961號)於114年迄今之就醫狀況、科別及診斷證明，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "楊浩銓醫師您好，請協助回覆問題，謝謝。
+病人：李長壽 (病歷號：17105633)
+案由主旨：請貴院協助提供病患李長壽(國民身分證統一編號:A122224961號)於114年迄今之就醫狀況、科別及診斷證明，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27386,7 +33789,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "曾美智醫師您好，請協助回覆問題，謝謝。\n病人：陳允孝 (病歷號：02180539)\n案由主旨：本局為審核被保險人陳允孝君職災保險給付需要，敬請貴院於文到15日內依說明三所列各點儘速查明惠復，並檢附其因「急性壓力反應」至貴院就診之相關病歷資料(含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告)影本，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "曾美智醫師您好，請協助回覆問題，謝謝。
+病人：陳允孝 (病歷號：02180539)
+案由主旨：本局為審核被保險人陳允孝君職災保險給付需要，敬請貴院於文到15日內依說明三所列各點儘速查明惠復，並檢附其因「急性壓力反應」至貴院就診之相關病歷資料(含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告)影本，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/20 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27412,7 +33820,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃立楷醫師您好，請協助回覆問題，謝謝。\n病人：王承睿 (病歷號：10935660)\n案由主旨：請依說明二、三所示事項辦理，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "黃立楷醫師您好，請協助回覆問題，謝謝。
+病人：王承睿 (病歷號：10935660)
+案由主旨：請依說明二、三所示事項辦理，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27438,7 +33851,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "高偉棠醫師您好，請協助回覆問題，謝謝。\n病人：施耀翔 (病歷號：15560489)\n案由主旨：請提供施耀翔（身分證統一編號: B122906530號）於貴院就診之全部病歷資料過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "高偉棠醫師您好，請協助回覆問題，謝謝。
+病人：施耀翔 (病歷號：15560489)
+案由主旨：請提供施耀翔（身分證統一編號: B122906530號）於貴院就診之全部病歷資料過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/6 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27464,7 +33882,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王萬榆醫師您好，請協助回覆問題，謝謝。\n病人：施耀翔 (病歷號：15560489)\n案由主旨：請提供施耀翔（身分證統一編號: B122906530號）於貴院就診之全部病歷資料過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王萬榆醫師您好，請協助回覆問題，謝謝。
+病人：施耀翔 (病歷號：15560489)
+案由主旨：請提供施耀翔（身分證統一編號: B122906530號）於貴院就診之全部病歷資料過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/6 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27490,7 +33913,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "游順帆醫師您好，請協助回覆問題，謝謝。\n病人：林于暄 (病歷號：01335002)\n案由主旨：本分局因偵辦刑事案件，亟需貴院提供說明二所示資料，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "游順帆醫師您好，請協助回覆問題，謝謝。
+病人：林于暄 (病歷號：01335002)
+案由主旨：本分局因偵辦刑事案件，亟需貴院提供說明二所示資料，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/31 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27516,7 +33944,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "吳昱心醫師您好，請協助回覆問題，謝謝。\n病人：林于暄 (病歷號：01335002)\n案由主旨：本分局因偵辦刑事案件，亟需貴院提供說明二所示資料，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "吳昱心醫師您好，請協助回覆問題，謝謝。
+病人：林于暄 (病歷號：01335002)
+案由主旨：本分局因偵辦刑事案件，亟需貴院提供說明二所示資料，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/31 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27542,7 +33975,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃錦前醫師您好，請協助回覆問題，謝謝。\n病人：楊思郁 (病歷號：03162664)\n案由主旨：檢附診斷證明書影本一件，請惠予提供楊思郁(身分證統一編號:F229064246號)於民國112年6月21日以後於貴醫院就診之所有病歷資料(含診斷證明書、門診及住院病歷、檢查之文字報告及影像光碟)，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "黃錦前醫師您好，請協助回覆問題，謝謝。
+病人：楊思郁 (病歷號：03162664)
+案由主旨：檢附診斷證明書影本一件，請惠予提供楊思郁(身分證統一編號:F229064246號)於民國112年6月21日以後於貴醫院就診之所有病歷資料(含診斷證明書、門診及住院病歷、檢查之文字報告及影像光碟)，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27568,7 +34006,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "徐嘉鴻醫師您好，請協助回覆問題，謝謝。\n病人：楊思郁 (病歷號：03162664)\n案由主旨：檢附診斷證明書影本一件，請惠予提供楊思郁(身分證統一編號:F229064246號)於民國112年6月21日以後於貴醫院就診之所有病歷資料(含診斷證明書、門診及住院病歷、檢查之文字報告及影像光碟)，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "徐嘉鴻醫師您好，請協助回覆問題，謝謝。
+病人：楊思郁 (病歷號：03162664)
+案由主旨：檢附診斷證明書影本一件，請惠予提供楊思郁(身分證統一編號:F229064246號)於民國112年6月21日以後於貴醫院就診之所有病歷資料(含診斷證明書、門診及住院病歷、檢查之文字報告及影像光碟)，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27594,7 +34037,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林廉傑醫師您好，請協助回覆問題，謝謝。\n病人：陳文松 (病歷號：03464119)\n案由主旨：本局為審核被保險人陳文松君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「創傷性蜘蛛膜下腔出血、頸椎骨裂」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林廉傑醫師您好，請協助回覆問題，謝謝。
+病人：陳文松 (病歷號：03464119)
+案由主旨：本局為審核被保險人陳文松君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「創傷性蜘蛛膜下腔出血、頸椎骨裂」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27620,7 +34068,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "翁健瑞醫師您好，請協助回覆問題，謝謝。\n病人：張書豪 (病歷號：18079926)\n案由主旨：請貴院協助提供姓名為張書豪（性別: 男、身分證字號: F126447303號、生日: 民國74年4月29日）自115年4月1日起迄今於貴院就醫（含門診、住院、急診）之病歷資料與診斷證明書，以利審理程序之進行。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "翁健瑞醫師您好，請協助回覆問題，謝謝。
+病人：張書豪 (病歷號：18079926)
+案由主旨：請貴院協助提供姓名為張書豪（性別: 男、身分證字號: F126447303號、生日: 民國74年4月29日）自115年4月1日起迄今於貴院就醫（含門診、住院、急診）之病歷資料與診斷證明書，以利審理程序之進行。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27646,7 +34099,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "吳宣毅醫師您好，請協助回覆問題，謝謝。\n病人：張書豪 (病歷號：18079926)\n案由主旨：請貴院協助提供姓名為張書豪（性別: 男、身分證字號: F126447303號、生日: 民國74年4月29日）自115年4月1日起迄今於貴院就醫（含門診、住院、急診）之病歷資料與診斷證明書，以利審理程序之進行。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "吳宣毅醫師您好，請協助回覆問題，謝謝。
+病人：張書豪 (病歷號：18079926)
+案由主旨：請貴院協助提供姓名為張書豪（性別: 男、身分證字號: F126447303號、生日: 民國74年4月29日）自115年4月1日起迄今於貴院就醫（含門診、住院、急診）之病歷資料與診斷證明書，以利審理程序之進行。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/25 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27672,7 +34130,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "何秀英",
     "creator_ext": "2043",
     "creator_email": "12254@s.tmu.edu.tw",
-    "question": "邱彥碩醫師您好，請協助回覆問題，謝謝。\n病人：凃建霖 (病歷號：00956303)\n案由主旨：本局為正確、迅速審核被保險人凃建霖君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「第三四五腰椎、第一薦椎脊椎滑脫症，合併神經壓迫」至貴院就診之相關病歷資料影本（含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "邱彥碩醫師您好，請協助回覆問題，謝謝。
+病人：凃建霖 (病歷號：00956303)
+案由主旨：本局為正確、迅速審核被保險人凃建霖君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「第三四五腰椎、第一薦椎脊椎滑脫症，合併神經壓迫」至貴院就診之相關病歷資料影本（含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "已於 2026/8/11 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27698,7 +34161,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "杜永光醫師您好，請協助回覆問題，謝謝。\n病人：林育蔚 (病歷號：11772705)\n案由主旨：惠請提供如說明所載之協助，詳如說明所載，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "杜永光醫師您好，請協助回覆問題，謝謝。
+病人：林育蔚 (病歷號：11772705)
+案由主旨：惠請提供如說明所載之協助，詳如說明所載，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/14 完成函覆銷案。 (備註：已請病理科-王力信組長回復問題)",
     "remark": "已請病理科-王力信組長回復問題",
     "status": "已完成",
@@ -27724,7 +34192,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳弘洲醫師您好，請協助回覆問題，謝謝。\n病人：謝孟瑾 (病歷號：08575779)\n案由主旨：本局為審核被保險人謝孟瑾君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「雙肩扭挫傷併雙側旋轉肌腱撕裂傷」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳弘洲醫師您好，請協助回覆問題，謝謝。
+病人：謝孟瑾 (病歷號：08575779)
+案由主旨：本局為審核被保險人謝孟瑾君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「雙肩扭挫傷併雙側旋轉肌腱撕裂傷」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/31 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27750,7 +34223,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。\n病人：林克振 (病歷號：04127666)\n案由主旨：請惠予提供如說明指示之事項，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳致宇醫師您好，請協助回覆問題，謝謝。
+病人：林克振 (病歷號：04127666)
+案由主旨：請惠予提供如說明指示之事項，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/7/31 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27776,7 +34254,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉燦宏醫師您好，請協助回覆問題，謝謝。\n病人：賈耀擎 (病歷號：13278764)\n案由主旨：本局為正確、迅速審核被保險人賈耀擎君災保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "劉燦宏醫師您好，請協助回覆問題，謝謝。
+病人：賈耀擎 (病歷號：13278764)
+案由主旨：本局為正確、迅速審核被保險人賈耀擎君災保失能給付需要，敬請貴院就說明三於文到15日內儘速寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用（如無查詢資料可提供，則不予計費），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27802,7 +34285,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "邵孔昱醫師您好，請協助回覆問題，謝謝。\n病人：林俊榮 (病歷號：11450236)\n案由主旨：本局為正確、迅速審核被保險人林俊榮君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速查明惠復並寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用(如無查詢資料可提供，則不予計費)，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "邵孔昱醫師您好，請協助回覆問題，謝謝。
+病人：林俊榮 (病歷號：11450236)
+案由主旨：本局為正確、迅速審核被保險人林俊榮君勞保失能給付需要，敬請貴院就說明三於文到15日內儘速查明惠復並寄送相關資料及病歷影本，至於查詢費每案可依行政成本在1,000元範圍內，按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於次月5日前向本局申報費用(如無查詢資料可提供，則不予計費)，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/11 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27828,7 +34316,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "謝尚勳醫師您好，請協助回覆問題，謝謝。\n病人：陳宇明 (病歷號：07917936)\n案由主旨：為防疫業務需求，惠請提供本區列管結核病於貴院追蹤之胸部X光檢查片及相關檢驗報告，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "謝尚勳醫師您好，請協助回覆問題，謝謝。
+病人：陳宇明 (病歷號：07917936)
+案由主旨：為防疫業務需求，惠請提供本區列管結核病於貴院追蹤之胸部X光檢查片及相關檢驗報告，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/6 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27854,7 +34347,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王鎮珄醫師您好，請協助回覆問題，謝謝。\n病人：陳宇明 (病歷號：07917936)\n案由主旨：為防疫業務需求，惠請提供本區列管結核病於貴院追蹤之胸部X光檢查片及相關檢驗報告，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王鎮珄醫師您好，請協助回覆問題，謝謝。
+病人：陳宇明 (病歷號：07917936)
+案由主旨：為防疫業務需求，惠請提供本區列管結核病於貴院追蹤之胸部X光檢查片及相關檢驗報告，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/6 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27880,7 +34378,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。\n病人：陳宇明 (病歷號：07917936)\n案由主旨：為防疫業務需求，惠請提供本區列管結核病於貴院追蹤之胸部X光檢查片及相關檢驗報告，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "蔡同堯醫師您好，請協助回覆問題，謝謝。
+病人：陳宇明 (病歷號：07917936)
+案由主旨：為防疫業務需求，惠請提供本區列管結核病於貴院追蹤之胸部X光檢查片及相關檢驗報告，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/6 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27906,7 +34409,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林廉傑醫師您好，請協助回覆問題，謝謝。\n病人：陳麗羽 (病歷號：03047295)\n案由主旨：本局為正確、迅速審核被保險人陳麗羽君(身分證統一編號:Q222972261，出生日期:69年3月16日)勞工保險給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林廉傑醫師您好，請協助回覆問題，謝謝。
+病人：陳麗羽 (病歷號：03047295)
+案由主旨：本局為正確、迅速審核被保險人陳麗羽君(身分證統一編號:Q222972261，出生日期:69年3月16日)勞工保險給付需要，敬請貴院就說明二於文到15日內儘速惠予查明補正，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/6 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27932,7 +34440,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "邱奕璁醫師您好，請協助回覆問題，謝謝。\n病人：于自祥 (病歷號：18180402)\n案由主旨：惠請提供病患于自祥(身分證字號：F124554903)於115年5月27日至死亡期間內之全部病歷資料(含護理紀錄等)，請查照辦理。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "邱奕璁醫師您好，請協助回覆問題，謝謝。
+病人：于自祥 (病歷號：18180402)
+案由主旨：惠請提供病患于自祥(身分證字號：F124554903)於115年5月27日至死亡期間內之全部病歷資料(含護理紀錄等)，請查照辦理。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/6 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27958,7 +34471,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "邱瑋婷醫師您好，請協助回覆問題，謝謝。\n病人：于自祥 (病歷號：18180402)\n案由主旨：惠請提供病患于自祥(身分證字號：F124554903)於115年5月27日至死亡期間內之全部病歷資料(含護理紀錄等)，請查照辦理。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "邱瑋婷醫師您好，請協助回覆問題，謝謝。
+病人：于自祥 (病歷號：18180402)
+案由主旨：惠請提供病患于自祥(身分證字號：F124554903)於115年5月27日至死亡期間內之全部病歷資料(含護理紀錄等)，請查照辦理。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/6 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -27984,7 +34502,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王智毅醫師您好，請協助回覆問題，謝謝。\n病人：廉明振 (病歷號：08316738)\n案由主旨：請貴院惠予提供廉明振(國民身分證統一編號:L120651969號)自115年3月12日迄今至貴院就醫之護理紀錄，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王智毅醫師您好，請協助回覆問題，謝謝。
+病人：廉明振 (病歷號：08316738)
+案由主旨：請貴院惠予提供廉明振(國民身分證統一編號:L120651969號)自115年3月12日迄今至貴院就醫之護理紀錄，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/11 完成函覆銷案。 (備註：書記官回覆因之前公文已提供至115/5/4病歷，此件公文因無護理記錄，僅需提供7/29門診病歷)",
     "remark": "書記官回覆因之前公文已提供至115/5/4病歷，此件公文因無護理記錄，僅需提供7/29門診病歷",
     "status": "已完成",
@@ -28010,7 +34533,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "吳忠擇醫師您好，請協助回覆問題，謝謝。\n病人：廉明振 (病歷號：08316738)\n案由主旨：請貴院惠予提供廉明振(國民身分證統一編號:L120651969號)自115年3月12日迄今至貴院就醫之護理紀錄，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "吳忠擇醫師您好，請協助回覆問題，謝謝。
+病人：廉明振 (病歷號：08316738)
+案由主旨：請貴院惠予提供廉明振(國民身分證統一編號:L120651969號)自115年3月12日迄今至貴院就醫之護理紀錄，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/11 完成函覆銷案。 (備註：書記官回覆因之前公文已提供至115/5/4病歷，此件公文因無護理記錄，僅需提供7/29門診病歷)",
     "remark": "書記官回覆因之前公文已提供至115/5/4病歷，此件公文因無護理記錄，僅需提供7/29門診病歷",
     "status": "已完成",
@@ -28036,7 +34564,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "江舒欣醫師您好，請協助回覆問題，謝謝。\n病人：張睿芸 (病歷號：15003784)\n案由主旨：惠請提供告訴人(真實姓名詳證物袋)115年1月迄今於貴院就診之所有病歷摘要、診斷證明(無須完整病歷，需病患主訴紀錄、用藥或診斷證明等)，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "江舒欣醫師您好，請協助回覆問題，謝謝。
+病人：張睿芸 (病歷號：15003784)
+案由主旨：惠請提供告訴人(真實姓名詳證物袋)115年1月迄今於貴院就診之所有病歷摘要、診斷證明(無須完整病歷，需病患主訴紀錄、用藥或診斷證明等)，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/11 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28062,7 +34595,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許瓅文醫師您好，請協助回覆問題，謝謝。\n病人：張睿芸 (病歷號：15003784)\n案由主旨：惠請提供告訴人(真實姓名詳證物袋)115年1月迄今於貴院就診之所有病歷摘要、診斷證明(無須完整病歷，需病患主訴紀錄、用藥或診斷證明等)，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "許瓅文醫師您好，請協助回覆問題，謝謝。
+病人：張睿芸 (病歷號：15003784)
+案由主旨：惠請提供告訴人(真實姓名詳證物袋)115年1月迄今於貴院就診之所有病歷摘要、診斷證明(無須完整病歷，需病患主訴紀錄、用藥或診斷證明等)，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/11 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28088,7 +34626,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林芊芊醫師您好，請協助回覆問題，謝謝。\n病人：張睿芸 (病歷號：15003784)\n案由主旨：惠請提供告訴人(真實姓名詳證物袋)115年1月迄今於貴院就診之所有病歷摘要、診斷證明(無須完整病歷，需病患主訴紀錄、用藥或診斷證明等)，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林芊芊醫師您好，請協助回覆問題，謝謝。
+病人：張睿芸 (病歷號：15003784)
+案由主旨：惠請提供告訴人(真實姓名詳證物袋)115年1月迄今於貴院就診之所有病歷摘要、診斷證明(無須完整病歷，需病患主訴紀錄、用藥或診斷證明等)，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/11 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28114,7 +34657,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。\n病人：許家明 (病歷號：18116636)\n案由主旨：請檢送病患許家明（男、民國87年9月13日生、身分證統一編號: H125328392號）於貴院之病歷及醫療影像資料(含115年7月7日接受檢查之相關資料)2份過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。
+病人：許家明 (病歷號：18116636)
+案由主旨：請檢送病患許家明（男、民國87年9月13日生、身分證統一編號: H125328392號）於貴院之病歷及醫療影像資料(含115年7月7日接受檢查之相關資料)2份過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28140,7 +34688,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王俊凱醫師您好，請協助回覆問題，謝謝。\n病人：許家明 (病歷號：18116636)\n案由主旨：請檢送病患許家明（男、民國87年9月13日生、身分證統一編號: H125328392號）於貴院之病歷及醫療影像資料(含115年7月7日接受檢查之相關資料)2份過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王俊凱醫師您好，請協助回覆問題，謝謝。
+病人：許家明 (病歷號：18116636)
+案由主旨：請檢送病患許家明（男、民國87年9月13日生、身分證統一編號: H125328392號）於貴院之病歷及醫療影像資料(含115年7月7日接受檢查之相關資料)2份過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/4 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28166,7 +34719,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳天恩醫師您好，請協助回覆問題，謝謝。\n病人：RUSTAM (病歷號：17638364)\n案由主旨：本局為審核被保險人RUSTAM君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「左側脛骨開放性骨折、左側腓骨開放性骨折、左側脛骨骨不癒合」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳天恩醫師您好，請協助回覆問題，謝謝。
+病人：RUSTAM (病歷號：17638364)
+案由主旨：本局為審核被保險人RUSTAM君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「左側脛骨開放性骨折、左側腓骨開放性骨折、左側脛骨骨不癒合」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/17 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28192,7 +34750,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳沛華醫師您好，請協助回覆問題，謝謝。\n病人：RUSTAM (病歷號：17638364)\n案由主旨：本局為審核被保險人RUSTAM君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「左側脛骨開放性骨折、左側腓骨開放性骨折、左側脛骨骨不癒合」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳沛華醫師您好，請協助回覆問題，謝謝。
+病人：RUSTAM (病歷號：17638364)
+案由主旨：本局為審核被保險人RUSTAM君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「左側脛骨開放性骨折、左側腓骨開放性骨折、左側脛骨骨不癒合」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/17 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28218,7 +34781,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "莫心怡醫師您好，請協助回覆問題，謝謝。\n病人：鍾啟達 (病歷號：18071681)\n案由主旨：請惠予提供附件所示收據病患之就醫病歷供參，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "莫心怡醫師您好，請協助回覆問題，謝謝。
+病人：鍾啟達 (病歷號：18071681)
+案由主旨：請惠予提供附件所示收據病患之就醫病歷供參，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/24 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28244,7 +34812,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李垣樟醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李垣樟醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28270,7 +34843,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "林鈺凱醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "林鈺凱醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28296,7 +34874,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "邱寬饒醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "邱寬饒醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28322,7 +34905,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許瓅文醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "許瓅文醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28348,7 +34936,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳資濤醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳資濤醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28374,7 +34967,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "游順帆醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "游順帆醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28400,7 +34998,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "葉雲凱醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "葉雲凱醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28426,7 +35029,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蔡宏達醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "蔡宏達醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28452,7 +35060,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李祐萱醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李祐萱醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28478,7 +35091,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蔡易杰醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "蔡易杰醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28504,7 +35122,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "謝燿宇醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "謝燿宇醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28530,7 +35153,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "翁健瑞醫師您好，請協助回覆問題，謝謝。\n病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)\n案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "翁健瑞醫師您好，請協助回覆問題，謝謝。
+病人：江連發.張謝美鳳.王清傳.苑陳金枝.徐建邦.陳瀅捷.高零華.張明輝.魏金男.翁來有.郭生路.賴夜子.王郭東娥 (病歷號：12799288.17051240.05821501.05893612.03840230.00533102.01245518.00916208.00167442.17987248.11277985.04011253.03812802)
+案由主旨：檢送貴院所115年開具診斷尚待進一步確認之死亡證明書資料問卷，請惠予轉交原開具醫師提供相關訊息，簽名後回覆，請查照辦理見復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/13 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28556,7 +35184,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李俊年醫師您好，請協助回覆問題，謝謝。\n病人：張維青 (病歷號：07025846)\n案由主旨：本所為防疫業務需要，惠請貴院提供個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李俊年醫師您好，請協助回覆問題，謝謝。
+病人：張維青 (病歷號：07025846)
+案由主旨：本所為防疫業務需要，惠請貴院提供個案(如附件)於貴院病歷、CXR、病理報告等相關報告，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/17 完成函覆銷案。 (備註：8/10送外33診間8/11已掛號寄出)",
     "remark": "8/10送外33診間8/11已掛號寄出",
     "status": "已完成",
@@ -28582,7 +35215,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃立楷醫師您好，請協助回覆問題，謝謝。\n病人：詹木松 (病歷號：17721884)\n案由主旨：請查覆說明二、三所示事項惠覆。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "黃立楷醫師您好，請協助回覆問題，謝謝。
+病人：詹木松 (病歷號：17721884)
+案由主旨：請查覆說明二、三所示事項惠覆。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -28608,7 +35246,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "許力云醫師您好，請協助回覆問題，謝謝。\n病人：王意評.邱慶承 (病歷號：14436109.18251737)\n案由主旨：本會為辦理生產事故救濟申請案作業，請貴機構提供相關病歷一份，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "許力云醫師您好，請協助回覆問題，謝謝。
+病人：王意評.邱慶承 (病歷號：14436109.18251737)
+案由主旨：本會為辦理生產事故救濟申請案作業，請貴機構提供相關病歷一份，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28634,7 +35277,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳嘉維醫師您好，請協助回覆問題，謝謝。\n病人：王意評.邱慶承 (病歷號：14436109.18251737)\n案由主旨：本會為辦理生產事故救濟申請案作業，請貴機構提供相關病歷一份，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳嘉維醫師您好，請協助回覆問題，謝謝。
+病人：王意評.邱慶承 (病歷號：14436109.18251737)
+案由主旨：本會為辦理生產事故救濟申請案作業，請貴機構提供相關病歷一份，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28660,7 +35308,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "黃慧瑜醫師您好，請協助回覆問題，謝謝。\n病人：王意評.邱慶承 (病歷號：14436109.18251737)\n案由主旨：本會為辦理生產事故救濟申請案作業，請貴機構提供相關病歷一份，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "黃慧瑜醫師您好，請協助回覆問題，謝謝。
+病人：王意評.邱慶承 (病歷號：14436109.18251737)
+案由主旨：本會為辦理生產事故救濟申請案作業，請貴機構提供相關病歷一份，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28686,7 +35339,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王妍方醫師您好，請協助回覆問題，謝謝。\n病人：王意評.邱慶承 (病歷號：14436109.18251737)\n案由主旨：本會為辦理生產事故救濟申請案作業，請貴機構提供相關病歷一份，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王妍方醫師您好，請協助回覆問題，謝謝。
+病人：王意評.邱慶承 (病歷號：14436109.18251737)
+案由主旨：本會為辦理生產事故救濟申請案作業，請貴機構提供相關病歷一份，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28712,7 +35370,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "郭雲鼎醫師您好，請協助回覆問題，謝謝。\n病人：王意評.邱慶承 (病歷號：14436109.18251737)\n案由主旨：本會為辦理生產事故救濟申請案作業，請貴機構提供相關病歷一份，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "郭雲鼎醫師您好，請協助回覆問題，謝謝。
+病人：王意評.邱慶承 (病歷號：14436109.18251737)
+案由主旨：本會為辦理生產事故救濟申請案作業，請貴機構提供相關病歷一份，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28738,7 +35401,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳致中醫師您好，請協助回覆問題，謝謝。\n病人：張庭瑜 (病歷號：04589590)\n案由主旨：請惠予提供病患張庭瑜(身分證字號F224825212)有無精神疾病之相關就醫紀錄或診斷證明，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳致中醫師您好，請協助回覆問題，謝謝。
+病人：張庭瑜 (病歷號：04589590)
+案由主旨：請惠予提供病患張庭瑜(身分證字號F224825212)有無精神疾病之相關就醫紀錄或診斷證明，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/17 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28764,7 +35432,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "馮博皓醫師您好，請協助回覆問題，謝謝。\n病人：陳勝豐 (病歷號：16215780)\n案由主旨：本局為正確、迅速審核被保險人陳勝豐先生(身分證號:P121009104;出生日期:民國49年2月12日)申請農保身心障礙給付需要，敬請貴院於文到15日內儘速補正農保身心障礙診斷書並寄送病歷影本及相關資料，至於查詢費每案可依行政成本在1，000元範圍內，按月彙整於次月5日前檢附收據(應依印花稅法相關規定貼用印花稅票或蓋印花稅總繳專用章)申報費用，如無查詢資料可提供，則不予計費，詳如說明，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "馮博皓醫師您好，請協助回覆問題，謝謝。
+病人：陳勝豐 (病歷號：16215780)
+案由主旨：本局為正確、迅速審核被保險人陳勝豐先生(身分證號:P121009104;出生日期:民國49年2月12日)申請農保身心障礙給付需要，敬請貴院於文到15日內儘速補正農保身心障礙診斷書並寄送病歷影本及相關資料，至於查詢費每案可依行政成本在1，000元範圍內，按月彙整於次月5日前檢附收據(應依印花稅法相關規定貼用印花稅票或蓋印花稅總繳專用章)申報費用，如無查詢資料可提供，則不予計費，詳如說明，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28790,7 +35463,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "羅青山醫師您好，請協助回覆問題，謝謝。\n病人：陳勝豐 (病歷號：16215780)\n案由主旨：本局為正確、迅速審核被保險人陳勝豐先生(身分證號:P121009104;出生日期:民國49年2月12日)申請農保身心障礙給付需要，敬請貴院於文到15日內儘速補正農保身心障礙診斷書並寄送病歷影本及相關資料，至於查詢費每案可依行政成本在1，000元範圍內，按月彙整於次月5日前檢附收據(應依印花稅法相關規定貼用印花稅票或蓋印花稅總繳專用章)申報費用，如無查詢資料可提供，則不予計費，詳如說明，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "羅青山醫師您好，請協助回覆問題，謝謝。
+病人：陳勝豐 (病歷號：16215780)
+案由主旨：本局為正確、迅速審核被保險人陳勝豐先生(身分證號:P121009104;出生日期:民國49年2月12日)申請農保身心障礙給付需要，敬請貴院於文到15日內儘速補正農保身心障礙診斷書並寄送病歷影本及相關資料，至於查詢費每案可依行政成本在1，000元範圍內，按月彙整於次月5日前檢附收據(應依印花稅法相關規定貼用印花稅票或蓋印花稅總繳專用章)申報費用，如無查詢資料可提供，則不予計費，詳如說明，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28816,7 +35494,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳資濤醫師您好，請協助回覆問題，謝謝。\n病人：陳勝豐 (病歷號：16215780)\n案由主旨：本局為正確、迅速審核被保險人陳勝豐先生(身分證號:P121009104;出生日期:民國49年2月12日)申請農保身心障礙給付需要，敬請貴院於文到15日內儘速補正農保身心障礙診斷書並寄送病歷影本及相關資料，至於查詢費每案可依行政成本在1，000元範圍內，按月彙整於次月5日前檢附收據(應依印花稅法相關規定貼用印花稅票或蓋印花稅總繳專用章)申報費用，如無查詢資料可提供，則不予計費，詳如說明，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳資濤醫師您好，請協助回覆問題，謝謝。
+病人：陳勝豐 (病歷號：16215780)
+案由主旨：本局為正確、迅速審核被保險人陳勝豐先生(身分證號:P121009104;出生日期:民國49年2月12日)申請農保身心障礙給付需要，敬請貴院於文到15日內儘速補正農保身心障礙診斷書並寄送病歷影本及相關資料，至於查詢費每案可依行政成本在1，000元範圍內，按月彙整於次月5日前檢附收據(應依印花稅法相關規定貼用印花稅票或蓋印花稅總繳專用章)申報費用，如無查詢資料可提供，則不予計費，詳如說明，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28842,7 +35525,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "謝尚勳醫師您好，請協助回覆問題，謝謝。\n病人：陳勝豐 (病歷號：16215780)\n案由主旨：本局為正確、迅速審核被保險人陳勝豐先生(身分證號:P121009104;出生日期:民國49年2月12日)申請農保身心障礙給付需要，敬請貴院於文到15日內儘速補正農保身心障礙診斷書並寄送病歷影本及相關資料，至於查詢費每案可依行政成本在1，000元範圍內，按月彙整於次月5日前檢附收據(應依印花稅法相關規定貼用印花稅票或蓋印花稅總繳專用章)申報費用，如無查詢資料可提供，則不予計費，詳如說明，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "謝尚勳醫師您好，請協助回覆問題，謝謝。
+病人：陳勝豐 (病歷號：16215780)
+案由主旨：本局為正確、迅速審核被保險人陳勝豐先生(身分證號:P121009104;出生日期:民國49年2月12日)申請農保身心障礙給付需要，敬請貴院於文到15日內儘速補正農保身心障礙診斷書並寄送病歷影本及相關資料，至於查詢費每案可依行政成本在1，000元範圍內，按月彙整於次月5日前檢附收據(應依印花稅法相關規定貼用印花稅票或蓋印花稅總繳專用章)申報費用，如無查詢資料可提供，則不予計費，詳如說明，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28868,7 +35556,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "楊雅婷醫師您好，請協助回覆問題，謝謝。\n病人：游晉鵬 (病歷號：12160448)\n案由主旨：為協助本中心兒少保護個案游○鵬後續處遇事宜，請貴院惠予提供就醫病歷資料1份，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "楊雅婷醫師您好，請協助回覆問題，謝謝。
+病人：游晉鵬 (病歷號：12160448)
+案由主旨：為協助本中心兒少保護個案游○鵬後續處遇事宜，請貴院惠予提供就醫病歷資料1份，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28894,7 +35587,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "郭雲鼎醫師您好，請協助回覆問題，謝謝。\n病人：游晉鵬 (病歷號：12160448)\n案由主旨：為協助本中心兒少保護個案游○鵬後續處遇事宜，請貴院惠予提供就醫病歷資料1份，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "郭雲鼎醫師您好，請協助回覆問題，謝謝。
+病人：游晉鵬 (病歷號：12160448)
+案由主旨：為協助本中心兒少保護個案游○鵬後續處遇事宜，請貴院惠予提供就醫病歷資料1份，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28920,7 +35618,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳瓊芬醫師您好，請協助回覆問題，謝謝。\n病人：游晉鵬 (病歷號：12160448)\n案由主旨：為協助本中心兒少保護個案游○鵬後續處遇事宜，請貴院惠予提供就醫病歷資料1份，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳瓊芬醫師您好，請協助回覆問題，謝謝。
+病人：游晉鵬 (病歷號：12160448)
+案由主旨：為協助本中心兒少保護個案游○鵬後續處遇事宜，請貴院惠予提供就醫病歷資料1份，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -28946,7 +35649,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李奐儒醫師您好，請協助回覆問題，謝謝。\n病人：李思源 (病歷號：07646788)\n案由主旨：本局為審核被保險人李思源君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「疑似椎間盤破裂併左側下肢無力、腰椎第四第五節間間盤破裂突出」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李奐儒醫師您好，請協助回覆問題，謝謝。
+病人：李思源 (病歷號：07646788)
+案由主旨：本局為審核被保險人李思源君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「疑似椎間盤破裂併左側下肢無力、腰椎第四第五節間間盤破裂突出」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -28972,7 +35680,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "劉郁欣醫師您好，請協助回覆問題，謝謝。\n病人：易政瑋 (病歷號：16079520)\n案由主旨：本局為審核被保險人易政瑋保險給付需要，敬請貴院依說明三所列事項於文到15日內儘速查明惠復，並檢附其至貴院就診之全份病歷資料影本，每案依行政成本在1,000元範圍內申報費用，請按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於當月向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "劉郁欣醫師您好，請協助回覆問題，謝謝。
+病人：易政瑋 (病歷號：16079520)
+案由主旨：本局為審核被保險人易政瑋保險給付需要，敬請貴院依說明三所列事項於文到15日內儘速查明惠復，並檢附其至貴院就診之全份病歷資料影本，每案依行政成本在1,000元範圍內申報費用，請按月彙整並依印花稅法相關規定自行負責貼用印花稅票後，於當月向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -28998,7 +35711,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王智毅醫師您好，請協助回覆問題，謝謝。\n病人：黃嘉和 (病歷號：09930731)\n案由主旨：本局為審核被保險人黃嘉和君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「右側性肩部旋轉肌破裂，創傷性」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王智毅醫師您好，請協助回覆問題，謝謝。
+病人：黃嘉和 (病歷號：09930731)
+案由主旨：本局為審核被保險人黃嘉和君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「右側性肩部旋轉肌破裂，創傷性」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -29024,7 +35742,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蘇千田醫師您好，請協助回覆問題，謝謝。\n病人：黃嘉和 (病歷號：09930731)\n案由主旨：本局為審核被保險人黃嘉和君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「右側性肩部旋轉肌破裂，創傷性」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "蘇千田醫師您好，請協助回覆問題，謝謝。
+病人：黃嘉和 (病歷號：09930731)
+案由主旨：本局為審核被保險人黃嘉和君保險給付需要，敬請貴院依說明三所列各點於文到15日內儘速查明惠復，並檢附其因「右側性肩部旋轉肌破裂，創傷性」至貴院之全份病歷資料影本，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/21 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -29050,7 +35773,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王智毅醫師您好，請協助回覆問題，謝謝。\n病人：葉秀春 (病歷號：15473505)\n案由主旨：本局為正確、迅速審核被保險人葉秀春君保險給付及自付差額特材費用需要，敬請貴院依說明三、四所列各點於文到15日內儘速查明惠復，並檢附其因「右肩脫臼合併唇盂軟骨撕裂傷及肱骨損傷」至貴院就診之相關病歷資料影本（含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告），有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王智毅醫師您好，請協助回覆問題，謝謝。
+病人：葉秀春 (病歷號：15473505)
+案由主旨：本局為正確、迅速審核被保險人葉秀春君保險給付及自付差額特材費用需要，敬請貴院依說明三、四所列各點於文到15日內儘速查明惠復，並檢附其因「右肩脫臼合併唇盂軟骨撕裂傷及肱骨損傷」至貴院就診之相關病歷資料影本（含119救護紀錄、急門診及住院病歷、護理紀錄、生化檢查報告、核磁共振攝影MRI或電腦斷層掃描CT等影像光碟及相關理學檢查報告），有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29076,7 +35804,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "江長蓉醫師您好，請協助回覆問題，謝謝。\n病人：高浩珉 (病歷號：03389643)\n案由主旨：本局為審核被保險人高浩珉君保險給付需要，敬請貴院於文到15日內儘速檢附其因「左側腓骨骨折癒合不良、左側小腿開放性撕裂傷併蜂窩性組織炎及皮膚膿瘍壞死」至貴院就診之全份病歷資料影本1份，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "江長蓉醫師您好，請協助回覆問題，謝謝。
+病人：高浩珉 (病歷號：03389643)
+案由主旨：本局為審核被保險人高浩珉君保險給付需要，敬請貴院於文到15日內儘速檢附其因「左側腓骨骨折癒合不良、左側小腿開放性撕裂傷併蜂窩性組織炎及皮膚膿瘍壞死」至貴院就診之全份病歷資料影本1份，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/24 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -29102,7 +35835,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳韋呈醫師您好，請協助回覆問題，謝謝。\n病人：高浩珉 (病歷號：03389643)\n案由主旨：本局為審核被保險人高浩珉君保險給付需要，敬請貴院於文到15日內儘速檢附其因「左側腓骨骨折癒合不良、左側小腿開放性撕裂傷併蜂窩性組織炎及皮膚膿瘍壞死」至貴院就診之全份病歷資料影本1份，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳韋呈醫師您好，請協助回覆問題，謝謝。
+病人：高浩珉 (病歷號：03389643)
+案由主旨：本局為審核被保險人高浩珉君保險給付需要，敬請貴院於文到15日內儘速檢附其因「左側腓骨骨折癒合不良、左側小腿開放性撕裂傷併蜂窩性組織炎及皮膚膿瘍壞死」至貴院就診之全份病歷資料影本1份，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/24 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -29128,7 +35866,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李垣樟醫師您好，請協助回覆問題，謝謝。\n病人：高浩珉 (病歷號：03389643)\n案由主旨：本局為審核被保險人高浩珉君保險給付需要，敬請貴院於文到15日內儘速檢附其因「左側腓骨骨折癒合不良、左側小腿開放性撕裂傷併蜂窩性組織炎及皮膚膿瘍壞死」至貴院就診之全份病歷資料影本1份，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李垣樟醫師您好，請協助回覆問題，謝謝。
+病人：高浩珉 (病歷號：03389643)
+案由主旨：本局為審核被保險人高浩珉君保險給付需要，敬請貴院於文到15日內儘速檢附其因「左側腓骨骨折癒合不良、左側小腿開放性撕裂傷併蜂窩性組織炎及皮膚膿瘍壞死」至貴院就診之全份病歷資料影本1份，至查詢費每案可依行政成本在1,000元範圍內，依印花稅法相關規定自行負責貼用印花稅票後，向本局申報費用；如無查詢資料可提供，則不予計費，有勞協助，敬致謝忱，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "已於 2026/8/24 完成函覆銷案。",
     "remark": "",
     "status": "已完成",
@@ -29154,7 +35897,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳國智醫師您好，請協助回覆問題，謝謝。\n病人：藍月 (病歷號：00638681)\n案由主旨：請台端惠予提供藍月(女、民國49年6月11日生、身分證統一編號:A221418050號)自112年4月8日至同年11月20日之病歷資料(包含門診、急診記錄、護理記錄、手術紀錄及檢驗報告等)\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳國智醫師您好，請協助回覆問題，謝謝。
+病人：藍月 (病歷號：00638681)
+案由主旨：請台端惠予提供藍月(女、民國49年6月11日生、身分證統一編號:A221418050號)自112年4月8日至同年11月20日之病歷資料(包含門診、急診記錄、護理記錄、手術紀錄及檢驗報告等)
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29180,7 +35928,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王智毅醫師您好，請協助回覆問題，謝謝。\n病人：藍月 (病歷號：00638681)\n案由主旨：請台端惠予提供藍月(女、民國49年6月11日生、身分證統一編號:A221418050號)自112年4月8日至同年11月20日之病歷資料(包含門診、急診記錄、護理記錄、手術紀錄及檢驗報告等)\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王智毅醫師您好，請協助回覆問題，謝謝。
+病人：藍月 (病歷號：00638681)
+案由主旨：請台端惠予提供藍月(女、民國49年6月11日生、身分證統一編號:A221418050號)自112年4月8日至同年11月20日之病歷資料(包含門診、急診記錄、護理記錄、手術紀錄及檢驗報告等)
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29206,7 +35959,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "邱瑋婷醫師您好，請協助回覆問題，謝謝。\n病人：林明雄 (病歷號：18309001)\n案由主旨：本分局為偵辦刑事相驗案件，亟需貴院協助提供說明三資料，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "邱瑋婷醫師您好，請協助回覆問題，謝謝。
+病人：林明雄 (病歷號：18309001)
+案由主旨：本分局為偵辦刑事相驗案件，亟需貴院協助提供說明三資料，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29232,7 +35990,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "王妍方醫師您好，請協助回覆問題，謝謝。\n病人：林明雄 (病歷號：18309001)\n案由主旨：本分局為偵辦刑事相驗案件，亟需貴院協助提供說明三資料，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "王妍方醫師您好，請協助回覆問題，謝謝。
+病人：林明雄 (病歷號：18309001)
+案由主旨：本分局為偵辦刑事相驗案件，亟需貴院協助提供說明三資料，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29258,7 +36021,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "謝沛興醫師您好，請協助回覆問題，謝謝。\n病人：吳水龍 (病歷號：06794578)\n案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "謝沛興醫師您好，請協助回覆問題，謝謝。
+病人：吳水龍 (病歷號：06794578)
+案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29284,7 +36052,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳國智醫師您好，請協助回覆問題，謝謝。\n病人：吳水龍 (病歷號：06794578)\n案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳國智醫師您好，請協助回覆問題，謝謝。
+病人：吳水龍 (病歷號：06794578)
+案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29310,7 +36083,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "李苡萍醫師您好，請協助回覆問題，謝謝。\n病人：吳水龍 (病歷號：06794578)\n案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "李苡萍醫師您好，請協助回覆問題，謝謝。
+病人：吳水龍 (病歷號：06794578)
+案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29336,7 +36114,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "陳聰明醫師您好，請協助回覆問題，謝謝。\n病人：吳水龍 (病歷號：06794578)\n案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "陳聰明醫師您好，請協助回覆問題，謝謝。
+病人：吳水龍 (病歷號：06794578)
+案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29362,7 +36145,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。\n病人：吳水龍 (病歷號：06794578)\n案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "胡朝榮醫師您好，請協助回覆問題，謝謝。
+病人：吳水龍 (病歷號：06794578)
+案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29388,7 +36176,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "陽書湘",
     "creator_ext": "2037",
     "creator_email": "14301@s.tmu.edu.tw",
-    "question": "蘇勤方醫師您好，請協助回覆問題，謝謝。\n病人：吳水龍 (病歷號：06794578)\n案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
+    "question": "蘇勤方醫師您好，請協助回覆問題，謝謝。
+病人：吳水龍 (病歷號：06794578)
+案由主旨：請貴院提供本案被告吳水龍(國民身分統一編號:Q101865992、民國26年7月17日生)111年至今之完整病歷及紀錄，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2037)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29414,7 +36207,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳淑貞督導長醫師您好，請協助回覆問題，謝謝。\n病人：游榮三 (病歷號：03649169)\n案由主旨：因偵辦刑事案件需要，亟需調閱國人游榮三住院相關資料，請查照惠復。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "陳淑貞督導長醫師您好，請協助回覆問題，謝謝。
+病人：游榮三 (病歷號：03649169)
+案由主旨：因偵辦刑事案件需要，亟需調閱國人游榮三住院相關資料，請查照惠復。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29440,7 +36238,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "林乾閔醫師您好，請協助回覆問題，謝謝。\n病人：陳榮德 (病歷號：02267333)\n案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "林乾閔醫師您好，請協助回覆問題，謝謝。
+病人：陳榮德 (病歷號：02267333)
+案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29466,7 +36269,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "羅偉倫醫師您好，請協助回覆問題，謝謝。\n病人：陳榮德 (病歷號：02267333)\n案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "羅偉倫醫師您好，請協助回覆問題，謝謝。
+病人：陳榮德 (病歷號：02267333)
+案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29492,7 +36300,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "紀則宇醫師您好，請協助回覆問題，謝謝。\n病人：陳榮德 (病歷號：02267333)\n案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "紀則宇醫師您好，請協助回覆問題，謝謝。
+病人：陳榮德 (病歷號：02267333)
+案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29518,7 +36331,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "柯世祐醫師您好，請協助回覆問題，謝謝。\n病人：陳榮德 (病歷號：02267333)\n案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "柯世祐醫師您好，請協助回覆問題，謝謝。
+病人：陳榮德 (病歷號：02267333)
+案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29544,7 +36362,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "陳弘洲醫師您好，請協助回覆問題，謝謝。\n病人：陳榮德 (病歷號：02267333)\n案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "陳弘洲醫師您好，請協助回覆問題，謝謝。
+病人：陳榮德 (病歷號：02267333)
+案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29570,7 +36393,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "張德宇醫師您好，請協助回覆問題，謝謝。\n病人：陳榮德 (病歷號：02267333)\n案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "張德宇醫師您好，請協助回覆問題，謝謝。
+病人：陳榮德 (病歷號：02267333)
+案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29596,7 +36424,12 @@ const DEFAULT_ISSUES = [
     "creator_name": "錢佩妤",
     "creator_ext": "2043",
     "creator_email": "19020@s.tmu.edu.tw",
-    "question": "蘇明章醫師您好，請協助回覆問題，謝謝。\n病人：陳榮德 (病歷號：02267333)\n案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。\n\n因案件有時效性，請協助儘快回覆，感謝您。\n備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+    "question": "蘇明章醫師您好，請協助回覆問題，謝謝。
+病人：陳榮德 (病歷號：02267333)
+案由主旨：請惠予提供如說明二所列事項過院參辦，請查照。
+
+因案件有時效性，請協助儘快回覆，感謝您。
+備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
     "doctor_reply": "",
     "remark": "",
     "status": "待回覆",
@@ -29644,7 +36477,7 @@ function startAutoSyncTimer() {
 }
 
 function loadDataFromStorage() {
-    const DATA_VERSION = "20260911_v24_fresh";
+    const DATA_VERSION = "20260917_v27_card_fix";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -29920,15 +36753,36 @@ function isIssueOverdue(issue) {
 function renderDashboard() {
     const totalCases = gMainDocs.length;
     const totalIssues = gIssues.length;
-    const repliedCount = gIssues.filter(i => i.status === "已回覆").length;
-    const completedCases = gMainDocs.filter(d => d.doc_status === "已完成" || d.doc_status === "不需醫師已完成").length;
-    const processingCases = totalCases - completedCases;
+
+    let completedDocsCount = 0;
+    let repliedDocsCount = 0;
+    let processingDocsCount = 0;
+
+    gMainDocs.forEach(doc => {
+        const rec = doc.doc_receive_no;
+        const st = doc.doc_status;
+        const docIssues = gIssues.filter(i => i.doc_receive_no === rec);
+
+        let isCompleted = (st === "已完成" || st === "不需醫師已完成");
+        if (!isCompleted && docIssues.length > 0) {
+            const doneCnt = docIssues.filter(i => i.status === "已完成").length;
+            if (doneCnt === docIssues.length) isCompleted = true;
+        }
+
+        if (isCompleted) {
+            completedDocsCount++;
+        } else if (docIssues.some(i => i.status === "已回覆")) {
+            repliedDocsCount++;
+        } else {
+            processingDocsCount++;
+        }
+    });
 
     document.getElementById("kpiTotalCases").textContent = totalCases;
     document.getElementById("kpiTotalIssues").textContent = totalIssues;
-    document.getElementById("kpiReplied").textContent = repliedCount;
-    document.getElementById("kpiCompleted").textContent = completedCases;
-    document.getElementById("kpiProcessing").textContent = processingCases;
+    document.getElementById("kpiReplied").textContent = repliedDocsCount;
+    document.getElementById("kpiCompleted").textContent = completedDocsCount;
+    document.getElementById("kpiProcessing").textContent = processingDocsCount;
 }
 
 function checkOverdueAlerts() {
@@ -30023,14 +36877,19 @@ function renderTable() {
             if (!docIssues.some(i => i.status === gCurrentFilter.issueStatus)) return false;
         }
 
-        if (gCurrentFilter.cardType === "replied") {
+                if (gCurrentFilter.cardType === "replied") {
+            if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成") return false;
             const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
             if (!docIssues.some(i => i.status === "已回覆")) return false;
         } else if (gCurrentFilter.cardType === "completed") {
-            if (doc.doc_status !== "已完成" && doc.doc_status !== "不需醫師已完成") return false;
+            const prog = calculateDocProgress(doc.doc_receive_no);
+            if (doc.doc_status !== "已完成" && doc.doc_status !== "不需醫師已完成" && !prog.isCompleted) return false;
         } else if (gCurrentFilter.cardType === "processing") {
+            if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成") return false;
             const prog = calculateDocProgress(doc.doc_receive_no);
             if (prog.isCompleted) return false;
+            const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
+            if (docIssues.some(i => i.status === "已回覆")) return false;
         } else if (gCurrentFilter.cardType === "overdue") {
             const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
             if (!docIssues.some(i => isIssueOverdue(i))) return false;
@@ -30154,23 +37013,54 @@ function renderTable() {
 
 function renderMainDocDetailPanel(doc) {
     const receiveNo = escapeHtml(doc.doc_receive_no || '-');
-    const draftNo = escapeHtml(doc.doc_draft_no || '-');
-    const sourceUnit = escapeHtml(doc.doc_source_unit || '-');
+
+    // Smart Auto-Infer Source Unit (來函單位) if empty or '-'
+    let sourceUnitStr = (doc.doc_source_unit || doc.doc_sender_org || '').trim();
+    if (!sourceUnitStr || sourceUnitStr === '-') {
+        const issueNo = doc.doc_issue_no || '';
+        const subject = doc.doc_subject || '';
+        if (issueNo.includes('保') || issueNo.includes('傷') || issueNo.includes('職') || subject.includes('勞保') || subject.includes('傷病')) {
+            sourceUnitStr = '勞動部勞工保險局';
+        } else if (issueNo.includes('院') || issueNo.includes('廷') || issueNo.includes('刑') || subject.includes('法院')) {
+            sourceUnitStr = '臺灣新北地方法院';
+        } else if (issueNo.includes('檢') || issueNo.includes('署') || subject.includes('檢察')) {
+            sourceUnitStr = '臺灣新北地方檢察署';
+        } else if (issueNo.includes('衛') || subject.includes('衛生局')) {
+            sourceUnitStr = '新北市政府衛生局';
+        } else if (issueNo.length > 0 || subject.length > 0) {
+            sourceUnitStr = '勞動部勞工保險局';
+        }
+    }
+    const sourceUnit = escapeHtml(sourceUnitStr || '-');
+
+    // Smart Auto-Infer Draft No (創稿文號) if empty or '-'
+    let draftNoStr = (doc.doc_draft_no || doc.doc_create_no || '').trim();
+    if (!draftNoStr || draftNoStr === '-') {
+        const rec = doc.doc_receive_no || '';
+        if (rec) {
+            const suffix = rec.length >= 6 ? rec.slice(-6) : rec;
+            draftNoStr = `115${suffix}`;
+        }
+    }
+    const draftNo = escapeHtml(draftNoStr || '-');
+
     const issueDate = escapeHtml(doc.doc_issue_date || '-');
     const issueNo = escapeHtml(doc.doc_issue_no || '-');
     const assignee = escapeHtml(doc.doc_assignee || '-');
     const assigneeEmail = escapeHtml(doc.doc_assignee_email ? ` (${doc.doc_assignee_email})` : '');
     
-    // Auto fallback for 勞保局受理編號 if source_unit is 勞工保險局
-    let lbiNo = escapeHtml(doc.doc_lbi_no || '-');
-    if ((lbiNo === '-' || !lbiNo) && (sourceUnit.includes('勞') || sourceUnit.includes('保險'))) {
+    // Smart Auto-Infer LBI No (勞保局受理編號) if empty or '-'
+    let lbiNoStr = (doc.doc_lbi_no || doc.doc_labor_no || '').trim();
+    if ((!lbiNoStr || lbiNoStr === '-') && (sourceUnitStr.includes('勞') || sourceUnitStr.includes('保險') || sourceUnitStr.includes('保'))) {
         const rec = doc.doc_receive_no || '';
-        const suffix = rec.length >= 6 ? rec.substring(rec.length - 6) : rec;
-        lbiNo = `第115021${suffix}-E號`;
+        const suffix = rec.length >= 6 ? rec.slice(-6) : rec;
+        lbiNoStr = `第115021${suffix}-E號`;
     }
+    const lbiNo = escapeHtml(lbiNoStr || '-');
 
-    const fee = escapeHtml(doc.doc_fee || '-');
-    const drName = escapeHtml(doc.doc_doctor_name || '-');
+    const feeVal = doc.doc_fee != null && doc.doc_fee !== '' ? String(doc.doc_fee) : '0';
+    const fee = escapeHtml(feeVal === '0' ? '0 元' : `${feeVal} 元`);
+    const drName = escapeHtml(doc.doc_doctor_name || doc.doc_chart_status || '-');
     
     let attText = '-';
     if (doc.doc_attachments && doc.doc_attachments.length > 0) {
@@ -30237,7 +37127,7 @@ function renderMainDocDetailPanel(doc) {
                     <div class="detail-val">${fee}</div>
                 </div>
                 <div class="detail-item">
-                    <div class="detail-label">網病歷</div>
+                    <div class="detail-label">調病歷</div>
                     <div class="detail-val">${drName}</div>
                 </div>
                 <div class="detail-item">
@@ -30432,18 +37322,19 @@ function openMainDocModal(receiveNo = null) {
             document.getElementById("modalMainDocTitle").textContent = "編輯公文主檔";
             document.getElementById("mainDocId").value = doc.doc_receive_no;
             document.getElementById("doc_receive_no").value = doc.doc_receive_no;
-            document.getElementById("doc_create_no").value = doc.doc_create_no || "";
-            document.getElementById("doc_sender_org").value = doc.doc_sender_org || "";
+            document.getElementById("doc_create_no").value = doc.doc_draft_no || doc.doc_create_no || "";
+            document.getElementById("doc_sender_org").value = doc.doc_source_unit || doc.doc_sender_org || "";
             document.getElementById("doc_receive_date").value = doc.doc_receive_date || "";
             document.getElementById("doc_issue_date").value = doc.doc_issue_date || "";
             document.getElementById("doc_issue_no").value = doc.doc_issue_no || "";
             document.getElementById("doc_subject").value = doc.doc_subject || "";
             document.getElementById("doc_chart_no").value = doc.doc_chart_no || "";
             document.getElementById("doc_patient_name").value = doc.doc_patient_name || "";
-            document.getElementById("doc_chart_status").value = doc.doc_chart_status || "";
+            document.getElementById("doc_chart_status").value = doc.doc_doctor_name || doc.doc_chart_status || "";
             document.getElementById("doc_assignee").value = doc.doc_assignee || "";
-            document.getElementById("doc_fee").value = doc.doc_fee || "";
-            document.getElementById("doc_labor_no").value = doc.doc_labor_no || "";
+                        const feeVal = doc.doc_fee != null && doc.doc_fee !== "" ? String(doc.doc_fee) : "0";
+            document.getElementById("doc_fee").value = feeVal;
+            document.getElementById("doc_labor_no").value = doc.doc_lbi_no || doc.doc_labor_no || "";
             document.getElementById("doc_reply_no").value = doc.doc_reply_no || "";
             document.getElementById("doc_reply_date").value = doc.doc_reply_date || "";
             document.getElementById("doc_remark").value = doc.doc_remark || "";
@@ -30465,20 +37356,29 @@ function saveMainDoc() {
     const existingIndex = gMainDocs.findIndex(d => d.doc_receive_no === receiveNo);
     const nowStr = new Date().toISOString().replace("T", " ").substring(0, 16);
 
+    const createNo = document.getElementById("doc_create_no").value.trim();
+    const senderOrg = document.getElementById("doc_sender_org").value.trim();
+    const laborNo = document.getElementById("doc_labor_no").value.trim();
+    const chartStatus = document.getElementById("doc_chart_status").value.trim();
+
     const docData = {
         doc_receive_no: receiveNo,
-        doc_create_no: document.getElementById("doc_create_no").value.trim(),
-        doc_sender_org: document.getElementById("doc_sender_org").value.trim(),
+        doc_draft_no: createNo,
+        doc_create_no: createNo,
+        doc_source_unit: senderOrg,
+        doc_sender_org: senderOrg,
         doc_receive_date: document.getElementById("doc_receive_date").value,
         doc_issue_date: document.getElementById("doc_issue_date").value,
         doc_issue_no: document.getElementById("doc_issue_no").value.trim(),
         doc_subject: document.getElementById("doc_subject").value.trim(),
         doc_chart_no: document.getElementById("doc_chart_no").value.trim(),
         doc_patient_name: document.getElementById("doc_patient_name").value.trim(),
-        doc_chart_status: document.getElementById("doc_chart_status").value.trim(),
+        doc_doctor_name: chartStatus,
+        doc_chart_status: chartStatus,
         doc_assignee: document.getElementById("doc_assignee").value.trim(),
         doc_fee: parseFloat(document.getElementById("doc_fee").value) || 0,
-        doc_labor_no: document.getElementById("doc_labor_no").value.trim(),
+        doc_lbi_no: laborNo,
+        doc_labor_no: laborNo,
         doc_reply_no: document.getElementById("doc_reply_no").value.trim(),
         doc_reply_date: document.getElementById("doc_reply_date").value,
         doc_remark: document.getElementById("doc_remark").value.trim(),
@@ -30890,10 +37790,10 @@ function getEmailTemplateHtml(type, issue) {
         `;
     } else if (type === 2) { // 醫師回復後通知承辦
         headerBg = "#0056D2";
-        headerTitle = "✅ 醫師回覆已確認完成";
+        headerTitle = "【已回覆】醫師回覆已確認完成";
         statusNotice = `
             <div style="background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                <strong style="color:#0056D2;font-size:14px;">💬 醫師回覆內容</strong><br>
+                <strong style="color:#0056D2;font-size:14px;">[醫師回覆內容]</strong><br>
                 <div style="background:#ffffff;padding:10px 14px;border-radius:4px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;">
                     ${formatMultilineHtml(issue.doctor_reply || '無')}
                 </div>
@@ -30959,14 +37859,14 @@ function getEmailTemplateHtml(type, issue) {
 
         let driveSection = "";
         if (driveFiles.length > 0) {
-        const seenDrive = new Set();
-        const uniqueDriveFiles = driveFiles.filter(a => {
-            const clean = (a.name || "").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0].trim();
-            const key = a.url || clean;
-            if (seenDrive.has(key)) return false;
-            seenDrive.add(key);
-            return true;
-        });
+            const seenDrive = new Set();
+            const uniqueDriveFiles = driveFiles.filter(a => {
+                const clean = (a.name || "").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0].trim();
+                const key = a.url || clean;
+                if (seenDrive.has(key)) return false;
+                seenDrive.add(key);
+                return true;
+            });
             const driveItems = uniqueDriveFiles.map(a => {
                 const cleanName = escapeHtml((a.name || "大型附件").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0]);
                 const sizeMb = a.size ? (a.size / (1024 * 1024)).toFixed(1) : "5+";
@@ -30998,14 +37898,6 @@ function getEmailTemplateHtml(type, issue) {
         `;
     }
 
-    let overdueFieldsHtml = "";
-    if (type === 5) {
-        overdueFieldsHtml = `
-            <div style="margin-bottom:12px;font-size:13px;color:#3c4043;">● <strong>問題通報時間：</strong> ${escapeHtml(issue.created_at || issue.sent_at || getTaiwanNowStr())}</div>
-            <div style="margin-bottom:12px;font-size:13px;color:#3c4043;">● <strong>逾期天數：</strong> <span style="background:#d93025;color:white;padding:2px 8px;border-radius:4px;font-weight:bold;">${issue.remind_count || 2} 天</span></div>
-        `;
-    }
-
     let defaultNoticeIfOverdue = "";
     if (type === 5) {
         defaultNoticeIfOverdue = `
@@ -31016,7 +37908,43 @@ function getEmailTemplateHtml(type, issue) {
         `;
     }
 
-    const sendTimeStr = issue.sent_at || getTaiwanNowStr();
+    const mainDocForEmail = (typeof gMainDocs !== 'undefined' ? gMainDocs.find(d => d.doc_receive_no === issue.doc_receive_no) : null) || {};
+    const emailPatientName = issue.doc_patient_name || mainDocForEmail.doc_patient_name || '-';
+    const emailChartNo = issue.doc_chart_no || mainDocForEmail.doc_chart_no || '-';
+
+    let srcStr = (mainDocForEmail.doc_source_unit || mainDocForEmail.doc_sender_org || '').trim();
+    if (!srcStr || srcStr === '-') {
+        const issueNo = mainDocForEmail.doc_issue_no || '';
+        const subject = mainDocForEmail.doc_subject || '';
+        if (issueNo.includes('保') || issueNo.includes('傷') || issueNo.includes('職') || subject.includes('勞保') || subject.includes('傷病')) {
+            srcStr = '勞動部勞工保險局';
+        } else if (issueNo.includes('院') || issueNo.includes('廷') || issueNo.includes('刑') || subject.includes('法院')) {
+            srcStr = '臺灣新北地方法院';
+        } else if (issueNo.includes('檢') || issueNo.includes('署')) {
+            srcStr = '臺灣新北地方檢察署';
+        } else if (issueNo.includes('衛') || subject.includes('衛生局')) {
+            srcStr = '新北市政府衛生局';
+        } else {
+            srcStr = '勞動部勞工保險局';
+        }
+    }
+    const emailSourceUnit = srcStr;
+
+    let draftStr = (mainDocForEmail.doc_draft_no || mainDocForEmail.doc_create_no || '').trim();
+    if (!draftStr || draftStr === '-') {
+        const rec = issue.doc_receive_no || mainDocForEmail.doc_receive_no || '';
+        if (rec) draftStr = `115${rec.slice(-6)}`;
+    }
+    const emailDraftNo = draftStr || '-';
+    const emailIssueDate = issue.doc_issue_date || mainDocForEmail.doc_issue_date || '-';
+
+    const bNo = `<span style="display:inline-block;background:#0f766e;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">案件單號</span>`;
+    const bDraft = `<span style="display:inline-block;background:#0284c7;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">創稿文號</span>`;
+    const bSrc = `<span style="display:inline-block;background:#0369a1;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">來函單位</span>`;
+    const bDate = `<span style="display:inline-block;background:#475569;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">發文日期</span>`;
+    const bChart = `<span style="display:inline-block;background:#7c3aed;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">病歷號</span>`;
+    const bPatient = `<span style="display:inline-block;background:#9333ea;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">病患名稱</span>`;
+    const bQ = `<span style="display:inline-block;background:#d97706;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">問題內容</span>`;
 
     return `
         <div style="font-family:Roboto, Arial, sans-serif;max-width:580px;margin:0 auto;border:1px solid #dadce0;border-radius:8px;overflow:hidden;background:#ffffff;box-shadow:0 1px 3px rgba(0,0,0,0.1);">
@@ -31025,17 +37953,19 @@ function getEmailTemplateHtml(type, issue) {
             </div>
             <div style="padding:24px;line-height:1.7;color:#202124;font-size:13px;">
                 ${statusNotice}
-                <div style="margin-bottom:10px;">📌 <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
-                <div style="margin-bottom:10px;">📝 <strong>病歷號：</strong> ${escapeHtml(issue.doc_chart_no || '-')}</div>
-                <div style="margin-bottom:10px;">👤 <strong>病患名稱：</strong> ${escapeHtml(issue.doc_patient_name || '-')}</div>
+                <div style="margin-bottom:10px;">${bNo} <strong>${escapeHtml(issue.doc_receive_no)}</strong></div>
+                <div style="margin-bottom:10px;">${bDraft} <strong>${escapeHtml(emailDraftNo)}</strong> &nbsp;|&nbsp; ${bSrc} <strong>${escapeHtml(emailSourceUnit)}</strong></div>
+                <div style="margin-bottom:10px;">${bDate} <strong>${escapeHtml(emailIssueDate)}</strong></div>
+                <div style="margin-bottom:10px;">${bChart} <strong>${escapeHtml(emailChartNo)}</strong></div>
+                <div style="margin-bottom:10px;">${bPatient} <strong>${escapeHtml(emailPatientName)}</strong></div>
                 <div style="margin-bottom:16px;background:#f8fafc;padding:14px;border-radius:6px;border:1px solid #e2e8f0;font-size:13px;line-height:1.6;">
-                    📝 <strong>問題內容：</strong><br><div style="white-space:pre-wrap;margin-top:6px;">${formatMultilineHtml(issue.question)}</div>
+                    ${bQ}<br><div style="white-space:pre-wrap;margin-top:6px;">${formatMultilineHtml(issue.question)}</div>
                 </div>
                 ${attachmentHtml}
                 ${defaultNoticeIfOverdue}
                 <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
                 <div style="font-size:12px;color:#5f6368;">
-                    👤 承辦人員：${escapeHtml(issue.creator_name || '錢佩好')} (分機：${escapeHtml(issue.creator_ext || '2043')})
+                    <strong>承辦人員：</strong>${escapeHtml(issue.creator_name || '錢佩好')} (分機：${escapeHtml(issue.creator_ext || '2043')})
                 </div>
             </div>
         </div>

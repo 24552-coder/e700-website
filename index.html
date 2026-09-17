@@ -224,8 +224,17 @@
                             <input type="text" id="doc_assignee" class="form-control" list="caseworkerDatalist" placeholder="輸入或選取承辦人員 (陽書湘/錢佩妤/何秀英)">
                         </div>
                         <div class="form-group">
-                            <label>病歷查詢費</label>
-                            <input type="number" id="doc_fee" class="form-control" placeholder="1000">
+                            <label>病歷查詢費 (預設0 / 可選0或1000)</label>
+                            <div style="display:flex;gap:6px;align-items:center;">
+                                <select id="doc_fee" class="form-select" style="flex:1;">
+                                    <option value="0" selected>0 元 (預設)</option>
+                                    <option value="1000">1000 元</option>
+                                </select>
+                                <div style="display:inline-flex;gap:4px;">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.getElementById('doc_fee').value='0'" style="min-width:36px;padding:4px 8px;" title="設為 0 元">0</button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary" onclick="document.getElementById('doc_fee').value='1000'" style="min-width:54px;padding:4px 8px;" title="設為 1000 元">1000</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label>勞保局受理編號</label>
