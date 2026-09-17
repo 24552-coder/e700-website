@@ -31741,7 +31741,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v38_gas_nocors_fix";
+    const DATA_VERSION = "20260917_v40_template_fixed";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -33018,32 +33018,34 @@ async function saveIssue() {
 // ----------------------------------------------------
 function getEmailTemplateHtml(type, issue) {
     let headerBg = "#0056D2";
-    let headerTitle = "【待辦】您有一筆待回覆案件";
+    let headerTitle = "&#128276; 您有一筆待回覆案件";
     let statusNotice = "";
 
-    if (type === 1) { // 填完函詢問題自動寄信
+    const creatorName = issue.creator_name || "陽書湘";
+    const creatorExt = issue.creator_ext || "2037";
+    const dueDateStr = issue.due_date ? issue.due_date.split(" ")[0] : "2026-08-29";
+
+    if (type === 1) { // 填完函詢問題發送通知
         headerBg = "#0056D2";
-        headerTitle = "【待辦】您有一筆待回覆案件";
+        headerTitle = "&#128276; 您有一筆待回覆案件";
         statusNotice = `
-            <div style="background:#FCE8E6;border:1px solid #FAD2CF;color:#C5221F;padding:14px 16px;border-radius:6px;margin-bottom:16px;font-size:13px;">
-                <strong style="font-size:14px;color:#C5221F;">[請直接點擊「回覆」此封 Email 即可回答]</strong><br>
-                <span style="color:#5f6368;">您只需直接在信件點擊「回覆」並輸入答覆內容（可夾帶附件），即可自動完成回覆。</span>
+            <div style="background:#E6F4EA;border:1px solid #CEEAD6;color:#137333;padding:16px 20px;border-radius:8px;margin-top:20px;margin-bottom:16px;text-align:center;">
+                <strong style="font-size:15px;color:#137333;">&#9993; 請直接點擊「回覆」此封 Email 即可回答</strong><br>
+                <span style="color:#5f6368;font-size:13px;display:inline-block;margin-top:4px;">您只需直接在信件點擊「回覆」並輸入說明意見（可夾帶附件），即可自動完成答覆。</span>
             </div>
         `;
     } else if (type === 2) { // 醫師回復後通知承辦
         headerBg = "#0056D2";
-        headerTitle = "【已回覆】醫師回覆已確認完成";
+        headerTitle = "&#9989; 醫師回覆已確認完成";
         statusNotice = `
             <div style="background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                <strong style="color:#0056D2;font-size:14px;">[醫師回覆內容]</strong><br>
-                <div style="background:#ffffff;padding:10px 14px;border-radius:4px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;">
-                    ${formatMultilineHtml(issue.doctor_reply || '無')}
-                </div>
+                <strong style="color:#0056D2;font-size:14px;">&#128172; 醫師回覆內容</strong><br>
+                <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '無')}</div>
             </div>
         `;
     } else if (type === 3) { // 退回補件
         headerBg = "#C82333";
-        headerTitle = "【提醒】醫師補件回覆通知";
+        headerTitle = "&#9888; 醫師補件回覆通知";
         statusNotice = `
             <div style="background:#FCE8E6;border:1px solid #FAD2CF;color:#C5221F;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
                 <strong>● 退回原因：</strong> <span style="color:#D93025;font-weight:bold;">${escapeHtml(issue.return_reason || '回附太簡略')}</span>
@@ -33053,25 +33055,23 @@ function getEmailTemplateHtml(type, issue) {
                 <strong>● 上次醫師回答內容：</strong><br>
                 <span style="color:#202124;">[醫師原始回覆 ${issue.replied_at || ''}]: ${escapeHtml(issue.doctor_reply)}</span>
             </div>` : ''}
-            <div style="background:#FCE8E6;border:1px solid #FAD2CF;color:#C5221F;padding:14px 16px;border-radius:6px;margin-bottom:16px;font-size:13px;">
-                <strong style="font-size:14px;color:#C5221F;">[請直接點擊「回覆」此封 Email 即可進行補件]</strong><br>
-                <span style="color:#5f6368;">您只需直接在信件點擊「回覆」並輸入說明（可夾帶附件），即可自動完成補件。</span>
+            <div style="background:#E6F4EA;border:1px solid #CEEAD6;color:#137333;padding:16px 20px;border-radius:8px;margin-bottom:16px;text-align:center;">
+                <strong style="font-size:15px;color:#137333;">&#9993; 請直接點擊「回覆」此封 Email 即可進行補件</strong><br>
+                <span style="color:#5f6368;font-size:13px;display:inline-block;margin-top:4px;">您只需直接在信件點擊「回覆」並輸入說明（可夾帶附件），即可自動完成補件。</span>
             </div>
         `;
-    } else if (type === 4) { // 承辦按已完成
+    } else if (type === 4) { // 承辦按已完成結案
         headerBg = "#15803D";
-        headerTitle = "【結案】案件已結案完成通知";
+        headerTitle = "&#127881; 案件已結案完成通知";
         statusNotice = `
             <div style="background:#E6F4EA;border:1px solid #CEEAD6;color:#137333;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                <strong>● 醫師完整回覆內容</strong><br>
-                <div style="background:#ffffff;padding:10px 14px;border-radius:4px;margin-top:6px;border:1px solid #dadce0;color:#202124;">
-                    [醫師原始回覆 ${issue.replied_at || '最近'}]: ${escapeHtml(issue.doctor_reply || '結案')}
-                </div>
+                <strong style="color:#137333;font-size:14px;">&#128221; 最終彙整意見</strong><br>
+                <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '結案')}</div>
             </div>
         `;
     } else if (type === 5) { // 逾期催辦提醒
         headerBg = "#C82333";
-        headerTitle = `【催辦】尚未回覆提醒通知 (逾期第 ${issue.remind_count || 2} 天)`;
+        headerTitle = `&#9200; 尚未回覆提醒通知 (逾期第 ${issue.remind_count || 2} 天)`;
         statusNotice = "";
     }
 
@@ -33090,16 +33090,14 @@ function getEmailTemplateHtml(type, issue) {
 
         let physicalSection = "";
         if (physicalFiles.length > 0) {
-            const fileNames = physicalFiles.map(a => escapeHtml((a.name || "附件").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0])).join("、");
             physicalSection = `
-                <div style="margin-bottom:8px;color:#1e293b;">
-                    <strong>[隨信夾帶實體附件 (共 ${physicalFiles.length} 個檔案)]：</strong><br>
-                    <span style="color:#0056D2;font-weight:bold;">${fileNames}</span>
+                <div style="margin-bottom:12px;color:#3c4043;font-size:13.5px;">
+                    &#128206; <strong>附件：</strong> 公文附件 (請見信件夾帶檔案)
                 </div>
             `;
         }
 
-                let driveSection = "";
+        let driveSection = "";
         if (driveFiles.length > 0) {
             const seenDrive = new Set();
             const uniqueDriveFiles = driveFiles.filter(a => {
@@ -33109,206 +33107,69 @@ function getEmailTemplateHtml(type, issue) {
                 seenDrive.add(key);
                 return true;
             });
+
             const driveItems = uniqueDriveFiles.map(a => {
                 const cleanName = escapeHtml((a.name || "大型附件").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0]);
                 const sizeMb = a.size ? (a.size / (1024 * 1024)).toFixed(1) : "5+";
                 const isValidUrl = a.url && a.url.startsWith("http") && !a.url.includes("localhost") && !a.url.includes("127.0.0.1") && !a.url.includes("drive-link/view");
                 
-                const linkHtml = isValidUrl
-                    ? `<a href="${escapeHtml(a.url)}" target="_blank" style="display:inline-block;margin-top:6px;padding:8px 18px;background:#0056D2;color:#ffffff;text-decoration:none;border-radius:6px;font-size:13px;font-weight:bold;">點此線上開啟 / 下載 Google Drive 雲端檔案</a>`
-                    : `<span style="display:inline-block;margin-top:6px;padding:6px 12px;background:#FFFBEB;color:#B45309;border:1px solid #FCD34D;border-radius:6px;font-size:12.5px;font-weight:bold;">[大型檔案 ${cleanName} (${sizeMb}MB) — 請直接點擊「回覆」此郵件索取實體大檔]</span>`;
+                const linkBtn = isValidUrl
+                    ? `<a href="${escapeHtml(a.url)}" target="_blank" style="display:inline-block;margin-top:8px;padding:10px 22px;background:#0056D2;color:#ffffff;text-decoration:none;border-radius:6px;font-size:14px;font-weight:bold;box-shadow:0 2px 4px rgba(0,0,0,0.15);">&#128229; 點此線上開啟 / 下載 Google Drive 雲端檔案</a>`
+                    : `[待上傳 Google Drive]`;
+
                 return `
                     <li style="margin-bottom:12px;list-style:none;">
-                        <strong style="color:#1e293b;">[雲端檔案附件] ${cleanName}</strong> <span style="color:#64748b;">(${sizeMb} MB)</span>
-                        <br>${linkHtml}
+                        <strong style="color:#1e293b;">[雲端檔案] ${cleanName}</strong> <span style="color:#64748b;">(${sizeMb} MB)</span>
+                        <br>${linkBtn}
                     </li>
                 `;
             }).join("");
 
             driveSection = `
-                <div style="margin-top:8px;background:#EFF6FF;border:1px solid #BFDBFE;padding:14px 16px;border-radius:6px;color:#1E40AF;">
+                <div style="margin-top:12px;background:#EFF6FF;border:1px solid #BFDBFE;padding:14px 16px;border-radius:8px;color:#1E40AF;">
                     <div style="font-size:14px;font-weight:bold;color:#1E40AF;margin-bottom:8px;">[Google Drive 雲端大型附件下載連結 (共 ${uniqueDriveFiles.length} 個檔案)]：</div>
-                    <ul style="margin:4px 0 0 0;padding:0;">${driveItems}</ul>
+                    <ul style="padding-left:0;margin:0;">
+                        ${driveItems}
+                    </ul>
                 </div>
             `;
         }
 
-        attachmentHtml = `
-            <div style="margin-bottom:16px;background:#f8fafc;padding:14px;border-radius:6px;border:1px solid #e2e8f0;font-size:13px;line-height:1.6;">
-                ${physicalSection}
-                ${driveSection}
-            </div>
-        `;
-    }
-
-    let defaultNoticeIfOverdue = "";
-    if (type === 5) {
-        defaultNoticeIfOverdue = `
-            <div style="background:#FCE8E6;border:1px solid #FAD2CF;color:#C5221F;padding:14px 16px;border-radius:6px;margin-bottom:16px;font-size:13px;">
-                <strong style="font-size:14px;color:#C5221F;">[請直接點擊「回覆」此封 Email 即可回答]</strong><br>
-                <span style="color:#5f6368;">您只需直接在信件點擊「回覆」並輸入答覆內容（可夾帶附件），即可完成回覆。</span>
-            </div>
-        `;
+        attachmentHtml = physicalSection + driveSection;
     }
 
     const mainDocForEmail = (typeof gMainDocs !== 'undefined' ? gMainDocs.find(d => d.doc_receive_no === issue.doc_receive_no) : null) || {};
     const emailPatientName = issue.doc_patient_name || mainDocForEmail.doc_patient_name || '-';
     const emailChartNo = issue.doc_chart_no || mainDocForEmail.doc_chart_no || '-';
 
-    let srcStr = (mainDocForEmail.doc_source_unit || mainDocForEmail.doc_sender_org || '').trim();
-    if (!srcStr || srcStr === '-') {
-        const issueNo = mainDocForEmail.doc_issue_no || '';
-        const subject = mainDocForEmail.doc_subject || '';
-        if (issueNo.includes('保') || issueNo.includes('傷') || issueNo.includes('職') || subject.includes('勞保') || subject.includes('傷病')) {
-            srcStr = '勞動部勞工保險局';
-        } else if (issueNo.includes('院') || issueNo.includes('廷') || issueNo.includes('刑') || subject.includes('法院')) {
-            srcStr = '臺灣新北地方法院';
-        } else if (issueNo.includes('檢') || issueNo.includes('署')) {
-            srcStr = '臺灣新北地方檢察署';
-        } else if (issueNo.includes('衛') || subject.includes('衛生局')) {
-            srcStr = '新北市政府衛生局';
-        } else {
-            srcStr = '勞動部勞工保險局';
-        }
-    }
-    const emailSourceUnit = srcStr;
-
-    let draftStr = (mainDocForEmail.doc_draft_no || mainDocForEmail.doc_create_no || '').trim();
-    if (!draftStr || draftStr === '-') {
-        const rec = issue.doc_receive_no || mainDocForEmail.doc_receive_no || '';
-        if (rec) draftStr = `115${rec.slice(-6)}`;
-    }
-    const emailDraftNo = draftStr || '-';
-    const emailIssueDate = issue.doc_issue_date || mainDocForEmail.doc_issue_date || '-';
-
-    const bNo = `<span style="display:inline-block;background:#0f766e;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">案件單號</span>`;
-    const bDraft = `<span style="display:inline-block;background:#0284c7;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">創稿文號</span>`;
-    const bSrc = `<span style="display:inline-block;background:#0369a1;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">來函單位</span>`;
-    const bDate = `<span style="display:inline-block;background:#475569;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">發文日期</span>`;
-    const bChart = `<span style="display:inline-block;background:#7c3aed;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">病歷號</span>`;
-    const bPatient = `<span style="display:inline-block;background:#9333ea;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">病患名稱</span>`;
-    const bQ = `<span style="display:inline-block;background:#d97706;color:#ffffff;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:bold;margin-right:6px;">問題內容</span>`;
-
     return `
         <div style="font-family:Roboto, Arial, sans-serif;max-width:580px;margin:0 auto;border:1px solid #dadce0;border-radius:8px;overflow:hidden;background:#ffffff;box-shadow:0 1px 3px rgba(0,0,0,0.1);">
-            <div style="background:${headerBg};color:white;padding:18px 24px;text-align:center;font-size:17px;font-weight:bold;letter-spacing:0.5px;">
+            <div style="background:${headerBg};color:white;padding:18px 24px;text-align:center;font-size:18px;font-weight:bold;letter-spacing:0.5px;">
                 ${headerTitle}
             </div>
-            <div style="padding:24px;line-height:1.7;color:#202124;font-size:13px;">
-                ${statusNotice}
-                <div style="margin-bottom:10px;">${bNo} <strong>${escapeHtml(issue.doc_receive_no)}</strong></div>
-                <div style="margin-bottom:10px;">${bDraft} <strong>${escapeHtml(emailDraftNo)}</strong> &nbsp;|&nbsp; ${bSrc} <strong>${escapeHtml(emailSourceUnit)}</strong></div>
-                <div style="margin-bottom:10px;">${bDate} <strong>${escapeHtml(emailIssueDate)}</strong></div>
-                <div style="margin-bottom:10px;">${bChart} <strong>${escapeHtml(emailChartNo)}</strong></div>
-                <div style="margin-bottom:10px;">${bPatient} <strong>${escapeHtml(emailPatientName)}</strong></div>
-                <div style="margin-bottom:16px;background:#f8fafc;padding:14px;border-radius:6px;border:1px solid #e2e8f0;font-size:13px;line-height:1.6;">
-                    ${bQ}<br><div style="white-space:pre-wrap;margin-top:6px;">${formatMultilineHtml(issue.question)}</div>
+            <div style="padding:24px;line-height:1.7;color:#202124;font-size:13.5px;">
+                ${type === 2 || type === 4 ? statusNotice : ''}
+                <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
+                <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+                <div style="margin-bottom:10px;">&#128104; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
+                <div style="margin-bottom:14px;">
+                    &#128221; <strong>問題內容：</strong> ${formatMultilineHtml(issue.question)}
                 </div>
                 ${attachmentHtml}
-                ${defaultNoticeIfOverdue}
+                ${type === 1 || type === 3 ? statusNotice : ''}
                 <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
-                <div style="font-size:12px;color:#5f6368;">
-                    <strong>承辦人員：</strong>${escapeHtml(issue.creator_name || '錢佩好')} (分機：${escapeHtml(issue.creator_ext || '2043')})
+                <div style="font-size:12.5px;color:#5f6368;display:flex;justify-content:space-between;">
+                    <div>&#128104; <strong>提出人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})</div>
+                    ${type === 1 || type === 5 ? `<div>&#9200; <strong>截止日：</strong>${escapeHtml(dueDateStr)}</div>` : ''}
                 </div>
             </div>
         </div>
     `;
 }
 
-async function previewEmailModal(issueId, type) {
-    const issue = gIssues.find(i => i.issue_id === issueId);
-    if (!issue) return;
 
-    issue.sent_at = getTaiwanNowStr();
-    const savedGasUrl = getGasWebhookUrl();
-
-    // 1. 檢查大型附件是否已具備 Drive 連結
-    if (issue.attachments && issue.attachments.length > 0) {
-        let unlinkedLargeCount = 0;
-        let missingBinaryLargeCount = 0;
-
-        for (let idx = 0; idx < issue.attachments.length; idx++) {
-            const att = issue.attachments[idx];
-            const cleanName = (att.name || "附件").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0].trim();
-            const isLarge = att.isDriveLink || (att.size && att.size > 5 * 1024 * 1024);
-
-            if (isLarge && (!att.url || !att.url.startsWith("http") || att.url.includes("drive-link/view"))) {
-                unlinkedLargeCount++;
-                const b64 = getAttachmentBase64(att);
-
-                if (b64 && savedGasUrl && savedGasUrl.startsWith("http")) {
-                    showToast(`⚡ 正將大型附件「${cleanName}」寫入 Google Drive 產生連結...`, "info");
-                    try {
-                        const driveUrl = await uploadBase64InChunks(cleanName, att.mimeType || "application/octet-stream", b64, savedGasUrl);
-                        if (driveUrl) {
-                            att.url = driveUrl;
-                            att.isDriveLink = true;
-                            att.name = `${cleanName} (大型檔案 — Google Drive 雲端連結)`;
-                            saveDataToStorage();
-                            unlinkedLargeCount--;
-                            showToast(` 「${cleanName}」Google Drive 連結寫入成功！`, "success");
-                        }
-                    } catch (errDrive) {
-                        console.error("Auto upload Drive error:", errDrive);
-                    }
-                } else if (!b64) {
-                    missingBinaryLargeCount++;
-                }
-            }
-        }
-
-        // 自動防護：允許直接預覽與發信，絕不受阻
-        if (unlinkedLargeCount > 0) {
-            showToast("ℹ️ 提示：大型檔案尚未補上 Drive 連結，信件中將標示為 [待補傳]，您可隨時補貼連結。", "info");
-        }
-    }
-
-    let subject = `【雙和醫院病歷組】問題回覆通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
-    if (type === 2) subject = `【雙和醫院病歷組】已收到醫師回覆 單號：${issue.doc_receive_no}`;
-    if (type === 3) subject = `【雙和醫院病歷組】退回補件通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
-    if (type === 4) subject = `【雙和醫院病歷組】案件已結案完成 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
-    if (type === 5) subject = `【雙和醫院病歷組】催辦提醒通知 單號：${issue.doc_receive_no}`;
-
-    const ccList = [issue.creator_email, issue.cc_email1, issue.cc_email2].filter(Boolean).join(", ");
-
-    document.getElementById("previewTo").textContent = `${issue.doctor_name} (${issue.doctor_email})`;
-    document.getElementById("previewCc").textContent = ccList || "無";
-    document.getElementById("previewSubject").textContent = subject;
-
-    const htmlContent = getEmailTemplateHtml(type, issue);
-
-    const gmailMockupHtml = `
-        <div class="gmail-mockup-wrapper">
-            <div class="gmail-header-row">
-                <div class="gmail-subject">
-                    ${escapeHtml(subject)}
-                    <span class="gmail-tag">病歷組AI_已處理</span>
-                </div>
-                <div class="gmail-sender-bar">
-                    <div class="gmail-sender-details">
-                        <div class="gmail-avatar-icon">${escapeHtml(issue.creator_name ? issue.creator_name.substring(0, 1) : '病')}</div>
-                        <div>
-                            <div class="gmail-sender-name">雙和醫院病歷組 <span class="gmail-sender-email">&lt;e700document@s.tmu.edu.tw&gt;</span></div>
-                            <div class="gmail-sender-email">寄給 ${escapeHtml(issue.doctor_name || '醫師')} (${escapeHtml(issue.doctor_email)})</div>
-                        </div>
-                    </div>
-                    <div class="gmail-date-text">剛剛</div>
-                </div>
-            </div>
-            <div class="gmail-content-body">
-                ${htmlContent}
-            </div>
-        </div>
-    `;
-
-    document.getElementById("emailTemplateContainer").innerHTML = gmailMockupHtml;
-
-    gTempPendingEmailAction = { issueId, type, subject, to: issue.doctor_email, cc: ccList, issue, htmlContent };
-
-    openModal("modalEmailPreview");
-
+openModal("modalEmailPreview");
     document.getElementById("btnConfirmSendEmail").onclick = () => sendEmailViaGmailAPI();
-}
 
 /**
  * 單頁面背景自動發送引擎 (0 秒跳轉、0 額外分頁、0 手動貼上，100% 自動處理大型附件上傳)

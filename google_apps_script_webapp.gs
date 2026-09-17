@@ -268,7 +268,7 @@ function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
   if (driveLinks.length > 0) {
     for (var d = 0; d < driveLinks.length; d++) {
       var linkUrl = driveLinks[d].url;
-      var linkBtnHtml = '<a href="' + linkUrl + '" target="_blank" style="display:inline-block;margin-top:4px;padding:6px 14px;background:#0056D2;color:#ffffff;text-decoration:none;border-radius:4px;font-size:13px;font-weight:bold;">點此線上開啟 / 下載 Google Drive 雲端檔案</a>';
+      var linkBtnHtml = '<a href="' + linkUrl + '" target="_blank" style="display:inline-block;margin-top:8px;padding:10px 22px;background:#0056D2;color:#ffffff;text-decoration:none;border-radius:6px;font-size:14px;font-weight:bold;box-shadow:0 2px 4px rgba(0,0,0,0.15);">&#128229; 點此線上開啟 / 下載 Google Drive 雲端大檔</a>';
 
       if (htmlBody.indexOf("[待上傳 Google Drive]") !== -1) {
         htmlBody = htmlBody.replace(/\[待上傳 Google Drive\]\s*\(將於發送郵件時自動上傳並寫入存取連結\)/g, linkBtnHtml);
