@@ -197,7 +197,7 @@
                         </div>
                         <div class="form-group">
                             <label>發文日期</label>
-                            <input type="date" id="doc_issue_date" class="form-control">
+                            <input type="text" id="doc_issue_date" class="form-control" placeholder="例如：民國115年1月20日" onblur="this.value = formatMinguoDate(this.value)">
                         </div>
                         <div class="form-group">
                             <label>發文字號</label>
@@ -518,6 +518,6 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=20260917_v48_6mb_binary_resumable_upload"></script>
+    <script src="app.js?v=20260917_v49_minguo_date_format"></script>
 </body>
 </html>
