@@ -160,7 +160,8 @@ async function uploadLargeFileInChunks(file, gasUrl) {
     try {
         const uploadId = `UP-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`;
         const fileSize = file.size;
-        const CHUNK_SIZE = 12 * 1024 * 1024; // 4MB per chunk
+        // 3.5MB binary chunk size = 4.6MB Base64 string, 100% safe under GAS 10MB payload limit
+        const CHUNK_SIZE = Math.floor(3.5 * 1024 * 1024);
         const totalChunks = Math.ceil(fileSize / CHUNK_SIZE);
 
         let finalFileUrl = "";
@@ -178,7 +179,7 @@ async function uploadLargeFileInChunks(file, gasUrl) {
 
             if (pctText) pctText.textContent = `${percent}%`;
             if (fillBar) fillBar.style.width = `${percent}%`;
-            if (subText) subText.textContent = `正上傳至 Google Drive (${chunkIndex + 1}/${totalChunks} 區段 - ${mbTransferred}/${sizeMb} MB)...`;
+            if (subText) subText.textContent = `正寫入 Google Drive (${chunkIndex + 1}/${totalChunks} 區段 - ${mbTransferred}/${sizeMb} MB)...`;
 
             const chunkB64 = await new Promise((resolve, reject) => {
                 const reader = new FileReader();
@@ -190,32 +191,50 @@ async function uploadLargeFileInChunks(file, gasUrl) {
                 reader.readAsDataURL(chunkSlice);
             });
 
-            const chunkRes = await fetchWithTimeout(gasUrl, {
-                timeout: 35000,
-                method: "POST",
-                mode: "cors",
-                headers: { "Content-Type": "text/plain" },
-                body: JSON.stringify({
-                    action: "uploadChunk",
-                    uploadId: uploadId,
-                    chunkIndex: chunkIndex,
-                    totalChunks: totalChunks,
-                    fileName: file.name,
-                    mimeType: file.type || "application/octet-stream",
-                    chunkB64: chunkB64
-                })
-            });
+            // Retry each chunk up to 3 times in case of temporary network glitches
+            let chunkSuccess = false;
+            let lastErr = null;
 
-            const chunkJson = await chunkRes.json();
-            if (chunkJson.status === "error") {
+            for (let retry = 0; retry < 3; retry++) {
+                try {
+                    const chunkRes = await fetchWithTimeout(gasUrl, {
+                        timeout: 35000,
+                        method: "POST",
+                        mode: "cors",
+                        headers: { "Content-Type": "text/plain" },
+                        body: JSON.stringify({
+                            action: "uploadChunk",
+                            uploadId: uploadId,
+                            chunkIndex: chunkIndex,
+                            totalChunks: totalChunks,
+                            fileName: file.name,
+                            mimeType: file.type || "application/octet-stream",
+                            chunkB64: chunkB64
+                        })
+                    });
+
+                    const chunkJson = await chunkRes.json();
+                    if (chunkJson.status === "error") {
+                        throw new Error(chunkJson.message || `區段 ${chunkIndex + 1} 傳送失敗`);
+                    }
+
+                    if (chunkJson.isComplete && chunkJson.fileUrl) {
+                        finalFileUrl = chunkJson.fileUrl;
+                    }
+                    chunkSuccess = true;
+                    break;
+                } catch (eChunk) {
+                    lastErr = eChunk;
+                    await new Promise(r => setTimeout(r, 1000));
+                }
+            }
+
+            if (!chunkSuccess) {
                 if (progressBox) progressBox.classList.add("hidden");
-                throw new Error(chunkJson.message || `區段 ${chunkIndex + 1} 傳送至 Google Drive 失敗`);
+                throw new Error(lastErr ? (lastErr.message || lastErr) : `區段 ${chunkIndex + 1} 傳送失敗`);
             }
 
-            if (chunkJson.isComplete && chunkJson.fileUrl) {
-                finalFileUrl = chunkJson.fileUrl;
-                break;
-            }
+            if (finalFileUrl) break;
         }
 
         if (subText) subText.textContent = "⚡ Google Drive 雲端檔案已成功建立！公開存取權限就緒";
@@ -31726,7 +31745,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v46_zero_wait_background_upload";
+    const DATA_VERSION = "20260917_v47_gas_payload_fixed";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
