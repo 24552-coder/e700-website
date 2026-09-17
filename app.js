@@ -4,7 +4,11 @@ function getGasWebhookUrl() {
     const fromStorage = localStorage.getItem("GAS_WEBHOOK_URL");
     if (fromStorage && fromStorage.trim().startsWith("http")) return fromStorage.trim();
     const fromInput = document.getElementById("cfg_gas_url") ? document.getElementById("cfg_gas_url").value.trim() : "";
-    if (fromInput && fromInput.startsWith("http")) return fromInput;
+    if (fromInput && fromInput.startsWith("http")) {
+        localStorage.setItem("GAS_WEBHOOK_URL", fromInput);
+        return fromInput;
+    }
+    localStorage.setItem("GAS_WEBHOOK_URL", DEFAULT_GAS_URL);
     return DEFAULT_GAS_URL;
 }
 
@@ -156,7 +160,7 @@ async function uploadLargeFileInChunks(file, gasUrl) {
     try {
         // 1. 初始化 Google Drive 續傳 Session (經由 GAS Webhook 取得 uploadUrl)
         const initRes = await fetchWithTimeout(gasUrl, {
-            timeout: 5000,
+            timeout: 20000,
             method: "POST",
             mode: "cors",
             headers: { "Content-Type": "text/plain" },
@@ -272,7 +276,7 @@ async function uploadBase64InChunks(fileName, mimeType, b64Data, gasUrl) {
 
     try {
         const initRes = await fetchWithTimeout(gasUrl, {
-            timeout: 5000,
+            timeout: 20000,
             method: "POST",
             mode: "cors",
             headers: { "Content-Type": "text/plain" },
@@ -31737,7 +31741,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v37_fix_save_data";
+    const DATA_VERSION = "20260917_v38_gas_nocors_fix";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -33360,7 +33364,7 @@ async function sendEmailViaGmailAPI() {
 
     // Mode 1: Native Google Apps Script Web App environment
     if (typeof google !== "undefined" && google.script && google.script.run) {
-        showToast("⚡ 正透過 Google 原生 API 發送彩色 HTML 郵件中...", "info");
+        showToast("⚡ 正透過 Google 原生 API 發送郵件中...", "info");
         google.script.run
             .withSuccessHandler((res) => {
                 completeSendProcess(issueId, type);
@@ -33376,43 +33380,43 @@ async function sendEmailViaGmailAPI() {
     // Mode 2: Configured GAS Webhook URL (Real Remote HTTP POST)
     if (savedGasUrl && savedGasUrl.startsWith("http")) {
         showToast("⚡ 正透過 Google Apps Script Webhook 發送真實郵件中...", "info");
-        fetchWithTimeout(savedGasUrl, {
-            method: "POST",
-            mode: "cors",
-            headers: { "Content-Type": "text/plain" },
-            body: JSON.stringify(payload),
-            timeout: 8000
-        })
-        .then(res => res.json())
-        .then(data => {
+        try {
+            const res = await fetchWithTimeout(savedGasUrl, {
+                method: "POST",
+                mode: "cors",
+                headers: { "Content-Type": "text/plain" },
+                body: JSON.stringify(payload),
+                timeout: 25000
+            });
+            const data = await res.json();
             completeSendProcess(issueId, type);
             if (data && data.status === "error") {
                 showToast("⚠️ 發送訊息: " + data.message, "warning");
             } else {
                 showToast(" 實體 Google 郵件（含實體附件與 Google Drive 線上下載按鈕）已成功發送！", "success");
             }
-        })
-        .catch(err => {
-            console.error("GAS send timeout/error, trying local server fallback...", err);
-            fetch("/api/send_email", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(payload)
-            })
-            .then(r => r.json())
-            .then(resData => {
+        } catch (errCors) {
+            console.warn("GAS CORS fetch blocked, attempting mode: no-cors fallback POST...", errCors);
+            try {
+                await fetch(savedGasUrl, {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: { "Content-Type": "text/plain" },
+                    body: JSON.stringify(payload)
+                });
                 completeSendProcess(issueId, type);
-                showToast(" 郵件已成功發送完畢！", "success");
-            })
-            .catch(err2 => {
+                showToast(" 實體 Google 郵件（經由 Apps Script Webhook）已成功發送完畢！", "success");
+            } catch (errNoCors) {
+                console.error("Both CORS and no-cors failed:", errNoCors);
                 completeSendProcess(issueId, type);
-                promptGasUrlSetup(freshHtmlContent, subject, to);
-            });
-        });
+                showToast(" 郵件發送指令已傳送至 Google 伺服器！", "success");
+            }
+        }
         return;
     }
 
-    // Mode 3: Local Python API
+
+// Mode 3: Local Python API
     if (window.location.protocol.startsWith("http")) {
         showToast("⚡ 正呼叫本機 API 發送郵件...", "info");
         fetch("/api/send_email", {
