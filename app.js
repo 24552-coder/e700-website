@@ -92,47 +92,43 @@ function getTaiwanNowStr() {
 async function uploadFileToLocalServer(file) {
     const cleanName = file.name.replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0];
     const serverUrl = window.location.protocol.startsWith("http") ? "/api/upload" : "http://localhost:9999/api/upload";
-    
+
     const progressBox = document.getElementById("uploadProgressBox");
     const nameText = document.getElementById("uploadFileNameText");
     const pctText = document.getElementById("uploadPercentText");
     const fillBar = document.getElementById("uploadProgressBarFill");
     const subText = document.getElementById("uploadSubtext");
-    
+
     if (progressBox) {
-        if (nameText) nameText.textContent = `${cleanName} (${(file.size / (1024 * 1024)).toFixed(1)} MB)`;
+        if (nameText) nameText.textContent = `${file.name}`;
         if (pctText) pctText.textContent = "50%";
         if (fillBar) fillBar.style.width = "50%";
-        if (subText) subText.textContent = "超速二元通道寫入本機硬碟中...";
+        if (subText) subText.textContent = "傳送至上傳通道...";
         progressBox.classList.remove("hidden");
     }
 
     try {
-        const response = await fetch(serverUrl, {
+        const formData = new FormData();
+        formData.append("file", file);
+
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 3000);
+
+        const res = await fetch(serverUrl, {
             method: "POST",
-            headers: {
-                "X-File-Name": encodeURIComponent(cleanName),
-                "Content-Type": "application/octet-stream"
-            },
-            body: file
+            body: formData,
+            signal: controller.signal
         });
-        const resJson = await response.json();
-        
-        if (progressBox) {
-            if (pctText) pctText.textContent = "100%";
-            if (fillBar) fillBar.style.width = "100%";
-            if (subText) subText.textContent = "🎉 下載存取連結已就緒！";
-            setTimeout(() => progressBox.classList.add("hidden"), 1000);
-        }
-        
-        if (resJson && resJson.status === "success" && resJson.fileUrl) {
-            return resJson.fileUrl;
-        }
-        return `http://localhost:9999/uploads/${encodeURIComponent(cleanName)}`;
+        clearTimeout(timeoutId);
+
+        const resJson = await res.json();
+        if (progressBox) progressBox.classList.add("hidden");
+        if (resJson.fileUrl && resJson.fileUrl.startsWith("http")) return resJson.fileUrl;
+        return "";
     } catch(err) {
         if (progressBox) progressBox.classList.add("hidden");
-        console.error("Local server upload error:", err);
-        return `http://localhost:9999/uploads/${encodeURIComponent(cleanName)}`;
+        console.warn("Local server upload unreached or disabled:", err);
+        return "";
     }
 }
 
@@ -36477,7 +36473,7 @@ function startAutoSyncTimer() {
 }
 
 function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v27_card_fix";
+    const DATA_VERSION = "20260917_v28_drive_fix";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -37660,12 +37656,20 @@ async function saveIssue() {
 
             let driveUrl = "";
 
+                        let driveUrl = "";
+
             if (isLarge) {
-                try {
+                if (savedGasUrl && savedGasUrl.startsWith("http")) {
+                    showToast(`⚡ 正將大型檔案「${cleanName}」分段寫入 Google Drive...`, "info");
+                    try {
+                        driveUrl = await uploadLargeFileInChunks(f, savedGasUrl);
+                        showToast(`🎉 「${cleanName}」Google Drive 雲端連結產生完成！`, "success");
+                    } catch (errDrive) {
+                        console.error("Gas Drive upload failed:", errDrive);
+                        driveUrl = await uploadFileToLocalServer(f);
+                    }
+                } else {
                     driveUrl = await uploadFileToLocalServer(f);
-                    showToast(`🎉 「${cleanName}」大檔案上傳與下載連結產生完成！`, "success");
-                } catch (errDrive) {
-                    driveUrl = `http://localhost:9999/uploads/${encodeURIComponent(cleanName)}`;
                 }
             }
 
@@ -37857,7 +37861,7 @@ function getEmailTemplateHtml(type, issue) {
             `;
         }
 
-        let driveSection = "";
+                let driveSection = "";
         if (driveFiles.length > 0) {
             const seenDrive = new Set();
             const uniqueDriveFiles = driveFiles.filter(a => {
@@ -37870,22 +37874,23 @@ function getEmailTemplateHtml(type, issue) {
             const driveItems = uniqueDriveFiles.map(a => {
                 const cleanName = escapeHtml((a.name || "大型附件").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0]);
                 const sizeMb = a.size ? (a.size / (1024 * 1024)).toFixed(1) : "5+";
-                const isValidUrl = a.url && a.url.startsWith("http") && !a.url.includes("drive-link/view");
+                const isValidUrl = a.url && a.url.startsWith("http") && !a.url.includes("localhost") && !a.url.includes("127.0.0.1") && !a.url.includes("drive-link/view");
+                
                 const linkHtml = isValidUrl
-                    ? `<a href="${escapeHtml(a.url)}" target="_blank" style="display:inline-block;margin-top:4px;padding:6px 14px;background:#0056D2;color:#ffffff;text-decoration:none;border-radius:4px;font-size:13px;font-weight:bold;">點此線上開啟 / 下載 Google Drive 雲端檔案</a>`
-                    : `<span style="color:#c5221f;font-weight:bold;">[待上傳 Google Drive] (將於發送郵件時自動上傳並寫入存取連結)</span>`;
+                    ? `<a href="${escapeHtml(a.url)}" target="_blank" style="display:inline-block;margin-top:6px;padding:8px 18px;background:#0056D2;color:#ffffff;text-decoration:none;border-radius:6px;font-size:13px;font-weight:bold;">點此線上開啟 / 下載 Google Drive 雲端檔案</a>`
+                    : `<span style="display:inline-block;margin-top:6px;padding:6px 12px;background:#FFFBEB;color:#B45309;border:1px solid #FCD34D;border-radius:6px;font-size:12.5px;font-weight:bold;">[大型檔案 ${cleanName} (${sizeMb}MB) — 請直接點擊「回覆」此郵件索取實體大檔]</span>`;
                 return `
-                    <li style="margin-bottom:10px;">
-                        <strong style="color:#1e293b;">[雲端檔案] ${cleanName}</strong> <span style="color:#64748b;">(${sizeMb} MB)</span>
+                    <li style="margin-bottom:12px;list-style:none;">
+                        <strong style="color:#1e293b;">[雲端檔案附件] ${cleanName}</strong> <span style="color:#64748b;">(${sizeMb} MB)</span>
                         <br>${linkHtml}
                     </li>
                 `;
             }).join("");
 
             driveSection = `
-                <div style="margin-top:8px;background:#EFF6FF;border:1px solid #BFDBFE;padding:12px 14px;border-radius:6px;color:#1E40AF;">
+                <div style="margin-top:8px;background:#EFF6FF;border:1px solid #BFDBFE;padding:14px 16px;border-radius:6px;color:#1E40AF;">
                     <div style="font-size:14px;font-weight:bold;color:#1E40AF;margin-bottom:8px;">[Google Drive 雲端大型附件下載連結 (共 ${uniqueDriveFiles.length} 個檔案)]：</div>
-                    <ul style="margin:4px 0 0 18px;padding:0;">${driveItems}</ul>
+                    <ul style="margin:4px 0 0 0;padding:0;">${driveItems}</ul>
                 </div>
             `;
         }
