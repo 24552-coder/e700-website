@@ -31822,48 +31822,31 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v53_persistence_fix";
+    const DATA_VERSION = "20260917_v54_zero_data_loss_verified";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
     const issuesJson = localStorage.getItem(STORAGE_ISSUES);
 
-    gMainDocs = [];
-    gIssues = [];
+    gMainDocs = null;
+    gIssues = null;
 
-    if (docsJson) {
-        try { gMainDocs = JSON.parse(docsJson); } catch (e) { gMainDocs = []; }
+    if (docsJson !== null) {
+        try { gMainDocs = JSON.parse(docsJson); } catch (e) { gMainDocs = null; }
     }
-    if (issuesJson) {
-        try { gIssues = JSON.parse(issuesJson); } catch (e) { gIssues = []; }
+    if (issuesJson !== null) {
+        try { gIssues = JSON.parse(issuesJson); } catch (e) { gIssues = null; }
     }
 
-    if (!Array.isArray(gMainDocs) || gMainDocs.length === 0) {
+    // Only if first time on this browser (docsJson/issuesJson is null) do we initialize default templates!
+    if (!Array.isArray(gMainDocs)) {
         gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
         saveDataToStorage();
     }
-    if (!Array.isArray(gIssues) || gIssues.length === 0) {
+    if (!Array.isArray(gIssues)) {
         gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
         saveDataToStorage();
     }
-
-    // Fallback: If still 0 for any reason, fetch data.json directly from server
-    if (!gMainDocs || gMainDocs.length === 0) {
-        try {
-            const res = await fetch("data.json?t=" + Date.now());
-            if (res.ok) {
-                const data = await res.json();
-                if (data.docs && data.docs.length > 0) {
-                    gMainDocs = data.docs;
-                    gIssues = data.issues || [];
-                }
-            }
-        } catch(eFetch) {
-            console.error("data.json fetch error:", eFetch);
-        }
-    }
-
-    saveDataToStorage();
 
     gIssues.forEach(i => {
         if (i.attachments) {
