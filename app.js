@@ -31726,7 +31726,7 @@ function startAutoSyncTimer() {
 }
 
 function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v33_bulletproof";
+    const DATA_VERSION = "20260917_v34_auto_restore";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
