@@ -31822,7 +31822,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v51_modal_style_fixed";
+    const DATA_VERSION = "20260917_v52_caseworker_autofill_and_weekly_fixes";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -32277,6 +32277,16 @@ function renderTable() {
 
         const tr = document.createElement("tr");
         tr.className = `row-main-doc ${isExpanded ? 'expanded' : ''}`;
+        tr.title = "雙擊此列即可直接開啟編輯公文主檔";
+        tr.style.cursor = "pointer";
+
+        tr.ondblclick = function(e) {
+            if (e.target.closest("button") || e.target.closest("select") || e.target.closest(".toggle-icon") || e.target.closest(".badge")) {
+                return;
+            }
+            openMainDocModal(doc.doc_receive_no);
+        };
+
         tr.innerHTML = `
             <td>
                 <i class="fa-solid fa-chevron-right toggle-icon ${isExpanded ? 'open' : ''}" onclick="toggleExpandRow('${escapeHtml(doc.doc_receive_no)}')"></i>
@@ -32553,9 +32563,6 @@ function renderNestedIssueTable(receiveNo) {
                             <button class="btn btn-sm btn-outline-success" onclick="completeIssue('${escapeHtml(issue.issue_id)}')" title="結案">
                                 <i class="fa-solid fa-check"></i> 結案
                             </button>
-                            <button class="btn btn-sm btn-outline-info" onclick="openSimulateReplyModal('${escapeHtml(issue.issue_id)}')" title="模擬回信">
-                                <i class="fa-solid fa-reply"></i> 模擬
-                            </button>
                             <button class="btn btn-sm btn-outline-secondary" onclick="openReturnReasonModal('${escapeHtml(issue.issue_id)}')" title="退回補件">
                                 <i class="fa-solid fa-rotate-left"></i> 退回
                             </button>
@@ -32735,6 +32742,26 @@ function markMainDocCompleted(receiveNo) {
 // ----------------------------------------------------
 // 7. Doctor Inquiry CRUD & Direct Email Engine
 // ----------------------------------------------------
+const CASEWORKER_MAP = {
+    "陽書湘": { ext: "2037", email: "14301@s.tmu.edu.tw" },
+    "錢佩妤": { ext: "2043", email: "19020@s.tmu.edu.tw" },
+    "何秀英": { ext: "2043", email: "12254@s.tmu.edu.tw" },
+    "何雅芬": { ext: "2043", email: "12025@s.tmu.edu.tw" },
+    "蘇亦昌": { ext: "2037", email: "10140@s.tmu.edu.tw" }
+};
+
+function onCaseworkerNameChange(name) {
+    const cleanName = (name || "").split(" ")[0].trim();
+    if (CASEWORKER_MAP[cleanName]) {
+        if (document.getElementById("issue_creator_ext")) {
+            document.getElementById("issue_creator_ext").value = CASEWORKER_MAP[cleanName].ext;
+        }
+        if (document.getElementById("issue_creator_email")) {
+            document.getElementById("issue_creator_email").value = CASEWORKER_MAP[cleanName].email;
+        }
+    }
+}
+
 function openIssueModalForDoc(receiveNo) {
     const doc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
     if (!doc) return;
@@ -32751,6 +32778,14 @@ function openIssueModalForDoc(receiveNo) {
     document.getElementById("issue_receive_no_display").value = receiveNo;
     document.getElementById("issue_chart_no").value = doc.doc_chart_no || "";
     document.getElementById("issue_patient_name").value = doc.doc_patient_name || "";
+
+    // Auto-populate caseworker info directly from main document assignee
+    const rawAssignee = doc.doc_assignee ? doc.doc_assignee.split(" ")[0].trim() : "錢佩妤";
+    document.getElementById("issue_creator_name").value = rawAssignee;
+    const cwInfo = CASEWORKER_MAP[rawAssignee] || { ext: "2043", email: "19020@s.tmu.edu.tw" };
+    document.getElementById("issue_creator_ext").value = cwInfo.ext;
+    document.getElementById("issue_creator_email").value = cwInfo.email;
+
     if (document.getElementById("issue_status")) document.getElementById("issue_status").value = "待發送";
     document.getElementById("issueFilesList").innerHTML = "";
     if (document.getElementById("issue_drive_link_override")) document.getElementById("issue_drive_link_override").value = "";
@@ -33907,6 +33942,50 @@ function updateWeeklyCountPreview() {
     if (countEl) countEl.textContent = filteredDocs.length;
 }
 
+function formatMinguoDateSlash(val) {
+    if (!val) return "-";
+    val = String(val).trim();
+
+    // Match YYYY-MM-DD or YYYY/MM/DD
+    let m = val.match(/^(\d{4})[/-](\d{1,2})[/-](\d{1,2})/);
+    if (m) {
+        let y = parseInt(m[1], 10) - 1911;
+        let mm = String(parseInt(m[2], 10)).padStart(2, "0");
+        let dd = String(parseInt(m[3], 10)).padStart(2, "0");
+        return `${y}/${mm}/${dd}`;
+    }
+
+    // Match 民國115年9月17日 or 115年9月17日
+    m = val.match(/(?:民國)?(\d{2,4})[年/.-](\d{1,2})[月/.-](\d{1,2})/);
+    if (m) {
+        let y = parseInt(m[1], 10);
+        if (y > 1900) y -= 1911;
+        let mm = String(parseInt(m[2], 10)).padStart(2, "0");
+        let dd = String(parseInt(m[3], 10)).padStart(2, "0");
+        return `${y}/${mm}/${dd}`;
+    }
+
+    // Match 115/9/17 or 115-9-17
+    m = val.match(/^(\d{2,3})[/-](\d{1,2})[/-](\d{1,2})/);
+    if (m) {
+        let y = parseInt(m[1], 10);
+        if (y > 1900) y -= 1911;
+        let mm = String(parseInt(m[2], 10)).padStart(2, "0");
+        let dd = String(parseInt(m[3], 10)).padStart(2, "0");
+        return `${y}/${mm}/${dd}`;
+    }
+
+    // Match 7-digit 1150917
+    if (val.length === 7 && /^\d+$/.test(val)) {
+        let y = val.substring(0, 3);
+        let mm = val.substring(3, 5);
+        let dd = val.substring(5, 7);
+        return `${y}/${mm}/${dd}`;
+    }
+
+    return val;
+}
+
 function getFilteredWeeklyDocs() {
     const scope = document.getElementById("weekly_scope") ? document.getElementById("weekly_scope").value : "pending";
     const dateRange = document.getElementById("weekly_date_range") ? document.getElementById("weekly_date_range").value : "all";
@@ -33915,6 +33994,11 @@ function getFilteredWeeklyDocs() {
     return gMainDocs.filter(doc => {
         const progress = calculateDocProgress(doc.doc_receive_no);
         const isComp = doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成" || progress.isCompleted;
+
+        // Rule 3: If doc_reply_no (函覆文號) has content, do NOT display on weekly report
+        if (doc.doc_reply_no && String(doc.doc_reply_no).trim() !== "") {
+            return false;
+        }
 
         // 1. Scope filter
         if (scope === "pending" && isComp) return false;
@@ -33927,11 +34011,6 @@ function getFilteredWeeklyDocs() {
         // 3. Date range filter
         if (dateRange !== "all") {
             const docDateStr = doc.doc_issue_date || doc.doc_receive_date || "";
-            // Simplified date filtering based on selection
-            const now = new Date();
-            if (dateRange === "this_week") {
-                // Keep recent entries
-            }
         }
 
         return true;
@@ -33968,14 +34047,10 @@ function executeWeeklyExport() {
 
         return {
             "序號": idx + 1,
-            "承辦人員": doc.doc_assignee ? doc.doc_assignee.split(" ")[0] : "承辦人",
+            "承辦人": doc.doc_assignee ? doc.doc_assignee.split(" ")[0] : "承辦人",
             "收發文號": doc.doc_receive_no,
-            "病歷號": doc.doc_chart_no || doc.doc_draft_no || "-",
-            "病患姓名": doc.doc_patient_name || "-",
-            "來文單位": doc.doc_source_unit || doc.doc_sender_org || "-",
-            "發文日期": formatMinguoDate(doc.doc_issue_date || doc.doc_receive_date || doc.created_at.substring(0, 10)),
-            "函詢醫師": doctors,
-            "公文主旨": doc.doc_subject || "請惠予提供相關病歷資料及說明乙案。",
+            "主旨": doc.doc_subject || "請惠予提供相關病歷資料及說明乙案。",
+            "寄件日期": formatMinguoDateSlash(doc.doc_issue_date || doc.doc_receive_date || doc.created_at),
             "處理狀態": statusText
         };
     });
@@ -33986,12 +34061,8 @@ function executeWeeklyExport() {
         { wch: 8 },
         { wch: 12 },
         { wch: 16 },
-        { wch: 14 },
-        { wch: 12 },
-        { wch: 22 },
-        { wch: 18 },
-        { wch: 14 },
-        { wch: 55 },
+        { wch: 45 },
+        { wch: 16 },
         { wch: 25 }
     ];
 
