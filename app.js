@@ -31741,7 +31741,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v40_template_fixed";
+    const DATA_VERSION = "20260917_v41_fix_preview_popup";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -33167,13 +33167,96 @@ function getEmailTemplateHtml(type, issue) {
     `;
 }
 
+async function previewEmailModal(issueId, type) {
+    const issue = gIssues.find(i => i.issue_id === issueId);
+    if (!issue) return;
 
-openModal("modalEmailPreview");
+    issue.sent_at = getTaiwanNowStr();
+    const savedGasUrl = getGasWebhookUrl();
+
+    // 1. 檢查大型附件是否已具備 Drive 連結
+    if (issue.attachments && issue.attachments.length > 0) {
+        let unlinkedLargeCount = 0;
+        for (let idx = 0; idx < issue.attachments.length; idx++) {
+            const att = issue.attachments[idx];
+            const cleanName = (att.name || "附件").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0].trim();
+            const isLarge = att.isDriveLink || (att.size && att.size > 5 * 1024 * 1024);
+
+            if (isLarge && (!att.url || !att.url.startsWith("http") || att.url.includes("drive-link/view"))) {
+                unlinkedLargeCount++;
+                const b64 = getAttachmentBase64(att);
+
+                if (b64 && savedGasUrl && savedGasUrl.startsWith("http")) {
+                    showToast(`⚡ 正將大型附件「${cleanName}」寫入 Google Drive 產生連結...`, "info");
+                    try {
+                        const driveUrl = await uploadBase64InChunks(cleanName, att.mimeType || "application/octet-stream", b64, savedGasUrl);
+                        if (driveUrl) {
+                            att.url = driveUrl;
+                            att.isDriveLink = true;
+                            att.name = `${cleanName} (大型檔案 — Google Drive 雲端連結)`;
+                            saveDataToStorage();
+                            unlinkedLargeCount--;
+                            showToast(` 「${cleanName}」Google Drive 連結寫入成功！`, "success");
+                        }
+                    } catch (errDrive) {
+                        console.error("Auto upload Drive error:", errDrive);
+                    }
+                }
+            }
+        }
+
+        if (unlinkedLargeCount > 0) {
+            showToast("ℹ️ 提示：大型檔案尚未補上 Drive 連結，您可隨時補貼連結。", "info");
+        }
+    }
+
+    let subject = `【雙和醫院病歷組】問題回覆通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
+    if (type === 2) subject = `【雙和醫院病歷組】已收到醫師回覆 單號：${issue.doc_receive_no}`;
+    if (type === 3) subject = `【雙和醫院病歷組】退回補件通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
+    if (type === 4) subject = `【雙和醫院病歷組】案件已結案完成 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
+    if (type === 5) subject = `【雙和醫院病歷組】催辦提醒通知 單號：${issue.doc_receive_no}`;
+
+    const ccList = [issue.creator_email, issue.cc_email1, issue.cc_email2].filter(Boolean).join(", ");
+
+    document.getElementById("previewTo").textContent = `${issue.doctor_name} (${issue.doctor_email})`;
+    document.getElementById("previewCc").textContent = ccList || "無";
+    document.getElementById("previewSubject").textContent = subject;
+
+    const htmlContent = getEmailTemplateHtml(type, issue);
+
+    const gmailMockupHtml = `
+        <div class="gmail-mockup-wrapper">
+            <div class="gmail-header-row">
+                <div class="gmail-subject">
+                    ${escapeHtml(subject)}
+                    <span class="gmail-tag">病歷組AI_已處理</span>
+                </div>
+                <div class="gmail-sender-bar">
+                    <div class="gmail-sender-details">
+                        <div class="gmail-avatar-icon">${escapeHtml(issue.creator_name ? issue.creator_name.substring(0, 1) : '病')}</div>
+                        <div>
+                            <div class="gmail-sender-name">雙和醫院病歷組 <span class="gmail-sender-email">&lt;e700document@s.tmu.edu.tw&gt;</span></div>
+                            <div class="gmail-sender-email">寄給 ${escapeHtml(issue.doctor_name || '醫師')} (${escapeHtml(issue.doctor_email)})</div>
+                        </div>
+                    </div>
+                    <div class="gmail-date-text">剛剛</div>
+                </div>
+            </div>
+            <div class="gmail-content-body">
+                ${htmlContent}
+            </div>
+        </div>
+    `;
+
+    document.getElementById("emailTemplateContainer").innerHTML = gmailMockupHtml;
+
+    gTempPendingEmailAction = { issueId, type, subject, to: issue.doctor_email, cc: ccList, issue, htmlContent };
+
+    openModal("modalEmailPreview");
+
     document.getElementById("btnConfirmSendEmail").onclick = () => sendEmailViaGmailAPI();
+}
 
-/**
- * 單頁面背景自動發送引擎 (0 秒跳轉、0 額外分頁、0 手動貼上，100% 自動處理大型附件上傳)
- */
 async function sendEmailViaGmailAPI() {
     if (!gTempPendingEmailAction) return;
 
