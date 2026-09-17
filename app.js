@@ -31725,8 +31725,19 @@ function startAutoSyncTimer() {
     }, 10000);
 }
 
+
+function saveDataToStorage() {
+    try {
+        localStorage.setItem(STORAGE_MAIN_DOCS, JSON.stringify(gMainDocs));
+        localStorage.setItem(STORAGE_ISSUES, JSON.stringify(gIssues));
+    } catch (e) {
+        console.error("saveDataToStorage error:", e);
+    }
+}
+
+
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v35_data_json_sync";
+    const DATA_VERSION = "20260917_v37_fix_save_data";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -32880,8 +32891,6 @@ async function saveIssue() {
             const cleanName = f.name.replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0];
 
             let driveUrl = "";
-
-                        let driveUrl = "";
 
             if (isLarge) {
                 if (savedGasUrl && savedGasUrl.startsWith("http")) {
