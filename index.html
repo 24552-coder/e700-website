@@ -518,6 +518,79 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=20260917_v49_minguo_date_format"></script>
+    <script src="app.js?v=20260917_v50_weekly_report_filter_modal"></script>
+
+    <!-- Modal: 週表篩選條件與匯出 -->
+    <div class="modal-backdrop" id="modalWeeklyExport">
+        <div class="modal-box" style="max-width:650px;">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-file-excel text-success"></i> 病歷組公文函詢週表 - 條件設定與匯出</h3>
+                <button class="btn-close" onclick="closeModal('modalWeeklyExport')">&times;</button>
+            </div>
+            <div class="modal-body" style="padding:20px;">
+                <div class="alert alert-info" style="font-size:13.5px;margin-bottom:16px;">
+                    <i class="fa-solid fa-circle-info"></i> 請設定週表產製條件，系統將根據您選取之範圍進行統計過濾、主畫面同步顯示，並匯出含<strong>民國年月日（如：民國115年1月20日）</strong>之 Excel 週報表。
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-12">
+                        <label class="form-label font-bold"><i class="fa-solid fa-list-check"></i> 週表案件篩選範圍：</label>
+                        <select id="weekly_scope" class="form-select" onchange="updateWeeklyCountPreview()">
+                            <option value="pending" selected>未結案案件 (處理中 / 待醫師回覆 / 待發送 / 退回補件)</option>
+                            <option value="overdue">僅未結案逾期催辦案件</option>
+                            <option value="completed">本週已完成結案案件</option>
+                            <option value="all">全數據所有公文案件</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6" style="margin-top:12px;">
+                        <label class="form-label font-bold"><i class="fa-solid fa-calendar-week"></i> 週別 / 日期條件：</label>
+                        <select id="weekly_date_range" class="form-select" onchange="updateWeeklyCountPreview()">
+                            <option value="all" selected>全數據 (不限日期)</option>
+                            <option value="this_week">本週 (近 7 天內)</option>
+                            <option value="last_week">上週 (7 ~ 14 天前)</option>
+                            <option value="this_month">本月</option>
+                            <option value="custom">自訂民國日期區間</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6" style="margin-top:12px;">
+                        <label class="form-label font-bold"><i class="fa-solid fa-user-tie"></i> 承辦人員條件：</label>
+                        <select id="weekly_assignee" class="form-select" onchange="updateWeeklyCountPreview()">
+                            <option value="">全部承辦人員</option>
+                            <option value="錢佩妤">錢佩妤</option>
+                            <option value="陽書湘">陽書湘</option>
+                            <option value="何秀英">何秀英</option>
+                            <option value="何雅芬">何雅芬</option>
+                            <option value="蘇亦昌">蘇亦昌</option>
+                        </select>
+                    </div>
+
+                    <div id="weekly_custom_date_box" class="col-md-12 hidden" style="margin-top:12px;background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #e2e8f0;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">起始日期 (例: 民國115年9月11日 或 1150911)：</label>
+                                <input type="text" id="weekly_date_start" class="form-control" placeholder="民國115年9月11日" onblur="this.value = formatMinguoDate(this.value); updateWeeklyCountPreview();">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">結束日期 (例: 民國115年9月17日 或 1150917)：</label>
+                                <input type="text" id="weekly_date_end" class="form-control" placeholder="民國115年9月17日" onblur="this.value = formatMinguoDate(this.value); updateWeeklyCountPreview();">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:18px;background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:12px 16px;border-radius:6px;font-size:14px;">
+                    <i class="fa-solid fa-chart-pie"></i> <strong>統計小結：</strong> 符合目前週表條件之公文共 <span id="weekly_matched_count" style="font-size:16px;font-weight:bold;color:#0056D2;">0</span> 筆。
+                </div>
+            </div>
+            <div class="modal-footer" style="gap:10px;">
+                <button class="btn btn-outline-secondary" onclick="closeModal('modalWeeklyExport')">關閉</button>
+                <button id="btnApplyWeeklyFilter" class="btn btn-outline-primary" onclick="applyWeeklyFilterToTable()"><i class="fa-solid fa-filter"></i> 套用條件至主畫面</button>
+                <button id="btnConfirmExportWeekly" class="btn btn-success" onclick="executeWeeklyExport()"><i class="fa-solid fa-file-excel"></i> 匯出 Excel 週報表</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

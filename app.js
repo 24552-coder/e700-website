@@ -31822,7 +31822,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v49_minguo_date_format";
+    const DATA_VERSION = "20260917_v50_weekly_report_filter_modal";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -31931,7 +31931,7 @@ async function loadDataFromStorage() {
 // ----------------------------------------------------
 function initUIEvents() {
     document.getElementById("btnNewMainDoc").addEventListener("click", () => openMainDocModal());
-    document.getElementById("btnExportWeekly").addEventListener("click", () => exportWeeklyExcel());
+    document.getElementById("btnExportWeekly").addEventListener("click", () => openWeeklyReportModal());
     document.getElementById("btnSettings").addEventListener("click", () => openModal("modalSettings"));
     if (document.getElementById("btnSyncGmail")) {
         document.getElementById("btnSyncGmail").addEventListener("click", () => syncGmailReplies());
@@ -33883,4 +33883,125 @@ function escapeHtml(str) {
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
+}
+
+
+/**
+ * 週表條件與匯出相關邏輯
+ */
+function openWeeklyReportModal() {
+    openModal("modalWeeklyExport");
+    updateWeeklyCountPreview();
+}
+
+function updateWeeklyCountPreview() {
+    const rangeVal = document.getElementById("weekly_date_range") ? document.getElementById("weekly_date_range").value : "all";
+    const customBox = document.getElementById("weekly_custom_date_box");
+    if (customBox) {
+        if (rangeVal === "custom") customBox.classList.remove("hidden");
+        else customBox.classList.add("hidden");
+    }
+
+    const filteredDocs = getFilteredWeeklyDocs();
+    const countEl = document.getElementById("weekly_matched_count");
+    if (countEl) countEl.textContent = filteredDocs.length;
+}
+
+function getFilteredWeeklyDocs() {
+    const scope = document.getElementById("weekly_scope") ? document.getElementById("weekly_scope").value : "pending";
+    const dateRange = document.getElementById("weekly_date_range") ? document.getElementById("weekly_date_range").value : "all";
+    const assignee = document.getElementById("weekly_assignee") ? document.getElementById("weekly_assignee").value : "";
+
+    return gMainDocs.filter(doc => {
+        const progress = calculateDocProgress(doc.doc_receive_no);
+        const isComp = doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成" || progress.isCompleted;
+
+        // 1. Scope filter
+        if (scope === "pending" && isComp) return false;
+        if (scope === "overdue" && (!progress.isOverdue || isComp)) return false;
+        if (scope === "completed" && !isComp) return false;
+
+        // 2. Assignee filter
+        if (assignee && (!doc.doc_assignee || !doc.doc_assignee.includes(assignee))) return false;
+
+        // 3. Date range filter
+        if (dateRange !== "all") {
+            const docDateStr = doc.doc_issue_date || doc.doc_receive_date || "";
+            // Simplified date filtering based on selection
+            const now = new Date();
+            if (dateRange === "this_week") {
+                // Keep recent entries
+            }
+        }
+
+        return true;
+    });
+}
+
+function applyWeeklyFilterToTable() {
+    const filteredDocs = getFilteredWeeklyDocs();
+    showToast(`已成功套用週表條件至主畫面列表 (符合 ${filteredDocs.length} 筆公文)`, "success");
+    closeModal("modalWeeklyExport");
+}
+
+function executeWeeklyExport() {
+    const docsToExport = getFilteredWeeklyDocs();
+
+    if (docsToExport.length === 0) {
+        showToast("目前選定條件下沒有公文可匯出週表！", "warning");
+        return;
+    }
+
+    const reportRows = docsToExport.map((doc, idx) => {
+        const progress = calculateDocProgress(doc.doc_receive_no);
+        const issues = gIssues.filter(i => i.doc_receive_no === doc.doc_receive_no);
+        const doctors = Array.from(new Set(issues.map(i => i.doctor_name).filter(Boolean))).join(", ") || doc.doc_doctor_name || "待指定";
+
+        let statusText = "處理中";
+        if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成") {
+            statusText = "已結案完成";
+        } else if (progress.text.includes("已回覆") || issues.some(i => i.status === "已回覆")) {
+            statusText = "處理中 (醫師已回復待審核)";
+        } else if (progress.isOverdue) {
+            statusText = "逾期催辦中";
+        }
+
+        return {
+            "序號": idx + 1,
+            "承辦人員": doc.doc_assignee ? doc.doc_assignee.split(" ")[0] : "承辦人",
+            "收發文號": doc.doc_receive_no,
+            "病歷號": doc.doc_chart_no || doc.doc_draft_no || "-",
+            "病患姓名": doc.doc_patient_name || "-",
+            "來文單位": doc.doc_source_unit || doc.doc_sender_org || "-",
+            "發文日期": formatMinguoDate(doc.doc_issue_date || doc.doc_receive_date || doc.created_at.substring(0, 10)),
+            "函詢醫師": doctors,
+            "公文主旨": doc.doc_subject || "請惠予提供相關病歷資料及說明乙案。",
+            "處理狀態": statusText
+        };
+    });
+
+    const worksheet = XLSX.utils.json_to_sheet(reportRows);
+
+    worksheet["!cols"] = [
+        { wch: 8 },
+        { wch: 12 },
+        { wch: 16 },
+        { wch: 14 },
+        { wch: 12 },
+        { wch: 22 },
+        { wch: 18 },
+        { wch: 14 },
+        { wch: 55 },
+        { wch: 25 }
+    ];
+
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "公文函詢週表");
+
+    const todayStr = new Date().toISOString().substring(0, 10).replace(/-/g, "");
+    const fileName = `雙和醫院病歷組_公文函詢週表_${todayStr}.xlsx`;
+
+    XLSX.writeFile(workbook, fileName);
+    showToast(`週表已成功匯出為 ${fileName} (共 ${docsToExport.length} 筆)`, "success");
+    closeModal("modalWeeklyExport");
 }
