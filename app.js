@@ -31700,8 +31700,8 @@ let gTempPendingEmailAction = null;
 // ----------------------------------------------------
 // 2. Initialization & Data Loading
 // ----------------------------------------------------
-document.addEventListener("DOMContentLoaded", () => {
-    loadDataFromStorage();
+document.addEventListener("DOMContentLoaded", async () => {
+    await loadDataFromStorage();
     if (!gMainDocs || !Array.isArray(gMainDocs) || gMainDocs.length === 0) {
         console.warn("gMainDocs empty detected at startup, auto-restoring default 520 records...");
         gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
@@ -31725,12 +31725,12 @@ function startAutoSyncTimer() {
     }, 10000);
 }
 
-function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v34_auto_restore";
+async function loadDataFromStorage() {
+    const DATA_VERSION = "20260917_v35_data_json_sync";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
-        console.log("New data version detected. Re-initializing default dataset...");
+        console.log("New data version detected. Re-initializing dataset...");
         localStorage.removeItem(STORAGE_MAIN_DOCS);
         localStorage.removeItem(STORAGE_ISSUES);
         localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
@@ -31754,6 +31754,22 @@ function loadDataFromStorage() {
     }
     if (!Array.isArray(gIssues) || gIssues.length === 0) {
         gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+    }
+
+    // Fallback: If still 0 for any reason, fetch data.json directly from server
+    if (!gMainDocs || gMainDocs.length === 0) {
+        try {
+            const res = await fetch("data.json?t=" + Date.now());
+            if (res.ok) {
+                const data = await res.json();
+                if (data.docs && data.docs.length > 0) {
+                    gMainDocs = data.docs;
+                    gIssues = data.issues || [];
+                }
+            }
+        } catch(eFetch) {
+            console.error("data.json fetch error:", eFetch);
+        }
     }
 
     saveDataToStorage();
@@ -31808,6 +31824,9 @@ function loadDataFromStorage() {
             issue.attachments = Array.from(map.values());
         }
     });
+
+    renderDashboard();
+    renderTable();
 }
 
 
