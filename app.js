@@ -31726,11 +31726,11 @@ function startAutoSyncTimer() {
 }
 
 function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v32_force_restore";
+    const DATA_VERSION = "20260917_v33_bulletproof";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
-        console.log("New data version detected. Clearing local storage cache...");
+        console.log("New data version detected. Re-initializing default dataset...");
         localStorage.removeItem(STORAGE_MAIN_DOCS);
         localStorage.removeItem(STORAGE_ISSUES);
         localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
@@ -31739,23 +31739,24 @@ function loadDataFromStorage() {
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
     const issuesJson = localStorage.getItem(STORAGE_ISSUES);
 
+    gMainDocs = [];
+    gIssues = [];
+
     if (docsJson) {
         try { gMainDocs = JSON.parse(docsJson); } catch (e) { gMainDocs = []; }
     }
-    if (!gMainDocs || !Array.isArray(gMainDocs) || gMainDocs.length === 0) {
-        gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
-    }
-    if (!gIssues || !Array.isArray(gIssues) || gIssues.length === 0) {
-        gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
-    }
-    saveDataToStorage();
-
     if (issuesJson) {
         try { gIssues = JSON.parse(issuesJson); } catch (e) { gIssues = []; }
     }
-    if (!gIssues || !Array.isArray(gIssues) || gIssues.length === 0) {
+
+    if (!Array.isArray(gMainDocs) || gMainDocs.length === 0) {
+        gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
+    }
+    if (!Array.isArray(gIssues) || gIssues.length === 0) {
         gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
     }
+
+    saveDataToStorage();
 
     gIssues.forEach(i => {
         if (i.attachments) {
@@ -31784,7 +31785,6 @@ function loadDataFromStorage() {
         }
     });
 
-    // 嚴格執行業務規則：醫師回覆 (已回覆) 不等於結案！必須承辦人按【結案】公文狀態才能切換為「已完成」
     gMainDocs.forEach(doc => {
         if (doc.doc_status === "已完成") {
             const docIssues = gIssues.filter(i => i.doc_receive_no === doc.doc_receive_no);
@@ -31794,7 +31794,7 @@ function loadDataFromStorage() {
         }
     });
 
-        gIssues.forEach(issue => {
+    gIssues.forEach(issue => {
         if (issue.attachments && issue.attachments.length > 0) {
             const map = new Map();
             issue.attachments.forEach(att => {
@@ -31808,59 +31808,8 @@ function loadDataFromStorage() {
             issue.attachments = Array.from(map.values());
         }
     });
-
-    pruneAttachmentCache();
 }
 
-function resetDefaultData() {
-    if (confirm("確定要重置並還原預設公文與函詢測試資料嗎？")) {
-        gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
-        gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
-        saveDataToStorage();
-        renderDashboard();
-        renderTable();
-        populateAssigneeOptions();
-        showToast(" 已成功重置並還原預設公文資料清單！", "success");
-    }
-}
-
-function saveDataToStorage() {
-    try {
-        gIssues.forEach(issue => {
-            if (issue.attachments) {
-                issue.attachments.forEach(att => {
-                    if (att.base64Data) {
-                        const clean = (att.name || "").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0];
-                        if (att.att_id) gAttachmentBinaryCache[att.att_id] = att.base64Data;
-                        if (att.name) gAttachmentBinaryCache[att.name] = att.base64Data;
-                        if (clean) gAttachmentBinaryCache[clean] = att.base64Data;
-                        delete att.base64Data;
-                    }
-                });
-            }
-        });
-        localStorage.setItem(STORAGE_MAIN_DOCS, JSON.stringify(gMainDocs));
-        localStorage.setItem(STORAGE_ISSUES, JSON.stringify(gIssues));
-    } catch (e) {
-        console.error("Storage error:", e);
-    }
-        gIssues.forEach(issue => {
-        if (issue.attachments && issue.attachments.length > 0) {
-            const map = new Map();
-            issue.attachments.forEach(att => {
-                const clean = (att.name || "").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0].trim();
-                if (clean) {
-                    if (!map.has(clean) || att.url) {
-                        map.set(clean, att);
-                    }
-                }
-            });
-            issue.attachments = Array.from(map.values());
-        }
-    });
-
-    pruneAttachmentCache();
-}
 
 // ----------------------------------------------------
 // 3. UI Events & Filtering
