@@ -31822,7 +31822,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v50_weekly_report_filter_modal";
+    const DATA_VERSION = "20260917_v51_modal_style_fixed";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
