@@ -153,55 +153,32 @@ async function uploadLargeFileInChunks(file, gasUrl) {
         if (nameText) nameText.textContent = `${file.name} (${sizeMb} MB)`;
         if (pctText) pctText.textContent = "0%";
         if (fillBar) fillBar.style.width = "0%";
-        if (subText) subText.textContent = "建立 Google Drive 雲端專用傳輸通道...";
+        if (subText) subText.textContent = "準備上傳至 Google Drive 雲端...";
         progressBox.classList.remove("hidden");
     }
 
     try {
-        // 1. 初始化 Google Drive 續傳 Session (經由 GAS Webhook 取得 uploadUrl)
-        const initRes = await fetchWithTimeout(gasUrl, {
-            timeout: 25000,
-            method: "POST",
-            mode: "cors",
-            headers: { "Content-Type": "text/plain" },
-            body: JSON.stringify({
-                action: "initResumableUpload",
-                fileName: file.name,
-                mimeType: file.type || "application/octet-stream",
-                fileSize: file.size
-            })
-        });
-
-        const initJson = await initRes.json();
-        if (initJson.status !== "success" || !initJson.uploadUrl) {
-            if (progressBox) progressBox.classList.add("hidden");
-            throw new Error(initJson.message || "無法取得 Google Drive 雲端上傳通道");
-        }
-
-        const uploadUrl = initJson.uploadUrl;
+        const uploadId = `UP-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`;
         const fileSize = file.size;
+        const CHUNK_SIZE = 4 * 1024 * 1024; // 4MB per chunk
+        const totalChunks = Math.ceil(fileSize / CHUNK_SIZE);
 
-        // 10MB Chunk size (10 * 1024 * 1024 = 40 * 256KB, optimal size for GAS relay without CORS hang)
-        const CHUNK_SIZE = 10 * 1024 * 1024;
-        let start = 0;
         let finalFileUrl = "";
-
         const startTime = Date.now();
 
-        while (start < fileSize) {
+        for (let chunkIndex = 0; chunkIndex < totalChunks; chunkIndex++) {
+            const start = chunkIndex * CHUNK_SIZE;
             const end = Math.min(start + CHUNK_SIZE, fileSize);
             const chunkSlice = file.slice(start, end);
-            const percent = Math.round((end / fileSize) * 100);
+            const percent = Math.round(((chunkIndex + 1) / totalChunks) * 100);
 
             const elapsedSec = Math.max(0.1, (Date.now() - startTime) / 1000);
             const mbTransferred = (end / (1024 * 1024)).toFixed(1);
             const speed = (end / (1024 * 1024) / elapsedSec).toFixed(1);
-            const remainingMb = (fileSize - end) / (1024 * 1024);
-            const etaSec = speed > 0 ? Math.ceil(remainingMb / speed) : 0;
 
             if (pctText) pctText.textContent = `${percent}%`;
             if (fillBar) fillBar.style.width = `${percent}%`;
-            if (subText) subText.textContent = `正寫入 Google Drive (${mbTransferred} / ${sizeMb} MB - ${speed} MB/s, 剩餘約 ${etaSec} 秒)...`;
+            if (subText) subText.textContent = `正上傳至 Google Drive (${chunkIndex + 1}/${totalChunks} 區段 - ${mbTransferred}/${sizeMb} MB)...`;
 
             const chunkB64 = await new Promise((resolve, reject) => {
                 const reader = new FileReader();
@@ -214,35 +191,34 @@ async function uploadLargeFileInChunks(file, gasUrl) {
             });
 
             const chunkRes = await fetchWithTimeout(gasUrl, {
-                timeout: 45000,
+                timeout: 35000,
                 method: "POST",
                 mode: "cors",
                 headers: { "Content-Type": "text/plain" },
                 body: JSON.stringify({
-                    action: "uploadResumableChunk",
-                    uploadUrl: uploadUrl,
-                    chunkB64: chunkB64,
-                    startByte: start,
-                    endByte: end - 1,
-                    totalSize: fileSize
+                    action: "uploadChunk",
+                    uploadId: uploadId,
+                    chunkIndex: chunkIndex,
+                    totalChunks: totalChunks,
+                    fileName: file.name,
+                    mimeType: file.type || "application/octet-stream",
+                    chunkB64: chunkB64
                 })
             });
 
             const chunkJson = await chunkRes.json();
             if (chunkJson.status === "error") {
                 if (progressBox) progressBox.classList.add("hidden");
-                throw new Error(chunkJson.message || "分段傳送至 Google Drive 失敗");
+                throw new Error(chunkJson.message || `區段 ${chunkIndex + 1} 傳送至 Google Drive 失敗`);
             }
 
             if (chunkJson.isComplete && chunkJson.fileUrl) {
                 finalFileUrl = chunkJson.fileUrl;
                 break;
             }
-
-            start = end;
         }
 
-        if (subText) subText.textContent = "⚡ Google Drive 傳輸完成！公開權限已就緒";
+        if (subText) subText.textContent = "⚡ Google Drive 雲端檔案已成功建立！公開存取權限就緒";
         if (fillBar) fillBar.style.width = "100%";
         if (pctText) pctText.textContent = "100%";
 
@@ -31750,7 +31726,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v44_fast_gas_relay_upload";
+    const DATA_VERSION = "20260917_v45_native_driveapp_chunk_upload";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
