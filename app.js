@@ -31822,7 +31822,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v54_zero_data_loss_verified";
+    const DATA_VERSION = "20260917_v55_weekly_date_range_filter_fixed";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
@@ -33964,6 +33964,44 @@ function formatMinguoDateSlash(val) {
     return val;
 }
 
+function parseDocDateObj(val) {
+    if (!val) return null;
+    val = String(val).trim();
+    if (!val) return null;
+
+    // 1. YYYY-MM-DD or YYYY/MM/DD
+    let m = val.match(/(\d{4})[/-](\d{1,2})[/-](\d{1,2})/);
+    if (m) {
+        return new Date(parseInt(m[1], 10), parseInt(m[2], 10) - 1, parseInt(m[3], 10));
+    }
+
+    // 2. 民國115年9月17日 or 115年9月17日
+    m = val.match(/(?:民國)?(\d{2,4})[年/.-](\d{1,2})[月/.-](\d{1,2})/);
+    if (m) {
+        let y = parseInt(m[1], 10);
+        if (y < 1900) y += 1911;
+        return new Date(y, parseInt(m[2], 10) - 1, parseInt(m[3], 10));
+    }
+
+    // 3. 115/09/17 or 115-09-17
+    m = val.match(/^(\d{2,3})[/-](\d{1,2})[/-](\d{1,2})/);
+    if (m) {
+        let y = parseInt(m[1], 10);
+        if (y < 1900) y += 1911;
+        return new Date(y, parseInt(m[2], 10) - 1, parseInt(m[3], 10));
+    }
+
+    // 4. 7-digit 1150917
+    if (val.length === 7 && /^\d+$/.test(val)) {
+        let y = parseInt(val.substring(0, 3), 10) + 1911;
+        let mm = parseInt(val.substring(3, 5), 10) - 1;
+        let dd = parseInt(val.substring(5, 7), 10);
+        return new Date(y, mm, dd);
+    }
+
+    return null;
+}
+
 function getFilteredWeeklyDocs() {
     const scope = document.getElementById("weekly_scope") ? document.getElementById("weekly_scope").value : "pending";
     const dateRange = document.getElementById("weekly_date_range") ? document.getElementById("weekly_date_range").value : "all";
@@ -33988,7 +34026,40 @@ function getFilteredWeeklyDocs() {
 
         // 3. Date range filter
         if (dateRange !== "all") {
-            const docDateStr = doc.doc_issue_date || doc.doc_receive_date || "";
+            const docDateStr = doc.doc_issue_date || doc.doc_receive_date || doc.created_at || "";
+            const docDate = parseDocDateObj(docDateStr);
+            if (!docDate) return false;
+
+            const now = new Date();
+            const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+            if (dateRange === "this_week") {
+                const sevenDaysAgo = new Date(todayStart.getTime() - 7 * 24 * 60 * 60 * 1000);
+                if (docDate < sevenDaysAgo || docDate > now) return false;
+            } else if (dateRange === "last_week") {
+                const fourteenDaysAgo = new Date(todayStart.getTime() - 14 * 24 * 60 * 60 * 1000);
+                const sevenDaysAgo = new Date(todayStart.getTime() - 7 * 24 * 60 * 60 * 1000);
+                if (docDate < fourteenDaysAgo || docDate >= sevenDaysAgo) return false;
+            } else if (dateRange === "this_month") {
+                if (docDate.getFullYear() !== now.getFullYear() || docDate.getMonth() !== now.getMonth()) {
+                    return false;
+                }
+            } else if (dateRange === "custom") {
+                const startVal = document.getElementById("weekly_date_start") ? document.getElementById("weekly_date_start").value : "";
+                const endVal = document.getElementById("weekly_date_end") ? document.getElementById("weekly_date_end").value : "";
+
+                if (startVal) {
+                    const startDate = parseDocDateObj(startVal);
+                    if (startDate && docDate < startDate) return false;
+                }
+                if (endVal) {
+                    const endDate = parseDocDateObj(endVal);
+                    if (endDate) {
+                        const endDateEnd = new Date(endDate.getFullYear(), endDate.getMonth(), endDate.getDate(), 23, 59, 59);
+                        if (docDate > endDateEnd) return false;
+                    }
+                }
+            }
         }
 
         return true;
