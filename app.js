@@ -31822,15 +31822,8 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v52_caseworker_autofill_and_weekly_fixes";
-    const storedVer = localStorage.getItem("APP_DATA_VERSION");
-
-    if (storedVer !== DATA_VERSION) {
-        console.log("New data version detected. Re-initializing dataset...");
-        localStorage.removeItem(STORAGE_MAIN_DOCS);
-        localStorage.removeItem(STORAGE_ISSUES);
-        localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
-    }
+    const DATA_VERSION = "20260917_v53_persistence_fix";
+    localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
     const issuesJson = localStorage.getItem(STORAGE_ISSUES);
@@ -31847,9 +31840,11 @@ async function loadDataFromStorage() {
 
     if (!Array.isArray(gMainDocs) || gMainDocs.length === 0) {
         gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
+        saveDataToStorage();
     }
     if (!Array.isArray(gIssues) || gIssues.length === 0) {
         gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+        saveDataToStorage();
     }
 
     // Fallback: If still 0 for any reason, fetch data.json directly from server
