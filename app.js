@@ -160,7 +160,7 @@ async function uploadLargeFileInChunks(file, gasUrl) {
     try {
         const uploadId = `UP-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`;
         const fileSize = file.size;
-        const CHUNK_SIZE = 4 * 1024 * 1024; // 4MB per chunk
+        const CHUNK_SIZE = 12 * 1024 * 1024; // 4MB per chunk
         const totalChunks = Math.ceil(fileSize / CHUNK_SIZE);
 
         let finalFileUrl = "";
@@ -31726,7 +31726,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v45_native_driveapp_chunk_upload";
+    const DATA_VERSION = "20260917_v46_zero_wait_background_upload";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -33619,43 +33619,45 @@ async function handleFileSelected(inputElement, listContainerId) {
             gAttachmentBinaryCache[file.name] = b64;
         }
 
-        let driveUrl = "";
-        let statusBadge = `<span class="badge badge-success"><i class="fa-solid fa-check"></i> 實體附件已夾帶預載</span>`;
-
         if (isLarge) {
             if (savedGasUrl && savedGasUrl.startsWith("http")) {
-                statusBadge = `<span class="badge badge-info"><i class="fa-solid fa-cloud-arrow-up spin-icon"></i> 正即時上傳至 Google Drive...</span>`;
+                const statusId = `att-status-${Date.now()}-${idx}`;
                 const divTemp = document.createElement("div");
                 divTemp.className = "file-item";
                 divTemp.style.marginTop = "6px";
-                divTemp.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
+                divTemp.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) <span id="${statusId}" class="badge badge-info"><i class="fa-solid fa-cloud-arrow-up spin-icon"></i> 背景極速直傳 Google Drive 中 (可隨時點擊儲存，免等待)...</span></span>`;
                 container.appendChild(divTemp);
 
-                try {
-                    driveUrl = await uploadLargeFileInChunks(file, savedGasUrl);
+                // Start background upload promise immediately
+                file._uploadPromise = uploadLargeFileInChunks(file, savedGasUrl).then(driveUrl => {
                     file._driveUrl = driveUrl;
-                    statusBadge = `<span class="badge badge-success"><i class="fa-solid fa-cloud-check"></i> Google Drive 雲端連結已就緒 (可於手機直連開啓/下載)</span> <a href="${escapeHtml(driveUrl)}" target="_blank" style="margin-left:6px;color:#0056D2;font-weight:bold;text-decoration:underline;">&#128229; 線上開啟 / 下載 Google Drive 檔案</a>`;
-                    divTemp.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
-                    showToast(` 「${cleanName}」10秒內直傳 Google Drive 成功！已寫入存取連結。`, "success");
-                } catch (errDrive) {
-                    console.error("Drive upload error:", errDrive);
-                    statusBadge = `<span class="badge badge-danger"><i class="fa-solid fa-circle-exclamation"></i> Google Drive 上傳失敗: ${escapeHtml(errDrive.message || errDrive)}</span>`;
-                    divTemp.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
-                    showToast(`上傳 Google Drive 失敗: ${errDrive.message || errDrive}`, "danger");
-                }
+                    const el = document.getElementById(statusId);
+                    if (el) {
+                        el.className = "badge badge-success";
+                        el.innerHTML = `<i class="fa-solid fa-cloud-check"></i> Google Drive 雲端連結已就緒</span> <a href="${escapeHtml(driveUrl)}" target="_blank" style="margin-left:6px;color:#0056D2;font-weight:bold;text-decoration:underline;">&#128229; 線上開啟 / 下載檔案</a>`;
+                    }
+                    showToast(` 「${cleanName}」Google Drive 雲端連結已背景產生！`, "success");
+                    return driveUrl;
+                }).catch(err => {
+                    console.error("Background upload failed:", err);
+                    const el = document.getElementById(statusId);
+                    if (el) {
+                        el.className = "badge badge-warning";
+                        el.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> 提示：可使用下方「自訂 Drive 連結」貼上存取網址`;
+                    }
+                });
             } else {
-                statusBadge = `<span class="badge badge-warning"><i class="fa-solid fa-cloud"></i> >5MB 大型檔案 (請至右上角【⚙️ 系統設定】設定 GAS 網址以啟用 Drive 上傳)</span>`;
                 const div = document.createElement("div");
                 div.className = "file-item";
                 div.style.marginTop = "6px";
-                div.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
+                div.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) <span class="badge badge-warning"><i class="fa-solid fa-cloud"></i> >5MB 大型檔案 (請可於下方欄位貼上 Drive 連結)</span></span>`;
                 container.appendChild(div);
             }
         } else {
             const div = document.createElement("div");
             div.className = "file-item";
             div.style.marginTop = "6px";
-            div.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
+            div.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) <span class="badge badge-success"><i class="fa-solid fa-check"></i> 實體附件已夾帶預載</span></span>`;
             container.appendChild(div);
         }
     }
