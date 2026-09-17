@@ -181,7 +181,7 @@ async function uploadLargeFileInChunks(file, gasUrl) {
         const uploadUrl = initJson.uploadUrl;
         const fileSize = file.size;
         // 每片 3MB 原始二元資料 (= 12 * 256KB，符合 Google Drive API 續傳倍數規範)
-        const CHUNK_SIZE = 3 * 1024 * 1024;
+        const CHUNK_SIZE = 6 * 1024 * 1024;
         let start = 0;
         let finalFileUrl = "";
 
@@ -31741,7 +31741,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v41_fix_preview_popup";
+    const DATA_VERSION = "20260917_v42_drive_upload_fixed";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -32894,9 +32894,9 @@ async function saveIssue() {
             const attId = `ATT-${Date.now()}-${i}-${Math.random().toString(36).substring(2, 6)}`;
             const cleanName = f.name.replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0];
 
-            let driveUrl = "";
+            let driveUrl = f._driveUrl || "";
 
-            if (isLarge) {
+            if (isLarge && !driveUrl) {
                 if (savedGasUrl && savedGasUrl.startsWith("http")) {
                     showToast(`⚡ 正將大型檔案「${cleanName}」分段寫入 Google Drive...`, "info");
                     try {
@@ -32904,10 +32904,10 @@ async function saveIssue() {
                         showToast(` 「${cleanName}」Google Drive 雲端連結產生完成！`, "success");
                     } catch (errDrive) {
                         console.error("Gas Drive upload failed:", errDrive);
-                        driveUrl = await uploadFileToLocalServer(f);
+                        driveUrl = await uploadLargeFileInChunks(f, savedGasUrl);
                     }
                 } else {
-                    driveUrl = await uploadFileToLocalServer(f);
+                    driveUrl = await uploadLargeFileInChunks(f, savedGasUrl);
                 }
             }
 
@@ -33647,14 +33647,16 @@ async function handleFileSelected(inputElement, listContainerId) {
                 container.appendChild(divTemp);
 
                 try {
-                    driveUrl = await uploadFileToLocalServer(file);
-                    statusBadge = `<span class="badge badge-success"><i class="fa-solid fa-cloud-check"></i> 大容量下載存取連結已就緒</span> <a href="${escapeHtml(driveUrl)}" target="_blank" style="margin-left:6px;color:#0056D2;font-weight:bold;text-decoration:underline;">線上開啟 / 下載檔案</a>`;
+                    driveUrl = await uploadLargeFileInChunks(file, savedGasUrl);
+                    file._driveUrl = driveUrl;
+                    statusBadge = `<span class="badge badge-success"><i class="fa-solid fa-cloud-check"></i> Google Drive 雲端連結已就緒 (可於手機直連開啓/下載)</span> <a href="${escapeHtml(driveUrl)}" target="_blank" style="margin-left:6px;color:#0056D2;font-weight:bold;text-decoration:underline;">&#128229; 線上開啟 / 下載 Google Drive 檔案</a>`;
                     divTemp.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
-                    showToast(` 「${cleanName}」大檔案上傳與下載連結產生完成！`, "success");
+                    showToast(` 「${cleanName}」10秒內直傳 Google Drive 成功！已寫入存取連結。`, "success");
                 } catch (errDrive) {
-                    driveUrl = `http://localhost:9999/uploads/${encodeURIComponent(cleanName)}`;
-                    statusBadge = `<span class="badge badge-success"><i class="fa-solid fa-cloud-check"></i> 下載連結已就緒</span> <a href="${escapeHtml(driveUrl)}" target="_blank" style="margin-left:6px;color:#0056D2;font-weight:bold;text-decoration:underline;">線上開啟 / 下載檔案</a>`;
+                    console.error("Drive upload error:", errDrive);
+                    statusBadge = `<span class="badge badge-danger"><i class="fa-solid fa-circle-exclamation"></i> Google Drive 上傳失敗: ${escapeHtml(errDrive.message || errDrive)}</span>`;
                     divTemp.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
+                    showToast(`上傳 Google Drive 失敗: ${errDrive.message || errDrive}`, "danger");
                 }
             } else {
                 statusBadge = `<span class="badge badge-warning"><i class="fa-solid fa-cloud"></i> >5MB 大型檔案 (請至右上角【⚙️ 系統設定】設定 GAS 網址以啟用 Drive 上傳)</span>`;
