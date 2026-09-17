@@ -229,7 +229,7 @@ async function uploadLargeFileInChunks(file, gasUrl) {
             start = end;
         }
 
-        if (subText) subText.textContent = "🎉 Google Drive 寫入完成！公開權限已就緒";
+        if (subText) subText.textContent = " Google Drive 寫入完成！公開權限已就緒";
         if (fillBar) fillBar.style.width = "100%";
         if (pctText) pctText.textContent = "100%";
 
@@ -337,7 +337,7 @@ async function uploadBase64InChunks(fileName, mimeType, b64Data, gasUrl) {
             byteStart = byteEnd;
         }
 
-        if (subText) subText.textContent = "🎉 Google Drive 寫入完成！";
+        if (subText) subText.textContent = " Google Drive 寫入完成！";
         if (fillBar) fillBar.style.width = "100%";
         if (pctText) pctText.textContent = "100%";
 
@@ -28641,7 +28641,7 @@ ANS: 病患臥床且意識障礙",
     "doctor_reply": "1:108年3月27日
 2:無記錄
 3:無
-4:退化或外力均𠕇可能、無法判定
+4:退化或外力均有可能、無法判定
 5:有可能
 6:可",
     "remark": "",
@@ -36473,7 +36473,7 @@ function startAutoSyncTimer() {
 }
 
 function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v28_drive_fix";
+    const DATA_VERSION = "20260917_v30_nocache";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
@@ -36563,7 +36563,7 @@ function resetDefaultData() {
         renderDashboard();
         renderTable();
         populateAssigneeOptions();
-        showToast("🎉 已成功重置並還原預設公文資料清單！", "success");
+        showToast(" 已成功重置並還原預設公文資料清單！", "success");
     }
 }
 
@@ -37186,10 +37186,10 @@ function renderNestedIssueTable(receiveNo) {
                     title="點擊直接修改狀態">
                 <option value="待發送"  ${issue.status === "待發送"  ? "selected" : ""}>⏳ 待發送</option>
                 <option value="已發送"  ${issue.status === "已發送"  ? "selected" : ""}>✉️ 已發送</option>
-                <option value="待回覆"  ${issue.status === "待回覆"  ? "selected" : ""}>📨 待回覆</option>
-                <option value="已回覆"  ${issue.status === "已回覆"  ? "selected" : ""}>📥 已回覆</option>
+                <option value="待回覆"  ${issue.status === "待回覆"  ? "selected" : ""}> 待回覆</option>
+                <option value="已回覆"  ${issue.status === "已回覆"  ? "selected" : ""}> 已回覆</option>
                 <option value="退回補件" ${issue.status === "退回補件" ? "selected" : ""}>↩️ 退回補件</option>
-                <option value="已完成"  ${issue.status === "已完成"  ? "selected" : ""}>✅ 已完成</option>
+                <option value="已完成"  ${issue.status === "已完成"  ? "selected" : ""}> 已完成</option>
             </select>
         `;
 
@@ -37480,7 +37480,7 @@ function deleteMainDoc(receiveNo) {
         gIssues = gIssues.filter(i => i.doc_receive_no !== receiveNo);
         saveDataToStorage();
         closeModal("modalMainDoc");
-        showToast(`🗑️ 已成功刪除公文主檔【${docTitle}】！`, "success");
+        showToast(` 已成功刪除公文主檔【${docTitle}】！`, "success");
         renderDashboard();
         renderTable();
     }
@@ -37501,7 +37501,7 @@ function deleteIssue(issueId) {
         gIssues = gIssues.filter(i => i.issue_id !== issueId);
         saveDataToStorage();
         closeModal("modalIssue");
-        showToast(`🗑️ 已成功刪除函詢明細！`, "success");
+        showToast(` 已成功刪除函詢明細！`, "success");
         renderDashboard();
         renderTable();
     }
@@ -37558,7 +37558,7 @@ function renderIssueAttachmentsList(issue) {
             div.style.alignItems = "center";
             div.style.marginTop = "6px";
             div.innerHTML = `
-                <span>📄 <strong>${escapeHtml(file.name)}</strong> ${statusTag}</span>
+                <span> <strong>${escapeHtml(file.name)}</strong> ${statusTag}</span>
                 <div>${actionBtns}</div>
             `;
             container.appendChild(div);
@@ -37584,7 +37584,7 @@ function promptPasteDriveLink(issueId, index) {
             saveDataToStorage();
             renderIssueAttachmentsList(issue);
             renderTable();
-            showToast("🎉 已成功儲存附件 Google Drive 存取連結！", "success");
+            showToast(" 已成功儲存附件 Google Drive 存取連結！", "success");
         } else if (!cleanUrl) {
             file.url = "";
             saveDataToStorage();
@@ -37663,7 +37663,7 @@ async function saveIssue() {
                     showToast(`⚡ 正將大型檔案「${cleanName}」分段寫入 Google Drive...`, "info");
                     try {
                         driveUrl = await uploadLargeFileInChunks(f, savedGasUrl);
-                        showToast(`🎉 「${cleanName}」Google Drive 雲端連結產生完成！`, "success");
+                        showToast(` 「${cleanName}」Google Drive 雲端連結產生完成！`, "success");
                     } catch (errDrive) {
                         console.error("Gas Drive upload failed:", errDrive);
                         driveUrl = await uploadFileToLocalServer(f);
@@ -38008,7 +38008,7 @@ async function previewEmailModal(issueId, type) {
                             att.name = `${cleanName} (大型檔案 — Google Drive 雲端連結)`;
                             saveDataToStorage();
                             unlinkedLargeCount--;
-                            showToast(`🎉 「${cleanName}」Google Drive 連結寫入成功！`, "success");
+                            showToast(` 「${cleanName}」Google Drive 連結寫入成功！`, "success");
                         }
                     } catch (errDrive) {
                         console.error("Auto upload Drive error:", errDrive);
@@ -38130,7 +38130,7 @@ async function sendEmailViaGmailAPI() {
         google.script.run
             .withSuccessHandler((res) => {
                 completeSendProcess(issueId, type);
-                showToast("🎉 Google 郵件已成功全自動發送完畢！", "success");
+                showToast(" Google 郵件已成功全自動發送完畢！", "success");
             })
             .withFailureHandler((err) => {
                 showToast("發送失敗: " + err, "danger");
@@ -38155,7 +38155,7 @@ async function sendEmailViaGmailAPI() {
             if (data && data.status === "error") {
                 showToast("⚠️ 發送訊息: " + data.message, "warning");
             } else {
-                showToast("🎉 實體 Google 郵件（含實體附件與 Google Drive 線上下載按鈕）已成功發送！", "success");
+                showToast(" 實體 Google 郵件（含實體附件與 Google Drive 線上下載按鈕）已成功發送！", "success");
             }
         })
         .catch(err => {
@@ -38168,7 +38168,7 @@ async function sendEmailViaGmailAPI() {
             .then(r => r.json())
             .then(resData => {
                 completeSendProcess(issueId, type);
-                showToast("🎉 郵件已成功發送完畢！", "success");
+                showToast(" 郵件已成功發送完畢！", "success");
             })
             .catch(err2 => {
                 completeSendProcess(issueId, type);
@@ -38190,7 +38190,7 @@ async function sendEmailViaGmailAPI() {
         .then(data => {
             if (data.status === "success") {
                 completeSendProcess(issueId, type);
-                showToast("🎉 本機 API 郵件已成功發送！", "success");
+                showToast(" 本機 API 郵件已成功發送！", "success");
             } else {
                 showToast("發送失敗: " + (data.message || "未知錯誤"), "danger");
             }
@@ -38224,7 +38224,7 @@ function copyRichHtmlToClipboard(htmlContent) {
         const blob = new Blob([htmlContent], { type: "text/html" });
         const data = [new ClipboardItem({ "text/html": blob })];
         navigator.clipboard.write(data).then(() => {
-            showToast("📋 已成功複製【彩色 HTML 富文本信件】！請直接在 Gmail 按 Ctrl+V 貼上即可！", "success");
+            showToast(" 已成功複製【彩色 HTML 富文本信件】！請直接在 Gmail 按 Ctrl+V 貼上即可！", "success");
         }).catch(err => {
             showToast("複製剪貼簿失敗，請開啟系統設定貼上 GAS URL", "danger");
         });
@@ -38279,7 +38279,7 @@ function syncGmailReplies(isSilent = false) {
         return;
     }
 
-    if (!isSilent) showToast("🔄 正連線 Gmail 掃描醫師最新回信中...", "info");
+    if (!isSilent) showToast(" 正連線 Gmail 掃描醫師最新回信中...", "info");
 
     fetch(savedGasUrl, {
         method: "POST",
@@ -38324,7 +38324,7 @@ function syncGmailReplies(isSilent = false) {
                 renderDashboard();
                 renderTable();
                 if (!isSilent) {
-                    showToast(`🎉 成功接收 ${newlyUpdatedCount} 筆醫師最新 Gmail 回信！狀態已轉為「已回覆 (待審核)」`, "success");
+                    showToast(` 成功接收 ${newlyUpdatedCount} 筆醫師最新 Gmail 回信！狀態已轉為「已回覆 (待審核)」`, "success");
                 }
             } else if (!isSilent) {
                 showToast("掃描完成，目前所有醫師回覆皆已最新，無新回信", "info");
@@ -38334,7 +38334,7 @@ function syncGmailReplies(isSilent = false) {
         }
     })
     .catch(err => {
-        if (!isSilent) showToast("🔄 Gmail 掃描完成！請確認 GAS 已更新至最新版本", "info");
+        if (!isSilent) showToast(" Gmail 掃描完成！請確認 GAS 已更新至最新版本", "info");
     });
 }
 
@@ -38375,7 +38375,7 @@ function completeIssue(issueId) {
         if (allCompleted && mainDoc) {
             mainDoc.doc_status = "已完成";
             mainDoc.updated_at = new Date().toISOString().replace("T", " ").substring(0, 16);
-            showToast(`🎉 承辦人審核完成！所有函詢已結案，公文收發號 ${issue.doc_receive_no} 自動轉為「已完成」！`, "success");
+            showToast(` 承辦人審核完成！所有函詢已結案，公文收發號 ${issue.doc_receive_no} 自動轉為「已完成」！`, "success");
         } else {
             showToast(`已完成該項醫師函詢之審核結案`, "success");
         }
@@ -38461,32 +38461,32 @@ async function handleFileSelected(inputElement, listContainerId) {
                 const divTemp = document.createElement("div");
                 divTemp.className = "file-item";
                 divTemp.style.marginTop = "6px";
-                divTemp.innerHTML = `<span>📄 <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
+                divTemp.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
                 container.appendChild(divTemp);
 
                 try {
                     driveUrl = await uploadFileToLocalServer(file);
                     statusBadge = `<span class="badge badge-success"><i class="fa-solid fa-cloud-check"></i> 大容量下載存取連結已就緒</span> <a href="${escapeHtml(driveUrl)}" target="_blank" style="margin-left:6px;color:#0056D2;font-weight:bold;text-decoration:underline;">線上開啟 / 下載檔案</a>`;
-                    divTemp.innerHTML = `<span>📄 <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
-                    showToast(`🎉 「${cleanName}」大檔案上傳與下載連結產生完成！`, "success");
+                    divTemp.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
+                    showToast(` 「${cleanName}」大檔案上傳與下載連結產生完成！`, "success");
                 } catch (errDrive) {
                     driveUrl = `http://localhost:9999/uploads/${encodeURIComponent(cleanName)}`;
                     statusBadge = `<span class="badge badge-success"><i class="fa-solid fa-cloud-check"></i> 下載連結已就緒</span> <a href="${escapeHtml(driveUrl)}" target="_blank" style="margin-left:6px;color:#0056D2;font-weight:bold;text-decoration:underline;">線上開啟 / 下載檔案</a>`;
-                    divTemp.innerHTML = `<span>📄 <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
+                    divTemp.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
                 }
             } else {
                 statusBadge = `<span class="badge badge-warning"><i class="fa-solid fa-cloud"></i> >5MB 大型檔案 (請至右上角【⚙️ 系統設定】設定 GAS 網址以啟用 Drive 上傳)</span>`;
                 const div = document.createElement("div");
                 div.className = "file-item";
                 div.style.marginTop = "6px";
-                div.innerHTML = `<span>📄 <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
+                div.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
                 container.appendChild(div);
             }
         } else {
             const div = document.createElement("div");
             div.className = "file-item";
             div.style.marginTop = "6px";
-            div.innerHTML = `<span>📄 <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
+            div.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) ${statusBadge}</span>`;
             container.appendChild(div);
         }
     }
