@@ -153,14 +153,14 @@ async function uploadLargeFileInChunks(file, gasUrl) {
         if (nameText) nameText.textContent = `${file.name} (${sizeMb} MB)`;
         if (pctText) pctText.textContent = "0%";
         if (fillBar) fillBar.style.width = "0%";
-        if (subText) subText.textContent = "建立 Google Drive 雲端 10x 直傳通道...";
+        if (subText) subText.textContent = "建立 Google Drive 雲端專用傳輸通道...";
         progressBox.classList.remove("hidden");
     }
 
     try {
         // 1. 初始化 Google Drive 續傳 Session (經由 GAS Webhook 取得 uploadUrl)
         const initRes = await fetchWithTimeout(gasUrl, {
-            timeout: 20000,
+            timeout: 25000,
             method: "POST",
             mode: "cors",
             headers: { "Content-Type": "text/plain" },
@@ -181,11 +181,10 @@ async function uploadLargeFileInChunks(file, gasUrl) {
         const uploadUrl = initJson.uploadUrl;
         const fileSize = file.size;
 
-        // 16MB Chunk size for maximum direct binary throughput (16 * 1024 * 1024 = 64 * 256KB)
-        const CHUNK_SIZE = 16 * 1024 * 1024;
+        // 10MB Chunk size (10 * 1024 * 1024 = 40 * 256KB, optimal size for GAS relay without CORS hang)
+        const CHUNK_SIZE = 10 * 1024 * 1024;
         let start = 0;
         let finalFileUrl = "";
-        let useDirectPut = true; // Try direct binary PUT first for 10x speed
 
         const startTime = Date.now();
 
@@ -194,97 +193,56 @@ async function uploadLargeFileInChunks(file, gasUrl) {
             const chunkSlice = file.slice(start, end);
             const percent = Math.round((end / fileSize) * 100);
 
-            const elapsedSec = (Date.now() - startTime) / 1000;
+            const elapsedSec = Math.max(0.1, (Date.now() - startTime) / 1000);
             const mbTransferred = (end / (1024 * 1024)).toFixed(1);
-            const speed = elapsedSec > 0 ? (end / (1024 * 1024) / elapsedSec).toFixed(1) : "0";
+            const speed = (end / (1024 * 1024) / elapsedSec).toFixed(1);
+            const remainingMb = (fileSize - end) / (1024 * 1024);
+            const etaSec = speed > 0 ? Math.ceil(remainingMb / speed) : 0;
 
             if (pctText) pctText.textContent = `${percent}%`;
             if (fillBar) fillBar.style.width = `${percent}%`;
-            if (subText) subText.textContent = `正極速直傳 Google Drive (${mbTransferred} / ${sizeMb} MB - ${speed} MB/s)...`;
+            if (subText) subText.textContent = `正寫入 Google Drive (${mbTransferred} / ${sizeMb} MB - ${speed} MB/s, 剩餘約 ${etaSec} 秒)...`;
 
-            let successThisChunk = false;
+            const chunkB64 = await new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const res = e.target.result;
+                    resolve(res.indexOf(",") !== -1 ? res.split(",")[1] : res);
+                };
+                reader.onerror = (e) => reject(e);
+                reader.readAsDataURL(chunkSlice);
+            });
 
-            // Strategy A: Direct Binary PUT to Google Drive API (Ultra Fast, 0% GAS Relay Overhead)
-            if (useDirectPut) {
-                try {
-                    const putRes = await fetch(uploadUrl, {
-                        method: "PUT",
-                        headers: {
-                            "Content-Range": `bytes ${start}-${end - 1}/${fileSize}`
-                        },
-                        body: chunkSlice
-                    });
+            const chunkRes = await fetchWithTimeout(gasUrl, {
+                timeout: 45000,
+                method: "POST",
+                mode: "cors",
+                headers: { "Content-Type": "text/plain" },
+                body: JSON.stringify({
+                    action: "uploadResumableChunk",
+                    uploadUrl: uploadUrl,
+                    chunkB64: chunkB64,
+                    startByte: start,
+                    endByte: end - 1,
+                    totalSize: fileSize
+                })
+            });
 
-                    if (putRes.status === 308) {
-                        successThisChunk = true;
-                    } else if (putRes.status === 200 || putRes.status === 201) {
-                        const putJson = await putRes.json();
-                        const fileId = putJson.id;
-                        if (fileId) {
-                            const pubRes = await fetchWithTimeout(gasUrl, {
-                                timeout: 15000,
-                                method: "POST",
-                                mode: "cors",
-                                headers: { "Content-Type": "text/plain" },
-                                body: JSON.stringify({ action: "makeFilePublic", fileId: fileId })
-                            });
-                            const pubJson = await pubRes.json();
-                            finalFileUrl = pubJson.fileUrl || `https://drive.google.com/file/d/${fileId}/view?usp=sharing`;
-                        }
-                        successThisChunk = true;
-                        break;
-                    } else {
-                        useDirectPut = false;
-                    }
-                } catch (errDirect) {
-                    console.warn("Direct PUT to Drive API blocked/failed, falling back to GAS relay:", errDirect);
-                    useDirectPut = false;
-                }
+            const chunkJson = await chunkRes.json();
+            if (chunkJson.status === "error") {
+                if (progressBox) progressBox.classList.add("hidden");
+                throw new Error(chunkJson.message || "分段傳送至 Google Drive 失敗");
             }
 
-            // Strategy B: GAS Relay Fallback (If Direct PUT is CORS-blocked)
-            if (!successThisChunk) {
-                const chunkB64 = await new Promise((resolve, reject) => {
-                    const reader = new FileReader();
-                    reader.onload = (e) => {
-                        const res = e.target.result;
-                        resolve(res.indexOf(",") !== -1 ? res.split(",")[1] : res);
-                    };
-                    reader.onerror = (e) => reject(e);
-                    reader.readAsDataURL(chunkSlice);
-                });
-
-                const chunkRes = await fetchWithTimeout(gasUrl, {
-                    timeout: 30000,
-                    method: "POST",
-                    mode: "cors",
-                    headers: { "Content-Type": "text/plain" },
-                    body: JSON.stringify({
-                        action: "uploadResumableChunk",
-                        uploadUrl: uploadUrl,
-                        chunkB64: chunkB64,
-                        startByte: start,
-                        endByte: end - 1,
-                        totalSize: fileSize
-                    })
-                });
-
-                const chunkJson = await chunkRes.json();
-                if (chunkJson.status === "error") {
-                    if (progressBox) progressBox.classList.add("hidden");
-                    throw new Error(chunkJson.message || "分段傳送至 Google Drive 失敗");
-                }
-
-                if (chunkJson.isComplete && chunkJson.fileUrl) {
-                    finalFileUrl = chunkJson.fileUrl;
-                    break;
-                }
+            if (chunkJson.isComplete && chunkJson.fileUrl) {
+                finalFileUrl = chunkJson.fileUrl;
+                break;
             }
 
             start = end;
         }
 
-        if (subText) subText.textContent = "⚡ Google Drive 直傳完成！公開權限已就緒";
+        if (subText) subText.textContent = "⚡ Google Drive 傳輸完成！公開權限已就緒";
         if (fillBar) fillBar.style.width = "100%";
         if (pctText) pctText.textContent = "100%";
 
@@ -31792,7 +31750,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v43_direct_binary_drive_upload";
+    const DATA_VERSION = "20260917_v44_fast_gas_relay_upload";
     const storedVer = localStorage.getItem("APP_DATA_VERSION");
 
     if (storedVer !== DATA_VERSION) {
