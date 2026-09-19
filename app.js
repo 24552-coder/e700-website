@@ -32195,7 +32195,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v60_sync_doctor_reply_急診部分可";
+    const DATA_VERSION = "20260919_v61_fix_blank_doc_deletion_and_auto_purge";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
@@ -32244,6 +32244,17 @@ async function loadDataFromStorage() {
     }
 
     if (hasNewMerged) {
+        saveDataToStorage();
+    }
+
+    // Auto-clean any corrupted ghost docs with blank receive_no AND blank chart_no
+    const initialDocCount = gMainDocs.length;
+    gMainDocs = gMainDocs.filter(d => {
+        const recNo = (d.doc_receive_no || "").trim();
+        const chartNo = (d.doc_chart_no || "").trim();
+        return recNo.length > 0 || chartNo.length > 0;
+    });
+    if (gMainDocs.length < initialDocCount) {
         saveDataToStorage();
     }
 
@@ -32690,7 +32701,7 @@ function renderTable() {
                 <button class="btn btn-sm btn-outline-secondary" onclick="openMainDocModal('${escapeHtml(doc.doc_receive_no)}')">
                     <i class="fa-solid fa-pen"></i> 編輯
                 </button>
-                <button class="btn btn-sm btn-outline-danger" onclick="deleteMainDoc('${escapeHtml(doc.doc_receive_no)}')" title="刪除此公文主檔">
+                <button class="btn btn-sm btn-outline-danger" onclick="deleteMainDoc('${escapeHtml(doc.doc_receive_no)}', '${escapeHtml(doc.created_at || '')}')" title="刪除此公文主檔">
                     <i class="fa-solid fa-trash"></i> 刪除
                 </button>
             </td>
@@ -32794,7 +32805,7 @@ function renderMainDocDetailPanel(doc) {
                 <button class="btn btn-sm btn-outline-primary" onclick="openMainDocModal('${escapeHtml(doc.doc_receive_no)}')">
                     <i class="fa-solid fa-pen"></i> 編輯公文主檔
                 </button>
-                <button class="btn btn-sm btn-outline-danger" onclick="deleteMainDoc('${escapeHtml(doc.doc_receive_no)}')">
+                <button class="btn btn-sm btn-outline-danger" onclick="deleteMainDoc('${escapeHtml(doc.doc_receive_no)}', '${escapeHtml(doc.created_at || '')}')">
                     <i class="fa-solid fa-trash"></i> 刪除整份公文
                 </button>
             </div>
@@ -33207,13 +33218,45 @@ function openIssueModalForEdit(issueId) {
     openModal("modalIssue");
 }
 
-function deleteMainDoc(receiveNo) {
-    if (!receiveNo) return;
-    const doc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
-    const docTitle = doc ? doc.doc_receive_no : receiveNo;
-    if (confirm(`⚠️ 確定要刪除收發文號【${docTitle}】的這筆公文主檔及其所有醫師函詢明細嗎？此動作無法復原！`)) {
-        gMainDocs = gMainDocs.filter(d => d.doc_receive_no !== receiveNo);
-        gIssues = gIssues.filter(i => i.doc_receive_no !== receiveNo);
+function deleteMainDoc(receiveNo, createdAt) {
+    const targetRecNo = (receiveNo || "").trim();
+    const targetCreatedAt = (createdAt || "").trim();
+
+    let docIndex = -1;
+    if (targetRecNo) {
+        docIndex = gMainDocs.findIndex(d => (d.doc_receive_no || "").trim() === targetRecNo);
+    }
+    if (docIndex === -1 && targetCreatedAt) {
+        docIndex = gMainDocs.findIndex(d => (d.created_at || "").trim() === targetCreatedAt);
+    }
+    if (docIndex === -1) {
+        // Fallback: find any doc with empty/blank doc_receive_no
+        docIndex = gMainDocs.findIndex(d => !(d.doc_receive_no || "").trim());
+    }
+
+    if (docIndex === -1) {
+        showToast("⚠️ 找不到欲刪除的公文案件！", "warning");
+        return;
+    }
+
+    const docToDelete = gMainDocs[docIndex];
+    const docTitle = (docToDelete.doc_receive_no || "").trim() || 
+                     (docToDelete.doc_chart_no ? `病歷號 ${docToDelete.doc_chart_no}` : "空白/無文號案件");
+
+    if (confirm(`⚠️ 確定要刪除【${docTitle}】這筆公文主檔及其所有醫師函詢明細嗎？此動作無法復原！`)) {
+        const deletedRecNo = (docToDelete.doc_receive_no || "").trim();
+        const deletedCreatedAt = (docToDelete.created_at || "").trim();
+
+        gMainDocs.splice(docIndex, 1);
+
+        // Also clean associated issues
+        gIssues = gIssues.filter(i => {
+            if (deletedRecNo && (i.doc_receive_no || "").trim() === deletedRecNo) return false;
+            if (deletedCreatedAt && (i.created_at || "").trim() === deletedCreatedAt) return false;
+            if (!deletedRecNo && !(i.doc_receive_no || "").trim()) return false;
+            return true;
+        });
+
         saveDataToStorage();
         closeModal("modalMainDoc");
         showToast(` 已成功刪除公文主檔【${docTitle}】！`, "success");
@@ -33224,9 +33267,8 @@ function deleteMainDoc(receiveNo) {
 
 function deleteMainDocFromModal() {
     const receiveNo = document.getElementById("doc_receive_no").value.trim();
-    if (receiveNo) {
-        deleteMainDoc(receiveNo);
-    }
+    const docId = document.getElementById("mainDocId").value;
+    deleteMainDoc(receiveNo, docId);
 }
 
 function deleteIssue(issueId) {
