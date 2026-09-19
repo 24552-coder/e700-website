@@ -31987,9 +31987,29 @@ function openMainDocModal(receiveNo = null) {
 }
 
 window.downloadLocalAttachment = function(name, mimeType) {
-    const b64 = gAttachmentBinaryCache[name];
+    let b64 = "";
+    // 先從全域快取找
+    if (gAttachmentBinaryCache[name]) {
+        b64 = gAttachmentBinaryCache[name];
+    } else {
+        // 從目前的 gIssues 裡面找
+        for (let i = 0; i < gIssues.length; i++) {
+            if (gIssues[i].attachments) {
+                for (let j = 0; j < gIssues[i].attachments.length; j++) {
+                    const att = gIssues[i].attachments[j];
+                    const cleanName = (att.name || '附件').replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0];
+                    if (cleanName === name || att.name === name) {
+                        b64 = getAttachmentBase64(att);
+                        break;
+                    }
+                }
+            }
+            if (b64) break;
+        }
+    }
+
     if (!b64) {
-        showToast('找不到本機快取的實體附件資料！', 'warning');
+        showToast('找不到本機快取的實體附件資料！請嘗試重新上傳。', 'warning');
         return;
     }
     const a = document.createElement('a');
