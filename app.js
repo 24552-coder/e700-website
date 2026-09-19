@@ -32633,7 +32633,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v69_local_created_at_time_fix_no_minguo_prefix";
+    const DATA_VERSION = "20260919_v70_100pct_all_files_google_drive_auto_sync";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
@@ -33361,6 +33361,19 @@ function renderNestedIssueTable(receiveNo) {
                 </td>
                 <td style="min-width:260px;">
                     <div class="multiline-box question-box">${formatMultilineHtml(issue.question)}</div>
+                    ${issue.attachments && issue.attachments.length > 0 ? `
+                        <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:4px;">
+                            ${issue.attachments.map(att => att.url && att.url.startsWith("http") ? `
+                                <a href="${escapeHtml(att.url)}" target="_blank" class="badge badge-success" style="font-size:11px;padding:4px 8px;text-decoration:none;" title="點擊在 Google Drive 線上開啟/下載附件">
+                                    <i class="fa-solid fa-paperclip"></i> ${escapeHtml((att.name||'附件').replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0])} (線上開啟)
+                                </a>
+                            ` : `
+                                <span class="badge badge-secondary" style="font-size:11px;padding:4px 8px;">
+                                    <i class="fa-solid fa-paperclip"></i> ${escapeHtml((att.name||'附件').replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0])}
+                                </span>
+                            `).join('')}
+                        </div>
+                    ` : ''}
                 </td>
                 <td style="min-width:220px;">
                     ${issue.doctor_reply
@@ -33867,38 +33880,35 @@ async function saveIssue() {
     if (fileInput && fileInput.files.length > 0) {
         for (let i = 0; i < fileInput.files.length; i++) {
             const f = fileInput.files[i];
-            const isLarge = f.size > 5 * 1024 * 1024; // >5MB files automatically chunk-uploaded to Google Drive!
             const attId = `ATT-${Date.now()}-${i}-${Math.random().toString(36).substring(2, 6)}`;
             const cleanName = f.name.replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0];
 
             let driveUrl = f._driveUrl || "";
 
-            if (isLarge && !driveUrl) {
-                if (savedGasUrl && savedGasUrl.startsWith("http")) {
-                    showToast(`⚡ 正將大型檔案「${cleanName}」分段寫入 Google Drive...`, "info");
-                    try {
-                        driveUrl = await uploadLargeFileInChunks(f, savedGasUrl);
-                        showToast(` 「${cleanName}」Google Drive 雲端連結產生完成！`, "success");
-                    } catch (errDrive) {
-                        console.error("Gas Drive upload failed:", errDrive);
-                        driveUrl = await uploadLargeFileInChunks(f, savedGasUrl);
-                    }
-                } else {
+            // 若背景任務尚在執行中，等待其上傳完成以取得 Drive URL
+            if (!driveUrl && f._uploadPromise) {
+                try {
+                    driveUrl = await f._uploadPromise;
+                } catch (e) {}
+            }
+
+            if (!driveUrl && savedGasUrl && savedGasUrl.startsWith("http")) {
+                showToast(`⚡ 正將附件「${cleanName}」直傳 Google Drive 集中備份庫...`, "info");
+                try {
                     driveUrl = await uploadLargeFileInChunks(f, savedGasUrl);
+                } catch (errDrive) {
+                    console.error("Gas Drive upload failed:", errDrive);
                 }
             }
 
-            let b64 = "";
-            if (!isLarge) {
-                b64 = await new Promise((resolve) => {
-                    const reader = new FileReader();
-                    reader.onload = (e) => resolve(e.target.result);
-                    reader.onerror = () => resolve("");
-                    reader.readAsDataURL(f);
-                });
-            }
+            let b64 = await new Promise((resolve) => {
+                const reader = new FileReader();
+                reader.onload = (e) => resolve(e.target.result);
+                reader.onerror = () => resolve("");
+                reader.readAsDataURL(f);
+            });
 
-            const displayName = (isLarge || driveUrl) ? `${cleanName} (大型檔案 — Google Drive 雲端連結)` : cleanName;
+            const displayName = cleanName;
 
             if (b64) {
                 gAttachmentBinaryCache[attId] = b64;
@@ -33906,16 +33916,12 @@ async function saveIssue() {
                 gAttachmentBinaryCache[displayName] = b64;
             }
 
-            if (isLarge && (!savedGasUrl || !savedGasUrl.startsWith("http"))) {
-                showToast(`⚠️ 提醒：您夾帶了大型檔案「${cleanName}」，但系統尚未設定 GAS 網址。上傳 Drive 需要 GAS 網址，請至【⚙️ 系統設定】設定網址或貼上連結。`, "warning");
-            }
-
             newFiles.push({
                 att_id: attId,
                 name: displayName,
                 size: f.size,
                 mimeType: f.type || "application/octet-stream",
-                isDriveLink: isLarge || !!driveUrl,
+                isDriveLink: true,
                 url: driveUrl || "",
                 base64Data: b64
             });
@@ -34687,18 +34693,15 @@ async function handleFileSelected(inputElement, listContainerId) {
     for (let idx = 0; idx < files.length; idx++) {
         const file = files[idx];
         const sizeMb = (file.size / (1024 * 1024)).toFixed(1);
-        const isLarge = file.size > 5 * 1024 * 1024;
         const cleanName = file.name.replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0];
 
-        let b64 = "";
-        if (!isLarge) {
-            b64 = await new Promise((resolve) => {
-                const reader = new FileReader();
-                reader.onload = (e) => resolve(e.target.result);
-                reader.onerror = () => resolve("");
-                reader.readAsDataURL(file);
-            });
-        }
+        // 全面預載 Base64 記憶體快取
+        let b64 = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onload = (e) => resolve(e.target.result);
+            reader.onerror = () => resolve("");
+            reader.readAsDataURL(file);
+        });
 
         const attId = `ATT-${Date.now()}-${idx}`;
         if (b64) {
@@ -34707,45 +34710,38 @@ async function handleFileSelected(inputElement, listContainerId) {
             gAttachmentBinaryCache[file.name] = b64;
         }
 
-        if (isLarge) {
-            if (savedGasUrl && savedGasUrl.startsWith("http")) {
-                const statusId = `att-status-${Date.now()}-${idx}`;
-                const divTemp = document.createElement("div");
-                divTemp.className = "file-item";
-                divTemp.style.marginTop = "6px";
-                divTemp.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) <span id="${statusId}" class="badge badge-info"><i class="fa-solid fa-cloud-arrow-up spin-icon"></i> 背景極速直傳 Google Drive 中 (可隨時點擊儲存，免等待)...</span></span>`;
-                container.appendChild(divTemp);
+        // 不分大小檔，100% 全面全自動背景直傳 Google Drive 集中備份庫 (雙和醫院公文附件庫)
+        if (savedGasUrl && savedGasUrl.startsWith("http")) {
+            const statusId = `att-status-${Date.now()}-${idx}`;
+            const divTemp = document.createElement("div");
+            divTemp.className = "file-item";
+            divTemp.style.marginTop = "6px";
+            divTemp.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) <span id="${statusId}" class="badge badge-info"><i class="fa-solid fa-cloud-arrow-up spin-icon"></i> 背景直傳 Google Drive 集中備份庫中 (可隨時點擊儲存，免等待)...</span></span>`;
+            container.appendChild(divTemp);
 
-                // Start background upload promise immediately
-                file._uploadPromise = uploadLargeFileInChunks(file, savedGasUrl).then(driveUrl => {
-                    file._driveUrl = driveUrl;
-                    const el = document.getElementById(statusId);
-                    if (el) {
-                        el.className = "badge badge-success";
-                        el.innerHTML = `<i class="fa-solid fa-cloud-check"></i> Google Drive 雲端連結已就緒</span> <a href="${escapeHtml(driveUrl)}" target="_blank" style="margin-left:6px;color:#0056D2;font-weight:bold;text-decoration:underline;">&#128229; 線上開啟 / 下載檔案</a>`;
-                    }
-                    showToast(` 「${cleanName}」Google Drive 雲端連結已背景產生！`, "success");
-                    return driveUrl;
-                }).catch(err => {
-                    console.error("Background upload failed:", err);
-                    const el = document.getElementById(statusId);
-                    if (el) {
-                        el.className = "badge badge-warning";
-                        el.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> 提示：可使用下方「自訂 Drive 連結」貼上存取網址`;
-                    }
-                });
-            } else {
-                const div = document.createElement("div");
-                div.className = "file-item";
-                div.style.marginTop = "6px";
-                div.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) <span class="badge badge-warning"><i class="fa-solid fa-cloud"></i> >5MB 大型檔案 (請可於下方欄位貼上 Drive 連結)</span></span>`;
-                container.appendChild(div);
-            }
+            // 啟動全自動背景直傳任務
+            file._uploadPromise = uploadLargeFileInChunks(file, savedGasUrl).then(driveUrl => {
+                file._driveUrl = driveUrl;
+                const el = document.getElementById(statusId);
+                if (el) {
+                    el.className = "badge badge-success";
+                    el.innerHTML = `<i class="fa-solid fa-cloud-check"></i> Google Drive 雲端連結就緒 (全院電腦跨機存取) <a href="${escapeHtml(driveUrl)}" target="_blank" style="margin-left:6px;color:#0056D2;font-weight:bold;text-decoration:underline;">&#128229; 線上點擊開啟 / 下載檔案</a>`;
+                }
+                showToast(` 「${cleanName}」Google Drive 雲端連結已全自動備份完成！`, "success");
+                return driveUrl;
+            }).catch(err => {
+                console.error("Background upload failed:", err);
+                const el = document.getElementById(statusId);
+                if (el) {
+                    el.className = "badge badge-warning";
+                    el.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> 提示：可使用下方「自訂 Drive 連結」貼上存取網址`;
+                }
+            });
         } else {
             const div = document.createElement("div");
             div.className = "file-item";
             div.style.marginTop = "6px";
-            div.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) <span class="badge badge-success"><i class="fa-solid fa-check"></i> 實體附件已夾帶預載</span></span>`;
+            div.innerHTML = `<span> <strong>${escapeHtml(file.name)}</strong> (${sizeMb} MB) <span class="badge badge-warning"><i class="fa-solid fa-cloud"></i> 請先至【⚙️ 系統設定】設定 Google Apps Script 網址</span></span>`;
             container.appendChild(div);
         }
     }
