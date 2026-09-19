@@ -9,7 +9,8 @@ function formatSlashDate(inputStr) {
     // West date: 2026-09-14 or 2026/09/14 or 2026.09.14
     const westMatch = str.match(/^(\d{4})[年\/\.-](\d{1,2})[月\/\.-](\d{1,2})$/);
     if (westMatch) {
-        const y = westMatch[1];
+        let y = parseInt(westMatch[1], 10);
+        if (y >= 1911 && y <= 1999) y = (y - 1911) + 2000;
         const m = String(westMatch[2]).padStart(2, '0');
         const d = String(westMatch[3]).padStart(2, '0');
         return `${y}/${m}/${d}`;
@@ -18,7 +19,8 @@ function formatSlashDate(inputStr) {
     // Minguo date: 115-09-14 or 115/09/14 or 115年9月14
     const rocMatch = str.match(/^(\d{2,3})[年\/\.-](\d{1,2})[月\/\.-](\d{1,2})$/);
     if (rocMatch) {
-        const y = parseInt(rocMatch[1], 10) + 1911;
+        let y = parseInt(rocMatch[1], 10) + 1911;
+        if (y >= 1911 && y <= 1999) y = (y - 1911) + 2000;
         const m = String(rocMatch[2]).padStart(2, '0');
         const d = String(rocMatch[3]).padStart(2, '0');
         return `${y}/${m}/${d}`;
@@ -31564,7 +31566,7 @@ function renderTable() {
         };
 
         const receiveDateStr = doc.doc_receive_date ? escapeHtml(formatSlashDate(doc.doc_receive_date)) : '-';
-        const replyNoStr = doc.doc_reply_no ? escapeHtml(doc.doc_reply_no) : '-';
+        const sourceUnitListStr = doc.doc_source_unit ? escapeHtml(doc.doc_source_unit) : '-';
         let chartNoRaw = doc.doc_chart_no || '-';
         if (chartNoRaw !== '-' && chartNoRaw.length < 8 && /^\d+$/.test(chartNoRaw)) {
             chartNoRaw = chartNoRaw.padStart(8, '0');
@@ -31707,57 +31709,57 @@ function renderMainDocDetailPanel(doc) {
         </div>
         <div class="doc-detail-grid-wrapper">
             <div class="doc-detail-grid">
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">收發文號</div>
-                    <div class="detail-val font-bold">${receiveNo}</div>
+                    <div class="detail-val font-bold" style="font-size: 18px;">${receiveNo}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">收發日期</div>
-                    <div class="detail-val font-bold" style="color:#0369a1;">${escapeHtml(formatSlashDate(doc.doc_receive_date))}</div>
+                    <div class="detail-val font-bold" style="font-size: 18px;" style="color:#0369a1;">${escapeHtml(formatSlashDate(doc.doc_receive_date))}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">創稿文號</div>
-                    <div class="detail-val font-bold">${draftNo}</div>
+                    <div class="detail-val font-bold" style="font-size: 18px;">${draftNo}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">來函單位</div>
-                    <div class="detail-val font-bold" style="color:#0284c7;">${sourceUnit}</div>
+                    <div class="detail-val font-bold" style="font-size: 18px;" style="color:#0284c7;">${sourceUnit}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">發文日期</div>
-                    <div class="detail-val font-bold" style="color:#0369a1;">${issueDate}</div>
+                    <div class="detail-val font-bold" style="font-size: 18px;" style="color:#0369a1;">${issueDate}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">發文字號</div>
-                    <div class="detail-val font-bold">${issueNo}</div>
+                    <div class="detail-val font-bold" style="font-size: 18px;">${issueNo}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">承辦人員</div>
-                    <div class="detail-val font-bold">${assignee}${assigneeEmail}</div>
+                    <div class="detail-val font-bold" style="font-size: 18px;">${assignee}${assigneeEmail}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">勞保局受理編號</div>
-                    <div class="detail-val font-bold" style="color:#7c3aed;">${lbiNo}</div>
+                    <div class="detail-val font-bold" style="font-size: 18px;" style="color:#7c3aed;">${lbiNo}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">病歷查詢費</div>
                     <div class="detail-val">${fee}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">調病歷</div>
                     <div class="detail-val">${drName}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">附件</div>
-                    <div class="detail-val font-bold" style="color:#1d4ed8;">${attText}</div>
+                    <div class="detail-val font-bold" style="font-size: 18px;" style="color:#1d4ed8;">${attText}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">函覆文號</div>
-                    <div class="detail-val font-bold">${replyNo}</div>
+                    <div class="detail-val font-bold" style="font-size: 18px;">${replyNo}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">函覆日期</div>
-                    <div class="detail-val font-bold">${replyDate}</div>
+                    <div class="detail-val font-bold" style="font-size: 18px;">${replyDate}</div>
                 </div>
                 <div class="detail-item span-full" style="grid-column: 1 / -1; margin-top: 4px;">
                     <div class="detail-label"><i class="fa-solid fa-file-lines" style="color:#0284c7;margin-right:4px;"></i> 主旨</div>
