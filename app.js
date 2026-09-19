@@ -30921,6 +30921,41 @@ function setupStickyTableHeader() {
 
 
 
+async function autoCheckAndRemindOverdue() {
+    const savedGasUrl = getGasWebhookUrl();
+    if (!savedGasUrl || !savedGasUrl.startsWith("http")) return; // Needs backend configured to send
+
+    const remindIntervalHours = 24; // Automatically remind once every 24 hours
+
+    const overdueIssues = gIssues.filter(i => {
+        if (!isIssueOverdue(i)) return false; // This already checks status and sent_at
+        
+        const now = new Date();
+        if (i.last_reminded_at) {
+            const lastRemindDate = new Date(i.last_reminded_at);
+            const hoursSinceLastRemind = (now - lastRemindDate) / (1000 * 60 * 60);
+            if (hoursSinceLastRemind < remindIntervalHours) {
+                return false; // Already reminded recently
+            }
+        }
+        return true; // Overdue and needs reminder
+    });
+
+    if (overdueIssues.length > 0) {
+        showToast(`⚡ 系統偵測到 ${overdueIssues.length} 筆逾期未回覆案件，正在自動發送催辦通知...`, "warning");
+        for (let i = 0; i < overdueIssues.length; i++) {
+            const issue = overdueIssues[i];
+            issue.remind_count = (issue.remind_count || 0) + 1;
+            issue.last_reminded_at = getTaiwanNowStr();
+            await autoSendEmail(issue.issue_id, 5); 
+        }
+        saveDataToStorage();
+        pushCloudData(true);
+        renderTable();
+        renderDashboard();
+    }
+}
+
 let gAutoSyncInterval = null;
 function startAutoSyncTimer() {
     // 100% 極速全自動背景靜默同步 (每 3 秒自動連線同步同仁雲端最新公文與 Gmail 醫師回信)
@@ -30930,17 +30965,20 @@ function startAutoSyncTimer() {
     setTimeout(() => {
         syncCloudData(true);
         syncGmailReplies(true);
+        autoCheckAndRemindOverdue();
     }, 1000);
 
     gAutoSyncInterval = setInterval(() => {
         syncCloudData(true);
         syncGmailReplies(true);
+        autoCheckAndRemindOverdue();
     }, 30000);
 
     // 當使用者分頁切換回本系統，或視窗獲得焦點時，立即全自動靜默連線校正
     window.addEventListener("focus", () => {
         syncCloudData(true);
         syncGmailReplies(true);
+        autoCheckAndRemindOverdue();
     });
 
     document.addEventListener("visibilitychange", () => {
@@ -31335,11 +31373,12 @@ function calculateDocProgress(receiveNo) {
 }
 
 function isIssueOverdue(issue) {
-    if (issue.status === "已完成" || issue.status === "已回覆") return false;
+    if (issue.status === "已完成" || issue.status === "已回覆" || issue.status === "已退回(待補件)") return false;
     if (!issue.sent_at) return false;
     const sentDate = new Date(issue.sent_at);
     const now = new Date();
-    return ((now - sentDate) / (1000 * 60 * 60)) >= 24;
+    const overdueDays = parseInt(localStorage.getItem("OVERDUE_DAYS") || "1", 10);
+    return ((now - sentDate) / (1000 * 60 * 60)) >= (overdueDays * 24);
 }
 
 // ----------------------------------------------------
@@ -33321,14 +33360,23 @@ function exportWeeklyExcel() {
 function saveSettings() {
     const gasUrl = document.getElementById("cfg_gas_url") ? document.getElementById("cfg_gas_url").value.trim() : "";
     if (gasUrl) localStorage.setItem("GAS_WEBHOOK_URL", gasUrl);
+    
+    const overdueDays = document.getElementById("cfg_overdue_days") ? document.getElementById("cfg_overdue_days").value : "1";
+    localStorage.setItem("OVERDUE_DAYS", overdueDays);
+
     showToast("系統與 Google 設定已儲存", "success");
     closeModal("modalSettings");
+    renderDashboard();
+    renderTable();
 }
 
 function openModal(id) {
     if (id === "modalSettings") {
         if (document.getElementById("cfg_gas_url")) {
             document.getElementById("cfg_gas_url").value = getGasWebhookUrl();
+        }
+        if (document.getElementById("cfg_overdue_days")) {
+            document.getElementById("cfg_overdue_days").value = localStorage.getItem("OVERDUE_DAYS") || "1";
         }
     }
     document.getElementById(id).classList.add("active");
