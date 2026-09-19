@@ -31030,7 +31030,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v75_slash_dates_sticky_header_top";
+    const DATA_VERSION = "20260919_v77_fix_status_correction_merge";
     const lastVersion = localStorage.getItem("APP_DATA_VERSION");
 
     // Force clear old cache if version changed to ensure calibrated dates and padded chart numbers take effect!
@@ -31071,6 +31071,20 @@ async function loadDataFromStorage() {
                 const exists = gMainDocs.some(d => d.doc_receive_no === defDoc.doc_receive_no);
                 if (!exists) {
                     gMainDocs.unshift(JSON.parse(JSON.stringify(defDoc)));
+                    hasNewMerged = true;
+                }
+            }
+        });
+    }
+
+    // Status correction merge: if DEFAULT marks a doc as 結案 but localStorage has 處理中,
+    // restore it to 結案 (handles cases where status was accidentally changed in the web UI).
+    if (Array.isArray(DEFAULT_MAIN_DOCS)) {
+        DEFAULT_MAIN_DOCS.forEach(defDoc => {
+            if (defDoc && defDoc.doc_receive_no && defDoc.doc_status === "結案") {
+                const localDoc = gMainDocs.find(d => d.doc_receive_no === defDoc.doc_receive_no);
+                if (localDoc && localDoc.doc_status === "處理中") {
+                    localDoc.doc_status = "結案";
                     hasNewMerged = true;
                 }
             }
