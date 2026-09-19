@@ -31581,7 +31581,7 @@ function renderTable() {
             <td><span style="color:#0369a1;font-weight:600;">${receiveDateStr}</span></td>
             <td><span style="font-family:monospace;font-weight:700;">${chartNoStr}</span></td>
             <td>${escapeHtml(doc.doc_patient_name || '-')}</td>
-            <td><span style="color:#475569;font-weight:600;">${replyNoStr}</span></td>
+            <td><span style="color:#475569;font-weight:600;">${sourceUnitListStr}</span></td>
             <td>
                 <span class="badge badge-secondary" onclick="toggleExpandRow('${escapeHtml(doc.doc_receive_no)}')" style="cursor:pointer;">
                     <i class="fa-solid fa-user-doctor"></i> ${docIssues.length} 位醫師
