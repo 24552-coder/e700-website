@@ -258,8 +258,9 @@ textarea.form-control { resize: vertical; line-height: 1.6; }
 
 .custom-table thead {
     position: sticky;
-    top: 0;
-    z-index: 2;
+    top: 72px;
+    z-index: 95;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
 }
 
 .custom-table th {
@@ -876,4 +877,31 @@ thead th[onclick]:hover { background: #e9f0fb !important; color: #1e40af !import
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+
+/* Floating Back to Top Button */
+.btn-scroll-top {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    background: linear-gradient(135deg, #0f766e, #0d5c56);
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 30px;
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(15, 118, 110, 0.45);
+    cursor: pointer;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-scroll-top:hover {
+    background: linear-gradient(135deg, #0d5c56, #064e3b);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(15, 118, 110, 0.6);
 }

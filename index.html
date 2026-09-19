@@ -153,7 +153,12 @@
         <section class="table-section card-box">
             <div class="table-header">
                 <h3><i class="fa-solid fa-list-check"></i> 公文主檔與醫師函詢清單</h3>
-                <span class="text-muted" id="recordCountText">共 0 筆資料</span>
+                <div style="display:flex;align-items:center;gap:12px;">
+                    <span class="text-muted" id="recordCountText">共 0 筆資料</span>
+                    <button class="btn btn-sm btn-outline-primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="捲動回到頁面頂端">
+                        <i class="fa-solid fa-arrow-up"></i> 至頂
+                    </button>
+                </div>
             </div>
             <div class="table-responsive">
                 <table class="custom-table" id="mainDocTable">
@@ -532,7 +537,7 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=20260919_v74_fix_syntax_error_and_restore_data"></script>
+    <script src="app.js?v=20260919_v75_slash_dates_slash_header_top"></script>
 
     <!-- Modal: 週表篩選條件與匯出 -->
     <div class="modal-backdrop" id="modalWeeklyExport">
@@ -606,5 +611,10 @@
         </div>
     </div>
 
+
+    <!-- Floating Back to Top Button -->
+    <button id="btnScrollToTop" class="btn-scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="回到頂端 / 至頂">
+        <i class="fa-solid fa-arrow-up"></i> 至頂
+    </button>
 </body>
 </html>
