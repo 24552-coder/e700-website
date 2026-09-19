@@ -142,7 +142,9 @@ function scanGmailReplies() {
         var fromStr = lastMsg.getFrom().toLowerCase();
 
         // 1. 過濾非醫師回信：如果最後一封發言者是本系統或病歷組自己，代表是系統寄出或CC通知，忽略並標示已讀
-        if (fromStr.indexOf(userEmail) !== -1 || fromStr.indexOf("e700document") !== -1) {
+        // 但為了允許管理者自己測試回信，我們檢查主旨是否有 Re: 或 回覆:
+        var isReply = subject.toLowerCase().indexOf("re:") === 0 || subject.toLowerCase().indexOf("回覆:") === 0 || subject.toLowerCase().indexOf("答覆:") === 0;
+        if (!isReply && (fromStr.indexOf(userEmail) !== -1 || fromStr.indexOf("e700document") !== -1)) {
           thread.markRead();
           continue;
         }
