@@ -30932,7 +30932,7 @@ function startAutoSyncTimer() {
     gAutoSyncInterval = setInterval(() => {
         syncCloudData(true);
         syncGmailReplies(true);
-    }, 3000);
+    }, 30000);
 
     // 當使用者分頁切換回本系統，或視窗獲得焦點時，立即全自動靜默連線校正
     window.addEventListener("focus", () => {
@@ -30992,6 +30992,9 @@ async function syncCloudData(isSilent = false) {
             let mergedDocsCount = 0;
             let mergedIssuesCount = 0;
 
+            const beforeDocsStr = JSON.stringify(gMainDocs);
+            const beforeIssuesStr = JSON.stringify(gIssues);
+
             if (Array.isArray(data.docs)) {
                 data.docs.forEach(cloudDoc => {
                     const recNo = (cloudDoc.doc_receive_no || "").trim();
@@ -31020,9 +31023,14 @@ async function syncCloudData(isSilent = false) {
                 });
             }
 
-            saveDataToStorage();
-            renderDashboard();
-            renderTable();
+            const afterDocsStr = JSON.stringify(gMainDocs);
+            const afterIssuesStr = JSON.stringify(gIssues);
+
+            if (beforeDocsStr !== afterDocsStr || beforeIssuesStr !== afterIssuesStr) {
+                saveDataToStorage();
+                renderDashboard();
+                renderTable();
+            }
 
             if (mergedDocsCount > 0 || mergedIssuesCount > 0) {
                 showToast(`⚡ 全自動背景同步完成！已自動載入同仁新增之 ${mergedDocsCount} 筆公文、${mergedIssuesCount} 筆函詢！`, "success");
