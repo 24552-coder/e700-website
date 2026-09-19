@@ -27,6 +27,9 @@
             <button id="btnSyncGmail" class="btn btn-outline-info" title="檢查並同步 Gmail 醫師回信與狀態">
                 <i class="fa-solid fa-rotate"></i> 同步 Gmail 醫師回信
             </button>
+            <button id="btnSyncCloud" class="btn btn-outline-primary" onclick="syncCloudData()" title="即時連線全院雲端資料庫同步同仁新增改動">
+                <i class="fa-solid fa-cloud-arrow-down"></i> 即時連線同步
+            </button>
             <button id="btnBatchRemind" class="btn btn-warning" onclick="batchRemindAllOverdueIssues()" title="一鍵全自動寄信催辦所有逾期未回覆醫師">
                 <i class="fa-solid fa-clock-rotate-left"></i> 一鍵催辦逾期
             </button>
@@ -528,7 +531,7 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=20260919_v65_auto_send_email_and_overdue_remind"></script>
+    <script src="app.js?v=20260919_v66_multi_user_cloud_sync_and_doc1150009790"></script>
 
     <!-- Modal: 週表篩選條件與匯出 -->
     <div class="modal-backdrop" id="modalWeeklyExport">

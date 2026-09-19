@@ -42,6 +42,18 @@ function doPost(e) {
         .setMimeType(ContentService.MimeType.JSON);
     }
 
+    if (data.action === "saveCloudData") {
+      var saveResult = saveCloudDataApi(data);
+      return ContentService.createTextOutput(JSON.stringify(saveResult))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    if (data.action === "getCloudData") {
+      var getResult = getCloudDataApi();
+      return ContentService.createTextOutput(JSON.stringify(getResult))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
     if (data.action === "initResumableUpload" || data.action === "createResumableSession") {
       var sessionResult = initResumableUpload(data);
       return ContentService.createTextOutput(JSON.stringify(sessionResult))
@@ -584,3 +596,61 @@ function makeFilePublic(data) {
     };
   }
 }
+
+/**
+ * 核心 5: 全院多人雲端同步 API (saveCloudData & getCloudData)
+ */
+function saveCloudDataApi(data) {
+  try {
+    var folderName = "雙和醫院公文附件庫";
+    var folders = DriveApp.getFoldersByName(folderName);
+    var folder = folders.hasNext() ? folders.next() : DriveApp.createFolder(folderName);
+
+    var files = folder.getFilesByName("雙和醫院公文系統最新資料庫.json");
+    var file;
+    var jsonStr = JSON.stringify({
+      docs: data.docs || [],
+      issues: data.issues || [],
+      updated_at: new Date().toISOString()
+    });
+
+    if (files.hasNext()) {
+      file = files.next();
+      file.setContent(jsonStr);
+    } else {
+      file = folder.createFile("雙和醫院公文系統最新資料庫.json", jsonStr, "application/json");
+      file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+    }
+
+    return {
+      status: "success",
+      message: "全院最新公文與函詢資料已成功同步至 Google Drive 雲端！",
+      timestamp: new Date().toISOString()
+    };
+  } catch (err) {
+    return { status: "error", message: err.toString() };
+  }
+}
+
+function getCloudDataApi() {
+  try {
+    var folderName = "雙和醫院公文附件庫";
+    var folders = DriveApp.getFoldersByName(folderName);
+    if (!folders.hasNext()) return { status: "empty", docs: [], issues: [] };
+    var folder = folders.next();
+    var files = folder.getFilesByName("雙和醫院公文系統最新資料庫.json");
+    if (!files.hasNext()) return { status: "empty", docs: [], issues: [] };
+    var file = files.next();
+    var content = file.getBlob().getDataAsString("UTF-8");
+    var data = JSON.parse(content);
+    return {
+      status: "success",
+      docs: data.docs || [],
+      issues: data.issues || [],
+      updated_at: data.updated_at
+    };
+  } catch (err) {
+    return { status: "error", message: err.toString() };
+  }
+}
+

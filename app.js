@@ -464,6 +464,29 @@ function getCaseworkerInfo(name) {
 // ----------------------------------------------------
 const DEFAULT_MAIN_DOCS = [
     {
+        "doc_receive_no": "1150009790",
+        "doc_create_no": "1150102727",
+        "doc_source_unit": "臺灣新北地方法院板橋簡易庭",
+        "doc_receive_date": "1150919",
+        "doc_issue_date": "民國115年9月6日",
+        "doc_issue_no": "新北院嵐民元115板簡字第865號",
+        "doc_subject": "臺灣新北地方法院板橋簡易庭函",
+        "doc_chart_no": "00208820",
+        "doc_patient_name": "廖建勛",
+        "doc_chart_status": "",
+        "doc_assignee": "錢佩妤",
+        "doc_fee": 0,
+        "doc_lbi_no": "",
+        "doc_labor_no": "",
+        "doc_reply_no": "1151202055",
+        "doc_reply_date": "",
+        "doc_remark": "",
+        "doc_status": "處理中",
+        "created_at": "2026-09-19 02:41",
+        "updated_at": "2026-09-19 02:41",
+        "doc_attachments": []
+    },
+    {
         "doc_receive_no": "1150009891",
         "doc_draft_no": "1151295121",
         "doc_create_no": "1151295121",
@@ -32482,10 +32505,104 @@ function startAutoSyncTimer() {
 }
 
 
+
+async function pushCloudData(isSilent = true) {
+    const savedGasUrl = getGasWebhookUrl();
+    if (!savedGasUrl || !savedGasUrl.startsWith("http")) return;
+
+    try {
+        const payload = {
+            action: "saveCloudData",
+            docs: gMainDocs,
+            issues: gIssues
+        };
+        fetch(savedGasUrl, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify(payload)
+        }).catch(e => console.error("pushCloudData error:", e));
+    } catch (e) {}
+}
+
+async function syncCloudData(isSilent = false) {
+    const savedGasUrl = getGasWebhookUrl();
+    if (!savedGasUrl || !savedGasUrl.startsWith("http")) {
+        if (!isSilent) showToast("⚠️ 請先至【⚙️ 系統設定】設定 Google Apps Script Webhook 網址，即可啟用全院多人雲端同步！", "warning");
+        return;
+    }
+
+    if (!isSilent) showToast("⚡ 正連線 Google Apps Script 讀取全院雲端最新公文資料...", "info");
+
+    try {
+        const res = await fetchWithTimeout(savedGasUrl, {
+            method: "POST",
+            mode: "cors",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify({ action: "getCloudData" }),
+            timeout: 15000
+        });
+
+        const data = await res.json();
+        if (data && data.status === "success" && (Array.isArray(data.docs) || Array.isArray(data.issues))) {
+            let mergedDocsCount = 0;
+            let mergedIssuesCount = 0;
+
+            if (Array.isArray(data.docs)) {
+                data.docs.forEach(cloudDoc => {
+                    const recNo = (cloudDoc.doc_receive_no || "").trim();
+                    if (!recNo) return;
+                    const existingIdx = gMainDocs.findIndex(d => (d.doc_receive_no || "").trim() === recNo);
+                    if (existingIdx === -1) {
+                        gMainDocs.unshift(cloudDoc);
+                        mergedDocsCount++;
+                    } else {
+                        gMainDocs[existingIdx] = Object.assign({}, gMainDocs[existingIdx], cloudDoc);
+                    }
+                });
+            }
+
+            if (Array.isArray(data.issues)) {
+                data.issues.forEach(cloudIss => {
+                    const issId = (cloudIss.issue_id || "").trim();
+                    if (!issId) return;
+                    const existingIdx = gIssues.findIndex(i => (i.issue_id || "").trim() === issId);
+                    if (existingIdx === -1) {
+                        gIssues.push(cloudIss);
+                        mergedIssuesCount++;
+                    } else {
+                        gIssues[existingIdx] = Object.assign({}, gIssues[existingIdx], cloudIss);
+                    }
+                });
+            }
+
+            saveDataToStorage();
+            renderDashboard();
+            renderTable();
+
+            if (!isSilent) {
+                if (mergedDocsCount > 0 || mergedIssuesCount > 0) {
+                    showToast(` 成功連線全院雲端同步！合流新增 ${mergedDocsCount} 筆公文主檔、${mergedIssuesCount} 筆函詢明細！`, "success");
+                } else {
+                    showToast(" 雲端資料庫已是最新狀態，與同仁資料完全同步！", "success");
+                }
+            }
+        } else if (!isSilent) {
+            showToast("ℹ️ 雲端目前尚未寫入最新資料庫，系統將自動同步備份至雲端。", "info");
+            pushCloudData(true);
+        }
+    } catch (err) {
+        console.error("syncCloudData error:", err);
+        if (!isSilent) showToast("連線雲端同步失敗: " + err, "danger");
+    }
+}
+
+
 function saveDataToStorage() {
     try {
         localStorage.setItem(STORAGE_MAIN_DOCS, JSON.stringify(gMainDocs));
         localStorage.setItem(STORAGE_ISSUES, JSON.stringify(gIssues));
+        pushCloudData(true);
     } catch (e) {
         console.error("saveDataToStorage error:", e);
     }
@@ -32493,7 +32610,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v65_auto_send_email_and_overdue_remind";
+    const DATA_VERSION = "20260919_v66_multi_user_cloud_sync_and_doc1150009790";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
@@ -35029,10 +35146,32 @@ function importSystemDataJson(input) {
                 return;
             }
 
-            gMainDocs = JSON.parse(JSON.stringify(importedDocs));
-            if (importedIssues.length > 0) {
-                gIssues = JSON.parse(JSON.stringify(importedIssues));
-            }
+            let newMergedDocs = 0;
+            let newMergedIssues = 0;
+
+            importedDocs.forEach(impDoc => {
+                const recNo = (impDoc.doc_receive_no || "").trim();
+                if (!recNo) return;
+                const idx = gMainDocs.findIndex(d => (d.doc_receive_no || "").trim() === recNo);
+                if (idx === -1) {
+                    gMainDocs.unshift(impDoc);
+                    newMergedDocs++;
+                } else {
+                    gMainDocs[idx] = Object.assign({}, gMainDocs[idx], impDoc);
+                }
+            });
+
+            importedIssues.forEach(impIss => {
+                const issId = (impIss.issue_id || "").trim();
+                if (!issId) return;
+                const idx = gIssues.findIndex(i => (i.issue_id || "").trim() === issId);
+                if (idx === -1) {
+                    gIssues.push(impIss);
+                    newMergedIssues++;
+                } else {
+                    gIssues[idx] = Object.assign({}, gIssues[idx], impIss);
+                }
+            });
 
             saveDataToStorage();
             renderDashboard();
