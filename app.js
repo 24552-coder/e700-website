@@ -32685,7 +32685,7 @@ async function autoSendEmail(issueId, type, forceModalPreview = false) {
             console.error("autoSendEmail error:", e);
         }
     } else {
-        openModal("modalEmailPreview");
+        previewEmailModal(issueId, type);
     }
 }
 
