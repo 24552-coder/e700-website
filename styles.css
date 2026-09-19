@@ -257,10 +257,7 @@ textarea.form-control { resize: vertical; line-height: 1.6; }
 }
 
 .custom-table thead {
-    position: sticky;
-    top: 72px;
-    z-index: 95;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    /* sticky removed: top panel height is variable and caused clipping */
 }
 
 .custom-table th {
