@@ -772,15 +772,16 @@ thead th[onclick]:hover { background: #e9f0fb !important; color: #1e40af !import
 .doc-detail-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 24px;
-    font-size: 13px;
+    justify-content: flex-start;
+    gap: 18px 24px;
+    font-size: 14px;
 }
 
 .detail-item {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    min-width: 150px;
+    gap: 6px;
+    min-width: 170px;
     flex: 1 1 auto;
 }
 
@@ -789,13 +790,13 @@ thead th[onclick]:hover { background: #e9f0fb !important; color: #1e40af !import
 }
 
 .detail-label {
-    font-size: 13.5px;
+    font-size: 15px;
     color: #64748b;
     font-weight: 600;
 }
 
 .detail-val {
-    font-size: 16px;
+    font-size: 18px;
     color: #0f172a;
     word-break: break-word;
 }
