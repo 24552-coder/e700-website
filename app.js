@@ -32195,7 +32195,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v61_fix_blank_doc_deletion_and_auto_purge";
+    const DATA_VERSION = "20260919_v62_sync_latest_536docs_651issues";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
