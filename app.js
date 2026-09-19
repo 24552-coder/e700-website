@@ -32497,30 +32497,32 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 let gAutoSyncInterval = null;
 function startAutoSyncTimer() {
-    // 100% 全自動背景靜默同步 (每 15 秒自動同步 Gmail 醫師回信 + 同仁雲端最新公文)
+    // 100% 極速全自動背景靜默同步 (每 3 秒自動連線同步同仁雲端最新公文與 Gmail 醫師回信)
     if (gAutoSyncInterval) clearInterval(gAutoSyncInterval);
-    gAutoSyncInterval = setInterval(() => {
-        syncGmailReplies(true);
+
+    // 啟動 1 秒內立即進行初次靜默雲端連線校正
+    setTimeout(() => {
         syncCloudData(true);
-    }, 15000);
+        syncGmailReplies(true);
+    }, 1000);
+
+    gAutoSyncInterval = setInterval(() => {
+        syncCloudData(true);
+        syncGmailReplies(true);
+    }, 3000);
 
     // 當使用者分頁切換回本系統，或視窗獲得焦點時，立即全自動靜默連線校正
     window.addEventListener("focus", () => {
-        syncGmailReplies(true);
         syncCloudData(true);
+        syncGmailReplies(true);
     });
 
     document.addEventListener("visibilitychange", () => {
         if (!document.hidden) {
-            syncGmailReplies(true);
             syncCloudData(true);
+            syncGmailReplies(true);
         }
     });
-
-    // 啟動 3 秒後立即進行初次靜默雲端同步
-    setTimeout(() => {
-        syncCloudData(true);
-    }, 3000);
 }
 
 
@@ -32627,7 +32629,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v67_100pct_fully_automatic_background_cloud_sync";
+    const DATA_VERSION = "20260919_v68_3sec_ultra_fast_auto_polling";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
