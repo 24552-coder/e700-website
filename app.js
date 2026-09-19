@@ -32272,7 +32272,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v58_cleanup_placeholder_data";
+    const DATA_VERSION = "20260919_v59_export_import_json_backup";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
@@ -34603,4 +34603,87 @@ function executeWeeklyExport() {
     XLSX.writeFile(workbook, fileName);
     showToast(`週表已成功匯出為 ${fileName} (共 ${docsToExport.length} 筆)`, "success");
     closeModal("modalWeeklyExport");
+}
+
+// ====================================================
+// 8. 全部下載 (全系統完整 JSON 備份匯出與校正匯入)
+// ====================================================
+
+function exportAllSystemDataJson() {
+    try {
+        const exportData = {
+            export_time: new Date().toLocaleString('zh-TW', { hour12: false }),
+            system: "雙和醫院病歷組-公文與醫師函詢追蹤系統",
+            version: "v59",
+            docs_count: gMainDocs.length,
+            issues_count: gIssues.length,
+            docs: gMainDocs,
+            issues: gIssues
+        };
+
+        const jsonStr = JSON.stringify(exportData, null, 2);
+        const blob = new Blob([jsonStr], { type: "application/json;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
+        
+        const nowStr = new Date().toISOString().slice(0,10).replace(/-/g, '');
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `雙和病歷組_公文與函詢全系統備份_${nowStr}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        showToast(`已成功下載完整系統備份檔 (共 ${gMainDocs.length} 筆公文、${gIssues.length} 筆函詢)！`, "success");
+    } catch (e) {
+        console.error("Export JSON failed:", e);
+        alert("下載系統備份失敗：" + e.message);
+    }
+}
+
+function triggerImportSystemDataJson() {
+    const fileInput = document.getElementById("fileInputImportJson");
+    if (fileInput) {
+        fileInput.value = "";
+        fileInput.click();
+    }
+}
+
+function importSystemDataJson(input) {
+    const file = input.files && input.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            const data = JSON.parse(e.target.result);
+            if (!data || (!data.docs && !Array.isArray(data))) {
+                alert("無效的 JSON 備份檔案格式！");
+                return;
+            }
+
+            const importedDocs = Array.isArray(data) ? data : (data.docs || []);
+            const importedIssues = data.issues || [];
+
+            if (!confirm(`確定要匯入此備份檔進行系統校正嗎？\n\n匯入將包含：\n- 公文主檔：${importedDocs.length} 筆\n- 醫師函詢明細：${importedIssues.length} 筆`)) {
+                return;
+            }
+
+            gMainDocs = JSON.parse(JSON.stringify(importedDocs));
+            if (importedIssues.length > 0) {
+                gIssues = JSON.parse(JSON.stringify(importedIssues));
+            }
+
+            saveDataToStorage();
+            renderDashboard();
+            renderTable();
+
+            alert(`🎉 系統已成功校正更新！\n共載入 ${gMainDocs.length} 筆公文主檔與 ${gIssues.length} 筆醫師函詢資料。`);
+            showToast(`已成功校正更新 ${gMainDocs.length} 筆公文與 ${gIssues.length} 筆函詢！`, "success");
+        } catch (err) {
+            console.error("Import JSON failed:", err);
+            alert("匯入失敗，檔案格式不正確：" + err.message);
+        }
+    };
+    reader.readAsText(file, "UTF-8");
 }

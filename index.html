@@ -30,6 +30,13 @@
             <button id="btnExportWeekly" class="btn btn-outline-success">
                 <i class="fa-solid fa-file-excel"></i> 匯出未結案週表
             </button>
+            <button id="btnExportAllJson" class="btn btn-warning" onclick="exportAllSystemDataJson()" title="全部下載完整系統備份檔 (JSON)">
+                <i class="fa-solid fa-circle-down"></i> 全部下載
+            </button>
+            <button id="btnImportJson" class="btn btn-outline-secondary" onclick="triggerImportSystemDataJson()" title="匯入/校正完整備份檔 (JSON)">
+                <i class="fa-solid fa-file-import"></i> 匯入/校正備份
+            </button>
+            <input type="file" id="fileInputImportJson" accept=".json" style="display:none;" onchange="importSystemDataJson(this)">
             <button id="btnNewMainDoc" class="btn btn-primary">
                 <i class="fa-solid fa-plus"></i> 新增公文主檔
             </button>
@@ -518,7 +525,7 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=20260919_v58_cleanup_placeholder_data"></script>
+    <script src="app.js?v=20260919_v59_export_import_json_backup"></script>
 
     <!-- Modal: 週表篩選條件與匯出 -->
     <div class="modal-backdrop" id="modalWeeklyExport">
