@@ -30894,7 +30894,38 @@ document.addEventListener("DOMContentLoaded", async () => {
     updateSortIcons();
     checkOverdueAlerts();
     startAutoSyncTimer();
+    setupStickyTableHeader();
 });
+
+function setupStickyTableHeader() {
+    const APP_HEADER_H = 74;
+    let rafId = null;
+
+    function updateSticky() {
+        const wrapper = document.querySelector('.table-responsive');
+        const thead   = document.querySelector('.custom-table thead');
+        if (!wrapper || !thead) return;
+
+        const wTop    = wrapper.getBoundingClientRect().top;
+        const wBottom = wrapper.getBoundingClientRect().bottom;
+        const theadH  = thead.offsetHeight;
+
+        if (wTop < APP_HEADER_H && wBottom > APP_HEADER_H + theadH + 10) {
+            // 表頭應該釘住
+            thead.style.transform = `translateY(${APP_HEADER_H - wTop}px)`;
+            thead.classList.add('thead-stuck');
+        } else {
+            thead.style.transform = '';
+            thead.classList.remove('thead-stuck');
+        }
+    }
+
+    window.addEventListener('scroll', () => {
+        if (rafId) cancelAnimationFrame(rafId);
+        rafId = requestAnimationFrame(updateSticky);
+    }, { passive: true });
+}
+
 
 let gAutoSyncInterval = null;
 function startAutoSyncTimer() {

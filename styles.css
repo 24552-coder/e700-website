@@ -258,9 +258,12 @@ textarea.form-control { resize: vertical; line-height: 1.6; }
 }
 
 .custom-table thead {
-    position: sticky;
-    top: 74px;
+    position: relative;
     z-index: 20;
+}
+
+.custom-table thead.thead-stuck th {
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
 }
 
 .custom-table th {
