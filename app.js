@@ -31838,9 +31838,9 @@ function renderNestedIssueTable(receiveNo) {
                                     <i class="fa-solid fa-paperclip"></i> ${escapeHtml((att.name||'附件').replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0])} (線上開啟)
                                 </a>
                             ` : `
-                                <span class="badge badge-secondary" style="font-size:11px;padding:4px 8px;">
-                                    <i class="fa-solid fa-paperclip"></i> ${escapeHtml((att.name||'附件').replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0])}
-                                </span>
+                                <a href="javascript:void(0)" onclick="downloadLocalAttachment('${escapeHtml(att.name).replace(/'/g, "\\'")}', '${att.mimeType}')" class="badge badge-secondary" style="font-size:11px;padding:4px 8px;text-decoration:none;" title="下載實體附件">
+                                    <i class="fa-solid fa-download"></i> ${escapeHtml((att.name||'附件').replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0])} (下載原檔)
+                                </a>
                             `).join('')}
                         </div>
                     ` : ''}
@@ -31985,6 +31985,20 @@ function openMainDocModal(receiveNo = null) {
 
     openModal("modalMainDoc");
 }
+
+window.downloadLocalAttachment = function(name, mimeType) {
+    const b64 = gAttachmentBinaryCache[name];
+    if (!b64) {
+        showToast('找不到本機快取的實體附件資料！', 'warning');
+        return;
+    }
+    const a = document.createElement('a');
+    a.href = b64.startsWith('data:') ? b64 : 'data:' + (mimeType || 'application/octet-stream') + ';base64,' + b64;
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+};
 
 function saveMainDoc() {
     const receiveNo = document.getElementById("doc_receive_no").value.trim();
