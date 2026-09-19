@@ -464,6 +464,31 @@ function getCaseworkerInfo(name) {
 // ----------------------------------------------------
 const DEFAULT_MAIN_DOCS = [
   {
+    "doc_receive_no": "08687762",
+    "doc_draft_no": "115-09-18醫療爭議",
+    "doc_create_no": "115-09-18醫療爭議",
+    "doc_source_unit": "新北市衛生局",
+    "doc_receive_date": "1150918",
+    "doc_issue_date": "民國115年9月18日",
+    "doc_issue_no": "",
+    "doc_subject": "115-09-18醫療爭議",
+    "doc_chart_no": "08687762",
+    "doc_patient_name": "張鈞常",
+    "doc_doctor_name": "",
+    "doc_chart_status": "",
+    "doc_assignee": "錢佩好",
+    "doc_fee": 0,
+    "doc_lbi_no": "",
+    "doc_labor_no": "",
+    "doc_reply_no": "",
+    "doc_reply_date": "",
+    "doc_remark": "",
+    "doc_status": "待處理",
+    "created_at": "2026-09-18 01:54",
+    "updated_at": "2026-09-18 15:16",
+    "doc_attachments": []
+},
+  {
     "doc_receive_no": "1140013453",
     "doc_receive_date": "2025/12/10",
     "doc_draft_no": "1141296530",
@@ -15026,6 +15051,126 @@ const DEFAULT_MAIN_DOCS = [
 ];
 
 const DEFAULT_ISSUES = [
+{
+    "issue_id": "INQ-08687762-1",
+    "doc_receive_no": "08687762",
+    "doc_chart_no": "08687762",
+    "doc_patient_name": "張鈞常",
+    "doctor_name": "洪麗玉",
+    "doctor_email": "10079@s.tmu.edu.tw",
+    "creator_name": "錢佩好",
+    "creator_ext": "2043",
+    "creator_email": "19020@s.tmu.edu.tw",
+    "question": "洪麗玉醫師您好，因新北市衛生局調閱病歷(08687762張鈞常)(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於9月21日釋出，感謝您。\n❶ 備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩好敬上",
+    "doctor_reply": "您好 洪麗玉醫師回覆可以釋出！",
+    "due_date": "2026-09-21",
+    "status": "已回覆",
+    "remark": "",
+    "created_at": "2026-09-18 01:54",
+    "sent_at": "2026-09-18 12:08",
+    "replied_at": "2026-09-18 13:00",
+    "attachments": []
+},
+{
+    "issue_id": "INQ-08687762-2",
+    "doc_receive_no": "08687762",
+    "doc_chart_no": "08687762",
+    "doc_patient_name": "張鈞常",
+    "doctor_name": "劉永慶",
+    "doctor_email": "08682@s.tmu.edu.tw",
+    "creator_name": "錢佩好",
+    "creator_ext": "2043",
+    "creator_email": "19020@s.tmu.edu.tw",
+    "question": "劉永慶醫師您好，因新北市衛生局調閱病歷(08687762張鈞常)(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於9月21日釋出，感謝您。\n❶ 備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩好敬上",
+    "doctor_reply": "",
+    "due_date": "2026-09-21",
+    "status": "已發送",
+    "remark": "",
+    "created_at": "2026-09-18 01:54",
+    "sent_at": "2026-09-18 12:05",
+    "replied_at": "",
+    "attachments": []
+},
+{
+    "issue_id": "INQ-08687762-3",
+    "doc_receive_no": "08687762",
+    "doc_chart_no": "08687762",
+    "doc_patient_name": "張鈞常",
+    "doctor_name": "陳明堯",
+    "doctor_email": "08350@s.tmu.edu.tw",
+    "creator_name": "錢佩好",
+    "creator_ext": "2043",
+    "creator_email": "19020@s.tmu.edu.tw",
+    "question": "陳明堯醫師您好，因新北市衛生局調閱病歷(08687762張鈞常)(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於9月21日釋出，感謝您。\n❶ 備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩好敬上",
+    "doctor_reply": "",
+    "due_date": "2026-09-21",
+    "status": "已發送",
+    "remark": "",
+    "created_at": "2026-09-18 01:54",
+    "sent_at": "2026-09-18 11:57",
+    "replied_at": "",
+    "attachments": []
+},
+{
+    "issue_id": "INQ-08687762-4",
+    "doc_receive_no": "08687762",
+    "doc_chart_no": "08687762",
+    "doc_patient_name": "張鈞常",
+    "doctor_name": "高白風",
+    "doctor_email": "08472@s.tmu.edu.tw",
+    "creator_name": "錢佩好",
+    "creator_ext": "2043",
+    "creator_email": "19020@s.tmu.edu.tw",
+    "question": "高白風醫師您好，因新北市衛生局調閱病歷(08687762張鈞常)(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於9月21日釋出，感謝您。\n❶ 備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩好敬上",
+    "doctor_reply": "可以",
+    "due_date": "2026-09-21",
+    "status": "已回覆",
+    "remark": "",
+    "created_at": "2026-09-18 01:54",
+    "sent_at": "2026-09-18 11:58",
+    "replied_at": "2026-09-18 15:16",
+    "attachments": []
+},
+{
+    "issue_id": "INQ-08687762-5",
+    "doc_receive_no": "08687762",
+    "doc_chart_no": "08687762",
+    "doc_patient_name": "張鈞常",
+    "doctor_name": "團隊主治醫師E",
+    "doctor_email": "11029@s.tmu.edu.tw",
+    "creator_name": "錢佩好",
+    "creator_ext": "2043",
+    "creator_email": "19020@s.tmu.edu.tw",
+    "question": "醫師您好，因新北市衛生局調閱病歷(08687762張鈞常)(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於9月21日釋出，感謝您。\n❶ 備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩好敬上",
+    "doctor_reply": "",
+    "due_date": "2026-09-21",
+    "status": "已發送",
+    "remark": "",
+    "created_at": "2026-09-18 01:54",
+    "sent_at": "2026-09-18 12:00",
+    "replied_at": "",
+    "attachments": []
+},
+{
+    "issue_id": "INQ-08687762-6",
+    "doc_receive_no": "08687762",
+    "doc_chart_no": "08687762",
+    "doc_patient_name": "張鈞常",
+    "doctor_name": "團隊主治醫師F",
+    "doctor_email": "12044@s.tmu.edu.tw",
+    "creator_name": "錢佩好",
+    "creator_ext": "2043",
+    "creator_email": "19020@s.tmu.edu.tw",
+    "question": "醫師您好，因新北市衛生局調閱病歷(08687762張鈞常)(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於9月21日釋出，感謝您。\n❶ 備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩好敬上",
+    "doctor_reply": "",
+    "due_date": "2026-09-21",
+    "status": "已發送",
+    "remark": "",
+    "created_at": "2026-09-18 01:54",
+    "sent_at": "2026-09-18 12:02",
+    "replied_at": "",
+    "attachments": []
+},
   {
     "issue_id": "INQ-1140013453-1",
     "doc_receive_no": "1140013453",
@@ -31822,7 +31967,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260917_v55_weekly_date_range_filter_fixed";
+    const DATA_VERSION = "20260919_v56_auto_sync_colleague_case";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
@@ -31845,6 +31990,32 @@ async function loadDataFromStorage() {
     }
     if (!Array.isArray(gIssues)) {
         gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+        saveDataToStorage();
+    }
+
+    // Auto-merge newly added master docs & issues if missing in user's local storage
+    let hasNewMerged = false;
+    if (Array.isArray(DEFAULT_MAIN_DOCS)) {
+        DEFAULT_MAIN_DOCS.forEach(defDoc => {
+            const exists = gMainDocs.some(d => d.doc_receive_no === defDoc.doc_receive_no);
+            if (!exists) {
+                gMainDocs.unshift(JSON.parse(JSON.stringify(defDoc)));
+                hasNewMerged = true;
+            }
+        });
+    }
+
+    if (Array.isArray(DEFAULT_ISSUES)) {
+        DEFAULT_ISSUES.forEach(defIss => {
+            const exists = gIssues.some(i => i.issue_id === defIss.issue_id);
+            if (!exists) {
+                gIssues.push(JSON.parse(JSON.stringify(defIss)));
+                hasNewMerged = true;
+            }
+        });
+    }
+
+    if (hasNewMerged) {
         saveDataToStorage();
     }
 
