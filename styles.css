@@ -921,3 +921,6 @@ thead th[onclick]:hover { background: #e9f0fb !important; color: #1e40af !import
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 10px 25px rgba(15, 118, 110, 0.6);
 }
+
+.no-animation { animation: none !important; transition: none !important; }
+

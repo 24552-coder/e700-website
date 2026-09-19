@@ -30873,6 +30873,7 @@ const STORAGE_ISSUES = "TMU_ISSUES_V10";
 let gMainDocs = [];
 let gIssues = [];
 let gExpandedRows = new Set();
+let gJustExpanded = null;
 let gCurrentFilter = { search: "", assignee: "", docStatus: "", issueStatus: "", cardType: "all" };
 let gSort = { field: "created_at", dir: "desc" }; // default: newest first
 let gTempPendingEmailAction = null;
@@ -31607,7 +31608,7 @@ function renderTable() {
             trDetail.className = "detail-row";
             trDetail.innerHTML = `
                 <td colspan="10" style="padding:0; background:#f8fafc;">
-                    <div class="nested-table-container">
+                    <div class="nested-table-container${gJustExpanded === doc.doc_receive_no ? '' : ' no-animation'}">
                         ${renderMainDocDetailPanel(doc)}
                         <div class="nested-panel-body">
                             <div class="nested-section-title"><i class="fa-solid fa-user-doctor"></i> 醫師函詢處理列表</div>
@@ -31771,9 +31772,14 @@ function renderMainDocDetailPanel(doc) {
 }
 
 function toggleExpandRow(receiveNo) {
-    if (gExpandedRows.has(receiveNo)) gExpandedRows.delete(receiveNo);
-    else gExpandedRows.add(receiveNo);
+    if (gExpandedRows.has(receiveNo)) {
+        gExpandedRows.delete(receiveNo);
+    } else {
+        gExpandedRows.add(receiveNo);
+        gJustExpanded = receiveNo;
+    }
     renderTable();
+    gJustExpanded = null;
 }
 
 function renderNestedIssueTable(receiveNo) {
