@@ -31533,7 +31533,7 @@ function renderTable() {
     });
 
     if (filteredDocs.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="10" class="text-center text-muted" style="padding:40px;">無符合條件之公文紀錄</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="11" class="text-center text-muted" style="padding:40px;">無符合條件之公文紀錄</td></tr>`;
         return;
     }
 
@@ -31609,7 +31609,7 @@ function renderTable() {
             const trDetail = document.createElement("tr");
             trDetail.className = "detail-row";
             trDetail.innerHTML = `
-                <td colspan="10" style="padding:0; background:#f8fafc;">
+                <td colspan="11" style="padding:0; background:#f8fafc;">
                     <div class="nested-table-container${gJustExpanded === doc.doc_receive_no ? '' : ' no-animation'}">
                         ${renderMainDocDetailPanel(doc)}
                         <div class="nested-panel-body">
