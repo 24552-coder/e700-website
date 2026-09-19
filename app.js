@@ -30925,24 +30925,28 @@ async function autoCheckAndRemindOverdue() {
     const savedGasUrl = getGasWebhookUrl();
     if (!savedGasUrl || !savedGasUrl.startsWith("http")) return; // Needs backend configured to send
 
-    const remindIntervalHours = 24; // Automatically remind once every 24 hours
+    const now = new Date();
+    
+    // 只在每天早上 10 點（含）之後才允許執行今日的催辦
+    if (now.getHours() < 10) return;
 
     const overdueIssues = gIssues.filter(i => {
         if (!isIssueOverdue(i)) return false; // This already checks status and sent_at
         
-        const now = new Date();
         if (i.last_reminded_at) {
             const lastRemindDate = new Date(i.last_reminded_at);
-            const hoursSinceLastRemind = (now - lastRemindDate) / (1000 * 60 * 60);
-            if (hoursSinceLastRemind < remindIntervalHours) {
-                return false; // Already reminded recently
+            // 如果今天已經對這個案件催辦過，就不再重複催辦
+            if (lastRemindDate.getFullYear() === now.getFullYear() &&
+                lastRemindDate.getMonth() === now.getMonth() &&
+                lastRemindDate.getDate() === now.getDate()) {
+                return false; 
             }
         }
         return true; // Overdue and needs reminder
     });
 
     if (overdueIssues.length > 0) {
-        showToast(`⚡ 系統偵測到 ${overdueIssues.length} 筆逾期未回覆案件，正在自動發送催辦通知...`, "warning");
+        showToast(`⚡ 統一在早上 10 點執行：偵測到 ${overdueIssues.length} 筆逾期未回覆案件，正在批次發送催辦通知...`, "warning");
         for (let i = 0; i < overdueIssues.length; i++) {
             const issue = overdueIssues[i];
             issue.remind_count = (issue.remind_count || 0) + 1;
@@ -31377,8 +31381,14 @@ function isIssueOverdue(issue) {
     if (!issue.sent_at) return false;
     const sentDate = new Date(issue.sent_at);
     const now = new Date();
+    
+    // 計算日曆天數差 (以午夜00:00為基準)
+    const sentMidnight = new Date(sentDate.getFullYear(), sentDate.getMonth(), sentDate.getDate());
+    const nowMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const diffDays = Math.floor((nowMidnight - sentMidnight) / (1000 * 60 * 60 * 24));
+    
     const overdueDays = parseInt(localStorage.getItem("OVERDUE_DAYS") || "1", 10);
-    return ((now - sentDate) / (1000 * 60 * 60)) >= (overdueDays * 24);
+    return diffDays >= overdueDays;
 }
 
 // ----------------------------------------------------
