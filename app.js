@@ -30898,22 +30898,87 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 function setupStickyTableHeader() {
-    // 讓 table-responsive 的高度動態填滿視窗剩餘空間
-    // th { position: sticky; top: 0 } 就能自動釘在表格頂部
-    function updateTableHeight() {
+    const APP_H = 74; // app-header 高度 px
+    let cloneEl = null;
+
+    function buildClone() {
+        const old = document.getElementById('_sticky_clone');
+        if (old) old.remove();
+        cloneEl = null;
+
         const wrapper = document.querySelector('.table-responsive');
-        if (!wrapper) return;
-        const top = wrapper.getBoundingClientRect().top;
-        const newH = window.innerHeight - top - 20;
-        wrapper.style.maxHeight = Math.max(300, newH) + 'px';
+        const table   = document.querySelector('.custom-table');
+        const thead   = table?.querySelector('thead');
+        if (!wrapper || !table || !thead) return;
+
+        // 建立固定克隆容器
+        cloneEl = document.createElement('div');
+        cloneEl.id = '_sticky_clone';
+
+        // 克隆 thead 並放入 table
+        const cloneTable = document.createElement('table');
+        cloneTable.style.cssText = 'table-layout:fixed;border-collapse:collapse;border-spacing:0;';
+        cloneTable.appendChild(thead.cloneNode(true));
+        cloneEl.appendChild(cloneTable);
+        document.body.appendChild(cloneEl);
+
+        // 刪除克隆中的 sort onclick 以避免重複事件（保留視覺用）
+        cloneEl.querySelectorAll('th[onclick]').forEach(th => {
+            th.setAttribute('onclick', '');
+        });
     }
 
-    updateTableHeight();
-    // 確保 CSS 繪製完成後再計算一次
-    setTimeout(updateTableHeight, 200);
-    window.addEventListener('resize', updateTableHeight, { passive: true });
-    document.addEventListener('alertChange', updateTableHeight);
+    function syncClone() {
+        if (!cloneEl) return;
+        const wrapper = document.querySelector('.table-responsive');
+        const table   = document.querySelector('.custom-table');
+        const thead   = table?.querySelector('thead');
+        if (!wrapper || !table || !thead) return;
+
+        const theadRect   = thead.getBoundingClientRect();
+        const wrapperRect = wrapper.getBoundingClientRect();
+
+        // 當表頭頂部滾出 app-header 且表格還在畫面內 → 顯示克隆
+        if (theadRect.bottom <= APP_H && wrapperRect.bottom > APP_H + 40) {
+            cloneEl.style.display = 'block';
+            cloneEl.style.top     = APP_H + 'px';
+            cloneEl.style.left    = wrapperRect.left + 'px';
+            cloneEl.style.width   = wrapperRect.width + 'px';
+
+            // 同步各欄寬度
+            const realThs  = thead.querySelectorAll('th');
+            const cloneThs = cloneEl.querySelectorAll('th');
+            realThs.forEach((th, i) => {
+                if (!cloneThs[i]) return;
+                const w = th.getBoundingClientRect().width;
+                cloneThs[i].style.width    = w + 'px';
+                cloneThs[i].style.minWidth = w + 'px';
+            });
+
+            // 同步水平捲動位置
+            const innerTable = cloneEl.querySelector('table');
+            if (innerTable) {
+                innerTable.style.width      = table.getBoundingClientRect().width + 'px';
+                innerTable.style.marginLeft = -wrapper.scrollLeft + 'px';
+            }
+        } else {
+            cloneEl.style.display = 'none';
+        }
+    }
+
+    // 初始建立並在 300ms 後重建（等資料渲染完）
+    buildClone();
+    setTimeout(buildClone, 300);
+
+    // 公開重建函式供 renderTable() 呼叫
+    window._rebuildStickyHeader = buildClone;
+
+    window.addEventListener('scroll',  syncClone, { passive: true });
+    window.addEventListener('resize',  () => { buildClone(); syncClone(); }, { passive: true });
+    document.querySelector('.table-responsive')
+            ?.addEventListener('scroll', syncClone, { passive: true });
 }
+
 
 
 
@@ -31610,6 +31675,8 @@ function renderTable() {
             tbody.appendChild(trDetail);
         }
     });
+
+    if (window._rebuildStickyHeader) window._rebuildStickyHeader();
 }
 
 
