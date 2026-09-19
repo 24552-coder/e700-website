@@ -253,40 +253,11 @@ textarea.form-control { resize: vertical; line-height: 1.6; }
     width: 100%;
     min-width: 1148px;
     table-layout: fixed;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     font-size: 14px;
 }
 
-/* ─── JS 固定克隆欄位標題 ─────────────────── */
-#_sticky_clone {
-    position: fixed;
-    z-index: 200;
-    display: none;
-    overflow: hidden;
-    background: linear-gradient(180deg, #f0f4f8 0%, #e8eef4 100%);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-    border-bottom: 2px solid #b8c8d8;
-}
-#_sticky_clone table {
-    table-layout: fixed;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-#_sticky_clone th {
-    background: transparent;
-    color: #1e293b;
-    font-weight: 700;
-    padding: 14px 16px;
-    font-size: 13px;
-    letter-spacing: 0.3px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border: none;
-    font-family: inherit;
-}
-#_sticky_clone th[onclick] { cursor: pointer; }
-#_sticky_clone th[onclick]:hover { background: rgba(30,41,59,0.06); }
 
 .custom-table thead {
 
@@ -310,6 +281,9 @@ textarea.form-control { resize: vertical; line-height: 1.6; }
     letter-spacing: 0.3px;
     overflow: hidden;
     text-overflow: ellipsis;
+    position: sticky;
+    top: 0;
+    z-index: 20;
 }
 
 .custom-table td {
