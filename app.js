@@ -31663,6 +31663,7 @@ function renderMainDocDetailPanel(doc) {
     
     // Smart Auto-Infer LBI No (勞保局受理編號) if empty or '-'
     let lbiNoStr = (doc.doc_lbi_no || doc.doc_labor_no || '').trim();
+    lbiNoStr = lbiNoStr.replace(/^受理號碼\s*[:：]\s*/, '').replace(/。$/, '').trim();
     if ((!lbiNoStr || lbiNoStr === '-') && (sourceUnitStr.includes('勞') || sourceUnitStr.includes('保險') || sourceUnitStr.includes('保'))) {
         const rec = doc.doc_receive_no || '';
         const suffix = rec.length >= 6 ? rec.slice(-6) : rec;
