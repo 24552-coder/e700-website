@@ -32497,11 +32497,30 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 let gAutoSyncInterval = null;
 function startAutoSyncTimer() {
-    // 每 10 秒在背景自動靜默掃描 Gmail 醫師回信 (不需要人工按按鈕)
+    // 100% 全自動背景靜默同步 (每 15 秒自動同步 Gmail 醫師回信 + 同仁雲端最新公文)
     if (gAutoSyncInterval) clearInterval(gAutoSyncInterval);
     gAutoSyncInterval = setInterval(() => {
         syncGmailReplies(true);
-    }, 10000);
+        syncCloudData(true);
+    }, 15000);
+
+    // 當使用者分頁切換回本系統，或視窗獲得焦點時，立即全自動靜默連線校正
+    window.addEventListener("focus", () => {
+        syncGmailReplies(true);
+        syncCloudData(true);
+    });
+
+    document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) {
+            syncGmailReplies(true);
+            syncCloudData(true);
+        }
+    });
+
+    // 啟動 3 秒後立即進行初次靜默雲端同步
+    setTimeout(() => {
+        syncCloudData(true);
+    }, 3000);
 }
 
 
@@ -32580,12 +32599,10 @@ async function syncCloudData(isSilent = false) {
             renderDashboard();
             renderTable();
 
-            if (!isSilent) {
-                if (mergedDocsCount > 0 || mergedIssuesCount > 0) {
-                    showToast(` 成功連線全院雲端同步！合流新增 ${mergedDocsCount} 筆公文主檔、${mergedIssuesCount} 筆函詢明細！`, "success");
-                } else {
-                    showToast(" 雲端資料庫已是最新狀態，與同仁資料完全同步！", "success");
-                }
+            if (mergedDocsCount > 0 || mergedIssuesCount > 0) {
+                showToast(`⚡ 全自動背景同步完成！已自動載入同仁新增之 ${mergedDocsCount} 筆公文、${mergedIssuesCount} 筆函詢！`, "success");
+            } else if (!isSilent) {
+                showToast(" 雲端資料庫已是最新狀態，與同仁資料完全同步！", "success");
             }
         } else if (!isSilent) {
             showToast("ℹ️ 雲端目前尚未寫入最新資料庫，系統將自動同步備份至雲端。", "info");
@@ -32610,7 +32627,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v66_multi_user_cloud_sync_and_doc1150009790";
+    const DATA_VERSION = "20260919_v67_100pct_fully_automatic_background_cloud_sync";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
