@@ -32493,7 +32493,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v64_sync_651_issues_and_535_docs";
+    const DATA_VERSION = "20260919_v65_auto_send_email_and_overdue_remind";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
@@ -33236,8 +33236,8 @@ function renderNestedIssueTable(receiveNo) {
                 <td style="min-width:130px;">
                     <div class="action-btn-group">
                         <div class="btn-row">
-                            <button class="btn btn-sm btn-primary" onclick="previewEmailModal('${escapeHtml(issue.issue_id)}', 1)" title="發送函詢信">
-                                <i class="fa-solid fa-paper-plane"></i> 寄信
+                            <button class="btn btn-sm ${isIssueOverdue(issue) ? 'btn-danger' : 'btn-warning'}" onclick="remindIssue('${escapeHtml(issue.issue_id)}')" title="對醫師發送逾期催辦提醒信">
+                                <i class="fa-solid fa-clock-rotate-left"></i> 催辦
                             </button>
                             <button class="btn btn-sm btn-outline-secondary" onclick="openIssueModalForEdit('${escapeHtml(issue.issue_id)}')" title="編輯">
                                 <i class="fa-solid fa-pen"></i> 編輯
@@ -33247,11 +33247,14 @@ function renderNestedIssueTable(receiveNo) {
                             </button>
                         </div>
                         <div class="btn-row">
-                            <button class="btn btn-sm btn-outline-success" onclick="completeIssue('${escapeHtml(issue.issue_id)}')" title="結案">
+                            <button class="btn btn-sm btn-outline-success" onclick="completeIssue('${escapeHtml(issue.issue_id)}')" title="結案完成">
                                 <i class="fa-solid fa-check"></i> 結案
                             </button>
-                            <button class="btn btn-sm btn-outline-secondary" onclick="openReturnReasonModal('${escapeHtml(issue.issue_id)}')" title="退回補件">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="openReturnReasonModal('${escapeHtml(issue.issue_id)}')" title="退回醫師補件">
                                 <i class="fa-solid fa-rotate-left"></i> 退回
+                            </button>
+                            <button class="btn btn-sm btn-outline-info" onclick="autoSendEmail('${escapeHtml(issue.issue_id)}', 1, true)" title="預覽或發送信件範本">
+                                <i class="fa-solid fa-envelope"></i> 信件
                             </button>
                         </div>
                     </div>
@@ -33843,7 +33846,7 @@ async function saveIssue() {
 
     // 關鍵修正：點擊【儲存並自動發送 Google 郵件】後，自動開啟郵件視窗發送
     setTimeout(() => {
-        previewEmailModal(issueData.issue_id, 1);
+        autoSendEmail(issueData.issue_id, 1);
     }, 200);
 }
 
@@ -33999,6 +34002,76 @@ function getEmailTemplateHtml(type, issue) {
             </div>
         </div>
     `;
+}
+
+
+async function autoSendEmail(issueId, type, forceModalPreview = false) {
+    const issue = gIssues.find(i => i.issue_id === issueId);
+    if (!issue) return;
+
+    issue.sent_at = getTaiwanNowStr();
+
+    let subject = `【雙和醫院病歷組】問題回覆通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
+    if (type === 2) subject = `【雙和醫院病歷組】已收到醫師回覆 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
+    if (type === 3) subject = `【雙和醫院病歷組】退回補件通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
+    if (type === 4) subject = `【雙和醫院病歷組】案件已結案完成 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
+    if (type === 5) subject = `【雙和醫院病歷組】催辦提醒通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
+
+    const ccList = [issue.creator_email, issue.cc_email1, issue.cc_email2].filter(Boolean).join(", ");
+    const to = (type === 2) ? (issue.creator_email || "e700document@s.tmu.edu.tw") : issue.doctor_email;
+
+    const htmlContent = getEmailTemplateHtml(type, issue);
+    gTempPendingEmailAction = { issueId, type, subject, to, cc: ccList, issue, htmlContent };
+
+    const savedGasUrl = getGasWebhookUrl();
+
+    if (!forceModalPreview && savedGasUrl && savedGasUrl.startsWith("http")) {
+        showToast(`⚡ 正連線 Google Apps Script 全自動發送郵件 (${subject.substring(0, 22)}...)...`, "info");
+        try {
+            await sendEmailViaGmailAPI();
+        } catch (e) {
+            console.error("autoSendEmail error:", e);
+        }
+    } else {
+        openModal("modalEmailPreview");
+    }
+}
+
+function remindIssue(issueId) {
+    const issue = gIssues.find(i => i.issue_id === issueId);
+    if (!issue) return;
+
+    issue.remind_count = (issue.remind_count || 0) + 1;
+    issue.last_reminded_at = getTaiwanNowStr();
+    saveDataToStorage();
+    renderDashboard();
+    renderTable();
+    showToast(` 已觸發對醫師【${issue.doctor_name || '醫師'}】之逾期催辦提醒郵件`, "info");
+    autoSendEmail(issueId, 5);
+}
+
+async function batchRemindAllOverdueIssues() {
+    const overdueIssues = gIssues.filter(i => isIssueOverdue(i) && i.status !== "已完成");
+    if (overdueIssues.length === 0) {
+        showToast("目前沒有逾期待催辦之函詢案件！", "info");
+        return;
+    }
+
+    if (!confirm(`確定要對目前 ${overdueIssues.length} 筆逾期未回覆的醫師自動寄出「催辦提醒通知信」嗎？`)) {
+        return;
+    }
+
+    showToast(` 正在全自動催辦發送 ${overdueIssues.length} 封逾期提醒信...`, "info");
+    for (let i = 0; i < overdueIssues.length; i++) {
+        const issue = overdueIssues[i];
+        issue.remind_count = (issue.remind_count || 0) + 1;
+        issue.last_reminded_at = getTaiwanNowStr();
+        await autoSendEmail(issue.issue_id, 5);
+    }
+    saveDataToStorage();
+    renderDashboard();
+    renderTable();
+    showToast(` 已成功全自動完成 ${overdueIssues.length} 筆逾期案件催辦發信！`, "success");
 }
 
 async function previewEmailModal(issueId, type) {
@@ -34400,7 +34473,7 @@ function confirmReturnIssue() {
         issue.status = "退回補件";
         saveDataToStorage();
         closeModal("modalReturnReason");
-        previewEmailModal(issueId, 3);
+        autoSendEmail(issueId, 3);
     }
 }
 
@@ -34424,7 +34497,7 @@ function completeIssue(issueId) {
         saveDataToStorage();
         renderDashboard();
         renderTable();
-        previewEmailModal(issueId, 4);
+        autoSendEmail(issueId, 4);
     }
 }
 
@@ -34457,6 +34530,7 @@ function submitSimulatedDoctorReply() {
         renderDashboard();
         renderTable();
         showToast("模擬醫師回信成功！系統自動將狀態變更為「已回覆 (待審核)」", "success");
+        autoSendEmail(issueId, 2);
     }
 }
 
