@@ -31723,7 +31723,7 @@ function renderMainDocDetailPanel(doc) {
                     <div class="detail-label">函覆文號</div>
                     <div class="detail-val font-bold">${replyNo}</div>
                 </div>
-                <div class="detail-item">
+                <div class="detail-item" style="grid-column: span 2;">
                     <div class="detail-label">函覆日期</div>
                     <div class="detail-val font-bold">${replyDate}</div>
                 </div>

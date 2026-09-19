@@ -753,7 +753,7 @@ thead th[onclick]:hover { background: #e9f0fb !important; color: #1e40af !import
 
 .doc-detail-grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 10px 14px;
     font-size: 13px;
 }
