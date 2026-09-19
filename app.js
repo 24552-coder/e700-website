@@ -32195,7 +32195,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v62_sync_latest_536docs_651issues";
+    const DATA_VERSION = "20260919_v63_auto_purge_empty_receive_no";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
@@ -32225,10 +32225,12 @@ async function loadDataFromStorage() {
     let hasNewMerged = false;
     if (Array.isArray(DEFAULT_MAIN_DOCS)) {
         DEFAULT_MAIN_DOCS.forEach(defDoc => {
-            const exists = gMainDocs.some(d => d.doc_receive_no === defDoc.doc_receive_no);
-            if (!exists) {
-                gMainDocs.unshift(JSON.parse(JSON.stringify(defDoc)));
-                hasNewMerged = true;
+            if (defDoc && defDoc.doc_receive_no) {
+                const exists = gMainDocs.some(d => d.doc_receive_no === defDoc.doc_receive_no);
+                if (!exists) {
+                    gMainDocs.unshift(JSON.parse(JSON.stringify(defDoc)));
+                    hasNewMerged = true;
+                }
             }
         });
     }
@@ -32243,18 +32245,14 @@ async function loadDataFromStorage() {
         });
     }
 
-    if (hasNewMerged) {
-        saveDataToStorage();
-    }
-
-    // Auto-clean any corrupted ghost docs with blank receive_no AND blank chart_no
+    // Auto-clean any corrupted ghost docs with blank/empty receive_no
     const initialDocCount = gMainDocs.length;
     gMainDocs = gMainDocs.filter(d => {
         const recNo = (d.doc_receive_no || "").trim();
-        const chartNo = (d.doc_chart_no || "").trim();
-        return recNo.length > 0 || chartNo.length > 0;
+        return recNo.length > 0;
     });
-    if (gMainDocs.length < initialDocCount) {
+
+    if (hasNewMerged || gMainDocs.length < initialDocCount) {
         saveDataToStorage();
     }
 
