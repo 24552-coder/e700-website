@@ -30898,20 +30898,23 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 function setupStickyTableHeader() {
-    // th elements use CSS position:sticky top:74px directly
-    // This function just adds/removes a shadow class for visual polish
-    window.addEventListener('scroll', () => {
-        const thead = document.querySelector('.custom-table thead');
+    // 讓 table-responsive 的高度動態填滿視窗剩餘空間
+    // th { position: sticky; top: 0 } 就能自動釘在表格頂部
+    function updateTableHeight() {
         const wrapper = document.querySelector('.table-responsive');
-        if (!thead || !wrapper) return;
-        const wTop = wrapper.getBoundingClientRect().top;
-        if (wTop < 74) {
-            thead.classList.add('thead-stuck');
-        } else {
-            thead.classList.remove('thead-stuck');
-        }
-    }, { passive: true });
+        if (!wrapper) return;
+        const top = wrapper.getBoundingClientRect().top;
+        const newH = window.innerHeight - top - 20;
+        wrapper.style.maxHeight = Math.max(300, newH) + 'px';
+    }
+
+    updateTableHeight();
+    // 確保 CSS 繪製完成後再計算一次
+    setTimeout(updateTableHeight, 200);
+    window.addEventListener('resize', updateTableHeight, { passive: true });
+    document.addEventListener('alertChange', updateTableHeight);
 }
+
 
 
 let gAutoSyncInterval = null;

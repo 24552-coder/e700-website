@@ -242,8 +242,7 @@ textarea.form-control { resize: vertical; line-height: 1.6; }
 
 .table-responsive {
     width: 100%;
-    overflow-x: auto;
-    overflow-y: clip;
+    overflow: auto;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border);
     box-shadow: 0 1px 4px rgba(0,0,0,0.04);
@@ -261,10 +260,6 @@ textarea.form-control { resize: vertical; line-height: 1.6; }
     z-index: 20;
 }
 
-.custom-table thead.thead-stuck th {
-    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
-}
-
 .custom-table th {
     background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
     color: #334155;
@@ -278,7 +273,7 @@ textarea.form-control { resize: vertical; line-height: 1.6; }
     overflow: hidden;
     text-overflow: ellipsis;
     position: sticky;
-    top: 74px;
+    top: 0;
     z-index: 20;
 }
 
