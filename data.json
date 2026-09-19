@@ -1,6 +1,31 @@
 {
   "docs": [
     {
+      "doc_receive_no": "115-09-18醫療爭議",
+      "doc_draft_no": "115-09-18醫療爭議",
+      "doc_create_no": "115-09-18醫療爭議",
+      "doc_sender_org": "新北市衛生局",
+      "doc_receive_date": "1150918",
+      "doc_issue_date": "民國115年9月18日",
+      "doc_issue_no": "",
+      "doc_subject": "因新北市衛生局調閱病歷(08687762張鈞常)(醫療爭議)",
+      "doc_chart_no": "08687762",
+      "doc_patient_name": "張鈞常",
+      "doc_doctor_name": "管蒸元",
+      "doc_chart_status": "已調閱",
+      "doc_assignee": "錢佩妤",
+      "doc_fee": 0,
+      "doc_lbi_no": "",
+      "doc_labor_no": "",
+      "doc_reply_no": "",
+      "doc_reply_date": "",
+      "doc_remark": "醫療爭議緊急調閱",
+      "doc_status": "處理中",
+      "created_at": "2026-09-18 11:43",
+      "updated_at": "2026-09-18 11:53",
+      "doc_attachments": []
+    },
+    {
       "doc_receive_no": "1150009891",
       "doc_draft_no": "1150009891",
       "doc_create_no": "1150009891",
@@ -14887,6 +14912,29 @@
     }
   ],
   "issues": [
+    {
+      "issue_id": "INQ-1789702873700",
+      "doc_receive_no": "115-09-18醫療爭議",
+      "chart_no": "08687762",
+      "patient_name": "張鈞常",
+      "doctor_name": "管蒸元",
+      "doctor_email": "11029@s.tmu.edu.tw",
+      "cc_email1": "",
+      "cc_email2": "",
+      "creator_name": "錢佩妤",
+      "creator_ext": "2043",
+      "creator_email": "19020@s.tmu.edu.tw",
+      "due_date": "2026-09-21",
+      "question": "管蒸元醫師您好，因新北市衛生局調閱病歷(08687762張鈞常)(醫療爭議)。請協助確認病歷，是否可以釋出。因案件有時效性，如未收到回覆病歷將於9月21日釋出，感謝您。\n註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。",
+      "attachments": [],
+      "drive_link_override": "",
+      "status": "已回覆",
+      "doctor_reply": "急診部分可",
+      "replied_at": "2026-09-18 11:53",
+      "created_at": "2026-09-18 11:43",
+      "updated_at": "2026-09-18 11:53",
+      "remark": ""
+    },
     {
       "issue_id": "INQ-1140013453-1",
       "doc_receive_no": "1140013453",
