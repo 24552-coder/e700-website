@@ -1,26 +1,26 @@
-/**
- * 雙和醫院病歷組 - 公文 Google 郵件自動發送與進度追蹤系統
- * 【Google Apps Script Web App 與 Webhook 雙支援版 (包含 Gmail 醫師回信自動掃描引擎)】
+﻿/**
+ * ???恍?風蝯?- ?祆? Google ?萎辣?芸??潮??脣漲餈質馱蝟餌絞
+ * ?oogle Apps Script Web App ??Webhook ??渡? (? Gmail ?怠葦?縑?芸???撘?)??
  * 
- * 部署說明：
- * 1. 開啟 https://script.google.com 點擊「新增專案」
- * 2. 貼入本段程式碼全選覆蓋 (取代 程式碼.gs)
- * 3. 點擊右上角「部署」->「管理部署」或「新增部署」-> 選擇「網頁應用程式 (Web App)」
- *    - 執行身份：我 (Me)
- *    - 誰可以存取：任何人 (Anyone)
- * 4. 點擊「部署」後選擇「建立新版本 (New Version)」並點擊部署。
- * 5. 設定定時自動掃描（可選）：
- *    在左側點選「觸發條件 (時鐘圖示)」-> 新增觸發條件 -> 選擇「scanGmailReplies」->「時間驅動」-> 每 1 分鐘或每 5 分鐘執行一次。
+ * ?函蔡隤芣?嚗?
+ * 1. ?? https://script.google.com 暺??憓?獢?
+ * 2. 鞎澆?祆挾蝔?蝣澆?貉???(?誨 蝔?蝣?gs)
+ * 3. 暺??喃?閫蝵脯?>?恣?蝵脯??憓蝵脯?> ?豢??雯???函?撘?(Web App)??
+ *    - ?瑁?頨思遢嚗? (Me)
+ *    - 隤啣隞亙???隞颱?鈭?(Anyone)
+ * 4. 暺??蝵脯??豢??遣蝡? (New Version)?蒂暺??函蔡??
+ * 5. 閮剖?摰??芸???嚗?賂?嚗?
+ *    ?典椰?湧??詻孛?潭?隞?(???內)??> ?啣?閫貊璇辣 -> ?豢??canGmailReplies??>??????> 瘥?1 ???? 5 ???瑁?銝甈～?
  */
 
 function doGet(e) {
   try {
     return HtmlService.createTemplateFromFile('Index')
       .evaluate()
-      .setTitle('雙和醫院病歷組 - 公文 Google 郵件自動發送與進度追蹤系統')
+      .setTitle('???恍?風蝯?- ?祆? Google ?萎辣?芸??潮??脣漲餈質馱蝟餌絞')
       .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
   } catch (err) {
-    return ContentService.createTextOutput("雙和醫院病歷組 - Google 郵件自動發送與掃描 Webhook 服務運作中！");
+    return ContentService.createTextOutput("???恍?風蝯?- Google ?萎辣?芸??潮??? Webhook ????銝哨?");
   }
 }
 
@@ -29,7 +29,7 @@ function include(filename) {
 }
 
 /**
- * 核心 1: 接收 HTTP POST 請求 (支援發信 action: sendEmail & 掃描回信 action: scanReplies)
+ * ?詨? 1: ?交 HTTP POST 隢? (?舀?潔縑 action: sendEmail & ???縑 action: scanReplies)
  */
 function doPost(e) {
   try {
@@ -84,7 +84,7 @@ function doPost(e) {
         .setMimeType(ContentService.MimeType.JSON);
     }
 
-    // 預設動作：發送郵件
+    // ?身??嚗?隞?
     var to = data.to;
     var cc = data.cc || "";
     var subject = data.subject;
@@ -99,17 +99,18 @@ function doPost(e) {
     var options = {
       cc: cc,
       htmlBody: htmlBody,
-      name: "雙和醫院病歷組"
+      name: "???恍?風蝯?
     };
     if (blobs.length > 0) {
       options.attachments = blobs;
     }
 
+    grantDriveAccess(htmlBody, to, cc);
     GmailApp.sendEmail(to, subject, "", options);
 
     return ContentService.createTextOutput(JSON.stringify({
       status: "success",
-      message: "Google 郵件（包含實體附件與 Google Drive 雲端連結）已成功由背景寄出！",
+      message: "Google ?萎辣嚗??怠祕擃?隞嗉? Google Drive ?脩垢???嚗歇???梯??臬??綽?",
       driveLinks: driveLinks,
       timestamp: new Date().toISOString()
     })).setMimeType(ContentService.MimeType.JSON);
@@ -122,31 +123,31 @@ function doPost(e) {
 }
 
 /**
- * 核心 2: 自動掃描 Gmail 收件匣中的醫師回信
+ * ?詨? 2: ?芸??? Gmail ?嗡辣??葉?撣怠?靽?
  */
 function scanGmailReplies() {
   try {
     var userEmail = Session.getEffectiveUser().getEmail().toLowerCase();
-    var threads = GmailApp.search('subject:"【雙和醫院病歷組】" label:inbox is:unread');
+    var threads = GmailApp.search('subject:"????Ｙ?甇瑞??? label:inbox is:unread');
     var foundReplies = [];
 
     for (var i = 0; i < threads.length; i++) {
       var thread = threads[i];
       var messages = thread.getMessages();
 
-      if (messages.length > 1) { // 有對話紀錄
+      if (messages.length > 1) { // ??閰梁???
         var lastMsg = messages[messages.length - 1];
         var subject = lastMsg.getSubject();
         var fromStr = lastMsg.getFrom().toLowerCase();
 
-        // 1. 過濾非醫師回信：如果最後一封發言者是本系統或病歷組自己，代表是系統寄出或CC通知，忽略並標示已讀
+        // 1. ?蕪?撣怠?靽∴?憒??敺?撠閮??祉頂蝯望??風蝯撌梧?隞?”?舐頂蝯勗??箸?CC?嚗蕭?乩蒂璅內撌脰?
         if (fromStr.indexOf(userEmail) !== -1 || fromStr.indexOf("e700document") !== -1) {
           thread.markRead();
           continue;
         }
 
-        // 2. 過濾系統自動產生的結案與確認通知主旨
-        if (subject.indexOf("【已完成】") !== -1 || subject.indexOf("已確認完成") !== -1 || subject.indexOf("【結案】") !== -1) {
+        // 2. ?蕪蝟餌絞?芸??Ｙ???獢?蝣箄??銝餅
+        if (subject.indexOf("?歇摰???) !== -1 || subject.indexOf("撌脩Ⅱ隤???) !== -1 || subject.indexOf("??獢?) !== -1) {
           thread.markRead();
           continue;
         }
@@ -154,19 +155,19 @@ function scanGmailReplies() {
         var body = lastMsg.getPlainBody();
         var dateStr = Utilities.formatDate(lastMsg.getDate(), "GMT+8", "yyyy-MM-dd HH:mm");
 
-        // 提取單號與項次
-        var docMatch = subject.match(/單號[：:]\s*([0-9A-Za-z]+)/);
-        var issueMatch = subject.match(/項次[：:]\s*([0-9A-Za-z\-]+)/);
+        // ???株???甈?
+        var docMatch = subject.match(/?株?[嚗?]\s*([0-9A-Za-z]+)/);
+        var issueMatch = subject.match(/?活[嚗?]\s*([0-9A-Za-z\-]+)/);
 
         var docNo = docMatch ? docMatch[1] : "";
         var issueId = issueMatch ? issueMatch[1] : "";
 
-        // 清理醫師回信內文（徹底剝離引述頭部的 Sender 資訊）
+        // 皜??怠葦?縑?扳?嚗器摨??Ｗ?餈圈?函? Sender 鞈?嚗?
         var cleanReply = body;
-        cleanReply = cleanReply.split(/\r?\n\s*(?:雙和醫院病歷組|e700document@s\.tmu\.edu\.tw|[\w\.-]+@[\w\.-]+|<[^>]+>)?\s*於\s*\d{4}.*寫道[：:]/i)[0];
-        cleanReply = cleanReply.split(/雙和醫院病歷組/i)[0];
+        cleanReply = cleanReply.split(/\r?\n\s*(?:???恍?風蝯e700document@s\.tmu\.edu\.tw|[\w\.-]+@[\w\.-]+|<[^>]+>)?\s*?墦s*\d{4}.*撖恍?[嚗?]/i)[0];
+        cleanReply = cleanReply.split(/???恍?風蝯?i)[0];
         cleanReply = cleanReply.split(/e700document@s\.tmu\.edu\.tw/i)[0];
-        cleanReply = cleanReply.split(/----------\s*原始郵件\s*----------/i)[0];
+        cleanReply = cleanReply.split(/----------\s*???萎辣\s*----------/i)[0];
         cleanReply = cleanReply.split(/---------\s*Original Message\s*---------/i)[0];
         cleanReply = cleanReply.trim();
 
@@ -179,43 +180,43 @@ function scanGmailReplies() {
             repliedAt: dateStr
           });
 
-          // 自動發送「【已收到醫師回覆】」通知信給病歷組
+          // ?芸??潮歇?嗅?怠葦???靽∠策?風蝯?
           try {
-            var notifySubject = "【雙和醫院病歷組】已收到醫師回覆 單號：" + docNo + (issueId ? " (項次：" + issueId + ")" : "");
+            var notifySubject = "????Ｙ?甇瑞??歇?嗅?怠葦?? ?株?嚗? + docNo + (issueId ? " (?活嚗? + issueId + ")" : "");
             var notifyHtml = `
               <div style="font-family:Roboto, Arial, sans-serif;max-width:580px;margin:0 auto;border:1px solid #dadce0;border-radius:8px;overflow:hidden;background:#ffffff;box-shadow:0 1px 3px rgba(0,0,0,0.1);">
                   <div style="background:#0056D2;color:white;padding:18px 24px;text-align:center;font-size:17px;font-weight:bold;letter-spacing:0.5px;">
-                      [已確認] 醫師回覆已確認完成
+                      [撌脩Ⅱ隤 ?怠葦??撌脩Ⅱ隤???
                   </div>
                   <div style="padding:24px;line-height:1.7;color:#202124;font-size:13px;">
                       <div style="background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                          <strong style="color:#0056D2;font-size:14px;">[醫師回覆內容]</strong><br>
+                          <strong style="color:#0056D2;font-size:14px;">[?怠葦???批捆]</strong><br>
                           <div style="background:#ffffff;padding:10px 14px;border-radius:4px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;">
                               ${cleanReply}
                           </div>
                       </div>
-                      <div style="margin-bottom:10px;"><strong>案件單號：</strong> ${docNo}</div>
-                      ${issueId ? `<div style="margin-bottom:10px;"><strong>函詢項次：</strong> ${issueId}</div>` : ''}
-                      <div style="margin-bottom:10px;"><strong>回覆來源：</strong> ${lastMsg.getFrom()}</div>
+                      <div style="margin-bottom:10px;"><strong>獢辣?株?嚗?/strong> ${docNo}</div>
+                      ${issueId ? `<div style="margin-bottom:10px;"><strong>?質岷?活嚗?/strong> ${issueId}</div>` : ''}
+                      <div style="margin-bottom:10px;"><strong>??靘?嚗?/strong> ${lastMsg.getFrom()}</div>
                       <hr style="border:none;border-top:1px solid #f1f3f4;margin:16px 0;">
                       <div style="font-size:12px;color:#5f6368;">
-                          <strong>承辦人員：</strong>雙和醫院病歷組 自動對接系統
+                          <strong>?輯齒鈭箏嚗?/strong>???恍?風蝯??芸?撠蝟餌絞
                       </div>
                   </div>
               </div>
             `;
-            // 發送確認完成通知信給寄件者本人
+            // ?潮Ⅱ隤??靽∠策撖辣?鈭?
             GmailApp.sendEmail(Session.getEffectiveUser().getEmail(), notifySubject, "", {
               htmlBody: notifyHtml,
-              name: "雙和醫院病歷組"
+              name: "???恍?風蝯?
             });
           } catch(e) {}
         }
 
-        // 3. 處理完成後標示為已讀，防止無限重複掃描與觸發 Toast
+        // 3. ??摰?敺?蝷箇撌脰?嚗甇Ｙ??銴???閫貊 Toast
         thread.markRead();
       } else {
-        // 單封訊息如果是來自系統或自己的抄送，標示為已讀
+        // ?桀?閮憒??臭??芰頂蝯望??芸楛????璅內?箏歇霈
         var firstMsg = messages[0];
         var firstFrom = firstMsg.getFrom().toLowerCase();
         if (firstFrom.indexOf(userEmail) !== -1 || firstFrom.indexOf("e700document") !== -1) {
@@ -238,7 +239,7 @@ function scanGmailReplies() {
 }
 
 /**
- * 處理附件與 HTML 內之 Google Drive 連結替換
+ * ???辣??HTML ?找? Google Drive ????踵?
  */
 function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
   var blobs = [];
@@ -249,16 +250,16 @@ function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
       var att = attachmentsPayload[a];
 
       if (att.base64Data && !att.isDriveLink) {
-        // 小檔案 (<5MB)：100% 實體封裝為 Gmail Email 附件寄給醫師 (直接在 Email 開啟，不透過雲端)
+        // 撠?獢?(<5MB)嚗?00% 撖阡?撠???Gmail Email ?辣撖策?怠葦 (?湔??Email ??嚗????脩垢)
         try {
           var b64 = att.base64Data.indexOf(",") !== -1 ? att.base64Data.split(",")[1] : att.base64Data;
           var rawBytes = Utilities.base64Decode(b64);
-          var blob = Utilities.newBlob(rawBytes, att.mimeType || "application/octet-stream", att.fileName || "公文附件.pdf");
+          var blob = Utilities.newBlob(rawBytes, att.mimeType || "application/octet-stream", att.fileName || "?祆??辣.pdf");
           blobs.push(blob);
         } catch(errBlob) {}
       } else if (att.url && att.url.indexOf("http") === 0 && att.url.indexOf("drive-link/view") === -1) {
         driveLinks.push({
-          fileName: att.fileName || "公文大型附件",
+          fileName: att.fileName || "?祆?憭批??辣",
           url: att.url,
           size: att.size || 0
         });
@@ -269,15 +270,15 @@ function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
           var isDrive = att.isDriveLink || rawBytes.length > 5 * 1024 * 1024;
 
           if (isDrive) {
-            var folderName = "雙和醫院公文附件庫";
+            var folderName = "???恍?祆??辣摨?;
             var folders = DriveApp.getFoldersByName(folderName);
             var folder = folders.hasNext() ? folders.next() : DriveApp.createFolder(folderName);
-            var blob = Utilities.newBlob(rawBytes, att.mimeType || "application/octet-stream", att.fileName || "公文大型附件");
+            var blob = Utilities.newBlob(rawBytes, att.mimeType || "application/octet-stream", att.fileName || "?祆?憭批??辣");
             var driveFile = folder.createFile(blob);
             driveFile.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-            driveLinks.push({ fileName: att.fileName || "公文大型附件", url: driveFile.getUrl(), size: rawBytes.length });
+            driveLinks.push({ fileName: att.fileName || "?祆?憭批??辣", url: driveFile.getUrl(), size: rawBytes.length });
           } else {
-            var blob = Utilities.newBlob(rawBytes, att.mimeType || "application/octet-stream", att.fileName || "公文附件.pdf");
+            var blob = Utilities.newBlob(rawBytes, att.mimeType || "application/octet-stream", att.fileName || "?祆??辣.pdf");
             blobs.push(blob);
           }
         } catch(errBlob) {}
@@ -288,11 +289,11 @@ function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
   if (driveLinks.length > 0) {
     for (var d = 0; d < driveLinks.length; d++) {
       var linkUrl = driveLinks[d].url;
-      var linkBtnHtml = '<a href="' + linkUrl + '" target="_blank" style="display:inline-block;margin-top:8px;padding:10px 22px;background:#0056D2;color:#ffffff;text-decoration:none;border-radius:6px;font-size:14px;font-weight:bold;box-shadow:0 2px 4px rgba(0,0,0,0.15);">&#128229; 點此線上開啟 / 下載 Google Drive 雲端大檔</a>';
+      var linkBtnHtml = '<a href="' + linkUrl + '" target="_blank" style="display:inline-block;margin-top:8px;padding:10px 22px;background:#0056D2;color:#ffffff;text-decoration:none;border-radius:6px;font-size:14px;font-weight:bold;box-shadow:0 2px 4px rgba(0,0,0,0.15);">&#128229; 暺迨蝺??? / 銝? Google Drive ?脩垢憭扳?</a>';
 
-      if (htmlBody.indexOf("[待上傳 Google Drive]") !== -1) {
-        htmlBody = htmlBody.replace(/\[待上傳 Google Drive\]\s*\(將於發送郵件時自動上傳並寫入存取連結\)/g, linkBtnHtml);
-        htmlBody = htmlBody.replace(/\[待上傳 Google Drive\]/g, linkBtnHtml);
+      if (htmlBody.indexOf("[敺???Google Drive]") !== -1) {
+        htmlBody = htmlBody.replace(/\[敺???Google Drive\]\s*\(撠?潮隞嗆??芸?銝銝血神?亙????\)/g, linkBtnHtml);
+        htmlBody = htmlBody.replace(/\[敺???Google Drive\]/g, linkBtnHtml);
       }
       if (htmlBody.indexOf("https://drive.google.com/file/d/drive-link/view") !== -1) {
         htmlBody = htmlBody.replace(/https:\/\/drive\.google\.com\/file\/d\/drive-link\/view/g, linkUrl);
@@ -308,7 +309,7 @@ function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
 }
 
 /**
- * 核心 3: Google 內嵌 API 支援
+ * ?詨? 3: Google ?批? API ?舀
  */
 function sendEmailApi(payload) {
   try {
@@ -326,17 +327,18 @@ function sendEmailApi(payload) {
     var options = {
       cc: cc,
       htmlBody: htmlBody,
-      name: "雙和醫院病歷組"
+      name: "???恍?風蝯?
     };
     if (blobs.length > 0) {
       options.attachments = blobs;
     }
 
+    grantDriveAccess(htmlBody, to, cc);
     GmailApp.sendEmail(to, subject, "", options);
 
     return {
       status: "success",
-      message: "Google 郵件（包含實體附件與 Google Drive 雲端連結）已全自動成功寄出！",
+      message: "Google ?萎辣嚗??怠祕擃?隞嗉? Google Drive ?脩垢???嚗歇?刻?????綽?",
       driveLinks: driveLinks,
       timestamp: new Date().toISOString()
     };
@@ -349,14 +351,14 @@ function sendEmailApi(payload) {
 }
 
 /**
- * 核心 4: 大型附件自動上傳 Google Drive API
+ * ?詨? 4: 憭批??辣?芸?銝 Google Drive API
  */
 function uploadDriveApi(payload) {
   try {
     var fileName = payload.fileName;
     var base64Data = payload.base64Data;
     var mimeType = payload.mimeType || "application/pdf";
-    var folderName = "雙和醫院公文附件庫";
+    var folderName = "???恍?祆??辣摨?;
 
     var folders = DriveApp.getFoldersByName(folderName);
     var folder = folders.hasNext() ? folders.next() : DriveApp.createFolder(folderName);
@@ -379,7 +381,7 @@ function uploadDriveApi(payload) {
 }
 
 /**
- * 分區段上傳大型檔案至 Google Drive API (解決 GAS 10MB POST Payload 限制，快速文字拼合版)
+ * ??畾萎??喳之??獢 Google Drive API (閫?捱 GAS 10MB POST Payload ?嚗翰??摮??)
  */
 function handleChunkUpload(data) {
   try {
@@ -394,7 +396,7 @@ function handleChunkUpload(data) {
       chunkB64 = chunkB64.split(",")[1];
     }
 
-    var folderName = "雙和醫院公文附件庫";
+    var folderName = "???恍?祆??辣摨?;
     var folders = DriveApp.getFoldersByName(folderName);
     var folder = folders.hasNext() ? folders.next() : DriveApp.createFolder(folderName);
 
@@ -402,11 +404,11 @@ function handleChunkUpload(data) {
     var tempFolders = folder.getFoldersByName(tempFolderName);
     var tempFolder = tempFolders.hasNext() ? tempFolders.next() : folder.createFolder(tempFolderName);
 
-    // 儲存當前分片 Base64 文字至暫存檔
+    // ?脣??嗅??? Base64 ???單摮?
     var chunkBlob = Utilities.newBlob(chunkB64, "text/plain", "chk_" + chunkIndex + ".txt");
     tempFolder.createFile(chunkBlob);
 
-    // 若為最後一片，快速拼合 Base64 字串並進行一次性二元解碼
+    // ?亦?敺???敹恍??Base64 摮葡銝阡脰?銝甈⊥找??圾蝣?
     if (chunkIndex === totalChunks - 1) {
       var fullB64 = "";
       for (var i = 0; i < totalChunks; i++) {
@@ -421,7 +423,7 @@ function handleChunkUpload(data) {
       var finalFile = folder.createFile(finalBlob);
       finalFile.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
 
-      // 清理暫存分片檔案與資料夾
+      // 皜??怠???瑼????冗
       try {
         var filesToDel = tempFolder.getFiles();
         while (filesToDel.hasNext()) {
@@ -435,7 +437,7 @@ function handleChunkUpload(data) {
         isComplete: true,
         fileUrl: finalFile.getUrl(),
         fileName: fileName,
-        message: "大型檔案已成功分段上傳至 Google Drive！"
+        message: "憭批?瑼?撌脫???畾萎??唾 Google Drive嚗?
       };
     }
 
@@ -444,7 +446,7 @@ function handleChunkUpload(data) {
       isComplete: false,
       chunkIndex: chunkIndex,
       totalChunks: totalChunks,
-      message: "區段 " + (chunkIndex + 1) + "/" + totalChunks + " 已成功接收"
+      message: "?畾?" + (chunkIndex + 1) + "/" + totalChunks + " 撌脫????
     };
   } catch (err) {
     return {
@@ -455,15 +457,15 @@ function handleChunkUpload(data) {
 }
 
 /**
- * 建立 Google Drive Resumable Upload 快速二元通道 Session (經由 GAS Relay 通道)
+ * 撱箇? Google Drive Resumable Upload 敹恍??? Session (蝬 GAS Relay ??)
  */
 function initResumableUpload(data) {
   try {
-    var fileName = data.fileName || "公文大型附件";
+    var fileName = data.fileName || "?祆?憭批??辣";
     var mimeType = data.mimeType || "application/octet-stream";
     var fileSize = data.fileSize || 0;
 
-    var folderName = "雙和醫院公文附件庫";
+    var folderName = "???恍?祆??辣摨?;
     var folders = DriveApp.getFoldersByName(folderName);
     var folder = folders.hasNext() ? folders.next() : DriveApp.createFolder(folderName);
     var folderId = folder.getId();
@@ -492,7 +494,7 @@ function initResumableUpload(data) {
     var locationUrl = headers["Location"] || headers["location"] || headers["LOCATION"];
 
     if (!locationUrl) {
-      throw new Error("無法從 Google Drive API 取得可中斷續傳 URL (HTTP " + res.getResponseCode() + ")");
+      throw new Error("?⊥?敺?Google Drive API ???臭葉?瑞???URL (HTTP " + res.getResponseCode() + ")");
     }
 
     return {
@@ -513,7 +515,7 @@ function createResumableSession(data) {
 }
 
 /**
- * 將切片經由 GAS Relay 傳送至 Google Drive 續傳 Session (完全解決網頁跨域 CORS 阻擋問題)
+ * 撠?????GAS Relay ?喲 Google Drive 蝥 Session (摰閫?捱蝬脤?頝典? CORS ?餅???)
  */
 function uploadResumableChunk(data) {
   try {
@@ -523,7 +525,7 @@ function uploadResumableChunk(data) {
     var endByte = parseInt(data.endByte);
     var totalSize = parseInt(data.totalSize);
 
-    if (!uploadUrl) throw new Error("缺少 uploadUrl");
+    if (!uploadUrl) throw new Error("蝻箏? uploadUrl");
 
     if (chunkB64.indexOf(",") !== -1) {
       chunkB64 = chunkB64.split(",")[1];
@@ -574,7 +576,7 @@ function uploadResumableChunk(data) {
         code: 308
       };
     } else {
-      throw new Error("Drive Chunk 上傳失敗 (HTTP " + code + ": " + res.getContentText() + ")");
+      throw new Error("Drive Chunk 銝憭望? (HTTP " + code + ": " + res.getContentText() + ")");
     }
   } catch (err) {
     return {
@@ -585,7 +587,7 @@ function uploadResumableChunk(data) {
 }
 
 /**
- * 將上傳完成的 Google Drive 檔案設定為公開可存取連結
+ * 撠??喳??? Google Drive 瑼?閮剖??箏?摮????
  */
 function makeFilePublic(data) {
   try {
@@ -606,15 +608,15 @@ function makeFilePublic(data) {
 }
 
 /**
- * 核心 5: 全院多人雲端同步 API (saveCloudData & getCloudData)
+ * ?詨? 5: ?券憭犖?脩垢?郊 API (saveCloudData & getCloudData)
  */
 function saveCloudDataApi(data) {
   try {
-    var folderName = "雙和醫院公文附件庫";
+    var folderName = "???恍?祆??辣摨?;
     var folders = DriveApp.getFoldersByName(folderName);
     var folder = folders.hasNext() ? folders.next() : DriveApp.createFolder(folderName);
 
-    var files = folder.getFilesByName("雙和醫院公文系統最新資料庫.json");
+    var files = folder.getFilesByName("???恍?祆?蝟餌絞??啗??澈.json");
     var file;
     var jsonStr = JSON.stringify({
       docs: data.docs || [],
@@ -626,13 +628,13 @@ function saveCloudDataApi(data) {
       file = files.next();
       file.setContent(jsonStr);
     } else {
-      file = folder.createFile("雙和醫院公文系統最新資料庫.json", jsonStr, "application/json");
+      file = folder.createFile("???恍?祆?蝟餌絞??啗??澈.json", jsonStr, "application/json");
       file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
     }
 
     return {
       status: "success",
-      message: "全院最新公文與函詢資料已成功同步至 Google Drive 雲端！",
+      message: "?券??啣???質岷鞈?撌脫???甇亥 Google Drive ?脩垢嚗?,
       timestamp: new Date().toISOString()
     };
   } catch (err) {
@@ -642,11 +644,11 @@ function saveCloudDataApi(data) {
 
 function getCloudDataApi() {
   try {
-    var folderName = "雙和醫院公文附件庫";
+    var folderName = "???恍?祆??辣摨?;
     var folders = DriveApp.getFoldersByName(folderName);
     if (!folders.hasNext()) return { status: "empty", docs: [], issues: [] };
     var folder = folders.next();
-    var files = folder.getFilesByName("雙和醫院公文系統最新資料庫.json");
+    var files = folder.getFilesByName("???恍?祆?蝟餌絞??啗??澈.json");
     if (!files.hasNext()) return { status: "empty", docs: [], issues: [] };
     var file = files.next();
     var content = file.getBlob().getDataAsString("UTF-8");
@@ -660,5 +662,44 @@ function getCloudDataApi() {
   } catch (err) {
     return { status: "error", message: err.toString() };
   }
+}
+
+function grantDriveAccess(htmlBody, to, cc) {
+  try {
+    var emails = [];
+    var rawEmails = ((to || '') + ',' + (cc || '')).split(',');
+    for (var i = 0; i < rawEmails.length; i++) {
+      var em = rawEmails[i].trim();
+      if (em.indexOf('<') !== -1) {
+        var match = em.match(/<([^>]+)>/);
+        if (match) em = match[1];
+      }
+      if (em && em.indexOf('@') !== -1) {
+        emails.push(em.toLowerCase().trim());
+      }
+    }
+    
+    if (emails.length === 0) return;
+    
+    var fileIds = [];
+    var regex = /drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/g;
+    var match;
+    while ((match = regex.exec(htmlBody)) !== null) {
+      if (fileIds.indexOf(match[1]) === -1) {
+        fileIds.push(match[1]);
+      }
+    }
+    
+    for (var f = 0; f < fileIds.length; f++) {
+      try {
+        var file = DriveApp.getFileById(fileIds[f]);
+        for (var e = 0; e < emails.length; e++) {
+          try {
+            file.addViewer(emails[e]);
+          } catch(err1) {}
+        }
+      } catch(err2) {}
+    }
+  } catch (err3) {}
 }
 
