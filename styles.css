@@ -764,22 +764,32 @@ thead th[onclick]:hover { background: #e9f0fb !important; color: #1e40af !import
 
 /* ─── Detail Grid (Image 2 style) ────────── */
 .doc-detail-grid-wrapper {
-    padding: 12px 20px 14px;
+    padding: 16px 20px 20px;
     background: #ffffff;
     border-bottom: 1.5px solid #d1fae5;
 }
 
 .doc-detail-grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px 14px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px 16px;
     font-size: 13px;
 }
 
 .detail-item {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
+    background: #f8fafc;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.detail-item.span-full {
+    grid-column: 1 / -1;
+    background: #f1f5f9;
 }
 
 .detail-item.span-2 {
@@ -793,7 +803,7 @@ thead th[onclick]:hover { background: #e9f0fb !important; color: #1e40af !import
 }
 
 .detail-val {
-    font-size: 13px;
+    font-size: 13.5px;
     color: #0f172a;
     word-break: break-word;
 }
