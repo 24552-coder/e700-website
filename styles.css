@@ -258,7 +258,6 @@ textarea.form-control { resize: vertical; line-height: 1.6; }
 }
 
 .custom-table thead {
-    position: relative;
     z-index: 20;
 }
 
@@ -278,6 +277,9 @@ textarea.form-control { resize: vertical; line-height: 1.6; }
     letter-spacing: 0.2px;
     overflow: hidden;
     text-overflow: ellipsis;
+    position: sticky;
+    top: 74px;
+    z-index: 20;
 }
 
 .custom-table td {
