@@ -789,7 +789,6 @@ const DEFAULT_MAIN_DOCS = [
     "doc_attachments": []
 },
   {
-    "doc_receive_no": "08687762",
     "doc_draft_no": "115-09-18醫療爭議",
     "doc_create_no": "115-09-18醫療爭議",
     "doc_source_unit": "新北市衛生局",
@@ -798,7 +797,6 @@ const DEFAULT_MAIN_DOCS = [
     "doc_issue_no": "",
     "doc_subject": "115-09-18醫療爭議",
     "doc_chart_no": "08687762",
-    "doc_patient_name": "張鈞常",
     "doc_doctor_name": "",
     "doc_chart_status": "",
     "doc_assignee": "錢佩好",
@@ -15377,10 +15375,7 @@ const DEFAULT_MAIN_DOCS = [
 
 const DEFAULT_ISSUES = [
 {
-    "issue_id": "INQ-08687762-1",
-    "doc_receive_no": "08687762",
     "doc_chart_no": "08687762",
-    "doc_patient_name": "張鈞常",
     "doctor_name": "洪麗玉",
     "doctor_email": "10079@s.tmu.edu.tw",
     "creator_name": "錢佩好",
@@ -15397,10 +15392,7 @@ const DEFAULT_ISSUES = [
     "attachments": []
 },
 {
-    "issue_id": "INQ-08687762-2",
-    "doc_receive_no": "08687762",
     "doc_chart_no": "08687762",
-    "doc_patient_name": "張鈞常",
     "doctor_name": "劉永慶",
     "doctor_email": "08682@s.tmu.edu.tw",
     "creator_name": "錢佩好",
@@ -15417,10 +15409,7 @@ const DEFAULT_ISSUES = [
     "attachments": []
 },
 {
-    "issue_id": "INQ-08687762-3",
-    "doc_receive_no": "08687762",
     "doc_chart_no": "08687762",
-    "doc_patient_name": "張鈞常",
     "doctor_name": "陳明堯",
     "doctor_email": "08350@s.tmu.edu.tw",
     "creator_name": "錢佩好",
@@ -15437,10 +15426,7 @@ const DEFAULT_ISSUES = [
     "attachments": []
 },
 {
-    "issue_id": "INQ-08687762-4",
-    "doc_receive_no": "08687762",
     "doc_chart_no": "08687762",
-    "doc_patient_name": "張鈞常",
     "doctor_name": "高白風",
     "doctor_email": "08472@s.tmu.edu.tw",
     "creator_name": "錢佩好",
@@ -15457,10 +15443,7 @@ const DEFAULT_ISSUES = [
     "attachments": []
 },
 {
-    "issue_id": "INQ-08687762-5",
-    "doc_receive_no": "08687762",
     "doc_chart_no": "08687762",
-    "doc_patient_name": "張鈞常",
     "doctor_name": "團隊主治醫師E",
     "doctor_email": "11029@s.tmu.edu.tw",
     "creator_name": "錢佩好",
@@ -15477,10 +15460,7 @@ const DEFAULT_ISSUES = [
     "attachments": []
 },
 {
-    "issue_id": "INQ-08687762-6",
-    "doc_receive_no": "08687762",
     "doc_chart_no": "08687762",
-    "doc_patient_name": "張鈞常",
     "doctor_name": "團隊主治醫師F",
     "doctor_email": "12044@s.tmu.edu.tw",
     "creator_name": "錢佩好",
@@ -32292,7 +32272,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v57_sync_all_13_cases_and_progress_bar_fix";
+    const DATA_VERSION = "20260919_v58_cleanup_placeholder_data";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
