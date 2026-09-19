@@ -129,7 +129,14 @@ function doPost(e) {
 function scanGmailReplies() {
   try {
     var userEmail = Session.getEffectiveUser().getEmail().toLowerCase();
-    var threads = GmailApp.search('subject:"【雙和醫院病歷組】" label:inbox is:unread');
+    
+    var labelName = "病歷組AI_已處理";
+    var label = GmailApp.getUserLabelByName(labelName);
+    if (!label) {
+      label = GmailApp.createLabel(labelName);
+    }
+
+    var threads = GmailApp.search('subject:"【雙和醫院病歷組】" -label:病歷組AI_已處理', 0, 20);
     var foundReplies = [];
 
     for (var i = 0; i < threads.length; i++) {
@@ -141,16 +148,17 @@ function scanGmailReplies() {
         var subject = lastMsg.getSubject();
         var fromStr = lastMsg.getFrom().toLowerCase();
 
-        // 1. 過濾非醫師回信：如果最後一封發言者是本系統或病歷組自己，代表是系統寄出或CC通知，忽略並標示已讀
-        // 但為了允許管理者自己測試回信，我們檢查主旨是否有 Re: 或 回覆:
+        // 1. 過濾非醫師回信：如果最後一封發言者是本系統或病歷組自己，代表是系統寄出或CC通知，忽略並標示已處理
         var isReply = subject.toLowerCase().indexOf("re:") === 0 || subject.toLowerCase().indexOf("回覆:") === 0 || subject.toLowerCase().indexOf("答覆:") === 0;
         if (!isReply && (fromStr.indexOf(userEmail) !== -1 || fromStr.indexOf("e700document") !== -1)) {
+          thread.addLabel(label);
           thread.markRead();
           continue;
         }
 
         // 2. 過濾系統自動產生的結案與確認通知主旨
         if (subject.indexOf("【已完成】") !== -1 || subject.indexOf("已確認完成") !== -1 || subject.indexOf("【結案】") !== -1) {
+          thread.addLabel(label);
           thread.markRead();
           continue;
         }
@@ -167,7 +175,7 @@ function scanGmailReplies() {
 
         // 清理醫師回信內文（徹底剝離引述頭部的 Sender 資訊）
         var cleanReply = body;
-        cleanReply = cleanReply.split(/\r?\n\s*(?:雙和醫院病歷組|e700document@s\.tmu\.edu\.tw|[\w\.-]+@[\w\.-]+|<[^>]+>)?\s*於\s*\d{4}.*寫道[：:]/i)[0];
+        cleanReply = cleanReply.split(/\r?\n.*於\s*\d{4}.*寫道[：:]/i)[0]; // 支援不同格式的信箱組合
         cleanReply = cleanReply.split(/雙和醫院病歷組/i)[0];
         cleanReply = cleanReply.split(/e700document@s\.tmu\.edu\.tw/i)[0];
         cleanReply = cleanReply.split(/----------\s*原始郵件\s*----------/i)[0];
@@ -216,13 +224,15 @@ function scanGmailReplies() {
           } catch(e) {}
         }
 
-        // 3. 處理完成後標示為已讀，防止無限重複掃描與觸發 Toast
+        // 3. 處理完成後標示為 AI_PROCESSED 與已讀，防止無限重複掃描與觸發 Toast
+        thread.addLabel(label);
         thread.markRead();
       } else {
-        // 單封訊息如果是來自系統或自己的抄送，標示為已讀
+        // 單封訊息如果是來自系統或自己的抄送，標示為已讀與已處理
         var firstMsg = messages[0];
         var firstFrom = firstMsg.getFrom().toLowerCase();
         if (firstFrom.indexOf(userEmail) !== -1 || firstFrom.indexOf("e700document") !== -1) {
+          thread.addLabel(label);
           thread.markRead();
         }
       }
