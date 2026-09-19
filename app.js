@@ -32320,6 +32320,8 @@ async function saveIssue() {
 
     if (!doctorName || !doctorEmail || !question) {
         showToast("請填寫醫師姓名、Email 及問題內容", "danger");
+        const modalBody = document.querySelector("#modalIssue .modal-body");
+        if (modalBody) modalBody.scrollTop = 0;
         return;
     }
 

@@ -195,7 +195,7 @@
                 <button class="btn-close" onclick="closeModal('modalMainDoc')">&times;</button>
             </div>
             <div class="modal-body">
-                <form id="formMainDoc" onsubmit="event.preventDefault(); saveMainDoc();">
+                <form id="formMainDoc" onsubmit="event.preventDefault(); saveMainDoc();" novalidate>
                     <input type="hidden" id="mainDocId">
                     <div class="form-grid">
                         <div class="form-group required">
@@ -320,7 +320,7 @@
                 <button class="btn-close" onclick="closeModal('modalIssue')">&times;</button>
             </div>
             <div class="modal-body">
-                <form id="formIssue" onsubmit="event.preventDefault(); saveIssue();">
+                <form id="formIssue" onsubmit="event.preventDefault(); saveIssue();" novalidate>
                     <input type="hidden" id="issue_id">
                     <input type="hidden" id="issue_doc_no">
                     <div class="form-grid">
@@ -537,7 +537,7 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=20260919_v101" defer></script>
+    <script src="app.js?v=20260919_v102" defer></script>
 
     <!-- Modal: 週表篩選條件與匯出 -->
     <div class="modal-backdrop" id="modalWeeklyExport">
