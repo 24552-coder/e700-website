@@ -31030,7 +31030,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v77_fix_status_correction_merge";
+    const DATA_VERSION = "20260919_v78_jiean_equals_wancheng";
     const lastVersion = localStorage.getItem("APP_DATA_VERSION");
 
     // Force clear old cache if version changed to ensure calibrated dates and padded chart numbers take effect!
@@ -31325,7 +31325,7 @@ function renderDashboard() {
         const st = doc.doc_status;
         const docIssues = gIssues.filter(i => i.doc_receive_no === rec);
 
-        let isCompleted = (st === "已完成" || st === "不需醫師已完成");
+        let isCompleted = (st === "已完成" || st === "不需醫師已完成" || st === "結案");
         if (!isCompleted && docIssues.length > 0) {
             const doneCnt = docIssues.filter(i => i.status === "已完成").length;
             if (doneCnt === docIssues.length) isCompleted = true;
@@ -31422,9 +31422,9 @@ function renderTable() {
         if (gCurrentFilter.docStatus) {
             const fst = gCurrentFilter.docStatus;
             if (fst === "處理中") {
-                if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成") return false;
+                if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成" || doc.doc_status === "結案") return false;
             } else if (fst === "已完成") {
-                if (doc.doc_status !== "已完成" && doc.doc_status !== "不需醫師已完成") return false;
+                if (doc.doc_status !== "已完成" && doc.doc_status !== "不需醫師已完成" && doc.doc_status !== "結案") return false;
             } else if (fst === "不需醫師已完成") {
                 if (doc.doc_status !== "不需醫師已完成") return false;
             } else if (fst === "待回覆") {
@@ -31440,14 +31440,14 @@ function renderTable() {
         }
 
                 if (gCurrentFilter.cardType === "replied") {
-            if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成") return false;
+            if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成" || doc.doc_status === "結案") return false;
             const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
             if (!docIssues.some(i => i.status === "已回覆")) return false;
         } else if (gCurrentFilter.cardType === "completed") {
             const prog = calculateDocProgress(doc.doc_receive_no);
-            if (doc.doc_status !== "已完成" && doc.doc_status !== "不需醫師已完成" && !prog.isCompleted) return false;
+            if (doc.doc_status !== "已完成" && doc.doc_status !== "不需醫師已完成" && doc.doc_status !== "結案" && !prog.isCompleted) return false;
         } else if (gCurrentFilter.cardType === "processing") {
-            if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成") return false;
+            if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成" || doc.doc_status === "結案") return false;
             const prog = calculateDocProgress(doc.doc_receive_no);
             if (prog.isCompleted) return false;
             const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
@@ -31512,7 +31512,7 @@ function renderTable() {
         let statusBadgeHtml = `<span class="badge badge-warning"><i class="fa-solid fa-hourglass-half"></i> 處理中</span>`;
         if (doc.doc_status === "不需醫師已完成") {
             statusBadgeHtml = `<span class="badge badge-success" title="不需醫師即可結案"><i class="fa-solid fa-check-double"></i> 已完成</span>`;
-        } else if (doc.doc_status === "已完成" || progress.isCompleted) {
+        } else if (doc.doc_status === "已完成" || doc.doc_status === "結案" || progress.isCompleted) {
             statusBadgeHtml = `<span class="badge badge-success"><i class="fa-solid fa-check"></i> 已完成</span>`;
         } else if (docIssues.some(i => i.status === "已回覆")) {
             statusBadgeHtml = `<span class="badge badge-info" title="醫師已回覆，請審核"><i class="fa-solid fa-inbox"></i> 待審核</span>`;
