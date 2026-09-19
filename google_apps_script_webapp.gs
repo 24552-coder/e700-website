@@ -248,7 +248,15 @@ function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
     for (var a = 0; a < attachmentsPayload.length; a++) {
       var att = attachmentsPayload[a];
 
-      if (att.url && att.url.indexOf("http") === 0 && att.url.indexOf("drive-link/view") === -1) {
+      if (att.base64Data && !att.isDriveLink) {
+        // 小檔案 (<5MB)：100% 實體封裝為 Gmail Email 附件寄給醫師 (直接在 Email 開啟，不透過雲端)
+        try {
+          var b64 = att.base64Data.indexOf(",") !== -1 ? att.base64Data.split(",")[1] : att.base64Data;
+          var rawBytes = Utilities.base64Decode(b64);
+          var blob = Utilities.newBlob(rawBytes, att.mimeType || "application/octet-stream", att.fileName || "公文附件.pdf");
+          blobs.push(blob);
+        } catch(errBlob) {}
+      } else if (att.url && att.url.indexOf("http") === 0 && att.url.indexOf("drive-link/view") === -1) {
         driveLinks.push({
           fileName: att.fileName || "公文大型附件",
           url: att.url,

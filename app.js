@@ -32633,7 +32633,7 @@ function saveDataToStorage() {
 
 
 async function loadDataFromStorage() {
-    const DATA_VERSION = "20260919_v70_100pct_all_files_google_drive_auto_sync";
+    const DATA_VERSION = "20260919_v71_doctor_email_physical_attachment_and_platform_drive_sync";
     localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
 
     const docsJson = localStorage.getItem(STORAGE_MAIN_DOCS);
@@ -34325,26 +34325,36 @@ async function sendEmailViaGmailAPI() {
     if (issue && issue.attachments && issue.attachments.length > 0) {
         issue.attachments.forEach(att => {
             const cleanName = (att.name || "附件").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0].trim();
-            const isLarge = att.isDriveLink || (att.size && att.size > 5 * 1024 * 1024);
+            const sizeBytes = att.size || 0;
+            const sizeMb = sizeBytes / (1024 * 1024);
+            const isLarge = sizeMb > 5;
+            const b64 = getAttachmentBase64(att);
 
-            if (att.url && att.url.startsWith("http") && !att.url.includes("drive-link/view")) {
+            if (!isLarge && b64) {
+                // <5MB 一般小檔案：100% 作為 Email 實體附件隨信寄出給醫師 (直接在 Email 開啟，不透過雲端)
+                attachmentsToPass.push({
+                    fileName: cleanName,
+                    base64Data: b64,
+                    mimeType: att.mimeType || "application/octet-stream",
+                    isDriveLink: false,
+                    url: att.url || ""
+                });
+            } else if (att.url && att.url.startsWith("http") && !att.url.includes("drive-link/view")) {
+                // >5MB 大型檔案或已建置 Drive 連結：以 Google Drive 雲端連結傳送
                 attachmentsToPass.push({
                     fileName: cleanName,
                     isDriveLink: true,
                     url: att.url,
-                    size: att.size || 0
+                    size: sizeBytes
                 });
-            } else {
-                const b64 = getAttachmentBase64(att);
-                if (b64) {
-                    attachmentsToPass.push({
-                        fileName: cleanName,
-                        base64Data: b64,
-                        mimeType: att.mimeType || "application/octet-stream",
-                        isDriveLink: isLarge,
-                        url: att.url || ""
-                    });
-                }
+            } else if (b64) {
+                attachmentsToPass.push({
+                    fileName: cleanName,
+                    base64Data: b64,
+                    mimeType: att.mimeType || "application/octet-stream",
+                    isDriveLink: isLarge,
+                    url: att.url || ""
+                });
             }
         });
     }
