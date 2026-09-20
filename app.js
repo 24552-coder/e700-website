@@ -33088,12 +33088,12 @@ function syncGmailReplies(isSilent = false) {
         body: JSON.stringify({ action: "scanReplies" })
     })
     .then(res => res.json())
-    .then(data => {
+    .then(async data => {
         if (data.status === "success" && data.replies && data.replies.length > 0) {
             let newlyUpdatedCount = 0;
             const processedIssues = new Set();
 
-            data.replies.forEach(rep => {
+            for (const rep of data.replies) {
                 let targetIssue = null;
                 if (rep.issueId) {
                     targetIssue = gIssues.find(i => i.issue_id === rep.issueId && i.status !== "已完成");
@@ -33114,6 +33114,9 @@ function syncGmailReplies(isSilent = false) {
                             targetIssue.replied_at = rep.repliedAt || getTaiwanLocalDateTimeString();
                             newlyUpdatedCount++;
                             processedIssues.add(targetIssue.issue_id);
+                            
+                            // 自動寄出「已收到醫師回覆」的信件 (Type 2)
+                            await autoSendEmail(targetIssue.issue_id, 2);
                         }
                     }
                 } else if (!targetIssue && (rep.issueId || rep.docNo)) {
@@ -33140,9 +33143,12 @@ function syncGmailReplies(isSilent = false) {
                         gIssues.unshift(newIssue);
                         newlyUpdatedCount++;
                         processedIssues.add(newIssue.issue_id);
+                        
+                        // 自動寄出「已收到醫師回覆」的信件 (Type 2)
+                        await autoSendEmail(newIssue.issue_id, 2);
                     }
                 }
-            });
+            }
 
             if (newlyUpdatedCount > 0) {
                 saveDataToStorage();
