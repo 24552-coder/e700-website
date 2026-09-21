@@ -31218,7 +31218,7 @@ async function loadDataFromStorage() {
 
     gMainDocs.forEach(doc => {
         if (doc.doc_status === "已完成") {
-            const docIssues = gIssues.filter(i => i.doc_receive_no === doc.doc_receive_no);
+            const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === doc.doc_receive_no);
             if (docIssues.length > 0 && !docIssues.every(i => i.status === "已完成")) {
                 doc.doc_status = "處理中";
             }
@@ -31593,7 +31593,7 @@ function renderTable() {
     filteredDocs.forEach(doc => {
         const progress = calculateDocProgress(doc.doc_receive_no);
         const isExpanded = gExpandedRows.has(doc.doc_receive_no);
-        const docIssues = gIssues.filter(i => i.doc_receive_no === doc.doc_receive_no);
+        const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === doc.doc_receive_no);
 
         let statusBadgeHtml = `<span class="badge badge-warning"><i class="fa-solid fa-hourglass-half"></i> 處理中</span>`;
         if (doc.doc_status === "不需醫師已完成") {
@@ -31980,7 +31980,7 @@ function handleDirectIssueStatusChange(issueId, newStatus) {
     }
 
     // 重新評估公文主檔狀態
-    const docIssues = gIssues.filter(i => i.doc_receive_no === issue.doc_receive_no);
+    const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === issue.doc_receive_no);
     const mainDoc = gMainDocs.find(d => d.doc_receive_no === issue.doc_receive_no);
     if (mainDoc) {
         if (docIssues.length > 0 && docIssues.every(i => i.status === "已完成")) {
@@ -33252,7 +33252,7 @@ function completeIssue(issueId) {
     if (issue) {
         issue.status = "已完成";
 
-        const docIssues = gIssues.filter(i => i.doc_receive_no === issue.doc_receive_no);
+        const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === issue.doc_receive_no);
         const allCompleted = docIssues.every(i => i.status === "已完成");
         const mainDoc = gMainDocs.find(d => d.doc_receive_no === issue.doc_receive_no);
 
