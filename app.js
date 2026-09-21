@@ -33503,16 +33503,28 @@ function syncGmailReplies(isSilent = false) {
                 let targetIssue = null;
                 const repIssueId = rep.issueId ? String(rep.issueId).trim() : "";
                 const repDocNo = rep.docNo ? String(rep.docNo).trim() : "";
-                const repEmail = rep.senderEmail ? String(rep.senderEmail).toLowerCase().trim() : "";
+                const repEmail = (rep.doctorEmail || rep.senderEmail || "").toLowerCase().trim();
+                const repSubject = rep.subject ? String(rep.subject) : "";
 
+                // Tier 1: 項次 ID 比對
                 if (repIssueId) {
                     targetIssue = gIssues.find(i => String(i.issue_id).trim() === repIssueId && i.status !== "已完成");
                 }
+                // Tier 2: 收發文號比對
                 if (!targetIssue && repDocNo) {
                     targetIssue = gIssues.find(i => String(i.doc_receive_no).trim() === repDocNo && i.status !== "已完成" && i.status !== "已回覆" && !processedIssues.has(i.issue_id));
                 }
-                if (!targetIssue && repDocNo && repEmail) {
-                    targetIssue = gIssues.find(i => String(i.doc_receive_no).trim() === repDocNo && i.doctor_email && String(i.doctor_email).toLowerCase().trim() === repEmail && i.status !== "已完成" && !processedIssues.has(i.issue_id));
+                // Tier 3: 醫師 Email 備援比對 (專治醫師直接回覆 Google Drive 雲端共用通知信的情形)
+                if (!targetIssue && repEmail) {
+                    targetIssue = gIssues.find(i => i.doctor_email && String(i.doctor_email).toLowerCase().trim() === repEmail && i.status !== "已完成" && !processedIssues.has(i.issue_id));
+                }
+                // Tier 4: 病患姓名備援比對 (比對信件主旨是否含有病患姓名)
+                if (!targetIssue && repSubject) {
+                    targetIssue = gIssues.find(i => {
+                        if (i.status === "已完成" || processedIssues.has(i.issue_id)) return false;
+                        const pName = i.patient_name || i.doc_patient_name || "";
+                        return pName && pName.length >= 2 && repSubject.includes(pName);
+                    });
                 }
 
                 if (targetIssue && !processedIssues.has(targetIssue.issue_id)) {
