@@ -31296,17 +31296,17 @@ function loadDataFromStorage() {
         return recNo.length > 0;
     });
 
-    // Migration: fix typo "錢佩好" -> "錢佩妤"
+    // Migration: completely remove typo "錢佩好"
     let hasTypoFixed = false;
     gMainDocs.forEach(d => {
         if (d.doc_assignee && d.doc_assignee.includes("錢佩好")) {
-            d.doc_assignee = d.doc_assignee.replace(/錢佩好/g, "錢佩妤");
+            d.doc_assignee = d.doc_assignee.replace(/錢佩好/g, "");
             hasTypoFixed = true;
         }
     });
     gIssues.forEach(i => {
         if (i.creator_name && i.creator_name.includes("錢佩好")) {
-            i.creator_name = i.creator_name.replace(/錢佩好/g, "錢佩妤");
+            i.creator_name = i.creator_name.replace(/錢佩好/g, "");
             hasTypoFixed = true;
         }
     });
