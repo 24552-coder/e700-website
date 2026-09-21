@@ -31239,12 +31239,12 @@ function loadDataFromStorage() {
         try { gIssues = JSON.parse(issuesJson); } catch (e) { gIssues = null; }
     }
 
-    // Only if first time on this browser (docsJson/issuesJson is null) do we initialize default templates!
-    if (!Array.isArray(gMainDocs)) {
+    // If local storage is missing or empty array, auto-initialize from default 541 cases & 657 issues!
+    if (!Array.isArray(gMainDocs) || gMainDocs.length === 0) {
         gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
         saveDataToStorage();
     }
-    if (!Array.isArray(gIssues)) {
+    if (!Array.isArray(gIssues) || gIssues.length === 0) {
         gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
         saveDataToStorage();
     }
