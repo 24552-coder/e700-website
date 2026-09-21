@@ -31169,7 +31169,7 @@ function renderMainDocAttachmentsList(doc) {
 
 function removeMainDocAttachment(receiveNo, index) {
     if (!confirm("確定要刪除此公文附件嗎？(儲存後才會正式生效)")) return;
-    const doc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
+    const doc = gMainDocs.find(d => String(d.doc_receive_no) === String(receiveNo));
     if (doc && doc.doc_attachments) {
         doc.doc_attachments.splice(index, 1);
         renderMainDocAttachmentsList(doc);
@@ -31177,7 +31177,7 @@ function removeMainDocAttachment(receiveNo, index) {
 }
 
 function promptPasteMainDocDriveLink(receiveNo, index) {
-    const doc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
+    const doc = gMainDocs.find(d => String(d.doc_receive_no) === String(receiveNo));
     if (!doc || !doc.doc_attachments) return;
     const file = doc.doc_attachments[index];
     const url = prompt(`請貼上「${file.name}」的 Google Drive 共用連結：`, file.url || "");
@@ -31433,14 +31433,14 @@ function filterByCard(cardType) {
 // 4. Calculations
 // ----------------------------------------------------
 function calculateDocProgress(receiveNo) {
-    const mainDoc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
+    const mainDoc = gMainDocs.find(d => String(d.doc_receive_no) === String(receiveNo));
     if (!mainDoc) return { text: "-", isCompleted: false, count: 0, total: 0 };
 
     if (mainDoc.doc_status === "不需醫師已完成") {
         return { text: "不需醫師已完成", isCompleted: true, count: 0, total: 0 };
     }
 
-    const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
+    const docIssues = gIssues.filter(i => !i.deleted && String(i.doc_receive_no) === String(receiveNo));
     if (docIssues.length === 0) {
         if (mainDoc.doc_status === "已完成") return { text: "已完成結案", isCompleted: true, count: 0, total: 0 };
         return { text: "無函詢項目", isCompleted: false, count: 0, total: 0 };
@@ -31574,7 +31574,7 @@ function renderTable() {
 
         if (gCurrentFilter.search) {
             const q = gCurrentFilter.search;
-            const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
+            const docIssues = gIssues.filter(i => !i.deleted && String(i.doc_receive_no) === String(receiveNo));
             const doctorMatch = docIssues.some(i => (i.doctor_name || "").toLowerCase().includes(q) || (i.question || "").toLowerCase().includes(q));
 
             const mainMatch = receiveNo.toLowerCase().includes(q) ||
@@ -31604,13 +31604,13 @@ function renderTable() {
         }
 
         if (gCurrentFilter.issueStatus) {
-            const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
+            const docIssues = gIssues.filter(i => !i.deleted && String(i.doc_receive_no) === String(receiveNo));
             if (!docIssues.some(i => i.status === gCurrentFilter.issueStatus)) return false;
         }
 
                 if (gCurrentFilter.cardType === "replied") {
             if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成" || doc.doc_status === "結案") return false;
-            const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
+            const docIssues = gIssues.filter(i => !i.deleted && String(i.doc_receive_no) === String(receiveNo));
             if (!docIssues.some(i => i.status === "已回覆")) return false;
         } else if (gCurrentFilter.cardType === "completed") {
             const prog = calculateDocProgress(doc.doc_receive_no);
@@ -31619,10 +31619,10 @@ function renderTable() {
             if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成" || doc.doc_status === "結案") return false;
             const prog = calculateDocProgress(doc.doc_receive_no);
             if (prog.isCompleted) return false;
-            const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
+            const docIssues = gIssues.filter(i => !i.deleted && String(i.doc_receive_no) === String(receiveNo));
             if (docIssues.some(i => i.status === "已回覆")) return false;
         } else if (gCurrentFilter.cardType === "overdue") {
-            const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
+            const docIssues = gIssues.filter(i => !i.deleted && String(i.doc_receive_no) === String(receiveNo));
             if (!docIssues.some(i => isIssueOverdue(i))) return false;
         }
 
@@ -31925,18 +31925,18 @@ function renderMainDocDetailPanel(doc) {
 }
 
 function toggleExpandRow(receiveNo) {
-    if (gExpandedRows.has(receiveNo)) {
-        gExpandedRows.delete(receiveNo);
+    if (gExpandedRows.has(String(receiveNo))) {
+        gExpandedRows.delete(String(receiveNo));
     } else {
-        gExpandedRows.add(receiveNo);
-        gJustExpanded = receiveNo;
+        gExpandedRows.add(String(receiveNo));
+        gJustExpanded = String(receiveNo);
     }
     renderTable();
     gJustExpanded = null;
 }
 
 function renderNestedIssueTable(receiveNo) {
-    const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
+    const docIssues = gIssues.filter(i => !i.deleted && String(i.doc_receive_no) === String(receiveNo));
 
     if (docIssues.length === 0) {
         return `<div style="text-align:center;padding:28px 0;color:#94a3b8;">
@@ -32055,7 +32055,7 @@ function renderNestedIssueTable(receiveNo) {
 }
 
 function handleDirectIssueStatusChange(issueId, newStatus) {
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (!issue) return;
 
     if (newStatus === "退回補件") {
@@ -32104,7 +32104,7 @@ function openMainDocModal(receiveNo = null) {
     const btnDelete = document.getElementById("btnDeleteMainDoc");
     if (receiveNo) {
         if (btnDelete) btnDelete.style.display = "inline-block";
-        const doc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
+        const doc = gMainDocs.find(d => String(d.doc_receive_no) === String(receiveNo));
         if (doc) {
             document.getElementById("modalMainDocTitle").textContent = "編輯公文主檔";
             document.getElementById("mainDocId").value = doc.doc_receive_no;
@@ -32297,7 +32297,7 @@ async function saveMainDoc() {
 }
 
 function markMainDocCompleted(receiveNo) {
-    const doc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
+    const doc = gMainDocs.find(d => String(d.doc_receive_no) === String(receiveNo));
     if (!doc) return;
 
     doc.doc_status = "不需醫師已完成";
@@ -32332,38 +32332,55 @@ function onCaseworkerNameChange(name) {
 }
 
 function openIssueModalForDoc(receiveNo) {
-    const doc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
-    if (!doc) return;
+    try {
+        const doc = gMainDocs.find(d => String(d.doc_receive_no) === String(receiveNo));
+        if (!doc) {
+            console.error("Document not found for:", receiveNo);
+            showToast("找不到對應的公文主檔", "danger");
+            return;
+        }
 
-    const form = document.getElementById("formIssue");
-    form.reset();
+        const form = document.getElementById("formIssue");
+        if (form) form.reset();
 
-    const btnDelete = document.getElementById("btnDeleteIssue");
-    if (btnDelete) btnDelete.style.display = "none";
+        const btnDelete = document.getElementById("btnDeleteIssue");
+        if (btnDelete) btnDelete.style.display = "none";
 
-    document.getElementById("modalIssueTitle").textContent = `新增醫師函詢明細 (${receiveNo})`;
-    document.getElementById("issue_id").value = "";
-    document.getElementById("issue_doc_no").value = receiveNo;
-    document.getElementById("issue_receive_no_display").value = receiveNo;
-    document.getElementById("issue_chart_no").value = doc.doc_chart_no || "";
-    document.getElementById("issue_patient_name").value = doc.doc_patient_name || "";
+        if (document.getElementById("modalIssueTitle")) document.getElementById("modalIssueTitle").textContent = `新增醫師函詢明細 (${receiveNo})`;
+        if (document.getElementById("issue_id")) document.getElementById("issue_id").value = "";
+        if (document.getElementById("issue_doc_no")) document.getElementById("issue_doc_no").value = receiveNo;
+        if (document.getElementById("issue_receive_no_display")) document.getElementById("issue_receive_no_display").value = receiveNo;
+        if (document.getElementById("issue_chart_no")) document.getElementById("issue_chart_no").value = doc.doc_chart_no || "";
+        if (document.getElementById("issue_patient_name")) document.getElementById("issue_patient_name").value = doc.doc_patient_name || "";
 
-    // Auto-populate caseworker info directly from main document assignee
-    const rawAssignee = doc.doc_assignee ? doc.doc_assignee.split(" ")[0].trim() : "錢佩妤";
-    document.getElementById("issue_creator_name").value = rawAssignee;
-    const cwInfo = CASEWORKER_MAP[rawAssignee] || { ext: "2043", email: "19020@s.tmu.edu.tw" };
-    document.getElementById("issue_creator_ext").value = cwInfo.ext;
-    document.getElementById("issue_creator_email").value = cwInfo.email;
+        // Auto-populate caseworker info safely
+        const safeAssignee = doc.doc_assignee ? String(doc.doc_assignee).split(" ")[0].trim() : "錢佩妤";
+        if (document.getElementById("issue_creator_name")) document.getElementById("issue_creator_name").value = safeAssignee;
+        
+        const cwInfo = CASEWORKER_MAP[safeAssignee] || { ext: "2043", email: "19020@s.tmu.edu.tw" };
+        if (document.getElementById("issue_creator_ext")) document.getElementById("issue_creator_ext").value = cwInfo.ext;
+        if (document.getElementById("issue_creator_email")) document.getElementById("issue_creator_email").value = cwInfo.email;
 
-    if (document.getElementById("issue_status")) document.getElementById("issue_status").value = "待發送";
-    document.getElementById("issueFilesList").innerHTML = "";
-    if (document.getElementById("issue_drive_link_override")) document.getElementById("issue_drive_link_override").value = "";
+        // Reset other fields
+        if (document.getElementById("issue_doctor_name")) document.getElementById("issue_doctor_name").value = "";
+        if (document.getElementById("issue_doctor_email")) document.getElementById("issue_doctor_email").value = "";
+        if (document.getElementById("issue_cc_email1")) document.getElementById("issue_cc_email1").value = "";
+        if (document.getElementById("issue_cc_email2")) document.getElementById("issue_cc_email2").value = "";
+        if (document.getElementById("issue_question")) document.getElementById("issue_question").value = "";
+        
+        if (document.getElementById("issue_status")) document.getElementById("issue_status").value = "待發送";
+        if (document.getElementById("issueFilesList")) document.getElementById("issueFilesList").innerHTML = "";
+        if (document.getElementById("issue_drive_link_override")) document.getElementById("issue_drive_link_override").value = "";
 
-    openModal("modalIssue");
+        openModal("modalIssue");
+    } catch (err) {
+        console.error("Error in openIssueModalForDoc:", err);
+        showToast("發生錯誤：" + err.message, "danger");
+    }
 }
 
 function openIssueModalForEdit(issueId) {
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (!issue) return;
 
     const form = document.getElementById("formIssue");
@@ -32456,7 +32473,7 @@ function deleteMainDocFromModal() {
 
 function deleteIssue(issueId) {
     if (!issueId) return;
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     const doctorName = issue ? issue.doctor_name : "";
     if (confirm(`&#9888;&#65039; 確定要刪除至${doctorName}醫師的函詢嗎？操作無法復原！`)) {
         // SOFT DELETE
@@ -32531,7 +32548,7 @@ function renderIssueAttachmentsList(issue) {
 }
 
 function promptPasteDriveLink(issueId, index) {
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (!issue || !issue.attachments || !issue.attachments[index]) return;
 
     const file = issue.attachments[index];
@@ -32562,7 +32579,7 @@ function promptPasteDriveLink(issueId, index) {
 }
 
 function removeIssueAttachment(issueId, index) {
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (issue && issue.attachments) {
         const removed = issue.attachments.splice(index, 1)[0];
         if (removed) {
@@ -32722,7 +32739,7 @@ async function saveIssue() {
 
     saveDataToStorage();
     closeModal("modalIssue");
-    gExpandedRows.add(receiveNo);
+    gExpandedRows.add(String(receiveNo));
     renderDashboard();
     renderTable();
 
@@ -32929,7 +32946,7 @@ function getEmailTemplateHtml(type, issue) {
 }
 
 async function autoSendEmail(issueId, type, forceModalPreview = false) {
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (!issue) return;
 
     issue.sent_at = getTaiwanNowStr();
@@ -32961,7 +32978,7 @@ async function autoSendEmail(issueId, type, forceModalPreview = false) {
 }
 
 function remindIssue(issueId) {
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (!issue) return;
 
     issue.remind_count = (issue.remind_count || 0) + 1;
@@ -32998,7 +33015,7 @@ async function batchRemindAllOverdueIssues() {
 }
 
 async function previewEmailModal(issueId, type) {
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (!issue) return;
 
     issue.sent_at = getTaiwanNowStr();
@@ -33406,7 +33423,7 @@ function confirmReturnIssue() {
         return;
     }
 
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (issue) {
         issue.return_reason = reason;
         issue.status = "退回補件";
@@ -33417,7 +33434,7 @@ function confirmReturnIssue() {
 }
 
 function completeIssue(issueId) {
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (issue) {
         issue.status = "已完成";
 
@@ -33441,7 +33458,7 @@ function completeIssue(issueId) {
 }
 
 function openSimulateReplyModal(issueId) {
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (!issue) return;
 
     document.getElementById("simulate_issue_id").value = issueId;
@@ -33458,7 +33475,7 @@ function submitSimulatedDoctorReply() {
         return;
     }
 
-    const issue = gIssues.find(i => i.issue_id === issueId);
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (issue) {
         const nowStr = getTaiwanNowStr();
         issue.doctor_reply = replyContent;
