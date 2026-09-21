@@ -31586,6 +31586,7 @@ function setSortField(field) {
 function updateSortIcons() {
     const fields = [
         { field: "doc_receive_no", iconId: "iconSortReceiveNo" },
+        { field: "doc_receive_date", iconId: "iconSortReceiveDate" },
         { field: "created_at", iconId: "iconSortCreatedAt" }
     ];
     fields.forEach(({ field, iconId }) => {
@@ -31682,6 +31683,14 @@ function renderTable() {
         if (gSort.field === "doc_receive_no") {
             const res = String(va).localeCompare(String(vb), 'zh-TW', { numeric: true, sensitivity: 'base' });
             return gSort.dir === "asc" ? res : -res;
+        }
+
+        if (gSort.field === "doc_receive_date") {
+            const da = parseDocDateObj(va);
+            const db = parseDocDateObj(vb);
+            const ta = da ? da.getTime() : 0;
+            const tb = db ? db.getTime() : 0;
+            return gSort.dir === "asc" ? ta - tb : tb - ta;
         }
 
         if (gSort.field === "created_at") {

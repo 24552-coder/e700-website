@@ -163,7 +163,7 @@
                         <tr>
                             <th style="width:38px; text-align:center;"></th>
                             <th id="thSortReceiveNo" style="width:120px; cursor:pointer; user-select:none;" onclick="setSortField('doc_receive_no')" title="點擊依收發文號排序">收發文號 <i id="iconSortReceiveNo" class="fa-solid fa-sort" style="opacity:0.4;"></i></th>
-                            <th style="width:100px;">收發日期</th>
+                            <th id="thSortReceiveDate" style="width:100px; cursor:pointer; user-select:none;" onclick="setSortField('doc_receive_date')" title="點擊依收發日期排序">收發日期 <i id="iconSortReceiveDate" class="fa-solid fa-sort" style="opacity:0.4;"></i></th>
                             <th style="width:95px;">病歷號</th>
                             <th style="width:90px;">病患姓名</th>
                             <th style="width:110px;">來函單位</th>
@@ -534,7 +534,7 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=20260921_v11" defer></script>
+    <script src="app.js?v=20260921_v12" defer></script>
 
     <!-- Modal: 週表篩選條件與匯出 -->
     <div class="modal-backdrop" id="modalWeeklyExport">
