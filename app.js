@@ -32980,23 +32980,22 @@ function getEmailTemplateHtml(type, issue) {
             </div>
         `;
     } else if (type === 6) { 
-        headerBg = "#28A745";
-        headerTitle = "&#9989; 已收到您的回覆確認";
+        headerBg = "#0d6efd";
+        headerTitle = "&#9989; 醫師回覆已確認完成";
         bodyHtml = `
-            <div style="font-size:15px;line-height:1.6;color:#3c4043;margin-bottom:16px;">
-                醫師您好，<br><br>
-                系統已經成功收到您針對以下案件的回覆：<br>
-                <div style="background:#f8f9fa;padding:12px;border-radius:6px;border:1px solid #e9ecef;margin-top:8px;margin-bottom:8px;color:#202124;">
-                    <strong>「${formatMultilineHtml(issue.doctor_reply || "")}」</strong>
+            <div style="background:#f0f8ff;padding:12px;border-radius:6px;border:1px solid #b6d4fe;margin-bottom:16px;">
+                <div style="font-size:14px;color:#0d6efd;margin-bottom:8px;">&#128172; <strong>醫師回覆內容</strong></div>
+                <div style="font-size:15px;color:#202124;">
+                    ${formatMultilineHtml(issue.doctor_reply || "")}
                 </div>
-                感謝您的協助！病歷組承辦人將會接續處理。
             </div>
             <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
             <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
             <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
+            <div style="margin-bottom:10px;">&#128221; <strong>問題內容：</strong> ${formatMultilineHtml(issue.question || "無")}</div>
             <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
             <div style="font-size:12.5px;color:#5f6368;">
-                &#128100; <strong>提出人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
+                &#128100; <strong>承辦人員：</strong> ${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
             </div>
         `;
     }
