@@ -150,7 +150,7 @@ function scanGmailReplies() {
 
         // 2. 過濾非醫師回信：如果最後一封發言者是本系統或病歷組自己，代表是系統寄出或CC通知
         var isReply = subject.toLowerCase().indexOf("re:") === 0 || subject.toLowerCase().indexOf("回覆:") === 0 || subject.toLowerCase().indexOf("答覆:") === 0 || subject.toLowerCase().indexOf("回覆：") === 0;
-        if (!isReply && (fromStr.indexOf(userEmail) !== -1 || fromStr.indexOf("e700document") !== -1)) {
+        if (!isReply && false) {
           lastMsg.star(); // 把系統自己的信也打星，避免重複檢查
           continue;
         }
@@ -188,38 +188,6 @@ function scanGmailReplies() {
             replyContent: cleanReply,
             repliedAt: dateStr
           });
-
-          // 自動發送「【已收到醫師回覆】」通知信給病歷組
-          try {
-            var notifySubject = "【雙和醫院病歷組】已收到醫師回覆 單號：" + docNo + (issueId ? " (項次：" + issueId + ")" : "");
-            var notifyHtml = `
-              <div style="font-family:Roboto, Arial, sans-serif;max-width:580px;margin:0 auto;border:1px solid #dadce0;border-radius:8px;overflow:hidden;background:#ffffff;box-shadow:0 1px 3px rgba(0,0,0,0.1);">
-                  <div style="background:#0056D2;color:white;padding:18px 24px;text-align:center;font-size:17px;font-weight:bold;letter-spacing:0.5px;">
-                      [已確認] 醫師回覆已確認完成
-                  </div>
-                  <div style="padding:24px;line-height:1.7;color:#202124;font-size:13px;">
-                      <div style="background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                          <strong style="color:#0056D2;font-size:14px;">[醫師回覆內容]</strong><br>
-                          <div style="background:#ffffff;padding:10px 14px;border-radius:4px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;">
-                              ${cleanReply}
-                          </div>
-                      </div>
-                      <div style="margin-bottom:10px;"><strong>案件單號：</strong> ${docNo}</div>
-                      ${issueId ? `<div style="margin-bottom:10px;"><strong>函詢項次：</strong> ${issueId}</div>` : ''}
-                      <div style="margin-bottom:10px;"><strong>回覆來源：</strong> ${lastMsg.getFrom()}</div>
-                      <hr style="border:none;border-top:1px solid #f1f3f4;margin:16px 0;">
-                      <div style="font-size:12px;color:#5f6368;">
-                          <strong>承辦人員：</strong>雙和醫院病歷組 自動對接系統
-                      </div>
-                  </div>
-              </div>
-            `;
-            // 發送確認完成通知信給寄件者本人
-            GmailApp.sendEmail(Session.getEffectiveUser().getEmail(), notifySubject, "", {
-              htmlBody: notifyHtml,
-              name: "雙和醫院病歷組"
-            });
-          } catch(e) {}
         }
 
         // 處理完成後，將這封醫師的信件「打星號 (Star)」，這樣下次就不會重複處理這封信了！
