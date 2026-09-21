@@ -29,11 +29,37 @@ function formatSlashDate(inputStr) {
     // 7 digit Minguo 1150914
     const m7 = str.match(/^(11[0-9])(\d{2})(\d{2})$/);
     if (m7) {
-        const y = parseInt(m7[1], 10) + 1911;
-        return `${y}/${m7[2]}/${m7[3]}`;
+        let y = parseInt(m7[1], 10) + 1911;
+        const m = m7[2];
+        const d = m7[3];
+        return `${y}/${m}/${d}`;
     }
 
-    return str.replace(/-/g, '/');
+    // fallback: attempt Date parse
+    let dObj = new Date(str);
+    if (!isNaN(dObj.getTime())) {
+        const y = dObj.getFullYear();
+        const m = String(dObj.getMonth() + 1).padStart(2, '0');
+        const d = String(dObj.getDate()).padStart(2, '0');
+        return `${y}/${m}/${d}`;
+    }
+    return "-";
+}
+
+function formatMinguoDateFullChinese(inputStr) {
+    let slashDate = formatSlashDate(inputStr);
+    if (!slashDate || slashDate === "-") return "-";
+    let parts = slashDate.split("/");
+    if (parts.length === 3) {
+        let y = parseInt(parts[0], 10);
+        let m = parseInt(parts[1], 10);
+        let d = parseInt(parts[2], 10);
+        if (y > 1911) {
+            y -= 1911;
+        }
+        return `${y}年${m}月${d}日`;
+    }
+    return slashDate;
 }
 
 function getTaiwanLocalDateTimeString(d = new Date()) {
@@ -31270,7 +31296,22 @@ function loadDataFromStorage() {
         return recNo.length > 0;
     });
 
-    if (hasNewMerged || gMainDocs.length < initialDocCount) {
+    // Migration: fix typo "錢佩好" -> "錢佩妤"
+    let hasTypoFixed = false;
+    gMainDocs.forEach(d => {
+        if (d.doc_assignee && d.doc_assignee.includes("錢佩好")) {
+            d.doc_assignee = d.doc_assignee.replace(/錢佩好/g, "錢佩妤");
+            hasTypoFixed = true;
+        }
+    });
+    gIssues.forEach(i => {
+        if (i.creator_name && i.creator_name.includes("錢佩好")) {
+            i.creator_name = i.creator_name.replace(/錢佩好/g, "錢佩妤");
+            hasTypoFixed = true;
+        }
+    });
+
+    if (hasNewMerged || gMainDocs.length < initialDocCount || hasTypoFixed) {
         saveDataToStorage();
     }
 
@@ -31796,7 +31837,7 @@ function renderMainDocDetailPanel(doc) {
     }
     const draftNo = escapeHtml(draftNoStr || '-');
 
-    const issueDate = escapeHtml(formatSlashDate(doc.doc_issue_date) || '-');
+    const issueDate = escapeHtml(formatMinguoDateFullChinese(doc.doc_issue_date) || '-');
     const issueNo = escapeHtml(doc.doc_issue_no || '-');
     const assignee = escapeHtml(doc.doc_assignee || '-');
     const assigneeEmail = escapeHtml(doc.doc_assignee_email ? ` (${doc.doc_assignee_email})` : '');
