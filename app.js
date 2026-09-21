@@ -31014,7 +31014,8 @@ async function pushCloudData(isSilent = true) {
     } catch (e) {}
 }
 
-async function syncCloudData(isSilent = false) {\n    if (Date.now() - (window.gLastLocalSaveTime || 0) < 15000) return;
+async function syncCloudData(isSilent = false) {
+    if (Date.now() - (window.gLastLocalSaveTime || 0) < 15000) return;
     const savedGasUrl = getGasWebhookUrl();
     if (!savedGasUrl || !savedGasUrl.startsWith("http")) {
         if (!isSilent) showToast("&#9888;&#65039; 請先至【⚙️ 系統設定】設定 Google Apps Script Webhook 網址，即可啟用全院多人雲端同步！", "warning");
@@ -31094,6 +31095,7 @@ async function syncCloudData(isSilent = false) {\n    if (Date.now() - (window.g
 
 
 function saveDataToStorage() {
+    window.gLastLocalSaveTime = Date.now();
     try {
         localStorage.setItem(STORAGE_MAIN_DOCS, JSON.stringify(gMainDocs));
         localStorage.setItem(STORAGE_ISSUES, JSON.stringify(gIssues));
