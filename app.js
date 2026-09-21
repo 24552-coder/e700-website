@@ -31109,8 +31109,6 @@ function saveDataToStorage() {
     }
 }
 
-
-async 
 function renderMainDocAttachmentsList(doc) {
     const container = document.getElementById("mainDocFilesList");
     container.innerHTML = "";
