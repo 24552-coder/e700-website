@@ -42,6 +42,9 @@
             <button id="btnImportJson" class="btn btn-outline-secondary" onclick="triggerImportSystemDataJson()" title="匯入/校正完整備份檔 (JSON)">
                 <i class="fa-solid fa-file-import"></i> 匯入/校正備份
             </button>
+            <button id="btnResetDefault" class="btn btn-outline-warning" onclick="resetToDefaultData()" title="一鍵還原內建 541 筆公文與 657 筆函詢資料庫">
+                <i class="fa-solid fa-rotate-left"></i> 一鍵還原資料
+            </button>
             <input type="file" id="fileInputImportJson" accept=".json" style="display:none;" onchange="importSystemDataJson(this)">
             <button id="btnNewMainDoc" class="btn btn-primary">
                 <i class="fa-solid fa-plus"></i> 新增公文主檔
@@ -534,7 +537,7 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=20260921_v12" defer></script>
+    <script src="app.js?v=20260921_v9999" defer></script>
 
     <!-- Modal: 週表篩選條件與匯出 -->
     <div class="modal-backdrop" id="modalWeeklyExport">

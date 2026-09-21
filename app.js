@@ -31217,6 +31217,19 @@ function promptPasteMainDocDriveLink(receiveNo, index) {
 }
 
 
+window.resetToDefaultData = function() {
+    if (confirm("⚠️ 是否確認重設並強制恢復系統預設的 541 筆公文與 657 筆函詢資料？\n（此操作將全數拉回預設完整資料庫）")) {
+        localStorage.removeItem(STORAGE_MAIN_DOCS);
+        localStorage.removeItem(STORAGE_ISSUES);
+        gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
+        gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+        saveDataToStorage();
+        renderDashboard();
+        renderTable();
+        showToast(" 已全數恢復系統預設 541 筆公文主檔與 657 筆函詢資料！", "success");
+    }
+};
+
 function loadDataFromStorage() {
     const DATA_VERSION = "20260919_v78_jiean_equals_wancheng";
     const lastVersion = localStorage.getItem("APP_DATA_VERSION");
