@@ -31106,7 +31106,90 @@ function saveDataToStorage() {
 }
 
 
-async function loadDataFromStorage() {
+async 
+function renderMainDocAttachmentsList(doc) {
+    const container = document.getElementById("mainDocFilesList");
+    container.innerHTML = "";
+    if (doc.doc_attachments && doc.doc_attachments.length > 0) {
+        doc.doc_attachments.forEach((file, idx) => {
+            const b64 = getAttachmentBase64(file);
+            const hasBinary = !!b64;
+            const hasValidUrl = file.url && file.url.startsWith("http") && !file.url.includes("drive-link/view");
+            const isLarge = file.isDriveLink || (file.size && file.size > 5 * 1024 * 1024);
+
+            let statusTag = '<span class="badge badge-success"><i class="fa-solid fa-check"></i> 實體附件已夾帶就緒</span>';
+            let actionBtns = `
+                <button type="button" class="btn btn-sm btn-outline-danger" onclick="removeMainDocAttachment('${doc.doc_receive_no}', ${idx})" title="刪除此附件">
+                    <i class="fa-solid fa-trash"></i> 刪除
+                </button>
+            `;
+
+            if (hasValidUrl) {
+                statusTag = `<span class="badge badge-success"><i class="fa-solid fa-cloud-check"></i> Google Drive 雲端連結已就緒</span> <a href="${escapeHtml(file.url)}" target="_blank" style="margin-left:6px;color:#0056D2;font-weight:bold;text-decoration:underline;">開啟雲端連結</a>`;
+                actionBtns = `
+                    <button type="button" class="btn btn-sm btn-outline-primary" onclick="promptPasteMainDocDriveLink('${doc.doc_receive_no}', ${idx})" title="修改雲端連結">
+                        <i class="fa-solid fa-link"></i> 換連結
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-danger" onclick="removeMainDocAttachment('${doc.doc_receive_no}', ${idx})" title="刪除此附件">
+                        <i class="fa-solid fa-trash"></i> 刪除
+                    </button>
+                `;
+            } else if (isLarge) {
+                statusTag = '<span class="badge badge-warning"><i class="fa-solid fa-triangle-exclamation"></i> 檔案過大，尚未綁定雲端連結</span>';
+                actionBtns = `
+                    <button type="button" class="btn btn-sm btn-outline-primary" onclick="promptPasteMainDocDriveLink('${doc.doc_receive_no}', ${idx})" title="貼上外部 Google Drive 連結">
+                        <i class="fa-solid fa-link"></i> 貼上共用連結
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-danger" onclick="removeMainDocAttachment('${doc.doc_receive_no}', ${idx})">
+                        <i class="fa-solid fa-trash"></i> 刪除
+                    </button>
+                `;
+            }
+
+            const downloadBtn = hasBinary ? `
+                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="downloadLocalAttachment('${escapeHtml(file.name)}', '${file.mimeType}')" title="下載本機快取">
+                    <i class="fa-solid fa-download"></i>
+                </button>
+            ` : "";
+
+            const div = document.createElement("div");
+            div.className = "file-item existing-file";
+            div.style.marginTop = "6px";
+            div.innerHTML = `
+                <span><strong>${escapeHtml(file.name)}</strong> ${statusTag}</span>
+                <span class="file-actions">
+                    ${downloadBtn}
+                    ${actionBtns}
+                </span>
+            `;
+            container.appendChild(div);
+        });
+    }
+}
+
+function removeMainDocAttachment(receiveNo, index) {
+    if (!confirm("確定要刪除此公文附件嗎？(儲存後才會正式生效)")) return;
+    const doc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
+    if (doc && doc.doc_attachments) {
+        doc.doc_attachments.splice(index, 1);
+        renderMainDocAttachmentsList(doc);
+    }
+}
+
+function promptPasteMainDocDriveLink(receiveNo, index) {
+    const doc = gMainDocs.find(d => d.doc_receive_no === receiveNo);
+    if (!doc || !doc.doc_attachments) return;
+    const file = doc.doc_attachments[index];
+    const url = prompt(`請貼上「${file.name}」的 Google Drive 共用連結：`, file.url || "");
+    if (url !== null) {
+        file.url = url.trim();
+        file.isDriveLink = true;
+        renderMainDocAttachmentsList(doc);
+    }
+}
+
+
+function loadDataFromStorage() {
     const DATA_VERSION = "20260919_v78_jiean_equals_wancheng";
     const lastVersion = localStorage.getItem("APP_DATA_VERSION");
 
@@ -32029,6 +32112,7 @@ function openMainDocModal(receiveNo = null) {
             document.getElementById("doc_reply_date").value = doc.doc_reply_date || "";
             document.getElementById("doc_remark").value = doc.doc_remark || "";
             document.getElementById("doc_status").value = doc.doc_status || "處理中";
+            renderMainDocAttachmentsList(doc);
         }
     } else {
         if (btnDelete) btnDelete.style.display = "none";
@@ -32073,17 +32157,88 @@ window.downloadLocalAttachment = function(name, mimeType) {
     document.body.removeChild(a);
 };
 
-function saveMainDoc() {
+async function saveMainDoc() {
     const receiveNo = document.getElementById("doc_receive_no").value.trim();
     if (!receiveNo) { showToast("請輸入收發文號", "danger"); return; }
 
     const existingIndex = gMainDocs.findIndex(d => d.doc_receive_no === receiveNo);
+    let existingAttachments = [];
+    if (existingIndex >= 0) {
+        existingAttachments = gMainDocs[existingIndex].doc_attachments || [];
+    }
     const nowStr = getTaiwanLocalDateTimeString();
 
     const createNo = document.getElementById("doc_create_no").value.trim();
     const senderOrg = document.getElementById("doc_sender_org").value.trim();
     const laborNo = document.getElementById("doc_labor_no").value.trim();
     const chartStatus = document.getElementById("doc_chart_status").value.trim();
+
+    // Process new files cleanly with base64 reading, chunked Drive upload if large, and memory caching
+    const fileInput = document.getElementById("doc_file_input");
+    const savedGasUrl = getGasWebhookUrl();
+    let newFiles = [];
+
+    if (fileInput && fileInput.files.length > 0) {
+        for (let i = 0; i < fileInput.files.length; i++) {
+            const f = fileInput.files[i];
+            const attId = `ATT-${Date.now()}-${i}-${Math.random().toString(36).substring(2, 6)}`;
+            const cleanName = f.name.replace(/\s*\([^)]*\)/g, "").split(" (")[0];
+
+            let driveUrl = f._driveUrl || "";
+
+            // 若背景任務尚在執行中，等待其上傳完成以取得 Drive URL
+            if (!driveUrl && f._uploadPromise) {
+                try {
+                    driveUrl = await f._uploadPromise;
+                } catch (e) {}
+            }
+
+            if (!driveUrl && savedGasUrl && savedGasUrl.startsWith("http")) {
+                showToast(`⚡ 正將附件「${cleanName}」直傳 Google Drive 集中備份庫...`, "info");
+                try {
+                    driveUrl = await uploadLargeFileInChunks(f, savedGasUrl);
+                } catch (errDrive) {
+                    console.error("Gas Drive upload failed:", errDrive);
+                }
+            }
+
+            let b64 = await new Promise((resolve) => {
+                const reader = new FileReader();
+                reader.onload = (e) => resolve(e.target.result);
+                reader.onerror = () => resolve("");
+                reader.readAsDataURL(f);
+            });
+
+            const displayName = cleanName;
+
+            if (b64) {
+                gAttachmentBinaryCache[attId] = b64;
+                gAttachmentBinaryCache[cleanName] = b64;
+                gAttachmentBinaryCache[displayName] = b64;
+            }
+
+            newFiles.push({
+                att_id: attId,
+                name: displayName,
+                size: f.size,
+                mimeType: f.type || "application/octet-stream",
+                isDriveLink: true,
+                url: driveUrl || "",
+                base64Data: b64
+            });
+        }
+    }
+
+    const attMap = new Map();
+    [...existingAttachments, ...newFiles].forEach(att => {
+        const clean = (att.name || "").replace(/\s*\([^)]*\)/g, "").split(" (")[0].trim();
+        if (clean) {
+            if (!attMap.has(clean) || att.url) {
+                attMap.set(clean, att);
+            }
+        }
+    });
+    const finalAttachments = Array.from(attMap.values());
 
     const docData = {
         doc_receive_no: receiveNo,
@@ -32107,6 +32262,7 @@ function saveMainDoc() {
         doc_reply_date: document.getElementById("doc_reply_date").value,
         doc_remark: document.getElementById("doc_remark").value.trim(),
         doc_status: document.getElementById("doc_status").value,
+        doc_attachments: finalAttachments,
         updated_at: nowStr
     };
 
@@ -32115,7 +32271,6 @@ function saveMainDoc() {
         showToast("公文主檔更新成功", "success");
     } else {
         docData.created_at = nowStr;
-        docData.doc_attachments = [];
         gMainDocs.unshift(docData);
         showToast("公文主檔建立成功", "success");
     }
