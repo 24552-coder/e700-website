@@ -30951,44 +30951,48 @@ async function autoCheckAndRemindOverdue() {
             const issue = overdueIssues[i];
             issue.remind_count = (issue.remind_count || 0) + 1;
             issue.last_reminded_at = getTaiwanNowStr();
-            await autoSendEmail(issue.issue_id, 5); 
         }
         saveDataToStorage();
-        pushCloudData(true);
+        await pushCloudData(true);
         renderTable();
         renderDashboard();
+
+        for (let i = 0; i < overdueIssues.length; i++) {
+            await autoSendEmail(overdueIssues[i].issue_id, 5); 
+        }
     }
 }
 
 let gAutoSyncInterval = null;
+let gIsSyncing = false;
 function startAutoSyncTimer() {
-    // 100% 極速全自動背景靜默同步 (每 3 秒自動連線同步同仁雲端最新公文與 Gmail 醫師回信)
+    // 100% 極速全自動背景靜默同步 (每 5 秒自動連線同步同仁雲端最新公文與 Gmail 醫師回信)
     if (gAutoSyncInterval) clearInterval(gAutoSyncInterval);
 
-    // 啟動 1 秒內立即進行初次靜默雲端連線校正
-    setTimeout(() => {
-        syncCloudData(true);
-        syncGmailReplies(true);
-        autoCheckAndRemindOverdue();
-    }, 1000);
+    const doSync = async () => {
+        if (gIsSyncing) return;
+        gIsSyncing = true;
+        try {
+            await syncCloudData(true);
+            await syncGmailReplies(true);
+            await autoCheckAndRemindOverdue();
+        } catch (err) {
+            console.error("Auto sync error:", err);
+        } finally {
+            gIsSyncing = false;
+        }
+    };
 
-    gAutoSyncInterval = setInterval(() => {
-        syncCloudData(true);
-        syncGmailReplies(true);
-        autoCheckAndRemindOverdue();
-    }, 5000);
+    // 啟動 1 秒內立即進行初次靜默雲端連線校正
+    setTimeout(doSync, 1000);
+    gAutoSyncInterval = setInterval(doSync, 5000);
 
     // 當使用者分頁切換回本系統，或視窗獲得焦點時，立即全自動靜默連線校正
-    window.addEventListener("focus", () => {
-        syncCloudData(true);
-        syncGmailReplies(true);
-        autoCheckAndRemindOverdue();
-    });
+    window.addEventListener("focus", doSync);
 
     document.addEventListener("visibilitychange", () => {
         if (!document.hidden) {
-            syncCloudData(true);
-            syncGmailReplies(true);
+            doSync();
         }
     });
 }
@@ -31823,12 +31827,10 @@ function renderMainDocDetailPanel(doc) {
             
             if (isValidUrl) {
                 return `<a href="${escapeHtml(a.url)}" target="_blank" style="color:#0056D2;font-weight:bold;text-decoration:underline;" title="開啟 Google Drive 連結">${safeName}</a>`;
-            } else if (b64) {
+            } else {
                 const safeMime = escapeHtml(a.mimeType || 'application/octet-stream');
-                // Use a proper string replacement without template literals inside string literals that might cause parse issues in html
                 return `<a href="javascript:void(0)" onclick="downloadLocalAttachment('${safeName.replace(/'/g, "\'")}', '${safeMime}')" style="color:#0056D2;font-weight:bold;text-decoration:underline;" title="下載本機附件">${safeName}</a>`;
             }
-            return safeName;
         }).join('<br>');
     } else if (doc.doc_att_count > 0) {
         attText = `${doc.doc_att_count} 個附件`;
@@ -32237,8 +32239,7 @@ async function saveMainDoc() {
                 size: f.size,
                 mimeType: f.type || "application/octet-stream",
                 isDriveLink: true,
-                url: driveUrl || "",
-                base64Data: b64
+                url: driveUrl || ""
             });
         }
     }
@@ -32311,7 +32312,7 @@ function markMainDocCompleted(receiveNo) {
 // ----------------------------------------------------
 // 7. Doctor Inquiry CRUD & Direct Email Engine
 // ----------------------------------------------------
-const CASEWORKER_MAP = {
+var CASEWORKER_MAP = {
     "陽書湘": { ext: "2037", email: "14301@s.tmu.edu.tw" },
     "錢佩妤": { ext: "2043", email: "19020@s.tmu.edu.tw" },
     "何秀英": { ext: "2043", email: "12254@s.tmu.edu.tw" },
@@ -32675,8 +32676,7 @@ async function saveIssue() {
                 size: f.size,
                 mimeType: f.type || "application/octet-stream",
                 isDriveLink: true,
-                url: driveUrl || "",
-                base64Data: b64
+                url: driveUrl || ""
             });
         }
     }
