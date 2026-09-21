@@ -33448,7 +33448,8 @@ function syncGmailReplies(isSilent = false) {
         body: JSON.stringify({ action: "scanReplies" })
     })
     .then(res => res.json())
-    .then(async data => {\n        console.log("GAS Reply Data:", data);
+    .then(async data => {
+        console.log("GAS Reply Data:", data);
         if (data.status === "success" && data.replies && data.replies.length > 0) {
             let newlyUpdatedCount = 0;
             const processedIssues = new Set();
