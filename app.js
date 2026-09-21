@@ -31014,10 +31014,10 @@ async function pushCloudData(isSilent = true) {
     } catch (e) {}
 }
 
-async function syncCloudData(isSilent = false) {
+async function syncCloudData(isSilent = false) {\n    if (Date.now() - (window.gLastLocalSaveTime || 0) < 15000) return;
     const savedGasUrl = getGasWebhookUrl();
     if (!savedGasUrl || !savedGasUrl.startsWith("http")) {
-        if (!isSilent) showToast("⚠️ 請先至【⚙️ 系統設定】設定 Google Apps Script Webhook 網址，即可啟用全院多人雲端同步！", "warning");
+        if (!isSilent) showToast("&#9888;&#65039; 請先至【⚙️ 系統設定】設定 Google Apps Script Webhook 網址，即可啟用全院多人雲端同步！", "warning");
         return;
     }
 
@@ -32240,7 +32240,7 @@ function deleteMainDoc(receiveNo, createdAt) {
     }
 
     if (docIndex === -1) {
-        showToast("⚠️ 找不到欲刪除的公文案件！", "warning");
+        showToast("&#9888;&#65039; 找不到欲刪除的公文案件！", "warning");
         return;
     }
 
@@ -32248,7 +32248,7 @@ function deleteMainDoc(receiveNo, createdAt) {
     const docTitle = (docToDelete.doc_receive_no || "").trim() || 
                      (docToDelete.doc_chart_no ? `病歷號 ${docToDelete.doc_chart_no}` : "空白/無文號案件");
 
-    if (confirm(`⚠️ 確定要刪除【${docTitle}】這筆公文主檔及其所有醫師函詢明細嗎？此動作無法復原！`)) {
+    if (confirm(`&#9888;&#65039; 確定要刪除【${docTitle}】這筆公文主檔及其所有醫師函詢明細嗎？此動作無法復原！`)) {
         const deletedRecNo = (docToDelete.doc_receive_no || "").trim();
         const deletedCreatedAt = (docToDelete.created_at || "").trim();
 
@@ -32280,7 +32280,7 @@ function deleteIssue(issueId) {
     if (!issueId) return;
     const issue = gIssues.find(i => i.issue_id === issueId);
     const doctorName = issue ? issue.doctor_name : "";
-    if (confirm(`⚠️ 確定要刪除醫師【${doctorName}】的這筆函詢明細嗎？此動作無法復原！`)) {
+    if (confirm(`&#9888;&#65039; 確定要刪除醫師【${doctorName}】的這筆函詢明細嗎？此動作無法復原！`)) {
         gIssues = gIssues.filter(i => i.issue_id !== issueId);
         saveDataToStorage();
         closeModal("modalIssue");
@@ -32633,10 +32633,10 @@ function getEmailTemplateHtml(type, issue) {
         headerBg = "#0056D2";
         headerTitle = "&#128276; 您有一筆待回覆案件";
         bodyHtml = `
-            <div style="margin-bottom:10px;">📌 <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
-            <div style="margin-bottom:10px;">📝 <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
-            <div style="margin-bottom:10px;">👤 <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
-            <div style="margin-bottom:14px;">📝 <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
+            <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
+            <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+            <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
+            <div style="margin-bottom:14px;">&#128221; <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
             ${attachmentHtml}
             <div style="background:#E6F4EA;border:1px solid #CEEAD6;color:#137333;padding:16px 20px;border-radius:8px;margin-top:20px;margin-bottom:16px;text-align:center;">
                 <strong style="font-size:15px;color:#137333;">✉️ 請直接點擊「回覆」此封 Email 即可回答</strong><br>
@@ -32644,7 +32644,7 @@ function getEmailTemplateHtml(type, issue) {
             </div>
             <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
             <div style="font-size:12.5px;color:#5f6368;display:flex;justify-content:space-between;">
-                <div>👤 <strong>提出人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})</div>
+                <div>&#128100; <strong>提出人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})</div>
                 <div>&#9200; <strong>截止日：</strong>${escapeHtml(dueDateStr)}</div>
             </div>
         `;
@@ -32656,14 +32656,14 @@ function getEmailTemplateHtml(type, issue) {
                 <strong style="color:#0056D2;font-size:14px;">&#128172; 醫師回覆內容</strong><br>
                 <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '無')}</div>
             </div>
-            <div style="margin-bottom:10px;">📌 <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
-            <div style="margin-bottom:10px;">📝 <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
-            <div style="margin-bottom:10px;">👤 <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
-            <div style="margin-bottom:14px;">📝 <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
+            <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
+            <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+            <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
+            <div style="margin-bottom:14px;">&#128221; <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
             ${attachmentHtml}
             <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
             <div style="font-size:12.5px;color:#5f6368;">
-                👤 <strong>提出人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
+                &#128100; <strong>提出人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
             </div>
         `;
     } else if (type === 3) { 
@@ -32705,28 +32705,28 @@ function getEmailTemplateHtml(type, issue) {
         headerTitle = "&#127881; 案件已結案完成通知";
         bodyHtml = `
             <div style="background:#E6F4EA;border:1px solid #CEEAD6;color:#137333;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                <strong style="color:#137333;font-size:14px;">📝 最終彙整意見</strong><br>
+                <strong style="color:#137333;font-size:14px;">&#128221; 最終彙整意見</strong><br>
                 <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '結案')}</div>
             </div>
-            <div style="margin-bottom:10px;">📌 <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
-            <div style="margin-bottom:10px;">📝 <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
-            <div style="margin-bottom:10px;">👤 <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
-            <div style="margin-bottom:14px;">📝 <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
+            <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
+            <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+            <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
+            <div style="margin-bottom:14px;">&#128221; <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
             ${attachmentHtml}
             <div style="margin-top:16px;margin-bottom:10px;">
-                👤 <strong>提出人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
+                &#128100; <strong>提出人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
             </div>
         `;
     } else if (type === 5) { 
         headerBg = "#C82333";
-        headerTitle = `⚠️ 尚未回覆提醒通知 <span style="background-color: yellow; color: black; border-radius: 4px; padding: 2px 4px; font-size: 15px; margin-left: 4px;">(逾期第 ${issue.remind_count || 2} 天)</span>`;
+        headerTitle = `&#9888;&#65039; 尚未回覆提醒通知 <span style="background-color: yellow; color: black; border-radius: 4px; padding: 2px 4px; font-size: 15px; margin-left: 4px;">(逾期第 ${issue.remind_count || 2} 天)</span>`;
         bodyHtml = `
-            <div style="margin-bottom:10px;">📌 <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
-            <div style="margin-bottom:10px;">🕘 <strong>問題通報時間：</strong> ${escapeHtml(issue.sent_at || '')}</div>
-            <div style="margin-bottom:10px;">⏱️ <strong style="background-color: yellow; padding: 2px 4px; border-radius: 4px;">逾期天數：</strong> <strong style="color: red;">${issue.remind_count || 2} 天</strong></div>
-            <div style="margin-bottom:10px;">📝 <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
-            <div style="margin-bottom:10px;">👤 <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
-            <div style="margin-bottom:14px;">📝 <strong>問題內容：</strong> ${formatMultilineHtml(issue.question || '無')}</div>
+            <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
+            <div style="margin-bottom:10px;">&#128338; <strong>問題通報時間：</strong> ${escapeHtml(issue.sent_at || '')}</div>
+            <div style="margin-bottom:10px;">&#9201;&#65039; <strong style="background-color: yellow; padding: 2px 4px; border-radius: 4px;">逾期天數：</strong> <strong style="color: red;">${issue.remind_count || 2} 天</strong></div>
+            <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+            <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
+            <div style="margin-bottom:14px;">&#128221; <strong>問題內容：</strong> ${formatMultilineHtml(issue.question || '無')}</div>
             ${attachmentHtml.replace('&#128206;', '📎')}
             <div style="background:#FCE8E6;border:1px solid #FAD2CF;color:#C5221F;padding:16px 20px;border-radius:8px;margin-top:16px;text-align:center;">
                 <strong style="font-size:15px;color:#C5221F;">✉️ 請直接點擊「回覆」此封 Email 即可回答</strong><br>
@@ -32994,7 +32994,7 @@ async function sendEmailViaGmailAPI() {
             const data = await res.json();
             completeSendProcess(issueId, type);
             if (data && data.status === "error") {
-                showToast("⚠️ 發送訊息: " + data.message, "warning");
+                showToast("&#9888;&#65039; 發送訊息: " + data.message, "warning");
             } else {
                 showToast(" 實體 Google 郵件（含實體附件與 Google Drive 線上下載按鈕）已成功發送！", "success");
             }
@@ -33046,7 +33046,7 @@ async function sendEmailViaGmailAPI() {
 }
 
 function promptGasUrlSetup(htmlContent, subject, to) {
-    const alertMsg = "⚠️ 【系統未連結真實 Google 發信 API】\n\n" +
+    const alertMsg = "&#9888;&#65039; 【系統未連結真實 Google 發信 API】\n\n" +
                      "因本機網頁 (file://) 尚未設定 Google Apps Script Webhook 網址，故剛才的寄信動作無法實體送達醫師信箱。\n\n" +
                      "【解決方式 (任選一種)】：\n" +
                      "1. 點擊右上角【⚙️ 系統設定】➔ 貼上 Google Apps Script 部署網址（請參考 D:\\峻弦_BI\\ai\\病歷0907\\google_apps_script_webapp.gs 部署說明）。\n" +
@@ -33116,7 +33116,7 @@ function syncGmailReplies(isSilent = false) {
     const savedGasUrl = getGasWebhookUrl();
 
     if (!savedGasUrl || !savedGasUrl.startsWith("http")) {
-        if (!isSilent) showToast("⚠️ 請先至右上角【⚙️ 系統設定】貼上 Google Apps Script Webhook 網址", "warning");
+        if (!isSilent) showToast("&#9888;&#65039; 請先至右上角【⚙️ 系統設定】貼上 Google Apps Script Webhook 網址", "warning");
         return;
     }
 
