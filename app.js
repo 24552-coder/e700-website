@@ -31221,10 +31221,8 @@ function loadDataFromStorage() {
     const DATA_VERSION = "20260919_v78_jiean_equals_wancheng";
     const lastVersion = localStorage.getItem("APP_DATA_VERSION");
 
-    // Force clear old cache if version changed to ensure calibrated dates and padded chart numbers take effect!
+    // Ensure APP_DATA_VERSION is recorded without deleting user local storage!
     if (lastVersion !== DATA_VERSION) {
-        localStorage.removeItem(STORAGE_MAIN_DOCS);
-        localStorage.removeItem(STORAGE_ISSUES);
         localStorage.setItem("APP_DATA_VERSION", DATA_VERSION);
     }
 
