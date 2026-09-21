@@ -30930,7 +30930,7 @@ async function autoCheckAndRemindOverdue() {
     // 只在每天早上 10 點（含）之後才允許執行今日的催辦
     if (now.getHours() < 10) return;
 
-    const overdueIssues = gIssues.filter(i => {
+    const overdueIssues = activeIssues.filter(i => {
         if (!isIssueOverdue(i)) return false; // This already checks status and sent_at
         
         if (i.last_reminded_at) {
@@ -31180,7 +31180,7 @@ async function loadDataFromStorage() {
 
     // Auto-clean any corrupted ghost docs with blank/empty receive_no
     const initialDocCount = gMainDocs.length;
-    gMainDocs = gMainDocs.filter(d => {
+    gMainDocs = gMainDocs.filter(d => !d.deleted).filter(d => {
         const recNo = (d.doc_receive_no || "").trim();
         return recNo.length > 0;
     });
@@ -31201,7 +31201,7 @@ async function loadDataFromStorage() {
         }
     });
 
-    gMainDocs.forEach(doc => {
+    activeDocs.forEach(doc => {
         if (doc.doc_assignee) {
             doc.doc_assignee = cleanAssigneeName(doc.doc_assignee);
         }
@@ -31216,9 +31216,9 @@ async function loadDataFromStorage() {
         }
     });
 
-    gMainDocs.forEach(doc => {
+    activeDocs.forEach(doc => {
         if (doc.doc_status === "已完成") {
-            const docIssues = gIssues.filter(i => i.doc_receive_no === doc.doc_receive_no);
+            const docIssues = activeIssues.filter(i => i.doc_receive_no === doc.doc_receive_no);
             if (docIssues.length > 0 && !docIssues.every(i => i.status === "已完成")) {
                 doc.doc_status = "處理中";
             }
@@ -31357,7 +31357,7 @@ function calculateDocProgress(receiveNo) {
         return { text: "不需醫師已完成", isCompleted: true, count: 0, total: 0 };
     }
 
-    const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
+    const docIssues = activeIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
     if (docIssues.length === 0) {
         if (mainDoc.doc_status === "已完成") return { text: "已完成結案", isCompleted: true, count: 0, total: 0 };
         return { text: "無函詢項目", isCompleted: false, count: 0, total: 0 };
@@ -31397,17 +31397,19 @@ function isIssueOverdue(issue) {
 // 5. Dashboard & Render
 // ----------------------------------------------------
 function renderDashboard() {
-    const totalCases = gMainDocs.length;
-    const totalIssues = gIssues.length;
+    const activeDocs = gMainDocs.filter(d => !d.deleted);
+    const totalCases = activeDocs.length;
+    const activeIssues = activeIssues.filter(i => !i.deleted);
+    const totalIssues = activeIssues.length;
 
     let completedDocsCount = 0;
     let repliedDocsCount = 0;
     let processingDocsCount = 0;
 
-    gMainDocs.forEach(doc => {
+    activeDocs.forEach(doc => {
         const rec = doc.doc_receive_no;
         const st = doc.doc_status;
-        const docIssues = gIssues.filter(i => i.doc_receive_no === rec);
+        const docIssues = activeIssues.filter(i => i.doc_receive_no === rec);
 
         let isCompleted = (st === "已完成" || st === "不需醫師已完成" || st === "結案");
         if (!isCompleted && docIssues.length > 0) {
@@ -31432,7 +31434,7 @@ function renderDashboard() {
 }
 
 function checkOverdueAlerts() {
-    const overdueIssues = gIssues.filter(i => isIssueOverdue(i));
+    const overdueIssues = activeIssues.filter(i => isIssueOverdue(i));
     const alertBanner = document.getElementById("overdueAlertBanner");
     const countText = document.getElementById("overdueCountText");
 
@@ -31489,7 +31491,7 @@ function renderTable() {
 
         if (gCurrentFilter.search) {
             const q = gCurrentFilter.search;
-            const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
+            const docIssues = activeIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
             const doctorMatch = docIssues.some(i => (i.doctor_name || "").toLowerCase().includes(q) || (i.question || "").toLowerCase().includes(q));
 
             const mainMatch = receiveNo.toLowerCase().includes(q) ||
@@ -31519,13 +31521,13 @@ function renderTable() {
         }
 
         if (gCurrentFilter.issueStatus) {
-            const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
+            const docIssues = activeIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
             if (!docIssues.some(i => i.status === gCurrentFilter.issueStatus)) return false;
         }
 
                 if (gCurrentFilter.cardType === "replied") {
             if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成" || doc.doc_status === "結案") return false;
-            const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
+            const docIssues = activeIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
             if (!docIssues.some(i => i.status === "已回覆")) return false;
         } else if (gCurrentFilter.cardType === "completed") {
             const prog = calculateDocProgress(doc.doc_receive_no);
@@ -31534,10 +31536,10 @@ function renderTable() {
             if (doc.doc_status === "已完成" || doc.doc_status === "不需醫師已完成" || doc.doc_status === "結案") return false;
             const prog = calculateDocProgress(doc.doc_receive_no);
             if (prog.isCompleted) return false;
-            const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
+            const docIssues = activeIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
             if (docIssues.some(i => i.status === "已回覆")) return false;
         } else if (gCurrentFilter.cardType === "overdue") {
-            const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
+            const docIssues = activeIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
             if (!docIssues.some(i => isIssueOverdue(i))) return false;
         }
 
@@ -31591,7 +31593,7 @@ function renderTable() {
     filteredDocs.forEach(doc => {
         const progress = calculateDocProgress(doc.doc_receive_no);
         const isExpanded = gExpandedRows.has(doc.doc_receive_no);
-        const docIssues = gIssues.filter(i => i.doc_receive_no === doc.doc_receive_no);
+        const docIssues = activeIssues.filter(i => i.doc_receive_no === doc.doc_receive_no);
 
         let statusBadgeHtml = `<span class="badge badge-warning"><i class="fa-solid fa-hourglass-half"></i> 處理中</span>`;
         if (doc.doc_status === "不需醫師已完成") {
@@ -31762,35 +31764,35 @@ function renderMainDocDetailPanel(doc) {
             <div class="doc-detail-grid">
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">收發文號</div>
-                    <div class="detail-val font-bold" style="font-size: 18px;">${receiveNo}</div>
+                    <div class="detail-val">${receiveNo}</div>
                 </div>
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">收發日期</div>
-                    <div class="detail-val font-bold" style="font-size: 18px;" style="color:#0369a1;">${escapeHtml(formatSlashDate(doc.doc_receive_date))}</div>
+                    <div class="detail-val" style="color:#0369a1;">${escapeHtml(formatSlashDate(doc.doc_receive_date))}</div>
                 </div>
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">創稿文號</div>
-                    <div class="detail-val font-bold" style="font-size: 18px;">${draftNo}</div>
+                    <div class="detail-val">${draftNo}</div>
                 </div>
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">來函單位</div>
-                    <div class="detail-val font-bold" style="font-size: 18px;" style="color:#0284c7;">${sourceUnit}</div>
+                    <div class="detail-val" style="color:#0284c7;">${sourceUnit}</div>
                 </div>
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">發文日期</div>
-                    <div class="detail-val font-bold" style="font-size: 18px;" style="color:#0369a1;">${issueDate}</div>
+                    <div class="detail-val" style="color:#0369a1;">${issueDate}</div>
                 </div>
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">發文字號</div>
-                    <div class="detail-val font-bold" style="font-size: 18px;">${issueNo}</div>
+                    <div class="detail-val">${issueNo}</div>
                 </div>
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">承辦人員</div>
-                    <div class="detail-val font-bold" style="font-size: 18px;">${assignee}${assigneeEmail}</div>
+                    <div class="detail-val">${assignee}${assigneeEmail}</div>
                 </div>
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">勞保局受理編號</div>
-                    <div class="detail-val font-bold" style="font-size: 18px;" style="color:#7c3aed;">${lbiNo}</div>
+                    <div class="detail-val" style="color:#7c3aed;">${lbiNo}</div>
                 </div>
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">病歷查詢費</div>
@@ -31802,15 +31804,15 @@ function renderMainDocDetailPanel(doc) {
                 </div>
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">附件</div>
-                    <div class="detail-val font-bold" style="font-size: 18px;" style="color:#1d4ed8;">${attText}</div>
+                    <div class="detail-val" style="color:#1d4ed8;">${attText}</div>
                 </div>
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">函覆文號</div>
-                    <div class="detail-val font-bold" style="font-size: 18px;">${replyNo}</div>
+                    <div class="detail-val">${replyNo}</div>
                 </div>
                 <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
                     <div class="detail-label">函覆日期</div>
-                    <div class="detail-val font-bold" style="font-size: 18px;">${replyDate}</div>
+                    <div class="detail-val">${replyDate}</div>
                 </div>
                 <div class="detail-item span-full" style="grid-column: 1 / -1; margin-top: 4px;">
                     <div class="detail-label"><i class="fa-solid fa-file-lines" style="color:#0284c7;margin-right:4px;"></i> 主旨</div>
@@ -31837,7 +31839,7 @@ function toggleExpandRow(receiveNo) {
 }
 
 function renderNestedIssueTable(receiveNo) {
-    const docIssues = gIssues.filter(i => i.doc_receive_no === receiveNo);
+    const docIssues = activeIssues.filter(i => !i.deleted && i.doc_receive_no === receiveNo);
 
     if (docIssues.length === 0) {
         return `<div style="text-align:center;padding:28px 0;color:#94a3b8;">
@@ -31978,7 +31980,7 @@ function handleDirectIssueStatusChange(issueId, newStatus) {
     }
 
     // 重新評估公文主檔狀態
-    const docIssues = gIssues.filter(i => i.doc_receive_no === issue.doc_receive_no);
+    const docIssues = activeIssues.filter(i => i.doc_receive_no === issue.doc_receive_no);
     const mainDoc = gMainDocs.find(d => d.doc_receive_no === issue.doc_receive_no);
     if (mainDoc) {
         if (docIssues.length > 0 && docIssues.every(i => i.status === "已完成")) {
@@ -32237,7 +32239,6 @@ function deleteMainDoc(receiveNo, createdAt) {
         docIndex = gMainDocs.findIndex(d => (d.created_at || "").trim() === targetCreatedAt);
     }
     if (docIndex === -1) {
-        // Fallback: find any doc with empty/blank doc_receive_no
         docIndex = gMainDocs.findIndex(d => !(d.doc_receive_no || "").trim());
     }
 
@@ -32250,23 +32251,29 @@ function deleteMainDoc(receiveNo, createdAt) {
     const docTitle = (docToDelete.doc_receive_no || "").trim() || 
                      (docToDelete.doc_chart_no ? `病歷號 ${docToDelete.doc_chart_no}` : "空白/無文號案件");
 
-    if (confirm(`&#9888;&#65039; 確定要刪除【${docTitle}】這筆公文主檔及其所有醫師函詢明細嗎？此動作無法復原！`)) {
+    if (confirm(`&#9888;&#65039; 確定要刪除【${docTitle}】這筆公文主檔及其所有醫師函詢明細嗎？`)) {
         const deletedRecNo = (docToDelete.doc_receive_no || "").trim();
         const deletedCreatedAt = (docToDelete.created_at || "").trim();
 
-        gMainDocs.splice(docIndex, 1);
+        // SOFT DELETE
+        docToDelete.deleted = true;
 
-        // Also clean associated issues
-        gIssues = gIssues.filter(i => {
-            if (deletedRecNo && (i.doc_receive_no || "").trim() === deletedRecNo) return false;
-            if (deletedCreatedAt && (i.created_at || "").trim() === deletedCreatedAt) return false;
-            if (!deletedRecNo && !(i.doc_receive_no || "").trim()) return false;
-            return true;
+        // Also soft clean associated issues
+        gIssues.forEach(i => {
+            let match = false;
+            if (deletedRecNo && (i.doc_receive_no || "").trim() === deletedRecNo) match = true;
+            if (deletedCreatedAt && (i.created_at || "").trim() === deletedCreatedAt) match = true;
+            if (match) {
+                i.deleted = true;
+            }
         });
 
         saveDataToStorage();
+        showToast(`&#9989; 已刪除公文【${docTitle}】及相關函詢！`, "success");
+        if (gExpandedRows.has(deletedRecNo)) {
+            gExpandedRows.delete(deletedRecNo);
+        }
         closeModal("modalMainDoc");
-        showToast(` 已成功刪除公文主檔【${docTitle}】！`, "success");
         renderDashboard();
         renderTable();
     }
@@ -32282,11 +32289,14 @@ function deleteIssue(issueId) {
     if (!issueId) return;
     const issue = gIssues.find(i => i.issue_id === issueId);
     const doctorName = issue ? issue.doctor_name : "";
-    if (confirm(`&#9888;&#65039; 確定要刪除醫師【${doctorName}】的這筆函詢明細嗎？此動作無法復原！`)) {
-        gIssues = gIssues.filter(i => i.issue_id !== issueId);
+    if (confirm(`&#9888;&#65039; 確定要刪除至${doctorName}醫師的函詢嗎？操作無法復原！`)) {
+        // SOFT DELETE
+        if (issue) {
+            issue.deleted = true;
+        }
         saveDataToStorage();
         closeModal("modalIssue");
-        showToast(` 已成功刪除函詢明細！`, "success");
+        showToast(`&#9989; 已成功刪除函詢！`, "success");
         renderDashboard();
         renderTable();
     }
@@ -32795,7 +32805,7 @@ function remindIssue(issueId) {
 }
 
 async function batchRemindAllOverdueIssues() {
-    const overdueIssues = gIssues.filter(i => isIssueOverdue(i) && i.status !== "已完成");
+    const overdueIssues = activeIssues.filter(i => isIssueOverdue(i) && i.status !== "已完成");
     if (overdueIssues.length === 0) {
         showToast("目前沒有逾期待催辦之函詢案件！", "info");
         return;
@@ -33242,7 +33252,7 @@ function completeIssue(issueId) {
     if (issue) {
         issue.status = "已完成";
 
-        const docIssues = gIssues.filter(i => i.doc_receive_no === issue.doc_receive_no);
+        const docIssues = activeIssues.filter(i => i.doc_receive_no === issue.doc_receive_no);
         const allCompleted = docIssues.every(i => i.status === "已完成");
         const mainDoc = gMainDocs.find(d => d.doc_receive_no === issue.doc_receive_no);
 
@@ -33680,7 +33690,7 @@ function executeWeeklyExport() {
 
     const reportRows = docsToExport.map((doc, idx) => {
         const progress = calculateDocProgress(doc.doc_receive_no);
-        const issues = gIssues.filter(i => i.doc_receive_no === doc.doc_receive_no);
+        const issues = activeIssues.filter(i => i.doc_receive_no === doc.doc_receive_no);
         const doctors = Array.from(new Set(issues.map(i => i.doctor_name).filter(Boolean))).join(", ") || doc.doc_doctor_name || "待指定";
 
         let statusText = "處理中";
