@@ -33695,8 +33695,12 @@ function exportWeeklyExcel() {
 
     const reportRows = pendingDocs.map((doc, idx) => {
         const progress = calculateDocProgress(doc.doc_receive_no);
+        const issues = gIssues.filter(i => !i.deleted && i.doc_receive_no === doc.doc_receive_no);
+        const patientsFromIssues = Array.from(new Set(issues.map(i => i.patient_name).filter(Boolean))).join(", ");
+        const patients = (doc.doc_patient_name || "").trim() || patientsFromIssues || "";
+
         let statusText = "處理中";
-        if (progress.text.includes("已回覆") || gIssues.some(i => i.doc_receive_no === doc.doc_receive_no && i.status === "已回覆")) {
+        if (progress.text.includes("已回覆") || issues.some(i => i.status === "已回覆")) {
             statusText = "處理中 (醫師已回復待審核)";
         }
 
@@ -33706,7 +33710,7 @@ function exportWeeklyExcel() {
             "收發文號": doc.doc_receive_no,
             "病患姓名": patients,
             "主旨": doc.doc_subject || "請惠予提供相關病歷資料及說明乙案。",
-            "寄件日期": doc.doc_issue_date || doc.created_at.substring(0, 10),
+            "寄件日期": formatMinguoDateSlash(doc.doc_issue_date || doc.doc_receive_date || doc.created_at),
             "處理狀態": statusText
         };
     });
@@ -34000,7 +34004,8 @@ function executeWeeklyExport() {
     const reportRows = docsToExport.map((doc, idx) => {
         const progress = calculateDocProgress(doc.doc_receive_no);
         const issues = gIssues.filter(i => !i.deleted && i.doc_receive_no === doc.doc_receive_no);
-        const patients = Array.from(new Set(issues.map(i => i.patient_name).filter(Boolean))).join(", ");
+        const patientsFromIssues = Array.from(new Set(issues.map(i => i.patient_name).filter(Boolean))).join(", ");
+        const patients = (doc.doc_patient_name || "").trim() || patientsFromIssues || "";
         const doctors = Array.from(new Set(issues.map(i => i.doctor_name).filter(Boolean))).join(", ") || doc.doc_doctor_name || "待指定";
 
         let statusText = "處理中";
