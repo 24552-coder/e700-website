@@ -30976,7 +30976,7 @@ function startAutoSyncTimer() {
         syncCloudData(true);
         syncGmailReplies(true);
         autoCheckAndRemindOverdue();
-    }, 30000);
+    }, 5000);
 
     // 當使用者分頁切換回本系統，或視窗獲得焦點時，立即全自動靜默連線校正
     window.addEventListener("focus", () => {
