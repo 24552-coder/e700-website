@@ -32895,13 +32895,25 @@ function getEmailTemplateHtml(type, issue) {
             </div>
         `;
     } else if (type === 2) { 
-        headerBg = "#0056D2";
-        headerTitle = "&#9989; 醫師回覆已確認完成";
-        bodyHtml = `
-            <div style="background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                <strong style="color:#0056D2;font-size:14px;">&#128172; 醫師回覆內容</strong><br>
-                <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '無')}</div>
-            </div>
+        if (issue.return_reason) {
+            headerBg = "#D97706";
+            headerTitle = "&#9989; 醫師退回補件回覆已確認完成";
+            bodyHtml = `
+                <div style="background:#FEF3C7;border:1px solid #FDE68A;color:#92400E;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
+                    <strong style="color:#D97706;font-size:14px;">&#128221; 彙整後完整意見</strong><br>
+                    <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '無')}</div>
+                </div>`;
+        } else {
+            headerBg = "#0056D2";
+            headerTitle = "&#9989; 醫師回覆已確認完成";
+            bodyHtml = `
+                <div style="background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
+                    <strong style="color:#0056D2;font-size:14px;">&#128172; 醫師回覆內容</strong><br>
+                    <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '無')}</div>
+                </div>`;
+        }
+        
+        bodyHtml += `
             <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
             <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
             <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
@@ -32965,7 +32977,10 @@ function getEmailTemplateHtml(type, issue) {
         `;
     } else if (type === 5) { 
         headerBg = "#C82333";
-        headerTitle = `&#9888;&#65039; 尚未回覆提醒通知 <span style="background-color: yellow; color: black; border-radius: 4px; padding: 2px 4px; font-size: 15px; margin-left: 4px;">(逾期第 ${issue.remind_count || 2} 天)</span>`;
+        const createdDate = issue.created_at ? new Date(issue.created_at) : new Date();
+        const diffTime = Math.abs(new Date() - createdDate);
+        const diffDays = Math.max(1, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+        headerTitle = `&#9888;&#65039; 尚未回覆提醒通知 <span style="background-color: yellow; color: black; border-radius: 4px; padding: 2px 4px; font-size: 15px; margin-left: 4px;">(逾期第 ${diffDays} 天)</span>`;
         bodyHtml = `
             <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
             <div style="margin-bottom:10px;">&#128338; <strong>問題通報時間：</strong> ${escapeHtml(issue.sent_at || '')}</div>
@@ -32980,22 +32995,21 @@ function getEmailTemplateHtml(type, issue) {
             </div>
         `;
     } else if (type === 6) { 
-        headerBg = "#0d6efd";
+        headerBg = "#0056D2";
         headerTitle = "&#9989; 醫師回覆已確認完成";
         bodyHtml = `
-            <div style="background:#f0f8ff;padding:12px;border-radius:6px;border:1px solid #b6d4fe;margin-bottom:16px;">
-                <div style="font-size:14px;color:#0d6efd;margin-bottom:8px;">&#128172; <strong>醫師回覆內容</strong></div>
-                <div style="font-size:15px;color:#202124;">
-                    ${formatMultilineHtml(issue.doctor_reply || "")}
-                </div>
+            <div style="background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
+                <strong style="color:#0056D2;font-size:14px;">&#128172; 您的回覆內容</strong><br>
+                <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '無')}</div>
             </div>
-            <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
-            <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
-            <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
-            <div style="margin-bottom:10px;">&#128221; <strong>問題內容：</strong> ${formatMultilineHtml(issue.question || "無")}</div>
+            <div style="margin-bottom:10px;">📌 <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
+            <div style="margin-bottom:10px;">📝 <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+            <div style="margin-bottom:10px;">👤 <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
+            <div style="margin-bottom:14px;">📝 <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
+            ${attachmentHtml}
             <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
             <div style="font-size:12.5px;color:#5f6368;">
-                &#128100; <strong>承辦人員：</strong> ${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
+                👤 <strong>承辦人員：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
             </div>
         `;
     }
@@ -33026,7 +33040,7 @@ async function autoSendEmail(issueId, type, forceModalPreview = false) {
     if (type === 6) subject = `【雙和醫院病歷組】已收到您的回覆確認 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
 
     const ccList = [issue.creator_email, issue.cc_email1, issue.cc_email2].filter(Boolean).join(", ");
-    const to = (type === 2) ? (issue.creator_email || "e700document@s.tmu.edu.tw") : issue.doctor_email;
+    const to = issue.doctor_email || issue.creator_email || "e700document@s.tmu.edu.tw";
 
     const htmlContent = getEmailTemplateHtml(type, issue);
     gTempPendingEmailAction = { issueId, type, subject, to, cc: ccList, issue, htmlContent };
@@ -33059,7 +33073,13 @@ function remindIssue(issueId) {
 }
 
 async function batchRemindAllOverdueIssues() {
-    const overdueIssues = gIssues.filter(i => isIssueOverdue(i) && i.status !== "已完成");
+    const todayStr = getTaiwanNowStr().split(' ')[0];
+    const overdueIssues = gIssues.filter(i => {
+        if (!isIssueOverdue(i) || i.status === "已完成") return false;
+        // 防呆防重複寄信機制：如果今天已經催辦過了，就不再重複催辦
+        if (i.last_reminded_at && i.last_reminded_at.startsWith(todayStr)) return false;
+        return true;
+    });
     if (overdueIssues.length === 0) {
         showToast("目前沒有逾期待催辦之函詢案件！", "info");
         return;
@@ -33133,7 +33153,7 @@ async function previewEmailModal(issueId, type) {
     if (type === 6) subject = `【雙和醫院病歷組】已收到您的回覆確認 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
 
     const ccList = [issue.creator_email, issue.cc_email1, issue.cc_email2].filter(Boolean).join(", ");
-    const to = (type === 2) ? (issue.creator_email || "e700document@s.tmu.edu.tw") : issue.doctor_email;
+    const to = issue.doctor_email || issue.creator_email || "e700document@s.tmu.edu.tw";
 
     document.getElementById("previewTo").textContent = to;
     document.getElementById("previewCc").textContent = ccList || "無";
@@ -33167,7 +33187,7 @@ async function previewEmailModal(issueId, type) {
 
     document.getElementById("emailTemplateContainer").innerHTML = gmailMockupHtml;
 
-    gTempPendingEmailAction = { issueId, type, subject, to: issue.doctor_email, cc: ccList, issue, htmlContent };
+    gTempPendingEmailAction = { issueId, type, subject, to: to, cc: ccList, issue, htmlContent };
 
     openModal("modalEmailPreview");
 
@@ -33287,40 +33307,46 @@ async function sendEmailViaGmailAPI() {
     }
 
 
-// Mode 3: Local Python API
-    if (window.location.protocol.startsWith("http")) {
+    // Mode 3: Local Python API (only for localhost / 127.0.0.1 environment)
+    const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+    if (isLocalhost) {
         showToast("⚡ 正呼叫本機 API 發送郵件...", "info");
-        fetch("/api/send_email", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload)
-        })
-        .then(res => res.json())
-        .then(data => {
-            if (data.status === "success") {
+        try {
+            const res = await fetch("/api/send_email", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            });
+            const data = await res.json();
+            if (data && data.status === "success") {
                 completeSendProcess(issueId, type);
                 showToast(" 本機 API 郵件已成功發送！", "success");
-            } else {
-                showToast("發送失敗: " + (data.message || "未知錯誤"), "danger");
+                return;
             }
-        })
-        .catch(err => {
-            promptGasUrlSetup(freshHtmlContent, subject, to);
-        });
-        return;
+        } catch (errLocal) {}
     }
 
     promptGasUrlSetup(freshHtmlContent, subject, to);
 }
 
 function promptGasUrlSetup(htmlContent, subject, to) {
-    const alertMsg = "&#9888;&#65039; 【系統未連結真實 Google 發信 API】\n\n" +
-                     "因本機網頁 (file://) 尚未設定 Google Apps Script Webhook 網址，故剛才的寄信動作無法實體送達醫師信箱。\n\n" +
-                     "【解決方式 (任選一種)】：\n" +
-                     "1. 點擊右上角【⚙️ 系統設定】➔ 貼上 Google Apps Script 部署網址（請參考 D:\\峻弦_BI\\ai\\病歷0907\\google_apps_script_webapp.gs 部署說明）。\n" +
-                     "2. 或按「確定」將【彩色 HTML 信件】複製到剪貼簿，直接在 Gmail 貼上寄出。";
+    const userUrl = prompt(
+        "⚠️ 【系統未連結 Google 發信 API】\n\n" +
+        "請在此貼上您的 Google Apps Script Web App 部署網址（https://script.google.com/macros/s/.../exec）：\n\n" +
+        "（貼上網址後按確定即可自動連線發送；若按取消將複製 HTML 信件至剪貼簿）"
+    );
 
-    if (confirm(alertMsg)) {
+    if (userUrl && userUrl.trim().startsWith("http")) {
+        const cleanUrl = userUrl.trim();
+        setGasWebhookUrl(cleanUrl);
+        showToast(" 已成功儲存 Google Webhook 網址！正在全自動發送郵件...", "success");
+        setTimeout(() => {
+            sendEmailViaGmailAPI();
+        }, 300);
+        return;
+    }
+
+    if (confirm("是否複製【彩色 HTML 信件內容】至剪貼簿以手動前往 Gmail 發送？")) {
         copyRichHtmlToClipboard(htmlContent);
     }
     if (gTempPendingEmailAction) {
@@ -33371,13 +33397,27 @@ function completeSendProcess(issueId, type) {
 // ----------------------------------------------------
 function cleanDoctorReplyText(text) {
     if (!text) return "";
-    let clean = text;
-    // Gmail standard reply header
-    clean = clean.split(/\r?\n\s*(?:雙和醫院病歷組|e700document@s\.tmu\.edu\.tw|[\w\.-]+@[\w\.-]+|<[^>]+>)?\s*於\s*\d{4}.*寫道[：:]/i)[0];
-    clean = clean.split(/\r?\n\s*雙和醫院病歷組 <e700document@s\.tmu\.edu\.tw>/i)[0];
-    clean = clean.split(/----------\s*原始郵件\s*----------/i)[0];
-    clean = clean.split(/---------\s*Original Message\s*---------/i)[0];
-    return clean.trim();
+    let clean = String(text);
+    
+    // Safety splits: only keep split result if it is non-empty
+    const p1 = clean.split(/\r?\n\s*(?:雙和醫院病歷組|e700document@s\.tmu\.edu\.tw|[\w\.-]+@[\w\.-]+|<[^>]+>)?\s*於\s*\d{4}.*寫道[：:]/i)[0];
+    if (p1 && p1.trim()) clean = p1;
+    
+    const p2 = clean.split(/\r?\n\s*雙和醫院病歷組 <e700document@s\.tmu\.edu\.tw>/i)[0];
+    if (p2 && p2.trim()) clean = p2;
+    
+    const p3 = clean.split(/----------\s*原始郵件\s*----------/i)[0];
+    if (p3 && p3.trim()) clean = p3;
+    
+    const p4 = clean.split(/---------\s*Original Message\s*---------/i)[0];
+    if (p4 && p4.trim()) clean = p4;
+    
+    const res = clean.trim();
+    if (res) return res;
+    
+    // Fallback: preserve original text if split removed everything
+    const plainFallback = String(text).replace(/<[^>]+>/g, "").trim();
+    return plainFallback || String(text).trim() || "醫師已回覆（無額外說明文字）";
 }
 
 function syncGmailReplies(isSilent = false) {
@@ -33397,7 +33437,7 @@ function syncGmailReplies(isSilent = false) {
         body: JSON.stringify({ action: "scanReplies" })
     })
     .then(res => res.json())
-    .then(async data => {
+    .then(async data => {\n        console.log("GAS Reply Data:", data);
         if (data.status === "success" && data.replies && data.replies.length > 0) {
             let newlyUpdatedCount = 0;
             const processedIssues = new Set();
@@ -33424,10 +33464,8 @@ function syncGmailReplies(isSilent = false) {
                             newlyUpdatedCount++;
                             processedIssues.add(targetIssue.issue_id);
                             
-                            // 自動寄出「已收到醫師回覆」的信件 (Type 2) 給承辦人
+                            // 自動寄出「已收到醫師回覆」的單一整合信件給醫師與承辦同仁
                             await autoSendEmail(targetIssue.issue_id, 2);
-                            // 自動寄出「已收到您的回覆確認信」 (Type 6) 給醫師
-                            await autoSendEmail(targetIssue.issue_id, 6);
                         }
                     }
                 } else if (!targetIssue && (rep.issueId || rep.docNo)) {
@@ -33455,10 +33493,8 @@ function syncGmailReplies(isSilent = false) {
                         newlyUpdatedCount++;
                         processedIssues.add(newIssue.issue_id);
                         
-                        // 自動寄出「已收到醫師回覆」的信件 (Type 2) 給承辦人
+                        // 自動寄出「已收到醫師回覆」的單一整合信件給醫師與承辦同仁
                         await autoSendEmail(newIssue.issue_id, 2);
-                        // 自動寄出「已收到您的回覆確認信」 (Type 6) 給醫師
-                        await autoSendEmail(newIssue.issue_id, 6);
                     }
                 }
             }
@@ -33656,6 +33692,7 @@ function exportWeeklyExcel() {
             "序號": idx + 1,
             "承辦人": doc.doc_assignee ? doc.doc_assignee.split(" ")[0] : "承辦人",
             "收發文號": doc.doc_receive_no,
+            "病患姓名": patients,
             "主旨": doc.doc_subject || "請惠予提供相關病歷資料及說明乙案。",
             "寄件日期": doc.doc_issue_date || doc.created_at.substring(0, 10),
             "處理狀態": statusText
@@ -33951,6 +33988,7 @@ function executeWeeklyExport() {
     const reportRows = docsToExport.map((doc, idx) => {
         const progress = calculateDocProgress(doc.doc_receive_no);
         const issues = gIssues.filter(i => !i.deleted && i.doc_receive_no === doc.doc_receive_no);
+        const patients = Array.from(new Set(issues.map(i => i.patient_name).filter(Boolean))).join(", ");
         const doctors = Array.from(new Set(issues.map(i => i.doctor_name).filter(Boolean))).join(", ") || doc.doc_doctor_name || "待指定";
 
         let statusText = "處理中";
@@ -33966,6 +34004,7 @@ function executeWeeklyExport() {
             "序號": idx + 1,
             "承辦人": doc.doc_assignee ? doc.doc_assignee.split(" ")[0] : "承辦人",
             "收發文號": doc.doc_receive_no,
+            "病患姓名": patients,
             "主旨": doc.doc_subject || "請惠予提供相關病歷資料及說明乙案。",
             "寄件日期": formatMinguoDateSlash(doc.doc_issue_date || doc.doc_receive_date || doc.created_at),
             "處理狀態": statusText
@@ -33977,6 +34016,7 @@ function executeWeeklyExport() {
     worksheet["!cols"] = [
         { wch: 8 },
         { wch: 12 },
+        { wch: 16 },
         { wch: 16 },
         { wch: 45 },
         { wch: 16 },
