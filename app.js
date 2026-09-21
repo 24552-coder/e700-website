@@ -33285,9 +33285,9 @@ function completeSendProcess(issueId, type) {
 function cleanDoctorReplyText(text) {
     if (!text) return "";
     let clean = text;
+    // Gmail standard reply header
     clean = clean.split(/\r?\n\s*(?:雙和醫院病歷組|e700document@s\.tmu\.edu\.tw|[\w\.-]+@[\w\.-]+|<[^>]+>)?\s*於\s*\d{4}.*寫道[：:]/i)[0];
-    clean = clean.split(/雙和醫院病歷組/i)[0];
-    clean = clean.split(/e700document@s\.tmu\.edu\.tw/i)[0];
+    clean = clean.split(/\r?\n\s*雙和醫院病歷組 <e700document@s\.tmu\.edu\.tw>/i)[0];
     clean = clean.split(/----------\s*原始郵件\s*----------/i)[0];
     clean = clean.split(/---------\s*Original Message\s*---------/i)[0];
     return clean.trim();
