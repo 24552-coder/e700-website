@@ -32979,6 +32979,26 @@ function getEmailTemplateHtml(type, issue) {
                 <span style="color:#5f6368;font-size:13px;display:inline-block;margin-top:4px;">您只需直接在信件點擊「回覆」並輸入答覆內容（可夾帶附件），即可完成回覆。</span>
             </div>
         `;
+    } else if (type === 6) { 
+        headerBg = "#28A745";
+        headerTitle = "&#9989; 已收到您的回覆確認";
+        bodyHtml = `
+            <div style="font-size:15px;line-height:1.6;color:#3c4043;margin-bottom:16px;">
+                醫師您好，<br><br>
+                系統已經成功收到您針對以下案件的回覆：<br>
+                <div style="background:#f8f9fa;padding:12px;border-radius:6px;border:1px solid #e9ecef;margin-top:8px;margin-bottom:8px;color:#202124;">
+                    <strong>「${formatMultilineHtml(issue.doctor_reply || "")}」</strong>
+                </div>
+                感謝您的協助！病歷組承辦人將會接續處理。
+            </div>
+            <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
+            <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+            <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
+            <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
+            <div style="font-size:12.5px;color:#5f6368;">
+                &#128100; <strong>提出人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
+            </div>
+        `;
     }
 
     return `
@@ -33004,6 +33024,7 @@ async function autoSendEmail(issueId, type, forceModalPreview = false) {
     if (type === 3) subject = `【雙和醫院病歷組】退回補件通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
     if (type === 4) subject = `【雙和醫院病歷組】案件已結案完成 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
     if (type === 5) subject = `【雙和醫院病歷組】催辦提醒通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
+    if (type === 6) subject = `【雙和醫院病歷組】已收到您的回覆確認 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
 
     const ccList = [issue.creator_email, issue.cc_email1, issue.cc_email2].filter(Boolean).join(", ");
     const to = (type === 2) ? (issue.creator_email || "e700document@s.tmu.edu.tw") : issue.doctor_email;
@@ -33110,10 +33131,12 @@ async function previewEmailModal(issueId, type) {
     if (type === 3) subject = `【雙和醫院病歷組】退回補件通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
     if (type === 4) subject = `【雙和醫院病歷組】案件已結案完成 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
     if (type === 5) subject = `【雙和醫院病歷組】催辦提醒通知 單號：${issue.doc_receive_no}`;
+    if (type === 6) subject = `【雙和醫院病歷組】已收到您的回覆確認 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
 
     const ccList = [issue.creator_email, issue.cc_email1, issue.cc_email2].filter(Boolean).join(", ");
+    const to = (type === 2) ? (issue.creator_email || "e700document@s.tmu.edu.tw") : issue.doctor_email;
 
-    document.getElementById("previewTo").textContent = `${issue.doctor_name} (${issue.doctor_email})`;
+    document.getElementById("previewTo").textContent = to;
     document.getElementById("previewCc").textContent = ccList || "無";
     document.getElementById("previewSubject").textContent = subject;
 
@@ -33402,8 +33425,10 @@ function syncGmailReplies(isSilent = false) {
                             newlyUpdatedCount++;
                             processedIssues.add(targetIssue.issue_id);
                             
-                            // 自動寄出「已收到醫師回覆」的信件 (Type 2)
+                            // 自動寄出「已收到醫師回覆」的信件 (Type 2) 給承辦人
                             await autoSendEmail(targetIssue.issue_id, 2);
+                            // 自動寄出「已收到您的回覆確認信」 (Type 6) 給醫師
+                            await autoSendEmail(targetIssue.issue_id, 6);
                         }
                     }
                 } else if (!targetIssue && (rep.issueId || rep.docNo)) {
@@ -33431,8 +33456,10 @@ function syncGmailReplies(isSilent = false) {
                         newlyUpdatedCount++;
                         processedIssues.add(newIssue.issue_id);
                         
-                        // 自動寄出「已收到醫師回覆」的信件 (Type 2)
+                        // 自動寄出「已收到醫師回覆」的信件 (Type 2) 給承辦人
                         await autoSendEmail(newIssue.issue_id, 2);
+                        // 自動寄出「已收到您的回覆確認信」 (Type 6) 給醫師
+                        await autoSendEmail(newIssue.issue_id, 6);
                     }
                 }
             }
