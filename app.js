@@ -33501,11 +33501,18 @@ function syncGmailReplies(isSilent = false) {
 
             for (const rep of data.replies) {
                 let targetIssue = null;
-                if (rep.issueId) {
-                    targetIssue = gIssues.find(i => i.issue_id === rep.issueId && i.status !== "已完成");
+                const repIssueId = rep.issueId ? String(rep.issueId).trim() : "";
+                const repDocNo = rep.docNo ? String(rep.docNo).trim() : "";
+                const repEmail = rep.senderEmail ? String(rep.senderEmail).toLowerCase().trim() : "";
+
+                if (repIssueId) {
+                    targetIssue = gIssues.find(i => String(i.issue_id).trim() === repIssueId && i.status !== "已完成");
                 }
-                if (!targetIssue && rep.docNo) {
-                    targetIssue = gIssues.find(i => i.doc_receive_no === rep.docNo && i.status !== "已完成" && i.status !== "已回覆" && !processedIssues.has(i.issue_id));
+                if (!targetIssue && repDocNo) {
+                    targetIssue = gIssues.find(i => String(i.doc_receive_no).trim() === repDocNo && i.status !== "已完成" && i.status !== "已回覆" && !processedIssues.has(i.issue_id));
+                }
+                if (!targetIssue && repDocNo && repEmail) {
+                    targetIssue = gIssues.find(i => String(i.doc_receive_no).trim() === repDocNo && i.doctor_email && String(i.doctor_email).toLowerCase().trim() === repEmail && i.status !== "已完成" && !processedIssues.has(i.issue_id));
                 }
 
                 if (targetIssue && !processedIssues.has(targetIssue.issue_id)) {
