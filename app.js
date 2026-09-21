@@ -31322,7 +31322,7 @@ function setupCaseworkerAutoFill() {
 
 function populateAssigneeOptions() {
     const assigneeSelect = document.getElementById("filterAssignee");
-    const assignees = new Set(["陽書湘", "錢佩妤", "何秀英"]);
+    const assignees = new Set();
 
     gMainDocs.forEach(d => {
         const clean = cleanAssigneeName(d.doc_assignee);
