@@ -33047,7 +33047,7 @@ function getEmailTemplateHtml(type, issue) {
             <div style="margin-bottom:14px;">&#128221; <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
             ${attachmentHtml}
             <div style="background:#E6F4EA;border:1px solid #CEEAD6;color:#137333;padding:16px 20px;border-radius:8px;margin-top:20px;margin-bottom:16px;text-align:center;">
-                <strong style="font-size:15px;color:#137333;">✉️ 請直接點擊「回覆」此封 Email 即可回答</strong><br>
+                <strong style="font-size:15px;color:#137333;">&#9993; 請直接點擊「回覆」此封 Email 即可回答</strong><br>
                 <span style="color:#5f6368;font-size:13px;display:inline-block;margin-top:4px;">您只需直接在信件點擊「回覆」並輸入說明意見（可夾帶附件），即可自動完成答覆。</span>
             </div>
             <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
@@ -33064,7 +33064,7 @@ function getEmailTemplateHtml(type, issue) {
         if (issue.return_reason) {
             returnHistoryBlock = `
                 <div style="background:#FEF2F2;border:1px solid #FCA5A5;border-left:4px solid #DC2626;color:#991B1B;padding:12px 14px;border-radius:6px;margin-bottom:14px;font-size:13.5px;">
-                    <strong style="color:#DC2626;">&#8457; 歷史退回補件紀錄 ${issue.return_at ? `(${escapeHtml(issue.return_at)})` : ''}：</strong><br>
+                    <strong style="color:#DC2626;">&#8617; 歷史退回補件紀錄 ${issue.return_at ? `(${escapeHtml(issue.return_at)})` : ''}：</strong><br>
                     <div style="color:#7F1D1D;margin-top:4px;">${formatMultilineHtml(issue.return_reason)}</div>
                 </div>
             `;
@@ -33079,12 +33079,12 @@ function getEmailTemplateHtml(type, issue) {
             ${returnHistoryBlock}
 
             <div style="background:#f8fafc;border:1px solid #e2e8f0;padding:14px 16px;border-radius:8px;margin-bottom:16px;">
-                <div style="margin-bottom:8px;">📌 <strong>公文收發文號：</strong> <span style="color:#0f766e;font-weight:bold;">${escapeHtml(issue.doc_receive_no)}</span></div>
-                <div style="margin-bottom:8px;">📝 <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
-                <div style="margin-bottom:8px;">👤 <strong>病患姓名：</strong> ${escapeHtml(emailPatientName)}</div>
-                <div style="margin-bottom:8px;">🩺 <strong>函詢醫師：</strong> ${escapeHtml(issue.doctor_name || '醫師')} (${escapeHtml(issue.doctor_email || '-')})</div>
+                <div style="margin-bottom:8px;">&#128204; <strong>公文收發文號：</strong> <span style="color:#0f766e;font-weight:bold;">${escapeHtml(issue.doc_receive_no)}</span></div>
+                <div style="margin-bottom:8px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+                <div style="margin-bottom:8px;">&#128100; <strong>病患姓名：</strong> ${escapeHtml(emailPatientName)}</div>
+                <div style="margin-bottom:8px;">&#9877; <strong>函詢醫師：</strong> ${escapeHtml(issue.doctor_name || '醫師')} (${escapeHtml(issue.doctor_email || '-')})</div>
                 <div style="margin-top:10px;padding-top:10px;border-top:1px dashed #cbd5e1;">
-                    <strong>❓ 原始函詢問題內容：</strong><br>
+                    <strong>&#10067; 原始函詢問題內容：</strong><br>
                     <div style="margin-top:4px;color:#334155;line-height:1.5;white-space:pre-wrap;">${formatMultilineHtml(issue.question || '無')}</div>
                 </div>
             </div>
@@ -33093,8 +33093,8 @@ function getEmailTemplateHtml(type, issue) {
 
             <hr style="border:none;border-top:1px solid #e2e8f0;margin:20px 0;">
             <div style="font-size:13px;color:#64748b;display:flex;justify-content:space-between;align-items:center;">
-                <span>👤 <strong>病歷組承辦人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})</span>
-                <span>⏰ <strong>結案時間：</strong>${escapeHtml(issue.updated_at || getTaiwanLocalDateTimeString())}</span>
+                <span>&#128100; <strong>病歷組承辦人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})</span>
+                <span>&#9200; <strong>結案時間：</strong>${escapeHtml(issue.updated_at || getTaiwanLocalDateTimeString())}</span>
             </div>
         `;
     } else if (type === 3) { 
@@ -33127,7 +33127,7 @@ function getEmailTemplateHtml(type, issue) {
                 <strong>● 問題內容：</strong>${formatMultilineHtml(issue.question || '無')}
             </div>
             
-            ${attachmentHtml.replace('&#128206; <strong>附件：</strong>', '<strong>[附件]：</strong>')}
+            ${attachmentHtml}
             
             <div style="margin-top:16px;margin-bottom:10px;"><strong>● 承辦人員：</strong> ${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})</div>
         `;
@@ -33139,7 +33139,7 @@ function getEmailTemplateHtml(type, issue) {
         if (issue.return_reason) {
             returnHistoryBlock = `
                 <div style="background:#FEF2F2;border:1px solid #FCA5A5;border-left:4px solid #DC2626;color:#991B1B;padding:12px 14px;border-radius:6px;margin-bottom:14px;font-size:13.5px;">
-                    <strong style="color:#DC2626;">&#8457; 歷史退回補件紀錄 ${issue.return_at ? `(${escapeHtml(issue.return_at)})` : ''}：</strong><br>
+                    <strong style="color:#DC2626;">&#8617; 歷史退回補件紀錄 ${issue.return_at ? `(${escapeHtml(issue.return_at)})` : ''}：</strong><br>
                     <div style="color:#7F1D1D;margin-top:4px;">${formatMultilineHtml(issue.return_reason)}</div>
                 </div>
             `;
@@ -33154,12 +33154,12 @@ function getEmailTemplateHtml(type, issue) {
             ${returnHistoryBlock}
 
             <div style="background:#f8fafc;border:1px solid #e2e8f0;padding:14px 16px;border-radius:8px;margin-bottom:16px;">
-                <div style="margin-bottom:8px;">📌 <strong>公文收發文號：</strong> <span style="color:#15803D;font-weight:bold;">${escapeHtml(issue.doc_receive_no)}</span></div>
-                <div style="margin-bottom:8px;">📝 <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
-                <div style="margin-bottom:8px;">👤 <strong>病患姓名：</strong> ${escapeHtml(emailPatientName)}</div>
-                <div style="margin-bottom:8px;">🩺 <strong>函詢醫師：</strong> ${escapeHtml(issue.doctor_name || '醫師')} (${escapeHtml(issue.doctor_email || '-')})</div>
+                <div style="margin-bottom:8px;">&#128204; <strong>公文收發文號：</strong> <span style="color:#15803D;font-weight:bold;">${escapeHtml(issue.doc_receive_no)}</span></div>
+                <div style="margin-bottom:8px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+                <div style="margin-bottom:8px;">&#128100; <strong>病患姓名：</strong> ${escapeHtml(emailPatientName)}</div>
+                <div style="margin-bottom:8px;">&#9877; <strong>函詢醫師：</strong> ${escapeHtml(issue.doctor_name || '醫師')} (${escapeHtml(issue.doctor_email || '-')})</div>
                 <div style="margin-top:10px;padding-top:10px;border-top:1px dashed #cbd5e1;">
-                    <strong>❓ 原始函詢問題內容：</strong><br>
+                    <strong>&#10067; 原始函詢問題內容：</strong><br>
                     <div style="margin-top:4px;color:#334155;line-height:1.5;white-space:pre-wrap;">${formatMultilineHtml(issue.question || '無')}</div>
                 </div>
             </div>
@@ -33168,8 +33168,8 @@ function getEmailTemplateHtml(type, issue) {
 
             <hr style="border:none;border-top:1px solid #e2e8f0;margin:20px 0;">
             <div style="font-size:13px;color:#64748b;display:flex;justify-content:space-between;align-items:center;">
-                <span>👤 <strong>病歷組承辦人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})</span>
-                <span>⏰ <strong>發信時間：</strong>${getTaiwanNowStr()}</span>
+                <span>&#128100; <strong>病歷組承辦人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})</span>
+                <span>&#9200; <strong>發信時間：</strong>${getTaiwanNowStr()}</span>
             </div>
         `;
     } else if (type === 5) { 
@@ -33180,14 +33180,14 @@ function getEmailTemplateHtml(type, issue) {
         headerTitle = `&#9888;&#65039; 尚未回覆提醒通知 <span style="background-color: yellow; color: black; border-radius: 4px; padding: 2px 4px; font-size: 15px; margin-left: 4px;">(逾期第 ${diffDays} 天)</span>`;
         bodyHtml = `
             <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
-            <div style="margin-bottom:10px;">&#128338; <strong>問題通報時間：</strong> ${escapeHtml(issue.sent_at || '')}</div>
+            <div style="margin-bottom:10px;">&#9200; <strong>問題通報時間：</strong> ${escapeHtml(issue.sent_at || '')}</div>
             <div style="margin-bottom:10px;">&#9201;&#65039; <strong style="background-color: yellow; padding: 2px 4px; border-radius: 4px;">逾期天數：</strong> <strong style="color: red;">${issue.remind_count || 2} 天</strong></div>
             <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
             <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
             <div style="margin-bottom:14px;">&#128221; <strong>問題內容：</strong> ${formatMultilineHtml(issue.question || '無')}</div>
-            ${attachmentHtml.replace('&#128206;', '📎')}
+            ${attachmentHtml}
             <div style="background:#FCE8E6;border:1px solid #FAD2CF;color:#C5221F;padding:16px 20px;border-radius:8px;margin-top:16px;text-align:center;">
-                <strong style="font-size:15px;color:#C5221F;">✉️ 請直接點擊「回覆」此封 Email 即可回答</strong><br>
+                <strong style="font-size:15px;color:#C5221F;">&#9993; 請直接點擊「回覆」此封 Email 即可回答</strong><br>
                 <span style="color:#5f6368;font-size:13px;display:inline-block;margin-top:4px;">您只需直接在信件點擊「回覆」並輸入答覆內容（可夾帶附件），即可完成回覆。</span>
             </div>
         `;
@@ -33199,14 +33199,14 @@ function getEmailTemplateHtml(type, issue) {
                 <strong style="color:#0056D2;font-size:14px;">&#128172; 您的回覆內容</strong><br>
                 <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '無')}</div>
             </div>
-            <div style="margin-bottom:10px;">📌 <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
-            <div style="margin-bottom:10px;">📝 <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
-            <div style="margin-bottom:10px;">👤 <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
-            <div style="margin-bottom:14px;">📝 <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
+            <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
+            <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+            <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
+            <div style="margin-bottom:14px;">&#128221; <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
             ${attachmentHtml}
             <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
             <div style="font-size:12.5px;color:#5f6368;">
-                👤 <strong>承辦人員：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
+                &#128100; <strong>承辦人員：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
             </div>
         `;
     }
