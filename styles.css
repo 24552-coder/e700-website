@@ -420,6 +420,9 @@ textarea.form-control { resize: vertical; line-height: 1.6; }
     border-bottom: 1.5px solid #a7f3d0;
     white-space: nowrap;
     letter-spacing: 0.15px;
+    position: static !important;
+    top: auto !important;
+    z-index: 1 !important;
 }
 
 .nested-table td {

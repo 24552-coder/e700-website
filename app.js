@@ -32057,17 +32057,31 @@ function renderNestedIssueTable(receiveNo) {
                         </div>
                     ` : ''}
                 </td>
-                <td style="min-width:220px;">
+                <td style="min-width:260px;">
                     ${issue.doctor_reply
-                        ? `<div class="multiline-box reply-box">${formatMultilineHtml(issue.doctor_reply)}</div>`
+                        ? `<div class="multiline-box reply-box" style="border-left:4px solid #0284c7;">
+                            <strong style="color:#0369a1;font-size:12.5px;display:block;margin-bottom:4px;"><i class="fa-solid fa-comment-dots"></i> 最新醫師回覆：</strong>
+                            ${formatMultilineHtml(issue.doctor_reply)}
+                           </div>`
                         : `<div style="color:#94a3b8;text-align:center;padding:12px 0;"><i class="fa-regular fa-clock" style="display:block;font-size:20px;margin-bottom:4px;"></i>尚無回覆</div>`}
+                    ${issue.return_reason ? `
+                        <div style="margin-top:8px;padding:8px 12px;background:#fef2f2;border:1px solid #fca5a5;border-left:4px solid #dc2626;border-radius:6px;font-size:12.5px;color:#991b1b;">
+                            <strong style="color:#dc2626;display:block;margin-bottom:2px;"><i class="fa-solid fa-rotate-left"></i> 歷史退回補件紀錄 ${issue.return_at ? `(${escapeHtml(issue.return_at)})` : ''}：</strong>
+                            <span style="color:#7f1d1d;">${formatMultilineHtml(issue.return_reason)}</span>
+                        </div>
+                    ` : ''}
                 </td>
                 <td style="min-width:150px;">
                     ${statusSelectHtml}
                     ${overdueBadge}
                 </td>
-                <td style="min-width:100px;font-size:12.5px;color:#64748b;">${escapeHtml(issue.sent_at || '-')}</td>
-                <td style="min-width:100px;font-size:12.5px;color:#64748b;">${escapeHtml(issue.replied_at || '-')}</td>
+                <td style="min-width:110px;font-size:12.5px;color:#475569;">
+                    <div><i class="fa-regular fa-paper-plane" style="color:#64748b;margin-right:3px;"></i>${escapeHtml(issue.sent_at || '-')}</div>
+                    ${issue.return_at ? `<div style="color:#dc2626;font-size:11.5px;margin-top:4px;"><i class="fa-solid fa-rotate-left"></i> 退回: ${escapeHtml(issue.return_at)}</div>` : ''}
+                </td>
+                <td style="min-width:110px;font-size:12.5px;color:#475569;">
+                    <div><i class="fa-regular fa-calendar-check" style="color:#059669;margin-right:3px;"></i>${escapeHtml(issue.replied_at || '-')}</div>
+                </td>
                 <td style="min-width:130px;">
                     <div class="action-btn-group">
                         <div class="btn-row">
@@ -32951,33 +32965,44 @@ function getEmailTemplateHtml(type, issue) {
             </div>
         `;
     } else if (type === 2) { 
+        headerBg = "#0f766e";
+        headerTitle = "&#9989; 醫師回覆與結案彙整通知";
+
+        let returnHistoryBlock = "";
         if (issue.return_reason) {
-            headerBg = "#D97706";
-            headerTitle = "&#9989; 醫師退回補件回覆已確認完成";
-            bodyHtml = `
-                <div style="background:#FEF3C7;border:1px solid #FDE68A;color:#92400E;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                    <strong style="color:#D97706;font-size:14px;">&#128221; 彙整後完整意見</strong><br>
-                    <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '無')}</div>
-                </div>`;
-        } else {
-            headerBg = "#0056D2";
-            headerTitle = "&#9989; 醫師回覆已確認完成";
-            bodyHtml = `
-                <div style="background:#E8F0FE;border:1px solid #D2E3FC;color:#174EA6;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                    <strong style="color:#0056D2;font-size:14px;">&#128172; 醫師回覆內容</strong><br>
-                    <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '無')}</div>
-                </div>`;
+            returnHistoryBlock = `
+                <div style="background:#FEF2F2;border:1px solid #FCA5A5;border-left:4px solid #DC2626;color:#991B1B;padding:12px 14px;border-radius:6px;margin-bottom:14px;font-size:13.5px;">
+                    <strong style="color:#DC2626;">&#8457; 歷史退回補件紀錄 ${issue.return_at ? `(${escapeHtml(issue.return_at)})` : ''}：</strong><br>
+                    <div style="color:#7F1D1D;margin-top:4px;">${formatMultilineHtml(issue.return_reason)}</div>
+                </div>
+            `;
         }
-        
-        bodyHtml += `
-            <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
-            <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
-            <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
-            <div style="margin-bottom:14px;">&#128221; <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
+
+        bodyHtml = `
+            <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-left:4px solid #16A34A;color:#14532D;padding:14px 16px;border-radius:8px;margin-bottom:16px;">
+                <strong style="color:#15803D;font-size:14.5px;">&#128172; 最終醫師意見回覆 (回覆時間: ${escapeHtml(issue.replied_at || '已回覆')})</strong><br>
+                <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:8px;border:1px solid #d1fae5;color:#1e293b;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '無')}</div>
+            </div>
+
+            ${returnHistoryBlock}
+
+            <div style="background:#f8fafc;border:1px solid #e2e8f0;padding:14px 16px;border-radius:8px;margin-bottom:16px;">
+                <div style="margin-bottom:8px;">📌 <strong>公文收發文號：</strong> <span style="color:#0f766e;font-weight:bold;">${escapeHtml(issue.doc_receive_no)}</span></div>
+                <div style="margin-bottom:8px;">📝 <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+                <div style="margin-bottom:8px;">👤 <strong>病患姓名：</strong> ${escapeHtml(emailPatientName)}</div>
+                <div style="margin-bottom:8px;">🩺 <strong>函詢醫師：</strong> ${escapeHtml(issue.doctor_name || '醫師')} (${escapeHtml(issue.doctor_email || '-')})</div>
+                <div style="margin-top:10px;padding-top:10px;border-top:1px dashed #cbd5e1;">
+                    <strong>❓ 原始函詢問題內容：</strong><br>
+                    <div style="margin-top:4px;color:#334155;line-height:1.5;white-space:pre-wrap;">${formatMultilineHtml(issue.question || '無')}</div>
+                </div>
+            </div>
+
             ${attachmentHtml}
-            <hr style="border:none;border-top:1px solid #f1f3f4;margin:20px 0;">
-            <div style="font-size:12.5px;color:#5f6368;">
-                &#128100; <strong>提出人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:20px 0;">
+            <div style="font-size:13px;color:#64748b;display:flex;justify-content:space-between;align-items:center;">
+                <span>👤 <strong>病歷組承辦人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})</span>
+                <span>⏰ <strong>結案時間：</strong>${escapeHtml(issue.updated_at || getTaiwanLocalDateTimeString())}</span>
             </div>
         `;
     } else if (type === 3) { 
@@ -33016,19 +33041,43 @@ function getEmailTemplateHtml(type, issue) {
         `;
     } else if (type === 4) { 
         headerBg = "#15803D";
-        headerTitle = "&#127881; 案件已結案完成通知";
+        headerTitle = "&#127881; 案件已結案完成彙整通知";
+
+        let returnHistoryBlock = "";
+        if (issue.return_reason) {
+            returnHistoryBlock = `
+                <div style="background:#FEF2F2;border:1px solid #FCA5A5;border-left:4px solid #DC2626;color:#991B1B;padding:12px 14px;border-radius:6px;margin-bottom:14px;font-size:13.5px;">
+                    <strong style="color:#DC2626;">&#8457; 歷史退回補件紀錄 ${issue.return_at ? `(${escapeHtml(issue.return_at)})` : ''}：</strong><br>
+                    <div style="color:#7F1D1D;margin-top:4px;">${formatMultilineHtml(issue.return_reason)}</div>
+                </div>
+            `;
+        }
+
         bodyHtml = `
-            <div style="background:#E6F4EA;border:1px solid #CEEAD6;color:#137333;padding:14px 16px;border-radius:6px;margin-bottom:16px;">
-                <strong style="color:#137333;font-size:14px;">&#128221; 最終彙整意見</strong><br>
-                <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:6px;border:1px solid #dadce0;color:#202124;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '結案')}</div>
+            <div style="background:#E6F4EA;border:1px solid #CEEAD6;border-left:4px solid #137333;color:#137333;padding:14px 16px;border-radius:8px;margin-bottom:16px;">
+                <strong style="color:#137333;font-size:14.5px;">&#128221; 最終結案彙整意見 (結案時間: ${escapeHtml(issue.replied_at || issue.updated_at || '已結案')})</strong><br>
+                <div style="background:#ffffff;padding:12px 14px;border-radius:6px;margin-top:8px;border:1px solid #ceead6;color:#1e293b;font-size:14px;line-height:1.6;white-space:pre-wrap;">${formatMultilineHtml(issue.doctor_reply || '無')}</div>
             </div>
-            <div style="margin-bottom:10px;">&#128204; <strong>案件單號：</strong> ${escapeHtml(issue.doc_receive_no)}</div>
-            <div style="margin-bottom:10px;">&#128221; <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
-            <div style="margin-bottom:10px;">&#128100; <strong>病患名稱：</strong> ${escapeHtml(emailPatientName)}</div>
-            <div style="margin-bottom:14px;">&#128221; <strong>問題內容：</strong><br>${formatMultilineHtml(issue.question)}</div>
+
+            ${returnHistoryBlock}
+
+            <div style="background:#f8fafc;border:1px solid #e2e8f0;padding:14px 16px;border-radius:8px;margin-bottom:16px;">
+                <div style="margin-bottom:8px;">📌 <strong>公文收發文號：</strong> <span style="color:#15803D;font-weight:bold;">${escapeHtml(issue.doc_receive_no)}</span></div>
+                <div style="margin-bottom:8px;">📝 <strong>病歷號：</strong> ${escapeHtml(emailChartNo)}</div>
+                <div style="margin-bottom:8px;">👤 <strong>病患姓名：</strong> ${escapeHtml(emailPatientName)}</div>
+                <div style="margin-bottom:8px;">🩺 <strong>函詢醫師：</strong> ${escapeHtml(issue.doctor_name || '醫師')} (${escapeHtml(issue.doctor_email || '-')})</div>
+                <div style="margin-top:10px;padding-top:10px;border-top:1px dashed #cbd5e1;">
+                    <strong>❓ 原始函詢問題內容：</strong><br>
+                    <div style="margin-top:4px;color:#334155;line-height:1.5;white-space:pre-wrap;">${formatMultilineHtml(issue.question || '無')}</div>
+                </div>
+            </div>
+
             ${attachmentHtml}
-            <div style="margin-top:16px;margin-bottom:10px;">
-                &#128100; <strong>提出人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})
+
+            <hr style="border:none;border-top:1px solid #e2e8f0;margin:20px 0;">
+            <div style="font-size:13px;color:#64748b;display:flex;justify-content:space-between;align-items:center;">
+                <span>👤 <strong>病歷組承辦人：</strong>${escapeHtml(creatorName)} (分機：${escapeHtml(creatorExt)})</span>
+                <span>⏰ <strong>發信時間：</strong>${getTaiwanNowStr()}</span>
             </div>
         `;
     } else if (type === 5) { 
@@ -33612,6 +33661,7 @@ function confirmReturnIssue() {
     const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (issue) {
         issue.return_reason = reason;
+        issue.return_at = getTaiwanLocalDateTimeString();
         issue.status = "退回補件";
         saveDataToStorage();
         closeModal("modalReturnReason");
