@@ -1,14 +1,13 @@
 @echo off
-chcp 65001 > nul
-title 雙和醫院病歷組 E700 系統伺服器 (10.97.14.48:8080)
+title SHH EMR E700 System Server (10.97.14.48)
 cls
 echo ============================================================
-echo   雙和醫院病歷組 E700 醫療爭議與公文追蹤系統伺服器
-echo   主機 IP 地址: 10.97.14.48:8080
-echo   全組同仁連線網址: http://10.97.14.48:8080
+echo   SHH Hospital EMR E700 System Server
+echo   Host IP: 10.97.14.48
+echo   Connecting URL: http://10.97.14.48:8888
 echo ============================================================
 echo.
-echo 正在啟動院內伺服器，請保持此視窗開啟（縮小即可）...
+echo Starting server... Please keep this window open (minimize is OK).
 echo.
 python "%~dp0server.py"
 pause

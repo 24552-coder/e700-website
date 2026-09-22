@@ -31156,7 +31156,7 @@ async function pushCloudData(isSilent = true) {
     };
 
     // If running on local server 10.97.14.48 or localhost
-    if (window.location.protocol.startsWith("http") && (window.location.hostname === "10.97.14.48" || window.location.hostname === "localhost" || window.location.port === "8080")) {
+    if (window.location.protocol.startsWith("http") && (window.location.hostname === "10.97.14.48" || window.location.hostname === "localhost" || window.location.port === "8888" || window.location.port === "8090" || window.location.port === "8088")) {
         fetch(window.location.origin + "/api/saveCloudData", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -31180,7 +31180,7 @@ async function pushCloudData(isSilent = true) {
 async function syncCloudData(isSilent = false) {
     if (Date.now() - (window.gLastLocalSaveTime || 0) < 15000) return;
     let syncUrl = getGasWebhookUrl();
-    if (window.location.protocol.startsWith("http") && (window.location.hostname === "10.97.14.48" || window.location.hostname === "localhost" || window.location.port === "8080")) {
+    if (window.location.protocol.startsWith("http") && (window.location.hostname === "10.97.14.48" || window.location.hostname === "localhost" || window.location.port === "8888" || window.location.port === "8090" || window.location.port === "8088")) {
         syncUrl = window.location.origin + "/api/getCloudData";
     }
     const savedGasUrl = getGasWebhookUrl();

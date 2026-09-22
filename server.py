@@ -5,7 +5,7 @@ import os
 import sys
 import time
 
-PORT = 8080
+PREFERRED_PORTS = [8888, 8090, 8088, 5000, 9000]
 HOST = "0.0.0.0"
 DB_FILE = os.path.join(os.path.dirname(__file__), "server_db.json")
 
@@ -21,7 +21,6 @@ if not os.path.exists(DB_FILE):
 
 class E700ServerHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
-        # Prevent caching for JS/CSS/HTML so updates are immediate
         self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
         self.send_header("Pragma", "no-cache")
         self.send_header("Expires", "0")
@@ -88,17 +87,35 @@ class E700ServerHandler(http.server.SimpleHTTPRequestHandler):
 
         self.send_error(404, "Endpoint not found")
 
-if __name__ == "__main__":
+def start_server():
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer((HOST, PORT), E700ServerHandler) as httpd:
-        print(f"============================================================")
-        print(f"  雙和醫院病歷組 E700 醫療爭議與公文追蹤系統伺服器")
-        print(f"  伺服器主機 IP: 10.97.14.48:8080")
-        print(f"  院內同仁連線網址: http://10.97.14.48:8080")
-        print(f"============================================================")
-        print(f"伺服器已成功啟動！請保持此視窗開啟...")
+    
+    selected_port = None
+    httpd = None
+
+    for port in PREFERRED_PORTS:
         try:
-            httpd.serve_forever()
-        except KeyboardInterrupt:
-            print("\n伺服器已停止。")
+            httpd = socketserver.TCPServer((HOST, port), E700ServerHandler)
+            selected_port = port
+            break
+        except Exception as e:
+            continue
+
+    if not httpd:
+        print("Error: Could not bind to any port in PREFERRED_PORTS.")
+        sys.exit(1)
+
+    print("============================================================", flush=True)
+    print("  雙和醫院病歷組 E700 醫療爭議與公文追蹤系統伺服器", flush=True)
+    print(f"  伺服器主機 IP: 10.97.14.48:{selected_port}", flush=True)
+    print(f"  全組同仁連線網址: http://10.97.14.48:{selected_port}", flush=True)
+    print("============================================================", flush=True)
+    print("伺服器已成功啟動！請保持此視窗開啟...", flush=True)
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        print("\n伺服器已停止。")
+
+if __name__ == "__main__":
+    start_server()
