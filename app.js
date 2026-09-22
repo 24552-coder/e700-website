@@ -514,6 +514,32 @@ const CASEWORKER_DIRECTORY = [
     { name: "何秀英", email: "12254@s.tmu.edu.tw", ext: "2043" }
 ];
 
+
+// ----------------------------------------------------
+# Deduplication Engine for Reply Notifications
+// ----------------------------------------------------
+var gSentReplyNotifications = new Set();
+try {
+    const storedNotifs = localStorage.getItem("SENT_REPLY_NOTIFICATIONS");
+    if (storedNotifs) {
+        gSentReplyNotifications = new Set(JSON.parse(storedNotifs));
+    }
+} catch(e) {}
+
+function markNotificationSent(notifKey) {
+    if (!notifKey) return;
+    gSentReplyNotifications.add(notifKey);
+    try {
+        localStorage.setItem("SENT_REPLY_NOTIFICATIONS", JSON.stringify(Array.from(gSentReplyNotifications)));
+    } catch(e) {}
+}
+
+function isNotificationSent(notifKey) {
+    if (!notifKey) return false;
+    return gSentReplyNotifications.has(notifKey);
+}
+
+
 function cleanAssigneeName(name) {
     if (!name) return "";
     let clean = String(name).replace(/\s*\([\s\S]*?\)/g, "").trim();
@@ -33765,7 +33791,14 @@ function syncGmailReplies(isSilent = false) {
                             processedIssues.add(targetIssue.issue_id);
                             
                             // 自動寄出「已收到醫師回覆」的單一整合信件給醫師與承辦同仁
-                            // autoSendEmail removed to prevent infinite email loop on background sync
+                            const notifKey = `NOTIF_${targetIssue.issue_id}_${(targetIssue.replied_at || "").replace(/\s+/, "_")}_${newReply.length}`;
+                            if (!isNotificationSent(notifKey) && targetIssue.reply_notif_sent !== notifKey) {
+                                targetIssue.reply_notif_sent = notifKey;
+                                markNotificationSent(notifKey);
+                                saveDataToStorage();
+                                showToast(`📩 已自動發送「收到醫師回覆通知信」至相關人員 (僅發送一次)`, "success");
+                                await autoSendEmail(targetIssue.issue_id, 2);
+                            }
                         }
                     }
                 } else if (!targetIssue && (rep.issueId || rep.docNo)) {
@@ -33794,7 +33827,14 @@ function syncGmailReplies(isSilent = false) {
                         processedIssues.add(newIssue.issue_id);
                         
                         // 自動寄出「已收到醫師回覆」的單一整合信件給醫師與承辦同仁
-                        // autoSendEmail removed to prevent infinite email loop on background sync
+                        const notifKey = `NOTIF_${targetIssue.issue_id}_${(targetIssue.replied_at || "").replace(/\s+/, "_")}_${newReply.length}`;
+                            if (!isNotificationSent(notifKey) && targetIssue.reply_notif_sent !== notifKey) {
+                                targetIssue.reply_notif_sent = notifKey;
+                                markNotificationSent(notifKey);
+                                saveDataToStorage();
+                                showToast(`📩 已自動發送「收到醫師回覆通知信」至相關人員 (僅發送一次)`, "success");
+                                await autoSendEmail(targetIssue.issue_id, 2);
+                            }
                     }
                 }
             }
