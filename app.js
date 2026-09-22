@@ -33873,16 +33873,7 @@ function syncGmailReplies(isSilent = false) {
 
                             newlyUpdatedCount++;
                             processedIssues.add(targetIssue.issue_id);
-                            
-                            // 自動寄出「已收到醫師回覆」的單一整合信件給醫師與承辦同仁
-                            const notifKey = `NOTIF_${targetIssue.issue_id}_${(targetIssue.replied_at || "").replace(/\s+/, "_")}_${newReply.length}`;
-                            if (!isNotificationSent(notifKey) && targetIssue.reply_notif_sent !== notifKey) {
-                                targetIssue.reply_notif_sent = notifKey;
-                                markNotificationSent(notifKey);
-                                saveDataToStorage();
-                                showToast(`📩 已自動發送「收到醫師回覆通知信」至相關人員 (僅發送一次)`, "success");
-                                await autoSendEmail(targetIssue.issue_id, 2);
-                            }
+                            saveDataToStorage();
                         }
                     }
                 } else if (!targetIssue && (rep.issueId || rep.docNo)) {
@@ -33909,16 +33900,7 @@ function syncGmailReplies(isSilent = false) {
                         gIssues.unshift(newIssue);
                         newlyUpdatedCount++;
                         processedIssues.add(newIssue.issue_id);
-                        
-                        // 自動寄出「已收到醫師回覆」的單一整合信件給醫師與承辦同仁
-                        const notifKey = `NOTIF_${targetIssue.issue_id}_${(targetIssue.replied_at || "").replace(/\s+/, "_")}_${newReply.length}`;
-                            if (!isNotificationSent(notifKey) && targetIssue.reply_notif_sent !== notifKey) {
-                                targetIssue.reply_notif_sent = notifKey;
-                                markNotificationSent(notifKey);
-                                saveDataToStorage();
-                                showToast(`📩 已自動發送「收到醫師回覆通知信」至相關人員 (僅發送一次)`, "success");
-                                await autoSendEmail(targetIssue.issue_id, 2);
-                            }
+                        saveDataToStorage();
                     }
                 }
             }
