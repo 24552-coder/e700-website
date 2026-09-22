@@ -31019,14 +31019,9 @@ async function autoCheckAndRemindOverdue() {
     const overdueIssues = gIssues.filter(i => {
         if (!isIssueOverdue(i)) return false; // This already checks status and sent_at
         
-        if (i.last_reminded_at) {
-            const lastRemindDate = new Date(i.last_reminded_at);
-            // 如果今天已經對這個案件催辦過，就不再重複催辦
-            if (lastRemindDate.getFullYear() === now.getFullYear() &&
-                lastRemindDate.getMonth() === now.getMonth() &&
-                lastRemindDate.getDate() === now.getDate()) {
-                return false; 
-            }
+        const todayStr = getTaiwanNowStr().split(' ')[0]; // e.g. "2026/09/22" or "2026-09-22"
+        if (i.last_reminded_at && i.last_reminded_at.includes(todayStr)) {
+            return false; // Already reminded today
         }
         return true; // Overdue and needs reminder
     });
@@ -31061,7 +31056,6 @@ function startAutoSyncTimer() {
         try {
             await syncCloudData(true);
             await syncGmailReplies(true);
-            await autoCheckAndRemindOverdue();
         } catch (err) {
             console.error("Auto sync error:", err);
         } finally {
@@ -31069,9 +31063,8 @@ function startAutoSyncTimer() {
         }
     };
 
-    // 啟動 1 秒內立即進行初次靜默雲端連線校正
     setTimeout(doSync, 1000);
-    gAutoSyncInterval = setInterval(doSync, 5000);
+    gAutoSyncInterval = setInterval(doSync, 10000);
 
     // 當使用者分頁切換回本系統，或視窗獲得焦點時，立即全自動靜默連線校正
     window.addEventListener("focus", doSync);
@@ -31318,14 +31311,16 @@ function loadDataFromStorage() {
 
     // If local storage is missing or empty array, auto-initialize from default 541 cases & 657 issues!
     if (!Array.isArray(gMainDocs) || gMainDocs.length === 0) {
+        console.warn("Auto-restoring default main docs...");
         gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
         saveDataToStorage();
     }
-    backfillAndMigrateIssueHistory();
     if (!Array.isArray(gIssues) || gIssues.length === 0) {
+        console.warn("Auto-restoring default issues...");
         gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
         saveDataToStorage();
     }
+    backfillAndMigrateIssueHistory();
     backfillAndMigrateIssueHistory();
 
     // Auto-merge newly added master docs & issues if missing in user's local storage
@@ -31377,14 +31372,14 @@ function loadDataFromStorage() {
     // Migration: completely remove typo "錢佩妤"
     let hasTypoFixed = false;
     gMainDocs.forEach(d => {
-        if (d.doc_assignee && d.doc_assignee.includes("錢佩妤")) {
-            d.doc_assignee = d.doc_assignee.replace(/錢佩妤/g, "");
+        if (d.doc_assignee && d.doc_assignee.includes("錢佩好")) {
+            d.doc_assignee = d.doc_assignee.replace(/錢佩好/g, "錢佩妤");
             hasTypoFixed = true;
         }
     });
     gIssues.forEach(i => {
-        if (i.creator_name && i.creator_name.includes("錢佩妤")) {
-            i.creator_name = i.creator_name.replace(/錢佩妤/g, "");
+        if (i.creator_name && i.creator_name.includes("錢佩好")) {
+            i.creator_name = i.creator_name.replace(/錢佩好/g, "錢佩妤");
             hasTypoFixed = true;
         }
     });
