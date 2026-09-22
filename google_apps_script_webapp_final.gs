@@ -128,71 +128,58 @@ function doPost(e) {
  */
 function scanGmailReplies() {
   try {
-    var threads = GmailApp.search('is:inbox -is:starred', 0, 50);
+    // Search all medical inquiry threads (do NOT restrict by -is:starred so replies are never missed)
+    var threads = GmailApp.search('subject:"雙和醫院病歷組" OR subject:"醫療爭議" OR subject:"單號"', 0, 50);
     var foundReplies = [];
-    var threadsToStar = [];
 
     for (var i = 0; i < threads.length; i++) {
       var thread = threads[i];
       var msgs = thread.getMessages();
-      var lastMsg = msgs[msgs.length - 1]; // 抓取最後一封信 (也就是醫師的回信)
-      
-      var subject = lastMsg.getSubject();
-      var from = lastMsg.getFrom();
-      var dateStr = Utilities.formatDate(lastMsg.getDate(), "GMT+8", "yyyy-MM-dd HH:mm");
-      var msgFromLower = from.toLowerCase();
-      
-      // 防呆：如果最新的一封信是我們自己發出去的，直接打星號跳過
-      if (msgFromLower.indexOf("e700document") !== -1 || msgFromLower.indexOf("雙和醫院病歷組") !== -1) {
-         threadsToStar.push(thread);
-         continue;
-      }
 
-      // 提取單號與項次
-      var docMatch = subject.match(/單號[：:]\s*([^\s(]+)/);
-      var issueMatch = subject.match(/項次[：:]\s*([0-9A-Za-z\-]+)/);
+      // Find doctor replies in the thread (ignore emails sent by system e700document)
+      for (var m = msgs.length - 1; m >= 0; m--) {
+        var msg = msgs[m];
+        var from = msg.getFrom();
+        var msgFromLower = from.toLowerCase();
 
-      var docNo = docMatch ? docMatch[1] : "";
-      var issueId = issueMatch ? issueMatch[1] : "";
+        // Skip system/outbound emails sent by病歷組
+        if (msgFromLower.indexOf("e700document") !== -1 || msgFromLower.indexOf("雙和醫院病歷組") !== -1) {
+          continue;
+        }
 
-      if (!docNo && !issueId) {
-        continue; // 找不到單號就跳過 (不打星號，讓人工處理)
-      }
+        var subject = msg.getSubject() || thread.getFirstMessageSubject();
+        var dateStr = Utilities.formatDate(msg.getDate(), "GMT+8", "yyyy-MM-dd HH:mm");
 
-      // 使用原生 API 取得純文字內容 (完美解決 Big5 與 Base64 解碼問題)
-      var body = lastMsg.getPlainBody();
-      
-      // 清理醫師回信內文
-      var cleanReply = body;
-      cleanReply = cleanReply.split(/\r?\n.*於\s*\d{4}.*寫道[：:]/i)[0];
-      cleanReply = cleanReply.split(/----------\s*原始郵件\s*----------/i)[0];
-      cleanReply = cleanReply.split(/---------\s*Original Message\s*---------/i)[0];
-      var fromIndex = cleanReply.search(/\r?\n\s*From:\s*雙和醫院病歷組/i);
-      if (fromIndex !== -1) cleanReply = cleanReply.substring(0, fromIndex);
-      cleanReply = cleanReply.trim();
-      
-      // 檢查是否有附件
-      var hasAttachments = lastMsg.getAttachments().length > 0;
+        // Extract docNo and issueId
+        var docMatch = subject.match(/單號[:：]\s*([^\s(]+)/);
+        var issueMatch = subject.match(/項次[:：]\s*([0-9A-Za-z\-]+)/) || subject.match(/(INQ-[0-9A-Za-z\-]+)/);
 
-      if (cleanReply || hasAttachments) {
-        if (!cleanReply) cleanReply = "【醫師僅夾帶附件回覆，無文字內容】";
-        foundReplies.push({
-          docNo: docNo,
-          issueId: issueId,
-          doctorEmail: from,
-          replyContent: cleanReply,
-          repliedAt: dateStr
-        });
-      }
-      
-      threadsToStar.push(thread);
-    }
-    
-    // 批次打星號
-    for (var t = 0; t < threadsToStar.length; t++) {
-      var msgs = threadsToStar[t].getMessages();
-      for (var m = 0; m < msgs.length; m++) {
-        msgs[m].star();
+        var docNo = docMatch ? docMatch[1].trim() : "";
+        var issueId = issueMatch ? issueMatch[1].trim() : "";
+
+        var body = msg.getPlainBody();
+        
+        // Clean reply body
+        var cleanReply = body;
+        cleanReply = cleanReply.split(/\r?\n.*\s*\d{4}.*[:]/i)[0];
+        cleanReply = cleanReply.split(/----------\s*\s*----------/i)[0];
+        cleanReply = cleanReply.split(/---------\s*Original Message\s*---------/i)[0];
+        cleanReply = cleanReply.split(/於\s*\d{4}年.*寫道/i)[0];
+        var fromIndex = cleanReply.search(/\r?\n\s*From:\s*/i);
+        if (fromIndex !== -1) cleanReply = cleanReply.substring(0, fromIndex);
+        cleanReply = cleanReply.trim();
+
+        if (cleanReply || msg.getAttachments().length > 0) {
+          foundReplies.push({
+            docNo: docNo,
+            issueId: issueId,
+            doctorEmail: from,
+            replyContent: cleanReply || "醫師已回覆（含有附件）",
+            repliedAt: dateStr,
+            subject: subject
+          });
+          break; // Found latest doctor reply for this thread
+        }
       }
     }
 
