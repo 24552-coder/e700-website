@@ -32188,9 +32188,6 @@ function renderNestedIssueTable(receiveNo) {
                             <button class="btn btn-sm btn-outline-info" onclick="autoSendEmail('${escapeHtml(issue.issue_id)}', 1, true)" title="預覽或發送信件範本">
                                 <i class="fa-solid fa-envelope"></i> 信件
                             </button>
-                            <button class="btn btn-sm btn-outline-primary" onclick="openIssueHistoryModal('${escapeHtml(issue.issue_id)}')" title="查看完整歷次溝通與退回紀錄">
-                                <i class="fa-solid fa-clock-rotate-left"></i> 歷程
-                            </button>
                         </div>
                     </div>
                 </td>
