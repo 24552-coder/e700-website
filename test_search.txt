@@ -1,0 +1,20 @@
+function testSearchBugs() {
+  var q = 'is:inbox -is:starred';
+  console.log("【測試查詢條件】" + q);
+  
+  try {
+    var resMessages = Gmail.Users.Messages.list('me', { q: q, maxResults: 10 });
+    console.log("Messages.list 找到: " + (resMessages.messages ? resMessages.messages.length : 0) + " 封單獨信件");
+  } catch(e) { console.error("Messages.list 錯誤: " + e); }
+
+  try {
+    var resThreads = Gmail.Users.Threads.list('me', { q: q, maxResults: 10 });
+    console.log("Threads.list 找到: " + (resThreads.threads ? resThreads.threads.length : 0) + " 組對話群組");
+    
+    if (resThreads.threads && resThreads.threads.length > 0) {
+      var t = Gmail.Users.Threads.get('me', resThreads.threads[0].id);
+      var lastMsg = t.messages[t.messages.length - 1];
+      console.log("最新信件 ID: " + lastMsg.id + ", 標題片段: " + lastMsg.snippet);
+    }
+  } catch(e) { console.error("Threads.list 錯誤: " + e); }
+}

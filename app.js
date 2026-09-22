@@ -31361,7 +31361,7 @@ function loadDataFromStorage() {
         saveDataToStorage();
     }
     backfillAndMigrateIssueHistory();
-    backfillAndMigrateIssueHistory();
+    repairMismatchedReplies();
 
     // Auto-merge newly added master docs & issues if missing in user's local storage
     let hasNewMerged = false;
@@ -33827,22 +33827,33 @@ function syncGmailReplies(isSilent = false) {
                 }
                 const repSubject = rep.subject ? String(rep.subject) : "";
 
-                // Tier 1: 項次 ID 比對
+                // 嚴格比對機制：避免同一份公文有多位醫師時張冠李戴
+                function isDoctorEmailMatch(issue) {
+                    if (!repEmail || !issue || !issue.doctor_email) return true;
+                    const issueEmail = String(issue.doctor_email).toLowerCase().trim();
+                    return issueEmail === repEmail;
+                }
+
+                // Tier 1: 項次 ID + Email 嚴格雙重比對
                 if (repIssueId) {
-                    targetIssue = gIssues.find(i => String(i.issue_id).trim() === repIssueId && i.status !== "已完成");
+                    targetIssue = gIssues.find(i => String(i.issue_id).trim() === repIssueId && i.status !== "已完成" && isDoctorEmailMatch(i));
                 }
-                // Tier 2: 收發文號比對
-                if (!targetIssue && repDocNo) {
-                    targetIssue = gIssues.find(i => String(i.doc_receive_no).trim() === repDocNo && i.status !== "已完成" && i.status !== "已回覆" && !processedIssues.has(i.issue_id));
+                // Tier 2: 醫師 Email + 收發文號 雙重比對
+                if (!targetIssue && repEmail && repDocNo) {
+                    targetIssue = gIssues.find(i => String(i.doc_receive_no).trim() === repDocNo && i.doctor_email && String(i.doctor_email).toLowerCase().trim() === repEmail && i.status !== "已完成" && !processedIssues.has(i.issue_id));
                 }
-                // Tier 3: 醫師 Email 備援比對 (專治醫師直接回覆 Google Drive 雲端共用通知信的情形)
+                // Tier 3: 僅醫師 Email 比對
                 if (!targetIssue && repEmail) {
                     targetIssue = gIssues.find(i => i.doctor_email && String(i.doctor_email).toLowerCase().trim() === repEmail && i.status !== "已完成" && !processedIssues.has(i.issue_id));
                 }
-                // Tier 4: 病患姓名備援比對 (比對信件主旨是否含有病患姓名)
+                // Tier 4: 收發文號備援 (前提必須無 Email 衝突)
+                if (!targetIssue && repDocNo) {
+                    targetIssue = gIssues.find(i => String(i.doc_receive_no).trim() === repDocNo && i.status !== "已完成" && i.status !== "已回覆" && isDoctorEmailMatch(i) && !processedIssues.has(i.issue_id));
+                }
+                // Tier 5: 病患姓名備援 (前提必須無 Email 衝突)
                 if (!targetIssue && repSubject) {
                     targetIssue = gIssues.find(i => {
-                        if (i.status === "已完成" || processedIssues.has(i.issue_id)) return false;
+                        if (i.status === "已完成" || processedIssues.has(i.issue_id) || !isDoctorEmailMatch(i)) return false;
                         const pName = i.patient_name || i.doc_patient_name || "";
                         return pName && pName.length >= 2 && repSubject.includes(pName);
                     });
