@@ -84,6 +84,12 @@ function doPost(e) {
         .setMimeType(ContentService.MimeType.JSON);
     }
 
+    if (data.action === "sendEmail") {
+      var emailResult = sendEmailApi(data);
+      return ContentService.createTextOutput(JSON.stringify(emailResult))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
     // 預設動作：發送郵件
     var to = data.to;
     var cc = data.cc || "";
@@ -146,7 +152,7 @@ function scanGmailReplies() {
         var from = "";
         var dateStr = "";
         
-        // 從最新回信往前找未加星號的醫師回信
+        // 由後往前找最新的醫師回信
         for (var m = threadDetail.messages.length - 1; m >= 0; m--) {
             var tempMsg = threadDetail.messages[m];
             var tempFrom = "";
@@ -163,7 +169,7 @@ function scanGmailReplies() {
                 if (hName === 'subject') tempSubject = tempMsg.payload.headers[h].value;
             }
             
-            // 忽略系統自動確認信
+            // 如果是系統自動發出的確認信，跳過
             if (tempSubject.indexOf("已收到您的回覆確認") !== -1) {
                 continue;
             }
@@ -180,6 +186,7 @@ function scanGmailReplies() {
                 continue;
             }
             
+            // 如果這封信未打星號，且是醫師回信
             if (!isStarred) {
                 msgDetail = tempMsg;
                 msgId = tempMsg.id;
@@ -201,7 +208,7 @@ function scanGmailReplies() {
         
         if (!msgDetail) continue;
 
-        // 嘗試解析單號與項次
+        // 提取單號與項次
         var docMatch = subject.match(/單號[：:]\s*([^\s(]+)/);
         var issueMatch = subject.match(/項次[：:]\s*([0-9A-Za-z\-]+)/);
 
@@ -218,23 +225,19 @@ function scanGmailReplies() {
         // 若無單號項次且無寄件者 Email，跳過
         if (!docNo && !issueId && !doctorEmailOnly) continue;
 
-        // 內文解析
+        // 提取內文 (使用強化版遞迴解析器)
         var rawBody = extractMessageBody(msgDetail.payload);
         
+                // 清理醫師回信內文 (剔除引言歷史紀錄)
         var cleanReply = rawBody || "";
-        cleanReply = cleanReply.split(/
-?
-.*寫道[：:]/i)[0];
-        cleanReply = cleanReply.split(/
-?
-.*wrote[：:]/i)[0];
-        cleanReply = cleanReply.split(/----------\s*原始郵件\s*----------/i)[0];
-        cleanReply = cleanReply.split(/---------\s*Original Message\s*---------/i)[0];
-        cleanReply = cleanReply.split(/
-?
-\s*(寄件者|From)[：:]\s*病歷組|雙和/i)[0];
+        cleanReply = cleanReply.split(new RegExp("\\r?\\n.*寫道[：:]", "i"))[0];
+        cleanReply = cleanReply.split(new RegExp("\\r?\\n.*wrote[：:]", "i"))[0];
+        cleanReply = cleanReply.split(new RegExp("----------\\s*原始郵件\\s*----------", "i"))[0];
+        cleanReply = cleanReply.split(new RegExp("---------\\s*Original Message\\s*---------", "i"))[0];
+        cleanReply = cleanReply.split(new RegExp("\\r?\\n\\s*(寄件者|From)[：:]\\s*(病歷組|雙和)", "i"))[0];
         cleanReply = cleanReply.trim();
         
+        // 檢查是否有附件
         var hasAttachments = false;
         if (msgDetail.payload.parts) {
           for (var p = 0; p < msgDetail.payload.parts.length; p++) {
@@ -246,12 +249,12 @@ function scanGmailReplies() {
         }
 
         if (cleanReply === "" && !hasAttachments) {
-          cleanReply = "【系統無法解析此信件文字，請點信箱查看】";
+          cleanReply = "【系統無法解析此信件，請至信箱查看】";
           hasAttachments = true;
         }
 
         if (cleanReply || hasAttachments) {
-          if (!cleanReply) cleanReply = "【醫師已提供附件，無文字內容】";
+          if (!cleanReply) cleanReply = "【醫師僅夾帶附件回覆，無文字內容】";
           foundReplies.push({
             docNo: docNo,
             issueId: issueId,
@@ -268,24 +271,25 @@ function scanGmailReplies() {
       }
     }
     
+    // 批次打星號
     for (var m = 0; m < messageIdsToStar.length; m++) {
       try {
         Gmail.Users.Messages.modify({
           addLabelIds: ['STARRED']
         }, 'me', messageIdsToStar[m]);
       } catch(errStar) {
-        console.error("【星星標記失敗】" + errStar.toString());
+        console.error("【打星號錯誤】" + errStar.toString());
       }
     }
 
-    console.log("【系統掃描】成功抓取了 " + foundReplies.length + " 筆最新醫師回信！");
+    console.log("【系統報告】成功掃描並抓取了 " + foundReplies.length + " 封新的醫師回信！");
     return {
       status: "success",
       count: foundReplies.length,
       replies: foundReplies
     };
   } catch (err) {
-    console.error("【系統執行發生錯誤】" + err.toString());
+    console.error("【系統發生錯誤】" + err.toString());
     return {
       status: "error",
       message: err.toString()
@@ -293,6 +297,7 @@ function scanGmailReplies() {
   }
 }
 
+// 輔助函數：強效安全解碼 (支援 Base64, WebSafe Base64, Byte Array, UTF-8)
 function safeDecode(encodedText) {
   if (!encodedText) return "";
 
@@ -359,7 +364,6 @@ function extractMessageBody(payload) {
 
   return parsePart(payload);
 }
-
 
 function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
   var blobs = [];
