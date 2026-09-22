@@ -32079,13 +32079,28 @@ function renderNestedIssueTable(receiveNo) {
                                 content: `退回補件原因：${issue.return_reason}`
                             });
                         }
-                        if (returnList.length === 0) return '';
+
+                        if (returnList.length === 0) {
+                            if (issue.status === "退回補件") {
+                                return `
+                                    <div style="margin-top:8px;padding:8px 12px;background:#fffbe6;border:1px solid #ffe58f;border-left:4px solid #faad14;border-radius:6px;font-size:12.5px;color:#d48806;">
+                                        <strong style="color:#d48806;display:block;margin-bottom:2px;"><i class="fa-solid fa-rotate-left"></i> ↩️ 處於退回補件狀態：</strong>
+                                        <span style="color:#8c6200;">尚無退回說明。</span>
+                                        <button class="btn btn-sm btn-outline-danger" style="margin-top:4px;display:block;padding:2px 8px;font-size:11px;" onclick="openReturnReasonModal('${escapeHtml(issue.issue_id)}')">✏️ 補填/修改退回原因</button>
+                                    </div>
+                                `;
+                            }
+                            return '';
+                        }
 
                         return returnList.map(ret => {
                             const reasonText = (ret.content || '').replace(/^退回補件原因：\s*/, '');
                             return `
                                 <div style="margin-top:8px;padding:8px 12px;background:#fef2f2;border:1px solid #fca5a5;border-left:4px solid #dc2626;border-radius:6px;font-size:12.5px;color:#991b1b;">
-                                    <strong style="color:#dc2626;display:block;margin-bottom:2px;"><i class="fa-solid fa-rotate-left"></i> ↩️ 退回補件紀錄 ${ret.time ? `(${escapeHtml(ret.time)})` : ''}：</strong>
+                                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px;">
+                                        <strong style="color:#dc2626;"><i class="fa-solid fa-rotate-left"></i> ↩️ 退回補件紀錄 ${ret.time ? `(${escapeHtml(ret.time)})` : ''}：</strong>
+                                        <button class="btn btn-link text-danger" style="padding:0;font-size:11px;text-decoration:underline;" onclick="openReturnReasonModal('${escapeHtml(issue.issue_id)}')">編輯</button>
+                                    </div>
                                     <span style="color:#7f1d1d;">${formatMultilineHtml(reasonText)}</span>
                                 </div>
                             `;
@@ -32759,6 +32774,8 @@ async function saveIssue() {
     let sentAt = "";
     let repliedAt = "";
     let returnReason = "";
+    let returnAt = "";
+    let historyList = [];
 
     if (existingIndex >= 0) {
         existingAttachments = gIssues[existingIndex].attachments || [];
@@ -32766,6 +32783,8 @@ async function saveIssue() {
         sentAt = gIssues[existingIndex].sent_at || "";
         repliedAt = gIssues[existingIndex].replied_at || "";
         returnReason = gIssues[existingIndex].return_reason || "";
+        returnAt = gIssues[existingIndex].return_at || "";
+        historyList = gIssues[existingIndex].history || [];
     }
 
     // Process new files cleanly with base64 reading, chunked Drive upload if large, and memory caching
@@ -32868,6 +32887,8 @@ async function saveIssue() {
         sent_at: sentAt,
         replied_at: repliedAt,
         return_reason: returnReason,
+        return_at: returnAt,
+        history: historyList,
         attachments: finalAttachments
     };
 
@@ -33159,7 +33180,9 @@ async function autoSendEmail(issueId, type, forceModalPreview = false) {
     const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (!issue) return;
 
-    issue.sent_at = getTaiwanNowStr();
+    if (!issue.sent_at || type === 1) {
+        issue.sent_at = getTaiwanNowStr();
+    }
 
     let subject = `【雙和醫院病歷組】問題回覆通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
     if (type === 2) subject = `【雙和醫院病歷組】已收到醫師回覆 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
@@ -33681,7 +33704,8 @@ function syncGmailReplies(isSilent = false) {
 }
 
 function openReturnReasonModal(issueId) {
-    document.getElementById("return_reason_text").value = "";
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
+    document.getElementById("return_reason_text").value = issue ? (issue.return_reason || "") : "";
     document.getElementById("modalReturnReason").dataset.issueId = issueId;
     openModal("modalReturnReason");
 }
@@ -34449,9 +34473,12 @@ function openIssueHistoryModal(issueId) {
     }
 
     const modalBodyHtml = `
-        <div style="background:#f0fdf4;border:1px solid #bbf7d0;padding:12px 16px;border-radius:8px;margin-bottom:16px;">
-            <div style="font-weight:bold;color:#166534;font-size:15px;margin-bottom:4px;">📌 公文單號：${escapeHtml(issue.doc_receive_no)} (項次：${escapeHtml(issue.issue_id)})</div>
-            <div style="font-size:13px;color:#15803d;">🩺 函詢醫師：${escapeHtml(issue.doctor_name || '醫師')} (${escapeHtml(issue.doctor_email || '-')})</div>
+        <div style="background:#f0fdf4;border:1px solid #bbf7d0;padding:12px 16px;border-radius:8px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;">
+            <div>
+                <div style="font-weight:bold;color:#166534;font-size:15px;margin-bottom:4px;">📌 公文單號：${escapeHtml(issue.doc_receive_no)} (項次：${escapeHtml(issue.issue_id)})</div>
+                <div style="font-size:13px;color:#15803d;">🩺 函詢醫師：${escapeHtml(issue.doctor_name || '醫師')} (${escapeHtml(issue.doctor_email || '-')})</div>
+            </div>
+            <button class="btn btn-sm btn-outline-danger" onclick="closeModal('modalIssueHistory');openReturnReasonModal('${escapeHtml(issue.issue_id)}');" title="點擊編輯或補充退回原因"><i class="fa-solid fa-pen"></i> 補充/編輯退回原因</button>
         </div>
         ${historyListHtml}
     `;
