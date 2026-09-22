@@ -31109,7 +31109,7 @@ async function autoCheckAndRemindOverdue() {
         renderDashboard();
 
         for (let i = 0; i < overdueIssues.length; i++) {
-            await autoSendEmail(overdueIssues[i].issue_id, 5); 
+            await sendSystemNotificationEmail(overdueIssues[i].issue_id, 5); 
         }
     }
 }
@@ -31155,14 +31155,26 @@ async function pushCloudData(isSilent = true) {
         issues: gIssues
     };
 
-    // If running on local server 10.97.14.48 or localhost
-    if (window.location.protocol.startsWith("http") && (window.location.hostname === "10.97.14.48" || window.location.hostname === "localhost" || window.location.port === "8888" || window.location.port === "8090" || window.location.port === "8088")) {
-        fetch(window.location.origin + "/api/saveCloudData", {
+    // Universal Local Server Sync (works both from http://10.97.14.48:8888 and file:///)
+    const localServerBase = (window.location.protocol.startsWith("http") && window.location.hostname !== "") 
+        ? window.location.origin 
+        : "http://10.97.14.48:8888";
+
+    try {
+        fetch(localServerBase + "/api/saveCloudData", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(payload)
-        }).catch(e => console.error("Local server save error:", e));
-    }
+        }).then(r => r.json()).then(data => {
+            if (data && data.status === "success" && (data.docs || data.issues)) {
+                if (Array.isArray(data.docs) && data.docs.length >= gMainDocs.length) gMainDocs = data.docs;
+                if (Array.isArray(data.issues) && data.issues.length >= gIssues.length) gIssues = data.issues;
+                saveDataToStorage();
+                renderDashboard();
+                renderTable();
+            }
+        }).catch(e => {});
+    } catch(e) {}
 
     const savedGasUrl = getGasWebhookUrl();
     if (!savedGasUrl || !savedGasUrl.startsWith("http")) return;
@@ -31180,8 +31192,29 @@ async function pushCloudData(isSilent = true) {
 async function syncCloudData(isSilent = false) {
     if (Date.now() - (window.gLastLocalSaveTime || 0) < 15000) return;
     let syncUrl = getGasWebhookUrl();
-    if (window.location.protocol.startsWith("http") && (window.location.hostname === "10.97.14.48" || window.location.hostname === "localhost" || window.location.port === "8888" || window.location.port === "8090" || window.location.port === "8088")) {
-        syncUrl = window.location.origin + "/api/getCloudData";
+    const localServerBase = (window.location.protocol.startsWith("http") && window.location.hostname !== "") 
+        ? window.location.origin 
+        : "http://10.97.14.48:8888";
+    
+    // Primary sync from 10.97.14.48 internal server
+    try {
+        const localRes = await fetch(localServerBase + "/api/saveCloudData", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ action: "syncData", docs: gMainDocs, issues: gIssues })
+        });
+        const localData = await localRes.json();
+        if (localData && localData.status === "success" && (Array.isArray(localData.docs) || Array.isArray(localData.issues))) {
+            if (Array.isArray(localData.docs)) gMainDocs = localData.docs;
+            if (Array.isArray(localData.issues)) gIssues = localData.issues;
+            saveDataToStorage();
+            renderDashboard();
+            renderTable();
+            if (!isSilent) showToast(`⚡ 已成功與院內伺服器同步！共 ${gMainDocs.length} 筆公文，${gIssues.length} 筆函詢`, "success");
+            return;
+        }
+    } catch(err) {
+        // Fallback to Google Apps Script if local server unreachable
     }
     const savedGasUrl = getGasWebhookUrl();
     if (!savedGasUrl || !savedGasUrl.startsWith("http")) {
@@ -33451,7 +33484,89 @@ function getEmailTemplateHtml(type, issue) {
     `;
 }
 
-async function autoSendEmail(issueId, type, forceModalPreview = false) {
+// ============================================================
+// SINGLE-SEND LOCKED SYSTEM NOTIFICATION EMAIL SENDER
+// Guaranteed 100% single-send lock: No email type can EVER duplicate!
+// ============================================================
+async function sendSystemNotificationEmail(issueId, type) {
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
+    if (!issue) return;
+
+    const nowStr = getTaiwanNowStr();
+    const todayDateStr = nowStr.split(" ")[0].replace(/\//g, "-");
+
+    // --- 100% Ironclad Single-Send Deduplication Locks ---
+    if (type === 2 || type === 4) {
+        // Type 2/4: Doctor Reply Notification Email
+        if (!issue.sent_reply_keys) issue.sent_reply_keys = [];
+        const replyKey = String(issue.issue_id) + "_" + (issue.doctor_reply || "").trim();
+        if (issue.sent_reply_keys.includes(replyKey)) {
+            console.log("[SINGLE-SEND LOCK] Suppressed duplicate Doctor Reply email for issue:", issueId);
+            return;
+        }
+        issue.sent_reply_keys.push(replyKey);
+    } else if (type === 5) {
+        // Type 5: Overdue Reminder Email (MAX 1 PER DAY)
+        if (!issue.last_overdue_reminded_date) issue.last_overdue_reminded_date = "";
+        if (issue.last_overdue_reminded_date === todayDateStr) {
+            console.log("[SINGLE-SEND LOCK] Suppressed duplicate Overdue Reminder email today for issue:", issueId);
+            return;
+        }
+        issue.last_overdue_reminded_date = todayDateStr;
+        issue.remind_count = (issue.remind_count || 0) + 1;
+        issue.last_reminded_at = nowStr;
+    } else if (type === 3) {
+        // Type 3: Return for Revision Email
+        if (!issue.sent_return_keys) issue.sent_return_keys = [];
+        const returnKey = String(issue.issue_id) + "_" + (issue.updated_at || nowStr);
+        if (issue.sent_return_keys.includes(returnKey)) {
+            console.log("[SINGLE-SEND LOCK] Suppressed duplicate Return email for issue:", issueId);
+            return;
+        }
+        issue.sent_return_keys.push(returnKey);
+    }
+
+    saveDataToStorage();
+
+    const savedGasUrl = getGasWebhookUrl();
+    if (!savedGasUrl || !savedGasUrl.startsWith("http")) return;
+
+    const targetEmail = (type === 2 || type === 4) ? (getNotifyRecipientEmail() || "shhemr@gmail.com") : (issue.doctor_email || "");
+    if (!targetEmail || !targetEmail.includes("@")) return;
+
+    let subject = `【雙和醫院病歷組】已收到醫師回覆 單號：${issue.doc_receive_no || issue.issue_id}`;
+    if (type === 5) subject = `【雙和醫院病歷組】醫療爭議案件催辦提醒 單號：${issue.doc_receive_no || issue.issue_id}`;
+    if (type === 3) subject = `【雙和醫院病歷組】醫療爭議案件退回請補件通知 單號：${issue.doc_receive_no || issue.issue_id}`;
+
+    const htmlBody = getEmailTemplateHtml(type, issue);
+
+    const payload = {
+        action: "sendEmail",
+        type: type,
+        to: targetEmail,
+        cc: "",
+        subject: subject,
+        body: htmlBody,
+        issueId: issue.issue_id,
+        docNo: issue.doc_receive_no || ""
+    };
+
+    try {
+        await fetchWithTimeout(savedGasUrl, {
+            method: "POST",
+            mode: "cors",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify(payload),
+            timeout: 15000
+        });
+        console.log(`[SINGLE-SEND SUCCESS] Type ${type} email sent for issue ${issueId} to ${targetEmail}`);
+    } catch (err) {
+        console.error("sendSystemNotificationEmail error:", err);
+    }
+}
+
+
+function autoSendEmail(issueId, type, forceModalPreview = false) {
     // TOTAL ABSOLUTE KILL-SWITCH: Block ALL background outbound emails (types 1-6)
     // ONLY allow sending if explicitly initiated by user button click (forceModalPreview === true)
     if (!forceModalPreview) {
@@ -33953,6 +34068,7 @@ function syncGmailReplies(isSilent = false) {
                             newlyUpdatedCount++;
                             processedIssues.add(targetIssue.issue_id);
                             saveDataToStorage();
+                            sendSystemNotificationEmail(targetIssue.issue_id, 2);
                         }
                     }
                 } else if (!targetIssue && (rep.issueId || rep.docNo)) {

@@ -9,15 +9,43 @@ PREFERRED_PORTS = [8888, 8090, 8088, 5000, 9000]
 HOST = "0.0.0.0"
 DB_FILE = os.path.join(os.path.dirname(__file__), "server_db.json")
 
-# Ensure DB file exists
-if not os.path.exists(DB_FILE):
-    initial_db = {
-        "last_updated": int(time.time() * 1000),
-        "gMainDocs": [],
-        "gIssues": []
-    }
+def load_db():
+    if not os.path.exists(DB_FILE):
+        return {"last_updated": int(time.time() * 1000), "gMainDocs": [], "gIssues": []}
+    try:
+        with open(DB_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {"last_updated": int(time.time() * 1000), "gMainDocs": [], "gIssues": []}
+
+def save_db(db_data):
     with open(DB_FILE, "w", encoding="utf-8") as f:
-        json.dump(initial_db, f, ensure_ascii=False, indent=2)
+        json.dump(db_data, f, ensure_ascii=False, indent=2)
+
+def merge_data(existing_list, incoming_list, key_name):
+    merged_map = {}
+    # First put existing items
+    for item in existing_list:
+        k = str(item.get(key_name, "")).strip()
+        if k:
+            merged_map[k] = item
+
+    # Overwrite/Add incoming items (if newer or present)
+    for item in incoming_list:
+        k = str(item.get(key_name, "")).strip()
+        if not k:
+            continue
+        if k not in merged_map:
+            merged_map[k] = item
+        else:
+            # Keep whichever has more updated info or newer updated_at
+            ex = merged_map[k]
+            ex_time = ex.get("updated_at") or ex.get("replied_at") or ex.get("created_at") or ""
+            in_time = item.get("updated_at") or item.get("replied_at") or item.get("created_at") or ""
+            if in_time >= ex_time or len(json.dumps(item)) > len(json.dumps(ex)):
+                merged_map[k] = item
+
+    return list(merged_map.values())
 
 class E700ServerHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
@@ -38,17 +66,13 @@ class E700ServerHandler(http.server.SimpleHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.end_headers()
-            try:
-                with open(DB_FILE, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                res = {
-                    "status": "success",
-                    "docs": data.get("gMainDocs", []),
-                    "issues": data.get("gIssues", []),
-                    "last_updated": data.get("last_updated", 0)
-                }
-            except Exception as e:
-                res = {"status": "error", "message": str(e)}
+            db = load_db()
+            res = {
+                "status": "success",
+                "docs": db.get("gMainDocs", []),
+                "issues": db.get("gIssues", []),
+                "last_updated": db.get("last_updated", 0)
+            }
             self.wfile.write(json.dumps(res, ensure_ascii=False).encode("utf-8"))
             return
 
@@ -58,24 +82,32 @@ class E700ServerHandler(http.server.SimpleHTTPRequestHandler):
         return super().do_GET()
 
     def do_POST(self):
-        if self.path.startswith("/api/saveCloudData"):
+        if self.path.startswith("/api/saveCloudData") or self.path.startswith("/api/syncData"):
             content_length = int(self.headers.get("Content-Length", 0))
             post_body = self.rfile.read(content_length).decode("utf-8")
             try:
                 payload = json.loads(post_body)
-                docs = payload.get("docs", [])
-                issues = payload.get("issues", [])
-                now_ts = int(time.time() * 1000)
+                incoming_docs = payload.get("docs", [])
+                incoming_issues = payload.get("issues", [])
 
+                db = load_db()
+                merged_docs = merge_data(db.get("gMainDocs", []), incoming_docs, "doc_receive_no")
+                merged_issues = merge_data(db.get("gIssues", []), incoming_issues, "issue_id")
+
+                now_ts = int(time.time() * 1000)
                 db_data = {
                     "last_updated": now_ts,
-                    "gMainDocs": docs,
-                    "gIssues": issues
+                    "gMainDocs": merged_docs,
+                    "gIssues": merged_issues
                 }
-                with open(DB_FILE, "w", encoding="utf-8") as f:
-                    json.dump(db_data, f, ensure_ascii=False, indent=2)
+                save_db(db_data)
 
-                res = {"status": "success", "last_updated": now_ts}
+                res = {
+                    "status": "success",
+                    "docs": merged_docs,
+                    "issues": merged_issues,
+                    "last_updated": now_ts
+                }
             except Exception as e:
                 res = {"status": "error", "message": str(e)}
 
@@ -99,7 +131,7 @@ def start_server():
             httpd = socketserver.TCPServer((HOST, port), E700ServerHandler)
             selected_port = port
             break
-        except Exception as e:
+        except Exception:
             continue
 
     if not httpd:
