@@ -30917,6 +30917,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
         saveDataToStorage();
     }
+    backfillAndMigrateIssueHistory();
     initUIEvents();
     renderDashboard();
     renderTable();
@@ -31257,10 +31258,12 @@ function loadDataFromStorage() {
         gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
         saveDataToStorage();
     }
+    backfillAndMigrateIssueHistory();
     if (!Array.isArray(gIssues) || gIssues.length === 0) {
         gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
         saveDataToStorage();
     }
+    backfillAndMigrateIssueHistory();
 
     // Auto-merge newly added master docs & issues if missing in user's local storage
     let hasNewMerged = false;
@@ -31326,6 +31329,7 @@ function loadDataFromStorage() {
     if (hasNewMerged || gMainDocs.length !== initialDocCount || hasTypoFixed) {
         saveDataToStorage();
     }
+    backfillAndMigrateIssueHistory();
 
     gIssues.forEach(i => {
         if (i.attachments) {
@@ -32104,6 +32108,9 @@ function renderNestedIssueTable(receiveNo) {
                             </button>
                             <button class="btn btn-sm btn-outline-info" onclick="autoSendEmail('${escapeHtml(issue.issue_id)}', 1, true)" title="預覽或發送信件範本">
                                 <i class="fa-solid fa-envelope"></i> 信件
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary" onclick="openIssueHistoryModal('${escapeHtml(issue.issue_id)}')" title="查看完整歷次溝通與退回紀錄">
+                                <i class="fa-solid fa-clock-rotate-left"></i> 歷程
                             </button>
                         </div>
                     </div>
@@ -34268,4 +34275,94 @@ function importSystemDataJson(input) {
         }
     };
     reader.readAsText(file, "UTF-8");
+}
+
+function backfillAndMigrateIssueHistory() {
+    if (!Array.isArray(gIssues)) return;
+    gIssues.forEach(issue => {
+        if (!issue.history) issue.history = [];
+        
+        // 1. 回溯補建「初始發送」紀錄
+        if (issue.sent_at && !issue.history.some(h => h.type === 'sent')) {
+            issue.history.push({
+                type: 'sent',
+                time: issue.sent_at,
+                content: issue.question || '發送醫師函詢',
+                operator: issue.creator_name || '病歷組承辦人'
+            });
+        }
+        
+        // 2. 回溯補建「退回補件原因」與時間紀錄 (舊資料追溯)
+        if (issue.return_reason) {
+            if (!issue.return_at) {
+                issue.return_at = issue.updated_at || issue.created_at || issue.sent_at || getTaiwanLocalDateTimeString();
+            }
+            if (!issue.history.some(h => h.type === 'return')) {
+                issue.history.push({
+                    type: 'return',
+                    time: issue.return_at,
+                    content: `退回補件原因：${issue.return_reason}`,
+                    operator: '病歷組承辦人'
+                });
+            }
+        }
+        
+        // 3. 回溯補建「醫師回覆內容」與時間紀錄 (舊資料追溯)
+        if (issue.doctor_reply && !issue.history.some(h => h.type === 'reply')) {
+            issue.history.push({
+                type: 'reply',
+                time: issue.replied_at || issue.updated_at || getTaiwanLocalDateTimeString(),
+                content: issue.doctor_reply,
+                operator: issue.doctor_name || '醫師'
+            });
+        }
+        
+        // 依據時間先後排序
+        issue.history.sort((a, b) => (a.time || '').localeCompare(b.time || ''));
+    });
+}
+
+function openIssueHistoryModal(issueId) {
+    const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
+    if (!issue) return;
+
+    // 執行即時追溯校正
+    if (!issue.history || issue.history.length === 0) {
+        backfillAndMigrateIssueHistory();
+    }
+
+    let historyListHtml = "";
+    if (issue.history && issue.history.length > 0) {
+        historyListHtml = issue.history.map(item => {
+            let badgeBg = "#0284c7";
+            let badgeTitle = "✉️ 發送郵件";
+            if (item.type === "reply")    { badgeBg = "#059669"; badgeTitle = "💬 醫師意見回覆"; }
+            if (item.type === "return")   { badgeBg = "#dc2626"; badgeTitle = "↩️ 退回補件通知"; }
+            if (item.type === "complete") { badgeBg = "#15803d"; badgeTitle = "🎉 結案完成"; }
+
+            return `
+                <div style="margin-bottom:12px;padding:12px 14px;background:#f8fafc;border:1px solid #e2e8f0;border-left:4px solid ${badgeBg};border-radius:6px;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                        <span style="font-weight:bold;color:${badgeBg};font-size:13.5px;">${badgeTitle}</span>
+                        <span style="font-size:12px;color:#64748b;"><i class="fa-regular fa-clock"></i> ${escapeHtml(item.time || '')}</span>
+                    </div>
+                    <div style="font-size:13.5px;color:#1e293b;line-height:1.5;white-space:pre-wrap;">${formatMultilineHtml(item.content)}</div>
+                    ${item.operator ? `<div style="font-size:11.5px;color:#94a3b8;margin-top:4px;text-align:right;">操作人員: ${escapeHtml(item.operator)}</div>` : ''}
+                </div>
+            `;
+        }).join('');
+    } else {
+        historyListHtml = `<div style="text-align:center;color:#94a3b8;padding:20px 0;">尚無詳細來回歷程紀錄</div>`;
+    }
+
+    const modalBodyHtml = `
+        <div style="background:#f0fdf4;border:1px solid #bbf7d0;padding:12px 16px;border-radius:8px;margin-bottom:16px;">
+            <div style="font-weight:bold;color:#166534;font-size:15px;margin-bottom:4px;">📌 公文單號：${escapeHtml(issue.doc_receive_no)} (項次：${escapeHtml(issue.issue_id)})</div>
+            <div style="font-size:13px;color:#15803d;">🩺 函詢醫師：${escapeHtml(issue.doctor_name || '醫師')} (${escapeHtml(issue.doctor_email || '-')})</div>
+        </div>
+        ${historyListHtml}
+    `;
+
+    document.getElementById("historyModalBody").innerHTML = modalBodyHtml;
+    openModal("modalIssueHistory");
 }
