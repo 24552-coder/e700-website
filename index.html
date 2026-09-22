@@ -420,6 +420,23 @@
                     <label>退回原因 *</label>
                     <textarea id="return_reason_text" class="form-control" rows="4" placeholder="例如：回附太簡略，請補充詳細說明與簽章..."></textarea>
                 </div>
+
+    <!-- Modal: Issue History Modal (歷次溝通與退回紀錄完整展示對話框) -->
+    <div class="modal-backdrop" id="modalIssueHistory">
+        <div class="modal-content modal-md">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-clock-rotate-left" style="color:#0f766e;"></i> 函詢完整歷程與溝通紀錄</h3>
+                <button class="btn-close" onclick="closeModal('modalIssueHistory')">&times;</button>
+            </div>
+            <div class="modal-body" id="historyModalBody">
+                <!-- Dynamic Timeline Content -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('modalIssueHistory')">關閉</button>
+            </div>
+        </div>
+    </div>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" onclick="closeModal('modalReturnReason')">取消</button>
@@ -524,7 +541,7 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=20260922_v10006" defer></script>
+    <script src="app.js?v=20260922_v10007" defer></script>
 
     <!-- Modal: 週表篩選條件與匯出 -->
     <div class="modal-backdrop" id="modalWeeklyExport">
