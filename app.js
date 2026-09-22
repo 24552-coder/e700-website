@@ -510,7 +510,7 @@ async function uploadBase64InChunks(fileName, mimeType, b64Data, gasUrl) {
 const CASEWORKER_DIRECTORY = [
     { name: "陽書湘", email: "14301@s.tmu.edu.tw", ext: "2037" },
     { name: "錢佩妤", email: "19020@s.tmu.edu.tw", ext: "2043" },
-    { name: "錢佩好", email: "19020@s.tmu.edu.tw", ext: "2043" },
+    { name: "錢佩妤", email: "19020@s.tmu.edu.tw", ext: "2043" },
     { name: "何秀英", email: "12254@s.tmu.edu.tw", ext: "2043" }
 ];
 
@@ -519,6 +519,24 @@ function cleanAssigneeName(name) {
     let clean = String(name).replace(/\s*\([\s\S]*?\)/g, "").trim();
     if (clean === "無法" || clean === "無" || clean === "-" || clean === "undefined" || clean === "null") return "";
     return clean;
+}
+
+function getDocAssignee(doc) {
+    if (!doc) return "";
+    let clean = cleanAssigneeName(doc.doc_assignee);
+    if (clean) return clean;
+    const recNo = String(doc.doc_receive_no || "").trim();
+    if (recNo && Array.isArray(gIssues)) {
+        const matchingIssue = gIssues.find(i => !i.deleted && String(i.doc_receive_no || "").trim() === recNo && cleanAssigneeName(i.creator_name || i.doc_assignee));
+        if (matchingIssue) {
+            const foundName = cleanAssigneeName(matchingIssue.creator_name || matchingIssue.doc_assignee);
+            if (foundName) {
+                doc.doc_assignee = foundName;
+                return foundName;
+            }
+        }
+    }
+    return "";
 }
 
 function getCaseworkerInfo(name) {
@@ -30879,7 +30897,7 @@ const DEFAULT_ISSUES = [
         "doc_chart_no": "08687762",
         "doctor_name": "洪麗玉",
         "doctor_email": "10079@s.tmu.edu.tw",
-        "creator_name": "錢佩好",
+        "creator_name": "錢佩妤",
         "creator_ext": "2043",
         "creator_email": "19020@s.tmu.edu.tw",
         "question": "洪麗玉醫師您好，因新北市衛生局調閱病歷(08687762張鈞常)(醫療爭議)。\n請協助確認病歷，是否可以釋出。\n因案件有時效性，如未收到回覆病歷將於9月21日釋出，感謝您。\n❶ 備註：非必要請勿修改電子病歷，(如需修改病歷請洽分機2043)。\n佩好敬上",
@@ -30918,6 +30936,21 @@ document.addEventListener("DOMContentLoaded", async () => {
         saveDataToStorage();
     }
     backfillAndMigrateIssueHistory();
+    let hasAssigneeAutoHealed = false;
+    if (Array.isArray(gMainDocs)) {
+        gMainDocs.forEach(doc => {
+            if (!cleanAssigneeName(doc.doc_assignee)) {
+                const inferred = getDocAssignee(doc);
+                if (inferred) {
+                    doc.doc_assignee = inferred;
+                    hasAssigneeAutoHealed = true;
+                }
+            }
+        });
+    }
+    if (hasAssigneeAutoHealed) {
+        saveDataToStorage();
+    }
     initUIEvents();
     renderDashboard();
     renderTable();
@@ -31081,7 +31114,11 @@ async function syncCloudData(isSilent = false) {
                         gMainDocs.unshift(cloudDoc);
                         mergedDocsCount++;
                     } else {
+                        const localAssignee = gMainDocs[existingIdx].doc_assignee;
                         gMainDocs[existingIdx] = Object.assign({}, gMainDocs[existingIdx], cloudDoc);
+                        if (!cleanAssigneeName(gMainDocs[existingIdx].doc_assignee) && cleanAssigneeName(localAssignee)) {
+                            gMainDocs[existingIdx].doc_assignee = localAssignee;
+                        }
                     }
                 });
             }
@@ -31311,17 +31348,17 @@ function loadDataFromStorage() {
     });
     deduplicateMainDocs();
 
-    // Migration: completely remove typo "錢佩好"
+    // Migration: completely remove typo "錢佩妤"
     let hasTypoFixed = false;
     gMainDocs.forEach(d => {
-        if (d.doc_assignee && d.doc_assignee.includes("錢佩好")) {
-            d.doc_assignee = d.doc_assignee.replace(/錢佩好/g, "");
+        if (d.doc_assignee && d.doc_assignee.includes("錢佩妤")) {
+            d.doc_assignee = d.doc_assignee.replace(/錢佩妤/g, "");
             hasTypoFixed = true;
         }
     });
     gIssues.forEach(i => {
-        if (i.creator_name && i.creator_name.includes("錢佩好")) {
-            i.creator_name = i.creator_name.replace(/錢佩好/g, "");
+        if (i.creator_name && i.creator_name.includes("錢佩妤")) {
+            i.creator_name = i.creator_name.replace(/錢佩妤/g, "");
             hasTypoFixed = true;
         }
     });
@@ -31807,7 +31844,7 @@ function renderTable() {
                 </span>
             </td>
             <td>${progressPillHtml}</td>
-            <td>${escapeHtml(cleanAssigneeName(doc.doc_assignee) || '-')}</td>
+            <td>${escapeHtml(getDocAssignee(doc) || '-')}</td>
             <td>${statusBadgeHtml}</td>
             <td>
                 <button class="btn btn-sm btn-outline-primary" onclick="openIssueModalForDoc('${escapeHtml(doc.doc_receive_no)}')">
@@ -32609,7 +32646,7 @@ function openIssueModalForEdit(issueId) {
     document.getElementById("issue_doctor_email").value = issue.doctor_email || "";
     document.getElementById("issue_cc_email1").value = issue.cc_email1 || "";
     document.getElementById("issue_cc_email2").value = issue.cc_email2 || "";
-    document.getElementById("issue_creator_name").value = issue.creator_name || "錢佩好";
+    document.getElementById("issue_creator_name").value = issue.creator_name || "錢佩妤";
     document.getElementById("issue_creator_ext").value = issue.creator_ext || "2043";
     document.getElementById("issue_creator_email").value = issue.creator_email || "19020@s.tmu.edu.tw";
     document.getElementById("issue_question").value = issue.question || "";
@@ -32942,7 +32979,7 @@ async function saveIssue() {
         doctor_email: doctorEmail,
         cc_email1: document.getElementById("issue_cc_email1").value.trim(),
         cc_email2: document.getElementById("issue_cc_email2").value.trim(),
-        creator_name: document.getElementById("issue_creator_name").value.trim() || "錢佩好",
+        creator_name: document.getElementById("issue_creator_name").value.trim() || "錢佩妤",
         creator_ext: document.getElementById("issue_creator_ext").value.trim() || "2043",
         creator_email: document.getElementById("issue_creator_email").value.trim() || "19020@s.tmu.edu.tw",
         question: question,
@@ -32965,6 +33002,12 @@ async function saveIssue() {
     } else {
         gIssues.unshift(issueData);
         showToast("醫師函詢明細建立成功", "success");
+    }
+    if (issueData.creator_name && issueData.doc_receive_no) {
+        const parentDoc = gMainDocs.find(d => String(d.doc_receive_no).trim() === String(issueData.doc_receive_no).trim());
+        if (parentDoc && !cleanAssigneeName(parentDoc.doc_assignee)) {
+            parentDoc.doc_assignee = cleanAssigneeName(issueData.creator_name);
+        }
     }
 
     saveDataToStorage();
