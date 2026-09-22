@@ -32068,12 +32068,29 @@ function renderNestedIssueTable(receiveNo) {
                             ${formatMultilineHtml(issue.doctor_reply)}
                            </div>`
                         : `<div style="color:#94a3b8;text-align:center;padding:12px 0;"><i class="fa-regular fa-clock" style="display:block;font-size:20px;margin-bottom:4px;"></i>尚無回覆</div>`}
-                    ${issue.return_reason ? `
-                        <div style="margin-top:8px;padding:8px 12px;background:#fef2f2;border:1px solid #fca5a5;border-left:4px solid #dc2626;border-radius:6px;font-size:12.5px;color:#991b1b;">
-                            <strong style="color:#dc2626;display:block;margin-bottom:2px;"><i class="fa-solid fa-rotate-left"></i> 歷史退回補件紀錄 ${issue.return_at ? `(${escapeHtml(issue.return_at)})` : ''}：</strong>
-                            <span style="color:#7f1d1d;">${formatMultilineHtml(issue.return_reason)}</span>
-                        </div>
-                    ` : ''}
+                    ${(() => {
+                        const returnList = [];
+                        if (issue.history && Array.isArray(issue.history)) {
+                            issue.history.filter(h => h.type === 'return').forEach(h => returnList.push(h));
+                        }
+                        if (returnList.length === 0 && issue.return_reason) {
+                            returnList.push({
+                                time: issue.return_at || '',
+                                content: `退回補件原因：${issue.return_reason}`
+                            });
+                        }
+                        if (returnList.length === 0) return '';
+
+                        return returnList.map(ret => {
+                            const reasonText = (ret.content || '').replace(/^退回補件原因：\s*/, '');
+                            return `
+                                <div style="margin-top:8px;padding:8px 12px;background:#fef2f2;border:1px solid #fca5a5;border-left:4px solid #dc2626;border-radius:6px;font-size:12.5px;color:#991b1b;">
+                                    <strong style="color:#dc2626;display:block;margin-bottom:2px;"><i class="fa-solid fa-rotate-left"></i> ↩️ 退回補件紀錄 ${ret.time ? `(${escapeHtml(ret.time)})` : ''}：</strong>
+                                    <span style="color:#7f1d1d;">${formatMultilineHtml(reasonText)}</span>
+                                </div>
+                            `;
+                        }).join('');
+                    })()}
                 </td>
                 <td style="min-width:150px;">
                     ${statusSelectHtml}
@@ -33593,6 +33610,19 @@ function syncGmailReplies(isSilent = false) {
                             targetIssue.doctor_reply = newReply;
                             targetIssue.status = "已回覆";
                             targetIssue.replied_at = rep.repliedAt || getTaiwanLocalDateTimeString();
+
+                            if (!targetIssue.history || !Array.isArray(targetIssue.history)) {
+                                targetIssue.history = [];
+                            }
+                            if (!targetIssue.history.some(h => h.type === 'reply' && h.content === newReply && h.time === targetIssue.replied_at)) {
+                                targetIssue.history.push({
+                                    type: "reply",
+                                    time: targetIssue.replied_at,
+                                    content: newReply,
+                                    operator: targetIssue.doctor_name || "醫師"
+                                });
+                            }
+
                             newlyUpdatedCount++;
                             processedIssues.add(targetIssue.issue_id);
                             
@@ -33667,11 +33697,26 @@ function confirmReturnIssue() {
 
     const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (issue) {
+        const nowStr = getTaiwanLocalDateTimeString();
         issue.return_reason = reason;
-        issue.return_at = getTaiwanLocalDateTimeString();
+        issue.return_at = nowStr;
         issue.status = "退回補件";
+
+        if (!issue.history || !Array.isArray(issue.history)) {
+            issue.history = [];
+        }
+        issue.history.push({
+            type: "return",
+            time: nowStr,
+            content: `退回補件原因：${reason}`,
+            operator: issue.doc_assignee || issue.creator_name || "病歷組承辦人"
+        });
+
         saveDataToStorage();
         closeModal("modalReturnReason");
+        renderDashboard();
+        renderTable();
+        showToast("已成功將案件退回醫師補件！通知信件發送中...", "warning");
         autoSendEmail(issueId, 3);
     }
 }
@@ -33679,7 +33724,20 @@ function confirmReturnIssue() {
 function completeIssue(issueId) {
     const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (issue) {
+        const nowStr = getTaiwanLocalDateTimeString();
         issue.status = "已完成";
+
+        if (!issue.history || !Array.isArray(issue.history)) {
+            issue.history = [];
+        }
+        if (!issue.history.some(h => h.type === 'complete')) {
+            issue.history.push({
+                type: "complete",
+                time: nowStr,
+                content: "承辦人審核通過，完成結案",
+                operator: issue.doc_assignee || issue.creator_name || "病歷組承辦人"
+            });
+        }
 
         const docIssues = gIssues.filter(i => !i.deleted && i.doc_receive_no === issue.doc_receive_no);
         const allCompleted = docIssues.every(i => i.status === "已完成");
@@ -33687,7 +33745,7 @@ function completeIssue(issueId) {
 
         if (allCompleted && mainDoc) {
             mainDoc.doc_status = "已完成";
-            mainDoc.updated_at = getTaiwanLocalDateTimeString();
+            mainDoc.updated_at = nowStr;
             showToast(` 承辦人審核完成！所有函詢已結案，公文收發號 ${issue.doc_receive_no} 自動轉為「已完成」！`, "success");
         } else {
             showToast(`已完成該項醫師函詢之審核結案`, "success");
@@ -33724,6 +33782,17 @@ function submitSimulatedDoctorReply() {
         issue.doctor_reply = replyContent;
         issue.status = "已回覆";
         issue.replied_at = nowStr;
+
+        if (!issue.history || !Array.isArray(issue.history)) {
+            issue.history = [];
+        }
+        issue.history.push({
+            type: "reply",
+            time: nowStr,
+            content: replyContent,
+            operator: issue.doctor_name || "醫師"
+        });
+
         saveDataToStorage();
         closeModal("modalSimulateReply");
         renderDashboard();
@@ -34280,60 +34349,84 @@ function importSystemDataJson(input) {
 function backfillAndMigrateIssueHistory() {
     if (!Array.isArray(gIssues)) return;
     gIssues.forEach(issue => {
-        if (!issue.history) issue.history = [];
-        
-        // 1. 回溯補建「初始發送」紀錄
-        if (issue.sent_at && !issue.history.some(h => h.type === 'sent')) {
-            issue.history.push({
-                type: 'sent',
-                time: issue.sent_at,
-                content: issue.question || '發送醫師函詢',
-                operator: issue.creator_name || '病歷組承辦人'
-            });
+        if (!issue.history || !Array.isArray(issue.history)) {
+            issue.history = [];
         }
         
-        // 2. 回溯補建「退回補件原因」與時間紀錄 (舊資料追溯)
-        if (issue.return_reason) {
-            if (!issue.return_at) {
-                issue.return_at = issue.updated_at || issue.created_at || issue.sent_at || getTaiwanLocalDateTimeString();
-            }
-            if (!issue.history.some(h => h.type === 'return')) {
-                issue.history.push({
-                    type: 'return',
-                    time: issue.return_at,
-                    content: `退回補件原因：${issue.return_reason}`,
-                    operator: '病歷組承辦人'
+        // 1. 回溯補建「初始發送」紀錄
+        if (issue.sent_at) {
+            const hasSent = issue.history.some(h => h.type === 'sent');
+            if (!hasSent) {
+                issue.history.unshift({
+                    type: 'sent',
+                    time: issue.sent_at,
+                    content: issue.question || '發送醫師函詢',
+                    operator: issue.creator_name || issue.doc_assignee || '病歷組承辦人'
                 });
             }
         }
         
-        // 3. 回溯補建「醫師回覆內容」與時間紀錄 (舊資料追溯)
-        if (issue.doctor_reply && !issue.history.some(h => h.type === 'reply')) {
-            issue.history.push({
-                type: 'reply',
-                time: issue.replied_at || issue.updated_at || getTaiwanLocalDateTimeString(),
-                content: issue.doctor_reply,
-                operator: issue.doctor_name || '醫師'
-            });
+        // 2. 回溯補建「退回補件原因」與時間紀錄 (舊資料與新資料完全追溯)
+        if (issue.return_reason) {
+            const returnTime = issue.return_at || issue.updated_at || issue.created_at || issue.sent_at || getTaiwanLocalDateTimeString();
+            const hasReturn = issue.history.some(h => h.type === 'return' && h.content.includes(issue.return_reason));
+            if (!hasReturn) {
+                issue.history.push({
+                    type: 'return',
+                    time: returnTime,
+                    content: `退回補件原因：${issue.return_reason}`,
+                    operator: issue.doc_assignee || issue.creator_name || '病歷組承辦人'
+                });
+            }
         }
         
-        // 依據時間先後排序
+        // 3. 回溯補建「醫師回覆內容」與時間紀錄 (舊資料與新資料完全追溯)
+        if (issue.doctor_reply) {
+            const replyTime = issue.replied_at || issue.updated_at || getTaiwanLocalDateTimeString();
+            const hasReply = issue.history.some(h => h.type === 'reply' && h.content === issue.doctor_reply);
+            if (!hasReply) {
+                issue.history.push({
+                    type: 'reply',
+                    time: replyTime,
+                    content: issue.doctor_reply,
+                    operator: issue.doctor_name || '醫師'
+                });
+            }
+        }
+
+        // 4. 回溯補建「結案完成」紀錄 (狀態為已完成者)
+        if (issue.status === '已完成') {
+            const hasComplete = issue.history.some(h => h.type === 'complete');
+            if (!hasComplete) {
+                issue.history.push({
+                    type: 'complete',
+                    time: issue.updated_at || issue.replied_at || getTaiwanLocalDateTimeString(),
+                    content: '審核通過，結案完成',
+                    operator: issue.doc_assignee || issue.creator_name || '病歷組承辦人'
+                });
+            }
+        }
+        
+        // 依據時間先後排序 (舊到新)
         issue.history.sort((a, b) => (a.time || '').localeCompare(b.time || ''));
     });
 }
 
 function openIssueHistoryModal(issueId) {
     const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
-    if (!issue) return;
-
-    // 執行即時追溯校正
-    if (!issue.history || issue.history.length === 0) {
-        backfillAndMigrateIssueHistory();
+    if (!issue) {
+        showToast("找不到對應的函詢紀錄", "warning");
+        return;
     }
+
+    // 全自動執行即時追溯校正補建
+    backfillAndMigrateIssueHistory();
 
     let historyListHtml = "";
     if (issue.history && issue.history.length > 0) {
-        historyListHtml = issue.history.map(item => {
+        const sortedHistory = [...issue.history].sort((a, b) => (a.time || '').localeCompare(b.time || ''));
+        
+        historyListHtml = sortedHistory.map(item => {
             let badgeBg = "#0284c7";
             let badgeTitle = "✉️ 發送郵件";
             if (item.type === "reply")    { badgeBg = "#059669"; badgeTitle = "💬 醫師意見回覆"; }
@@ -34363,6 +34456,12 @@ function openIssueHistoryModal(issueId) {
         ${historyListHtml}
     `;
 
-    document.getElementById("historyModalBody").innerHTML = modalBodyHtml;
-    openModal("modalIssueHistory");
+    const bodyEl = document.getElementById("historyModalBody");
+    if (bodyEl) {
+        bodyEl.innerHTML = modalBodyHtml;
+        openModal("modalIssueHistory");
+    } else {
+        console.error("historyModalBody element not found");
+        alert(`📜 【歷程紀錄】\n公文單號: ${issue.doc_receive_no}\n醫師: ${issue.doctor_name}\n\n` + (issue.history || []).map(h => `[${h.time}] ${h.content}`).join("\n"));
+    }
 }
