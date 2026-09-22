@@ -222,13 +222,16 @@ function scanGmailReplies() {
         var rawBody = extractMessageBody(msgDetail.payload);
         
         var cleanReply = rawBody || "";
-        cleanReply = cleanReply.split(/?
+        cleanReply = cleanReply.split(/
+?
 .*寫道[：:]/i)[0];
-        cleanReply = cleanReply.split(/?
+        cleanReply = cleanReply.split(/
+?
 .*wrote[：:]/i)[0];
         cleanReply = cleanReply.split(/----------\s*原始郵件\s*----------/i)[0];
         cleanReply = cleanReply.split(/---------\s*Original Message\s*---------/i)[0];
-        cleanReply = cleanReply.split(/?
+        cleanReply = cleanReply.split(/
+?
 \s*(寄件者|From)[：:]\s*病歷組|雙和/i)[0];
         cleanReply = cleanReply.trim();
         
@@ -784,6 +787,7 @@ function getCloudDataApi() {
 
 function grantDriveAccess(htmlBody, to, cc) {
   try {
+    if (!htmlBody) return;
     var emails = [];
     var rawEmails = ((to || '') + ',' + (cc || '')).split(',');
     for (var i = 0; i < rawEmails.length; i++) {
@@ -797,27 +801,48 @@ function grantDriveAccess(htmlBody, to, cc) {
       }
     }
     
-    if (emails.length === 0) return;
-    
-    var fileIds = [];
-    var regex = /drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/g;
-    var match;
-    while ((match = regex.exec(htmlBody)) !== null) {
-      if (fileIds.indexOf(match[1]) === -1) {
-        fileIds.push(match[1]);
+    // 擷取所有類型的 Google Drive 檔案/資料夾 ID
+    var itemIds = [];
+    var patterns = [
+      /drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/g,
+      /drive\.google\.com\/drive\/folders\/([a-zA-Z0-9_-]+)/g,
+      /docs\.google\.com\/[a-z]+\/d\/([a-zA-Z0-9_-]+)/g,
+      /drive\.google\.com\/open\?id=([a-zA-Z0-9_-]+)/g
+    ];
+
+    for (var p = 0; p < patterns.length; p++) {
+      var regex = patterns[p];
+      var match;
+      while ((match = regex.exec(htmlBody)) !== null) {
+        if (match[1] && itemIds.indexOf(match[1]) === -1) {
+          itemIds.push(match[1]);
+        }
       }
     }
     
-    for (var f = 0; f < fileIds.length; f++) {
+    for (var f = 0; f < itemIds.length; f++) {
+      var itemId = itemIds[f];
+      // 1. 嘗試處理檔案
       try {
-        var file = DriveApp.getFileById(fileIds[f]);
+        var file = DriveApp.getFileById(itemId);
+        // 自動開全權限：設定為「知道連結者皆可檢視」，對方免申請權限即可開啟！
+        file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
         for (var e = 0; e < emails.length; e++) {
-          try {
-            file.addViewer(emails[e]);
-          } catch(err1) {}
+          try { file.addViewer(emails[e]); } catch(eViewer) {}
         }
-      } catch(err2) {}
-    }
-  } catch (err3) {}
-}
+        continue;
+      } catch(errFile) {}
 
+      // 2. 若為資料夾，嘗試處理資料夾權限
+      try {
+        var folder = DriveApp.getFolderById(itemId);
+        folder.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+        for (var e2 = 0; e2 < emails.length; e2++) {
+          try { folder.addViewer(emails[e2]); } catch(eViewer2) {}
+        }
+      } catch(errFolder) {}
+    }
+  } catch (err3) {
+    console.error('【自動解鎖 Drive 權限發生錯誤】' + err3.toString());
+  }
+}
