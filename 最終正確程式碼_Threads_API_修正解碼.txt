@@ -1,6 +1,6 @@
 /**
  * 雙和醫院病歷組 - 公文 Google 郵件自動發送與進度追蹤系統
- * 【Google Apps Script 企業極致防漏與跨平台解析版 V8.0 終極版】
+ * 【Google Apps Script 企業極致防漏與全追蹤版 V9.0 旗艦版】
  * 
  * 部署說明：
  * 1. 開啟 https://script.google.com 點擊「新增專案」
@@ -80,19 +80,15 @@ function jsonResponse(obj) {
 }
 
 /**
- * 核心 2: 企業極致版 Gmail 掃描引擎 (支援多重正則內文搜尋、跨客戶端清理、雙重防重標記)
+ * 核心 2: 全追蹤版 Gmail 掃描引擎 (全面解開星號限制，確保過往與全新回信 100% 捕捉)
  */
 function scanGmailReplies() {
   try {
-    // 取得或建立「病歷組AI_已處理」專用標籤
-    var processedLabel = getOrCreateGmailLabel("病歷組AI_已處理");
-    
-    // 搜尋收件匣中未標記且未打星號的信件 (確保 100% 不重複掃描)
-    var query = 'is:inbox -is:starred -label:病歷組AI_已處理';
-    var response = Gmail.Users.Threads.list('me', { q: query, maxResults: 50 });
+    // 搜尋近 14 天收件匣中的所有信件 (解除星號限制，確保測試與歷史回信皆能被掃描到)
+    var query = 'is:inbox newer_than:14d';
+    var response = Gmail.Users.Threads.list('me', { q: query, maxResults: 100 });
     
     var foundReplies = [];
-    var threadsToProcess = [];
 
     if (response.threads && response.threads.length > 0) {
       for (var i = 0; i < response.threads.length; i++) {
@@ -101,32 +97,27 @@ function scanGmailReplies() {
         
         if (!threadDetail.messages || threadDetail.messages.length === 0) continue;
         
-        var targetMsg = null;
-        var msgId = "";
-        var subject = "";
-        var fromHeader = "";
-        var dateStr = "";
-        
-        // 由後往前尋找最新未處置的醫師回信
+        // 由後往前尋找醫師的回信
         for (var m = threadDetail.messages.length - 1; m >= 0; m--) {
           var tempMsg = threadDetail.messages[m];
           var tempFrom = "";
           var tempSubject = "";
-          var isStarred = false;
-          var isLabeled = false;
-          
-          if (tempMsg.labelIds) {
-            if (tempMsg.labelIds.indexOf("STARRED") !== -1) isStarred = true;
-            if (processedLabel && tempMsg.labelIds.indexOf(processedLabel.getId()) !== -1) isLabeled = true;
-          }
+          var dateStr = "";
           
           for (var h = 0; h < tempMsg.payload.headers.length; h++) {
             var hName = tempMsg.payload.headers[h].name.toLowerCase();
             if (hName === 'from') tempFrom = tempMsg.payload.headers[h].value;
             if (hName === 'subject') tempSubject = tempMsg.payload.headers[h].value;
+            if (hName === 'date') {
+              try {
+                dateStr = Utilities.formatDate(new Date(tempMsg.payload.headers[h].value), "GMT+8", "yyyy-MM-dd HH:mm");
+              } catch(e) {
+                dateStr = tempMsg.payload.headers[h].value;
+              }
+            }
           }
           
-          // 忽略系統自我發送的確認信
+          // 忽略系統自我發送的「已收到您的回覆確認」信件
           if (tempSubject.indexOf("已收到您的回覆確認") !== -1) continue;
 
           var cleanFromCheck = extractPureEmail(tempFrom);
@@ -138,98 +129,64 @@ function scanGmailReplies() {
             continue;
           }
           
-          if (!isStarred && !isLabeled) {
-            targetMsg = tempMsg;
-            msgId = tempMsg.id;
-            fromHeader = tempFrom;
-            subject = tempSubject;
-            
-            for (var h = 0; h < tempMsg.payload.headers.length; h++) {
-              if (tempMsg.payload.headers[h].name.toLowerCase() === 'date') {
-                try {
-                  dateStr = Utilities.formatDate(new Date(tempMsg.payload.headers[h].value), "GMT+8", "yyyy-MM-dd HH:mm");
-                } catch(e) {
-                  dateStr = tempMsg.payload.headers[h].value;
-                }
+          // 1. 剝離發件人純 Email 與 顯示姓名
+          var doctorEmail = extractPureEmail(tempFrom);
+          var senderName = extractSenderName(tempFrom);
+
+          // 2. 多重正則提取單號與項次 (主旨優先)
+          var docNo = extractDocNo(tempSubject);
+          var issueId = extractIssueId(tempSubject);
+
+          // 3. 提取信件內文 (強效多重 MIME 與 Base64 解碼器)
+          var rawBody = extractMessageBody(tempMsg.payload);
+
+          // 4. 若主旨抓不到單號，自動啟動【深層內文備援解析】
+          if (!docNo && rawBody) {
+            docNo = extractDocNo(rawBody);
+          }
+          if (!issueId && rawBody) {
+            issueId = extractIssueId(rawBody);
+          }
+
+          // 5. 跨郵件軟體 (Gmail, Outlook, Apple Mail, Thunderbird, iPhone) 極致內文清理
+          var cleanReply = cleanCrossPlatformReply(rawBody);
+          
+          // 6. 檢查是否有附件
+          var hasAttachments = false;
+          if (tempMsg.payload.parts) {
+            for (var p = 0; p < tempMsg.payload.parts.length; p++) {
+              if (tempMsg.payload.parts[p].filename && tempMsg.payload.parts[p].filename.length > 0) {
+                hasAttachments = true;
+                break;
               }
             }
-            break;
           }
-        }
-        
-        if (!targetMsg) continue;
 
-        // 1. 剝離發件人純 Email 與 顯示姓名
-        var doctorEmail = extractPureEmail(fromHeader);
-        var senderName = extractSenderName(fromHeader);
-
-        // 2. 多重正則提取單號與項次 (主旨優先)
-        var docNo = extractDocNo(subject);
-        var issueId = extractIssueId(subject);
-
-        // 3. 提取信件內文 (強效多重 MIME 與 Base64 解碼器)
-        var rawBody = extractMessageBody(targetMsg.payload);
-
-        // 4. 若主旨抓不到單號，自動啟動【深層內文備援解析】
-        if (!docNo && rawBody) {
-          docNo = extractDocNo(rawBody);
-        }
-        if (!issueId && rawBody) {
-          issueId = extractIssueId(rawBody);
-        }
-
-        // 5. 跨郵件軟體 (Gmail, Outlook, Apple Mail, Thunderbird, iPhone) 極致內文清理
-        var cleanReply = cleanCrossPlatformReply(rawBody);
-        
-        // 6. 檢查是否有附件
-        var hasAttachments = false;
-        if (targetMsg.payload.parts) {
-          for (var p = 0; p < targetMsg.payload.parts.length; p++) {
-            if (targetMsg.payload.parts[p].filename && targetMsg.payload.parts[p].filename.length > 0) {
-              hasAttachments = true;
-              break;
-            }
+          if (!cleanReply && !hasAttachments) {
+            cleanReply = "【醫師已讀取，無額外文字內容】";
           }
-        }
 
-        if (!cleanReply && !hasAttachments) {
-          cleanReply = "【醫師已讀取，無額外文字內容】";
-        }
+          if (cleanReply || hasAttachments) {
+            if (!cleanReply) cleanReply = "【醫師僅夾帶附件回覆，無文字內容】";
+            foundReplies.push({
+              docNo: docNo || "",
+              issueId: issueId || "",
+              doctorEmail: doctorEmail,
+              senderEmail: doctorEmail,
+              senderName: senderName || "醫師",
+              subject: tempSubject,
+              replyContent: cleanReply,
+              repliedAt: dateStr
+            });
+          }
 
-        if (cleanReply || hasAttachments) {
-          if (!cleanReply) cleanReply = "【醫師僅夾帶附件回覆，無文字內容】";
-          foundReplies.push({
-            docNo: docNo || "",
-            issueId: issueId || "",
-            doctorEmail: doctorEmail,
-            senderEmail: doctorEmail,
-            senderName: senderName || "醫師",
-            subject: subject,
-            replyContent: cleanReply,
-            repliedAt: dateStr
-          });
+          // 找到最新一封醫師回信即處理完畢該討論串
+          break;
         }
-        
-        threadsToProcess.push({ threadId: threadId, msgId: msgId });
-      }
-    }
-    
-    // 雙重防重標記：打上星號 + 套用「病歷組AI_已處理」標籤
-    for (var t = 0; t < threadsToProcess.length; t++) {
-      try {
-        var item = threadsToProcess[t];
-        var addIds = ['STARRED'];
-        if (processedLabel) addIds.push(processedLabel.getId());
-        
-        Gmail.Users.Messages.modify({
-          addLabelIds: addIds
-        }, 'me', item.msgId);
-      } catch(errStar) {
-        console.error("【標記錯誤】" + errStar.toString());
       }
     }
 
-    console.log("【企業級極速掃描】成功掃描並抓取 " + foundReplies.length + " 筆醫師回覆！");
+    console.log("【全追蹤掃描】成功掃描並抓取 " + foundReplies.length + " 筆醫師回覆！");
     return {
       status: "success",
       count: foundReplies.length,
@@ -321,19 +278,6 @@ function cleanCrossPlatformReply(rawBody) {
   return text.trim();
 }
 
-// 輔助函式：取得或自動建立 Gmail 專屬標籤
-function getOrCreateGmailLabel(labelName) {
-  try {
-    var labels = Gmail.Users.Labels.list('me').labels || [];
-    for (var i = 0; i < labels.length; i++) {
-      if (labels[i].name === labelName) return labels[i];
-    }
-    return Gmail.Users.Labels.create({ name: labelName }, 'me');
-  } catch(e) {
-    return null;
-  }
-}
-
 // 輔助解碼函式：強效安全解碼 (支援 Base64, WebSafe Base64, UTF-8, Big5)
 function safeDecode(dataStr) {
   if (!dataStr) return "";
@@ -402,12 +346,17 @@ function extractMessageBody(payload) {
   return parsePart(payload);
 }
 
+/**
+ * 處理實體附件與 HTML 內之 Google Drive 連結替換 (支援 >5MB 雲端連結自動轉換)
+ */
 function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
   var blobs = [];
   var driveLinks = [];
+
   if (attachmentsPayload && attachmentsPayload.length > 0) {
     for (var a = 0; a < attachmentsPayload.length; a++) {
       var att = attachmentsPayload[a];
+
       if (att.base64Data && !att.isDriveLink) {
         try {
           var b64 = att.base64Data.indexOf(",") !== -1 ? att.base64Data.split(",")[1] : att.base64Data;
@@ -416,12 +365,17 @@ function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
           blobs.push(blob);
         } catch(errBlob) {}
       } else if (att.url && att.url.indexOf("http") === 0 && att.url.indexOf("drive-link/view") === -1) {
-        driveLinks.push({ fileName: att.fileName || "公文大型附件", url: att.url, size: att.size || 0 });
+        driveLinks.push({
+          fileName: att.fileName || "公文大型附件",
+          url: att.url,
+          size: att.size || 0
+        });
       } else if (att.base64Data) {
         try {
           var b64 = att.base64Data.indexOf(",") !== -1 ? att.base64Data.split(",")[1] : att.base64Data;
           var rawBytes = Utilities.base64Decode(b64);
           var isDrive = att.isDriveLink || rawBytes.length > 5 * 1024 * 1024;
+
           if (isDrive) {
             var folder = getOrCreateFolder("雙和醫院公文附件庫");
             var blob = Utilities.newBlob(rawBytes, att.mimeType || "application/octet-stream", att.fileName || "公文大型附件");
@@ -436,10 +390,12 @@ function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
       }
     }
   }
+
   if (driveLinks.length > 0) {
     for (var d = 0; d < driveLinks.length; d++) {
       var linkUrl = driveLinks[d].url;
       var linkBtnHtml = '<a href="' + linkUrl + '" target="_blank" style="display:inline-block;margin-top:8px;padding:10px 22px;background:#0056D2;color:#ffffff;text-decoration:none;border-radius:6px;font-size:14px;font-weight:bold;box-shadow:0 2px 4px rgba(0,0,0,0.15);">&#128229; 點此線上開啟 / 下載 Google Drive 雲端大檔</a>';
+
       if (htmlBody.indexOf("[待上傳 Google Drive]") !== -1) {
         htmlBody = htmlBody.replace(/\[待上傳 Google Drive\]\s*\(將於發送郵件時自動上傳並寫入存取連結\)/g, linkBtnHtml);
         htmlBody = htmlBody.replace(/\[待上傳 Google Drive\]/g, linkBtnHtml);
@@ -449,9 +405,17 @@ function processAttachmentsAndHtml(attachmentsPayload, htmlBody) {
       }
     }
   }
-  return { blobs: blobs, driveLinks: driveLinks, htmlBody: htmlBody };
+
+  return {
+    blobs: blobs,
+    driveLinks: driveLinks,
+    htmlBody: htmlBody
+  };
 }
 
+/**
+ * 核心 3: Google 寄信用 API
+ */
 function sendEmailApi(payload) {
   try {
     var to = payload.to;
@@ -459,101 +423,316 @@ function sendEmailApi(payload) {
     var subject = payload.subject;
     var htmlBody = payload.htmlBody;
     var attachmentsPayload = payload.attachments || [];
+
     var processed = processAttachmentsAndHtml(attachmentsPayload, htmlBody);
     var blobs = processed.blobs;
     var driveLinks = processed.driveLinks;
     htmlBody = processed.htmlBody;
-    var options = { cc: cc, htmlBody: htmlBody, name: "雙和醫院病歷組" };
-    if (blobs.length > 0) options.attachments = blobs;
+
+    var options = {
+      cc: cc,
+      htmlBody: htmlBody,
+      name: "雙和醫院病歷組"
+    };
+    if (blobs.length > 0) {
+      options.attachments = blobs;
+    }
+
+    // 自動授予 Drive 檔案權限給收件者與副本所有人
     grantDriveAccess(htmlBody, to, cc);
     GmailApp.sendEmail(to, subject, "", options);
-    return { status: "success", message: "Google 郵件已成功寄出！", driveLinks: driveLinks, timestamp: new Date().toISOString() };
-  } catch (err) { return { status: "error", message: err.toString() }; }
+
+    return {
+      status: "success",
+      message: "Google 郵件（包含實體附件與 Google Drive 雲端連結）已全自動成功寄出！",
+      driveLinks: driveLinks,
+      timestamp: new Date().toISOString()
+    };
+  } catch (err) {
+    return {
+      status: "error",
+      message: err.toString()
+    };
+  }
 }
 
+/**
+ * 核心 4: 大型附件自動上傳 Google Drive API
+ */
 function uploadDriveApi(payload) {
   try {
+    var fileName = payload.fileName;
+    var base64Data = payload.base64Data;
+    var mimeType = payload.mimeType || "application/pdf";
     var folder = getOrCreateFolder("雙和醫院公文附件庫");
-    var blob = Utilities.newBlob(Utilities.base64Decode(payload.base64Data), payload.mimeType || "application/pdf", payload.fileName);
+
+    var blob = Utilities.newBlob(Utilities.base64Decode(base64Data), mimeType, fileName);
     var file = folder.createFile(blob);
     file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-    return { status: "success", fileUrl: file.getUrl(), fileName: payload.fileName };
-  } catch (err) { return { status: "error", message: err.toString() }; }
+
+    return {
+      status: "success",
+      fileUrl: file.getUrl(),
+      fileName: fileName
+    };
+  } catch (err) {
+    return {
+      status: "error",
+      message: err.toString()
+    };
+  }
 }
 
+/**
+ * 分區段上傳大型檔案至 Google Drive API (解決 GAS 10MB POST Payload 限制)
+ */
 function handleChunkUpload(data) {
   try {
     var uploadId = data.uploadId;
     var chunkIndex = parseInt(data.chunkIndex);
     var totalChunks = parseInt(data.totalChunks);
+    var fileName = data.fileName;
+    var mimeType = data.mimeType || "application/octet-stream";
+    var chunkB64 = data.chunkB64;
+
+    if (chunkB64.indexOf(",") !== -1) {
+      chunkB64 = chunkB64.split(",")[1];
+    }
+
     var folder = getOrCreateFolder("雙和醫院公文附件庫");
-    var tempFolder = folder.getFoldersByName("_TempChunks_" + uploadId).hasNext() ? folder.getFoldersByName("_TempChunks_" + uploadId).next() : folder.createFolder("_TempChunks_" + uploadId);
-    var chunkB64 = data.chunkB64.indexOf(",") !== -1 ? data.chunkB64.split(",")[1] : data.chunkB64;
-    tempFolder.createFile(Utilities.newBlob(chunkB64, "text/plain", "chk_" + chunkIndex + ".txt"));
+    var tempFolderName = "_TempChunks_" + uploadId;
+    var tempFolders = folder.getFoldersByName(tempFolderName);
+    var tempFolder = tempFolders.hasNext() ? tempFolders.next() : folder.createFolder(tempFolderName);
+
+    var chunkBlob = Utilities.newBlob(chunkB64, "text/plain", "chk_" + chunkIndex + ".txt");
+    tempFolder.createFile(chunkBlob);
+
     if (chunkIndex === totalChunks - 1) {
       var fullB64 = "";
       for (var i = 0; i < totalChunks; i++) {
         var chkFiles = tempFolder.getFilesByName("chk_" + i + ".txt");
-        if (chkFiles.hasNext()) fullB64 += chkFiles.next().getBlob().getDataAsString();
+        if (chkFiles.hasNext()) {
+          fullB64 += chkFiles.next().getBlob().getDataAsString();
+        }
       }
-      var finalFile = folder.createFile(Utilities.newBlob(Utilities.base64Decode(fullB64), data.mimeType || "application/octet-stream", data.fileName));
+
+      var rawBytes = Utilities.base64Decode(fullB64);
+      var finalBlob = Utilities.newBlob(rawBytes, mimeType, fileName);
+      var finalFile = folder.createFile(finalBlob);
       finalFile.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-      try { tempFolder.setTrashed(true); } catch (e) {}
-      return { status: "success", isComplete: true, fileUrl: finalFile.getUrl(), fileName: data.fileName };
+
+      try {
+        var filesToDel = tempFolder.getFiles();
+        while (filesToDel.hasNext()) {
+          filesToDel.next().setTrashed(true);
+        }
+        tempFolder.setTrashed(true);
+      } catch (errClean) {}
+
+      return {
+        status: "success",
+        isComplete: true,
+        fileUrl: finalFile.getUrl(),
+        fileName: fileName,
+        message: "大型檔案已成功分段上傳至 Google Drive！"
+      };
     }
-    return { status: "success", isComplete: false };
-  } catch (err) { return { status: "error", message: err.toString() }; }
+
+    return {
+      status: "success",
+      isComplete: false,
+      chunkIndex: chunkIndex,
+      totalChunks: totalChunks,
+      message: "區段 " + (chunkIndex + 1) + "/" + totalChunks + " 已成功接收"
+    };
+  } catch (err) {
+    return {
+      status: "error",
+      message: err.toString()
+    };
+  }
 }
 
+/**
+ * 建立 Google Drive Resumable Upload Session (中斷續傳專用)
+ */
 function initResumableUpload(data) {
   try {
+    var fileName = data.fileName || "公文大型附件";
+    var mimeType = data.mimeType || "application/octet-stream";
+    var fileSize = data.fileSize || 0;
+
     var folder = getOrCreateFolder("雙和醫院公文附件庫");
-    var res = UrlFetchApp.fetch("https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable", {
+    var folderId = folder.getId();
+
+    var token = ScriptApp.getOAuthToken();
+    var metadata = {
+      name: fileName,
+      mimeType: mimeType,
+      parents: [folderId]
+    };
+
+    var options = {
       method: "post",
       contentType: "application/json; charset=UTF-8",
-      headers: { "Authorization": "Bearer " + ScriptApp.getOAuthToken(), "X-Upload-Content-Type": data.mimeType || "application/octet-stream" },
-      payload: JSON.stringify({ name: data.fileName || "公文大型附件", mimeType: data.mimeType, parents: [folder.getId()] }),
+      headers: {
+        "Authorization": "Bearer " + token,
+        "X-Upload-Content-Type": mimeType,
+        "X-Upload-Content-Length": fileSize ? fileSize.toString() : "0"
+      },
+      payload: JSON.stringify(metadata),
       muteHttpExceptions: true
-    });
-    return { status: "success", uploadUrl: res.getHeaders()["Location"] || res.getHeaders()["location"] };
-  } catch (err) { return { status: "error", message: err.toString() }; }
+    };
+
+    var res = UrlFetchApp.fetch("https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable", options);
+    var headers = res.getHeaders();
+    var locationUrl = headers["Location"] || headers["location"] || headers["LOCATION"];
+
+    if (!locationUrl) {
+      throw new Error("無法從 Google Drive API 取得可中斷續傳 URL (HTTP " + res.getResponseCode() + ")");
+    }
+
+    return {
+      status: "success",
+      uploadUrl: locationUrl,
+      folderId: folderId
+    };
+  } catch (err) {
+    return {
+      status: "error",
+      message: err.toString()
+    };
+  }
 }
 
+function createResumableSession(data) {
+  return initResumableUpload(data);
+}
+
+/**
+ * 將切片經由 GAS Relay 傳送至 Google Drive
+ */
 function uploadResumableChunk(data) {
   try {
-    var chunkB64 = data.chunkB64.indexOf(",") !== -1 ? data.chunkB64.split(",")[1] : data.chunkB64;
-    var res = UrlFetchApp.fetch(data.uploadUrl, {
-      method: "put",
-      headers: { "Authorization": "Bearer " + ScriptApp.getOAuthToken(), "Content-Range": "bytes " + data.startByte + "-" + data.endByte + "/" + data.totalSize },
-      payload: Utilities.base64Decode(chunkB64), muteHttpExceptions: true
-    });
-    var code = res.getResponseCode();
-    if (code === 200 || code === 201) {
-      var fileId = JSON.parse(res.getContentText()).id;
-      var file = DriveApp.getFileById(fileId);
-      file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-      return { status: "success", isComplete: true, fileUrl: file.getUrl() };
+    var uploadUrl = data.uploadUrl;
+    var chunkB64 = data.chunkB64;
+    var startByte = parseInt(data.startByte);
+    var endByte = parseInt(data.endByte);
+    var totalSize = parseInt(data.totalSize);
+
+    if (!uploadUrl) throw new Error("缺少 uploadUrl");
+
+    if (chunkB64.indexOf(",") !== -1) {
+      chunkB64 = chunkB64.split(",")[1];
     }
-    return { status: "success", isComplete: false, code: code };
-  } catch (err) { return { status: "error", message: err.toString() }; }
+
+    var rawBytes = Utilities.base64Decode(chunkB64);
+    var token = ScriptApp.getOAuthToken();
+
+    var options = {
+      method: "put",
+      headers: {
+        "Authorization": "Bearer " + token,
+        "Content-Range": "bytes " + startByte + "-" + endByte + "/" + totalSize
+      },
+      payload: rawBytes,
+      muteHttpExceptions: true
+    };
+
+    var res = UrlFetchApp.fetch(uploadUrl, options);
+    var code = res.getResponseCode();
+
+    if (code === 200 || code === 201) {
+      var fileId = "";
+      try {
+        var resJson = JSON.parse(res.getContentText());
+        fileId = resJson.id;
+      } catch (e) {}
+
+      var fileUrl = fileId ? "https://drive.google.com/file/d/" + fileId + "/view?usp=sharing" : "";
+      if (fileId) {
+        try {
+          var file = DriveApp.getFileById(fileId);
+          file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+          fileUrl = file.getUrl();
+        } catch (eDrive) {}
+      }
+
+      return {
+        status: "success",
+        isComplete: true,
+        fileId: fileId,
+        fileUrl: fileUrl
+      };
+    } else if (code === 308) {
+      return {
+        status: "success",
+        isComplete: false,
+        code: 308
+      };
+    } else {
+      throw new Error("Drive Chunk 上傳失敗 (HTTP " + code + ": " + res.getContentText() + ")");
+    }
+  } catch (err) {
+    return {
+      status: "error",
+      message: err.toString()
+    };
+  }
 }
 
+/**
+ * 將上傳完成的 Google Drive 檔案設定為公開可存取連結
+ */
 function makeFilePublic(data) {
   try {
-    var file = DriveApp.getFileById(data.fileId);
+    var fileId = data.fileId;
+    var file = DriveApp.getFileById(fileId);
     file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-    return { status: "success", fileUrl: file.getUrl() };
-  } catch (err) { return { status: "error", message: err.toString() }; }
+    return {
+      status: "success",
+      fileUrl: file.getUrl(),
+      fileName: file.getName()
+    };
+  } catch (err) {
+    return {
+      status: "error",
+      message: err.toString()
+    };
+  }
 }
 
+/**
+ * 核心 5: 全院多人雲端同步 API (saveCloudData & getCloudData)
+ */
 function saveCloudDataApi(data) {
   try {
     var folder = getOrCreateFolder("雙和醫院公文附件庫");
     var files = folder.getFilesByName("雙和醫院公文系統最新資料庫.json");
-    var jsonStr = JSON.stringify({ docs: data.docs || [], issues: data.issues || [], updated_at: new Date().toISOString() });
-    if (files.hasNext()) { files.next().setContent(jsonStr); } else { folder.createFile("雙和醫院公文系統最新資料庫.json", jsonStr, "application/json").setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW); }
-    return { status: "success", message: "全院最新資料已成功同步至 Google Drive 雲端！" };
-  } catch (err) { return { status: "error", message: err.toString() }; }
+    var file;
+    var jsonStr = JSON.stringify({
+      docs: data.docs || [],
+      issues: data.issues || [],
+      updated_at: new Date().toISOString()
+    });
+
+    if (files.hasNext()) {
+      file = files.next();
+      file.setContent(jsonStr);
+    } else {
+      file = folder.createFile("雙和醫院公文系統最新資料庫.json", jsonStr, "application/json");
+    }
+
+    file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+
+    return {
+      status: "success",
+      message: "全院最新公文與函詢資料已成功同步至 Google Drive 雲端！",
+      timestamp: new Date().toISOString()
+    };
+  } catch (err) {
+    return { status: "error", message: err.toString() };
+  }
 }
 
 function getCloudDataApi() {
@@ -561,37 +740,67 @@ function getCloudDataApi() {
     var folder = getOrCreateFolder("雙和醫院公文附件庫");
     var files = folder.getFilesByName("雙和醫院公文系統最新資料庫.json");
     if (!files.hasNext()) return { status: "empty", docs: [], issues: [] };
-    var data = JSON.parse(files.next().getBlob().getDataAsString("UTF-8"));
-    return { status: "success", docs: data.docs || [], issues: data.issues || [], updated_at: data.updated_at };
-  } catch (err) { return { status: "error", message: err.toString() }; }
+    var file = files.next();
+    var content = file.getBlob().getDataAsString("UTF-8");
+    var data = JSON.parse(content);
+    return {
+      status: "success",
+      docs: data.docs || [],
+      issues: data.issues || [],
+      updated_at: data.updated_at
+    };
+  } catch (err) {
+    return { status: "error", message: err.toString() };
+  }
 }
 
+// 輔助函式：取得或建立 Google Drive 資料夾
 function getOrCreateFolder(folderName) {
   var folders = DriveApp.getFoldersByName(folderName);
-  if (folders.hasNext()) return folders.next();
+  if (folders.hasNext()) {
+    return folders.next();
+  }
   var newFolder = DriveApp.createFolder(folderName);
   newFolder.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
   return newFolder;
 }
 
+// 輔助函式：自動開放 Drive 檔案權限給郵件收件人與副本所有人
 function grantDriveAccess(htmlBody, to, cc) {
   try {
     var emails = [];
     var rawEmails = ((to || '') + ',' + (cc || '')).split(',');
     for (var i = 0; i < rawEmails.length; i++) {
       var em = rawEmails[i].trim();
-      if (em.indexOf('<') !== -1) { var match = em.match(/<([^>]+)>/); if (match) em = match[1]; }
-      if (em && em.indexOf('@') !== -1) emails.push(em.toLowerCase().trim());
+      if (em.indexOf('<') !== -1) {
+        var match = em.match(/<([^>]+)>/);
+        if (match) em = match[1];
+      }
+      if (em && em.indexOf('@') !== -1) {
+        emails.push(em.toLowerCase().trim());
+      }
     }
-    if (emails.length === 0) return;
+    
+    var fileIds = [];
     var regex = /drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/g;
     var match;
     while ((match = regex.exec(htmlBody)) !== null) {
-      try {
-        var file = DriveApp.getFileById(match[1]);
-        file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
-        for (var e = 0; e < emails.length; e++) { try { file.addViewer(emails[e]); } catch(e1) {} }
-      } catch(e2) {}
+      if (fileIds.indexOf(match[1]) === -1) {
+        fileIds.push(match[1]);
+      }
     }
-  } catch (e3) {}
+    
+    for (var f = 0; f < fileIds.length; f++) {
+      try {
+        var file = DriveApp.getFileById(fileIds[f]);
+        // 自動公開存取權，確保對方免登入亦可開啟
+        file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+        for (var e = 0; e < emails.length; e++) {
+          try {
+            file.addViewer(emails[e]);
+          } catch(err1) {}
+        }
+      } catch(err2) {}
+    }
+  } catch (err3) {}
 }
