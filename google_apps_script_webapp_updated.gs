@@ -124,44 +124,48 @@ function doPost(e) {
 }
 
 /**
- * 核心 2: 自動掃描 Gmail 收件匣中的醫師回信
+ * 核心 2: 自動掃描 Gmail 收件匣中的醫師回信 (進階版 Gmail API 引擎)
  */
 function scanGmailReplies() {
   try {
+    // 取得使用者信箱 (非必須，但保留作為參考)
     var userEmail = Session.getEffectiveUser().getEmail().toLowerCase();
     
-    // 取消依賴 unread 或 label，增加掃描範圍至最近 50 個對話串，避免大量信件時漏信
-    var threads = GmailApp.search('subject:"【雙和醫院病歷組】"', 0, 50);
+    // 使用 Advanced Gmail API 搜尋主題包含【雙和醫院病歷組】近 7 天之信件 (徹底包含已加星號之醫師回信，避免漏抓)
+    var query = 'subject:【雙和醫院病歷組】 newer_than:7d';
+    var response = Gmail.Users.Messages.list('me', { q: query, maxResults: 100 });
+    
     var foundReplies = [];
+    var processedMessageIds = [];
 
-    for (var i = 0; i < threads.length; i++) {
-      var thread = threads[i];
-      var messages = thread.getMessages();
-
-      if (messages.length > 1) { // 有對話紀錄
-        // 反向尋找最後一封不是由系統發出的信件（也就是最後一次醫師的回信）
-        var targetMsg = null;
-        for (var j = messages.length - 1; j >= 1; j--) {
-          var msgFrom = messages[j].getFrom().toLowerCase();
-          if (msgFrom.indexOf("e700document@s.tmu.edu.tw") === -1 && msgFrom.indexOf("雙和醫院病歷組") === -1) {
-            targetMsg = messages[j];
-            break;
-          } else {
-             // 如果是系統發的，直接打星號略過
-             if (!messages[j].isStarred()) messages[j].star();
+    if (response.messages && response.messages.length > 0) {
+      for (var i = 0; i < response.messages.length; i++) {
+        var msgId = response.messages[i].id;
+        var msgDetail = Gmail.Users.Messages.get('me', msgId, { format: 'full' });
+        
+        var payload = msgDetail.payload;
+        var headers = payload.headers;
+        
+        var subject = "";
+        var from = "";
+        var dateStr = "";
+        
+        for (var h = 0; h < headers.length; h++) {
+          if (headers[h].name.toLowerCase() === 'subject') subject = headers[h].value;
+          if (headers[h].name.toLowerCase() === 'from') from = headers[h].value;
+          if (headers[h].name.toLowerCase() === 'date') {
+            // 解析信件時間
+            var rawDate = new Date(headers[h].value);
+            dateStr = Utilities.formatDate(rawDate, "GMT+8", "yyyy-MM-dd HH:mm");
           }
         }
-
-        if (!targetMsg) continue; // 找不到醫師的回信（可能全都是系統通知）
-
-        // 1. 如果這封「最後的醫師回信」已經被系統打星號 (Starred)，代表早就處理過了，直接跳過！
-        if (targetMsg.isStarred()) {
-          continue;
+        
+        var msgFromLower = from.toLowerCase();
+        
+        // 防呆：如果是系統自己發出去的信（包含確認信），直接略過
+        if (msgFromLower.indexOf("e700document") !== -1 || msgFromLower.indexOf("雙和醫院病歷組") !== -1) {
+           continue;
         }
-
-        var subject = targetMsg.getSubject();
-        var body = targetMsg.getPlainBody();
-        var dateStr = Utilities.formatDate(targetMsg.getDate(), "GMT+8", "yyyy-MM-dd HH:mm");
 
         // 提取單號與項次 (修正單號 Regex 支援中文與橫線)
         var docMatch = subject.match(/單號[：:]\s*([^\s(]+)/);
@@ -170,10 +174,17 @@ function scanGmailReplies() {
         var docNo = docMatch ? docMatch[1] : "";
         var issueId = issueMatch ? issueMatch[1] : "";
 
+        // 如果主旨完全沒有單號或項次，代表不是公文系統的信，直接跳過
+        if (!docNo && !issueId) {
+          continue;
+        }
+
+        // 解析信件內文 (處理 Base64 編碼，以及多重 MIME 結構)
+        var body = extractMessageBody(payload);
+        
         // 清理醫師回信內文（徹底剝離引述頭部的 Sender 資訊）
         var cleanReply = body;
         cleanReply = cleanReply.split(/\r?\n.*於\s*\d{4}.*寫道[：:]/i)[0]; // 支援不同格式的信箱組合
-        // 移除容易誤切正常回信的粗暴 split，改用更嚴謹的切割
         cleanReply = cleanReply.split(/----------\s*原始郵件\s*----------/i)[0];
         cleanReply = cleanReply.split(/---------\s*Original Message\s*---------/i)[0];
         
@@ -184,27 +195,28 @@ function scanGmailReplies() {
         }
         
         cleanReply = cleanReply.trim();
+        
+        // 檢查是否有附件
+        var hasAttachments = false;
+        if (payload.parts) {
+          for (var p = 0; p < payload.parts.length; p++) {
+            if (payload.parts[p].filename && payload.parts[p].filename.length > 0) {
+              hasAttachments = true;
+              break;
+            }
+          }
+        }
 
-        if (cleanReply || targetMsg.getAttachments().length > 0) {
+        if (cleanReply || hasAttachments) {
           if (!cleanReply) cleanReply = "【醫師僅夾帶附件回覆，無文字內容】";
           foundReplies.push({
             docNo: docNo,
             issueId: issueId,
-            doctorEmail: targetMsg.getFrom(),
+            doctorEmail: from,
             replyContent: cleanReply,
-            repliedAt: dateStr
+            repliedAt: dateStr,
+            subject: subject
           });
-        }
-
-        // 處理完成後，將這封醫師的信件「打星號 (Star)」！
-        targetMsg.star();
-
-      } else {
-        // 單封訊息(沒有回信)
-        var firstMsg = messages[0];
-        // 如果還沒打星號，就把他打星號 (避免每次都檢查)
-        if (!firstMsg.isStarred()) {
-           firstMsg.star();
         }
       }
     }
@@ -217,9 +229,67 @@ function scanGmailReplies() {
   } catch (err) {
     return {
       status: "error",
-      message: err.toString()
+      message: "Advanced Gmail API Error: " + err.toString()
     };
   }
+}
+
+// 輔助函數：遞迴解析信件內文 (Gmail API 專用)
+function extractMessageBody(payload) {
+  var body = "";
+  
+  function safeDecode(dataStr) {
+    if (!dataStr) return "";
+    var decodedBytes;
+    try {
+      decodedBytes = Utilities.base64DecodeWebSafe(dataStr);
+    } catch(e1) {
+      try {
+        decodedBytes = Utilities.base64Decode(dataStr);
+      } catch(e2) {
+        return "";
+      }
+    }
+    
+    try {
+      return Utilities.newBlob(decodedBytes).getDataAsString('UTF-8');
+    } catch(e3) {
+      try {
+        return Utilities.newBlob(decodedBytes).getDataAsString('big5');
+      } catch(e4) {
+        try {
+            return Utilities.newBlob(decodedBytes).getDataAsString();
+        } catch(e5) {
+            return "";
+        }
+      }
+    }
+  }
+
+  if (payload.body && payload.body.size > 0 && payload.body.data) {
+    body = safeDecode(payload.body.data);
+  } else if (payload.parts) {
+    var plainPart = null;
+    var htmlPart = null;
+    for (var i = 0; i < payload.parts.length; i++) {
+      var p = payload.parts[i];
+      if (p.mimeType === 'text/plain') plainPart = p;
+      if (p.mimeType === 'text/html') htmlPart = p;
+      if (p.mimeType.indexOf('multipart') === 0 && p.parts) {
+         var nestedBody = extractMessageBody(p);
+         if (nestedBody) return nestedBody;
+      }
+    }
+    var targetPart = plainPart || htmlPart;
+    if (targetPart && targetPart.body && targetPart.body.data) {
+       body = safeDecode(targetPart.body.data);
+       if (!plainPart && htmlPart) {
+          body = body.replace(/<br\s*[\/]?>/gi, "\n").replace(/<[^>]+>/g, "");
+       }
+    }
+  }
+  
+  return body;
 }
 
 /**
