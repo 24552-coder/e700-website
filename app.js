@@ -33365,10 +33365,10 @@ async function previewEmailModal(issueId, type) {
     }
 
     let subject = `【雙和醫院病歷組】問題回覆通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
-    if (type === 2) subject = `【雙和醫院病歷組】已收到醫師回覆 單號：${issue.doc_receive_no}`;
+    if (type === 2) subject = `【雙和醫院病歷組】已收到醫師回覆 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
     if (type === 3) subject = `【雙和醫院病歷組】退回補件通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
     if (type === 4) subject = `【雙和醫院病歷組】案件已結案完成 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
-    if (type === 5) subject = `【雙和醫院病歷組】催辦提醒通知 單號：${issue.doc_receive_no}`;
+    if (type === 5) subject = `【雙和醫院病歷組】催辦提醒通知 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
     if (type === 6) subject = `【雙和醫院病歷組】已收到您的回覆確認 單號：${issue.doc_receive_no} (項次：${issue.issue_id})`;
 
     const ccList = [issue.creator_email, issue.cc_email1, issue.cc_email2].filter(Boolean).join(", ");
@@ -33666,7 +33666,12 @@ function syncGmailReplies(isSilent = false) {
                 let targetIssue = null;
                 const repIssueId = rep.issueId ? String(rep.issueId).trim() : "";
                 const repDocNo = rep.docNo ? String(rep.docNo).trim() : "";
-                const repEmail = (rep.doctorEmail || rep.senderEmail || "").toLowerCase().trim();
+                const rawRepEmail = (rep.doctorEmail || rep.senderEmail || "").toLowerCase().trim();
+                let repEmail = rawRepEmail;
+                if (rawRepEmail.includes("<")) {
+                    const match = rawRepEmail.match(/<([^>]+)>/);
+                    if (match) repEmail = match[1].toLowerCase().trim();
+                }
                 const repSubject = rep.subject ? String(rep.subject) : "";
 
                 // Tier 1: 項次 ID 比對

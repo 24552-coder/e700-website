@@ -208,8 +208,8 @@ function scanGmailReplies() {
         
         if (!msgDetail) continue;
 
-        // 提取單號與項次
-        var docMatch = subject.match(/單號[：:]\s*([^\s(]+)/);
+        // 1. 優先從信件主旨提取單號與項次
+        var docMatch = subject.match(/單號[：:]\s*([^\s()]+)/);
         var issueMatch = subject.match(/項次[：:]\s*([0-9A-Za-z\-]+)/);
 
         var docNo = docMatch ? docMatch[1] : "";
@@ -222,11 +222,18 @@ function scanGmailReplies() {
         }
         doctorEmailOnly = doctorEmailOnly.toLowerCase().trim();
 
-        // 若無單號項次且無寄件者 Email，跳過
-        if (!docNo && !issueId && !doctorEmailOnly) continue;
-
         // 提取內文 (使用強化版遞迴解析器)
         var rawBody = extractMessageBody(msgDetail.payload);
+
+        // 2. 若主旨未包含單號（如醫師直接回覆提醒通知信），自動從內文備援提取單號與項次
+        if (!docNo && rawBody) {
+          var bodyDocMatch = rawBody.match(/案件單號[：:]\s*([^\s<"\r\n]+)/) || rawBody.match(/單號[：:]\s*([^\s<"\r\n]+)/);
+          if (bodyDocMatch) docNo = bodyDocMatch[1].trim();
+        }
+        if (!issueId && rawBody) {
+          var bodyIssueMatch = rawBody.match(/項次[：:]\s*([0-9A-Za-z\-]+)/);
+          if (bodyIssueMatch) issueId = bodyIssueMatch[1].trim();
+        }
         
                 // 清理醫師回信內文 (剔除引言歷史紀錄)
         var cleanReply = rawBody || "";
