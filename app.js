@@ -31521,8 +31521,16 @@ function calculateDocProgress(receiveNo) {
 }
 
 function isIssueOverdue(issue) {
-    if (issue.status === "已完成" || issue.status === "已回覆" || issue.status === "已退回(待補件)") return false;
+    if (!issue || issue.deleted) return false;
+    if (issue.status === "已完成" || issue.status === "已回覆" || issue.status === "退回補件" || issue.status === "已退回(待補件)") return false;
     if (!issue.sent_at) return false;
+    
+    // 檢查對應公文主檔是否存在且未被刪除
+    const parentDoc = gMainDocs.find(d => !d.deleted && String(d.doc_receive_no) === String(issue.doc_receive_no));
+    if (!parentDoc || parentDoc.doc_status === "已完成" || parentDoc.doc_status === "不需醫師已完成" || parentDoc.doc_status === "結案") {
+        return false;
+    }
+
     const sentDate = new Date(issue.sent_at);
     const now = new Date();
     
@@ -31577,12 +31585,13 @@ function renderDashboard() {
 
 function checkOverdueAlerts() {
     const overdueIssues = gIssues.filter(i => isIssueOverdue(i));
+    const overdueDocs = gMainDocs.filter(d => !d.deleted && gIssues.some(i => String(i.doc_receive_no) === String(d.doc_receive_no) && isIssueOverdue(i)));
     const alertBanner = document.getElementById("overdueAlertBanner");
     const countText = document.getElementById("overdueCountText");
 
     if (overdueIssues.length > 0) {
         alertBanner.classList.remove("hidden");
-        countText.textContent = `${overdueIssues.length} 件醫師逾期未回覆 (>=1天)`;
+        countText.textContent = `${overdueDocs.length} 筆公文主檔 (共 ${overdueIssues.length} 位醫師逾期 >= 1天)`;
     } else {
         alertBanner.classList.add("hidden");
     }
