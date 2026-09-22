@@ -32061,13 +32061,15 @@ function renderNestedIssueTable(receiveNo) {
                         </div>
                     ` : ''}
                 </td>
-                <td style="min-width:260px;">
+                <td style="min-width:240px;">
                     ${issue.doctor_reply
                         ? `<div class="multiline-box reply-box" style="border-left:4px solid #0284c7;">
                             <strong style="color:#0369a1;font-size:12.5px;display:block;margin-bottom:4px;"><i class="fa-solid fa-comment-dots"></i> 最新醫師回覆：</strong>
                             ${formatMultilineHtml(issue.doctor_reply)}
                            </div>`
                         : `<div style="color:#94a3b8;text-align:center;padding:12px 0;"><i class="fa-regular fa-clock" style="display:block;font-size:20px;margin-bottom:4px;"></i>尚無回覆</div>`}
+                </td>
+                <td style="min-width:230px;background:#fffcfc;">
                     ${(() => {
                         const returnList = [];
                         if (issue.history && Array.isArray(issue.history)) {
@@ -32083,25 +32085,25 @@ function renderNestedIssueTable(receiveNo) {
                         if (returnList.length === 0) {
                             if (issue.status === "退回補件") {
                                 return `
-                                    <div style="margin-top:8px;padding:8px 12px;background:#fffbe6;border:1px solid #ffe58f;border-left:4px solid #faad14;border-radius:6px;font-size:12.5px;color:#d48806;">
-                                        <strong style="color:#d48806;display:block;margin-bottom:2px;"><i class="fa-solid fa-rotate-left"></i> ↩️ 處於退回補件狀態：</strong>
+                                    <div style="padding:8px 10px;background:#fffbe6;border:1px solid #ffe58f;border-left:3px solid #faad14;border-radius:6px;font-size:12px;color:#d48806;">
+                                        <strong style="color:#d48806;display:block;margin-bottom:2px;"><i class="fa-solid fa-triangle-exclamation"></i> 處於退回補件狀態：</strong>
                                         <span style="color:#8c6200;">尚無退回說明。</span>
                                         <button class="btn btn-sm btn-outline-danger" style="margin-top:4px;display:block;padding:2px 8px;font-size:11px;" onclick="openReturnReasonModal('${escapeHtml(issue.issue_id)}')">✏️ 補填/修改退回原因</button>
                                     </div>
                                 `;
                             }
-                            return '';
+                            return '<span style="color:#94a3b8;font-size:12px;display:block;text-align:center;padding:12px 0;">- (無退回紀錄)</span>';
                         }
 
                         return returnList.map(ret => {
                             const reasonText = (ret.content || '').replace(/^退回補件原因：\s*/, '');
                             return `
-                                <div style="margin-top:8px;padding:8px 12px;background:#fef2f2;border:1px solid #fca5a5;border-left:4px solid #dc2626;border-radius:6px;font-size:12.5px;color:#991b1b;">
+                                <div style="padding:8px 10px;background:#fef2f2;border:1px solid #fca5a5;border-left:3px solid #dc2626;border-radius:6px;font-size:12px;color:#991b1b;margin-bottom:4px;">
                                     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px;">
-                                        <strong style="color:#dc2626;"><i class="fa-solid fa-rotate-left"></i> ↩️ 退回補件紀錄 ${ret.time ? `(${escapeHtml(ret.time)})` : ''}：</strong>
+                                        <strong style="color:#dc2626;font-size:11.5px;"><i class="fa-solid fa-rotate-left"></i> ↩️ 退回時間: ${escapeHtml(ret.time || '-')}</strong>
                                         <button class="btn btn-link text-danger" style="padding:0;font-size:11px;text-decoration:underline;" onclick="openReturnReasonModal('${escapeHtml(issue.issue_id)}')">編輯</button>
                                     </div>
-                                    <span style="color:#7f1d1d;">${formatMultilineHtml(reasonText)}</span>
+                                    <div style="color:#7f1d1d;line-height:1.4;white-space:pre-wrap;">${formatMultilineHtml(reasonText)}</div>
                                 </div>
                             `;
                         }).join('');
@@ -32158,6 +32160,7 @@ function renderNestedIssueTable(receiveNo) {
                     <th>醫師姓名</th>
                     <th>函詢問題內容</th>
                     <th>醫師意見回覆</th>
+                    <th style="background:#fff5f5;color:#c53030;">↩️ 退回原因與時間</th>
                     <th>狀態</th>
                     <th>寄件時間</th>
                     <th>回覆時間</th>
@@ -32561,6 +32564,7 @@ function openIssueModalForEdit(issueId) {
     document.getElementById("issue_creator_ext").value = issue.creator_ext || "2043";
     document.getElementById("issue_creator_email").value = issue.creator_email || "19020@s.tmu.edu.tw";
     document.getElementById("issue_question").value = issue.question || "";
+    if (document.getElementById("issue_return_reason")) document.getElementById("issue_return_reason").value = issue.return_reason || "";
     document.getElementById("issue_doctor_reply").value = issue.doctor_reply || "";
     document.getElementById("issue_due_date").value = issue.due_date || "";
     if (document.getElementById("issue_status")) document.getElementById("issue_status").value = issue.status || "待發送";
@@ -32864,6 +32868,20 @@ async function saveIssue() {
         }
     });
     const finalAttachments = Array.from(attMap.values());
+
+    const returnReasonInput = document.getElementById("issue_return_reason") ? document.getElementById("issue_return_reason").value.trim() : "";
+    if (returnReasonInput) {
+        returnReason = returnReasonInput;
+        if (!returnAt) returnAt = getTaiwanLocalDateTimeString();
+        if (!historyList.some(h => h.type === 'return' && h.content.includes(returnReasonInput))) {
+            historyList.push({
+                type: 'return',
+                time: returnAt,
+                content: `退回補件原因：${returnReasonInput}`,
+                operator: document.getElementById("issue_creator_name").value.trim() || "病歷組承辦人"
+            });
+        }
+    }
 
     const issueData = {
         issue_id: issueId,
