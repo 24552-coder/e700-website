@@ -33566,7 +33566,7 @@ async function sendSystemNotificationEmail(issueId, type) {
 }
 
 
-function autoSendEmail(issueId, type, forceModalPreview = false) {
+async function autoSendEmail(issueId, type, forceModalPreview = false) {
     // TOTAL ABSOLUTE KILL-SWITCH: Block ALL background outbound emails (types 1-6)
     // ONLY allow sending if explicitly initiated by user button click (forceModalPreview === true)
     if (!forceModalPreview) {
