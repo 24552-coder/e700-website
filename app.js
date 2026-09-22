@@ -32322,7 +32322,7 @@ function openMainDocModal(receiveNo = null) {
             document.getElementById("doc_chart_no").value = doc.doc_chart_no || "";
             document.getElementById("doc_patient_name").value = doc.doc_patient_name || "";
             document.getElementById("doc_chart_status").value = doc.doc_doctor_name || doc.doc_chart_status || "";
-            document.getElementById("doc_assignee").value = doc.doc_assignee || "";
+            document.getElementById("doc_assignee").value = getDocAssignee(doc) || "";
                         const feeVal = doc.doc_fee != null && doc.doc_fee !== "" ? String(doc.doc_fee) : "0";
             document.getElementById("doc_fee").value = feeVal;
             document.getElementById("doc_labor_no").value = doc.doc_lbi_no || doc.doc_labor_no || "";
@@ -32507,7 +32507,7 @@ async function saveMainDoc() {
             doc_patient_name: document.getElementById("doc_patient_name").value.trim(),
             doc_doctor_name: chartStatus,
             doc_chart_status: chartStatus,
-            doc_assignee: document.getElementById("doc_assignee").value.trim(),
+            doc_assignee: document.getElementById("doc_assignee").value.trim() || (existingIndex >= 0 ? getDocAssignee(gMainDocs[existingIndex]) : ""),
             doc_fee: parseFloat(document.getElementById("doc_fee").value) || 0,
             doc_lbi_no: laborNo,
             doc_labor_no: laborNo,
