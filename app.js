@@ -1,600 +1,3 @@
-
-function emergencyResetAndRestoreData() {
-    console.log("Executing emergencyResetAndRestoreData...");
-    try {
-        localStorage.removeItem("TMU_MAIN_DOCS_V10");
-        localStorage.removeItem("TMU_ISSUES_V10");
-    } catch(e) {}
-    gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
-    gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
-    saveDataToStorage();
-    renderDashboard();
-    renderTable();
-    showToast("✅ 系統已為您全自動修復還原 543 筆公文與 661 筆函詢資料！", "success");
-}
-
-
-// ====================================================
-// MASTER EMERGENCY KILL-SWITCH: TOTAL BLOCK ON AUTO-EMAIL
-// ====================================================
-window.EMERGENCY_DISABLE_ALL_AUTO_EMAIL = true;
-
-
-function formatSlashDate(inputStr) {
-    if (!inputStr) return "-";
-    let str = String(inputStr).trim();
-    if (!str || str === "-" || str === "null" || str === "undefined") return "-";
-
-    str = str.replace(/^民國\s*/, "").replace(/日$/, "");
-
-    // West date: 2026-09-14 or 2026/09/14 or 2026.09.14
-    const westMatch = str.match(/^(\d{4})[年\/\.-](\d{1,2})[月\/\.-](\d{1,2})$/);
-    if (westMatch) {
-        let y = parseInt(westMatch[1], 10);
-        if (y >= 1911 && y <= 1999) y = (y - 1911) + 2000;
-        const m = String(westMatch[2]).padStart(2, '0');
-        const d = String(westMatch[3]).padStart(2, '0');
-        return `${y}/${m}/${d}`;
-    }
-
-    // Minguo date: 115-09-14 or 115/09/14 or 115年9月14
-    const rocMatch = str.match(/^(\d{2,3})[年\/\.-](\d{1,2})[月\/\.-](\d{1,2})$/);
-    if (rocMatch) {
-        let y = parseInt(rocMatch[1], 10) + 1911;
-        if (y >= 1911 && y <= 1999) y = (y - 1911) + 2000;
-        const m = String(rocMatch[2]).padStart(2, '0');
-        const d = String(rocMatch[3]).padStart(2, '0');
-        return `${y}/${m}/${d}`;
-    }
-
-    // 7 digit Minguo 1150914
-    const m7 = str.match(/^(11[0-9])(\d{2})(\d{2})$/);
-    if (m7) {
-        let y = parseInt(m7[1], 10) + 1911;
-        const m = m7[2];
-        const d = m7[3];
-        return `${y}/${m}/${d}`;
-    }
-
-    // fallback: attempt Date parse
-    let dObj = new Date(str);
-    if (!isNaN(dObj.getTime())) {
-        const y = dObj.getFullYear();
-        const m = String(dObj.getMonth() + 1).padStart(2, '0');
-        const d = String(dObj.getDate()).padStart(2, '0');
-        return `${y}/${m}/${d}`;
-    }
-    return "-";
-}
-
-function formatMinguoDateFullChinese(inputStr) {
-    let slashDate = formatSlashDate(inputStr);
-    if (!slashDate || slashDate === "-") return "-";
-    let parts = slashDate.split("/");
-    if (parts.length === 3) {
-        let y = parseInt(parts[0], 10);
-        let m = parseInt(parts[1], 10);
-        let d = parseInt(parts[2], 10);
-        if (y > 1911) {
-            y -= 1911;
-        }
-        return `${y}年${m}月${d}日`;
-    }
-    return slashDate;
-}
-
-function getTaiwanLocalDateTimeString(d = new Date()) {
-    const yyyy = d.getFullYear();
-    const mm = String(d.getMonth() + 1).padStart(2, '0');
-    const dd = String(d.getDate()).padStart(2, '0');
-    const hh = String(d.getHours()).padStart(2, '0');
-    const min = String(d.getMinutes()).padStart(2, '0');
-    return `${yyyy}-${mm}-${dd} ${hh}:${min}`;
-}
-
-/**
- * 將各式日期（西元/民國/純數字/連字號）統一格式化為「民國XXX年X月X日」格式
- * 例如：2026-01-20 -> 民國115年1月20日
- */
-function formatMinguoDate(inputStr) {
-    if (!inputStr) return "";
-    let str = String(inputStr).trim();
-    if (!str || str === "-" || str === "null" || str === "undefined") return "";
-
-    str = str.replace(/^民國\s*/, "");
-
-    // 格式 1: 115年12月10日 / 115年12月10 / 115-12-10 / 115/12/10
-    const rocMatch = str.match(/^(\d{2,3})[年\/\.-](\d{1,2})[月\/\.-](\d{1,2})日?$/);
-    if (rocMatch) {
-        const y = parseInt(rocMatch[1], 10);
-        const m = parseInt(rocMatch[2], 10);
-        const d = parseInt(rocMatch[3], 10);
-        if (y < 1900) {
-            return `${y}年${m}月${d}日`;
-        }
-    }
-
-    // 格式 2: 西元 2026-01-20, 2026/01/20, 2026.01.20, 2026年1月20日
-    const westMatch = str.match(/^(\d{4})[年\/\.-](\d{1,2})[月\/\.-](\d{1,2})日?$/);
-    if (westMatch) {
-        const y = parseInt(westMatch[1], 10) - 1911;
-        const m = parseInt(westMatch[2], 10);
-        const d = parseInt(westMatch[3], 10);
-        return `${y}年${m}月${d}日`;
-    }
-
-    // 格式 3: 純數字 7碼 1150120
-    if (/^\d{7}$/.test(str)) {
-        const y = parseInt(str.substring(0, 3), 10);
-        const m = parseInt(str.substring(3, 5), 10);
-        const d = parseInt(str.substring(5, 7), 10);
-        return `${y}年${m}月${d}日`;
-    }
-
-    // 格式 4: 純數字 8碼 20260120
-    if (/^\d{8}$/.test(str)) {
-        const y = parseInt(str.substring(0, 4), 10) - 1911;
-        const m = parseInt(str.substring(4, 6), 10);
-        const d = parseInt(str.substring(6, 8), 10);
-        return `${y}年${m}月${d}日`;
-    }
-
-    return str;
-}
-
-const DEFAULT_GAS_URL = "https://script.google.com/macros/s/AKfycbx87h6mC7Li00_fspjb8HTZ9oD3V47Ky3-nzx2w_8u_Emm6ZGaR59RMXWDx0g1OHUefZQ/exec";
-
-function getGasWebhookUrl() {
-    const fromStorage = localStorage.getItem("GAS_WEBHOOK_URL");
-    if (fromStorage && fromStorage.trim().startsWith("http")) return fromStorage.trim();
-    const fromInput = document.getElementById("cfg_gas_url") ? document.getElementById("cfg_gas_url").value.trim() : "";
-    if (fromInput && fromInput.startsWith("http")) {
-        localStorage.setItem("GAS_WEBHOOK_URL", fromInput);
-        return fromInput;
-    }
-    localStorage.setItem("GAS_WEBHOOK_URL", DEFAULT_GAS_URL);
-    return DEFAULT_GAS_URL;
-}
-
-async function fetchWithTimeout(resource, options = {}) {
-    const { timeout = 12000 } = options;
-    const controller = new AbortController();
-    const id = setTimeout(() => controller.abort(), timeout);
-    try {
-        const response = await fetch(resource, {
-            ...options,
-            signal: controller.signal
-        });
-        clearTimeout(id);
-        return response;
-    } catch (err) {
-        clearTimeout(id);
-        if (err.name === 'AbortError') {
-            throw new Error(`Google Apps Script 連線逾時 (${timeout / 1000} 秒)。請確認 Apps Script 權限已核准並已【管理部署 ➔ 編輯 ➔ 新版本】！`);
-        }
-        throw err;
-    }
-}
-
-
-/**
- * 雙和醫院病歷組 - 公文 Google 郵件自動發送與進度追蹤系統
- * Frontend Interactive Controller & Data Manager (Single Page Background Dispatcher)
- */
-
-// ----------------------------------------------------
-// 0. Caseworker Directory & Auto-Fill Mapping
-// ----------------------------------------------------
-const gAttachmentBinaryCache = {};
-
-function getAttachmentBase64(att) {
-    if (!att) return "";
-    if (att.base64Data) return att.base64Data;
-    if (att.att_id && gAttachmentBinaryCache[att.att_id]) return gAttachmentBinaryCache[att.att_id];
-    if (att.name && gAttachmentBinaryCache[att.name]) return gAttachmentBinaryCache[att.name];
-    const cleanName = (att.name || "").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0].trim();
-    if (cleanName && gAttachmentBinaryCache[cleanName]) return gAttachmentBinaryCache[cleanName];
-
-    for (const k in gAttachmentBinaryCache) {
-        if (!gAttachmentBinaryCache[k]) continue;
-        const cleanKey = k.replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0].trim();
-        if (cleanKey && (cleanKey.toLowerCase() === cleanName.toLowerCase() || k.toLowerCase().includes(cleanName.toLowerCase()))) {
-            return gAttachmentBinaryCache[k];
-        }
-    }
-    return "";
-}
-
-function pruneAttachmentCache() {
-    const activeKeys = new Set();
-    gIssues.forEach(issue => {
-        if (issue.attachments) {
-            issue.attachments.forEach(att => {
-                if (att.att_id) activeKeys.add(att.att_id);
-                if (att.name) activeKeys.add(att.name);
-                const clean = (att.name || "").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0];
-                if (clean) activeKeys.add(clean);
-            });
-        }
-    });
-    Object.keys(gAttachmentBinaryCache).forEach(key => {
-        if (!activeKeys.has(key)) {
-            delete gAttachmentBinaryCache[key];
-        }
-    });
-}
-
-function getTaiwanNowStr() {
-    const d = new Date();
-    const pad = n => String(n).padStart(2, '0');
-    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
-}
-
-/**
- * 上傳大型檔案至 Google Drive API (直連通道 + 分段備用，極速不卡頓版)
- */
-
-/**
- * 無上限超速大容量檔案上傳引擎 (經由 Python 本地二元串流伺服器)
- */
-async function uploadFileToLocalServer(file) {
-    const cleanName = file.name.replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0];
-    const serverUrl = window.location.protocol.startsWith("http") ? "/api/upload" : "http://localhost:9999/api/upload";
-
-    const progressBox = document.getElementById("uploadProgressBox");
-    const nameText = document.getElementById("uploadFileNameText");
-    const pctText = document.getElementById("uploadPercentText");
-    const fillBar = document.getElementById("uploadProgressBarFill");
-    const subText = document.getElementById("uploadSubtext");
-
-    if (progressBox) {
-        if (nameText) nameText.textContent = `${file.name}`;
-        if (pctText) pctText.textContent = "50%";
-        if (fillBar) fillBar.style.width = "50%";
-        if (subText) subText.textContent = "傳送至上傳通道...";
-        progressBox.classList.remove("hidden");
-    }
-
-    try {
-        const formData = new FormData();
-        formData.append("file", file);
-
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 3000);
-
-        const res = await fetch(serverUrl, {
-            method: "POST",
-            body: formData,
-            signal: controller.signal
-        });
-        clearTimeout(timeoutId);
-
-        const resJson = await res.json();
-        if (progressBox) progressBox.classList.add("hidden");
-        if (resJson.fileUrl && resJson.fileUrl.startsWith("http")) return resJson.fileUrl;
-        return "";
-    } catch(err) {
-        if (progressBox) progressBox.classList.add("hidden");
-        console.warn("Local server upload unreached or disabled:", err);
-        return "";
-    }
-}
-
-async function uploadLargeFileInChunks(file, gasUrl) {
-    if (!gasUrl || !gasUrl.startsWith("http")) {
-        throw new Error("請先至右上角【⚙️ 系統設定】貼上 Google Apps Script Webhook 網址！");
-    }
-
-    const progressBox = document.getElementById("uploadProgressBox");
-    const nameText = document.getElementById("uploadFileNameText");
-    const pctText = document.getElementById("uploadPercentText");
-    const fillBar = document.getElementById("uploadProgressBarFill");
-    const subText = document.getElementById("uploadSubtext");
-
-    const sizeMb = (file.size / (1024 * 1024)).toFixed(1);
-
-    if (progressBox) {
-        if (nameText) nameText.textContent = `${file.name} (${sizeMb} MB)`;
-        if (pctText) pctText.textContent = "0%";
-        if (fillBar) fillBar.style.width = "0%";
-        if (subText) subText.textContent = "建立 Google Drive 雲端 6MB 高效二元通道...";
-        progressBox.classList.remove("hidden");
-    }
-
-    try {
-        // 1. 初始化 Google Drive 續傳 Session (取得 uploadUrl)
-        const initRes = await fetchWithTimeout(gasUrl, {
-            timeout: 20000,
-            method: "POST",
-            mode: "cors",
-            headers: { "Content-Type": "text/plain" },
-            body: JSON.stringify({
-                action: "initResumableUpload",
-                fileName: file.name,
-                mimeType: file.type || "application/octet-stream",
-                fileSize: file.size
-            })
-        });
-
-        const initJson = await initRes.json();
-        if (initJson.status !== "success" || !initJson.uploadUrl) {
-            if (progressBox) progressBox.classList.add("hidden");
-            throw new Error(initJson.message || "無法取得 Google Drive 雲端上傳通道");
-        }
-
-        const uploadUrl = initJson.uploadUrl;
-        const fileSize = file.size;
-
-        // 6MB binary chunk size (6 * 1024 * 1024 = 24 * 256KB, 8.3MB Base64, safe under GAS 10MB limit)
-        const CHUNK_SIZE = 6 * 1024 * 1024;
-        const totalChunks = Math.ceil(fileSize / CHUNK_SIZE);
-        let finalFileUrl = "";
-
-        const startTime = Date.now();
-
-        for (let chunkIndex = 0; chunkIndex < totalChunks; chunkIndex++) {
-            const startByte = chunkIndex * CHUNK_SIZE;
-            const endByte = Math.min(startByte + CHUNK_SIZE, fileSize) - 1;
-            const chunkSlice = file.slice(startByte, endByte + 1);
-            const percent = Math.round(((chunkIndex + 1) / totalChunks) * 100);
-
-            const elapsedSec = Math.max(0.1, (Date.now() - startTime) / 1000);
-            const mbTransferred = ((endByte + 1) / (1024 * 1024)).toFixed(1);
-            const speed = (((endByte + 1) / (1024 * 1024)) / elapsedSec).toFixed(1);
-            const remainingMb = (fileSize - (endByte + 1)) / (1024 * 1024);
-            const etaSec = speed > 0 ? Math.max(1, Math.ceil(remainingMb / speed)) : 0;
-
-            if (pctText) pctText.textContent = `${percent}%`;
-            if (fillBar) fillBar.style.width = `${percent}%`;
-            if (subText) subText.textContent = `正寫入 Google Drive 6MB 二元通道 (${chunkIndex + 1}/${totalChunks} 區段 - ${mbTransferred}/${sizeMb} MB, ${speed} MB/s, 剩餘約 ${etaSec} 秒)...`;
-
-            const chunkB64 = await new Promise((resolve, reject) => {
-                const reader = new FileReader();
-                reader.onload = (e) => {
-                    const res = e.target.result;
-                    resolve(res.indexOf(",") !== -1 ? res.split(",")[1] : res);
-                };
-                reader.onerror = (e) => reject(e);
-                reader.readAsDataURL(chunkSlice);
-            });
-
-            // Auto-retry up to 3 times for maximum stability
-            let chunkSuccess = false;
-            let lastErr = null;
-
-            for (let retry = 0; retry < 3; retry++) {
-                try {
-                    const chunkRes = await fetchWithTimeout(gasUrl, {
-                        timeout: 30000,
-                        method: "POST",
-                        mode: "cors",
-                        headers: { "Content-Type": "text/plain" },
-                        body: JSON.stringify({
-                            action: "uploadResumableChunk",
-                            uploadUrl: uploadUrl,
-                            chunkB64: chunkB64,
-                            startByte: startByte,
-                            endByte: endByte,
-                            totalSize: fileSize
-                        })
-                    });
-
-                    const chunkJson = await chunkRes.json();
-                    if (chunkJson.status === "error") {
-                        throw new Error(chunkJson.message || `區段 ${chunkIndex + 1} 傳送失敗`);
-                    }
-
-                    if (chunkJson.isComplete && chunkJson.fileUrl) {
-                        finalFileUrl = chunkJson.fileUrl;
-                    }
-                    chunkSuccess = true;
-                    break;
-                } catch (eChunk) {
-                    lastErr = eChunk;
-                    await new Promise(r => setTimeout(r, 600));
-                }
-            }
-
-            if (!chunkSuccess) {
-                if (progressBox) progressBox.classList.add("hidden");
-                throw new Error(lastErr ? (lastErr.message || lastErr) : `區段 ${chunkIndex + 1} 傳送失敗`);
-            }
-
-            if (finalFileUrl) break;
-        }
-
-        if (subText) subText.textContent = "⚡ Google Drive 6MB 高效二元通道直傳完成！公開權限就緒";
-        if (fillBar) fillBar.style.width = "100%";
-        if (pctText) pctText.textContent = "100%";
-
-        setTimeout(() => {
-            if (progressBox) progressBox.classList.add("hidden");
-        }, 1200);
-
-        return finalFileUrl || `https://drive.google.com/file/d/view?usp=sharing`;
-    } catch (err) {
-        if (progressBox) progressBox.classList.add("hidden");
-        throw err;
-    }
-}
-
-/**
- * 分區段上傳 Base64 內容至 Google Drive API (經由 GAS Relay 通道)
- */
-async function uploadBase64InChunks(fileName, mimeType, b64Data, gasUrl) {
-    if (!gasUrl || !gasUrl.startsWith("http")) {
-        throw new Error("請先至右上角【⚙️ 系統設定】貼上 Google Apps Script Webhook 網址！");
-    }
-
-    const progressBox = document.getElementById("uploadProgressBox");
-    const nameText = document.getElementById("uploadFileNameText");
-    const pctText = document.getElementById("uploadPercentText");
-    const fillBar = document.getElementById("uploadProgressBarFill");
-    const subText = document.getElementById("uploadSubtext");
-
-    const rawB64 = b64Data.indexOf(",") !== -1 ? b64Data.split(",")[1] : b64Data;
-    const totalBytes = Math.floor(rawB64.length * 0.75);
-    const sizeMb = (totalBytes / (1024 * 1024)).toFixed(1);
-
-    if (progressBox) {
-        if (nameText) nameText.textContent = `${fileName} (${sizeMb} MB)`;
-        if (pctText) pctText.textContent = "0%";
-        if (fillBar) fillBar.style.width = "0%";
-        if (subText) subText.textContent = "建立 Google Drive 雲端通道...";
-        progressBox.classList.remove("hidden");
-    }
-
-    try {
-        const initRes = await fetchWithTimeout(gasUrl, {
-            timeout: 20000,
-            method: "POST",
-            mode: "cors",
-            headers: { "Content-Type": "text/plain" },
-            body: JSON.stringify({
-                action: "initResumableUpload",
-                fileName: fileName,
-                mimeType: mimeType || "application/octet-stream",
-                fileSize: totalBytes
-            })
-        });
-
-        const initJson = await initRes.json();
-        if (initJson.status !== "success" || !initJson.uploadUrl) {
-            if (progressBox) progressBox.classList.add("hidden");
-            throw new Error(initJson.message || "無法取得 Google Drive 雲端通道");
-        }
-
-        const uploadUrl = initJson.uploadUrl;
-        const B64_CHUNK_SIZE = 4 * 1024 * 1024;
-        let b64Start = 0;
-        let byteStart = 0;
-        let finalFileUrl = "";
-
-        while (b64Start < rawB64.length) {
-            const b64End = Math.min(b64Start + B64_CHUNK_SIZE, rawB64.length);
-            const subB64 = rawB64.substring(b64Start, b64End);
-            const chunkByteLength = Math.floor(subB64.length * 0.75);
-            const byteEnd = Math.min(byteStart + chunkByteLength, totalBytes);
-            const percent = Math.round((byteEnd / totalBytes) * 100);
-
-            if (pctText) pctText.textContent = `${percent}%`;
-            if (fillBar) fillBar.style.width = `${percent}%`;
-            if (subText) subText.textContent = `正寫入 Google Drive (${(byteEnd / (1024 * 1024)).toFixed(1)} / ${sizeMb} MB)...`;
-
-            const chunkRes = await fetchWithTimeout(gasUrl, {
-                timeout: 25000,
-                method: "POST",
-                mode: "cors",
-                headers: { "Content-Type": "text/plain" },
-                body: JSON.stringify({
-                    action: "uploadResumableChunk",
-                    uploadUrl: uploadUrl,
-                    chunkB64: subB64,
-                    startByte: byteStart,
-                    endByte: byteEnd - 1,
-                    totalSize: totalBytes
-                })
-            });
-
-            const chunkJson = await chunkRes.json();
-            if (chunkJson.status === "error") {
-                if (progressBox) progressBox.classList.add("hidden");
-                throw new Error(chunkJson.message || "傳送 Google Drive 失敗");
-            }
-
-            if (chunkJson.isComplete && chunkJson.fileUrl) {
-                finalFileUrl = chunkJson.fileUrl;
-                break;
-            }
-
-            b64Start = b64End;
-            byteStart = byteEnd;
-        }
-
-        if (subText) subText.textContent = " Google Drive 寫入完成！";
-        if (fillBar) fillBar.style.width = "100%";
-        if (pctText) pctText.textContent = "100%";
-
-        setTimeout(() => {
-            if (progressBox) progressBox.classList.add("hidden");
-        }, 1200);
-
-        return finalFileUrl;
-    } catch (err) {
-        if (progressBox) progressBox.classList.add("hidden");
-        throw err;
-    }
-}
-
-
-
-const CASEWORKER_DIRECTORY = [
-    { name: "陽書湘", email: "14301@s.tmu.edu.tw", ext: "2037" },
-    { name: "錢佩妤", email: "19020@s.tmu.edu.tw", ext: "2043" },
-    { name: "錢佩妤", email: "19020@s.tmu.edu.tw", ext: "2043" },
-    { name: "何秀英", email: "12254@s.tmu.edu.tw", ext: "2043" }
-];
-
-
-// ----------------------------------------------------
-# Deduplication Engine for Reply Notifications
-// ----------------------------------------------------
-var gSentReplyNotifications = new Set();
-try {
-    const storedNotifs = localStorage.getItem("SENT_REPLY_NOTIFICATIONS");
-    if (storedNotifs) {
-        gSentReplyNotifications = new Set(JSON.parse(storedNotifs));
-    }
-} catch(e) {}
-
-function markNotificationSent(notifKey) {
-    if (!notifKey) return;
-    gSentReplyNotifications.add(notifKey);
-    try {
-        localStorage.setItem("SENT_REPLY_NOTIFICATIONS", JSON.stringify(Array.from(gSentReplyNotifications)));
-    } catch(e) {}
-}
-
-function isNotificationSent(notifKey) {
-    if (!notifKey) return false;
-    return gSentReplyNotifications.has(notifKey);
-}
-
-
-function cleanAssigneeName(name) {
-    if (!name) return "";
-    let clean = String(name).replace(/\s*\([\s\S]*?\)/g, "").trim();
-    if (clean === "無法" || clean === "無" || clean === "-" || clean === "undefined" || clean === "null") return "";
-    return clean;
-}
-
-function getDocAssignee(doc) {
-    if (!doc) return "";
-    let clean = cleanAssigneeName(doc.doc_assignee);
-    if (clean) return clean;
-    const recNo = String(doc.doc_receive_no || "").trim();
-    if (recNo && Array.isArray(gIssues)) {
-        const matchingIssue = gIssues.find(i => !i.deleted && String(i.doc_receive_no || "").trim() === recNo && cleanAssigneeName(i.creator_name || i.doc_assignee));
-        if (matchingIssue) {
-            const foundName = cleanAssigneeName(matchingIssue.creator_name || matchingIssue.doc_assignee);
-            if (foundName) {
-                doc.doc_assignee = foundName;
-                return foundName;
-            }
-        }
-    }
-    return "";
-}
-
-function getCaseworkerInfo(name) {
-    if (!name) return null;
-    const clean = cleanAssigneeName(name);
-    return CASEWORKER_DIRECTORY.find(c => c.name === clean);
-}
-
-// ----------------------------------------------------
-// 1. Initial Mock Data
-// ----------------------------------------------------
 const DEFAULT_MAIN_DOCS = [
     {
         "doc_receive_no": "1140013453",
@@ -30960,6 +30363,604 @@ const DEFAULT_ISSUES = [
     }
 ];
 
+
+function emergencyResetAndRestoreData() {
+    console.log("Executing emergencyResetAndRestoreData...");
+    try {
+        localStorage.removeItem("TMU_MAIN_DOCS_V10");
+        localStorage.removeItem("TMU_ISSUES_V10");
+        localStorage.removeItem("APP_DATA_VERSION");
+    } catch(e) {}
+    gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
+    gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+    saveDataToStorage();
+    renderDashboard();
+    renderTable();
+    showToast("✅ 成功修復還原！全院 543 筆公文與 661 筆函詢資料已全數恢復！", "success");
+}
+
+
+// ====================================================
+// MASTER EMERGENCY KILL-SWITCH: TOTAL BLOCK ON AUTO-EMAIL
+// ====================================================
+window.EMERGENCY_DISABLE_ALL_AUTO_EMAIL = true;
+
+
+function formatSlashDate(inputStr) {
+    if (!inputStr) return "-";
+    let str = String(inputStr).trim();
+    if (!str || str === "-" || str === "null" || str === "undefined") return "-";
+
+    str = str.replace(/^民國\s*/, "").replace(/日$/, "");
+
+    // West date: 2026-09-14 or 2026/09/14 or 2026.09.14
+    const westMatch = str.match(/^(\d{4})[年\/\.-](\d{1,2})[月\/\.-](\d{1,2})$/);
+    if (westMatch) {
+        let y = parseInt(westMatch[1], 10);
+        if (y >= 1911 && y <= 1999) y = (y - 1911) + 2000;
+        const m = String(westMatch[2]).padStart(2, '0');
+        const d = String(westMatch[3]).padStart(2, '0');
+        return `${y}/${m}/${d}`;
+    }
+
+    // Minguo date: 115-09-14 or 115/09/14 or 115年9月14
+    const rocMatch = str.match(/^(\d{2,3})[年\/\.-](\d{1,2})[月\/\.-](\d{1,2})$/);
+    if (rocMatch) {
+        let y = parseInt(rocMatch[1], 10) + 1911;
+        if (y >= 1911 && y <= 1999) y = (y - 1911) + 2000;
+        const m = String(rocMatch[2]).padStart(2, '0');
+        const d = String(rocMatch[3]).padStart(2, '0');
+        return `${y}/${m}/${d}`;
+    }
+
+    // 7 digit Minguo 1150914
+    const m7 = str.match(/^(11[0-9])(\d{2})(\d{2})$/);
+    if (m7) {
+        let y = parseInt(m7[1], 10) + 1911;
+        const m = m7[2];
+        const d = m7[3];
+        return `${y}/${m}/${d}`;
+    }
+
+    // fallback: attempt Date parse
+    let dObj = new Date(str);
+    if (!isNaN(dObj.getTime())) {
+        const y = dObj.getFullYear();
+        const m = String(dObj.getMonth() + 1).padStart(2, '0');
+        const d = String(dObj.getDate()).padStart(2, '0');
+        return `${y}/${m}/${d}`;
+    }
+    return "-";
+}
+
+function formatMinguoDateFullChinese(inputStr) {
+    let slashDate = formatSlashDate(inputStr);
+    if (!slashDate || slashDate === "-") return "-";
+    let parts = slashDate.split("/");
+    if (parts.length === 3) {
+        let y = parseInt(parts[0], 10);
+        let m = parseInt(parts[1], 10);
+        let d = parseInt(parts[2], 10);
+        if (y > 1911) {
+            y -= 1911;
+        }
+        return `${y}年${m}月${d}日`;
+    }
+    return slashDate;
+}
+
+function getTaiwanLocalDateTimeString(d = new Date()) {
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    const hh = String(d.getHours()).padStart(2, '0');
+    const min = String(d.getMinutes()).padStart(2, '0');
+    return `${yyyy}-${mm}-${dd} ${hh}:${min}`;
+}
+
+/**
+ * 將各式日期（西元/民國/純數字/連字號）統一格式化為「民國XXX年X月X日」格式
+ * 例如：2026-01-20 -> 民國115年1月20日
+ */
+function formatMinguoDate(inputStr) {
+    if (!inputStr) return "";
+    let str = String(inputStr).trim();
+    if (!str || str === "-" || str === "null" || str === "undefined") return "";
+
+    str = str.replace(/^民國\s*/, "");
+
+    // 格式 1: 115年12月10日 / 115年12月10 / 115-12-10 / 115/12/10
+    const rocMatch = str.match(/^(\d{2,3})[年\/\.-](\d{1,2})[月\/\.-](\d{1,2})日?$/);
+    if (rocMatch) {
+        const y = parseInt(rocMatch[1], 10);
+        const m = parseInt(rocMatch[2], 10);
+        const d = parseInt(rocMatch[3], 10);
+        if (y < 1900) {
+            return `${y}年${m}月${d}日`;
+        }
+    }
+
+    // 格式 2: 西元 2026-01-20, 2026/01/20, 2026.01.20, 2026年1月20日
+    const westMatch = str.match(/^(\d{4})[年\/\.-](\d{1,2})[月\/\.-](\d{1,2})日?$/);
+    if (westMatch) {
+        const y = parseInt(westMatch[1], 10) - 1911;
+        const m = parseInt(westMatch[2], 10);
+        const d = parseInt(westMatch[3], 10);
+        return `${y}年${m}月${d}日`;
+    }
+
+    // 格式 3: 純數字 7碼 1150120
+    if (/^\d{7}$/.test(str)) {
+        const y = parseInt(str.substring(0, 3), 10);
+        const m = parseInt(str.substring(3, 5), 10);
+        const d = parseInt(str.substring(5, 7), 10);
+        return `${y}年${m}月${d}日`;
+    }
+
+    // 格式 4: 純數字 8碼 20260120
+    if (/^\d{8}$/.test(str)) {
+        const y = parseInt(str.substring(0, 4), 10) - 1911;
+        const m = parseInt(str.substring(4, 6), 10);
+        const d = parseInt(str.substring(6, 8), 10);
+        return `${y}年${m}月${d}日`;
+    }
+
+    return str;
+}
+
+const DEFAULT_GAS_URL = "https://script.google.com/macros/s/AKfycbx87h6mC7Li00_fspjb8HTZ9oD3V47Ky3-nzx2w_8u_Emm6ZGaR59RMXWDx0g1OHUefZQ/exec";
+
+function getGasWebhookUrl() {
+    const fromStorage = localStorage.getItem("GAS_WEBHOOK_URL");
+    if (fromStorage && fromStorage.trim().startsWith("http")) return fromStorage.trim();
+    const fromInput = document.getElementById("cfg_gas_url") ? document.getElementById("cfg_gas_url").value.trim() : "";
+    if (fromInput && fromInput.startsWith("http")) {
+        localStorage.setItem("GAS_WEBHOOK_URL", fromInput);
+        return fromInput;
+    }
+    localStorage.setItem("GAS_WEBHOOK_URL", DEFAULT_GAS_URL);
+    return DEFAULT_GAS_URL;
+}
+
+async function fetchWithTimeout(resource, options = {}) {
+    const { timeout = 12000 } = options;
+    const controller = new AbortController();
+    const id = setTimeout(() => controller.abort(), timeout);
+    try {
+        const response = await fetch(resource, {
+            ...options,
+            signal: controller.signal
+        });
+        clearTimeout(id);
+        return response;
+    } catch (err) {
+        clearTimeout(id);
+        if (err.name === 'AbortError') {
+            throw new Error(`Google Apps Script 連線逾時 (${timeout / 1000} 秒)。請確認 Apps Script 權限已核准並已【管理部署 ➔ 編輯 ➔ 新版本】！`);
+        }
+        throw err;
+    }
+}
+
+
+/**
+ * 雙和醫院病歷組 - 公文 Google 郵件自動發送與進度追蹤系統
+ * Frontend Interactive Controller & Data Manager (Single Page Background Dispatcher)
+ */
+
+// ----------------------------------------------------
+// 0. Caseworker Directory & Auto-Fill Mapping
+// ----------------------------------------------------
+const gAttachmentBinaryCache = {};
+
+function getAttachmentBase64(att) {
+    if (!att) return "";
+    if (att.base64Data) return att.base64Data;
+    if (att.att_id && gAttachmentBinaryCache[att.att_id]) return gAttachmentBinaryCache[att.att_id];
+    if (att.name && gAttachmentBinaryCache[att.name]) return gAttachmentBinaryCache[att.name];
+    const cleanName = (att.name || "").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0].trim();
+    if (cleanName && gAttachmentBinaryCache[cleanName]) return gAttachmentBinaryCache[cleanName];
+
+    for (const k in gAttachmentBinaryCache) {
+        if (!gAttachmentBinaryCache[k]) continue;
+        const cleanKey = k.replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0].trim();
+        if (cleanKey && (cleanKey.toLowerCase() === cleanName.toLowerCase() || k.toLowerCase().includes(cleanName.toLowerCase()))) {
+            return gAttachmentBinaryCache[k];
+        }
+    }
+    return "";
+}
+
+function pruneAttachmentCache() {
+    const activeKeys = new Set();
+    gIssues.forEach(issue => {
+        if (issue.attachments) {
+            issue.attachments.forEach(att => {
+                if (att.att_id) activeKeys.add(att.att_id);
+                if (att.name) activeKeys.add(att.name);
+                const clean = (att.name || "").replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0];
+                if (clean) activeKeys.add(clean);
+            });
+        }
+    });
+    Object.keys(gAttachmentBinaryCache).forEach(key => {
+        if (!activeKeys.has(key)) {
+            delete gAttachmentBinaryCache[key];
+        }
+    });
+}
+
+function getTaiwanNowStr() {
+    const d = new Date();
+    const pad = n => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+/**
+ * 上傳大型檔案至 Google Drive API (直連通道 + 分段備用，極速不卡頓版)
+ */
+
+/**
+ * 無上限超速大容量檔案上傳引擎 (經由 Python 本地二元串流伺服器)
+ */
+async function uploadFileToLocalServer(file) {
+    const cleanName = file.name.replace(/\s*\(大型檔案.*?\)/g, "").split(" (")[0];
+    const serverUrl = window.location.protocol.startsWith("http") ? "/api/upload" : "http://localhost:9999/api/upload";
+
+    const progressBox = document.getElementById("uploadProgressBox");
+    const nameText = document.getElementById("uploadFileNameText");
+    const pctText = document.getElementById("uploadPercentText");
+    const fillBar = document.getElementById("uploadProgressBarFill");
+    const subText = document.getElementById("uploadSubtext");
+
+    if (progressBox) {
+        if (nameText) nameText.textContent = `${file.name}`;
+        if (pctText) pctText.textContent = "50%";
+        if (fillBar) fillBar.style.width = "50%";
+        if (subText) subText.textContent = "傳送至上傳通道...";
+        progressBox.classList.remove("hidden");
+    }
+
+    try {
+        const formData = new FormData();
+        formData.append("file", file);
+
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 3000);
+
+        const res = await fetch(serverUrl, {
+            method: "POST",
+            body: formData,
+            signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+
+        const resJson = await res.json();
+        if (progressBox) progressBox.classList.add("hidden");
+        if (resJson.fileUrl && resJson.fileUrl.startsWith("http")) return resJson.fileUrl;
+        return "";
+    } catch(err) {
+        if (progressBox) progressBox.classList.add("hidden");
+        console.warn("Local server upload unreached or disabled:", err);
+        return "";
+    }
+}
+
+async function uploadLargeFileInChunks(file, gasUrl) {
+    if (!gasUrl || !gasUrl.startsWith("http")) {
+        throw new Error("請先至右上角【⚙️ 系統設定】貼上 Google Apps Script Webhook 網址！");
+    }
+
+    const progressBox = document.getElementById("uploadProgressBox");
+    const nameText = document.getElementById("uploadFileNameText");
+    const pctText = document.getElementById("uploadPercentText");
+    const fillBar = document.getElementById("uploadProgressBarFill");
+    const subText = document.getElementById("uploadSubtext");
+
+    const sizeMb = (file.size / (1024 * 1024)).toFixed(1);
+
+    if (progressBox) {
+        if (nameText) nameText.textContent = `${file.name} (${sizeMb} MB)`;
+        if (pctText) pctText.textContent = "0%";
+        if (fillBar) fillBar.style.width = "0%";
+        if (subText) subText.textContent = "建立 Google Drive 雲端 6MB 高效二元通道...";
+        progressBox.classList.remove("hidden");
+    }
+
+    try {
+        // 1. 初始化 Google Drive 續傳 Session (取得 uploadUrl)
+        const initRes = await fetchWithTimeout(gasUrl, {
+            timeout: 20000,
+            method: "POST",
+            mode: "cors",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify({
+                action: "initResumableUpload",
+                fileName: file.name,
+                mimeType: file.type || "application/octet-stream",
+                fileSize: file.size
+            })
+        });
+
+        const initJson = await initRes.json();
+        if (initJson.status !== "success" || !initJson.uploadUrl) {
+            if (progressBox) progressBox.classList.add("hidden");
+            throw new Error(initJson.message || "無法取得 Google Drive 雲端上傳通道");
+        }
+
+        const uploadUrl = initJson.uploadUrl;
+        const fileSize = file.size;
+
+        // 6MB binary chunk size (6 * 1024 * 1024 = 24 * 256KB, 8.3MB Base64, safe under GAS 10MB limit)
+        const CHUNK_SIZE = 6 * 1024 * 1024;
+        const totalChunks = Math.ceil(fileSize / CHUNK_SIZE);
+        let finalFileUrl = "";
+
+        const startTime = Date.now();
+
+        for (let chunkIndex = 0; chunkIndex < totalChunks; chunkIndex++) {
+            const startByte = chunkIndex * CHUNK_SIZE;
+            const endByte = Math.min(startByte + CHUNK_SIZE, fileSize) - 1;
+            const chunkSlice = file.slice(startByte, endByte + 1);
+            const percent = Math.round(((chunkIndex + 1) / totalChunks) * 100);
+
+            const elapsedSec = Math.max(0.1, (Date.now() - startTime) / 1000);
+            const mbTransferred = ((endByte + 1) / (1024 * 1024)).toFixed(1);
+            const speed = (((endByte + 1) / (1024 * 1024)) / elapsedSec).toFixed(1);
+            const remainingMb = (fileSize - (endByte + 1)) / (1024 * 1024);
+            const etaSec = speed > 0 ? Math.max(1, Math.ceil(remainingMb / speed)) : 0;
+
+            if (pctText) pctText.textContent = `${percent}%`;
+            if (fillBar) fillBar.style.width = `${percent}%`;
+            if (subText) subText.textContent = `正寫入 Google Drive 6MB 二元通道 (${chunkIndex + 1}/${totalChunks} 區段 - ${mbTransferred}/${sizeMb} MB, ${speed} MB/s, 剩餘約 ${etaSec} 秒)...`;
+
+            const chunkB64 = await new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const res = e.target.result;
+                    resolve(res.indexOf(",") !== -1 ? res.split(",")[1] : res);
+                };
+                reader.onerror = (e) => reject(e);
+                reader.readAsDataURL(chunkSlice);
+            });
+
+            // Auto-retry up to 3 times for maximum stability
+            let chunkSuccess = false;
+            let lastErr = null;
+
+            for (let retry = 0; retry < 3; retry++) {
+                try {
+                    const chunkRes = await fetchWithTimeout(gasUrl, {
+                        timeout: 30000,
+                        method: "POST",
+                        mode: "cors",
+                        headers: { "Content-Type": "text/plain" },
+                        body: JSON.stringify({
+                            action: "uploadResumableChunk",
+                            uploadUrl: uploadUrl,
+                            chunkB64: chunkB64,
+                            startByte: startByte,
+                            endByte: endByte,
+                            totalSize: fileSize
+                        })
+                    });
+
+                    const chunkJson = await chunkRes.json();
+                    if (chunkJson.status === "error") {
+                        throw new Error(chunkJson.message || `區段 ${chunkIndex + 1} 傳送失敗`);
+                    }
+
+                    if (chunkJson.isComplete && chunkJson.fileUrl) {
+                        finalFileUrl = chunkJson.fileUrl;
+                    }
+                    chunkSuccess = true;
+                    break;
+                } catch (eChunk) {
+                    lastErr = eChunk;
+                    await new Promise(r => setTimeout(r, 600));
+                }
+            }
+
+            if (!chunkSuccess) {
+                if (progressBox) progressBox.classList.add("hidden");
+                throw new Error(lastErr ? (lastErr.message || lastErr) : `區段 ${chunkIndex + 1} 傳送失敗`);
+            }
+
+            if (finalFileUrl) break;
+        }
+
+        if (subText) subText.textContent = "⚡ Google Drive 6MB 高效二元通道直傳完成！公開權限就緒";
+        if (fillBar) fillBar.style.width = "100%";
+        if (pctText) pctText.textContent = "100%";
+
+        setTimeout(() => {
+            if (progressBox) progressBox.classList.add("hidden");
+        }, 1200);
+
+        return finalFileUrl || `https://drive.google.com/file/d/view?usp=sharing`;
+    } catch (err) {
+        if (progressBox) progressBox.classList.add("hidden");
+        throw err;
+    }
+}
+
+/**
+ * 分區段上傳 Base64 內容至 Google Drive API (經由 GAS Relay 通道)
+ */
+async function uploadBase64InChunks(fileName, mimeType, b64Data, gasUrl) {
+    if (!gasUrl || !gasUrl.startsWith("http")) {
+        throw new Error("請先至右上角【⚙️ 系統設定】貼上 Google Apps Script Webhook 網址！");
+    }
+
+    const progressBox = document.getElementById("uploadProgressBox");
+    const nameText = document.getElementById("uploadFileNameText");
+    const pctText = document.getElementById("uploadPercentText");
+    const fillBar = document.getElementById("uploadProgressBarFill");
+    const subText = document.getElementById("uploadSubtext");
+
+    const rawB64 = b64Data.indexOf(",") !== -1 ? b64Data.split(",")[1] : b64Data;
+    const totalBytes = Math.floor(rawB64.length * 0.75);
+    const sizeMb = (totalBytes / (1024 * 1024)).toFixed(1);
+
+    if (progressBox) {
+        if (nameText) nameText.textContent = `${fileName} (${sizeMb} MB)`;
+        if (pctText) pctText.textContent = "0%";
+        if (fillBar) fillBar.style.width = "0%";
+        if (subText) subText.textContent = "建立 Google Drive 雲端通道...";
+        progressBox.classList.remove("hidden");
+    }
+
+    try {
+        const initRes = await fetchWithTimeout(gasUrl, {
+            timeout: 20000,
+            method: "POST",
+            mode: "cors",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify({
+                action: "initResumableUpload",
+                fileName: fileName,
+                mimeType: mimeType || "application/octet-stream",
+                fileSize: totalBytes
+            })
+        });
+
+        const initJson = await initRes.json();
+        if (initJson.status !== "success" || !initJson.uploadUrl) {
+            if (progressBox) progressBox.classList.add("hidden");
+            throw new Error(initJson.message || "無法取得 Google Drive 雲端通道");
+        }
+
+        const uploadUrl = initJson.uploadUrl;
+        const B64_CHUNK_SIZE = 4 * 1024 * 1024;
+        let b64Start = 0;
+        let byteStart = 0;
+        let finalFileUrl = "";
+
+        while (b64Start < rawB64.length) {
+            const b64End = Math.min(b64Start + B64_CHUNK_SIZE, rawB64.length);
+            const subB64 = rawB64.substring(b64Start, b64End);
+            const chunkByteLength = Math.floor(subB64.length * 0.75);
+            const byteEnd = Math.min(byteStart + chunkByteLength, totalBytes);
+            const percent = Math.round((byteEnd / totalBytes) * 100);
+
+            if (pctText) pctText.textContent = `${percent}%`;
+            if (fillBar) fillBar.style.width = `${percent}%`;
+            if (subText) subText.textContent = `正寫入 Google Drive (${(byteEnd / (1024 * 1024)).toFixed(1)} / ${sizeMb} MB)...`;
+
+            const chunkRes = await fetchWithTimeout(gasUrl, {
+                timeout: 25000,
+                method: "POST",
+                mode: "cors",
+                headers: { "Content-Type": "text/plain" },
+                body: JSON.stringify({
+                    action: "uploadResumableChunk",
+                    uploadUrl: uploadUrl,
+                    chunkB64: subB64,
+                    startByte: byteStart,
+                    endByte: byteEnd - 1,
+                    totalSize: totalBytes
+                })
+            });
+
+            const chunkJson = await chunkRes.json();
+            if (chunkJson.status === "error") {
+                if (progressBox) progressBox.classList.add("hidden");
+                throw new Error(chunkJson.message || "傳送 Google Drive 失敗");
+            }
+
+            if (chunkJson.isComplete && chunkJson.fileUrl) {
+                finalFileUrl = chunkJson.fileUrl;
+                break;
+            }
+
+            b64Start = b64End;
+            byteStart = byteEnd;
+        }
+
+        if (subText) subText.textContent = " Google Drive 寫入完成！";
+        if (fillBar) fillBar.style.width = "100%";
+        if (pctText) pctText.textContent = "100%";
+
+        setTimeout(() => {
+            if (progressBox) progressBox.classList.add("hidden");
+        }, 1200);
+
+        return finalFileUrl;
+    } catch (err) {
+        if (progressBox) progressBox.classList.add("hidden");
+        throw err;
+    }
+}
+
+
+
+const CASEWORKER_DIRECTORY = [
+    { name: "陽書湘", email: "14301@s.tmu.edu.tw", ext: "2037" },
+    { name: "錢佩妤", email: "19020@s.tmu.edu.tw", ext: "2043" },
+    { name: "錢佩妤", email: "19020@s.tmu.edu.tw", ext: "2043" },
+    { name: "何秀英", email: "12254@s.tmu.edu.tw", ext: "2043" }
+];
+
+
+// ----------------------------------------------------
+# Deduplication Engine for Reply Notifications
+// ----------------------------------------------------
+var gSentReplyNotifications = new Set();
+try {
+    const storedNotifs = localStorage.getItem("SENT_REPLY_NOTIFICATIONS");
+    if (storedNotifs) {
+        gSentReplyNotifications = new Set(JSON.parse(storedNotifs));
+    }
+} catch(e) {}
+
+function markNotificationSent(notifKey) {
+    if (!notifKey) return;
+    gSentReplyNotifications.add(notifKey);
+    try {
+        localStorage.setItem("SENT_REPLY_NOTIFICATIONS", JSON.stringify(Array.from(gSentReplyNotifications)));
+    } catch(e) {}
+}
+
+function isNotificationSent(notifKey) {
+    if (!notifKey) return false;
+    return gSentReplyNotifications.has(notifKey);
+}
+
+
+function cleanAssigneeName(name) {
+    if (!name) return "";
+    let clean = String(name).replace(/\s*\([\s\S]*?\)/g, "").trim();
+    if (clean === "無法" || clean === "無" || clean === "-" || clean === "undefined" || clean === "null") return "";
+    return clean;
+}
+
+function getDocAssignee(doc) {
+    if (!doc) return "";
+    let clean = cleanAssigneeName(doc.doc_assignee);
+    if (clean) return clean;
+    const recNo = String(doc.doc_receive_no || "").trim();
+    if (recNo && Array.isArray(gIssues)) {
+        const matchingIssue = gIssues.find(i => !i.deleted && String(i.doc_receive_no || "").trim() === recNo && cleanAssigneeName(i.creator_name || i.doc_assignee));
+        if (matchingIssue) {
+            const foundName = cleanAssigneeName(matchingIssue.creator_name || matchingIssue.doc_assignee);
+            if (foundName) {
+                doc.doc_assignee = foundName;
+                return foundName;
+            }
+        }
+    }
+    return "";
+}
+
+function getCaseworkerInfo(name) {
+    if (!name) return null;
+    const clean = cleanAssigneeName(name);
+    return CASEWORKER_DIRECTORY.find(c => c.name === clean);
+}
+
+// ----------------------------------------------------
+// 1. Initial Mock Data
+// ----------------------------------------------------
 const STORAGE_MAIN_DOCS = "TMU_MAIN_DOCS_V10";
 const STORAGE_ISSUES = "TMU_ISSUES_V10";
 
