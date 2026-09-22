@@ -33931,6 +33931,7 @@ function syncGmailReplies(isSilent = false) {
                                     type: "reply",
                                     time: targetIssue.replied_at,
                                     content: newReply,
+                                    sender_email: rep.doctorEmail || repEmail || "",
                                     operator: targetIssue.doctor_name || "醫師"
                                 });
                             }
