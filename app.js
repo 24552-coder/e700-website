@@ -32061,13 +32061,58 @@ function renderNestedIssueTable(receiveNo) {
                         </div>
                     ` : ''}
                 </td>
-                <td style="min-width:240px;">
-                    ${issue.doctor_reply
-                        ? `<div class="multiline-box reply-box" style="border-left:4px solid #0284c7;">
-                            <strong style="color:#0369a1;font-size:12.5px;display:block;margin-bottom:4px;"><i class="fa-solid fa-comment-dots"></i> 最新醫師回覆：</strong>
-                            ${formatMultilineHtml(issue.doctor_reply)}
-                           </div>`
-                        : `<div style="color:#94a3b8;text-align:center;padding:12px 0;"><i class="fa-regular fa-clock" style="display:block;font-size:20px;margin-bottom:4px;"></i>尚無回覆</div>`}
+                <td style="min-width:260px;">
+                    ${(() => {
+                        const replyList = [];
+                        if (issue.history && Array.isArray(issue.history)) {
+                            issue.history.filter(h => h.type === 'reply').forEach(h => replyList.push(h));
+                        }
+                        if (issue.doctor_reply) {
+                            const hasReplyContent = replyList.some(r => r.content === issue.doctor_reply);
+                            if (!hasReplyContent) {
+                                replyList.push({
+                                    time: issue.replied_at || '',
+                                    content: issue.doctor_reply
+                                });
+                            }
+                        }
+
+                        if (replyList.length === 0) {
+                            return `<div style="color:#94a3b8;text-align:center;padding:12px 0;"><i class="fa-regular fa-clock" style="display:block;font-size:20px;margin-bottom:4px;"></i>尚無回覆</div>`;
+                        }
+
+                        if (replyList.length === 1) {
+                            const rep = replyList[0];
+                            return `
+                                <div class="multiline-box reply-box" style="border-left:4px solid #0284c7;background:#f0f9ff;padding:8px 10px;border-radius:6px;font-size:12px;">
+                                    <strong style="color:#0369a1;font-size:11.5px;display:block;margin-bottom:4px;">
+                                        <i class="fa-solid fa-comment-dots"></i> 醫師意見回覆 ${rep.time ? `(${escapeHtml(rep.time)})` : ''}：
+                                    </strong>
+                                    <div style="color:#0c4a6e;line-height:1.4;white-space:pre-wrap;">${formatMultilineHtml(rep.content)}</div>
+                                </div>
+                            `;
+                        }
+
+                        return `
+                            <div style="display:flex;flex-direction:column;gap:6px;">
+                                <div style="font-size:11px;font-weight:bold;color:#0284c7;"><i class="fa-solid fa-comments"></i> 歷次醫師回覆紀錄 (共 ${replyList.length} 次來回)：</div>
+                                ${replyList.slice().reverse().map((rep, idx) => {
+                                    const roundNum = replyList.length - idx;
+                                    const isLatest = idx === 0;
+                                    return `
+                                        <div style="padding:8px 10px;background:${isLatest ? '#f0f9ff' : '#f8fafc'};border:1px solid ${isLatest ? '#bae6fd' : '#cbd5e1'};border-left:3px solid ${isLatest ? '#0284c7' : '#64748b'};border-radius:6px;font-size:12px;">
+                                            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px;">
+                                                <strong style="color:${isLatest ? '#0369a1' : '#334155'};font-size:11.5px;">
+                                                    ${isLatest ? '💬 最新回覆' : `📜 第 ${roundNum} 次回覆`} ${rep.time ? `(${escapeHtml(rep.time)})` : ''}：
+                                                </strong>
+                                            </div>
+                                            <div style="color:${isLatest ? '#0c4a6e' : '#334155'};line-height:1.4;white-space:pre-wrap;">${formatMultilineHtml(rep.content)}</div>
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        `;
+                    })()}
                 </td>
                 <td style="min-width:230px;background:#fffcfc;">
                     ${(() => {
