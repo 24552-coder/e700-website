@@ -31584,14 +31584,20 @@ function renderDashboard() {
 }
 
 function checkOverdueAlerts() {
+    const overdueDays = localStorage.getItem("OVERDUE_DAYS") || "1";
     const overdueIssues = gIssues.filter(i => isIssueOverdue(i));
     const overdueDocs = gMainDocs.filter(d => !d.deleted && gIssues.some(i => String(i.doc_receive_no) === String(d.doc_receive_no) && isIssueOverdue(i)));
     const alertBanner = document.getElementById("overdueAlertBanner");
     const countText = document.getElementById("overdueCountText");
+    const titleEl = document.getElementById("overdueAlertBannerTitle");
+
+    if (titleEl) {
+        titleEl.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> <strong>逾期催辦緊急追蹤清單 (醫師未回覆 >= ${overdueDays}天)</strong>`;
+    }
 
     if (overdueIssues.length > 0) {
         alertBanner.classList.remove("hidden");
-        countText.textContent = `${overdueDocs.length} 筆公文主檔 (共 ${overdueIssues.length} 位醫師逾期 >= 1天)`;
+        countText.textContent = `${overdueDocs.length} 筆公文主檔 (共 ${overdueIssues.length} 位醫師逾期 >= ${overdueDays}天)`;
     } else {
         alertBanner.classList.add("hidden");
     }
@@ -31982,17 +31988,17 @@ function renderMainDocDetailPanel(doc) {
                     <div class="detail-label">函覆文號</div>
                     <div class="detail-val">${replyNo}</div>
                 </div>
-                <div class="detail-item" style="flex: 1 1 auto; min-width: 170px;">
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 130px;">
                     <div class="detail-label">函覆日期</div>
                     <div class="detail-val">${replyDate}</div>
+                </div>
+                <div class="detail-item" style="flex: 1 1 auto; min-width: 180px;">
+                    <div class="detail-label"><i class="fa-solid fa-comment-dots" style="color:#d97706;margin-right:4px;"></i> 備註</div>
+                    <div class="detail-val">${remark}</div>
                 </div>
                 <div class="detail-item span-full" style="grid-column: 1 / -1; margin-top: 4px;">
                     <div class="detail-label"><i class="fa-solid fa-file-lines" style="color:#0284c7;margin-right:4px;"></i> 主旨</div>
                     <div class="detail-val subject-box">${subject}</div>
-                </div>
-                <div class="detail-item span-full" style="grid-column: 1 / -1; margin-top: 2px;">
-                    <div class="detail-label"><i class="fa-solid fa-comment-dots" style="color:#d97706;margin-right:4px;"></i> 備註</div>
-                    <div class="detail-val">${remark}</div>
                 </div>
             </div>
         </div>
@@ -34025,6 +34031,7 @@ function saveSettings() {
     closeModal("modalSettings");
     renderDashboard();
     renderTable();
+    checkOverdueAlerts();
 }
 
 function openModal(id) {

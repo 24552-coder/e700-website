@@ -767,7 +767,7 @@ thead th[onclick]:hover { background: #e9f0fb !important; color: #1e40af !import
 
 /* ─── Detail Grid (Image 2 style) ────────── */
 .doc-detail-grid-wrapper {
-    padding: 12px 20px 14px;
+    padding: 10px 18px 12px;
     background: #ffffff;
     border-bottom: 1.5px solid #d1fae5;
 }
@@ -776,15 +776,15 @@ thead th[onclick]:hover { background: #e9f0fb !important; color: #1e40af !import
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 18px 24px;
-    font-size: 14px;
+    gap: 10px 16px;
+    font-size: 13.5px;
 }
 
 .detail-item {
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    min-width: 170px;
+    gap: 3px;
+    min-width: 140px;
     flex: 1 1 auto;
 }
 
@@ -793,13 +793,13 @@ thead th[onclick]:hover { background: #e9f0fb !important; color: #1e40af !import
 }
 
 .detail-label {
-    font-size: 15px;
+    font-size: 13.5px;
     color: #64748b;
     font-weight: 600;
 }
 
 .detail-val {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     color: #334155;
     word-break: break-word;
