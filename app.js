@@ -30954,6 +30954,26 @@ let gTempPendingEmailAction = null;
 // 2. Initialization & Data Loading
 // ----------------------------------------------------
 document.addEventListener("DOMContentLoaded", async () => {
+    // Emergency Data Safety Check: If localStorage has empty array or missing, restore defaults immediately
+    const rawDocs = localStorage.getItem("TMU_MAIN_DOCS_V10");
+    if (!rawDocs || rawDocs === "[]" || rawDocs === "null") {
+        localStorage.setItem("TMU_MAIN_DOCS_V10", JSON.stringify(DEFAULT_MAIN_DOCS));
+    }
+    const rawIssues = localStorage.getItem("TMU_ISSUES_V10");
+    if (!rawIssues || rawIssues === "[]" || rawIssues === "null") {
+        localStorage.setItem("TMU_ISSUES_V10", JSON.stringify(DEFAULT_ISSUES));
+    }
+
+    loadDataFromStorage();
+
+    if (!Array.isArray(gMainDocs) || gMainDocs.length === 0) {
+        gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
+        saveDataToStorage();
+    }
+    if (!Array.isArray(gIssues) || gIssues.length === 0) {
+        gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+        saveDataToStorage();
+    }
     await loadDataFromStorage();
     if (!gMainDocs || !Array.isArray(gMainDocs) || gMainDocs.length === 0) {
         console.warn("gMainDocs empty detected at startup, auto-restoring default 520 records...");
@@ -31368,6 +31388,12 @@ function loadDataFromStorage() {
         return recNo.length > 0;
     });
     deduplicateMainDocs();
+    if (!Array.isArray(gMainDocs) || gMainDocs.length === 0) {
+        gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
+    }
+    if (!Array.isArray(gIssues) || gIssues.length === 0) {
+        gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+    }
 
     // Migration: completely remove typo "錢佩妤"
     let hasTypoFixed = false;
@@ -32550,6 +32576,12 @@ async function saveMainDoc() {
         }
 
         deduplicateMainDocs();
+    if (!Array.isArray(gMainDocs) || gMainDocs.length === 0) {
+        gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
+    }
+    if (!Array.isArray(gIssues) || gIssues.length === 0) {
+        gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+    }
         saveDataToStorage();
         closeModal("modalMainDoc");
         populateAssigneeOptions();
@@ -33308,6 +33340,11 @@ function getEmailTemplateHtml(type, issue) {
 }
 
 async function autoSendEmail(issueId, type, forceModalPreview = false) {
+    // CIRCUIT BREAKER: Block silent background sending for type 2 & 5 unless explicitly confirmed by user
+    if (!forceModalPreview && (type === 2 || type === 5)) {
+        console.warn(`[CIRCUIT BREAKER] Suppressed background autoSendEmail for type ${type} on issue ${issueId}`);
+        return;
+    }
     const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (!issue) return;
 
