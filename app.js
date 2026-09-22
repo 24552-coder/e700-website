@@ -31327,6 +31327,27 @@ window.resetToDefaultData = function() {
     }
 };
 
+function repairMismatchedReplies() {
+    if (!Array.isArray(gIssues)) return;
+    gIssues.forEach(issue => {
+        if (issue && issue.doctor_reply && issue.doctor_name) {
+            const reply = String(issue.doctor_reply);
+            const docName = String(issue.doctor_name).trim();
+            const match = reply.match(/我是\s*([\u4e00-\u9fa5]{2,4})\s*醫師/);
+            if (match && match[1]) {
+                const replyDocName = match[1].trim();
+                if (replyDocName !== docName && !docName.includes(replyDocName) && !replyDocName.includes(docName)) {
+                    console.warn(`[Auto-Heal] Resetting mismatched reply for Issue ${issue.issue_id}: doc is ${docName}, reply was from ${replyDocName}`);
+                    issue.doctor_reply = "";
+                    if (issue.status === "已回覆") {
+                        issue.status = "已發送";
+                    }
+                }
+            }
+        }
+    });
+}
+
 function loadDataFromStorage() {
     const DATA_VERSION = "20260919_v78_jiean_equals_wancheng";
     const lastVersion = localStorage.getItem("APP_DATA_VERSION");
