@@ -33765,7 +33765,7 @@ function syncGmailReplies(isSilent = false) {
                             processedIssues.add(targetIssue.issue_id);
                             
                             // 自動寄出「已收到醫師回覆」的單一整合信件給醫師與承辦同仁
-                            await autoSendEmail(targetIssue.issue_id, 2);
+                            // autoSendEmail removed to prevent infinite email loop on background sync
                         }
                     }
                 } else if (!targetIssue && (rep.issueId || rep.docNo)) {
@@ -33794,11 +33794,14 @@ function syncGmailReplies(isSilent = false) {
                         processedIssues.add(newIssue.issue_id);
                         
                         // 自動寄出「已收到醫師回覆」的單一整合信件給醫師與承辦同仁
-                        await autoSendEmail(newIssue.issue_id, 2);
+                        // autoSendEmail removed to prevent infinite email loop on background sync
                     }
                 }
             }
 
+            if (newlyUpdatedCount > 0) {
+                showToast(`📩 背景已為您自動同步 ${newlyUpdatedCount} 筆醫師最新回信紀錄！`, "success");
+            }
             if (newlyUpdatedCount > 0) {
                 saveDataToStorage();
                 renderDashboard();

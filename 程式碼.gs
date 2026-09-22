@@ -164,7 +164,15 @@ function scanGmailReplies() {
             }
             
             // 如果是系統自動發出的確認信，跳過
-            if (tempSubject.indexOf("已收到您的回覆確認") !== -1) {
+            if (tempSubject.indexOf("已收到醫師回覆") !== -1 || 
+          tempSubject.indexOf("已收到您的回覆確認") !== -1 || 
+          tempSubject.indexOf("退回補件通知") !== -1 || 
+          tempSubject.indexOf("案件已結案完成") !== -1 || 
+          tempSubject.indexOf("催辦提醒通知") !== -1 ||
+          tempFrom.indexOf("e700document") !== -1) {
+        continue;
+      }
+            // 
                 continue;
             }
             
