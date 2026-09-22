@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- SheetJS for Excel Export -->
     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-    <link rel="stylesheet" href="styles.css?v=20260922_v10045">
+    <link rel="stylesheet" href="styles.css?v=20260922_v10050">
 </head>
 <body>
     <!-- Top Header -->
@@ -38,7 +38,7 @@
             </button>
             <button id="btnSettings" class="btn btn-icon" title="系統與 Google 設定">
                 <i class="fa-solid fa-gear"></i>
-            </button>
+            </button> <button class="btn btn-sm btn-outline-warning ms-2" onclick="emergencyResetAndRestoreData()"><i class="fa-solid fa-wrench"></i> 一鍵修復資料</button>
         </div>
     </header>
 
@@ -545,7 +545,7 @@
         <div id="uploadSubtext" class="progress-subtext">正在區段傳送至 Google Drive 雲端 (0/0)...</div>
     </div>
 
-    <script src="app.js?v=20260922_v10045" defer></script>
+    <script src="app.js?v=20260922_v10050" defer></script>
 
     <!-- Modal: 週表篩選條件與匯出 -->
     <div class="modal-backdrop" id="modalWeeklyExport">

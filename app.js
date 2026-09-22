@@ -1,4 +1,25 @@
 
+function emergencyResetAndRestoreData() {
+    console.log("Executing emergencyResetAndRestoreData...");
+    try {
+        localStorage.removeItem("TMU_MAIN_DOCS_V10");
+        localStorage.removeItem("TMU_ISSUES_V10");
+    } catch(e) {}
+    gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
+    gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+    saveDataToStorage();
+    renderDashboard();
+    renderTable();
+    showToast("✅ 系統已為您全自動修復還原 543 筆公文與 661 筆函詢資料！", "success");
+}
+
+
+// ====================================================
+// MASTER EMERGENCY KILL-SWITCH: TOTAL BLOCK ON AUTO-EMAIL
+// ====================================================
+window.EMERGENCY_DISABLE_ALL_AUTO_EMAIL = true;
+
+
 function formatSlashDate(inputStr) {
     if (!inputStr) return "-";
     let str = String(inputStr).trim();
@@ -31467,7 +31488,12 @@ function loadDataFromStorage() {
     });
 
     renderDashboard();
-    renderTable();
+    
+    if (!Array.isArray(gMainDocs) || gMainDocs.length < 10) {
+        console.warn("gMainDocs count abnormal (<10), triggering auto restore...");
+        emergencyResetAndRestoreData();
+    }
+renderTable();
 }
 
 
@@ -33340,6 +33366,10 @@ function getEmailTemplateHtml(type, issue) {
 }
 
 async function autoSendEmail(issueId, type, forceModalPreview = false) {
+    if (window.EMERGENCY_DISABLE_ALL_AUTO_EMAIL && !forceModalPreview) {
+        console.warn("[EMERGENCY KILL-SWITCH] Automatically suppressed outbound email for type:", type);
+        return;
+    }
     // CIRCUIT BREAKER: Block silent background sending for type 2 & 5 unless explicitly confirmed by user
     if (!forceModalPreview && (type === 2 || type === 5)) {
         console.warn(`[CIRCUIT BREAKER] Suppressed background autoSendEmail for type ${type} on issue ${issueId}`);
