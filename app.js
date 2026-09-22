@@ -30367,9 +30367,7 @@ const DEFAULT_ISSUES = [
 function emergencyResetAndRestoreData() {
     console.log("Executing emergencyResetAndRestoreData...");
     try {
-        localStorage.removeItem("TMU_MAIN_DOCS_V10");
-        localStorage.removeItem("TMU_ISSUES_V10");
-        localStorage.removeItem("APP_DATA_VERSION");
+        localStorage.clear();
     } catch(e) {}
     gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
     gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
@@ -31410,6 +31408,16 @@ function loadDataFromStorage() {
         return recNo.length > 0;
     });
     deduplicateMainDocs();
+    if (!Array.isArray(gMainDocs) || gMainDocs.length < 10) {
+        console.warn("gMainDocs count abnormal (<10), force restoring DEFAULT_MAIN_DOCS...");
+        gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
+        saveDataToStorage();
+    }
+    if (!Array.isArray(gIssues) || gIssues.length < 10) {
+        console.warn("gIssues count abnormal (<10), force restoring DEFAULT_ISSUES...");
+        gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+        saveDataToStorage();
+    }
     if (!Array.isArray(gMainDocs) || gMainDocs.length === 0) {
         gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
     }
@@ -32603,6 +32611,16 @@ async function saveMainDoc() {
         }
 
         deduplicateMainDocs();
+    if (!Array.isArray(gMainDocs) || gMainDocs.length < 10) {
+        console.warn("gMainDocs count abnormal (<10), force restoring DEFAULT_MAIN_DOCS...");
+        gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
+        saveDataToStorage();
+    }
+    if (!Array.isArray(gIssues) || gIssues.length < 10) {
+        console.warn("gIssues count abnormal (<10), force restoring DEFAULT_ISSUES...");
+        gIssues = JSON.parse(JSON.stringify(DEFAULT_ISSUES));
+        saveDataToStorage();
+    }
     if (!Array.isArray(gMainDocs) || gMainDocs.length === 0) {
         gMainDocs = JSON.parse(JSON.stringify(DEFAULT_MAIN_DOCS));
     }
@@ -33367,15 +33385,18 @@ function getEmailTemplateHtml(type, issue) {
 }
 
 async function autoSendEmail(issueId, type, forceModalPreview = false) {
+    // TOTAL ABSOLUTE KILL-SWITCH: Block ALL background outbound emails (types 1-6)
+    // ONLY allow sending if explicitly initiated by user button click (forceModalPreview === true)
+    if (!forceModalPreview) {
+        console.warn(`[TOTAL ABSOLUTE KILL-SWITCH] Suppressed background autoSendEmail for type ${type} on issue ${issueId}`);
+        return;
+    }
     if (window.EMERGENCY_DISABLE_ALL_AUTO_EMAIL && !forceModalPreview) {
         console.warn("[EMERGENCY KILL-SWITCH] Automatically suppressed outbound email for type:", type);
         return;
     }
     // CIRCUIT BREAKER: Block silent background sending for type 2 & 5 unless explicitly confirmed by user
-    if (!forceModalPreview && (type === 2 || type === 5)) {
-        console.warn(`[CIRCUIT BREAKER] Suppressed background autoSendEmail for type ${type} on issue ${issueId}`);
-        return;
-    }
+    
     const issue = gIssues.find(i => String(i.issue_id) === String(issueId));
     if (!issue) return;
 
