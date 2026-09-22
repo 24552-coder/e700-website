@@ -32075,10 +32075,15 @@ function renderNestedIssueTable(receiveNo) {
                         const historyItems = [];
                         
                         if (issue.history && Array.isArray(issue.history)) {
-                            issue.history.forEach(h => historyItems.push(h));
+                            issue.history.forEach(h => {
+                                // 在「醫師意見回覆與退回紀錄」欄位中，僅呈現醫師回覆與退回紀錄，不將初始發送問題重複誤標為歷史醫師回覆
+                                if ((h.type === 'reply' || h.type === 'return') && h.content !== issue.question) {
+                                    historyItems.push(h);
+                                }
+                            });
                         }
                         
-                        if (issue.doctor_reply) {
+                        if (issue.doctor_reply && issue.doctor_reply !== issue.question) {
                             const hasReplyContent = historyItems.some(r => r.type === 'reply' && r.content === issue.doctor_reply);
                             if (!hasReplyContent) {
                                 historyItems.push({
