@@ -30936,18 +30936,62 @@ function getDocAssignee(doc) {
     if (!doc) return "";
     let clean = cleanAssigneeName(doc.doc_assignee);
     if (clean) return clean;
+
     const recNo = String(doc.doc_receive_no || "").trim();
-    if (recNo && Array.isArray(gIssues)) {
-        const matchingIssue = gIssues.find(i => !i.deleted && String(i.doc_receive_no || "").trim() === recNo && cleanAssigneeName(i.creator_name || i.doc_assignee));
-        if (matchingIssue) {
-            const foundName = cleanAssigneeName(matchingIssue.creator_name || matchingIssue.doc_assignee);
-            if (foundName) {
+    if (recNo) {
+        if (Array.isArray(gIssues)) {
+            const matchingIssue = gIssues.find(i => !i.deleted && String(i.doc_receive_no || "").trim() === recNo && cleanAssigneeName(i.creator_name || i.doc_assignee));
+            if (matchingIssue) {
+                const foundName = cleanAssigneeName(matchingIssue.creator_name || matchingIssue.doc_assignee);
+                if (foundName) {
+                    doc.doc_assignee = foundName;
+                    return foundName;
+                }
+            }
+        }
+        if (Array.isArray(DEFAULT_MAIN_DOCS)) {
+            const defDoc = DEFAULT_MAIN_DOCS.find(d => String(d.doc_receive_no || "").trim() === recNo);
+            if (defDoc && cleanAssigneeName(defDoc.doc_assignee)) {
+                const foundName = cleanAssigneeName(defDoc.doc_assignee);
                 doc.doc_assignee = foundName;
                 return foundName;
             }
         }
     }
+
+    const chartNo = String(doc.doc_chart_no || "").trim();
+    const patientName = String(doc.doc_patient_name || "").trim();
+    if ((chartNo || patientName) && Array.isArray(DEFAULT_MAIN_DOCS)) {
+        const defDoc = DEFAULT_MAIN_DOCS.find(d => 
+            (chartNo && String(d.doc_chart_no || "").trim() === chartNo) || 
+            (patientName && String(d.doc_patient_name || "").trim() === patientName)
+        );
+        if (defDoc && cleanAssigneeName(defDoc.doc_assignee)) {
+            const foundName = cleanAssigneeName(defDoc.doc_assignee);
+            doc.doc_assignee = foundName;
+            return foundName;
+        }
+    }
+
     return "";
+}
+
+function autoHealAllDocAssignees() {
+    if (!Array.isArray(gMainDocs)) return;
+    let healedCount = 0;
+    gMainDocs.forEach(doc => {
+        if (!cleanAssigneeName(doc.doc_assignee)) {
+            const inferred = getDocAssignee(doc);
+            if (inferred) {
+                doc.doc_assignee = inferred;
+                healedCount++;
+            }
+        }
+    });
+    if (healedCount > 0) {
+        console.log(`[Auto-Heal] Auto healed ${healedCount} document assignees.`);
+        saveDataToStorage();
+    }
 }
 
 function getCaseworkerInfo(name) {
@@ -31002,21 +31046,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         saveDataToStorage();
     }
     backfillAndMigrateIssueHistory();
-    let hasAssigneeAutoHealed = false;
-    if (Array.isArray(gMainDocs)) {
-        gMainDocs.forEach(doc => {
-            if (!cleanAssigneeName(doc.doc_assignee)) {
-                const inferred = getDocAssignee(doc);
-                if (inferred) {
-                    doc.doc_assignee = inferred;
-                    hasAssigneeAutoHealed = true;
-                }
-            }
-        });
-    }
-    if (hasAssigneeAutoHealed) {
-        saveDataToStorage();
-    }
+    autoHealAllDocAssignees();
     initUIEvents();
     renderDashboard();
     renderTable();
@@ -31195,6 +31225,8 @@ async function syncCloudData(isSilent = false) {
                     }
                 });
             }
+
+            autoHealAllDocAssignees();
 
             const afterDocsStr = JSON.stringify(gMainDocs);
             const afterIssuesStr = JSON.stringify(gIssues);
