@@ -31149,15 +31149,25 @@ function startAutoSyncTimer() {
 
 
 async function pushCloudData(isSilent = true) {
+    const payload = {
+        action: "saveCloudData",
+        docs: gMainDocs,
+        issues: gIssues
+    };
+
+    // If running on local server 10.97.14.48 or localhost
+    if (window.location.protocol.startsWith("http") && (window.location.hostname === "10.97.14.48" || window.location.hostname === "localhost" || window.location.port === "8080")) {
+        fetch(window.location.origin + "/api/saveCloudData", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+        }).catch(e => console.error("Local server save error:", e));
+    }
+
     const savedGasUrl = getGasWebhookUrl();
     if (!savedGasUrl || !savedGasUrl.startsWith("http")) return;
 
     try {
-        const payload = {
-            action: "saveCloudData",
-            docs: gMainDocs,
-            issues: gIssues
-        };
         fetch(savedGasUrl, {
             method: "POST",
             mode: "no-cors",
@@ -31169,6 +31179,10 @@ async function pushCloudData(isSilent = true) {
 
 async function syncCloudData(isSilent = false) {
     if (Date.now() - (window.gLastLocalSaveTime || 0) < 15000) return;
+    let syncUrl = getGasWebhookUrl();
+    if (window.location.protocol.startsWith("http") && (window.location.hostname === "10.97.14.48" || window.location.hostname === "localhost" || window.location.port === "8080")) {
+        syncUrl = window.location.origin + "/api/getCloudData";
+    }
     const savedGasUrl = getGasWebhookUrl();
     if (!savedGasUrl || !savedGasUrl.startsWith("http")) {
         if (!isSilent) showToast("&#9888;&#65039; 請先至【⚙️ 系統設定】設定 Google Apps Script Webhook 網址，即可啟用全院多人雲端同步！", "warning");
@@ -31178,7 +31192,7 @@ async function syncCloudData(isSilent = false) {
     if (!isSilent) showToast("⚡ 正連線 Google Apps Script 讀取全院雲端最新公文資料...", "info");
 
     try {
-        const res = await fetchWithTimeout(savedGasUrl, {
+        const res = await fetchWithTimeout(syncUrl, {
             method: "POST",
             mode: "cors",
             headers: { "Content-Type": "text/plain" },
