@@ -32061,73 +32061,37 @@ function renderNestedIssueTable(receiveNo) {
                         </div>
                     ` : ''}
                 </td>
-                <td style="min-width:260px;">
+                <td style="min-width:320px;">
                     ${(() => {
-                        const replyList = [];
+                        const historyItems = [];
+                        
                         if (issue.history && Array.isArray(issue.history)) {
-                            issue.history.filter(h => h.type === 'reply').forEach(h => replyList.push(h));
+                            issue.history.forEach(h => historyItems.push(h));
                         }
+                        
                         if (issue.doctor_reply) {
-                            const hasReplyContent = replyList.some(r => r.content === issue.doctor_reply);
+                            const hasReplyContent = historyItems.some(r => r.type === 'reply' && r.content === issue.doctor_reply);
                             if (!hasReplyContent) {
-                                replyList.push({
+                                historyItems.push({
+                                    type: 'reply',
                                     time: issue.replied_at || '',
                                     content: issue.doctor_reply
                                 });
                             }
                         }
 
-                        if (replyList.length === 0) {
-                            return `<div style="color:#94a3b8;text-align:center;padding:12px 0;"><i class="fa-regular fa-clock" style="display:block;font-size:20px;margin-bottom:4px;"></i>尚無回覆</div>`;
+                        if (issue.return_reason) {
+                            const hasReturnContent = historyItems.some(r => r.type === 'return');
+                            if (!hasReturnContent) {
+                                historyItems.push({
+                                    type: 'return',
+                                    time: issue.return_at || '',
+                                    content: `退回補件原因：${issue.return_reason}`
+                                });
+                            }
                         }
 
-                        if (replyList.length === 1) {
-                            const rep = replyList[0];
-                            return `
-                                <div class="multiline-box reply-box" style="border-left:4px solid #0284c7;background:#f0f9ff;padding:8px 10px;border-radius:6px;font-size:12px;">
-                                    <strong style="color:#0369a1;font-size:11.5px;display:block;margin-bottom:4px;">
-                                        <i class="fa-solid fa-comment-dots"></i> 醫師意見回覆 ${rep.time ? `(${escapeHtml(rep.time)})` : ''}：
-                                    </strong>
-                                    <div style="color:#0c4a6e;line-height:1.4;white-space:pre-wrap;">${formatMultilineHtml(rep.content)}</div>
-                                </div>
-                            `;
-                        }
-
-                        return `
-                            <div style="display:flex;flex-direction:column;gap:6px;">
-                                <div style="font-size:11px;font-weight:bold;color:#0284c7;"><i class="fa-solid fa-comments"></i> 歷次醫師回覆紀錄 (共 ${replyList.length} 次來回)：</div>
-                                ${replyList.slice().reverse().map((rep, idx) => {
-                                    const roundNum = replyList.length - idx;
-                                    const isLatest = idx === 0;
-                                    return `
-                                        <div style="padding:8px 10px;background:${isLatest ? '#f0f9ff' : '#f8fafc'};border:1px solid ${isLatest ? '#bae6fd' : '#cbd5e1'};border-left:3px solid ${isLatest ? '#0284c7' : '#64748b'};border-radius:6px;font-size:12px;">
-                                            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px;">
-                                                <strong style="color:${isLatest ? '#0369a1' : '#334155'};font-size:11.5px;">
-                                                    ${isLatest ? '💬 最新回覆' : `📜 第 ${roundNum} 次回覆`} ${rep.time ? `(${escapeHtml(rep.time)})` : ''}：
-                                                </strong>
-                                            </div>
-                                            <div style="color:${isLatest ? '#0c4a6e' : '#334155'};line-height:1.4;white-space:pre-wrap;">${formatMultilineHtml(rep.content)}</div>
-                                        </div>
-                                    `;
-                                }).join('')}
-                            </div>
-                        `;
-                    })()}
-                </td>
-                <td style="min-width:230px;background:#fffcfc;">
-                    ${(() => {
-                        const returnList = [];
-                        if (issue.history && Array.isArray(issue.history)) {
-                            issue.history.filter(h => h.type === 'return').forEach(h => returnList.push(h));
-                        }
-                        if (returnList.length === 0 && issue.return_reason) {
-                            returnList.push({
-                                time: issue.return_at || '',
-                                content: `退回補件原因：${issue.return_reason}`
-                            });
-                        }
-
-                        if (returnList.length === 0) {
+                        if (historyItems.length === 0) {
                             if (issue.status === "退回補件") {
                                 return `
                                     <div style="padding:8px 10px;background:#fffbe6;border:1px solid #ffe58f;border-left:3px solid #faad14;border-radius:6px;font-size:12px;color:#d48806;">
@@ -32137,21 +32101,45 @@ function renderNestedIssueTable(receiveNo) {
                                     </div>
                                 `;
                             }
-                            return '<span style="color:#94a3b8;font-size:12px;display:block;text-align:center;padding:12px 0;">- (無退回紀錄)</span>';
+                            return `<div style="color:#94a3b8;text-align:center;padding:12px 0;"><i class="fa-regular fa-clock" style="display:block;font-size:20px;margin-bottom:4px;"></i>尚無回覆紀錄</div>`;
                         }
 
-                        return returnList.map(ret => {
-                            const reasonText = (ret.content || '').replace(/^退回補件原因：\s*/, '');
-                            return `
-                                <div style="padding:8px 10px;background:#fef2f2;border:1px solid #fca5a5;border-left:3px solid #dc2626;border-radius:6px;font-size:12px;color:#991b1b;margin-bottom:4px;">
-                                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px;">
-                                        <strong style="color:#dc2626;font-size:11.5px;"><i class="fa-solid fa-rotate-left"></i> ↩️ 退回時間: ${escapeHtml(ret.time || '-')}</strong>
-                                        <button class="btn btn-link text-danger" style="padding:0;font-size:11px;text-decoration:underline;" onclick="openReturnReasonModal('${escapeHtml(issue.issue_id)}')">編輯</button>
-                                    </div>
-                                    <div style="color:#7f1d1d;line-height:1.4;white-space:pre-wrap;">${formatMultilineHtml(reasonText)}</div>
-                                </div>
-                            `;
-                        }).join('');
+                        const replyCount = historyItems.filter(h => h.type === 'reply').length;
+                        const returnCount = historyItems.filter(h => h.type === 'return').length;
+
+                        const reversedItems = historyItems.slice().reverse();
+
+                        return `
+                            <div style="display:flex;flex-direction:column;gap:6px;">
+                                ${historyItems.length > 1 ? `<div style="font-size:11px;font-weight:bold;color:#0284c7;"><i class="fa-solid fa-comments"></i> 歷次溝通與退回紀錄 (${replyCount} 次回覆 / ${returnCount} 次退回)：</div>` : ''}
+                                ${reversedItems.map((item, idx) => {
+                                    if (item.type === 'return') {
+                                        const reasonText = (item.content || '').replace(/^退回補件原因：\s*/, '');
+                                        return `
+                                            <div style="padding:8px 10px;background:#fef2f2;border:1px solid #fca5a5;border-left:3px solid #dc2626;border-radius:6px;font-size:12px;color:#991b1b;">
+                                                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px;">
+                                                    <strong style="color:#dc2626;font-size:11.5px;"><i class="fa-solid fa-rotate-left"></i> ↩️ 退回原因與時間 ${item.time ? `(${escapeHtml(item.time)})` : ''}：</strong>
+                                                    <button class="btn btn-link text-danger" style="padding:0;font-size:11px;text-decoration:underline;" onclick="openReturnReasonModal('${escapeHtml(issue.issue_id)}')">編輯退回原因</button>
+                                                </div>
+                                                <div style="color:#7f1d1d;line-height:1.4;white-space:pre-wrap;">${formatMultilineHtml(reasonText)}</div>
+                                            </div>
+                                        `;
+                                    }
+
+                                    const isLatest = idx === 0 && item.type === 'reply';
+                                    return `
+                                        <div style="padding:8px 10px;background:${isLatest ? '#f0f9ff' : '#f8fafc'};border:1px solid ${isLatest ? '#bae6fd' : '#cbd5e1'};border-left:3px solid ${isLatest ? '#0284c7' : '#64748b'};border-radius:6px;font-size:12px;">
+                                            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px;">
+                                                <strong style="color:${isLatest ? '#0369a1' : '#334155'};font-size:11.5px;">
+                                                    💬 ${isLatest ? '最新醫師回覆' : '歷史醫師回覆'} ${item.time ? `(${escapeHtml(item.time)})` : ''}：
+                                                </strong>
+                                            </div>
+                                            <div style="color:${isLatest ? '#0c4a6e' : '#334155'};line-height:1.4;white-space:pre-wrap;">${formatMultilineHtml(item.content)}</div>
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        `;
                     })()}
                 </td>
                 <td style="min-width:150px;">
@@ -32201,8 +32189,7 @@ function renderNestedIssueTable(receiveNo) {
                 <tr>
                     <th>醫師姓名</th>
                     <th>函詢問題內容</th>
-                    <th>醫師意見回覆</th>
-                    <th style="background:#fff5f5;color:#c53030;">↩️ 退回原因與時間</th>
+                    <th>醫師意見回覆與退回紀錄</th>
                     <th>狀態</th>
                     <th>寄件時間</th>
                     <th>回覆時間</th>
