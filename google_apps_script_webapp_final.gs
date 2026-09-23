@@ -183,9 +183,9 @@ function scanGmailReplies() {
 
         var dateStr = Utilities.formatDate(msg.getDate(), 'GMT+8', 'yyyy-MM-dd HH:mm');
 
-        // 精確比對單號與項次
-        var docMatch = subject.match(/單號[：:]\s*([^\s(]+)/);
-        var issueMatch = subject.match(/項次[：:]\s*([0-9A-Za-z\-]+)/) || subject.match(/(INQ-[0-9A-Za-z\-]+)/);
+        // 精確比對單號與項次 (優先比對主旨，若主旨被亂碼則備援比對內文)
+        var docMatch = subject.match(/單號[：:]\s*([^\s(]+)/) || body.match(/單號[：:]\s*([^\s(]+)/);
+        var issueMatch = subject.match(/項次[：:]\s*([0-9A-Za-z\-]+)/) || subject.match(/(INQ-[0-9A-Za-z\-]+)/) || body.match(/(INQ-[0-9A-Za-z\-]+)/);
 
         var docNo = docMatch ? docMatch[1].trim() : '';
         var issueId = issueMatch ? issueMatch[1].trim() : '';
